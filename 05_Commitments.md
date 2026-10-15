@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-15 13:39 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 13:54 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 15 (ceiling 15, by disposal only) · Other-Owned 135 (Critical 29) · Needs triage 0.
+**Counts at generation:** Register A 14 (ceiling 15, by disposal only) · Other-Owned 135 (Critical 29) · Needs triage 0.
 
 ---
 
@@ -29,7 +29,6 @@ Four registers. The delineation is the point.
 
 | # | Action | Next Step | Counterparty | Due | Basis | Source |
 |---|---|---|---|---|---|---|
-| A53 | **Update CDA and Ascent content and the connected-strategy talk track for the CSS Global Leaders presentation** | Same CEC meeting (2026-10-07) dependency as A54; | Chris Gazdic | 2026-10-01 (alignment requested) / 2026-10-02 (final deck due) -- both now overdue | Explicit. Darryl: "Yeah, let me... take a screen to that, and I'll get you some verbiage." | Digital Products / Agile Staff Meeting (transcript), weekly evidence 2026-10-05 |
 | A54 | **Update WAM/asset-management and lifecycle content for the CSS Global Leaders slide** | Feeds the CEC meeting 2026-10-07 (Digital Products / Agile Staff Meeting: content addressed "once the deck arrived"). | Chris Gazdic | 2026-10-01 end of day (now 4 days overdue) | Explicit. Darryl: "Yeah, I'll look at both of those and I'll get you guys a draft." | Digital Products / Agile Staff Meeting (transcript), weekly evidence 2026-10-05 |
 | A31 | **Circulate the product pitches and soft metrics deck to Akansh Gangil, David Blondel, Ron Snyder and Chad Steger** | Send with a specific question per reviewer rather than an open request for comment, so the round closes the three blocked metrics instead of collecting wording… | Akansh Gangil; David Blondel; Ron Snyder; Chad Steger | 2026-10-02 (re-dated at 09-18 sweep) | Explicit. Darryl, own words 2026-08-26: "I'll have Akansh, David, Ron, and Chad review the deck" | Cowork session 2026-08-26 |
 | A61 | **Finalize the WAM/ADM reduced-capacity reset plan (run/complete/stop/defer) with Akansh Gangil and David Blondel, then bring it to Sean McCloskey** | Akansh Gangil quantified an eight-person minimum run model against 15 current resources and the 19-FTE AOP draft. | Akansh Gangil; David Blondel; Sean McCloskey | 2026-10-10 (Claude-proposed for "the next few days"; confirm) | Explicit. Darryl, WAM Leadership Sync, 2026-10-05: "Let's talk about how we reset as a team over the next few days, then we can bring that to Sean as our plan moving forward and get his input." | WAM Leadership Sync transcript, 2026-10-05; WAM - Product Team Teams chat, 2026-10-06/07; weekly evidence 2026-10-07 2026-10-14: B100's limitations input arrived as a data-constraints slide (all six asks outside the team); integration architecture was already confirmed 2026-10-05. 2026-10-14: inputs in hand (Akansh's prior-week answers, filed `Products/WAM/WAM.md`): team 15, run team 8, Run/Complete by stream, ADB minimum 3, Q1 2027 historical target withdrawn. Still open: stream Run total (6) vs run team (8) and the ordered Complete list, both asked in the 2026-10-14 Teams draft. Sean update with three capacity options drafted (`Deliverables/Exec_Briefs/2026-10-14_Sean_Update.md`) for the week of 2026-10-19. 2026-10-14 (Darryl, review pass): numbers out of the Sean material until reconciled; WAM roadmap reconciliation with Akansh and David next week (joint Teams draft `Deliverables/WAM/2026-10-14_Akansh_David_Staffing_Reconciliation_Teams.md`); Sean update v2 drafted with resource types only. Re-date: week of 2026-10-19 (Sean meeting and reconciliation). 2026-10-15 (daily evidence): Nitin Pandey, explicit: "Once Shubhayu returns next week, I will discuss this further with him and provide a more comprehensive update." Confirms the week-of-2026-10-19 re-date above; plan still not delivered -- not closing. |
@@ -212,6 +211,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-15 | **B52 — Add Disney training users at the Disney server level** | Darryl, EOS web app, 2026-10-15 | Single-person access dependency: Shawn Clark was on PTO and appeared to be the only person with server-level access. |
 | 2026-10-15 | **B36 — Disney SSO configuration correction (Okta/SAML audience-metadata mismatch)** | Darryl, EOS web app, 2026-10-15 | New customer relationship, onboarding delay |
 | 2026-10-15 | **B15 — Investigate Dell PC1 meters-offline condition (ticket 3046) — reopened and widened** | Darryl, EOS web app, 2026-10-15 | Downgraded from Critical 2026-08-25, then reopened 2026-09-15 on contradiction, not echo. |
+| 2026-10-15 | **A53 — Update CDA and Ascent content and the connected-strategy talk track for the CSS Global Leaders presentation** | Darryl, EOS web app, 2026-10-15 | ## Next step Same CEC meeting (2026-10-07) dependency as A54; |
 | 2026-10-07 | **A57 — Finish the entroCIM/CDA headcount balancing with Ron Snyder** | Darryl, chat, 2026-10-06 | Done. |
 | 2026-10-07 | **A56 — Email Emily Munk on TSS support for CDA** | Darryl, chat, 2026-10-06 | Done. |
 | 2026-10-05 | **A55 — Reconvene the WAM Zapier/API ownership reassessment meeting** | Zapier reassessment meeting transcript, 2026-10-05 | Done, and recorded in `Products/WAM/WAM.md` the same day, but never closed out here, a propagation gap caught and fixed during the 2026-10-13 reconciliation. |
