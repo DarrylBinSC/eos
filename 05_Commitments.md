@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 15 (ceiling 15, by disposal only) · Other-Owned 139 (Critical 33) · Needs triage 0.
+**Counts at generation:** Register A 15 (ceiling 15, by disposal only) · Other-Owned 138 (Critical 32) · Needs triage 0.
 
 ---
 
@@ -66,7 +66,6 @@ Four registers. The delineation is the point.
 | B48 | Complete the Innovance LicenseManager privacy survey assessment | Akansh Gangil (with Balasubramanian K) | Delegated | 2026-08-20 | -- | 2026-08-20 | New 08-19. |
 | B57 | Research Intel SceneScape fit and return an answer on roadmap displacement and joint go-to-market | Ron Snyder | Delegated | 2026-08-20 End of week following | -- | 2026-08-20 | Ron Snyder: "Yeah, I'll start looking into it and get you an answer." Owed to Ajay Bhat and Intel / Innovation Center |
 | B59 | Run the Sales overview of entroCIM training offerings, intake, scheduling and delivery | Maggie Becker and David Blondel | Delegated | 2026-08-24 Week following | -- | 2026-08-24 | Maggie Becker, explicit. |
-| B52 | Add Disney training users at the Disney server level | Shawn Clark, coordinated by Chad Steger | Delegated | 2026-08-27 Before training | **Critical** | 2026-08-27 | Single-person access dependency: Shawn Clark was on PTO and appeared to be the only person with server-level access. |
 | B63 | Schedule the ALM walkthrough for the I2S team, including the entire I2S team on the invitation | Akansh Gangil | Delegated | 2026-08-31 Week of | -- | 2026-08-31 | Darryl: "I will ask Akansh Gangil to schedule this for sometime next week." Beatrice Hernandez asked that the full I2S team be included. |
 | B64 | Issue legal termination notice for Jeff Verdon's contractor engagement | Chris Gazdic | Delegated | 2026-08-31 to preserve a September end date — passed | -- | 2026-08-31 | Gated on Darryl confirming the decision with Babu and giving Chris the answer (see A-candidate note below). |
 | B65 | Prepare for and represent Wesco at the Turner/FRB Cash Services descoping review | Sarah Monteleone and invited response team | Delegated | 2026-09-01 today | **Critical** | 2026-09-01 | Sarah Monteleone: "Please read through so you are familiar." Customer-facing RFP descoping review; |
@@ -211,6 +210,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
+| 2026-10-15 | **B52 — Add Disney training users at the Disney server level** | Darryl, EOS web app, 2026-10-15 | Single-person access dependency: Shawn Clark was on PTO and appeared to be the only person with server-level access. |
 | 2026-10-15 | **B36 — Disney SSO configuration correction (Okta/SAML audience-metadata mismatch)** | Darryl, EOS web app, 2026-10-15 | New customer relationship, onboarding delay |
 | 2026-10-07 | **A57 — Finish the entroCIM/CDA headcount balancing with Ron Snyder** | Darryl, chat, 2026-10-06 | Done. |
 | 2026-10-07 | **A56 — Email Emily Munk on TSS support for CDA** | Darryl, chat, 2026-10-06 | Done. |
