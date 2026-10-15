@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-10-15 14:19 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 14:20 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 26 (ceiling 20) · Passive 53 · Retired 18.
+**Counts at generation:** Active 25 (ceiling 20) · Passive 54 · Retired 18.
 
 ## Active
 
@@ -16,7 +16,6 @@
 |---|---|---|---|---|---|---|
 | W015 | AI adoption governance + team assignment | High | → | Direct (All Hands 07-13; Agile Staff 07-14; Portfolio Review 07-20; SkyFoundry 07-21; IDP/WAM + Agile Staff 07-22; WAM Data Challenges 07-22/23; weekly evidence 07-27; WAM Data Challenges 07-30; entroCIM Backlog Deep Dive + Claude Code Enablement 08-12; AI Council \| Ice Breaker \| Discussion on entroCIM AI, 08-19; Darryl session 08-25) | 2026-08-25 | 08-19: the Woolly/entroCIM AI evaluation thread advanced with a formal governance path. |
 | W007 | Integrated Navigator / entroCIM / WAM value proposition pitched ahead of the build | High | New | Direct (Brad Stevens agenda, relayed by Darryl 2026-09-03) | 2026-09-03 | Brad intends to pitch all three value propositions as one overall service on future Facility Management and Data Center Management opportunities. |
-| W022 | IDP/ADM production integration — approved but unstaffed | High | New | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-09-09 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
 | W012 | PC1/JCI large-scale point faults and intermittent site access | High | New | Direct (`2026 Deployment - Daily Scrum` 09-15; roughly half the points described as faulted, including a reference to 12,000 points) | 2026-09-15 | On-site stakeholders reportedly treated it as emergency service; |
 | W013 | TCCC (Coca-Cola)/AOC Modbus gateway sourcing may delay gas-sensor integration | High | New | Direct (`2026 Deployment - Daily Scrum` 09-15; Scott Dunn: sourcing "is going to hold it up") | 2026-09-15 | Required Modbus gateways may have long lead times, risking customer schedule delay and panel rework. |
 | W005 | Stanford commissioning-report remediation — escalated to a retention risk, no accountable owner | High | ↑ | Direct (Stanford Test Project_New email, 2026-09-17) | 2026-09-17 | Reopened from Passive on contradiction, not echo (demoted 08-19 as High/New on the objective silence test; |
@@ -47,6 +46,7 @@ Logged for completeness. No action required; does not count toward risk load. Es
 
 | ID | Watch Item | Former severity | Evidence Basis | Last Update | Notes |
 |---|---|---|---|---|---|
+| W022 | IDP/ADM production integration — approved but unstaffed | High | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-10-15 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
 | W029 | Returnable asset tracking: build direction set before the cost basis exists | Medium | Direct (returnable asset tracking discussion transcript 2026-09-16; entroCIM Sensolus connector documentation 2026-09-16) | 2026-10-05 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | W028 | Dell SOC 2 / security-evidence request — scope and gating unknown | Medium | Direct (`EntroCIM Platform Solution & Delivery Group`, 08-18 onward) | 2026-10-05 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | W030 | Sales orders missing from EUDM/DDP data lake | High | Direct (FW: WAM - Records are created in Core ERP but not available in eudm table, 07-27; INC5456198) | 2026-09-17 | Demoted from Active 2026-09-17 (was High, trend ↑) on the objective silence test — no referencing evidence since 07-28, 51 days, and superseded in substance by the current WAM/ADM data integrity row above, which tracks the same truncated-part-number root caus… |
