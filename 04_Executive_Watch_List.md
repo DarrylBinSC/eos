@@ -8,13 +8,12 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 26 (ceiling 20) · Passive 53 · Retired 18.
+**Counts at generation:** Active 25 (ceiling 20) · Passive 53 · Retired 19.
 
 ## Active
 
 | ID | Watch Item | Severity | Trend | Evidence Basis | Last Update | Notes |
 |---|---|---|---|---|---|---|
-| W019 | Louvre Abu Dhabi closeout — snag-list stall | High | ↑ | Direct (Deployment Daily Scrum 07-22; Re: IoT Consolidation Platform - Project Deployment Meeting, 08-04) | 2026-08-05 | Escalated from Medium 08-05. |
 | W015 | AI adoption governance + team assignment | High | → | Direct (All Hands 07-13; Agile Staff 07-14; Portfolio Review 07-20; SkyFoundry 07-21; IDP/WAM + Agile Staff 07-22; WAM Data Challenges 07-22/23; weekly evidence 07-27; WAM Data Challenges 07-30; entroCIM Backlog Deep Dive + Claude Code Enablement 08-12; AI Council \| Ice Breaker \| Discussion on entroCIM AI, 08-19; Darryl session 08-25) | 2026-08-25 | 08-19: the Woolly/entroCIM AI evaluation thread advanced with a formal governance path. |
 | W017 | JCI (Johnson Controls) MSP agreement stall | High | ↓ | Direct (email evidence through 06-08; Darryl field note 07-22) + Repetition (8+ month negotiation, no signature); Direct (Darryl, chat, 2026-09-01) | 2026-09-01 | MSP model decided 05-26 (not reseller); |
 | W021 | Federal Reserve (FRBNY) release 3.1.12.13 — held, customer not told | High | ↑ | Direct (Sarah Monteleone quoting Chad Steger, `Re: entroCIM Release – Version 3.1.12.13`, weekly evidence 2026-08-24 to 08-31) | 2026-09-01 | Escalated back to Active 2026-09-01 on a direct signal — held Passive since 08-27 on the reasoning that engineering already owned the fix, but this week's evidence shows the stall continuing rather than closing. |
@@ -106,6 +105,7 @@ Logged for completeness. No action required; does not count toward risk load. Es
 | Retired | ID | Item | Reason |
 |---|---|---|---|
 | 2026-10-15 | W074 | Docker Hub / EntraSim security posture (Risk 1660) | Formally tracked in the risk register, stable. |
+| 2026-10-15 | W019 | Louvre Abu Dhabi closeout — snag-list stall | Escalated from Medium 08-05. |
 | 2026-10-15 | W014 | Disney SSO onboarding failure (7 Hudson entroCIM deployment) | Network changes completed (Victor Guzman), but SSO still returns an audience/metadata-related error on subsequent test (Shawn Clark). |
 | 2026-10-14 | W082 | Strev production API outage (SSO, token generation), open since 2026-09-25 | Resolved (Darryl, direct, 2026-10-14). |
 | 2026-09-28 | W083 | Miller Electric PO paused — pricing below SkyFoundry OEM list, agreement risk | Resolved by decision. |
