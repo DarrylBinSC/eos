@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 127 (Critical 21) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 126 (Critical 20) · Needs triage 0.
 
 ---
 
@@ -74,7 +74,6 @@ Four registers. The delineation is the point.
 | C61 | Walmart conversation for CDA, refrigeration and produce systems as the entry point through Wesco's MRO relationship | David Fisher | Awaited | 2026-10-02 Longer term (Darryl, ): not before CDA is further into development; revisit when a pilot is running | -- | 2026-10-02 | New 2026-10-02. |
 | B72 | Share the entroCIM 3.1.12.14 release deck and build sales messaging with Valli Poornakumar and Leanne Gordon | David Blondel | Delegated | 2026-10-05 Before | -- | 2026-10-05 | New 09-09. |
 | C65 | Emily Munk's reply and a 30-minute walkthrough of CDA: TSS delivery and support ownership, positioning for TSS, route to Greg O'Brien | Emily Munk | Awaited | 2026-10-07 Requested within two weeks of (by 2026-10-21) | -- | 2026-10-14 | New 2026-10-07. |
-| B79 | Reschedule a capacity-planning call to define three weeks of work before Chethan's leave date | Syed Jamshed Zaidi | Delegated | 2026-10-08 Before (Chethan's confirmed last day) | **Critical** | 2026-10-08 | Gates the knowledge-transfer plan against a hard HR departure date (`06` Chethan entry). |
 | B98 | Provide the larger WAM/MSAV data set to Akansh Gangil | Violet Moyer | Delegated | 2026-10-08 (now 5 days overdue) | -- | 2026-10-13 | New 2026-10-13 (weekly evidence, WAM Product discussion transcript, 2026-10-08). |
 | B101 | Revise the client-facing entroCIM deployment discussion framework per Darryl's comments and schedule a review call | Valli Poornakumar | Delegated | 2026-10-12 Late week of or early the following week | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | B102 | Validate remaining Strev SOW 3 deliverables (completed and outstanding), open bugs, and the notification mechanism | Akansh Gangil | Delegated | 2026-10-15 (review call) | **Critical** -- gates a dated vendor/commercial closure | 2026-10-15 | New 2026-10-14. |
@@ -199,6 +198,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-15 | **C-i3-3 — i3 Alliance Agreement — Legal's answers to the five Section 12 questions, and confirmation of whether Section 12 is open in this round** | Darryl, EOS web app, 2026-10-15 | Five answers change the ask: (1) content of the Wesco Legal comment at §12.2 on prior written consent; |
 | 2026-10-15 | **B94 — Determine Ford DPR level of effort and recommend the commercial path (SME hours vs. separate PO/SOW)** | Darryl, EOS web app, 2026-10-15 | New 2026-10-05. |
 | 2026-10-15 | **B83 — Correct the conflicting release-milestone dates in `Team Update 2026 Sept 21.pptx` before the 2026-09-21 all-hands** | Darryl, EOS web app, 2026-10-15 | New 2026-09-18. |
+| 2026-10-15 | **B79 — Reschedule a capacity-planning call to define three weeks of work before Chethan's leave date** | Darryl, EOS web app, 2026-10-15 | Gates the knowledge-transfer plan against a hard HR departure date (`06` Chethan entry). |
 | 2026-10-15 | **B77 — Send device/network-information request for the four FRB VAVs** | Darryl, EOS web app, 2026-10-15 | "I'll get an e-mail out today." Same FRB thread as B76 — track together. |
 | 2026-10-15 | **B76 — Follow up on the FRB non-production environment and support need** | Darryl, EOS web app, 2026-10-15 | "I'll take a look at that." Federal Reserve is a named critical-path customer account (see `04` FRB rows). |
 | 2026-10-15 | **B69 — Validate the delivery team can support every item in the finalized Ford SOW scope** | Darryl, EOS web app, 2026-10-15 | New 09-09. |
