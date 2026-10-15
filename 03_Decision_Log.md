@@ -798,7 +798,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-15 13:59 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 14:04 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 32.*
 
@@ -947,7 +947,7 @@
 
 ### 2026-08-06 — FY27 AOP: portfolio structure set at the workshop; three Darryl-owned inputs now dated 08-14 (new)
 - ID: D011
-- Status: Approaching — structural questions resolved, Darryl's own inputs not yet started
+- Status: Complete
 - Owner: Sean McCloskey / Chris Gazdic (portfolio structure); Darryl (three named inputs below)
 - Forum: Product AOP Workshop thread; backstopped by the 2026-08-07 AOP alignment meeting (A5) and the entroCIM AOP / eCIM Budget track with Tom Boss. (2026-08-07)
 > *Kept on the Radar 2026-08-19. The stale-forum-date pass flagged it, but FY27 AOP is on a fixed 08-21 date; the correct action is to re-set the forum date, not to demote the item. Forum date needs re-setting.*
