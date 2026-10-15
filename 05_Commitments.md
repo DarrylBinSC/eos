@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 128 (Critical 22) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 127 (Critical 21) · Needs triage 0.
 
 ---
 
@@ -74,7 +74,6 @@ Four registers. The delineation is the point.
 | C61 | Walmart conversation for CDA, refrigeration and produce systems as the entry point through Wesco's MRO relationship | David Fisher | Awaited | 2026-10-02 Longer term (Darryl, ): not before CDA is further into development; revisit when a pilot is running | -- | 2026-10-02 | New 2026-10-02. |
 | B72 | Share the entroCIM 3.1.12.14 release deck and build sales messaging with Valli Poornakumar and Leanne Gordon | David Blondel | Delegated | 2026-10-05 Before | -- | 2026-10-05 | New 09-09. |
 | C65 | Emily Munk's reply and a 30-minute walkthrough of CDA: TSS delivery and support ownership, positioning for TSS, route to Greg O'Brien | Emily Munk | Awaited | 2026-10-07 Requested within two weeks of (by 2026-10-21) | -- | 2026-10-14 | New 2026-10-07. |
-| C66 | Strev restores the SSO/token-generation outage behind the ADM to Strev production integration failures (INC5630763), with restoration confirmed in writing; Akansh Gangil's team then validates the sync | Saubhya Mathur (Strev); tracked by Akansh Gangil | Awaited | 2026-10-07 Not dated; Strev gave no ETA on | **Critical** -- gates A62 and production data sync | 2026-10-07 | New 2026-10-07. |
 | B79 | Reschedule a capacity-planning call to define three weeks of work before Chethan's leave date | Syed Jamshed Zaidi | Delegated | 2026-10-08 Before (Chethan's confirmed last day) | **Critical** | 2026-10-08 | Gates the knowledge-transfer plan against a hard HR departure date (`06` Chethan entry). |
 | B98 | Provide the larger WAM/MSAV data set to Akansh Gangil | Violet Moyer | Delegated | 2026-10-08 (now 5 days overdue) | -- | 2026-10-13 | New 2026-10-13 (weekly evidence, WAM Product discussion transcript, 2026-10-08). |
 | B101 | Revise the client-facing entroCIM deployment discussion framework per Darryl's comments and schedule a review call | Valli Poornakumar | Delegated | 2026-10-12 Late week of or early the following week | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
@@ -193,6 +192,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-10-15 | **C66 — Strev restores the SSO/token-generation outage behind the ADM to Strev production integration failures (INC5630763), with restoration confirmed in writing; Akansh Gangil's team then validates the sync** | Darryl, EOS web app, 2026-10-15 | New 2026-10-07. |
 | 2026-10-15 | **C49 — Replacement Strev/Revnue entitlement document — the current version superseding v2.5 (May 2026)** | Darryl, EOS web app, 2026-10-15 | New 2026-09-17. |
 | 2026-10-15 | **C46 — Confirmation of which Revnue/Strev catalog SKU each of the two UiPath submissions corresponds to, and whether Strev has represented them as generally available** | Darryl, EOS web app, 2026-10-15 | New 2026-09-15. |
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
