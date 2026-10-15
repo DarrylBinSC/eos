@@ -800,7 +800,7 @@
 
 <!-- GENERATED 2026-10-15 14:05 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 29.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 28.*
 
 ### 2026-10-07 — WAM/ADM reduced-capacity reset: what runs, completes, stops or defers
 - ID: D001
@@ -840,17 +840,6 @@
 - Recommended path, offered not decided: fund the pilot centrally and defer the charging model until the pilot produces a measured internal benefit, so the pilot is not killed by a cost-allocation argument before it produces evidence. Decide the standing model on that evidence.
 - Risk of waiting: the team absorbs internal support demand with no funding line, which is the failure mode the FY27 resourcing conversation is already exposed to.
 - Follow-up: A40, retired 2026-10-05 (Darryl disposition: Retire, no reason stated) -- the Register A action tracking this is closed; the decision itself is not stated as resolved and stays in Backlog until Darryl says otherwise.
-
-### 2026-09-03 — CX Connect: ownership, what it actually does, and whether it belongs in the CSS portfolio
-- ID: D006
-- Status: Approaching
-- Owner: unassigned; Brad Stevens believes Ed, with Liberty, owns it
-- Forum: Brad Stevens / Lisa Orton meeting, week of 2026-09-08. (2026-09-08)
-- Context: CX Connect appears nowhere in this record. Brad believes it monitors and manages AV installs and flags it against new Converging Technologies opportunities, then asks whether it should be integrated into WAM/ADM and whether the NOC could run it as a managed service. His own wording carries the uncertainty: "which is what CX Connect does I believe?"
-- **Three questions in a fixed order, and taking them out of order is how this becomes a commitment before it is understood:** what is it and who owns it; is the AV monitor-and-manage demand real and sized; only then, does it belong inside WAM or as its own service. The third question is currently the one being discussed and it is the one that cannot yet be answered.
-- Note the overlap worth naming early: monitor-and-manage of installed devices behind a customer firewall, sold as a managed service, is the CDA thesis. If CX Connect does that for AV, the portfolio may be about to fund the same capability twice.
-- Risk of waiting: an ownership vacuum plus live sales interest produces an ad hoc commitment against a product nobody in CSS owns.
-- Follow-up: A39.
 
 ### 2026-08-28 — WAM integration into NavWork is unscheduled
 - ID: D009
@@ -1173,7 +1162,7 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 63.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 64.*
 
 ### 2026-10-15 — Quest/Azure decommission: approve $245/hour T&M for secure data-removal validation (new, Decision Backlog)
 - ID: D037
@@ -1403,6 +1392,17 @@
 - Related: the same question in reverse sits on the Radar as the NavWork facility-data scope entry (2026-08-28).
 
 *Real decisions with no routing forum or no live date. Reviewed monthly, on demand, or automatically when evidence shows one raised in a meeting (per Q4, 2026-07-27). Not surfaced weekly.*
+
+### 2026-09-03 — CX Connect: ownership, what it actually does, and whether it belongs in the CSS portfolio
+- ID: D006
+- Status: Approaching
+- Owner: unassigned; Brad Stevens believes Ed, with Liberty, owns it
+- Forum: Brad Stevens / Lisa Orton meeting, week of 2026-09-08. (2026-09-08)
+- Context: CX Connect appears nowhere in this record. Brad believes it monitors and manages AV installs and flags it against new Converging Technologies opportunities, then asks whether it should be integrated into WAM/ADM and whether the NOC could run it as a managed service. His own wording carries the uncertainty: "which is what CX Connect does I believe?"
+- **Three questions in a fixed order, and taking them out of order is how this becomes a commitment before it is understood:** what is it and who owns it; is the AV monitor-and-manage demand real and sized; only then, does it belong inside WAM or as its own service. The third question is currently the one being discussed and it is the one that cannot yet be answered.
+- Note the overlap worth naming early: monitor-and-manage of installed devices behind a customer firewall, sold as a managed service, is the CDA thesis. If CX Connect does that for AV, the portfolio may be about to fund the same capability twice.
+- Risk of waiting: an ownership vacuum plus live sales interest produces an ad hoc commitment against a product nobody in CSS owns.
+- Follow-up: A39.
 
 ### 2026-09-03 — Unified platform: what problem is it solving, before any scope is drawn
 - ID: D005
