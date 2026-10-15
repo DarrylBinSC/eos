@@ -22,6 +22,15 @@
 
 ## Decisions Made
 
+### 2026-10-15 — EOS registers moved to one item per file; LAN web app adopted with the "Ledger" (1a) design
+- Status: Made
+- Owner: Darryl Benson
+- Context: the registers (`03` Radar/Backlog, `04`, `05`) were going stale because updating them meant opening large files and dictating changes. Darryl's diagnosis: visibility and a cheap update path, not another structural redesign (the 08-19 finding that overgrowth is a disposal-throughput problem stands).
+- Options considered: (A) parse and rewrite the existing markdown tables in place; (B) one item per file with front matter, registers become generated views; (C) a Claude artifact with its own database. A rejected for parser fragility and no per-item notes; C rejected because files must stay the source of truth and it offered no LAN access.
+- Decision / Recommended path: B. Items live in `Registers/<kind>/<ID>.md`; `04`, `05` and the Radar/Backlog sections of `03` are generated; a Python web app on Darryl's Mac serves the registers on the home network, writes edits back to the item files, regenerates, and commits to git; new items from the app arrive flagged for triage; every brief reads Darryl's changes first. Same day, after a usability and design review in Claude Design, the "Ledger" direction (1a) was adopted and deployed: triage bands by urgency, one-tap status, status and notes first in the item panel, docked panel on desktop.
+- Deferred: LAN password (`EOS_PASSWORD`); cap sweep on Watch Active (27/20) and Radar (33/20), which the app now makes visible on every open.
+- Follow-up: `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`, `2026-10-15_Registers_Migration_Report.md`, `2026-10-15_Registers_App_Design_Review/`.
+
 ### 2026-10-15 — Miro export inbox; deck rebuilds use the connector read-back
 - Status: Made
 - Owner: Darryl Benson
@@ -789,7 +798,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-15 10:13 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 12:12 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 33.*
 
