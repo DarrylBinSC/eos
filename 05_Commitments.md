@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 123 (Critical 17) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 122 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -164,7 +164,6 @@ Four registers. The delineation is the point.
 | C5 | UWM customer sign-off enabling decommission | Syed Zaidi | Awaited | Not dated | -- | 2026-10-15 | Dual-environment cost until closed |
 | C52 | Amy's UiPath intake filing for the Strev AI use cases, and the demo requested in front of "Kehr" | Amy Aguirre | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C53 | Wade Bursch's business case and PowerPoint for the Virtual Site Survey | Wade Bursch (TS; reports to Matt Powers) | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
-| C54 | Determine whether FRB's temporary server remains Wesco-owned or transfers to FRB, then route purchasing accordingly | Chad Steger / project team | Awaited | Not dated | **Critical** | 2026-09-17 | New 2026-09-17. |
 | C55 | Decide an approved path (policy exception or alternate environment) for the entroCIM RFP Intelligence Power Platform POC, currently blocked by DLP | Power Platform governance — owner unclear | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C57 | Provide Dell budgetary server pricing for FRB Cash Services through the lowest-cost procurement avenue (Rahi banner constraint) | Todd Hicks / Natalie Marquardt | Awaited | Not dated | **Critical** | 2026-09-18 | New 2026-09-18. |
 | C58 | Identify the current Cisco-side owner of the Cisco Connected Real Estate opportunity (NetBotz replacement, MDF power visibility) and tell Dave McCain that CDA is in development | Bob Caprise | Awaited | Not dated | -- | 2026-09-18 | New 2026-09-18. |
@@ -189,6 +188,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
 | 2026-10-15 | **C66 — Strev restores the SSO/token-generation outage behind the ADM to Strev production integration failures (INC5630763), with restoration confirmed in writing; Akansh Gangil's team then validates the sync** | Darryl, EOS web app, 2026-10-15 | New 2026-10-07. |
+| 2026-10-15 | **C54 — Determine whether FRB's temporary server remains Wesco-owned or transfers to FRB, then route purchasing accordingly** | Darryl, EOS web app, 2026-10-15 | New 2026-09-17. |
 | 2026-10-15 | **C49 — Replacement Strev/Revnue entitlement document — the current version superseding v2.5 (May 2026)** | Darryl, EOS web app, 2026-10-15 | New 2026-09-17. |
 | 2026-10-15 | **C46 — Confirmation of which Revnue/Strev catalog SKU each of the two UiPath submissions corresponds to, and whether Strev has represented them as generally available** | Darryl, EOS web app, 2026-10-15 | New 2026-09-15. |
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
