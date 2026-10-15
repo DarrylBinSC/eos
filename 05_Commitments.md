@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 132 (Critical 26) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 131 (Critical 25) · Needs triage 0.
 
 ---
 
@@ -66,7 +66,6 @@ Four registers. The delineation is the point.
 | B74 | Investigate IDP engineering capacity via John, Sathish, and the Bangalore AI team | Ankit Chadha | Delegated | 2026-09-02 Within one to two weeks of | -- | 2026-10-05 | New 09-09. |
 | B70 | Preserve an administrative Ford SOW copy and extend view access to Bill Rose, Lindsay Cotten, and Natalie Marquardt | Leanne Gordon | Delegated | 2026-09-14 Trigger fired — now live | -- | 2026-09-14 | New 09-09. |
 | B82 | Send a follow-up email on the outstanding Azure listener dependency if unresolved after one more day | Babu Papanna | Delegated | 2026-09-17 | -- | 2026-09-17 | New 09-16. |
-| C46 | Confirmation of which Revnue/Strev catalog SKU each of the two UiPath submissions corresponds to, and whether Strev has represented them as generally available | Amy Aguirre | Awaited | 2026-09-17 standing weekly one-on-one | **Critical** | 2026-09-17 | New 2026-09-15. |
 | C50 | Strev pricing for the Virtual Site Survey: professional services development price, and a per-site run rate | Sunny Sharma and Christina (Revnue), chased by Amy Aguirre | Awaited | 2026-09-17 Requested on or before ; not dated | -- | 2026-09-17 | New 2026-09-17. |
 | B69 | Validate the delivery team can support every item in the finalized Ford SOW scope | Chad Steger | Delegated | 2026-09-19 confirm | **Critical** | 2026-09-19 | New 09-09. |
 | C43 | Define Ford pricing-model language | Leanne Gordon | Awaited | 2026-09-19 confirm or close | -- | 2026-09-19 | New 09-09. |
@@ -198,6 +197,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
 | 2026-10-15 | **C49 — Replacement Strev/Revnue entitlement document — the current version superseding v2.5 (May 2026)** | Darryl, EOS web app, 2026-10-15 | New 2026-09-17. |
+| 2026-10-15 | **C46 — Confirmation of which Revnue/Strev catalog SKU each of the two UiPath submissions corresponds to, and whether Strev has represented them as generally available** | Darryl, EOS web app, 2026-10-15 | New 2026-09-15. |
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
 | 2026-10-15 | **C-i3-3 — i3 Alliance Agreement — Legal's answers to the five Section 12 questions, and confirmation of whether Section 12 is open in this round** | Darryl, EOS web app, 2026-10-15 | Five answers change the ask: (1) content of the Wesco Legal comment at §12.2 on prior written consent; |
 | 2026-10-15 | **B77 — Send device/network-information request for the four FRB VAVs** | Darryl, EOS web app, 2026-10-15 | "I'll get an e-mail out today." Same FRB thread as B76 — track together. |
