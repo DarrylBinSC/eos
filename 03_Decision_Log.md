@@ -800,7 +800,7 @@
 
 <!-- GENERATED 2026-10-15 14:05 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 30.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 29.*
 
 ### 2026-10-07 — WAM/ADM reduced-capacity reset: what runs, completes, stops or defers
 - ID: D001
@@ -944,23 +944,6 @@
 - Risk of waiting: four days to the gate. The unreconciled tab 2A roster (still 16.15 FTE against a 6.60 FTE plan) means B18 currently disagrees with what 2A would compute, and B17 In Scope still holds the template's own instruction text pending clarification from Darryl, David Blondel and Ron Snyder.
 - **Update 2026-10-06 (Darryl, Sean's FY27 AOP update): the question has moved from the form to the product's future.** Much of the call was spent on products that are not financially successful at Wesco, entroCIM and WAM. Sean and Darryl discussed whether entroCIM has legs to go another year like this without sales at least breaking even, through the large cuts to the team; whether Sales can move the ball in the data center space; and how Nathan Kehr can succeed. Sean asked for the data center value proposition to be articulated: entroCIM's actual ability to move the needle there, what the competition is doing, services enablement, and a challenge to our thinking. Next forum: Darryl with Sean after his PTO, week of 2026-10-19, carrying a briefing deck (`05` A58). Risk home: `04` entroCIM commercial performance row.
 - Follow-up: `Deliverables/entroCIM/2026-08-17_entroCIM_FY27_AOP_Change_Log.md`; companion WAM log; cross-reference the 2026-08-05 CSS Platforms 2027 resourcing entry, which this evidence materially informs.
-
-### 2026-08-06 — FY27 AOP: portfolio structure set at the workshop; three Darryl-owned inputs now dated 08-14 (new)
-- ID: D011
-- Status: Complete
-- Owner: Sean McCloskey / Chris Gazdic (portfolio structure); Darryl (three named inputs below)
-- Forum: Product AOP Workshop thread; backstopped by the 2026-08-07 AOP alignment meeting (A5) and the entroCIM AOP / eCIM Budget track with Tom Boss. (2026-08-07)
-> *Kept on the Radar 2026-08-19. The stale-forum-date pass flagged it, but FY27 AOP is on a fixed 08-21 date; the correct action is to re-set the forum date, not to demote the item. Forum date needs re-setting.*
-- Context (Product AOP Workshop, 2026-08-05, evidence 08-06): Supplier RFQ confirmed as its own modular AOP line item with a separate budget rather than folded into an existing initiative; Assortment confirmed standalone. AOP naming will combine "industrial quoting and project management" if project management is included (Chris Gazdic). Open inputs across the workshop — KPIs, forecasts, AI costs, resource assumptions — are targeted for **2026-08-14**, ahead of the 08-21 Planview submission (A19/A21).
-- **Three inputs are named to Darryl specifically, not the portfolio generally:**
-1. estimate AI token usage/cost for Connected Device Assurance using data from Alpee and Ankit;
-2. confirm Ascent resource levels hold for the next period and communicate the result to TJ;
-3. with Sean McCloskey, determine WAM resource quantity, allocation, and possible team ownership.
-
-Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution pattern already accepted for A19/A21 (named executive assignee, no other owner stated). Added to Register A as **A25**.
-- Information still needed: whether the CDA AI-cost estimate is meant to feed the same CDA package under date pressure in A22; who owns consolidating all three inputs into the AOP working model before 08-14.
-- Risk of waiting: 08-14 is 8 days out and sits inside an already-overloaded Register A (24 items against a 10-15 target); if these three slip, they compress directly into the 08-21 submission window with no buffer.
-- Follow-up: Register A25 (new). Cross-reference A3, A4, A19, A21, A22 — this is the same FY27 AOP initiative, not a parallel one; do not restate the underlying submission mechanics here.
 
 ### 2026-08-05 — AMI live connector: restore or stay on simulated data (new)
 - ID: D026
@@ -1187,7 +1170,7 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 62.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 63.*
 
 ### 2026-10-15 — Quest/Azure decommission: approve $245/hour T&M for secure data-removal validation (new, Decision Backlog)
 - ID: D037
@@ -1580,6 +1563,23 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Recommended path: **Approved with Section 8 declined**, unless the five floor items are met. Section 8.7, written by i3, already defines how a declined-Section-8 relationship operates, so the fallback is contractual rather than argued.
 - Risk of waiting: low on the agreement itself. The real risk is the SECO opportunity being used to compress the decision timeline before Section 8 is resolved.
 - Follow-up: gated on Legal's response (C-i3-1) and i3's answer on 8.8.
+
+### 2026-08-06 — FY27 AOP: portfolio structure set at the workshop; three Darryl-owned inputs now dated 08-14 (new)
+- ID: D011
+- Status: Complete
+- Owner: Sean McCloskey / Chris Gazdic (portfolio structure); Darryl (three named inputs below)
+- Forum: Product AOP Workshop thread; backstopped by the 2026-08-07 AOP alignment meeting (A5) and the entroCIM AOP / eCIM Budget track with Tom Boss. (2026-08-07)
+> *Kept on the Radar 2026-08-19. The stale-forum-date pass flagged it, but FY27 AOP is on a fixed 08-21 date; the correct action is to re-set the forum date, not to demote the item. Forum date needs re-setting.*
+- Context (Product AOP Workshop, 2026-08-05, evidence 08-06): Supplier RFQ confirmed as its own modular AOP line item with a separate budget rather than folded into an existing initiative; Assortment confirmed standalone. AOP naming will combine "industrial quoting and project management" if project management is included (Chris Gazdic). Open inputs across the workshop — KPIs, forecasts, AI costs, resource assumptions — are targeted for **2026-08-14**, ahead of the 08-21 Planview submission (A19/A21).
+- **Three inputs are named to Darryl specifically, not the portfolio generally:**
+1. estimate AI token usage/cost for Connected Device Assurance using data from Alpee and Ankit;
+2. confirm Ascent resource levels hold for the next period and communicate the result to TJ;
+3. with Sean McCloskey, determine WAM resource quantity, allocation, and possible team ownership.
+
+Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution pattern already accepted for A19/A21 (named executive assignee, no other owner stated). Added to Register A as **A25**.
+- Information still needed: whether the CDA AI-cost estimate is meant to feed the same CDA package under date pressure in A22; who owns consolidating all three inputs into the AOP working model before 08-14.
+- Risk of waiting: 08-14 is 8 days out and sits inside an already-overloaded Register A (24 items against a 10-15 target); if these three slip, they compress directly into the 08-21 submission window with no buffer.
+- Follow-up: Register A25 (new). Cross-reference A3, A4, A19, A21, A22 — this is the same FY27 AOP initiative, not a parallel one; do not restate the underlying submission mechanics here.
 
 ### 2026-08-05 — FY27 AOP assignee scope expanded; deadline unchanged (new)
 - ID: D013
