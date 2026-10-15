@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 15 (ceiling 15, by disposal only) · Other-Owned 136 (Critical 30) · Needs triage 0.
+**Counts at generation:** Register A 15 (ceiling 15, by disposal only) · Other-Owned 135 (Critical 29) · Needs triage 0.
 
 ---
 
@@ -71,7 +71,6 @@ Four registers. The delineation is the point.
 | C44 | Send WAM/Strev enhancement ticket numbers for bulk parent-child linking and warranty-date calculation | Violet Moyer | Awaited | 2026-09-01 After the call | -- | 2026-09-01 | New 09-09. |
 | B74 | Investigate IDP engineering capacity via John, Sathish, and the Bangalore AI team | Ankit Chadha | Delegated | 2026-09-02 Within one to two weeks of | -- | 2026-10-05 | New 09-09. |
 | B70 | Preserve an administrative Ford SOW copy and extend view access to Bill Rose, Lindsay Cotten, and Natalie Marquardt | Leanne Gordon | Delegated | 2026-09-14 Trigger fired — now live | -- | 2026-09-14 | New 09-09. |
-| B15 | Investigate Dell PC1 meters-offline condition (ticket 3046) — reopened and widened | Scott Dunn | Delegated | 2026-09-15 Consolidated equipment inventory due | **Critical** -- (restored) | 2026-09-15 | Downgraded from Critical 2026-08-25, then reopened 2026-09-15 on contradiction, not echo. |
 | B76 | Follow up on the FRB non-production environment and support need | Chad Steger | Delegated | 2026-09-15 | **Critical** | 2026-09-15 | "I'll take a look at that." Federal Reserve is a named critical-path customer account (see `04` FRB rows). |
 | B77 | Send device/network-information request for the four FRB VAVs | Chad Steger | Delegated | 2026-09-15 | **Critical** | 2026-09-15 | "I'll get an e-mail out today." Same FRB thread as B76 — track together. |
 | C49 | Replacement Strev/Revnue entitlement document — the current version superseding v2.5 (May 2026) | Christina (Revnue); Sunny Sharma | Awaited | 2026-09-15 Requested and again 2026-09-17; no date given by the vendor | **Critical** | 2026-10-07 | New 2026-09-17. |
@@ -212,6 +211,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-15 | **B65 — Prepare for and represent Wesco at the Turner/FRB Cash Services descoping review** | Darryl, EOS web app, 2026-10-15 | Sarah Monteleone: "Please read through so you are familiar." Customer-facing RFP descoping review; |
 | 2026-10-15 | **B52 — Add Disney training users at the Disney server level** | Darryl, EOS web app, 2026-10-15 | Single-person access dependency: Shawn Clark was on PTO and appeared to be the only person with server-level access. |
 | 2026-10-15 | **B36 — Disney SSO configuration correction (Okta/SAML audience-metadata mismatch)** | Darryl, EOS web app, 2026-10-15 | New customer relationship, onboarding delay |
+| 2026-10-15 | **B15 — Investigate Dell PC1 meters-offline condition (ticket 3046) — reopened and widened** | Darryl, EOS web app, 2026-10-15 | Downgraded from Critical 2026-08-25, then reopened 2026-09-15 on contradiction, not echo. |
 | 2026-10-07 | **A57 — Finish the entroCIM/CDA headcount balancing with Ron Snyder** | Darryl, chat, 2026-10-06 | Done. |
 | 2026-10-07 | **A56 — Email Emily Munk on TSS support for CDA** | Darryl, chat, 2026-10-06 | Done. |
 | 2026-10-05 | **A55 — Reconvene the WAM Zapier/API ownership reassessment meeting** | Zapier reassessment meeting transcript, 2026-10-05 | Done, and recorded in `Products/WAM/WAM.md` the same day, but never closed out here, a propagation gap caught and fixed during the 2026-10-13 reconciliation. |
