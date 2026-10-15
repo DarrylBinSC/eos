@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-15 14:10 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 14:11 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 130 (Critical 24) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 129 (Critical 23) · Needs triage 0.
 
 ---
 
@@ -68,7 +68,6 @@ Four registers. The delineation is the point.
 | B82 | Send a follow-up email on the outstanding Azure listener dependency if unresolved after one more day | Babu Papanna | Delegated | 2026-09-17 | -- | 2026-09-17 | New 09-16. |
 | C50 | Strev pricing for the Virtual Site Survey: professional services development price, and a per-site run rate | Sunny Sharma and Christina (Revnue), chased by Amy Aguirre | Awaited | 2026-09-17 Requested on or before ; not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C43 | Define Ford pricing-model language | Leanne Gordon | Awaited | 2026-09-19 confirm or close | -- | 2026-09-19 | New 09-09. |
-| B83 | Correct the conflicting release-milestone dates in `Team Update 2026 Sept 21.pptx` before the 2026-09-21 all-hands | David Blondel | Delegated | 2026-09-21 Before | **Critical** | 2026-09-21 | New 2026-09-18. |
 | B80 | Generate 25 targeted smart-building accounts, ≥2 stakeholders each, assign to Sales | Nathan Kehr / Centralized Sales (team goal — individual owner not stated) | Delegated | 2026-09-23 | -- | 2026-09-23 | Inferred attribution — email defines a team goal, no individual quoted accepting it. |
 | B91 | Update the commercialization deck with product-owner input (support ownership, service levels, onboarding, scale readiness) for WAM, entroCIM, Navigator and CDA | Sridhar Loke and product owners | Delegated | 2026-09-29 Within one week of (exact date not stated) | -- | 2026-10-06 | New 2026-10-01; |
 | B90 | Schedule a requirements-definition call with Alan, Daniel and Ramesh on the WAM/ADM complex-build capture path | Akansh Gangil | Delegated | 2026-09-30 Stated as "next week" (as of ); not yet scheduled — confirm date | -- | 2026-10-01 | New 2026-10-01 (M365 evidence, 2026-09-28 to 2026-09-30). |
@@ -199,6 +198,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-15 | **C46 — Confirmation of which Revnue/Strev catalog SKU each of the two UiPath submissions corresponds to, and whether Strev has represented them as generally available** | Darryl, EOS web app, 2026-10-15 | New 2026-09-15. |
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
 | 2026-10-15 | **C-i3-3 — i3 Alliance Agreement — Legal's answers to the five Section 12 questions, and confirmation of whether Section 12 is open in this round** | Darryl, EOS web app, 2026-10-15 | Five answers change the ask: (1) content of the Wesco Legal comment at §12.2 on prior written consent; |
+| 2026-10-15 | **B83 — Correct the conflicting release-milestone dates in `Team Update 2026 Sept 21.pptx` before the 2026-09-21 all-hands** | Darryl, EOS web app, 2026-10-15 | New 2026-09-18. |
 | 2026-10-15 | **B77 — Send device/network-information request for the four FRB VAVs** | Darryl, EOS web app, 2026-10-15 | "I'll get an e-mail out today." Same FRB thread as B76 — track together. |
 | 2026-10-15 | **B76 — Follow up on the FRB non-production environment and support need** | Darryl, EOS web app, 2026-10-15 | "I'll take a look at that." Federal Reserve is a named critical-path customer account (see `04` FRB rows). |
 | 2026-10-15 | **B69 — Validate the delivery team can support every item in the finalized Ford SOW scope** | Darryl, EOS web app, 2026-10-15 | New 09-09. |
