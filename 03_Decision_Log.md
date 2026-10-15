@@ -798,7 +798,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-15 13:07 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 13:12 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 33.*
 
@@ -870,7 +870,6 @@
 - Context: The integrated end state drawn for Dirk and Sean shows five connections into NavWork. **DJ's published roadmap through Q2 2030 covers exactly one of them, entroCIM. WAM appears in no quarter.**
 - Assessment: part of the end state Wesco is about to show executives depends on work nobody has scheduled. That is not a reason to remove it from the diagram, per Darryl 2026-08-28 (DJ is likely not thinking about WAM, and the diagram is where that becomes visible), but it is a reason to get it onto a roadmap.
 - **CDA is the opposite case and does not need scheduling.** Darryl, 2026-08-28: once the entroCIM connection to the site exists, the CDA connection is done, because CDA rides the same secure path. That turns CDA from an unscheduled dependency into a consequence of work already committed. WAM has no equivalent free ride.
-
 
 *Every entry here has a routing forum per `07_Operating_Cadence.md`. Surfaced in the weekly briefing. A decision without a forum belongs in the Backlog below, not here.*
 
@@ -953,7 +952,12 @@
 - Forum: Product AOP Workshop thread; backstopped by the 2026-08-07 AOP alignment meeting (A5) and the entroCIM AOP / eCIM Budget track with Tom Boss. (2026-08-07)
 > *Kept on the Radar 2026-08-19. The stale-forum-date pass flagged it, but FY27 AOP is on a fixed 08-21 date; the correct action is to re-set the forum date, not to demote the item. Forum date needs re-setting.*
 - Context (Product AOP Workshop, 2026-08-05, evidence 08-06): Supplier RFQ confirmed as its own modular AOP line item with a separate budget rather than folded into an existing initiative; Assortment confirmed standalone. AOP naming will combine "industrial quoting and project management" if project management is included (Chris Gazdic). Open inputs across the workshop — KPIs, forecasts, AI costs, resource assumptions — are targeted for **2026-08-14**, ahead of the 08-21 Planview submission (A19/A21).
-- **Three inputs are named to Darryl specifically, not the portfolio generally:** (1) estimate AI token usage/cost for Connected Device Assurance using data from Alpee and Ankit; (2) confirm Ascent resource levels hold for the next period and communicate the result to TJ; (3) with Sean McCloskey, determine WAM resource quantity, allocation, and possible team ownership. Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution pattern already accepted for A19/A21 (named executive assignee, no other owner stated). Added to Register A as **A25**.
+- **Three inputs are named to Darryl specifically, not the portfolio generally:**
+1. estimate AI token usage/cost for Connected Device Assurance using data from Alpee and Ankit;
+2. confirm Ascent resource levels hold for the next period and communicate the result to TJ;
+3. with Sean McCloskey, determine WAM resource quantity, allocation, and possible team ownership.
+
+Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution pattern already accepted for A19/A21 (named executive assignee, no other owner stated). Added to Register A as **A25**.
 - Information still needed: whether the CDA AI-cost estimate is meant to feed the same CDA package under date pressure in A22; who owns consolidating all three inputs into the AOP working model before 08-14.
 - Risk of waiting: 08-14 is 8 days out and sits inside an already-overloaded Register A (24 items against a 10-15 target); if these three slip, they compress directly into the 08-21 submission window with no buffer.
 - Follow-up: Register A25 (new). Cross-reference A3, A4, A19, A21, A22 — this is the same FY27 AOP initiative, not a parallel one; do not restate the underlying submission mechanics here.
@@ -1827,7 +1831,11 @@
 > *Moved from Decision Radar to Backlog 2026-08-19 at the register cap re-rank. Reason: no named forum with a confirmed date, which is the Radar's entry test. Content unchanged. Returns to the Radar the moment a forum and date exist.*
 - Added: 2026-07-14 (VAS Roadmap meeting). Updated 2026-07-15 (M365 evidence): gap **formally identified** — WMX lacks serial/MAC/complex-build capability "through at least 2028" absent action. Escalated to High on Watch List.
 - Goal (Akansh's framing): track shipped-hardware asset details — asset tag, MAC address, serial number — including parent-child/finished-goods relationships, surfaced to customer/integrator on the Strev platform; must align with overall DDP strategy.
-- Agreed decision path: (1) Akansh → Steve Leslie + Sid Sarna (WMX solution architect, Dir. Enterprise Applications): does WMX capture serial/MAC for complex builds? process + gap understanding; (2) bring in Alan for detail/opinion; (3) GPO buy-in for roadmap — now routes through John Barlolotti; (4) user buy-in (Troy Doyle) — Sudhi: users are the strongest lever but establish limitations first.
+- Agreed decision path:
+1. Akansh → Steve Leslie + Sid Sarna (WMX solution architect, Dir. Enterprise Applications): does WMX capture serial/MAC for complex builds? process + gap understanding;
+2. bring in Alan for detail/opinion;
+3. GPO buy-in for roadmap — now routes through John Barlolotti;
+4. user buy-in (Troy Doyle) — Sudhi: users are the strongest lever but establish limitations first.
 - **Update 07-17 (Darryl): follow-up on WMX scheduled Wednesday (2026-07-22) with Sid Sarna and Steve Leslie.** Target: decision path complete by end of July.
 - Library lesson applies: validate source-data fitness before funding integration.
 
