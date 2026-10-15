@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 133 (Critical 27) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 132 (Critical 26) · Needs triage 0.
 
 ---
 
@@ -88,7 +88,6 @@ Four registers. The delineation is the point.
 | B92 | Share the WAM/ADM data points already known to be required with the cross-SBU VAS/WMX/ADM/Strev working team | Akansh Gangil | Delegated | 2026-10-16 Ahead of the use-case deadline (not individually dated) | -- | 2026-10-01 | New 2026-10-01 (M365 evidence, 09-30 to 10-01). |
 | C63 | Outcome of Sean McCloskey's meeting with Akash Khurana on Digital Products taking over WAM development (the WAM team is still with Merwin's Platforms team) | Sean McCloskey | Awaited | 2026-10-19 After Sean's PTO; Darryl has no time with him before the week of | -- | 2026-10-14 | New 2026-10-06. |
 | B105 | Provide Ron Snyder guidance on tracking Claude Code usage | Naveen Kumar, coordinated by Ankit Chadha | Delegated | 2026-10-20 ~ (approximately one week; no ISO date stated) | -- | 2026-10-14 | New 2026-10-14. |
-| C49 | Replacement Strev/Revnue entitlement document — the current version superseding v2.5 (May 2026) | Christina (Revnue); Sunny Sharma | Awaited | 2026-10-23 Requested and again 2026-09-17; no date given by the vendor | **Critical** | 2026-10-15 | New 2026-09-17. |
 | B99 | Check whether reciprocal Wesco/manufacturer part-number completion can fit the current WAM Data Enrichment iteration | Akansh Gangil | Delegated | 2026-10-30 Before the enrichment target, if feasible | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
 | B10 | MDM attribute progress follow-up | Akansh Gangil | Delegated | IDP/WAM process review | -- | 2026-10-15 |  |
@@ -198,6 +197,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-10-15 | **C49 — Replacement Strev/Revnue entitlement document — the current version superseding v2.5 (May 2026)** | Darryl, EOS web app, 2026-10-15 | New 2026-09-17. |
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
 | 2026-10-15 | **C-i3-3 — i3 Alliance Agreement — Legal's answers to the five Section 12 questions, and confirmation of whether Section 12 is open in this round** | Darryl, EOS web app, 2026-10-15 | Five answers change the ask: (1) content of the Wesco Legal comment at §12.2 on prior written consent; |
 | 2026-10-15 | **B77 — Send device/network-information request for the four FRB VAVs** | Darryl, EOS web app, 2026-10-15 | "I'll get an e-mail out today." Same FRB thread as B76 — track together. |
