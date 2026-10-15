@@ -800,7 +800,7 @@
 
 <!-- GENERATED 2026-10-15 14:05 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 31.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 30.*
 
 ### 2026-10-07 — WAM/ADM reduced-capacity reset: what runs, completes, stops or defers
 - ID: D001
@@ -998,19 +998,6 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Risk of waiting: the FY27 case is written on a roadmap the market is not currently buying, and the gap is discovered at review rather than declared by Darryl.
 - Follow-up: cross-reference `Products/WAM/WAM.md` framing correction (08-05) and `Products/WAM/WAM_Roadmap.md`, which is the license-track roadmap rather than the complete WAM plan.
 
-### 2026-08-05 — FY27 AOP assignee scope expanded; deadline unchanged (new)
-- ID: D013
-- Status: Approaching — decision required on scope, not on whether to submit
-- Owner: John Erickson (scope), Darryl (execution)
-- Forum: direct with John Erickson; natural venue is the A3 working session (overdue since 08-03). The 2026-08-07 AOP alignment meeting with Lisa Orton, Brad Stevens, and Gregg O'Brien is the backstop. (2026-08-07)
-> *Kept on the Radar 2026-08-19. The stale-forum-date pass flagged it, but FY27 AOP is on a fixed 08-21 date; the correct action is to re-set the forum date, not to demote the item. Forum date needs re-setting.*
-- Context: the 08-05 FY27 AOP email lists Darryl as executive assignee for **Ascent/Navigator, entroCIM, and WAM, with Connected Safety and a new product under discussion**. Submissions due on or before **2026-08-21**. Register A19 had been written on 08-03 for entroCIM and WAM only. Separately, Erickson asked the named assignees to update PO capacity expectations from `product-team_capacity.xlsx` (Register A21).
-- **Fact vs. inference.** Fact: the assignee list and the 08-21 date are stated in the evidence. Inference, not confirmed: that the "new product under discussion" is CDA. If it is, CDA's AOP input date moves from 2026-08-31 (Darryl's date, 07-23) to 08-21, compressing the CDA backward plan by ten days and pushing the package date inside the concept-freeze window.
-- Options: submit against three named products only; submit against all five; seek an extension for the conditional products.
-- Information still needed: which products carry a required submission, whether the two "under discussion" products are in or out, and whether 08-21 applies uniformly across them.
-- Risk of waiting: Darryl builds two business cases and discovers in week two that he owes five. The failure mode is weak cases on late-started products, not a missed date.
-- Follow-up: registers A19 (rewritten), A21 (new), A22 (new, CDA package). Five meetings dated 08-04 produced no transcript, four of them AOP or portfolio relevant (AOP 2027, Connect on AOP - Darryl, eCIM Budget, Digital Transformation Discussion), so any scope clarification reached verbally on 08-04 is not in the record. Barbara Serdeczna appears against both the WAM and entroCIM AOP demand-collation templates and may be the faster route to the scope and deadline answers than waiting on Erickson.
-
 ### 2026-07-27 — AI-enabled development pilot approved — Copilot + Claude Design, Orlando workshop
 - ID: D035
 - Owner: Sean McCloskey (direction), Digital Products leadership (execution)
@@ -1200,7 +1187,7 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 61.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 62.*
 
 ### 2026-10-15 — Quest/Azure decommission: approve $245/hour T&M for secure data-removal validation (new, Decision Backlog)
 - ID: D037
@@ -1593,6 +1580,19 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Recommended path: **Approved with Section 8 declined**, unless the five floor items are met. Section 8.7, written by i3, already defines how a declined-Section-8 relationship operates, so the fallback is contractual rather than argued.
 - Risk of waiting: low on the agreement itself. The real risk is the SECO opportunity being used to compress the decision timeline before Section 8 is resolved.
 - Follow-up: gated on Legal's response (C-i3-1) and i3's answer on 8.8.
+
+### 2026-08-05 — FY27 AOP assignee scope expanded; deadline unchanged (new)
+- ID: D013
+- Status: Approaching — decision required on scope, not on whether to submit
+- Owner: John Erickson (scope), Darryl (execution)
+- Forum: direct with John Erickson; natural venue is the A3 working session (overdue since 08-03). The 2026-08-07 AOP alignment meeting with Lisa Orton, Brad Stevens, and Gregg O'Brien is the backstop. (2026-08-07)
+> *Kept on the Radar 2026-08-19. The stale-forum-date pass flagged it, but FY27 AOP is on a fixed 08-21 date; the correct action is to re-set the forum date, not to demote the item. Forum date needs re-setting.*
+- Context: the 08-05 FY27 AOP email lists Darryl as executive assignee for **Ascent/Navigator, entroCIM, and WAM, with Connected Safety and a new product under discussion**. Submissions due on or before **2026-08-21**. Register A19 had been written on 08-03 for entroCIM and WAM only. Separately, Erickson asked the named assignees to update PO capacity expectations from `product-team_capacity.xlsx` (Register A21).
+- **Fact vs. inference.** Fact: the assignee list and the 08-21 date are stated in the evidence. Inference, not confirmed: that the "new product under discussion" is CDA. If it is, CDA's AOP input date moves from 2026-08-31 (Darryl's date, 07-23) to 08-21, compressing the CDA backward plan by ten days and pushing the package date inside the concept-freeze window.
+- Options: submit against three named products only; submit against all five; seek an extension for the conditional products.
+- Information still needed: which products carry a required submission, whether the two "under discussion" products are in or out, and whether 08-21 applies uniformly across them.
+- Risk of waiting: Darryl builds two business cases and discovers in week two that he owes five. The failure mode is weak cases on late-started products, not a missed date.
+- Follow-up: registers A19 (rewritten), A21 (new), A22 (new, CDA package). Five meetings dated 08-04 produced no transcript, four of them AOP or portfolio relevant (AOP 2027, Connect on AOP - Darryl, eCIM Budget, Digital Transformation Discussion), so any scope clarification reached verbally on 08-04 is not in the record. Barbara Serdeczna appears against both the WAM and entroCIM AOP demand-collation templates and may be the faster route to the scope and deadline answers than waiting on Erickson.
 
 ### 2026-08-05 — CSS Platforms 2027 resourcing: Deployment and Development headcount reduction request (new)
 - ID: D012
