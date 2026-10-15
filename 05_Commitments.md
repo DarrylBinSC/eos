@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 126 (Critical 20) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 125 (Critical 19) · Needs triage 0.
 
 ---
 
@@ -105,7 +105,6 @@ Four registers. The delineation is the point.
 | B31 | LAD task assignments from the 08-04 deployment meeting | Syed Zaidi | Delegated | Dated closeout plan by owner and blocker | **Critical** | 2026-10-15 | Escalated LAD row in `04` |
 | B32 | Identify missing AQI and people-counting sensor data; integrate once fixed | Marjan Fathima / Valli Poornakumar; Adam Slingerland / Pradyumna Umarji | Delegated | LAD snag-list review | -- | 2026-10-15 | Route identified 08-04, integration not complete |
 | B33 | Reconcile a single authoritative entroCIM project-closeout package | Adam Lazare (with Mike Reed) | Delegated | Rescheduled closeout review | -- | 2026-10-15 | Prior documents "could be looked at two different ways" |
-| B37 | Dell Non-DC HQ dashboard / power-consumption gap — give Robby Tefft a timeline | Scott Dunn | Delegated | Timeline stated to the customer | **Critical** | 2026-08-07 | Was A2; |
 | B38 | Investigate Freshdesk custom-mailbox (support.ec@wesco.com) send failure | Shawn Clark, Babu Papanna | Delegated | Reply to Darryl | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: the corresponding watch row was demoted to Passive on 08-25 after 18 days absent from the evidence. |
 | B4 | Ascent POC — get it running | Chad Steger (technical POC), Chris Askew (JACE access) | Delegated | Gate passed 08-15; superseded by direct evidence | -- | 2026-09-18 | Advanced, 09-15 to 09-28 evidence. |
 | B40 | Investigate automating manual sales-order extraction | Akansh Gangil | Delegated | Not dated | -- | 2026-10-15 | New 08-12. |
@@ -204,6 +203,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-15 | **B69 — Validate the delivery team can support every item in the finalized Ford SOW scope** | Darryl, EOS web app, 2026-10-15 | New 09-09. |
 | 2026-10-15 | **B65 — Prepare for and represent Wesco at the Turner/FRB Cash Services descoping review** | Darryl, EOS web app, 2026-10-15 | Sarah Monteleone: "Please read through so you are familiar." Customer-facing RFP descoping review; |
 | 2026-10-15 | **B52 — Add Disney training users at the Disney server level** | Darryl, EOS web app, 2026-10-15 | Single-person access dependency: Shawn Clark was on PTO and appeared to be the only person with server-level access. |
+| 2026-10-15 | **B37 — Dell Non-DC HQ dashboard / power-consumption gap — give Robby Tefft a timeline** | Darryl, EOS web app, 2026-10-15 | Was A2; |
 | 2026-10-15 | **B36 — Disney SSO configuration correction (Okta/SAML audience-metadata mismatch)** | Darryl, EOS web app, 2026-10-15 | New customer relationship, onboarding delay |
 | 2026-10-15 | **B15 — Investigate Dell PC1 meters-offline condition (ticket 3046) — reopened and widened** | Darryl, EOS web app, 2026-10-15 | Downgraded from Critical 2026-08-25, then reopened 2026-09-15 on contradiction, not echo. |
 | 2026-10-15 | **A66 — Set up the CDA follow-up with Matt Powers and Cody Remington** | Darryl, EOS web app, 2026-10-15 | ## Next step Business review of the services with TS: delivery model, failed-device replacement and dispatch through the integrator on the account, and how TS is changing its model. |
