@@ -800,7 +800,7 @@
 
 <!-- GENERATED 2026-10-15 14:05 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 29.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 28.*
 
 ### 2026-10-07 — WAM/ADM reduced-capacity reset: what runs, completes, stops or defers
 - ID: D001
@@ -851,16 +851,6 @@
 - Note the overlap worth naming early: monitor-and-manage of installed devices behind a customer firewall, sold as a managed service, is the CDA thesis. If CX Connect does that for AV, the portfolio may be about to fund the same capability twice.
 - Risk of waiting: an ownership vacuum plus live sales interest produces an ad hoc commitment against a product nobody in CSS owns.
 - Follow-up: A39.
-
-### 2026-09-03 — Unified platform: what problem is it solving, before any scope is drawn
-- ID: D005
-- Status: Approaching
-- Owner: Brad Stevens raising; Darryl Benson and Lisa Orton to shape
-- Forum: Brad Stevens / Lisa Orton meeting, week of 2026-09-08. (2026-09-08)
-- Context: Brad is pushing a holistic platform ("Innovance / Storefront / Wesco Connect") where all Wesco software products reside and work together. His list of what is being commercialized: entroCIM, WAM, "AMD" (read: ADM, which is a WAM component, not a peer), Connected Safety, CX Connect, Navigator. CDA is absent from the list.
-- **The decision that has to be made first is not what to build. It is which of four different things "unified platform" means**, because they carry different costs, owners and timelines: (a) one commercial front door and brand for the portfolio; (b) one customer experience, single sign-on and navigation across products; (c) one shared data and services layer the products draw on; (d) one merged product. Brad's own framing ("dreaming I know") suggests he has not fixed on one either.
-- Risk of waiting: a scope debate opens before the objective is agreed, the answer defaults to (d) because that is what "unified platform" sounds like, and Navigator, which is funded by a dated IBM forcing function and operated by Ascent, gets pulled into a program it cannot join before June 2027.
-- Follow-up: A38. Detail: `Products/Unified_Platform/Unified_Platform.md`.
 
 ### 2026-08-28 — WAM integration into NavWork is unscheduled
 - ID: D009
@@ -1170,7 +1160,7 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 63.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 64.*
 
 ### 2026-10-15 — Quest/Azure decommission: approve $245/hour T&M for secure data-removal validation (new, Decision Backlog)
 - ID: D037
@@ -1400,6 +1390,16 @@
 - Related: the same question in reverse sits on the Radar as the NavWork facility-data scope entry (2026-08-28).
 
 *Real decisions with no routing forum or no live date. Reviewed monthly, on demand, or automatically when evidence shows one raised in a meeting (per Q4, 2026-07-27). Not surfaced weekly.*
+
+### 2026-09-03 — Unified platform: what problem is it solving, before any scope is drawn
+- ID: D005
+- Status: Approaching
+- Owner: Brad Stevens raising; Darryl Benson and Lisa Orton to shape
+- Forum: Brad Stevens / Lisa Orton meeting, week of 2026-09-08. (2026-09-08)
+- Context: Brad is pushing a holistic platform ("Innovance / Storefront / Wesco Connect") where all Wesco software products reside and work together. His list of what is being commercialized: entroCIM, WAM, "AMD" (read: ADM, which is a WAM component, not a peer), Connected Safety, CX Connect, Navigator. CDA is absent from the list.
+- **The decision that has to be made first is not what to build. It is which of four different things "unified platform" means**, because they carry different costs, owners and timelines: (a) one commercial front door and brand for the portfolio; (b) one customer experience, single sign-on and navigation across products; (c) one shared data and services layer the products draw on; (d) one merged product. Brad's own framing ("dreaming I know") suggests he has not fixed on one either.
+- Risk of waiting: a scope debate opens before the objective is agreed, the answer defaults to (d) because that is what "unified platform" sounds like, and Navigator, which is funded by a dated IBM forcing function and operated by Ascent, gets pulled into a program it cannot join before June 2027.
+- Follow-up: A38. Detail: `Products/Unified_Platform/Unified_Platform.md`.
 
 ### 2026-09-01 — Standard commercial support/SLA structure for entroCIM renewals and managed services (new)
 - ID: D062
