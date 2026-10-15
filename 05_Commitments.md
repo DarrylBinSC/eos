@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 134 (Critical 28) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 133 (Critical 27) · Needs triage 0.
 
 ---
 
@@ -65,7 +65,6 @@ Four registers. The delineation is the point.
 | C44 | Send WAM/Strev enhancement ticket numbers for bulk parent-child linking and warranty-date calculation | Violet Moyer | Awaited | 2026-09-01 After the call | -- | 2026-09-01 | New 09-09. |
 | B74 | Investigate IDP engineering capacity via John, Sathish, and the Bangalore AI team | Ankit Chadha | Delegated | 2026-09-02 Within one to two weeks of | -- | 2026-10-05 | New 09-09. |
 | B70 | Preserve an administrative Ford SOW copy and extend view access to Bill Rose, Lindsay Cotten, and Natalie Marquardt | Leanne Gordon | Delegated | 2026-09-14 Trigger fired — now live | -- | 2026-09-14 | New 09-09. |
-| B77 | Send device/network-information request for the four FRB VAVs | Chad Steger | Delegated | 2026-09-15 | **Critical** | 2026-09-15 | "I'll get an e-mail out today." Same FRB thread as B76 — track together. |
 | C49 | Replacement Strev/Revnue entitlement document — the current version superseding v2.5 (May 2026) | Christina (Revnue); Sunny Sharma | Awaited | 2026-09-15 Requested and again 2026-09-17; no date given by the vendor | **Critical** | 2026-10-07 | New 2026-09-17. |
 | B82 | Send a follow-up email on the outstanding Azure listener dependency if unresolved after one more day | Babu Papanna | Delegated | 2026-09-17 | -- | 2026-09-17 | New 09-16. |
 | C46 | Confirmation of which Revnue/Strev catalog SKU each of the two UiPath submissions corresponds to, and whether Strev has represented them as generally available | Amy Aguirre | Awaited | 2026-09-17 standing weekly one-on-one | **Critical** | 2026-09-17 | New 2026-09-15. |
@@ -201,6 +200,7 @@ Removed from the commitment system. No completion state, so counting them perman
 |---|---|---|---|
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
 | 2026-10-15 | **C-i3-3 — i3 Alliance Agreement — Legal's answers to the five Section 12 questions, and confirmation of whether Section 12 is open in this round** | Darryl, EOS web app, 2026-10-15 | Five answers change the ask: (1) content of the Wesco Legal comment at §12.2 on prior written consent; |
+| 2026-10-15 | **B77 — Send device/network-information request for the four FRB VAVs** | Darryl, EOS web app, 2026-10-15 | "I'll get an e-mail out today." Same FRB thread as B76 — track together. |
 | 2026-10-15 | **B76 — Follow up on the FRB non-production environment and support need** | Darryl, EOS web app, 2026-10-15 | "I'll take a look at that." Federal Reserve is a named critical-path customer account (see `04` FRB rows). |
 | 2026-10-15 | **B65 — Prepare for and represent Wesco at the Turner/FRB Cash Services descoping review** | Darryl, EOS web app, 2026-10-15 | Sarah Monteleone: "Please read through so you are familiar." Customer-facing RFP descoping review; |
 | 2026-10-15 | **B52 — Add Disney training users at the Disney server level** | Darryl, EOS web app, 2026-10-15 | Single-person access dependency: Shawn Clark was on PTO and appeared to be the only person with server-level access. |
