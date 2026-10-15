@@ -1,0 +1,42 @@
+%%{init: {"theme":"base","themeVariables":{"primaryColor":"#f7f7f7","primaryBorderColor":"#9aa0a6","primaryTextColor":"#222222","lineColor":"#555555","clusterBkg":"#ffffff","clusterBorder":"#b8b8b8","tertiaryColor":"#ffffff"},"flowchart":{"diagramPadding":30,"nodeSpacing":60,"rankSpacing":70,"curve":"linear"}}}%%
+flowchart LR
+    subgraph customerSite["Customer Site"]
+        devices["Covered Devices<br/>Cameras, Access Control, Network"]:::site
+        serviceNode["Containerized Service Node<br/>Small PC or Customer Server"]:::network
+        sensor["Partner Sensor<br/>Endpoint and OT Discovery"]:::external
+        baseTool["Wesco Device Assurance, Base<br/>entroCIM: Health, Alerting, Evidence"]:::app
+        advTool["Wesco Configuration Assurance, Advanced<br/>entroCIM: Firmware and Lifecycle"]:::app
+        navFuture["Navigator Components<br/>Future: Field Service Integration"]:::future
+        airwallEdge["Airwall"]:::secure
+    end
+
+    subgraph wesco["Wesco"]
+        control["Service Delivery and Control<br/>Operators, Approvals, Evidence"]:::cloud
+        wam["WAM<br/>Lifecycle and Refresh Signals"]:::data
+        navigator["Navigator<br/>Field Work Orders, 2027 Integrations"]:::external
+    end
+
+    serviceNode --- sensor
+    serviceNode --- baseTool
+    serviceNode --- advTool
+    serviceNode -.- navFuture
+
+    devices -->|Endpoint and network activity| sensor
+    sensor -->|Discovered assets and versions<br/>API| baseTool
+    baseTool -.->|Device integration<br/>where completed| devices
+    advTool -->|Validated versions and<br/>controlled updates| devices
+    control -->|Manage remote devices over<br/>secure Airwall link| airwallEdge
+    airwallEdge -->|Scoped access| baseTool
+    control -->|Arcbeam clustering:<br/>run entroCIM devices from Wesco cloud| serviceNode
+    baseTool -->|Alerts, evidence, escalation| control
+    control -->|Refresh and failure signals| wam
+    control -->|Field work packages| navigator
+
+    classDef site fill:#eef6ff,stroke:#4b83c4,stroke-width:1px;
+    classDef network fill:#f2f2f2,stroke:#777,stroke-width:1px;
+    classDef secure fill:#fff4e5,stroke:#c47f00,stroke-width:1px;
+    classDef cloud fill:#f1f5ff,stroke:#5b6ee1,stroke-width:1px;
+    classDef app fill:#f4f7f2,stroke:#6a8f4e,stroke-width:1px;
+    classDef data fill:#f7f1fb,stroke:#8a63a8,stroke-width:1px;
+    classDef external fill:#f7f7f7,stroke:#777,stroke-width:1px;
+    classDef future fill:#ffffff,stroke:#999,stroke-dasharray: 5 5;

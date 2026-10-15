@@ -1,0 +1,23 @@
+.DS_Store
+**/.DS_Store
+~$*
+*.docx
+*.dotx
+*.pptx
+*.xlsx
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.zip
+*.log
+*.diff
+Pandoc/output/
+Pandoc/processed/
+Pandoc/samples/
+Pandoc/miro_exports/
+Pandoc/inbox/
+Dashboard/
+Claude outputs/

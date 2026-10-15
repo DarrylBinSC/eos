@@ -1,0 +1,481 @@
+# Wesco Asset Management (WAM)
+As of: 2026-10-14 (ADM constraints slide and capacity reset inputs filed; prior: 2026-10-13 ADM license tracking scorecard; 2026-10-07; earlier: 2026-08-17 FY27 P&L section added; base 2026-08-05) — merged: 30-day baseline + daily evidence + context library v1 (files 20/22) + WAM actuals deck (07-15) + WAM Backlog Deep Dive deck (08-05). Companions: `WAM_Data_Architecture.md`, `Part_Classification.md`, `WAM_Roadmap.md` (**rewritten 08-05 from the Backlog Deep Dive deck; the July track-based slide is preserved inside it as the prior version**).
+
+## Asset functionality for Managed Services: phased delivery plan (Nitin Pandey, added 2026-10-14; corrected from the full thread 2026-10-14)
+
+Source: full email thread `Re: Introducing new functionality for managed services - ADM/WAM`, 2026-09-04 to 2026-10-14 (PDF provided by Darryl 2026-10-14; filed `Products/WAM/2026-10-14_Nitin_Pandey_ADM_WAM_Delivery_Thread.pdf`). The earlier entry read the 10-14 email in isolation and called the plan "managed-services functionality" with unknown contents. **The phased plan is the asset functionality for Managed Services: asset upload by user and the Asset Grid in ADM.**
+
+- **09-04 (Akansh):** WAM Data Enrichment introduced as new functionality requested by Senthil and the Managed Services team to improve their turnaround uploading data to Strev (Jira WS-8166, stories from sprint 6). Plan then: orders beyond configured supplier ID 11-10; asset upload by user 10-08; Asset Grid 12-08; historical data by customer or supplier ID 2027-02-03. Asset upload and Asset Grid held until Data Enrichment completes.
+- **10-06 (Akansh):** asks the team to confirm Asset Grid 12-10, Data Enrichment 10-30, orders beyond supplier ID 11-10; needs it for the business and portfolio leadership deck.
+- **10-08 (Nitin):** Data Enrichment 10-30 and orders beyond configured supplier ID 11-10 on track. Asset Grid needs re-estimation (priorities realigned to accelerate Data Enrichment; UAT regression, stage readiness and an urgent notification enhancement consumed capacity). Recommends not communicating 12-10; firm timeline by 10-14.
+- **10-14 (Nitin):** phased delivery: first production release 2027-01-04 to 01-08 with all core capabilities and foundational features; final release 2027-02-10 to 02-12 with the remaining scope and enhancements. Feature breakdown in the attached `Estimation for WAM.xlsx` (not in the PDF; Darryl has it). Regular sprint reviews continue. Timelines assume current priorities and scope; significant changes move them.
+- **Feature breakdown (Nitin's `Estimation for WAM.xlsx`, filed `Products/WAM/2026-10-14_Nitin_Pandey_Estimation_for_WAM.xlsx`, sprint grid Q3 Sprint 3 to Q1 Sprint 3, 2027-02-16).** Four epics: **WS-7679 orders beyond the configured supplier ID** (through Q4 Sprint 3, 11-10; includes cancelled-order handling, supplier master data grid, vendor part mapping); **WS-7674 asset upload by template** (template in blob storage, upload, grid, audit, status file; through Q4 Sprint 2 to 3, i.e. October to November); **WS-7676 Asset Grid**: phase 1 (prod release 4 to 8 January) captures SO and PO of assets from EUDM, warranty and coverage, WMX data integration (serial numbers; "WMX is getting refreshed after 6 hours of EUDM," to discuss with Akansh), asset grid with filters, search (Wesco SO, supplier and Wesco part numbers, serial numbers), export, dashboard, Strev changes for new suppliers; phase 2 (release 10 to 12 February) end-user verification and defaults, unverified-end-user filters, 30/60/90-day expiry chips, audit and edit, status schedulers, end-to-end regression; **WS-7680 historical data extraction** by customer or supplier ID (ADB fetch job from DDP, xlsx to blob, notifications, audit) runs through Q1 Sprint 3 (2027-02-16) in the sheet. **Conflict:** Akansh withdrew the Q1 2027 historical-data target on 10-14; the sheet still schedules it. Confirm which is current before anyone quotes a date. Furlough 2026-12-21 to 2027-01-03. WAM Data Enrichment (WS-8166) is not in this sheet.
+- **Reading:** these are the delivery team's estimates to the product owner, not executive-facing commitments. Historical data (02-03-2027 in the 09-04 plan) was withdrawn by Akansh on 10-14 with no replacement date. On the Sean deck the phases appear as "January" and "February" targets, held until the roadmap reconciliation (`Deliverables/Exec_Briefs/2026-10-14_Sean_Portfolio_Deck_v8.pptx`, WAM roadmap slide).
+
+## Roadmap reconciled with the constraints (added 2026-10-14)
+
+Every roadmap item past what is live today depends on at least one of Akansh's six constraints, and none is resolved by the WAM team. Mapping, exposure of the January Asset Grid release (durations, WMX serial numbers), the missing ask on durations, and the reconciliation test for the week of 10-19: `Deliverables/WAM/2026-10-14_WAM_Roadmap_Constraint_Reconciliation.md`. Backup slide in the Sean deck v10. Roadmap items with an external data dependency carry an amber diamond on the WAM roadmap slide (Darryl: the dependency affects adoption and scale, not only execution).
+
+## Sean update review pass, 2026-10-14 (Darryl direct)
+
+- **Strev production API outage resolved** (Darryl, 2026-10-14). No dependent workflow for Amy Aguirre's team; the ADM team needs the Strev integration running to deliver value. Not a Sean-level item. `04` row retired.
+- **Capacity wording for Sean (Darryl, 2026-10-14): "Development capacity reduced from 2026 to 2027," from the AOP results communicated to Darryl. Do not use "India team cut in half" in outbound material.**
+- **Staffing numbers held back from Sean** until Akansh's stream figures reconcile (stream Run 6 vs run team 8; run team plus all Complete would be 16 vs 15 today). Sean material carries resource types only: Azure Databricks data engineers (EUDM), APIM integration (Strev), backend, front end, QA.
+- **WAM roadmap reconciliation next week** (Darryl, Akansh Gangil, David Blondel): keep the team on features that are scalable and valuable; produce one staffing basis per option and the ordered Complete list.
+- **Renewal-order flagging: start with Dan Totino** (Darryl). Settles the "Dan" reading in the renewal-attribution entry below as Daniel Totino.
+- **Serial/MAC capture:** cross-SBU meeting 2026-10-15, Alan Martin leading with other GPOs.
+- **Constraints slide updated by Akansh (2026-10-14, image pasted by Darryl):** same six constraints, now with use case and impact, owner and status per ask. Owners: EUDM/AMS (trimmed part numbers), UDM (null shipping and country data), supplier relationship team (durations, via Jarod), WMX/VAS GPOs (serial/MAC), VAS (parent-child), Dan / DDP GPOs (renewal flag). Status: four in analysis or to coordinate, two not started. Still no target dates. Rebuilt as the backup slide in `Deliverables/Exec_Briefs/2026-10-14_Sean_Portfolio_Deck.pptx`.
+- **Recommendation of record for the Sean meeting: Run plus DDP** (Darryl, 2026-10-14). Sean ask reframed to the status of Digital Products taking over WAM development (`05` C63).
+
+## WAM/ADM capacity reset inputs, Akansh Gangil (Teams, week of 2026-10-07; filed 2026-10-14)
+
+Source: Akansh Gangil's written answers to Darryl's reset questions (Teams, prior week), pasted by Darryl 2026-10-14. Akansh asked that the asset-sync point below be put to Sean as part of resetting the story and expectations. Darryl's framing, 2026-10-14: **the integration tools define the people the team needs going forward** (ADM to EUDM on Azure Databricks; ADM to Strev on APIM; confirmed 2026-10-05).
+
+**Team composition today (Durable, Akansh's approximate count):** 15 members: 6 backend, 2 data engineers, 2 front end, 5 QA. AOP draft basis was 19.
+
+**Minimum run team (Durable): 8, keeping license sync, notifications and production support working:** 2 data engineers (must have), 3 backend, 1 UI, 2 QA. Matches the 10-07 record.
+
+**Run and Complete by stream (Akansh):**
+
+| Stream | Run | Complete |
+|---|---|---|
+| DDP | 2 | 3 |
+| Product development | 3 | 3 |
+| Strev integration | 1 | 2 |
+| Total | 6 | 8 |
+
+**Reconciliation needed before Sean:** the stream Run figures sum to 6, against an 8-person minimum run team; Run plus Complete sums to 14, against 15 today. Likely shared roles (QA), not confirmed. Asked of Akansh in the 2026-10-14 Teams draft.
+
+**ADB coverage (Durable):** a minimum of 3 Azure Databricks people is needed to make progress on DDP work; most EUDM integration work is ADB. Two support it today, and the 8-person run team carries 2. The run model therefore holds DDP at below the level Akansh says is needed to advance it.
+
+**Priority order of Complete items (question 3): not answered.** Akansh: "we can achieve with half the team but timelines will be extended by a great margin." No ordered list of what fits at the 8-person level or what stops or slips. Asked again 2026-10-14.
+
+**Slide confirmations (questions 6 and 7):** Run items and owners on slide 2 confirmed, including "pipeline operations and monitoring" for DDP and **Sales Operations as owner for identifying renewals**. Priorities on the slides confirmed correct. **The Q1 2027 target for historical data is withdrawn** (remove from the slides); no replacement date.
+
+**Renewal attribution (Durable).** Nothing in DDP marks an order as a renewal. Akansh's answer: a to-be process with the DDP GPOs (Dan, read as Daniel Totino, GPO, and team; unconfirmed) so a flag is set in "USD/DDP" when a sales rep opens a renewal sales order, since the rep knows at that point. Without it the loop cannot close. Today Natalie Marquardt marks renewals manually in ADM, which Akansh says is humanly impossible at the data volume. "USD" still unconfirmed as a system name.
+
+**Asset sync to Strev, the message Akansh asked to put to Sean (Durable).** Asset data can sync from ADM to Strev only when all required data points already exist in Wesco systems (IAP, EUDM, WMX and others). Today many asset opportunities managed by Amy Aguirre's team rely on manual Excel files created by warehouse and supply chain teams (sales order, serial number, MAC ID, other asset detail). Managed Services uploads them into Strev through Zapier or the Strev import. Because that data is not in Wesco enterprise systems, ADM cannot retrieve it or send it to Strev by API. Current focus: help Managed Services automate preparing those upload files. Long-term goal: capture and maintain the data points in Wesco systems, after which ADM can pick them up and sync automatically. Restates the 2026-10-07 structural boundary in this file, now framed for Sean.
+
+Reflected in: `03` reset Radar item; `04` WAM/ADM row; `05` A61, B100; `06` Akansh Gangil, Natalie Marquardt (renewal marking); Sean update draft `Deliverables/Exec_Briefs/2026-10-14_Sean_Update.md`.
+
+## ADM constraints and required asks, Akansh Gangil, October 2026 (added 2026-10-14)
+
+Source: slide image from Akansh Gangil (ADM Product Owner), filed by Darryl 2026-10-14 as `Products/WAM/2026-10-14_ADM_Constraints_Akansh_Gangil.png`. Untitled, undated three-column table (Constraint / Problem, Active Mitigation, Required Ask / Next Step). Reported by the product owner; not independently verified. Very likely the WAM-limitations slide owed under `05` B100; Akansh to confirm. (B100's other half, integration architecture, was met 2026-10-05: ADB to EUDM, APIM to Strev.)
+
+| # | Constraint (as stated) | Active mitigation (as stated) | Required ask (as stated) | Existing record | Where the ask sits |
+|---|---|---|---|---|---|
+| 1 | Trimmed part numbers in EUDM | Investigating drop logic with EUDM/AMS teams | "Upstream EUDM enhancement possible?" (in red, phrased as a question) | `04` WAM/ADM row since 2026-08-25; `05` A29, B53, B20, B49; INC5657882 (Smitha Sheshadri path, 10-05) | EUDM / Cloud Data Office. No committed owner |
+| 2 | Null WAM enrichment shipping data | Evaluating "max ship date" as a temporary fallback | UDM/EUDM root cause resolution | New as a named constraint. Bears on the shipping/pricing enrichment feature estimated for production 2026-10-30 | UDM/EUDM. No owner named |
+| 3 | Missing License/Asset flag, plus renewal and warranty durations | Validating Core software list with Natalie Marquardt | Supplier data hydration (via Jarod Booth) | `05` B1 (07-15 split: David Blondel owns Jarod comms, Akansh owns attributes); DDPTRK-6346; P360 declined product type as a global attribute (08-10) | Jarod Booth's supplier-data organization, through David Blondel |
+| 4 | Missing Serial/MAC ID data | Compiling available asset capture tool attributes | GPO alignment on To-Be process | `05` A1, B90, B92; cross-SBU use cases due 2026-10-16 (Alan Martin) | WMX/VAS GPO, via the cross-SBU effort |
+| 5 | No parent-child relationships | Evaluating VAS capabilities and data availability | VAS API or EUDM data feed | Complex-build thread; Violet Moyer's bulk parent-child linking request (`05` C44) | VAS or EUDM; path undecided |
+| 6 | Unidentifiable renewal orders | Highlighting tracking gap for closed-loop reporting | Implement "USD renewal flag" | Renewal-attribution gap (10-05; 10-13 scorecard, the $697K cannot be tied to notifications) | Not stated. "USD" unconfirmed: a system name or a typo for UDM; confirm with Akansh |
+
+**Assessment (Claude, 2026-10-14).**
+
+- **All six asks sit outside the ADM team.** The mitigations are investigations, validations and workarounds; none closes its constraint. This is the record's standing framing (scale is gated on enterprise data participation, not WAM-team delivery), now stated by the product owner in one place. It is the strongest input yet for the reduced-capacity reset (`03` 2026-10-07, `05` A61): an eight-person run team can carry workarounds but cannot resolve any of these itself.
+- **Rows 1 and 3 are old problems with stalled asks.** Row 1 has been open since 2026-08-25 and the ask is still a question, not a committed request to a named owner. Row 3 restates the July Jarod Booth ask (B1), with no resolution evidenced since 08-17.
+- **Row 2 is the near-term schedule risk.** If shipping data comes back null, the 2026-10-30 enrichment release ships on a fallback. "Max ship date" is an approximation that would be read as a ship date; Sales Operations and Managed Services should know before release.
+- **Row 6 is the commercial one.** Without a renewal flag on the order, the notification program cannot prove renewal revenue, which is the only business-side value evidence ADM has (Sales Operations scorecard, 10-13). It also blocks benefits-realization reporting.
+- **Rows 4 and 5 are the complex-build thread** and ride the cross-SBU use-case deliverable due 2026-10-16.
+- **Not on the slide:** owners, dates and business impact per ask; and capacity constraints (two-person Azure Databricks concentration, IDP parser hardening, Strev API failure since 09-25). Adequate as a data-constraints slide, not sufficient alone as the limitations input for Sean.
+- **Recommended before the Sean conversation:** Akansh adds a named owner, target date and one-line business impact to each ask. Darryl takes rows 1, 2 and 6 as one consolidated request to the EUDM/UDM owner (they share an owner), rather than three threads.
+
+Durable: the six constraints as named by the product owner, **numbered C1 to C6 in this order from 2026-10-14** (Darryl: number them so the roadmap and the constraints can be tracked between lists; used on the Sean deck v12 and in `Deliverables/WAM/2026-10-14_WAM_Roadmap_Constraint_Reconciliation.md`). Transient: mitigation status.
+
+## ADM license tracking scorecard, October 2026 (added 2026-10-13)
+
+Source: `Products/WAM/ADM-Internal-Update-License-Trackiing OCT2026  -  Read-Only.pptx` (4 slides, complete; slide 4 is a closing slide), Natalie Marquardt, Sales Operations, internal team update. Darryl filed it 2026-10-13. Reported figures, Sales Operations-produced; not independently verified.
+
+**What the deck reports (Durable as a baseline; figures are Transient and will move monthly).**
+
+| Measure | Figure | Note |
+|---|---|---|
+| Suppliers set up for license tracking in ADM | 35 (18 Security, 17 IoT and Other) | Slide 2 says "added," slide 3 says "completed"; treat as configured and live |
+| License parts in ADM | 6,927 | |
+| Notifications issued | 1,337 line items | About 5.6 line items per rep contacted. North America (working assumption set by Darryl, 2026-10-13; the deck states no region. Consistent with the 08-10 US and Canada rollout. Replace with confirmed scope when Sales Operations states it) |
+| Sales reps contacted | 238 | North American reps; same working assumption |
+| Sales, tracked suppliers | $696,950.73 ("$697K") | Footnote: "Sales are NA August and September." **North America only (confirmed by Darryl, 2026-10-13); NA on the slide means North America, not "not available."** Period is August and September 2026 only, by invoice date (chart shows two bars). Other regions are excluded, so this understates any global figure. Sales basis (all license-part sales vs. notification-matched) still not defined on the slide |
+| Suppliers targeted, Q4 2026 | 4 (Allegion, three product lines: Mobile Credentials, Isonas Pure Access Cloud, Zentra Connect; EyeOTMonitor; InnerRange; Wavelynx) | All security and access control |
+
+**Sales by supplier (Aug to Sep 2026):** Milestone $611,412 (87.7%); Sunbird Software $37,141; Axis $20,385; HID $15,127; IPVideo $9,021; Hanwha $2,430; Revnue $1,435. Seven of 35 configured suppliers carry sales in the window; Milestone, Sunbird and Axis are 96% of the total.
+
+**Supplier roster (35).** Security (18): Acre Security, Avigilon (Motorola), Axis, Difego, Digital Watchdog, Evolon Tech, Exacq, Hanwha, HID, Invixium, IPConfigure, IPVideo (Motorola), Medeco-HIG, Milestone, Rhombus, Safetrust, Teleportivity, YourSix. IoT and Other (17): Butlr Technologies, Digital Barriers, entroCIM, Liberty AV, Minuendo AS (Noisesmart), Monnit Corp, Packet Power, Revnue, RF Code, RFID Ready, Simplifi, Sunbird Software, Teltonika, Triton Sensors, Waittime, Zenitel, Cisco (TD Synnex). entroCIM licenses are now inside ADM renewal tracking; Revnue (Strev's vendor entity) appears as a resold supplier.
+
+**Assessment.**
+
+- **This is the first quantified output of the license capability since the 2026-08-17 notification release.** It is the closest thing in the record to an answer to the question open since 2026-08-05 ("what has the license capability produced commercially") and to Sean McCloskey's 09-10 recoverability concern. Coverage and activity figures (35 suppliers, 6,927 parts, 1,337 notifications, 238 reps) are realized usage of a shipped capability.
+- **The $697K (North America only, August and September) is not established as renewal revenue produced by notifications.** The slide does not say whether it is all license-part sales for tracked suppliers or only orders matched to a notification. Notifications began 2026-08-10/08-17, so most of August predates them, and the record already notes that nothing in DDP marks an order as a renewal (open question owed by Akansh Gangil, 10-05). Present it as license sales across tracked suppliers, a baseline, not as yield. Do not use it in outbound or upward material as notification-driven revenue until the basis is confirmed.
+- **Concentration.** Milestone is 88% of the sales figure. Milestone is also the supplier with the longest data-quality history (Q2 resend, B20; historical ingestion about 80% complete for Q1 and Q2 as of 10-06). A reviewer will discount a number that is one supplier deep. Coverage claim (35) and commercial signal (7, dominated by 1) should be presented separately.
+- **Soft metric fit (`Deliverables/Portfolio_Admin/2026-08-26_Soft_Metrics_Backing_Document.md`).** Metric 1, renewal signal yield, is defined as notifications issued and the percentage acted upon within 30 days. The deck supplies the count (1,337) but not the acted-upon percentage. Metric 3, supplier coverage, now has a dated in-scope roster (35 live, 4 targeted Q4), which goes most of the way toward open item 3 ("fix and date the in-scope supplier list"). Metrics 2 and 4 are not addressed.
+- **Ownership is a strength.** The scorecard is produced by Sales Operations, the consuming organization, not by the ADM delivery team. That makes it more credible upward than product self-reporting, and it is a monthly cadence matching the soft-metric design. It also extends the existing single-point dependency on Natalie Marquardt (`04`).
+- **Bearing on the reduced-capacity reset (`03` Decision Radar 2026-10-07, `05` A61).** The license-notification path is the one ADM capability with a business-side consumer producing monthly evidence of use. That is an argument for keeping it inside the minimum run model rather than in "stop or defer."
+
+**Deck hygiene, before it travels further:** the IoT column heading reads "16 suppliers" against 17 listed and the "17" in the header; "4 suppliers targeted" is four suppliers covering six product lines; "SUNBIRD SOFTARE" typo in the sales table; footers carry 2022 and 2025 copyright years; "NA" is undefined.
+
+**Open questions, not yet assigned (see 2026-10-13 session note in chat):** (1) what the $697K measures, all license-part sales or notification-matched orders, (North America scope confirmed by Darryl 2026-10-13); (2) the 30-day acted-upon rate for the 1,337 line items, which is soft metric 1; (3) why 28 of 35 suppliers show no sales in the window (no orders, or data not yet flowing); (4) whether monthly trend data will be kept so October onward is comparable.
+
+## Daily evidence, 2026-10-04 to 2026-10-07 (added 2026-10-07)
+
+Source: WAM Leadership Sync transcript, 2026-10-05; WAM - Product Team Teams chat, 2026-10-06 to 2026-10-07; Akansh Gangil chat, 2026-10-07; 2026-10-05_ADM_2027_AOP_Slides_Revised.pptx; ADM_2027_AOP_Questions_Answered 1.pptx; weekly evidence 2026-10-07.
+
+- **Reduced-capacity minimum run model quantified (Durable).** Akansh Gangil estimated an eight-person minimum run team against 15 current resources and the 19-FTE AOP draft: two data engineers, three backend engineers, one UI engineer, two QA. He stated timelines would extend "by a great margin" under this model. Decision needed on what WAM/ADM runs, completes, stops or defers; see `03` Decision Radar and `04` WAM/ADM row. Darryl's own words at the WAM Leadership Sync, 2026-10-05: "Let's talk about how we reset as a team over the next few days, then we can bring that to Sean as our plan moving forward and get his input." See `05` A61.
+- **Platform choices confirmed (Durable): ADM-to-EUDM integration uses Azure Databricks; ADM-to-Strev integration uses APIM, not MuleSoft.** Three ADB resources are needed to expedite DDP work against the current two-person concentration already tracked in `04`.
+- **Structural data boundary confirmed (Durable): ADM cannot automate asset-to-Strev synchronization unless the source data already exists in Wesco's enterprise systems.** Manual supplier files remain a structural dependency; the Zapier/import path continues to carry that gap pending the ownership reassessment (`05` A55).
+- **Strev production API outage (SSO and token generation), open and unresolved.** Akansh Gangil, Teams chat, 2026-10-07: 279 failed transactions identified [UNRECONCILED 2026-10-07, Darryl: this count does not match the API CoE's figure; source is a Copilot summary of Akansh's chat, not verbatim. Do not use in outbound material until reconciled.], no RCA or restoration confirmation found. New Active watch row opened; see `04`. **Vendor response timeline (email thread `Re: PROD Failure - EAPI-Strev Integration`, read 2026-10-07):** detected 09-25 by API CoE (INC5630763: 500 backend timeout, 401 token expired), sent to Strev same day; no Strev reply until Akansh followed up and added Sunny Sharma on 09-29; Strev acknowledged 09-29, then silent until Akansh's 10-06 follow-up; Strev named the SSO/token-generation outage 10-07 with no ETA. Darryl sent an awareness email to Amy Aguirre, Senthil Govindaswamy and Natalie Marquardt, 2026-10-07 (no failure count included; see `05` A62, C66, C67).
+- **ADM operational constraints detailed (ADM connect with Natalie, 2026-10-06, transcript complete):** renewal recommendation ranking is unreliable; Pelco/IP Video supplier-ID validation can reject valid documents; initial record creation can produce duplicates. Release the core capability and handle supplier mismatches manually until the post-2026-11-10 enhancement; use delta records only for overlapping supplier files. Historical Milestone ingestion about 80% complete for Q1-Q2 (Transient), January through September 2026 targeted within October.
+- **Managed-services shipping/pricing enrichment feature estimated production date 2026-10-30 (Transient).** Akansh Gangil.
+- **WAM portfolio-review slide confirmed current, no changes required (WAM Leadership Sync, 2026-10-05).**
+- **Evidence coverage note:** this cycle's package (2026-10-04 to 2026-10-07) is a daily Copilot run; most recent prior Copilot evidence was the 2026-10-05 weekly package. One day of overlap (10-04/10-05) is additive, not superseding, per standing evidence rules.
+
+## FY27 AOP update: development ownership still open (added 2026-10-06, Darryl direct)
+
+Sean McCloskey, 2026-10-06: the WAM development team is still with Merwin's Platforms team. Sean is meeting Akash Khurana to work on Digital Products taking over WAM (`05` C63); no outcome known, and Darryl has no time with Sean before the week of 2026-10-19. Sean said Akash's only priorities are DDP and Merwin's AI team, and that everything else was a fight to get what was got. WAM was named with entroCIM as a product that is not financially successful at Wesco. Darryl's headcount version (`Products/CSS_Platform_Team.xlsx`) carries WAM at 20 people, 19 FTE, all India, about $0.79M labor, 17.5 FTE of it in Merwan Mereby's Platform team.
+
+## Daily evidence, 2026-09-30 to 2026-10-01 (added 2026-10-01)
+
+Source: VAS-WMX-ADM-ALM working session, 2026-09-30 (meeting-artifact notes, not transcribed); WAM connect.loop AI notes, 2026-10-01 (199 lines, complete); WAM - Product Team Teams chat.
+
+- **Product taxonomy clarified (Durable): ALM is the managed-service offering; ADM is the internal asset-data product; Strev is the customer-facing white-label platform; together ADM and Strev form WAM.** David Blondel, explicit. Worth checking existing WAM material against this taxonomy for consistency.
+- **Cross-SBU effort formalized to eliminate duplicate/conflicting capture of serial numbers, MAC addresses and related asset data across VAS, WMX, ADM and Strev, with consolidated use cases due 2026-10-16.** Alan Martin leading; Sean McCloskey, Amber Koons, David Blondel, Akansh Gangil, Darryl Benson in the 09-30 working session. Distinct from, but feeding, the still-unscheduled Ramesh/Daniel/Alan requirements call (`05` B90). No individual owner yet named for the consolidated deliverable. See `03` 2026-10-01, `06` Alan Martin.
+- **DDP/EUDM reconfirmed as a read-only acquisition layer; ADM still needs stronger supplier-identity, part-number, duplicate-order and cross-ERP data-quality handling (Durable).** Consistent with the 09-28/09-30 findings already logged above.
+- **Historical-order retrieval by date range and customer/supplier reconfirmed targeted for Q1 of next year (Durable).**
+- **Strev is being evaluated as the field system of record for complex builds**, pending defined sales-order linkage and two-way integration — the same open question `03`'s WAM complex-build Radar entry tracks.
+- **Weekly renewal notifications (60/30-day) now go directly to sales reps for license expirations (Durable, completion signal).** Measurement of resulting renewal dollars remains open — this is the Akansh Gangil task already noted; no owner change.
+- **DDP integration expertise is concentrated in two people** (ADB-skilled integration engineers) — reconfirms the Azure Databricks concentration logged 09-30 from a second, independent source. See `04` WAM/ADM row.
+- **A planned reallocation of Merwan Mereby's 19-person India Platforms team (confirmed by Darryl; name given as "Merwin" in the source AI notes) intersects with this already capacity-constrained roadmap** — "rearranged because cost and value are misaligned." This directly bears on Sean McCloskey's 09-10 question of whether ADM is recoverable. See `04`, `06` Sean McCloskey, `06` Merwan Mereby.
+- **Akansh Gangil: the product team lacks direct visibility into supply-chain/warehouse (SCS) operations** and needs exact data-point definitions from warehouse SMEs for the cross-SBU effort above. Darryl directed him to share WAM/ADM's known data-point needs with that team (`05` B92).
+
+## Daily evidence, 2026-09-28 to 2026-09-30 (added 2026-10-01)
+
+Source: WAM connect transcript, 2026-09-30 (751 of 751 lines, complete); Digital Products / Agile Staff Meeting AI notes, 2026-09-29; Product Commercialization Approach and Overview V1.pptx.
+
+- **WAM/ADM planning reframed into three workstreams (Durable): DDP integration, core ADM product development, and Strev integration/business requests.** Akansh Gangil, David Blondel, Darryl Benson. Gives the 09-28 "Run + Complete" AOP position a concrete work breakdown. See `03` Decision Backlog, 2026-09-28.
+- **License sync from ADM to Strev is operational today; asset sync is not and requires a separate pipeline once ADM holds asset data (Durable).** Strev bulk-enhancement options exist to improve sync speed.
+- **EUDM is a read-only transaction gateway for configured ADM products (Durable).** Gaps confirmed open: multi-ERP supplier identity, trimmed part numbers, duplicate records, international transactions, and historical retrieval.
+- **[WITHDRAWN 2026-10-14, Akansh Gangil: remove the Q1 2027 target; no replacement date.]** **Historical retrieval is targeted for Q1 2027, February stated as the more precise internal target (Durable).** Akansh Gangil, team estimate — not a committed date.
+- **Source-system data quality remains the primary scaling constraint**, specifically serial numbers, MAC addresses, part numbers, start dates, and complex-build relationships — consistent with the 08-25/09-28 truncated-part-number finding already tracked in `04`.
+- **Complex-build requirements session scheduled.** Akansh Gangil committed to a call next week with Alan, Daniel and Ramesh covering serial/MAC capture, parent-child structure, photos, and sales-order linkage. First concrete forum movement on this thread since `03`'s 09-14 reopening. See `05` A1, B90. The transcript also records that **the company owes Manny an answer** on the complex-build operating model (`06` Manny) — likely the same Manny tracked as Service Center leadership on the internal-use/digital-distribution thread, not independently confirmed.
+- **60/30-day sales renewal notifications are already automated and sending weekly (Durable, completion signal).** Akansh Gangil.
+- **Staffing concentration: only two people currently support Azure Databricks integration and data-engineering work (Akansh Gangil, direct).** Single-point-dependency risk on top of the data-quality gaps `04`'s WAM/ADM Active row already tracks; no separate Watch row opened (Active tier is at 23 against its 20 ceiling). Flagged here and in `06` Akansh Gangil.
+- **Portfolio commercialization: WAM named with entroCIM, Ascent Navigator and CDA as the initial priority set for scalable support models** (Product Commercialization Approach and Overview V1.pptx), under Sridhar Loke's forming mandate. Product-owner validation and support-model input requested within one week of 2026-09-29 (`05` B91). See `06` Sridhar Loke, `Products/entroCIM/entroCIM.md`, `Products/Navigator/Navigator.md`, `Products/CDA/CDA.md` for cross-references.
+- **Evidence coverage note:** this package also carried a Digital Products Agile Staff Meeting deadline — Darryl's CDA/Ascent and asset-management/lifecycle content for a CSS leadership presentation, due **2026-10-01 (today)** — AI notes only, no verbatim assignment (Inferred). Flagged same-day in chat per `05`.
+
+## Daily evidence, 2026-09-16 to 2026-09-17 (added 2026-09-17)
+
+Source: Site assessment / AI features call, Amy Aguirre and Darryl Benson, 2026-09-17 (transcript, complete). Filed at `Products/WAM/Briefings/2026-09-17_Amy_Aguirre_Site_Assessment_AI_Features_Transcript.md`.
+
+- **The Virtual Site Survey is a net-new capability with a separate commercial track (Durable).** Strev built a prototype in its own demo environment, in about a month, at no charge, against requirements from the Wesco TS/TSS team. It is not in Wesco Asset Management. Development pricing and a per-site pricing model have been requested from Strev and do not yet exist. New section below.
+- **The July TS solution brief is a wish list, not an architecture decision (Durable, and it corrects the record).** Avatore and the Pano XV2 camera were quoted to Sunny Sharma on 09-16 and appear in the material sent to Lisa Orton as if selected. Amy, direct: there have been no decisions on LiDAR hardware, TS is still researching options, and **Strev has never spoken to Avatore.** Anything downstream of the 09-16 conversation that treats that architecture as chosen should be corrected.
+- **The AI feature set Amy requires is now three items, not two (Durable).** Data extraction from images and labels; the site survey capability; and **data normalization**, a field-capture cleanup feature that groups variant label spellings and normalizes the database on a selected value. The third has not previously appeared in the record and is not a name in Revnue v2.5.
+- **Amy will request the $84,000 in the WAM AOP, and will add the site survey number once Strev provides it (Durable).** Amy, direct: "I'm putting the AOP together for Wesco Asset Management, and I'm going to include that 84K into the budget for us." **This does not fund anything** (Darryl, direct, 2026-09-17). An AOP line is a request; it still has to clear the approval process and exist as a project in UiPath before there is money behind it. See `01` § Funding Governance. So the `04` finding that the AI commitment has no funding stands; what has changed is that a request now has a named owner and a plan to carry both numbers.
+- **$84,000 per instance is confirmed between Darryl and Sunny but not by Revnue in writing.** Darryl, direct: "until it comes from Christina, it's not fully confirmed." The new entitlement document has been requested and has not arrived. Darryl's stated assumption that all three features sit inside the $84,000 is an assumption, and is labelled as one in the transcript.
+- **Governance route confirmed.** Amy files the UiPath intake herself for the AI use cases; Wade Bursch (TS, reports to Matt Powers) builds the business case and brings the PowerPoint, with a demo requested in front of "Kehr" (name as transcribed, unverified). Darryl asked to be optional on the intake and invited to the demo.
+- **Conflict with the 09-16 Sunny Sharma account, unresolved.** Sunny described the Virtual Site Survey as a real product, not a prototype, with no Wesco integration and at least two months of work with the partner. Amy describes a prototype in Strev's demo environment built in a month with Wesco TS. Both are recorded; neither is treated as settled. Sunny did not attend the demo and had not seen the architecture document, which is the most likely explanation, but it is not evidence.
+
+## Daily evidence, 2026-09-15 to 2026-09-16 (added 2026-09-16)
+
+- **Strategy reframed around attainable, data-supported outcomes (Durable).** Sean McCloskey and Darryl agreed WAM's positioning needs to be explicit about what accessible vendor, product, and license data can and cannot support — "limited in, limited value out." Continues the WAM reset thread already running (09-01, 09-03, 09-10 entries) rather than opening a new one. Next step is a draft with David Blondel and Akansh Gangil, then review by Chris Gazdic and Govindaswamy, targeting the 2026-09-18 Digital Products portfolio deep dive. See `03` 2026-09-16, `05` A48.
+- **Evidence coverage note:** this cycle's package covered the Agile Staff Meeting and Daily Stand Up; no material on the 09-10 use-case redefinition, the 09-11 Strev system-of-record question, or the truncated-part-number escalation (A29) carried in this run. Per the one-run-is-not-coverage rule, treat as a retrieval sample, not evidence those threads went quiet.
+
+## Daily evidence, 2026-09-14 to 2026-09-15 (added 2026-09-15)
+
+- **Story 8207 (full end-to-end recommended-renewal capability in License Summary) is explicitly gated on story 8256 (vendor-part mapping)** — confirmed in the WAM Product Backlog Refinement transcript. 8207 is intended to move past merely displaying recommendations into full end-to-end capability, and cannot close until 8256 does. Track 8256 as the release dependency, not a parallel nice-to-have.
+- **Supplier-configuration scope separation agreed:** suppliers created via DDP/order discovery stay visible globally but are excluded from the supplier-configuration screen through a dedicated, filtered API (Krishnanunni R to update acceptance criteria and build the API). This is a scope/architecture decision, not a bug fix.
+- **Data-enrichment stories confirmed UI/mock-data only for this phase** — backend upload APIs are deferred; the download template is expected to carry three fields. Sequencing note, not a scope change from the 09-09 enrichment-MVP entry above.
+- **Story 8206 (counter/status requirements) is unresolved and explicitly parked pending Akansh Gangil's return.** Team continued on current POC understanding rather than stopping work; options on the table are keep as a five-point story, convert to a spike, or split. See `03` Decision Backlog — this needs Akansh's read before it is sized further.
+- **Evidence coverage note:** this cycle's package was WAM-thin outside the refinement meeting itself — no material on the 09-10 use-case redefinition or 09-11 Strev system-of-record question carried in this run. Consistent with the one-run-is-not-coverage rule already applied to WAM in the 09-14 entry below.
+
+## Weekly evidence, 2026-09-09 to 2026-09-14 (added 2026-09-14)
+
+- **EUDM/DDP part-number governance remains the active dependency** (WAM Product Backlog Refinement; 8 items excluded under the sprint-task rule). No change in state: still no named EUDM/DDP owner for the truncated manufacturer part number, and `05` A29's escalation trigger has still not fired. This is the fifth consecutive cycle on the same footing.
+- **WACT evaluated and not pursued (Darryl, direct, 2026-09-14, Confirmed, not transcribed).** WACT is not a mature tool and does not hold much data, so it fails the sufficiency test `WAM_Data_Architecture.md` §7 required before any substantial integration. The complex-build asset source question is settled against WACT. What remains is an **open evaluation, not a direction**: the 09-01 WMX/VAS boundary is a stated position rather than a decision (corrected by Darryl 09-14), the system of record is under GPO review following the 09-11 Strev question, and only the *requirement* is settled — serial and MAC capture is mandatory (Darryl, 09-10). **Consequence for reporting:** the portfolio status slide's "Feasibility analysis of Asset data to be pulled from WACT" step is retired as complete with a negative finding, and is replaced by finalizing the complex-build data model, which is gated on the Strev system-of-record review. See `Deliverables/WAM/2026-09-14_WAM_Status_Slide_Review_and_Talking_Points.md`.
+- **Package coverage on WAM was thin this cycle.** The 2026-09-14 package returned no WAM material beyond the backlog-refinement line above, and nothing on the 09-10 use-case redefinition or the 09-11 Strev system-of-record question, both of which are in `03`. Per the one-run-is-not-coverage rule, treat this as a retrieval sample rather than evidence that the WAM thread went quiet.
+
+## Weekly evidence, 2026-09-02 to 2026-09-09 (added 2026-09-09)
+
+- **[CORRECTED 2026-09-14 — not a decision. Darryl, direct: the complex-build data capture path has not been decided and is very much in the air and being evaluated. `03` reclassifies this entry from Made to Approaching; `05` A1 is reopened.] Position stated 2026-09-01 (Daniel Totino), read as a working direction under evaluation:** use **WMX for standard serial collection**; use **VAS governance for project-specific or ad hoc requests that map into the WMX process.** This is very likely the output of the same-week working session Daniel Totino offered on 08-31 (`05` A1) — confirm with Akansh Gangil that this is the session's product before treating A1 as closed. Final data model (serial-number anchor, parent/room relationship, required attributes, VAS/WMX handoff) remains open between Daniel Totino and Akansh Gangil.
+- **WAM data-enrichment MVP scoped and prioritized ahead of the asset-upload epic** (Akansh Gangil, with Violet Moyer's agreement): accepts sales order, Wesco part number, and manufacturer part number; returns shipping fields and transaction price with not-found statuses; average-price logic deferred until requirements are clearer. This is a deliberate reprioritization, not scope creep — supplier-ID work continues in parallel.
+- **WAM/Strev: bulk parent-child linking is the leading enhancement request**, ahead of warranty-end-date automation. Violet Moyer: current linking can take hours to days of manual effort per case. Akansh Gangil is taking both into budget planning; ticket numbers to follow from Violet Moyer.
+- **IDP/ADM: the proof of concept and integration architecture were validated and received WAB approval** (Moe Aminlari, Balasubramanian K) — this appears to answer `05` B8 (reconnect with IDP on expanding extraction capability). **But production resourcing immediately stalled the same week:** Ankit Chadha would not commit engineering resources, citing competing high-volume work and an October Oracle deadline, and asked for one to two weeks to investigate capacity via John, Sathish, and the Bangalore AI team. Net effect: the integration path is approved but unstaffed. New Active watch item in `04`.
+- **Production confirmation this week on several WAM UI items reported earlier as in progress:** personalized views, bulk selection/edit, uppercase end-user handling, and part-number upload are in production; new-order license activation is reported resolved (AI meeting notes, ADM connect with Natalie — not verbatim, treat as Stated not Confirmed until a transcript exists). This is incremental relief on the WAM/ADM data-integrity thread in `04`; the truncated-part-number and EUDM-completeness defects underneath it are unchanged.
+- **Truncated manufacturer part number: still no named EUDM/DDP owner.** Unchanged from 08-31 — Akansh Gangil's escalation has not produced an owner; `05` A29's trigger has not fired.
+
+## Weekly evidence, 2026-08-24 to 2026-08-31 (added 2026-09-01)
+
+- **[DISPUTED 2026-10-05: Darryl, direct: "It's not NetSuite." The NetSuite attribution came from Copilot's reading of the `Re: Connect with Senthil <> ADM team` email and is not to be used in outbound material. Whether a separate missing-orders defect exists at all is unconfirmed.]** ~~A second, distinct data-completeness defect confirmed alongside the truncated-part-number issue: a NetSuite hydration gap.~~ Sample orders are confirmed absent from EUDM outright (not just truncated), requiring hydration from NetSuite. Both defects limit ADM's ability to identify and onboard asset records from the enterprise data foundation. Source: `Re: Connect with Senthil <> ADM team` email.
+- **Truncated manufacturer part number: still no named EUDM/DDP owner.** Akansh Gangil was assigned (Inferred) to send a documented escalation to the DDP/UDM team, copying Darryl; Darryl agreed to escalate further if that draws no response. This reconfirms `05` A29/B53 rather than changing their status — the escalation trigger has not yet fired.
+- **September WAM/ADM release scope confirmed (Akansh Gangil):** default end-user assignment, bulk end-user edit/clear, cancelled-order handling, and a pending-activation fix; SP1 end-user ID editing may follow. Roughly 13,000–13,500 older legacy records still need disposition after the fix, pending a reliable post-fix export.
+- **Complex-build direction reaffirmed, not changed:** continue VAS for complex finished-goods attribute capture and WMX for simplified products, pending architecture finalization; WMX 5.7 is expected to add MAC address and asset-tag fields beyond serial number. Daniel Totino proposed a same-week working session with Darryl and Akansh Gangil to walk through his roadmap — the first concrete session offer since this thread opened in mid-July (`05` A1).
+- **WAM/IDP proof of concept:** initial draft shared; Natalie Marquardt's confirmation still pending before Akansh Gangil and the IDP/WAM team proceed.
+
+## 2026 Commercial Metrics (from WAM actuals deck, 07-15; Finance-maintained)
+- Objective: $19M in sales. YTD through June: ~$16.7M (87.23% attainment); June ~$4.7M; tracking ahead of linear year-end target.
+- Metric definition revised: ALM target originally read as net-new/new-logo revenue; now includes incremental sales growth from existing ALM customers. State the rationale wherever these numbers appear (see 03).
+- Roles on deck: Business Sponsor Brad Stevens; Product Executive Darryl Benson. WAM financial actuals owned by Finance; Darryl owns the Update slide (product/commercial/metrics narrative).
+- Commercial timeline: initial selling underway; broader marketing launch targeted August 2026.
+
+## What It Is / Value Proposition
+Strategic CSS platform and service capability: visibility into hardware assets, software licenses, entitlements, warranty coverage, lifecycle status, renewal opportunities, and customer install-base intelligence. Both a platform capability and an enabler of services, sales insight, renewal management, and customer reporting.
+
+**Preferred framing:** *WAM is production-ready and can be sold, while the near-term product focus is strengthening the enterprise data and operating foundation required to scale.* Avoid: treating WAM as only a software app; implying DDP/EUDM solved every data problem; describing cross-functional dependencies as WAM-team delivery failure; claiming benefits realized without evidence.
+
+## Value Propositions (drafted 2026-07-16, Cowork session)
+
+**Customer-facing (simple, 3):**
+1. One place to see everything you own — hardware, software licenses, warranties, and lifecycle status across the install base, instead of spreadsheets, PDFs, and scattered vendor records.
+2. No more surprise expirations — proactive alerts on renewals, warranty, and support expirations, so nothing lapses unnoticed. (Caveat: today this rests on the first sales-notification release — 60-day expiration alerts — not yet the full future state; keep claim scoped to what's shipped if used externally.)
+3. Faster, cleaner onboarding — asset and license data gets normalized and structured, cutting the manual reconciliation work customers currently absorb themselves.
+
+**Internal commercial (Sales/Sales Ops-driven, 3):**
+1. Governed triggers, not manual digging — renewal, warranty/support expiration, and refresh signals get pushed directly to Sales/Sales Ops from the data, replacing account-by-account research with actionable, dated notifications.
+2. Install-base intelligence for account conversations — visibility into what a customer already owns (hardware, software, entitlements) sharpens renewal and cross-sell conversations with real data instead of guesswork.
+3. Already producing pipeline, not just promised — first sales-notification release (60-day expiration alerts) is live as of July; a shipped capability Sales Ops can act on now, with scale tied to MDM/supplier data maturity.
+
+Note: proposition 3 (internal) doubles as "value today, not roadmap" language for the Dirk/Debbie Hunter review narrative above.
+
+## Components
+- **WAM** — the overall offering and business capability.
+- **ADM** — internal asset-data capability: normalization, enrichment, research, data preparation.
+- **Strev** — customer-facing partner platform from Revnue Corp (formerly Revnue, white-labeled). ADM-vs-Strev responsibility split should be stated per use case, not assumed. **Declared on the FY27 AOP submission (08-17) as third-party solution, dependency, and outsourced resource** (B35, B33, B34); the form had previously read N/A on all three. Revnue delivers under SOW (Strev SOW 3, ADM-to-Strev QA integration, Strev QA release governance), so it is a delivery dependency carrying schedule and quality risk, not only a licensed component. Classify it that way in future submissions and risk statements.
+
+## Core Business Problems
+Fragmented asset/license/warranty/lifecycle data across spreadsheets, PDFs, emails, supplier records, enterprise systems; inconsistent descriptions; hardware/software/license/service ambiguity; missing license and warranty terms; manual onboarding and reconciliation; limited non-Wesco purchase visibility; weak renewal visibility; difficulty converting install-base data into sales/service intelligence.
+
+## Current State
+Transitioning from product build to platform-scale integration, commercialization, repeatable data ingestion, customer-outcome definition, renewal automation, service enablement, benefits realization. **Limiting factors increasingly sit outside the dev team**: enterprise data, MDM, suppliers, Sales Ops, external partners.
+
+Delivered milestones: license-sync enhancements (Mar 2026); ADM export, audit trail, UI license editing (Apr 2026); OAuth 2.0 for ADM/Strev; **DDP/EUDM integration live 2026-07-03** — an enterprise-data connection, NOT resolution of MDM classification, license/warranty-term structures, supplier data, complex-build/nested-BOM sourcing, customer-data ingestion, stewardship, or renewal attribution.
+
+Per the 07-15 actuals deck: MDM and GPO work is defined for license and warranty data; a scalable vendor data model remains under investigation.
+
+Live issues (see 04/05 for current status): Strev QA integration blocked (vendor RCA open); field access/Zscaler issue (Centremis); renewal-notification function lands Jul 17, go-live paused pending formatting.
+
+**Where the business is actually being won (Darryl, 08-05) — important framing correction.** The current external business is focused on supply chain programs, not license management. The license capability that was originally requested, and which the Backlog Deep Dive roadmap is built around, is not what is being sold into those programs today. This does not make the license work wrong, but it changes how its value is evidenced: the $16.7M YTD attainment is not proof that the license roadmap is converting, and should not be presented as though it were. Two consequences to carry forward: (1) the FY27 WAM business case cannot rest the license investment on 2026 attainment, since the attainment comes from a different motion, and a reviewer can reasonably ask what the license capability has produced commercially; (2) Sales Operations expectations were set at Senior Director level (Debbie Hunter) on the license notification capability, which may not be where the revenue actually sits. Open strategic question, now in the 08-05 Lisa Orton brief: whether the license capability is brought into the supply chain program motion, or whether the roadmap follows the demand. No decision taken.
+
+**Asset and warranty data (Darryl, 08-05):** in addition to the license track that dominates the Backlog Deep Dive roadmap, asset and warranty data work is in flight this year. This extends the same model from licenses to the wider install base. The deck surfaces only the asset side, and only in Q4 ("asset tracking from EUDM and WMX"); the warranty work does not appear on it at all. Treat the deck as the license-track roadmap rather than the complete WAM plan, and do not infer from its silence that warranty work is not underway.
+
+**Roadmap position (08-05, Backlog Deep Dive deck — deck presented 08-06):** the 2026 plan is now stated as an outcome arc rather than a task list: license visibility (Q1, complete) → coverage beyond Core and Anixter part numbers (Q2, complete) → reps see what's expiring (Q3, in progress) → one complete coverage view (Q4, planned). Full transcription and executive read in `WAM_Roadmap.md`. Two items from this deck change the record: (1) the Notification to Sales Rep suite and the Milestone/ExacQ data load now carry a named release date of **2026-08-10**, firmer than Akansh's 07-28 "not committing" but still a target, not a confirmed release; (2) two post-go-live defects are marked complete (post-EUDM-integration bug, ADM UI slowness under data volume), with license activation still open. **Open discrepancy:** the deck marks the automated three-times-daily DDP/EUDM sync as Q2 complete, while the 07-16/07-20 record states the feed is manually triggered daily and instructs that automation not be presented as production-grade. Unresolved as of 08-05 — see the flag in `WAM_Roadmap.md` and confirm with Akansh before the claim is used again in outbound material.
+
+**Update 08-10 (weekly evidence, ADM connect with Natalie):** the notification-suite release named in the 08-05 Backlog Deep Dive deck is confirmed for today — US and Canada rollout. Gate items landing same day: cancelled sales orders manually removed pre-release (automation still not built); Akansh owes Natalie the recipient list and sample notification data before deployment. Separately, **default end-user and bulk end-user editing features have entered planning/implementation** — a new capability thread, not yet on the outcome-arc roadmap in `WAM_Roadmap.md`. And **P360 governance has declined to add product type as a global attribute** — Akansh's team continues collecting it outside P360 by workaround; this is a governance refusal, not a pending review, and it keeps the manual-process/data-consistency gap open on the WAM/ADM data integrity thread (see `04`). Full detail: `03`, `04`, `05` (B39, C17).
+
+**Update 08-17 (weekly evidence, ADM Prod Release Update): production release confirmed shipped**, with more scope than the 08-10 notification suite alone. Three capabilities released: (1) automated license expiry notifications — the notification suite itself; (2) notification analytics reporting — new, not previously tracked; (3) a product-upload fix — the ADM upload process now accepts underscores in manufacturer part numbers. Akansh Gangil confirmed the release directly (Stated, not inferred). **Distinct from the standing vendor part-number-truncation defect in `04`** (15-character limit) — this is underscore-character handling in the upload parser, a different fault in the same subsystem; do not conflate the two when reporting fixes. Same-cycle decision: Akansh restricted license-notification assignment logic to ERP 12004 records specifically, to avoid duplicate-customer-ID ambiguity (`03` Decisions Made). This closes the production-shipped question the 08-10 entry left open ("confirm with Akansh by end of day whether the release actually shipped") — it shipped, with additions. B39 (recipient list to Natalie) is now Potentially closed given the ship date passed; C4 (backup distribution list) and C17 (FAQ SharePoint/email text) remain open and unconfirmed by this evidence — do not assume they landed just because the release did.
+
+**Update 08-27: software/license identification path for the Anixter mainframe now has a concrete source.** Jen Turnage (Master Data Taxonomy) supplied the product-class grouping table and criterion: software and license part numbers can be identified via `dbo_IA_TPRODUCT_GROUPING_BY_PROD_CLASS` where `PROD_GROUPING = SOFTWARE`. This is a durable data-source fact for the stated critical dependency on software/license identification, not yet validated against known examples — do that before treating the rule as final. File: `dbo_IA_TPRODUCT_GROUPING_BY_PROD_CLASS.xlsx`.
+
+**Update 08-27: complex-build capture point made explicit inside VAS.** Warehouse personnel are now instructed to capture MAC address, serial number, asset tag, and related attributes inside VAS as part of standard work and labor instructions; Akansh Gangil confirmed alignment with this flow (`Wesco Asset Manager Product Leadership Sync`). First evidenced execution step on the WMX/VAS complex-build capture path since the 07-28 register entry — see `04` (demoted from Active on this progress) and Register A1 in `05` (still open pending Akansh's confirmed session date on the broader WMX-vs-VAS ownership question).
+
+**Update 08-27: EUDM truncated manufacturer part number — a source query now exists, but no fix yet.** Akansh Gangil and Rakeshkumar Udutha supplied a source-system query enabling the Cloud Data Office to trace the full part number; EUDM Bronze and Silver were confirmed to still hold only shortened values. Progress on tooling, not on the underlying defect — see `04` and Register A29 in `05`.
+
+**Update 08-27: IDP document-volume assumption unresolved.** Moe Aminlari flagged conflicting figures (10 vs. 50 documents/day) for current and future IDP volume, affecting sizing and POC conclusions. No owner named to resolve the discrepancy — see `04`.
+
+**Operational hardening context (07-20, Backlog Refinement):** the bugs surfaced after the 07-03 DDP/EUDM go-live (the most recent production update); teams have been finding and defining them since (Darryl, 07-20). The team's active focus is a seven-area data-quality stabilization plan — cancelled-order contamination, perceived data loss (working conclusion: visibility defect, data intact — bug 7827), license activation failures (null/missing SO dates), duplicate creation, filter scalability (~50K records), database growth/archival, end-user matching normalization. Reinforces the framing above: limiting factors are data quality and operational reliability, not feature velocity. Status and open decisions live in 03/04/05, not here. Full dump: `WAM_Product_Backlog_Refinement_Problems_Work_Plan_2026-07-20.md`; exec summary: `Deliverables/2026-07-20_WAM_Operational_Hardening_Executive_Summary.md`.
+
+## FY27 Financial Plan (2027 WAM P&L, DRAFT — received 2026-08-17)
+
+Monthly operating P&L linked to WAM staffing; all named resources assigned to DEV using % COGS Today, Region, Cost, and **1,800 annual hours**. Draft, not an approved budget.
+
+| Line | FY2027 |
+|---|---|
+| Revenue — **submitted as a range**, Finance-authorised 08-17, because the CSS business 2027 forecast is not yet available ($38M = 2026 actuals +15%; $32M ~ actuals flat) | $32,000,000 to $38,000,000 |
+| COGS (People + HW + SW) | $32,224,000 at the $38M case |
+| Gross Margin @ 15.2% | $4,864,000 to $5,776,000 |
+| Sales / Marketing | $1,500,000 / $50,000 |
+| DEV labor, 19.00 FTE all India, zero NA | $752,400 gross |
+| Capitalized labor (labelled 65%, computes 80%) | ($601,920) |
+| DEV expense after capitalization | $150,480 |
+| Net Revenue | $3,163,520 (9.9%) at $32M to $4,075,520 (10.7%) at $38M |
+
+**The 15.2% gross margin is the most important line for product framing.** It is a distribution margin, not a software margin, and it independently corroborates the 08-05 finding above that current WAM revenue is earned through supply chain programs rather than the license capability. If the revenue were license and software driven the margin would be several times higher. Use this when the roadmap-alignment question is discussed; it turns a session observation into an evidenced one.
+
+Three open items with Finance, all carried in `03` (2026-08-17 entry): the capitalization label contradicts its own arithmetic (65% stated, 80% computed, $112,860 swing); the India rate basis differs between the P&L ($22) and the AOP rate card ($24); and Resources NA is zero, so any North America assignment is unbudgeted at a 4.3x differential. The FY27 AOP form figure was re-based from $964,440 to $785,840 on this basis. Full reconciliation: `Deliverables/WAM/2026-08-17_WAM_FY27_AOP_Change_Log.md`.
+
+## Benefits (per audience)
+- **Customer:** visibility, fewer lifecycle surprises, renewal planning, reporting, faster onboarding.
+- **Sales/commercial:** renewal signals, refresh opportunities, install-base intelligence, account conversations.
+- **Managed Services:** repeatable onboarding, less manual reconciliation, scalable delivery.
+- **Product/ops:** standardized data, governed taxonomy, auditability, AI readiness.
+
+**Realized so far:** DDP/EUDM go-live = realized *capability* milestone only. Report per `Reference/Benefits_Realization_Standards.md`: definition / targeted / realized progress / planned / dependencies. Each planned benefit needs owner, baseline, measure, target, evidence source.
+
+**Executive benefits language:** "The enterprise-data integration establishes the governed foundation required to improve product classification, reduce manual data preparation, and scale license, warranty, renewal, and install-base visibility. The next stage is converting that foundation into repeatable customer onboarding, stronger commercial intelligence, and measurable service outcomes."
+
+## Executive Review Narrative (Dirk/Akash review; slides drafted 07-15)
+
+Two-slide product story, transcribed from Darryl's drafts:
+
+**Slide 1 — "WAM turns fragmented data into customer and commercial action."** Source data (Wesco systems, suppliers, customers) → ADM (ingest, normalize, enrich, distribute) → two value paths: **Service path, per customer** (Strev experience layer: customer-specific portals, dashboards, workflows inside each Managed Services engagement) and **Commercial path, pushed by ADM** (sales intelligence & notifications: renewals, spare parts, warranty/support expirations, direct to Sales/Sales Ops) → customer & commercial value (renewal revenue, service outcomes, lower TCO). "Where we are": production-ready and sellable today where source data and outputs are defined; license identification still manual flagging; single-asset/sub-assembly capability in build; attribute/classification/integration work addresses both.
+
+**Boundary slide — "One service, one platform: clear boundaries" (v2, 07-15/16):** Intelligent Asset Management is the customer-facing service (lifecycle, warranty/RMA, refresh planning, TCO). WAM is the enabling platform behind it, containing ADM (backend data foundation: ingest, normalize, enrich, distribute) and Strev (experience layer: portal, dashboards, reporting, workflows). Managed Services converts platform capability into customer outcomes (onboarding, workflows, support ownership). Sales/Sales Ops acts on governed triggers and notifications (renewals, warranty expirations, refresh opportunities). Data sources: DDP/EUDM, WMX, ACT/WACT, supplier feeds, customer data, documents. **This is the canonical disambiguation of IAM/WAM/ADM/Strev — use it consistently.**
+
+**Audience note (07-16):** both slides shared with **Debbie Hunter (Senior Director, Sales Operations — Natalie Marquardt's leadership)** after she asked Darryl about ADM's future and direction. Sales Ops expectations are now set at Senior Director level; the MVP1 release gate carries that weight.
+
+**Slide 2 — "Capability exists today; scale depends on data maturity."** Asset data: today entirely in Strev (ingestion, dashboards, program outputs, services-led complex builds); next 90 days: EUDM connection driving asset build-out (serial retrieval, automated ADM insertion); gates to scale: VAS as future asset source (ACT fallback), warranty data from MDM/attribute efforts, supplier lifecycle/EOL data. Licenses: today manual software flagging in ADM, delivered to Strev over API, DDP/EUDM live; next 90 days: P360/EUDM global attributes with DDP+MDM, AI part classification (evaluation), first Sales notification release in July; gates: MDM classification-attribute adoption, supplier data participation (license, warranty, entitlement).
+
+**Narrative refocus (Darryl, 07-16): capability and plan, not financials.** The financial side is decided and the Engel briefing decks are updated — the forward talk track is: "ADM does not meet expectations today; the plan is (1) fix the data problem by adding attributes, (2) work with vendors to populate data, (3) add VAS as a capability" — summarized with owners and next steps (see the 07-16 Sean brief §1 for the owner/next-step table). Financials are reference-only context.
+
+**The hard question at the review: investment to date vs. value today.** Agreed framing (07-15):
+1. Don't defend the investment — reframe what it bought: a working pipeline whose remaining value is gated on enterprise participation (MDM, suppliers, VAS), not more product spend. None of the gates are WAM-team deliverables.
+2. Value today gets numbers and dates: $16.7M YTD / 87% attainment (corrected metric), first sales-notification release July (60-day expiration alerts), Strev live in customer engagements. Realized vs. planned discipline throughout.
+3. End with an ask, not a roadmap: enterprise commitments per gate (MDM classification adoption, supplier data participation) with named owners — converts the investment question into shared accountability.
+4. Investment figures stay off the slide; ready verbally if Dirk asks.
+
+## Commercialization Requirements
+Value proposition (Amy Aguirre outcome-mapping active), defined service model, sales enablement, supplier-data coverage, data-quality confidence, repeatable onboarding, customer-success ownership, pricing/packaging, demonstrated outcomes, clear platform-vs-service value split. Commercial risks: product ready but sales motion unclear; service ownership undefined; benefits described but not measured. Commercial-review questions in library file 22 §10 remain the checklist.
+
+## Recurring Decisions
+Target model for license/warranty/entitlement attributes; classification and description logic; supplier-data acquisition and stewardship; historical-data scope; customer-data ingestion; complex-build/nested-BOM architecture; manual vs automated renewal attribution; ADM vs Strev responsibility; workarounds vs target architecture; commercial/service operating model.
+
+## Key People
+Darryl (exec sponsor/portfolio leader), David Blondel (product, WAM+entroCIM), Akansh Gangil (ADM/DDP/execution), Sakshi Mathur (backlog/sprints), Natalie Marquardt (supplier data — not solely accountable for supplier-data strategy unless assigned), Amy Aguirre (strategy/value prop/commercialization), Senthil Govindaswamy (ops/renewals/customer issues), Chris Gazdic (exec reviews), Strev/Revnue (platform partner).
+
+## Risks and Open Decisions
+Current status: `03_Decision_Log.md` / `04_Executive_Watch_List.md`. Structural constraints: data quality, supplier coverage, cross-functional ownership, vendor dependency, incomplete product-master structures, manual onboarding, external platform integration, weak benefits evidence.
+
+
+## Internal Pitch and Monthly Soft Metrics (added 2026-08-26)
+
+Agreed internal-facing pitch and four monthly soft metrics: `Deliverables/Portfolio_Admin/2026-08-26_Product_Pitches_and_Soft_Metrics.md` §4. Owners and source systems in the companion backing document. Decision entry: `03`, 2026-08-26.
+
+**Durable framing corrections made by Darryl in that session:**
+
+- **Enrichment is performed by ADM and the Managed Services team**, not by ADM alone. Prior drafts credited ADM only.
+- **Do not name MDM or VAS** in the pitch. Scale is described as depending on supplier data participation and data quality.
+- **Complex builds belong in the pitch.** WAM carries complex builds, the configured multi-component systems Wesco assembles and serializes, into the customer install base record. Complex builds are a key growth area for the company, and WAM is where they stay visible and serviceable after delivery. This was absent from every prior WAM value statement.
+
+**Metrics:** renewal signal yield; managed record completeness; supplier and purchase-history coverage; automated ingestion rate. Three carry open definitional or verification dependencies, listed in the backing document. Metric 1 is deliberately the answer to "what has the license capability produced," without leaning on 2026 attainment, which comes from the supply chain motion (08-05 framing correction above).
+
+
+## Commercial Model and AI Feature Pack (added 2026-09-15)
+
+**Contract basis.** White Label Software License and Service Agreement, March 21, 2025, contracting entity Anixter Inc., amended by Amendment No. 1 effective 2025-08-13 (redefined "Software Service" §2.1; replaced Exhibit A Section 2 with the core per-asset price table §2.3). The executed amendment and the supplier price list are not yet in this folder; `05` A45 retrieves them.
+
+**Core pricing shape.** Tiered annual base license plus a per-asset fee: Tier 1 (1 to 5,000) $18,000 and $5; Tier 2 (5,001 to 20,000) $24,000 and $4; Tier 3 (20,001 to 100,000) $36,000 and $3; Tier 4 (100,001+) $48,000 and $1. Support is a percentage of core licensing only (Standard 20%, Premium 30%), excluding services and training. **Note the tier boundaries are discontinuous:** at 20,000 assets the all-in fee is higher than at 20,001, and the Tier 3 to Tier 4 boundary is far steeper. Any sizing conversation that lands near a boundary needs this stated rather than discovered.
+
+**Priced modules not currently enabled:** Work Order ($24,000), Workflow ($18,000), License Management ($2 per license, **conflicts with the entitlement document, see below**), Custom BI Dashboard (variable). **Enabled add-ons:** Dedicated Cloud Hosting ($36,000), Field Services with Mobile App, 50 users ($16,000), SSO/SAML including 50 MAUs ($2,000).
+
+**AI Feature Pack, per Revnue v2.5 (May 2026). Not under contract.** Base license $84,000 per year per environment including 100 portable AI-enabled seats; additional seats only in 50-seat blocks at $10,000; minimum $10,000 annual credit commitment per Authorized Tenant, non-commingled; overage at 1.25x in arrears. Bundle includes Document Metadata Extraction, Anomaly Detection, Smart Repository Content Filtering, Document Intelligence, a locally hosted Llama-class StrevAI Local LLM, multi-vendor model activation (Anthropic, OpenAI, Gemini), and PII/content guardrails. Six add-on SKUs (Conversational AI, StrevAI Agent, Field Services Agent, AI Vision, AI Device Failure Prediction, LLM-based Data Upload) are all in private beta, all unpriced, and all require an active AI Feature Pack on the same tenant.
+
+**Three facts to carry into any conversation about this:**
+
+1. **v2.5 binds nobody.** It states it does not constitute an offer, commitment, agreement or amendment, that its pricing is illustrative, and that expansion requires a §14.5 change order. The contract as amended is silent on every AI SKU.
+2. **Consumption cannot be modeled.** §6.3 publishes no credit conversion rates and says no standard method exists to translate a credit into token usage, while five other sections reference "published per-feature conversion rates (see §6.3)." The annual floor is knowable; expected spend is not.
+3. **License Lifecycle Management is contested.** v2.5 Part A lists it as Included under §1.16 and §2.1(a); the supplier price list carries it at $2 per license. This sits directly under the product's headline value proposition and is unresolved. `05` A43 question B3.
+
+**Wesco's 2027 ask on Strev is unfunded and contains no AI.** `Strev_2027_Priorities.md` (transcribed 2026-09-02) is Wesco's own Digital Products enhancement demand on the vendor, not Strev's roadmap. As of 2026-09-15 it has not been communicated to Strev, quoted, or financed for 2027, and it carries no AI scope. Vendor-originated AI capability is meanwhile moving toward a funding decision through Managed Services intake. The risk is that investment order gets set by intake sequence rather than product priority. `05` A43 question B11 requests a quotation against the list so the two can be compared on cost.
+
+**Update 2026-09-17 (Amy Aguirre call).** Three changes to the commercial picture above, none of them yet documented by the vendor.
+
+1. **A funding *request* is forming; nothing is funded.** Amy Aguirre will include the $84,000 in the FY27 WAM AOP, and will add the site survey development number to the same AOP once Strev provides it. **AOP inclusion is not funding** (Darryl, direct, 2026-09-17): the item must clear the approval process and become a project in UiPath before money exists behind it (`01` § Funding Governance). The request cannot be completed until Strev prices the site survey, but **that sequencing is Amy's to manage, not Darryl's** (Darryl, direct, 2026-09-17). It is recorded here as context for the amendment's scope decision, not as an action on this side.
+2. **The scope being bought has grown to three features.** Data extraction, the site survey capability, and data normalization (field-capture label cleanup). Darryl's position is that all three fall inside the $84,000; that is an assumption pending Christina's replacement entitlement document, and it is the single most expensive assumption in this thread. If normalization or site survey turn out to be add-on SKUs, the floor moves.
+3. **The $84,000 remains vendor-unconfirmed in writing.** Sunny stated it verbally on 09-16 and Darryl restated it on 09-17 with the explicit caveat that it is not confirmed until Christina sends it. The May v2.5 document is superseded (Sunny, 09-16) and its successor has not arrived. `05` A43 carries the request.
+
+Full reconciliation, eighteen numbered discrepancies and the remediation plan: `Deliverables/WAM/2026-09-15_Strev_AI_Entitlement_Discrepancy_Review.md`. Decision entry: `03`, 2026-09-15. Risk: `04` Active.
+
+## Virtual Site Survey (added 2026-09-17)
+
+Source: Amy Aguirre / Darryl Benson call, 2026-09-17 (transcript, complete); Sunny Sharma / Darryl Benson / David Blondel sync, 2026-09-16 (transcript, complete). Both filed in `Products/WAM/Briefings/`.
+
+**Do not confuse this with the CDA data-center site survey.** `05` A46 and the `03` 2026-09-16 Decision Backlog entry concern a possible CDA commercialization route through Wesco's existing TSS virtual site-survey service. That is a different thread with different sponsors. The item on this page is a Strev-built product capability for TS audits and inspections. They may eventually converge; today they are separate and should not be reported as one.
+
+**The business problem, in Amy's words.** TS site assessments are performed today by contractors working on pen, paper and spreadsheets. There is no LiDAR and no mobile app. A remediation plan takes roughly six months because the plan cannot start until every contractor deliverable is back, and contractors are sometimes re-dispatched at Wesco's cost for detail they missed the first time. Reducing prep time and delivery time is the stated driver, not technology adoption.
+
+**What Strev built.** An assessment or checklist (the MOP equivalent; TS calls it an assessment) uploaded from Excel and delivered to the contractor in a mobile application, with reusable templates across similar customer engagements, and real-time visibility of data as it is collected. Bolted onto it: LiDAR scanning on an Apple device, and AI extraction of assets from a photograph of a cabinet. Extracted assets land in Wesco Asset Management, where Amy's team runs validation and enrichment (warranty status, end of life, end of service, discontinued, extended warranty availability) and reports out for TS remediation planning. The enrichment half is the same service pattern already proven on Centermis label scanning.
+
+**Origin of each element, because Lisa Orton asked.** The checklist, the mobile delivery and the template model came from Wesco: TS gave Strev the requirements over a series of interviews, modelled on what Strev had already done for Walmart. **The LiDAR scan came from Strev.** TS did not know Apple devices could do it; Strev offered to build it in. The self-service variant, where the customer performs their own scan and no contractor travels, also came out of that exchange. This distinction matters for any duplication or IP assessment: the Wesco-originated part is a workflow app, the vendor-originated part is the scanning and extraction.
+
+**Status: prototype, in Strev's environment.** Amy, direct: "it's in a demo prototype environment within Strev. It is not within the Wesco Asset Management." Built in about a month at no charge, demonstrated live to TS, and supported unanimously at that demo. Strev has remaining work to finalize and integrate it.
+
+**Conflicting account, recorded not reconciled.** On 09-16 Sunny Sharma described the Virtual Site Survey as a real product rather than a prototype, with no Wesco integration existing and at least two months of work required with the partner. On 09-17 Amy described a prototype built with Wesco TS in about a month. Sunny did not attend the demo and had not seen the Avatore / Pano XV2 document, which is a plausible explanation, but it is not evidence. Treat the maturity of this capability as unestablished until one account is confirmed.
+
+**Hardware architecture is open.** The July TS/TSS document naming Avatore and the Pano XV2 camera is a solution brief and requirements wish list, not a decision. TS is still researching LiDAR options. **Strev has never spoken to Avatore.** Any material that presents that architecture as selected, including what was sent to Lisa Orton, overstates the position.
+
+**Commercial shape, requested and not yet received.** Amy has asked Sunny Sharma and Christina for two things: professional services development pricing to finish the build, and a **per-site** pricing model for the run, explicitly not asset-based. Neither exists yet. Delivery would be a new entity type inside the existing white-label instance, alongside Assets, Contracts and Suppliers, rather than a separate instance, so this rides the existing agreement and does not require a new tenant.
+
+**Governance.** Amy files the UiPath intake as an AI use case, on the basis that the LiDAR scan, the AI asset extraction and the smart Excel upload are all AI. Wade Bursch, TS, reporting to Matt Powers, is the business lead building the business case and the PowerPoint; a demo has been requested in front of "Kehr" (name as transcribed, unverified). Chris Wagner wrote the requirements and reports to Wade. Wesco Asset Management itself has already been through intake, so this is an AI-use-case filing, not a new product intake.
+
+**Beyond current scope, noted for sequencing.** Matt Powers wants a pod of engineers working this data, and wants live conference feeds with contractors. Neither is in the mobile application as built.
+
+**Open items at the close of the 09-17 call:** Strev development and per-site pricing (`05` C50); whether the site survey is inside the $84,000 AI enablement or priced separately (`05` A43, C46); and the maturity conflict above. **Ownership boundary, set 2026-09-17 (Darryl, direct: "This is Amy's problem to deal with, not mine").** The funding side of this capability belongs to Amy Aguirre: the pricing chase with Strev, the AOP request, the approval route and the UiPath project. She will add the development number to the WAM AOP once Strev provides it, which is a request rather than funding (`01` § Funding Governance). **Darryl owns two things here and not the rest:** the replacement entitlement document from Revnue, and the white-label agreement amendment. The practical consequence for the amendment is a scope choice, not a dependency: if the site survey numbers have not arrived when the entitlement document does, the AI feature set is amended and the site survey follows in a second amendment. Do not hold the amendment for Amy's pricing track.
+
+
+## WAM/ADM data strategy: Wesco-owned data, DDP/EUDM as foundation (added 2026-09-28)
+
+Source: WAM - Product Team, 2026-09-25 (Teams channel, search-snippet evidence, no verbatim transcript). Sean McCloskey's direction, relayed by Akansh Gangil: focus on data Wesco already owns, with explicit acknowledgment of data-quality limits; DDP/EUDM is the primary foundation; ADM-to-Strev flow carries enrichment and normalization rather than Strev supplying external data as a baseline. Competitor or non-Wesco data acquisition is explicitly not the strategy. See `03` Decisions Made, 2026-09-25.
+
+**Consequence, not yet actioned:** Akansh Gangil is to translate this into concrete resource and skill-set requirements (`05` B88), owed to Sean McCloskey/WAM leadership. `05` A48 (Darryl's own action to advance the strategy and route it to Chris Gazdic and Govindaswamy) has not yet incorporated this — still due 2026-09-29.
+
+## ADM 2027 AOP position: "Run + Complete" (added 2026-09-28)
+
+Source: `ADM_2027_AOP_Questions_Answered 1.pptx` (7 slides, complete), David Blondel and Akansh Gangil. Proposes scaling the working foundation, closing targeted asset/history/automation gaps, and preserving permanent operating capacity as the 2027 planning basis, with any "Expand" scope treated as separately funded. **This is a recommendation, not yet an approved staffing or funding decision** — see `03` Decision Backlog, 2026-09-28. Durable capability state per the same deck: license sync, OAuth API integration, EUDM connection, renewal notifications, and structured uploads are available today; asset/history/automation gaps remain the targeted work.
+
+**Open implementation question:** the ADM enrichment build path (Java versus ADB) is undecided; load, performance, and architecture criteria are unresolved. Owner unclear — Krishna, Bala, and Praveen are named contributors, no single accountable owner. Gates the 2026-10-30 enrichment commitment. See `03` Decision Backlog.
+
+## Vendor part-number handling — reconfirmed unresolved (added 2026-09-28)
+
+The truncated-versus-full manufacturer part-number question across EUDM/AMS and Gold WMX is reconfirmed open in this evidence window, framed as a source-of-truth alignment question rather than a pure data defect. Owner: Akansh Gangil. No change to the underlying defect tracked in `04` (WAM/ADM data integrity, Active) since 08-25; `05` A29's trigger has still not fired.
+
+**2026-10-14 update: formally classified as an enhancement, not a defect.** Current catalog-number logic stays in place because downstream reporting depends on it; the fix is adding a separate full-value field (`IA_TITEM_MAST.VNDR_ITEM_I`), not changing existing logic. Akansh Gangil to discuss with engineering and determine next steps, no date stated (`05` B107). Separately, a related catalog-classification gap surfaced in the same thread: software/license products (example given, HALO-LIC-1YR) may be omitted from current classification logic; Natalie Marquardt to review onboarding these products into ADM, no date stated (`05` B106). See `Part_Classification.md` for the classification-logic detail. Source: RE: Request for referencing full mfr part number in EUDM (email), 2026-10-13/14. **2026-10-15 update (Durable): the full-manufacturer-part-number fix is now classified as a cross-team enhancement spanning the IAP, UDM, and Data Lake layers**, not a single EUDM-side change. This widens the engineering discussion Akansh Gangil owes (`05` B107) beyond EUDM/AMS alone and beyond the single owner map in the constraints slide above. See `04` WAM/ADM data-integrity row, updated 2026-10-15.
+
+
+## Zapier app and API documentation: Strev SOW (added 2026-10-01)
+
+**Trigger.** Amy Aguirre email, 2026-10-01, attaching a Strev SOW and quote: Chris Gazdic previously decided not to invest in a Wesco Zapier app, before the AI Council existed; Amy does not know whether that position stands or whether this needs the AI intake path ("AI UI path", most likely the UiPath intake she referenced 09-17). If Wesco does not proceed, it continues to use Strev's Zapier capability. Darryl is drafting a review meeting invitation.
+
+**Proposal (source documents, confirmed).** SOW "Zapier Integration Setup and Public API Documentation," Strev (Revnue Corp.), dated 2026-09-24, supersedes v2.0 dated 2025-10-07. Strev builds, in a Wesco Zapier Developer account, an app replicating Strev's own Zapier app (30 triggers, 35 actions; API key/bearer token auth against assetmanagement.wesco.com), plus a Wesco-branded API documentation site on ReadMe (Startup plan) on a Wesco domain. Annual service keeps both current with Strev's *standard* releases only; anything Wesco requests needs a separate SOW. Fees: $15,000 one-time (Zapier setup 40 h / $6,000; docs site 60 h / $9,000; $150/h, billed on actuals) plus $10,000/year; $25,000 year one. Zapier and ReadMe subscriptions excluded, billed to Wesco directly. Quote REV-2609-00053 to Anixter Inc., dated 2026-09-23, contact Amy Aguirre, valid 30 days (to ~2026-10-23), 12-month commitment, PO required.
+
+**Discrepancy, unresolved:** the quote reads 26 triggers and 28 actions; the SOW reads 30 and 35. Same price. Reconcile before any PO.
+
+**History (Copilot evidence, 2026-10-01; not independently verified; one Copilot run is a sample, not a census):**
+- Zapier on the WAM roadmap since at least 2025; several project plans tracked "Zapier account & agreement," with the stated impact that without it customers would continue to see Strev rather than a Wesco-branded experience. The original objective was branding and control of the customer-facing integration.
+- Chris Gazdic, May 2026 planning discussion: "Wesco does have Zapier Licenses." Separate notes: Zapier approved from a security and VMO perspective, license available, custom configuration required to make it functional for Wesco. Account owner, status, and type (user subscription vs. Developer account) not established.
+- WAM designs and ADM/ALM demos reference Zapier for bulk license ingestion, customer data loading, SharePoint-to-Strev automation, low-code integration, and Avatour-to-Strev concepts. This is design intent; no evidence of current production use was found.
+
+**Assessment (Claude, 2026-10-01; inference, not fact):**
+- "Wesco-owned" overstates it: Wesco holds the accounts, listing, and domain; Strev builds and maintains the logic and the API behind it.
+- **Corrected 2026-10-01:** an earlier inference that Strev's existing app already connects self-service to assetmanagement.wesco.com is not supported. SOW §3.1 describes moving base URLs "from Strev's multi-tenant configuration to Wesco's static domain," and Copilot evidence says Strev's Zapier capability is used "on Wesco's behalf when required," i.e. Strev-operated, not customer or Wesco self-service. How it works for Wesco today is unconfirmed; ask Strev.
+- The SOW buys the connector only. Building Zaps and end-user workflows is out of scope (§7), so Wesco or customers still build every integration. Customers would need their own Zapier accounts.
+- The docs site ($9,000 of $15,000) is the practical form of an "API-first" option and could be priced separately.
+- Governance: the scope is integration/API exposure, not AI, so WAB (and confirming the existing security/VMO approval covers a public Wesco app) is the likelier path than AI Council. Exception: if Strev's "Get … Summary" actions call StrevAI, they intersect the AI Feature Pack, which is not under contract, and bring in the AI Council.
+- Ownership: funding of Strev add-ons sits with Amy per Darryl's 2026-09-17 boundary; decision owner and funding source not yet named.
+
+Decision status: `03` Decision Backlog, 2026-10-01 entry.
+
+## Weekly evidence, 2026-09-28 to 2026-10-05 (added 2026-10-05)
+
+- **Zapier/API ownership decision sharpened, not resolved.** Strev's SOW (dated 2026-09-24) and quote REV-2609-00053 confirm $25,000 year one ($15,000 one-time + $10,000/year), 30 triggers, 35 actions, a Wesco-branded API site, four-week implementation after access. Quote valid to ~2026-10-23. Darryl convened a reassessment meeting mid-week; it slipped once on attendee availability and was rescheduled to Monday 2026-10-05 (`05` A55; `03` Decision Backlog).
+- **New, separate decision surfaced alongside it: WAM Azure hosting.** A priced quote arrived to migrate Production/QA hosting from Strev Azure to Wesco Azure with ongoing Wesco DevOps management. Amy Aguirre is pressing IT leadership for a decision on both hosting and Zapier; no owner has decided either yet (`03` Decision Backlog, two new 2026-10-05 entries).
+- **ADM-to-Strev license synchronization confirmed operational**, with bulk synchronization enhanced for speed. Asset synchronization (vs. license synchronization) still requires ADM asset data and a separate pipeline — not yet built.
+- **FY27 capacity narrowed (Inferred, no signed record) to three buckets: DDP integration, core ADM product development, and required Strev integration only.** General Strev feature requests stay in Strev's own backlog unless integration funding is separately justified. See `03` 2026-10-05 Decisions Made (Inferred) and the existing "Run + Complete" Backlog entry, which this either confirms or needs reconciling against.
+- **ADM document-ingestion fragility named directly this week:** the current handcrafted supplier-document parser can fail when supplier templates change; the IDP team that would harden it is capacity-constrained with recent attrition. See `04` WAM/ADM data integrity row (updated 2026-10-05) and `05` B74 (Ankit Chadha, advanced but no delivery date).
+- **Complex-build cross-SBU track (VAS-WMX-ADM-ALM):** a follow-up working session is now shown on next week's calendar for 2026-10-08 — see `03` 2026-10-01/2026-10-05 entries, `05` A1.
+
+
+## ADM 2027 AOP slides, Sean meeting prep (added 2026-10-05)
+
+Source: Darryl, direct, 2026-10-05 session; email thread `Re: Request for referencing full mfr part number in EUDM` (2026-08-26 to 2026-10-05, complete).
+
+- **Integration platforms (Durable, Darryl relaying Akansh Gangil):** ADM to EUDM runs on Azure Databricks (ADB). ADM to Strev runs on Azure API Management (APIM). Sean McCloskey asked whether MuleSoft is used; at WAB, the Wesco team that handles both APIM and MuleSoft recommended APIM for Strev.
+- **License vs. asset classification will be derived from part descriptions (Durable, Darryl direct).** Replaces dependence on a P360 product-type attribute, which P360 governance declined 08-10. Warranty/renewal duration in P360 remains a dependency.
+- **Truncated vendor part number now has an incident: INC5657882, opened 2026-10-05** by Harini Doki (BI Wesco Integration Support L2) at Smitha Sheshadri's request. Mechanism: `prod_engineering.gld_eudm` trims vendor part numbers after the 15th character once spaces and dashes are removed, so distinct parts collide (e.g. MCPL-XPEXPLUSDL-3Y-20 and MCPL-XPEXPLUSDL-3-30 both become MCPLXPEXPLUSDL3); full value exists in PartMaster (`IA_TITEM_MAST.VNDR_ITEM_I`). Routing: Gandhi Subramanian (Director, MDM) pointed to Matthew Watson and Shamjad Salam (EUDM); Shamjad confirmed UDM tables also truncate and named Smitha. Srinu Babu: IAP direct-reference workaround not recommended. This is the first named fix path since 08-25 and bears on `05` A29/B53.
+- **FY27 development team is being cut drastically (Darryl, direct, 2026-10-05);** revised staffing spreadsheet coming from Chris Gazdic. Darryl will raise it with Sean on 2026-10-06. Slide FTE fields left as placeholders. **The 19.0 FTE AOP draft is no longer the baseline: 2027 development capacity is expected at roughly half of that at best (Darryl, direct, 2026-10-05).**
+- **Strev platform feature requests (bulk import, warranty-date calculation, tenant cloning) moved out of the Wesco FTE ask to a backup slide** as Strev SOW scope (Darryl, direct).
+- **Open question owed by Akansh Gangil:** how renewal orders would be auto-flagged from DDP when nothing in the data marks an order as a renewal.
+- Revised slides: `Deliverables/WAM/2026-10-05_ADM_2027_AOP_Slides_Revised.pptx` (Akansh's original untouched). David Blondel and Akansh Gangil input due morning of 2026-10-06.
+
+## Zapier and Azure hosting positions (added 2026-10-05)
+
+Source: Zapier reassessment meeting transcript, 2026-10-05 (Darryl, Chris Gazdic, David Blondel, Akansh Gangil; complete); Lisa Orton email to Amy Aguirre, 2026-10-05 16:36.
+
+- **Zapier: no change (Darryl, with Chris Gazdic agreeing).** The Strev-run Zapier integration continues as it is today; Wesco does not fund the $25,000 SOW. Chris: the only change would be the URL; no end customers are known to use it (users are internal). If the business wants it Wesco-branded, the business funds and contracts Strev. Chris recalled a separate, smaller earlier Strev Zapier quote (under ~$5,000), not located. Closes the `05` A55 reassessment question; Darryl to tell Amy.
+- **Azure migration of Strev (Lisa Orton, Darryl agreeing): not pursued at this time.** No meaningful functional difference for users; it would add internal Azure/DevOps effort. Lisa: an SOW must account for internal resources and effort, all part of Amy's BIR. **Hosting fees belong in Amy's BIR for the renewal (Lisa).** Amy is raising the BIR for the Meta renewal (due 9/30).
+- Darryl to set a meeting with Amy this week covering Zapier, hosting and upcoming Strev requests.
+
+## WAM Data Enrichment demo; ADM-to-Strev sync outage; MuleSoft/limitations slide owed (added 2026-10-13)
+
+Source: WAM Product discussion (transcript, complete, 598 lines), 2026-10-08; WAM Leadership Sync (transcript, complete, 540 lines), 2026-10-05; Awareness: ADM to Strev sync outage (email, complete, 94 lines, 3-message thread), 2026-10-07. M365 weekly evidence package, 2026-10-13.
+
+- **WAM Data Enrichment demonstrated for shipping and pricing data, targeted 2026-10-30.** Design starts from sales order, Wesco part number, and manufacturer part number. ADM is being positioned as the central data layer, curated before being passed to Strev (Senthil Govindaswamy and Akansh Gangil). Violet Moyer to share the larger WAM/MSAV data set with Akansh Gangil (`05` B98, due 2026-10-08, now overdue). Akansh Gangil to check whether reciprocal Wesco/manufacturer part-number completion can fit this iteration (`05` B99).
+- **Production ADM-to-Strev integration has failed continuously since 2026-09-25** (SSO/token-generation outage; see `04` Strev production API outage row, updated 2026-10-13). Amy Aguirre and Natalie Marquardt confirmed no dependent workflows are currently affected, so this is a vendor-reliability finding, not a live operational incident, as of this evidence.
+- **Akansh Gangil owes Darryl a confirmed MuleSoft/current-integration-architecture read and a WAM-limitations slide, ahead of Darryl's capacity conversation with Sean McCloskey** (`05` B100, feeds `05` A61 and `03`'s WAM/ADM reduced-capacity-reset Radar entry directly). Not yet delivered as of this evidence.
+- **Zapier decision (2026-10-05, recorded above) confirmed as the governing record.** This week's fresh evidence independently lists "decide whether Wesco should own a Zapier capability" as still open, sourced to the WAM Leadership Sync transcript, same day as the Zapier reassessment meeting recorded above. Read as Copilot's sample of an earlier point in the same meeting day, not a reopening; this file's 2026-10-05 entry carries the fuller transcript and the concluding call (no change, Wesco does not fund the SOW). Filed into `03` Decisions Made and `05` Register A (closing A55) during the 2026-10-13 reconciliation -- the gap between this file and the registers is now closed.

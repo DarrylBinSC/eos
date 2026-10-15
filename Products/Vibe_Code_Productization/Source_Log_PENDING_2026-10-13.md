@@ -1,0 +1,5 @@
+# Rows to append to Source_Log.md (file was locked on 2026-10-13; merge and delete this file)
+
+| 2026-10-13 | Mike Wassil, deck and report (AI-researched, from a brief not yet seen) | Six-step program, four gates, risk tiers T0-T3, build routes, value contract and five-line ledger, funnel report, roadmap to Q4 2027, five decisions; decision rights move to existing bodies; funding option 2 (central discovery) suggested; six candidate pilots named; corrects our CSA attribution and labels Gartner as forecast; terminology AI Builders Guild / AI-assisted building | Yes (Status log, External evidence, `03`) |
+| 2026-10-13 | Claude verification | CSA "5,600 apps" figure traced to a VentureBeat article on an Escape.tech vendor scan; our attribution was wrong | Yes (External evidence correction) |
+| 2026-10-13 | Darryl, direct | Accepts all review recommendations: adopt scaffolding, hold sponsor funding, hold capacity decision, joint route to Sean, ask Mike for the brief | Yes (`03`, `05` A60) |
