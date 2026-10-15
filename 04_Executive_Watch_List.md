@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 25 (ceiling 20) · Passive 54 · Retired 18.
+**Counts at generation:** Active 26 (ceiling 20) · Passive 53 · Retired 18.
 
 ## Active
 
@@ -31,6 +31,7 @@
 | W017 | JCI (Johnson Controls) MSP agreement stall | High | ↓ | Direct (email evidence through 06-08; Darryl field note 07-22) + Repetition (8+ month negotiation, no signature); Direct (Darryl, chat, 2026-09-01) | 2026-10-15 | MSP model decided 05-26 (not reseller); |
 | W019 | Louvre Abu Dhabi closeout — snag-list stall | High | ↑ | Direct (Deployment Daily Scrum 07-22; Re: IoT Consolidation Platform - Project Deployment Meeting, 08-04) | 2026-10-15 | Escalated from Medium 08-05. |
 | W021 | Federal Reserve (FRBNY) release 3.1.12.13 — held, customer not told | High | ↑ | Direct (Sarah Monteleone quoting Chad Steger, `Re: entroCIM Release – Version 3.1.12.13`, weekly evidence 2026-08-24 to 08-31) | 2026-10-15 | Escalated back to Active 2026-09-01 on a direct signal — held Passive since 08-27 on the reasoning that engineering already owned the fix, but this week's evidence shows the stall continuing rather than closing. |
+| W022 | IDP/ADM production integration — approved but unstaffed | High | New | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-10-15 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
 | W025 | entroCIM SSL certificate ownership undefined | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Outage resolved (GoDaddy certificate installed), but renewal, monitoring, and ownership of the certificate are not formalized -- repeat outage possible until they are. |
 | W026 | FRBNY Smart Building bid -- pricing deadline 2026-10-21 | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Mandatory scope and quantities due 2026-10-21, six days out. |
 | W023 | Managed-services staffing readiness for day-two entroCIM monitoring | Medium | New | Direct (entroCIM Backlog Deep Dive, 2026-09-08, verbatim transcript) | 2026-09-08 | Leadership (Brad Stevens, Nathan Kehr) expects commercial growth in managed monitoring/analytics but has not settled operating location, required building-domain skills, NOC placement, training path, or headcount. |
@@ -46,7 +47,6 @@ Logged for completeness. No action required; does not count toward risk load. Es
 
 | ID | Watch Item | Former severity | Evidence Basis | Last Update | Notes |
 |---|---|---|---|---|---|
-| W022 | IDP/ADM production integration — approved but unstaffed | High | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-10-15 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
 | W029 | Returnable asset tracking: build direction set before the cost basis exists | Medium | Direct (returnable asset tracking discussion transcript 2026-09-16; entroCIM Sensolus connector documentation 2026-09-16) | 2026-10-05 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | W028 | Dell SOC 2 / security-evidence request — scope and gating unknown | Medium | Direct (`EntroCIM Platform Solution & Delivery Group`, 08-18 onward) | 2026-10-05 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | W030 | Sales orders missing from EUDM/DDP data lake | High | Direct (FW: WAM - Records are created in Core ERP but not available in eudm table, 07-27; INC5456198) | 2026-09-17 | Demoted from Active 2026-09-17 (was High, trend ↑) on the objective silence test — no referencing evidence since 07-28, 51 days, and superseded in substance by the current WAM/ADM data integrity row above, which tracks the same truncated-part-number root caus… |
