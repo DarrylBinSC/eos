@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 15 (ceiling 15, by disposal only) · Other-Owned 140 (Critical 34) · Needs triage 0.
+**Counts at generation:** Register A 15 (ceiling 15, by disposal only) · Other-Owned 139 (Critical 33) · Needs triage 0.
 
 ---
 
@@ -62,7 +62,6 @@ Four registers. The delineation is the point.
 | C8 | JCI technical data for the WAB submission | Jeff McCorvey | Awaited | 2026-07-30 NEED BY | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: JCI technical preparation rather than contract or customer exposure. |
 | C4 | Backup email distribution list for failed notification routing | Natalie Marquardt | Awaited | 2026-08-03 Before | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: minor and superseded by the shipped notification release. |
 | C16 | Agreed, documented basis for FY27 financial assumptions | Tom Boss / Finance, with Darryl | Awaited | 2026-08-07 Recommend | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: the FY27 AOP has now submitted on these assumptions, so this is a question about what was submitted rather than a gate in front of anything. |
-| B36 | Disney SSO configuration correction (Okta/SAML audience-metadata mismatch) | Shawn Clark, Syed Zaidi | Delegated | 2026-08-13 Working session | **Critical** | 2026-08-13 | New customer relationship, onboarding delay |
 | B35 | Internal assessment of developer AI access and cost allocation | Sudhi Rao | Delegated | 2026-08-14 open-input target | -- | 2026-08-14 | Feeds the same AOP AI-cost question as A25 |
 | B48 | Complete the Innovance LicenseManager privacy survey assessment | Akansh Gangil (with Balasubramanian K) | Delegated | 2026-08-20 | -- | 2026-08-20 | New 08-19. |
 | B57 | Research Intel SceneScape fit and return an answer on roadmap displacement and joint go-to-market | Ron Snyder | Delegated | 2026-08-20 End of week following | -- | 2026-08-20 | Ron Snyder: "Yeah, I'll start looking into it and get you an answer." Owed to Ajay Bhat and Intel / Innovation Center |
@@ -212,6 +211,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
+| 2026-10-15 | **B36 — Disney SSO configuration correction (Okta/SAML audience-metadata mismatch)** | Darryl, EOS web app, 2026-10-15 | New customer relationship, onboarding delay |
 | 2026-10-07 | **A57 — Finish the entroCIM/CDA headcount balancing with Ron Snyder** | Darryl, chat, 2026-10-06 | Done. |
 | 2026-10-07 | **A56 — Email Emily Munk on TSS support for CDA** | Darryl, chat, 2026-10-06 | Done. |
 | 2026-10-05 | **A55 — Reconvene the WAM Zapier/API ownership reassessment meeting** | Zapier reassessment meeting transcript, 2026-10-05 | Done, and recorded in `Products/WAM/WAM.md` the same day, but never closed out here, a propagation gap caught and fixed during the 2026-10-13 reconciliation. |
