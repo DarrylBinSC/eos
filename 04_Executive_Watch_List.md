@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-10-15 10:11 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 10:13 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 27 (ceiling 20) · Passive 54 · Retired 16.
+**Counts at generation:** Active 27 (ceiling 20) · Passive 53 · Retired 17.
 
 ## Active
 
@@ -99,7 +99,6 @@ Logged for completeness. No action required; does not count toward risk load. Es
 | W052 | FRBNY customer satisfaction (alarms, FDD, CX alignment) | High | Direct (Chad handoff 07-13) | 2026-07-15 | Demoted from Active 2026-08-19 at the register cap re-rank (was High, trend →). |
 | W051 | BAE deployment — network/MQTT validation | High | Direct (Handoff doc 07-14; BAE Quick Sync 07-15) | 2026-07-15 | Demoted from Active 2026-08-19 at the register cap re-rank (was High, trend →). |
 | W075 | Backlog / release-scope drift (WAM + entroCIM) |  | Inferred | 2026-07-13 | Only evidence was that backlog forums exist — governance, not drift. |
-| W074 | Docker Hub / EntraSim security posture (Risk 1660) |  | Direct (documented) | 2026-07-13 | Formally tracked in the risk register, stable. |
 | W064 | Executive alignment above Darryl | Medium | Direct (field note 07-13) | 2026-07-13 | Demoted from Active 2026-08-19 at the register cap re-rank (was Medium, trend ↓). |
 | W059 | entroCIM showcase environment governance | Medium | Repetition | 2026-07-13 | Demoted from Active 2026-08-19 at the register cap re-rank (was Medium, trend →). |
 
@@ -107,6 +106,7 @@ Logged for completeness. No action required; does not count toward risk load. Es
 
 | Retired | ID | Item | Reason |
 |---|---|---|---|
+| 2026-10-15 | W074 | Docker Hub / EntraSim security posture (Risk 1660) | Formally tracked in the risk register, stable. |
 | 2026-10-14 | W082 | Strev production API outage (SSO, token generation), open since 2026-09-25 | Resolved (Darryl, direct, 2026-10-14). |
 | 2026-09-28 | W083 | Miller Electric PO paused — pricing below SkyFoundry OEM list, agreement risk | Resolved by decision. |
 | 2026-08-19 | W086 | Dell Limerick alarming issue | Provisionally resolved 2026-07-21 (forced roster refresh; |
