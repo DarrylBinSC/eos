@@ -798,9 +798,9 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-15 13:31 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 13:33 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 33.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 32.*
 
 ### 2026-10-07 — WAM/ADM reduced-capacity reset: what runs, completes, stops or defers
 - ID: D001
@@ -1047,22 +1047,6 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Context: product ownership model shifting toward a two-tier structure — a GPO peer role and a Claude Design owner role — with training and license distribution not yet resolved. Affects how product requirements, customer sessions, design artifacts, and handoffs get owned going forward; touches hiring/staffing expectations.
 - Risk of waiting: the AI-enabled development pilot and new ownership model could stall or land inconsistently across teams without a license/training plan.
 
-### 2026-07-27 — Dell/Wesco service management process — handoff model across Freshdesk and ServiceNow (new 2026-07-27)
-- ID: D033
-- Owner: Syed Jamshed Zaidi, with Darryl, Scott Dunn, Adam Lazare; Dell-side participants unconfirmed
-- Forum: Dell Service Management Process — met 2026-07-27; add to `07_Operating_Cadence.md` once cadence/owner confirmed. (2026-07-27)
-- Next action: bring the proposed current-state process map and the two recent process misses (Limerick, Non-DC) as concrete examples.
-- Added: 2026-07-27 (M365 weekly evidence — Teams chat with Syed Jamshed Zaidi 07-24; Dell Service Management Process meeting 07-27)
-- Context: current Dell support workflow is manual and unscalable (this is the same underlying gap flagged 07-21 as "Dell ServiceNow/Freshdesk support workflow redesign," now with a scheduled forum). Evidence states two recent Dell issues did not enter the established Wesco support process promptly — an operating-model gap, not a single-ticket problem. Directly relevant: this is the same team carrying Dell Limerick and Dell Non-DC HQ dashboard escalations (Watch List).
-- Options: continue current workflow vs. document and redesign the current-state process (Dell internal support, Freshdesk, ServiceNow escalation, handoffs, ownership, closed-loop communication).
-- Risk of waiting: customer experience degradation compounds with each new Dell escalation; this consolidates the prior "ServiceNow Field Services integration path" and "Dell workflow redesign" entries into one forum.
-- **Update 07-28 (M365 evidence): two named owner commitments from the 07-27 meeting — Syed Zaidi to schedule a follow-up workshop with Drew Connorton (new name) and additional stakeholders; Scott Dunn to update ticketing/routing documentation.** Follow-up workshop is the next forum occurrence; cadence still not confirmed (A10). Separately, a third Dell thread surfaced same day: PC1 meters offline (ticket 3046, Robert Tefft) — Scott Dunn investigating; possibly the same underlying pattern as the Non-DC dashboard gap (A2), not yet confirmed distinct.
-
-2026-10-15 (Darryl, web): 1. test text
-2. COOL
-- Bullet
--
-
 ### 2026-07-27 — entroCIM release governance tightened — DCOE-driven production controls (new 2026-07-27)
 - ID: D032
 - Owner: Ron Snyder
@@ -1234,7 +1218,7 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 59.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 60.*
 
 ### 2026-10-15 — Quest/Azure decommission: approve $245/hour T&M for secure data-removal validation (new, Decision Backlog)
 - ID: D037
@@ -1728,6 +1712,22 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Risk of waiting: Medium — the end-of-July target on the complex-build decision path is Darryl's own, and this session is the venue.
 - Follow-up: treat the session as a decision forum on the complex-build path, not only an as-is walkthrough. Confirm John Barlolotti at working level.
 - **Update 2026-08-05 (daily evidence, session held 08-04 09:00-09:30):** a working position emerged, **use VAS for complex finished goods and WMX for simplified products**. Treat this as the session's working position rather than a ratified decision; it was recorded in facilitator notes, and the session was rescheduled again before closing. Akansh Gangil agreed to reschedule "for Tuesday" accounting for time zones so Steve Leslie can attend (**exact ISO date not stated in the source; likely 2026-08-11, unconfirmed — do not treat as fixed**). Open questions carried forward: WMX versus VAS ownership, whether capture is mandatory, P360 configuration, and impact to non-DDP sites. Follow-up tasks named at working level: add a work-instruction field for MAC address and serial-number capture (Steven Leslie, Govardhan Shetty) and share the Jira link for WMX asset-tracking enhancements in the WMX chat (Steven Leslie, John Bartolotti). The end-of-July target Darryl set has now passed without the decision path closing; the session has moved at least twice.
+
+### 2026-07-27 — Dell/Wesco service management process — handoff model across Freshdesk and ServiceNow (new 2026-07-27)
+- ID: D033
+- Owner: Syed Jamshed Zaidi, with Darryl, Scott Dunn, Adam Lazare; Dell-side participants unconfirmed
+- Forum: Dell Service Management Process — met 2026-07-27; add to `07_Operating_Cadence.md` once cadence/owner confirmed. (2026-07-27)
+- Next action: bring the proposed current-state process map and the two recent process misses (Limerick, Non-DC) as concrete examples.
+- Added: 2026-07-27 (M365 weekly evidence — Teams chat with Syed Jamshed Zaidi 07-24; Dell Service Management Process meeting 07-27)
+- Context: current Dell support workflow is manual and unscalable (this is the same underlying gap flagged 07-21 as "Dell ServiceNow/Freshdesk support workflow redesign," now with a scheduled forum). Evidence states two recent Dell issues did not enter the established Wesco support process promptly — an operating-model gap, not a single-ticket problem. Directly relevant: this is the same team carrying Dell Limerick and Dell Non-DC HQ dashboard escalations (Watch List).
+- Options: continue current workflow vs. document and redesign the current-state process (Dell internal support, Freshdesk, ServiceNow escalation, handoffs, ownership, closed-loop communication).
+- Risk of waiting: customer experience degradation compounds with each new Dell escalation; this consolidates the prior "ServiceNow Field Services integration path" and "Dell workflow redesign" entries into one forum.
+- **Update 07-28 (M365 evidence): two named owner commitments from the 07-27 meeting — Syed Zaidi to schedule a follow-up workshop with Drew Connorton (new name) and additional stakeholders; Scott Dunn to update ticketing/routing documentation.** Follow-up workshop is the next forum occurrence; cadence still not confirmed (A10). Separately, a third Dell thread surfaced same day: PC1 meters offline (ticket 3046, Robert Tefft) — Scott Dunn investigating; possibly the same underlying pattern as the Non-DC dashboard gap (A2), not yet confirmed distinct.
+
+2026-10-15 (Darryl, web): 1. test text
+2. COOL
+- Bullet
+-
 
 ### 2026-07-24 — FY27 AOP resource allocation — Build vs. COGS
 - ID: D080
