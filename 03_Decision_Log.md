@@ -800,7 +800,7 @@
 
 <!-- GENERATED 2026-10-15 14:05 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 27.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 26.*
 
 ### 2026-10-07 — WAM/ADM reduced-capacity reset: what runs, completes, stops or defers
 - ID: D001
@@ -829,17 +829,6 @@
 - **2026-09-30 update:** Akansh Gangil committed (WAM connect transcript, 2026-09-30) to schedule a requirements-definition call next week with Alan, Daniel and Ramesh covering serial/MAC capture, parent-child structure, photos and sales-order linkage. First concrete forum movement since the 09-14 reopening; exact date not yet set. See `05` A1, B90; `Products/WAM/WAM.md`.
 - **2026-10-01 update — elevated to a formal cross-SBU effort, hard-dated.** A VAS-WMX-ADM-ALM working session (09-30, 15:30-16:00; Alan Martin, Amber Koons, Sean McCloskey, David Blondel, Akansh Gangil, Darryl Benson) established a cross-SBU effort to eliminate duplicate/conflicting capture of serial numbers, MAC addresses and related asset data across VAS, WMX, ADM and Strev, with consolidated use cases due **2026-10-16**. This is a distinct, higher-level track from the Ramesh/Daniel/Alan requirements call Akansh committed to (`05` B90, still not scheduled as of 10-01) — both feed the same underlying decision. Owner for the consolidated deliverable is not yet named; Darryl is a named participant, not confirmed as owner. Forum: VAS-WMX-ADM-ALM (new, cadence not yet confirmed). See `05` A1; `Products/WAM/WAM.md`.
 - **Update 2026-10-05 (weekly evidence):** a follow-up working session is now shown on next week's calendar for **2026-10-08** ("Working Session VAS-WMX-ADM-ALM (maybe STREV)"). Likely the continuation of this cross-SBU track rather than the separate Ramesh/Daniel/Alan call (B90) -- the name matches this track, not that one -- but not confirmed; check attendee list when it is transcribed. The 09-30 session itself was not transcribed at source (isMeetingTranscribed:false), so this update rests on calendar metadata only.
-
-### 2026-09-03 — Internal-use funding model for WAM in the Service Center
-- ID: D007
-- Status: Approaching
-- Owner: Darryl Benson to frame; Brad Stevens, Finance and Operations to decide
-- Forum: Brad Stevens / Lisa Orton meeting, week of 2026-09-08. (2026-09-08)
-- Context: Brad wants a WAM pilot through the Service Centers in Irving and Dacula, driven by Manny's fatigue with multiple tools and by customer demand (Microsoft AV named). His question, verbatim: "Do we charge Operations for this tool or is it a cost to IT or a cost to Commercial for using the tool internally?"
-- **This is a precedent decision, not a pilot detail.** No platform in this portfolio has an internal-use charging model, and every WAM figure of record is external attainment. Whatever is decided here becomes the template for internal use of entroCIM, Navigator and CDA, and it determines whether internal adoption shows up as revenue, as cost recovery, or as unfunded support load on Darryl's team.
-- Recommended path, offered not decided: fund the pilot centrally and defer the charging model until the pilot produces a measured internal benefit, so the pilot is not killed by a cost-allocation argument before it produces evidence. Decide the standing model on that evidence.
-- Risk of waiting: the team absorbs internal support demand with no funding line, which is the failure mode the FY27 resourcing conversation is already exposed to.
-- Follow-up: A40, retired 2026-10-05 (Darryl disposition: Retire, no reason stated) -- the Register A action tracking this is closed; the decision itself is not stated as resolved and stays in Backlog until Darryl says otherwise.
 
 ### 2026-08-28 — WAM integration into NavWork is unscheduled
 - ID: D009
@@ -1149,7 +1138,7 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 65.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 66.*
 
 ### 2026-10-15 — Quest/Azure decommission: approve $245/hour T&M for secure data-removal validation (new, Decision Backlog)
 - ID: D037
@@ -1379,6 +1368,17 @@
 - Related: the same question in reverse sits on the Radar as the NavWork facility-data scope entry (2026-08-28).
 
 *Real decisions with no routing forum or no live date. Reviewed monthly, on demand, or automatically when evidence shows one raised in a meeting (per Q4, 2026-07-27). Not surfaced weekly.*
+
+### 2026-09-03 — Internal-use funding model for WAM in the Service Center
+- ID: D007
+- Status: Approaching
+- Owner: Darryl Benson to frame; Brad Stevens, Finance and Operations to decide
+- Forum: Brad Stevens / Lisa Orton meeting, week of 2026-09-08. (2026-09-08)
+- Context: Brad wants a WAM pilot through the Service Centers in Irving and Dacula, driven by Manny's fatigue with multiple tools and by customer demand (Microsoft AV named). His question, verbatim: "Do we charge Operations for this tool or is it a cost to IT or a cost to Commercial for using the tool internally?"
+- **This is a precedent decision, not a pilot detail.** No platform in this portfolio has an internal-use charging model, and every WAM figure of record is external attainment. Whatever is decided here becomes the template for internal use of entroCIM, Navigator and CDA, and it determines whether internal adoption shows up as revenue, as cost recovery, or as unfunded support load on Darryl's team.
+- Recommended path, offered not decided: fund the pilot centrally and defer the charging model until the pilot produces a measured internal benefit, so the pilot is not killed by a cost-allocation argument before it produces evidence. Decide the standing model on that evidence.
+- Risk of waiting: the team absorbs internal support demand with no funding line, which is the failure mode the FY27 resourcing conversation is already exposed to.
+- Follow-up: A40, retired 2026-10-05 (Darryl disposition: Retire, no reason stated) -- the Register A action tracking this is closed; the decision itself is not stated as resolved and stays in Backlog until Darryl says otherwise.
 
 ### 2026-09-03 — CX Connect: ownership, what it actually does, and whether it belongs in the CSS portfolio
 - ID: D006
