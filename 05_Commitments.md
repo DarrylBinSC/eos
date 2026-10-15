@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 15 (ceiling 15, by disposal only) · Other-Owned 138 (Critical 32) · Needs triage 0.
+**Counts at generation:** Register A 15 (ceiling 15, by disposal only) · Other-Owned 137 (Critical 31) · Needs triage 0.
 
 ---
 
@@ -68,7 +68,6 @@ Four registers. The delineation is the point.
 | B59 | Run the Sales overview of entroCIM training offerings, intake, scheduling and delivery | Maggie Becker and David Blondel | Delegated | 2026-08-24 Week following | -- | 2026-08-24 | Maggie Becker, explicit. |
 | B63 | Schedule the ALM walkthrough for the I2S team, including the entire I2S team on the invitation | Akansh Gangil | Delegated | 2026-08-31 Week of | -- | 2026-08-31 | Darryl: "I will ask Akansh Gangil to schedule this for sometime next week." Beatrice Hernandez asked that the full I2S team be included. |
 | B64 | Issue legal termination notice for Jeff Verdon's contractor engagement | Chris Gazdic | Delegated | 2026-08-31 to preserve a September end date — passed | -- | 2026-08-31 | Gated on Darryl confirming the decision with Babu and giving Chris the answer (see A-candidate note below). |
-| B65 | Prepare for and represent Wesco at the Turner/FRB Cash Services descoping review | Sarah Monteleone and invited response team | Delegated | 2026-09-01 today | **Critical** | 2026-09-01 | Sarah Monteleone: "Please read through so you are familiar." Customer-facing RFP descoping review; |
 | C44 | Send WAM/Strev enhancement ticket numbers for bulk parent-child linking and warranty-date calculation | Violet Moyer | Awaited | 2026-09-01 After the call | -- | 2026-09-01 | New 09-09. |
 | B74 | Investigate IDP engineering capacity via John, Sathish, and the Bangalore AI team | Ankit Chadha | Delegated | 2026-09-02 Within one to two weeks of | -- | 2026-10-05 | New 09-09. |
 | C-i3-3 | i3 Alliance Agreement — Legal's answers to the five Section 12 questions, and confirmation of whether Section 12 is open in this round | Brandon Thompson | Awaited | 2026-09-10 Sent , gate on Legal's reply | **Critical** | 2026-09-10 | Five answers change the ask: (1) content of the Wesco Legal comment at §12.2 on prior written consent; |
@@ -210,6 +209,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
+| 2026-10-15 | **B65 — Prepare for and represent Wesco at the Turner/FRB Cash Services descoping review** | Darryl, EOS web app, 2026-10-15 | Sarah Monteleone: "Please read through so you are familiar." Customer-facing RFP descoping review; |
 | 2026-10-15 | **B52 — Add Disney training users at the Disney server level** | Darryl, EOS web app, 2026-10-15 | Single-person access dependency: Shawn Clark was on PTO and appeared to be the only person with server-level access. |
 | 2026-10-15 | **B36 — Disney SSO configuration correction (Okta/SAML audience-metadata mismatch)** | Darryl, EOS web app, 2026-10-15 | New customer relationship, onboarding delay |
 | 2026-10-07 | **A57 — Finish the entroCIM/CDA headcount balancing with Ron Snyder** | Darryl, chat, 2026-10-06 | Done. |
