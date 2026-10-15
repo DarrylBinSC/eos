@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 135 (Critical 29) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 135 (Critical 29) · Needs triage 0.
 
 ---
 
@@ -45,7 +45,6 @@ Four registers. The delineation is the point.
 
 | # | Action | Next Step | Counterparty | Trigger | Basis | Source |
 |---|---|---|---|---|---|---|
-| A62 | **Tell Amy Aguirre, Senthil Govindaswamy and Natalie Marquardt when Strev's outage is restored and the ADM to Strev sync is validated** | Close the loop on the 2026-10-07 awareness email (INC5630763). | Amy Aguirre, Senthil Govindaswamy, Natalie Marquardt | Strev confirms restoration (C66) and Akansh's team validates the sync; backstop 2026-10-21 | Explicit. Darryl's sent email, 2026-10-07: "I will let you know when Strev confirms the service is restored and we have validated the sync." | Darryl, chat 2026-10-07 |
 
 ## Other-Owned — Delegated and Awaited
 
@@ -209,6 +208,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-15 | **B15 — Investigate Dell PC1 meters-offline condition (ticket 3046) — reopened and widened** | Darryl, EOS web app, 2026-10-15 | Downgraded from Critical 2026-08-25, then reopened 2026-09-15 on contradiction, not echo. |
 | 2026-10-15 | **A66 — Set up the CDA follow-up with Matt Powers and Cody Remington** | Darryl, EOS web app, 2026-10-15 | ## Next step Business review of the services with TS: delivery model, failed-device replacement and dispatch through the integrator on the account, and how TS is changing its model. |
 | 2026-10-15 | **A63 — Tell Amy Aguirre the Zapier outcome (no change; Wesco does not fund Strev's $25,000 SOW)** | Darryl, EOS web app, 2026-10-15 | ## Next step The decision closed `05` A55 on 2026-10-05, but no evidence confirms Amy was actually told. |
+| 2026-10-15 | **A62 — Tell Amy Aguirre, Senthil Govindaswamy and Natalie Marquardt when Strev's outage is restored and the ADM to Strev sync is validated** | Darryl, EOS web app, 2026-10-15 | ## Next step Close the loop on the 2026-10-07 awareness email (INC5630763). |
 | 2026-10-15 | **A54 — Update WAM/asset-management and lifecycle content for the CSS Global Leaders slide** | Darryl, EOS web app, 2026-10-15 | ## Next step Feeds the CEC meeting 2026-10-07 (Digital Products / Agile Staff Meeting: content addressed "once the deck arrived"). |
 | 2026-10-15 | **A53 — Update CDA and Ascent content and the connected-strategy talk track for the CSS Global Leaders presentation** | Darryl, EOS web app, 2026-10-15 | ## Next step Same CEC meeting (2026-10-07) dependency as A54; |
 | 2026-10-15 | **A31 — Circulate the product pitches and soft metrics deck to Akansh Gangil, David Blondel, Ron Snyder and Chad Steger** | Darryl, EOS web app, 2026-10-15 | ## Next step Send with a specific question per reviewer rather than an open request for comment, so the round closes the three blocked metrics instead of collecting wording edits: Akansh, does the ADM audit trail separa… |
