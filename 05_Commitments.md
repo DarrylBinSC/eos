@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-15 14:07 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 14:08 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -65,7 +65,6 @@ Four registers. The delineation is the point.
 | C44 | Send WAM/Strev enhancement ticket numbers for bulk parent-child linking and warranty-date calculation | Violet Moyer | Awaited | 2026-09-01 After the call | -- | 2026-09-01 | New 09-09. |
 | B74 | Investigate IDP engineering capacity via John, Sathish, and the Bangalore AI team | Ankit Chadha | Delegated | 2026-09-02 Within one to two weeks of | -- | 2026-10-05 | New 09-09. |
 | B70 | Preserve an administrative Ford SOW copy and extend view access to Bill Rose, Lindsay Cotten, and Natalie Marquardt | Leanne Gordon | Delegated | 2026-09-14 Trigger fired — now live | -- | 2026-09-14 | New 09-09. |
-| C49 | Replacement Strev/Revnue entitlement document — the current version superseding v2.5 (May 2026) | Christina (Revnue); Sunny Sharma | Awaited | 2026-09-15 Requested and again 2026-09-17; no date given by the vendor | **Critical** | 2026-10-07 | New 2026-09-17. |
 | B82 | Send a follow-up email on the outstanding Azure listener dependency if unresolved after one more day | Babu Papanna | Delegated | 2026-09-17 | -- | 2026-09-17 | New 09-16. |
 | C46 | Confirmation of which Revnue/Strev catalog SKU each of the two UiPath submissions corresponds to, and whether Strev has represented them as generally available | Amy Aguirre | Awaited | 2026-09-17 standing weekly one-on-one | **Critical** | 2026-09-17 | New 2026-09-15. |
 | C50 | Strev pricing for the Virtual Site Survey: professional services development price, and a per-site run rate | Sunny Sharma and Christina (Revnue), chased by Amy Aguirre | Awaited | 2026-09-17 Requested on or before ; not dated | -- | 2026-09-17 | New 2026-09-17. |
@@ -89,6 +88,7 @@ Four registers. The delineation is the point.
 | B92 | Share the WAM/ADM data points already known to be required with the cross-SBU VAS/WMX/ADM/Strev working team | Akansh Gangil | Delegated | 2026-10-16 Ahead of the use-case deadline (not individually dated) | -- | 2026-10-01 | New 2026-10-01 (M365 evidence, 09-30 to 10-01). |
 | C63 | Outcome of Sean McCloskey's meeting with Akash Khurana on Digital Products taking over WAM development (the WAM team is still with Merwin's Platforms team) | Sean McCloskey | Awaited | 2026-10-19 After Sean's PTO; Darryl has no time with him before the week of | -- | 2026-10-14 | New 2026-10-06. |
 | B105 | Provide Ron Snyder guidance on tracking Claude Code usage | Naveen Kumar, coordinated by Ankit Chadha | Delegated | 2026-10-20 ~ (approximately one week; no ISO date stated) | -- | 2026-10-14 | New 2026-10-14. |
+| C49 | Replacement Strev/Revnue entitlement document — the current version superseding v2.5 (May 2026) | Christina (Revnue); Sunny Sharma | Awaited | 2026-10-23 Requested and again 2026-09-17; no date given by the vendor | **Critical** | 2026-10-15 | New 2026-09-17. |
 | B99 | Check whether reciprocal Wesco/manufacturer part-number completion can fit the current WAM Data Enrichment iteration | Akansh Gangil | Delegated | 2026-10-30 Before the enrichment target, if feasible | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
 | B10 | MDM attribute progress follow-up | Akansh Gangil | Delegated | IDP/WAM process review | -- | 2026-10-15 |  |
