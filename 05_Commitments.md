@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 129 (Critical 23) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 128 (Critical 22) · Needs triage 0.
 
 ---
 
@@ -71,7 +71,6 @@ Four registers. The delineation is the point.
 | B80 | Generate 25 targeted smart-building accounts, ≥2 stakeholders each, assign to Sales | Nathan Kehr / Centralized Sales (team goal — individual owner not stated) | Delegated | 2026-09-23 | -- | 2026-09-23 | Inferred attribution — email defines a team goal, no individual quoted accepting it. |
 | B91 | Update the commercialization deck with product-owner input (support ownership, service levels, onboarding, scale readiness) for WAM, entroCIM, Navigator and CDA | Sridhar Loke and product owners | Delegated | 2026-09-29 Within one week of (exact date not stated) | -- | 2026-10-06 | New 2026-10-01; |
 | B90 | Schedule a requirements-definition call with Alan, Daniel and Ramesh on the WAM/ADM complex-build capture path | Akansh Gangil | Delegated | 2026-09-30 Stated as "next week" (as of ); not yet scheduled — confirm date | -- | 2026-10-01 | New 2026-10-01 (M365 evidence, 2026-09-28 to 2026-09-30). |
-| B94 | Determine Ford DPR level of effort and recommend the commercial path (SME hours vs. separate PO/SOW) | Chad Steger | Delegated | 2026-10-01 Open since ; no date stated | **Critical** -- customer-facing, money/contract exposure (expired agreement, pending renewal PO) | 2026-10-09 | New 2026-10-05. |
 | C61 | Walmart conversation for CDA, refrigeration and produce systems as the entry point through Wesco's MRO relationship | David Fisher | Awaited | 2026-10-02 Longer term (Darryl, ): not before CDA is further into development; revisit when a pilot is running | -- | 2026-10-02 | New 2026-10-02. |
 | B72 | Share the entroCIM 3.1.12.14 release deck and build sales messaging with Valli Poornakumar and Leanne Gordon | David Blondel | Delegated | 2026-10-05 Before | -- | 2026-10-05 | New 09-09. |
 | C65 | Emily Munk's reply and a 30-minute walkthrough of CDA: TSS delivery and support ownership, positioning for TSS, route to Greg O'Brien | Emily Munk | Awaited | 2026-10-07 Requested within two weeks of (by 2026-10-21) | -- | 2026-10-14 | New 2026-10-07. |
@@ -198,6 +197,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-15 | **C46 — Confirmation of which Revnue/Strev catalog SKU each of the two UiPath submissions corresponds to, and whether Strev has represented them as generally available** | Darryl, EOS web app, 2026-10-15 | New 2026-09-15. |
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
 | 2026-10-15 | **C-i3-3 — i3 Alliance Agreement — Legal's answers to the five Section 12 questions, and confirmation of whether Section 12 is open in this round** | Darryl, EOS web app, 2026-10-15 | Five answers change the ask: (1) content of the Wesco Legal comment at §12.2 on prior written consent; |
+| 2026-10-15 | **B94 — Determine Ford DPR level of effort and recommend the commercial path (SME hours vs. separate PO/SOW)** | Darryl, EOS web app, 2026-10-15 | New 2026-10-05. |
 | 2026-10-15 | **B83 — Correct the conflicting release-milestone dates in `Team Update 2026 Sept 21.pptx` before the 2026-09-21 all-hands** | Darryl, EOS web app, 2026-10-15 | New 2026-09-18. |
 | 2026-10-15 | **B77 — Send device/network-information request for the four FRB VAVs** | Darryl, EOS web app, 2026-10-15 | "I'll get an e-mail out today." Same FRB thread as B76 — track together. |
 | 2026-10-15 | **B76 — Follow up on the FRB non-production environment and support need** | Darryl, EOS web app, 2026-10-15 | "I'll take a look at that." Federal Reserve is a named critical-path customer account (see `04` FRB rows). |
