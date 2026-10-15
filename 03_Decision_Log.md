@@ -798,7 +798,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-15 12:25 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 12:26 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 33.*
 
@@ -1053,6 +1053,11 @@
 - Options: continue current workflow vs. document and redesign the current-state process (Dell internal support, Freshdesk, ServiceNow escalation, handoffs, ownership, closed-loop communication).
 - Risk of waiting: customer experience degradation compounds with each new Dell escalation; this consolidates the prior "ServiceNow Field Services integration path" and "Dell workflow redesign" entries into one forum.
 - **Update 07-28 (M365 evidence): two named owner commitments from the 07-27 meeting — Syed Zaidi to schedule a follow-up workshop with Drew Connorton (new name) and additional stakeholders; Scott Dunn to update ticketing/routing documentation.** Follow-up workshop is the next forum occurrence; cadence still not confirmed (A10). Separately, a third Dell thread surfaced same day: PC1 meters offline (ticket 3046, Robert Tefft) — Scott Dunn investigating; possibly the same underlying pattern as the Non-DC dashboard gap (A2), not yet confirmed distinct.
+
+2026-10-15 (Darryl, web): 1. test text
+2. COOL
+- Bullet
+-
 
 ### 2026-07-27 — entroCIM release governance tightened — DCOE-driven production controls (new 2026-07-27)
 - ID: D032
