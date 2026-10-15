@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 12 (ceiling 15, by disposal only) · Other-Owned 135 (Critical 29) · Needs triage 0.
+**Counts at generation:** Register A 11 (ceiling 15, by disposal only) · Other-Owned 135 (Critical 29) · Needs triage 0.
 
 ---
 
@@ -29,7 +29,6 @@ Four registers. The delineation is the point.
 
 | # | Action | Next Step | Counterparty | Due | Basis | Source |
 |---|---|---|---|---|---|---|
-| A63 | **Tell Amy Aguirre the Zapier outcome (no change; Wesco does not fund Strev's $25,000 SOW)** | The decision closed `05` A55 on 2026-10-05, but no evidence confirms Amy was actually told. | Amy Aguirre | 2026-10-13 (today; filed late) | Explicit. Darryl, Zapier reassessment meeting, 2026-10-05: close-out action was "Darryl to tell Amy." | `Products/WAM/WAM.md`, 2026-10-05; `03` Decisions Made, 2026-10-05 |
 | A1 | **WMX complex-build follow-up** | Worked with Alan Martin, Dan Totino and the team to discuss how to collect the data required from the warehouses for use in WAM / ADM. | Daniel Totino / Akansh Gangil / GPO | 2026-10-15 (re-dated 09-18; PTO week of 09-21) | Confirmed (Darryl, direct, 2026-09-14) | Open since 07-17 |
 | A65 | **Prepare a condensed Launch Studio update for Sean McCloskey** | Boil the Launch Studio material down to what Sean needs to sponsor or act on. | Sean McCloskey | 2026-10-17 (Claude-proposed for "next week"; confirm) | Explicit. Darryl, own words, Vibe Coding transcript, 2026-10-13: "I'm going to boil some of this down for Shawn." | Vibe Coding transcript, 2026-10-13; daily evidence 2026-10-14 |
 | A58 | **Build the entroCIM data center value proposition and positioning briefing for Sean** | PowerPoint on the Wesco template, worked the way CDA was. | Sean McCloskey; Nathan Kehr | 2026-10-19 Week of | Explicit. Darryl action list, 2026-10-06 | Darryl, chat 2026-10-06 |
@@ -209,6 +208,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-15 | **B52 — Add Disney training users at the Disney server level** | Darryl, EOS web app, 2026-10-15 | Single-person access dependency: Shawn Clark was on PTO and appeared to be the only person with server-level access. |
 | 2026-10-15 | **B36 — Disney SSO configuration correction (Okta/SAML audience-metadata mismatch)** | Darryl, EOS web app, 2026-10-15 | New customer relationship, onboarding delay |
 | 2026-10-15 | **B15 — Investigate Dell PC1 meters-offline condition (ticket 3046) — reopened and widened** | Darryl, EOS web app, 2026-10-15 | Downgraded from Critical 2026-08-25, then reopened 2026-09-15 on contradiction, not echo. |
+| 2026-10-15 | **A63 — Tell Amy Aguirre the Zapier outcome (no change; Wesco does not fund Strev's $25,000 SOW)** | Darryl, EOS web app, 2026-10-15 | ## Next step The decision closed `05` A55 on 2026-10-05, but no evidence confirms Amy was actually told. |
 | 2026-10-15 | **A54 — Update WAM/asset-management and lifecycle content for the CSS Global Leaders slide** | Darryl, EOS web app, 2026-10-15 | ## Next step Feeds the CEC meeting 2026-10-07 (Digital Products / Agile Staff Meeting: content addressed "once the deck arrived"). |
 | 2026-10-15 | **A53 — Update CDA and Ascent content and the connected-strategy talk track for the CSS Global Leaders presentation** | Darryl, EOS web app, 2026-10-15 | ## Next step Same CEC meeting (2026-10-07) dependency as A54; |
 | 2026-10-15 | **A31 — Circulate the product pitches and soft metrics deck to Akansh Gangil, David Blondel, Ron Snyder and Chad Steger** | Darryl, EOS web app, 2026-10-15 | ## Next step Send with a specific question per reviewer rather than an open request for comment, so the round closes the three blocked metrics instead of collecting wording edits: Akansh, does the ADM audit trail separa… |
