@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-10-15 14:15 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 14:17 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 25 (ceiling 20) · Passive 53 · Retired 19.
+**Counts at generation:** Active 26 (ceiling 20) · Passive 53 · Retired 18.
 
 ## Active
 
@@ -31,6 +31,7 @@
 | W009 | Dell alarm reliability — alarm-database corruption stops alarming | High | ↑ | Direct (`2026 Deployment - Daily Scrum` 08-25, 09-15; Daily Stand Up 09-15) | 2026-10-14 | Intermittent alarming failures traced to alarm-database corruption. |
 | W016 | WAM/ADM data integrity + scalability (operational hardening) | High | ↑ | Direct (Backlog Refinement 07-20 — transcript/Loop; speaker attributions unconfirmed; WAM Data Challenges 07-30; Requirement Estimation doc, 08-06) | 2026-10-14 | Seven-problem stabilization plan (full dump: `WAM_Product_Backlog_Refinement_Problems_Work_Plan_2026-07-20.md`). |
 | W024 | Commissioned El Dorado and Panama devices (entroCIM) not producing expected alarms ahead of environment decommissioning | High | New | Direct (`2026 Deployment - Daily Scrum` transcript, 2026-10-14) | 2026-10-14 | Syed Zaidi, direct: the customer is not getting alarms from commissioned devices, and called visibility critical before an environment decommissioning expected within weeks. |
+| W019 | Louvre Abu Dhabi closeout — snag-list stall | High | ↑ | Direct (Deployment Daily Scrum 07-22; Re: IoT Consolidation Platform - Project Deployment Meeting, 08-04) | 2026-10-15 | Escalated from Medium 08-05. |
 | W025 | entroCIM SSL certificate ownership undefined | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Outage resolved (GoDaddy certificate installed), but renewal, monitoring, and ownership of the certificate are not formalized -- repeat outage possible until they are. |
 | W026 | FRBNY Smart Building bid -- pricing deadline 2026-10-21 | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Mandatory scope and quantities due 2026-10-21, six days out. |
 | W023 | Managed-services staffing readiness for day-two entroCIM monitoring | Medium | New | Direct (entroCIM Backlog Deep Dive, 2026-09-08, verbatim transcript) | 2026-09-08 | Leadership (Brad Stevens, Nathan Kehr) expects commercial growth in managed monitoring/analytics but has not settled operating location, required building-domain skills, NOC placement, training path, or headcount. |
@@ -105,7 +106,6 @@ Logged for completeness. No action required; does not count toward risk load. Es
 | Retired | ID | Item | Reason |
 |---|---|---|---|
 | 2026-10-15 | W074 | Docker Hub / EntraSim security posture (Risk 1660) | Formally tracked in the risk register, stable. |
-| 2026-10-15 | W019 | Louvre Abu Dhabi closeout — snag-list stall | Escalated from Medium 08-05. |
 | 2026-10-15 | W014 | Disney SSO onboarding failure (7 Hudson entroCIM deployment) | Network changes completed (Victor Guzman), but SSO still returns an audience/metadata-related error on subsequent test (Shawn Clark). |
 | 2026-10-14 | W082 | Strev production API outage (SSO, token generation), open since 2026-09-25 | Resolved (Darryl, direct, 2026-10-14). |
 | 2026-09-28 | W083 | Miller Electric PO paused — pricing below SkyFoundry OEM list, agreement risk | Resolved by decision. |
