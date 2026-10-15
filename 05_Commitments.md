@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-15 14:21 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-15 14:22 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 125 (Critical 19) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 124 (Critical 18) · Needs triage 0.
 
 ---
 
@@ -140,7 +140,6 @@ Four registers. The delineation is the point.
 | B95 | Work with Natalia Shtern to revise entroCIM brochure terminology ("DCIM" to "Data Center" / "IT Asset") | David Blondel | Delegated | Not dated | -- | 2026-10-05 | New 2026-10-05. |
 | B96 | Coordinate Ford audit resources once the customer schedules the system audit | Chad Steger | Delegated | Gated on Tim Scott scheduling the audit; no date yet | -- | 2026-10-07 | New 2026-10-07 (daily evidence, folded into this week's reconciliation). |
 | B97 | Send Ford account credentials and establish a shared SharePoint exchange area for the working team | Jacob Nicosia | Delegated | Not stated | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
-| C-i3-1 | i3 Alliance Agreement — Legal's response to the Section 8 redline, and how Section 9.2 is squared with the 8.3/8.4 configuration-authority position | Brandon Thompson | Awaited | Gate likely open 08-07 — pending A27 confirmation | **Critical** | 2026-08-25 | Section 9.2 gives i3 final authority over control-platform configuration; |
 | C-i3-2 | Review of proposed §8.10 (no derivation) and the §6.2 claim over graph models, ontologies, and schemas, alongside Comment 62 | Nikos Minas | Awaited | Gate likely open 08-07 — pending A27 confirmation | **Critical** | 2026-08-25 | Nikos already holds Comment 62. |
 | C-i3-3b | i3's answers to six pre-signature diligence questions | i3, via Wesco Legal | Awaited | Gate: not yet raised | -- | 2026-10-15 | Listed in the memo. |
 | C10 | JCI open contract items (8) | JCI / Brian Miller / Wesco Legal | Awaited | Gate: C1 markup | **Critical** | 2026-10-15 | Eight rows consolidated. |
@@ -195,6 +194,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-15 | **C46 — Confirmation of which Revnue/Strev catalog SKU each of the two UiPath submissions corresponds to, and whether Strev has represented them as generally available** | Darryl, EOS web app, 2026-10-15 | New 2026-09-15. |
 | 2026-10-15 | **C12 — TCCC/AOC correlation data + whether scoped hardware upgrades were installed** | Darryl, EOS web app, 2026-10-15 | Likely dispositive; |
 | 2026-10-15 | **C-i3-3 — i3 Alliance Agreement — Legal's answers to the five Section 12 questions, and confirmation of whether Section 12 is open in this round** | Darryl, EOS web app, 2026-10-15 | Five answers change the ask: (1) content of the Wesco Legal comment at §12.2 on prior written consent; |
+| 2026-10-15 | **C-i3-1 — i3 Alliance Agreement — Legal's response to the Section 8 redline, and how Section 9.2 is squared with the 8.3/8.4 configuration-authority position** | Darryl, EOS web app, 2026-10-15 | Section 9.2 gives i3 final authority over control-platform configuration; |
 | 2026-10-15 | **B94 — Determine Ford DPR level of effort and recommend the commercial path (SME hours vs. separate PO/SOW)** | Darryl, EOS web app, 2026-10-15 | New 2026-10-05. |
 | 2026-10-15 | **B83 — Correct the conflicting release-milestone dates in `Team Update 2026 Sept 21.pptx` before the 2026-09-21 all-hands** | Darryl, EOS web app, 2026-10-15 | New 2026-09-18. |
 | 2026-10-15 | **B79 — Reschedule a capacity-planning call to define three weeks of work before Chethan's leave date** | Darryl, EOS web app, 2026-10-15 | Gates the knowledge-transfer plan against a hard HR departure date (`06` Chethan entry). |
