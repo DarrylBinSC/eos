@@ -17,7 +17,8 @@
     "Daily Scrum"
    ],
    "confirmed": true,
-   "track": "delivery"
+   "track": "delivery",
+   "last_evidence": "2026-10-16"
   },
   {
    "key": "entrocim-standup",
@@ -34,7 +35,8 @@
     "Daily Standup"
    ],
    "confirmed": true,
-   "track": "development"
+   "track": "development",
+   "last_evidence": "2026-10-16"
   },
   {
    "key": "entrocim-backlog",
@@ -48,7 +50,8 @@
    "aliases": [],
    "confirmed": true,
    "notes": "07 lists Darryl as Attend; confirm it is team-governed",
-   "track": "development"
+   "track": "development",
+   "last_evidence": "2026-09-14"
   },
   {
    "key": "dcoe-entrocim",
@@ -61,7 +64,8 @@
    ],
    "aliases": [],
    "confirmed": true,
-   "track": "development"
+   "track": "development",
+   "last_evidence": "2026-10-05"
   },
   {
    "key": "quest-migration",
@@ -74,7 +78,8 @@
    ],
    "aliases": [],
    "confirmed": true,
-   "track": "delivery"
+   "track": "delivery",
+   "last_evidence": "2026-09-14"
   },
   {
    "key": "showcase",
@@ -87,7 +92,8 @@
    ],
    "aliases": [],
    "confirmed": true,
-   "track": "development"
+   "track": "development",
+   "last_evidence": ""
   },
   {
    "key": "deployment-knowledge-share",
@@ -100,7 +106,8 @@
    ],
    "aliases": [],
    "confirmed": true,
-   "track": "delivery"
+   "track": "delivery",
+   "last_evidence": ""
   },
   {
    "key": "wam-backlog-refinement",
@@ -113,7 +120,8 @@
    ],
    "aliases": [],
    "confirmed": true,
-   "track": "development"
+   "track": "development",
+   "last_evidence": "2026-09-14"
   },
   {
    "key": "wam-sprint-review",
@@ -126,7 +134,8 @@
    ],
    "aliases": [],
    "confirmed": true,
-   "track": "development"
+   "track": "development",
+   "last_evidence": "2026-08-25"
   },
   {
    "key": "wam-india-dev",
@@ -139,7 +148,8 @@
    ],
    "aliases": [],
    "confirmed": true,
-   "track": "development"
+   "track": "development",
+   "last_evidence": ""
   },
   {
    "key": "wam-product-discussion",
@@ -152,7 +162,8 @@
    ],
    "aliases": [],
    "confirmed": true,
-   "track": "development"
+   "track": "development",
+   "last_evidence": "2026-09-09"
   },
   {
    "key": "adm-connect",
@@ -166,7 +177,8 @@
    "aliases": [],
    "confirmed": true,
    "notes": "07 raises Darryl to Attend while the part-number and leaf-node dependencies are open",
-   "track": "development"
+   "track": "development",
+   "last_evidence": "2026-09-09"
   },
   {
    "key": "product-platform-connect",
@@ -177,7 +189,8 @@
    "products": [],
    "aliases": [],
    "confirmed": true,
-   "track": "development"
+   "track": "development",
+   "last_evidence": ""
   }
  ],
  "tracks": [
@@ -199,5 +212,6 @@
    ],
    "scope": "entroCIM and WAM development, backlog, release governance"
   }
- ]
+ ],
+ "last_evidence_note": "last_evidence: date of the newest saved evidence package (Evidence/) that covered the forum. Backfilled 2026-10-16 by searching Evidence/ for each forum's name and aliases; set at every brief from then on. Blank = no saved package has covered it."
 }

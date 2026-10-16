@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-10-16 14:09 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 14:48 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -35,7 +35,7 @@
 | W008 | Ford entroCIM (UDAC) renewal and platform-trust gap | Medium | ↑ | Direct (`Wesco & Ford - entroCIM Platform - Re-Alignment & Action Item Call`, 08-26; RE: SLA Verbiage email thread, weekly evidence 2026-09-02 to 09-09) | 2026-10-05 | Ford and Wesco aligned on 08-26 to renew UDAC support and let EDC support expire, using an SLA for unplanned support and SOW/SME hours for planned scope (Darryl: "Hours buy Capacity, SLA buys commitment" — `Products/entroCIM/entroCIM.md`). |
 | W027 | Quest/Azure decommission -- secure data-removal validation T&M approval unresolved | Medium | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Secure data-removal validation on the Quest exit requires approval of a $245/hour T&M consultation; |
 | W020 | CrowdStrike: Azure VM overly permissive ingress rule | Medium-High | ↑ | Direct (Discuss CrowdStrike Vulnerability Risk, 07-28; Teams chat with Venkateswara Devathi, 08-27) | 2026-08-27 | Escalated back to Active 2026-08-27 on a direct signal, per the Passive-tier return condition set 08-19. |
-| W002 | Dell account staffing — second dedicated entroCIM/EMS FTE requested | Medium-High | New | Direct (RE: Dell EMS Program FTE New Hire Discussion, weekly evidence 2026-10-05) | 2026-10-05 | Dell asked for a second dedicated FTE within three to five months. |
+| W002 | Dell account staffing — second dedicated entroCIM/EMS FTE requested | Medium-High | New | Direct (RE: Dell EMS Program FTE New Hire Discussion, weekly evidence 2026-10-05) | 2026-10-16 | Dell asked for a second dedicated FTE within three to five months. |
 
 ## Passive Watch
 
