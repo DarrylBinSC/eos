@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-16 16:20 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 16:21 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -104,7 +104,7 @@ Four registers. The delineation is the point.
 | B32 | Identify missing AQI and people-counting sensor data; integrate once fixed | Marjan Fathima / Valli Poornakumar; Adam Slingerland / Pradyumna Umarji | Delegated | LAD snag-list review | -- | 2026-10-15 | Route identified 08-04, integration not complete |
 | B33 | Reconcile a single authoritative entroCIM project-closeout package | Adam Lazare (with Mike Reed) | Delegated | Rescheduled closeout review | -- | 2026-10-15 | Prior documents "could be looked at two different ways" |
 | B38 | Investigate Freshdesk custom-mailbox (support.ec@wesco.com) send failure | Shawn Clark, Babu Papanna | Delegated | Reply to Darryl | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: the corresponding watch row was demoted to Passive on 08-25 after 18 days absent from the evidence. |
-| B4 | Ascent POC — get it running | Chad Steger (technical POC), Chris Askew (JACE access) | Delegated | Gate passed 08-15; superseded by direct evidence | -- | 2026-09-18 | Advanced, 09-15 to 09-28 evidence. |
+| B4 | Ascent POC — get it running | Chad Steger (technical POC), Chris Askew (JACE access) | Delegated | Gate passed 08-15; superseded by direct evidence | -- | 2026-10-16 | Advanced, 09-15 to 09-28 evidence. |
 | B40 | Investigate automating manual sales-order extraction | Akansh Gangil | Delegated | Not dated | -- | 2026-10-15 | New 08-12. |
 | B42 | Check/complete AD group access mapping for Claude Code rollout | Darryl Benson | Delegated | — | -- | 2026-10-15 | Superseded 08-17 — promoted to Register A28. |
 | B43 | Document the entroCIM containerization deployment process for Sales and IT | David Blondel, with Darryl | Delegated | Not dated | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: internal documentation, no customer or contract exposure. |
