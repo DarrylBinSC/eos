@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-16 16:06 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 16:19 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-02 to 2026-10-16. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -45,9 +45,9 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Natalie Marquardt | 0 | 0 | 9 | 0 |  |
 | Chad Steger | 0 | 2 | 8 | 0 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 0 | 0 | 7 | 0 |  |
-| Scott Dunn | 0 | 2 | 5 | 0 | 2026 Deployment Daily Scrum |
 | David Blondel | 0 | 0 | 5 | 0 |  |
 | Nathan Kehr | 0 | 0 | 5 | 0 |  |
+| Scott Dunn | 0 | 2 | 4 | 0 | 2026 Deployment Daily Scrum |
 | Adam Lazare | 0 | 0 | 4 | 0 |  |
 | Amy Aguirre | 0 | 0 | 3 | 0 |  |
 | Ankit Chadha | 0 | 0 | 3 | 0 |  |

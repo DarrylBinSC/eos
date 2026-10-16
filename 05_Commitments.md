@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-16 16:06 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 16:19 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 121 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 120 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -52,7 +52,6 @@ Four registers. The delineation is the point.
 
 | # | Item | Owner | Type | Gate / Due | Critical? | Last evidence | Note |
 |---|---|---|---|---|---|---|---|
-| C11 | Confirmation or correction of the controller-capacity diagnosis | Scott Dunn | Awaited | 2026-07-29 Before | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a confirmation of a diagnosis; |
 | C8 | JCI technical data for the WAB submission | Jeff McCorvey | Awaited | 2026-07-30 NEED BY | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: JCI technical preparation rather than contract or customer exposure. |
 | C4 | Backup email distribution list for failed notification routing | Natalie Marquardt | Awaited | 2026-08-03 Before | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: minor and superseded by the shipped notification release. |
 | C16 | Agreed, documented basis for FY27 financial assumptions | Tom Boss / Finance, with Darryl | Awaited | 2026-08-07 Recommend | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: the FY27 AOP has now submitted on these assumptions, so this is a question about what was submitted rather than a gate in front of anything. |
@@ -304,6 +303,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Item | Was | Dropped | Reason |
 |---|---|---|---|
+| **Confirmation or correction of the controller-capacity diagnosis** | C11 | 2026-10-16 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a confirmation of a diagnosis; |
 | **Interview the EES team on asset-tracking requirements and document use cases before development begins** | B87 | 2026-10-16 | New 2026-09-28 (14-day evidence window). |
 | **Book a review with Robbie and the Dell IT team on the entroCIM application topic** | B110 | 2026-10-16 | Created this morning under the old intake rule; moved to the Pulse as P003. |
 | **Track and log the Dell PC1 meter discrepancies so they are not lost** | B109 | 2026-10-16 | Created this morning under the old intake rule; moved to the Pulse as P002. |
