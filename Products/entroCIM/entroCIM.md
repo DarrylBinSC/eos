@@ -424,3 +424,10 @@ Source: entroCIM Backlog Deep Dive (transcript, complete, 1099 lines), 2026-10-0
 Source: daily M365 evidence, reporting window 2026-10-14 to 2026-10-15.
 
 - **Outage resolved:** a production outage caused by an expired SSL certificate was fixed by installing a GoDaddy-issued certificate. **Durable dependency fact:** entroCIM's hosted environment has no formalized certificate monitoring, renewal, or ownership process -- the fix was reactive, not a process fix. Repeat outage is possible until certificate monitoring, renewal, and ownership are formalized. No named owner in evidence. Tracked as a new High-severity Active item in `04` (entroCIM SSL certificate ownership undefined, 2026-10-15) -- a repeat outage is customer-visible, which is why this clears the Active bar despite being an infrastructure rather than a feature risk.
+
+## Tenant redesign ~75% complete; Ascent now expects a standard onboarding process (added 2026-10-16)
+
+Source: Daily Stand Up transcript (2026-10-15, retrieved complete) and RE: Ascent airwall email thread (2026-10-15, retrieved complete), both daily M365 evidence 2026-10-16.
+
+- **Tenant redesign (access-boundary rework) is roughly three-quarters complete** (Michael Pieschel's own estimate): tenant creation, asset assignment/removal, and user-to-tenant access boundaries. **New boot-mode routing** supports a user-specific dev URL and dev view; a new application landing page is part of the same plan. No acceptance criteria, migration plan, or release date surfaced in evidence yet — this is a capability change affecting tenant administration and customer-facing navigation, not yet a scheduled release.
+- **Ascent/Airwall: durable shift in partner expectation.** Chris Askew asked Chad Steger directly for Wesco's "standard" onboarding checklist/process rather than continuing the ad hoc path used to get the Ascent HQ Airwall running. Airwall itself is installed, online, and visible to the Wesco team (reconfirms 09-28); JACE IP/credentials from Ascent are still outstanding (`05` C69). See `05` B4 (updated 2026-10-16).

@@ -23,7 +23,7 @@ from pathlib import Path
 
 ROOT = Path(os.environ.get("EOS_ROOT", Path(__file__).resolve().parent.parent))
 REG_DIR = ROOT / "Registers"
-KINDS = ("action", "watch", "decision")
+KINDS = ("action", "watch", "decision", "pulse")  # pulse added 2026-10-16 (Operational Pulse, see eos_pulse.py)
 
 # Field order inside the front matter. Unknown fields are written after these, alphabetically.
 FIELD_ORDER = [
@@ -156,7 +156,7 @@ def find_item(item_id: str) -> tuple[dict, str, Path] | None:
 
 
 def next_id(prefix: str) -> str:
-    """Next free ID for a prefix (A, B, C, W, D). Scans all kinds so IDs never collide."""
+    """Next free ID for a prefix (A, B, C, W, D, P). Scans all kinds so IDs never collide."""
     best = 0
     for k in KINDS:
         d = REG_DIR / k
@@ -166,7 +166,7 @@ def next_id(prefix: str) -> str:
             m = re.fullmatch(rf"{prefix}(\d+)", p.stem)
             if m:
                 best = max(best, int(m.group(1)))
-    width = 3 if prefix in ("W", "D") else 0
+    width = 3 if prefix in ("W", "D", "P") else 0
     n = best + 1
     return f"{prefix}{n:0{width}d}" if width else f"{prefix}{n}"
 
@@ -461,11 +461,18 @@ def regenerate_all(write: bool = True) -> dict:
     t04 = generate_04(watches)
     p03 = ROOT / "03_Decision_Log.md"
     t03 = generate_03(decs, p03.read_text(encoding="utf-8"))
+    counts = {"action": len(acts), "watch": len(watches), "decision": len(decs)}
     if write:
         (ROOT / "05_Commitments.md").write_text(t05, encoding="utf-8")
         (ROOT / "04_Executive_Watch_List.md").write_text(t04, encoding="utf-8")
         p03.write_text(t03, encoding="utf-8")
-    return {"action": len(acts), "watch": len(watches), "decision": len(decs)}
+        # Operational Pulse view and the daily account-health snapshot (added 2026-10-16).
+        try:
+            import eos_pulse
+            counts["pulse"] = eos_pulse.write_view()
+        except Exception as e:  # the Pulse must never block the register views
+            counts["pulse_error"] = str(e)
+    return counts
 
 
 if __name__ == "__main__":

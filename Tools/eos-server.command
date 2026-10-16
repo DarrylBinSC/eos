@@ -53,6 +53,8 @@ cat > "$EOS_ROOT/.gitignore" <<'EOG'
 *.zip
 *.log
 *.diff
+__pycache__/
+*.pyc
 Pandoc/output/
 Pandoc/processed/
 Pandoc/samples/

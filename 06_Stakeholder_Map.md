@@ -132,6 +132,7 @@
 ### Jason Ganiatsas
 - Application Engineer, entroCIM IT; reports to David Blondel (Teams org chart, 07-15). Works with Ron Snyder, Mike Reed, Shawn Clark, Elias Brewer.
 - Executing on the Showcase environment work (per Darryl's 07-15 message to David/Ron: "make sure JG and Mike are moving").
+- **10-16 (Daily Stand Up, 10-15 transcript): named by Michael Pieschel as the go-to resource on entroCIM tenant behavior** ("Jason G is pretty knowledgeable about it") during the tenant-redesign demo. Another data point on knowledge sitting with named individuals ahead of a release; see `04` W066.
 
 ### Mike Reed
 - Business Analyst, entroCIM IT (Anixter entity, remote); reports to David Blondel (Teams profile, 07-15). Works with Chad Steger, Nathan Kehr, Sarah Monteleone, Natalie Marquardt, Lindsay Cotten, Leanne Gordon.
@@ -169,7 +170,7 @@
 - **Sudhi Rao / Moe Aminlari / Ankit** — Digital Products: VAS roadmap, AI dashboard (Ankit owes Power BI access), hiring candidate (Sudhi). Per Digital Product List 07-15: Sudhi ("Sudio" on slide — spelling unconfirmed) is Product Executive for ConstructTech Integrator, QPM, Retrofit, VAS Configurator; Moe Aminlari is PE for Intelligent Document Processing. **07-22: actively engaged in the IDP/WAM POC re-validation thread** (with Scott Frost, Akansh Gangil) — owes weekly IDP slide reflecting MDM progress, alongside Scott Frost. **07-27: named (with Anna Baker) as apparent owner of finalizing QPM 3.4.3 scope/requirements and CPQ/QPMSupport alignment**, target first week of August — consistent with his QPM Product Executive role.
 - **Scott Dunn / Syed Jamshed Zaidi** — deployment delivery leads; coverage window Jul 16–21 (Chad out, Syed limited). Both are Chad Steger directs (07-15) — see Chad's entry; not cross-functional.
 - **Steve Leslie** — GPO (Global Process Owner), previously dictating the WMX/process roadmap (confirmed VAS transcript 07-14). **Update 07-17 (Darryl): Steve has delegated the GPO role for WMX to John Barlolotti** — Steve remains a participant in the Wednesday (2026-07-22) WMX follow-up alongside Sid Sarna, but John Barlolotti is now the process-decision authority for WMX.
-- **John Barlolotti** — GPO for WMX (delegated from Steve Leslie, per Darryl 07-17). Spelling per Darryl, not independently confirmed. Now the decision-authority gatekeeper for complex-build attribute capture on the WMX roadmap.
+- **John Barlolotti** — GPO for WMX (delegated from Steve Leslie, per Darryl 07-17). Spelling per Darryl, not independently confirmed. Now the decision-authority gatekeeper for complex-build attribute capture on the WMX roadmap. **2026-10-15 (cross-SBU session notes):** stated before the meeting that WMX is already working on serial-number and MAC-address capture, with two conditions, no duplicated effort across applications and minimum user steps; in the session gave the UBS example (legacy Anixter captures serial numbers at receipt). **Spelling:** the 10-15 notes and the 08-05 facilitator notes both give "Bartolotti"; this file has "Barlolotti" per Darryl 07-17. Two independent sources now favor Bartolotti; confirm with Darryl before changing the entry.
 - **Sid Sarna** — Director of Enterprise Applications; solution architect for WMX (VAS transcript 07-14; full name confirmed by Darryl 07-17). Joining the Wednesday (2026-07-22) WMX follow-up with Darryl and Steve Leslie.
 - **Alan (surname TBD)** — to be engaged after Steve/Sid clarify process and gaps; role unconfirmed (VAS transcript 07-14).
 - **Troy Doyle** — key user voice for asset tracking. Sudhi's guidance: "users trump everybody" — user buy-in is the decisive lever, but sequence is limitations-first (Steve/Sid), then users.
@@ -306,6 +307,7 @@ Source: `Products/digital-products-portfolio-aug26.pptx`, provided by Darryl 202
 ## New / Unconfirmed (added 2026-07-24, M365 evidence)
 
 - **Maggie Becker** — Deployment Team Knowledge Share #4 participant, alongside Elias Brewer and the platform team; discussion on automating the alarm-trio file in project setup. Role/relationship: unconfirmed. **07-27: on PTO next week; scheduled a follow-up knowledge-share session for her return** — routine coverage note, not a risk.
+- **10-16 (Daily Stand Up, 10-15 transcript): forming a product-to-enablement handoff with Michael Pieschel on the entroCIM tenant redesign** — Michael documenting/demoing, Maggie training up to build customer-facing materials. Healthy knowledge-transfer signal, not a risk; see `04` W066.
 
 ## New / Unconfirmed (added 2026-07-23, M365 evidence)
 
@@ -330,7 +332,7 @@ Source: `Products/digital-products-portfolio-aug26.pptx`, provided by Darryl 202
 - **Stephen (surname not given)** — SOX team; confirming whether the entroCIM AI initiative has SOX process impact, working with Sourav Pradhan. Role/relationship: unconfirmed.
 - **Kathryn Snow** — regular participant on the DDP/eUDM manufacturer-part-number thread; missed the 08-19 session, covered by Erin Grey. Role/relationship: unconfirmed.
 - **Erin Grey** — covered the 08-19 DDP/eUDM meeting for Kathryn Snow; noted less familiarity with the underlying systems. Continuity note, not a risk escalation on its own. Role/relationship: unconfirmed.
-- **Cordelia McMillan** — DDP/eUDM manufacturer-part-number thread participant. Role/relationship: unconfirmed.
+- **Cordelia McMillan** — DDP/eUDM manufacturer-part-number thread participant. Role/relationship: unconfirmed. **2026-10-15:** prepared the CSS data-element and use-case spreadsheet for Alan Martin's cross-SBU capture effort and presented it in the 10-15 session; explicit that it represents the CSS perspective only. Works the CSS requirements side of the serial/MAC question; role and reporting line still unconfirmed (`05` C71).
 - **Priyambada Dash** (cross-reference, existing entry — MDM/DDP stakeholder) — new action 08-19: tasked with checking legacy-system part numbers and contacting the UDM team on the manufacturer-part-number truncation source (`05` new row B49, parallel to Natalie Marquardt's B20).
 - **Joseph Kusnir** (cross-reference, existing entry — Senior Engineer, Ron Snyder direct) — new signal 08-19: tracking/hygiene work converging on him (production-fix Jira creation, Graph Explorer ticket documentation, closing a ticket open six sprints). Second named instance of the workload-concentration pattern tracked in `04`, distinct in kind from Ron Snyder's (specialized-knowledge concentration vs. backlog/traceability hygiene). **10-14: named in Ron Snyder's PTO-coverage handoff as owning frontend sprint coordination during the absence** -- third distinct facet of involvement in this standing concentration pattern (tracking/hygiene, now also temporary coverage), still without a confirmed role/seniority entry of his own. Source: PTO Awareness (email); Daily Stand Up (transcript), 2026-10-14.
 
@@ -536,6 +538,7 @@ No new people this cycle; signal is concentration and continuity on names alread
 
 ### Alan Martin (new, added 2026-10-01)
 - **Leading the new cross-SBU VAS/WMX/ADM/Strev data-capture effort**, working session 2026-09-30 with Sean McCloskey, Amber Koons, David Blondel, Akansh Gangil and Darryl Benson. Consolidated use cases due 2026-10-16. Role, seniority and reporting line unconfirmed — treat as the working lead on this effort pending confirmation, not as its accountable owner (no individual owner named in evidence). See `03` 2026-10-01, `05` A1.
+- **2026-10-15:** organized and ran the second working session (11:00 to 12:00, Teams). Opened with Cordelia McMillan's CSS spreadsheet, then widened the question to EES and UBS (to Stephen Karpinski). Working model he is driving: data element, use case, capture stage, responsible role, authoritative application. Still the working lead; no accountable owner named for the consolidated deliverable, and the 10-16 use-case date was not reaffirmed in the accessible evidence (`05` C70, A67; `03` D004).
 
 ### Amber Koons (new, added 2026-10-01)
 - Named alongside Sean McCloskey as leadership sponsorship for the cross-SBU VAS/WMX/ADM/Strev effort (09-30 working session). No other context in evidence; role and reporting line unconfirmed.
@@ -576,3 +579,8 @@ Source: M365 daily evidence package, reporting window 2026-10-13 to 2026-10-14. 
 
 ### Tyler Ebnet — Revenueify / Wesco solution selling
 - First appearance in evidence; zero prior mentions anywhere in this file. Asked Darryl directly how his conversations with Nathan Kehr and Bill Muczko went and what next steps might look like for supporting five solution-services sellers (revenueify/Wesco Solution Selling Follow Up email, 2026-10-14). Darryl's reply, if any, was not in evidence -- attribution on a Darryl follow-up is Inferred, not Explicit (Tyler asked the question; no verbatim commitment from Darryl was retrieved), so this is surfaced as a confirmation question rather than a Register A item. Organization, role, and relationship to Revenueify (vendor name or internal initiative) unconfirmed.
+
+## New / Unconfirmed (added 2026-10-15, cross-SBU VAS-WMX-ADM-ALM session notes)
+
+### Stephen Karpinski
+- Participant in Alan Martin's 10-15 cross-SBU data-capture session. Alan directed the EES and UBS requirements question to him; he answered that EES and UBS likely collect some of the relevant elements but not every CSS field applies, and that each business area should be compared against the list. Reads as an EES/UBS process or operations voice; role, SBU and reporting line unconfirmed. Not the "Stephen (SOX team)" entry above; treat as distinct until confirmed. See `05` C70.

@@ -10,6 +10,17 @@
 4. **Cadence drift** — new recurring meetings are a signal of new workstreams or governance gaps; cancelled ones can signal stalls. Meeting frequency is never proof of risk.
 5. **Written before meetings** — before adding another executive meeting, consider whether a written portfolio update serves better (library principle).
 
+## Governance Lane (added 2026-10-16)
+
+Forums marked **By exception** that run on a team's own governance (a project process or a sprint cycle) are **team-governed**: their issues go to the Operational Pulse (`Registers/pulse/`), not the registers, and reach Darryl only by escalation. The classification lives in `Registers/pulse/_forums.json`. **All thirteen confirmed by Darryl, 2026-10-16**: he attends some of these forums and is invited to all of them on purpose, to keep his finger on the pulse. Attendance is awareness, not ownership; an Attend engagement level below does not make a forum Darryl-owned.
+
+**Darryl's two weekly governance meetings** (2026-10-16) are where the Pulse is worked. Each team-governed forum belongs to one track, and the web app produces one weekly agenda per track across all its forums.
+
+| Track | Leads | Forums |
+|---|---|---|
+| Delivery governance | Chad Steger, Syed Jamshed Zaidi | 2026 Deployment Daily Scrum; Quest Migration Weekly Check-In; Deployment Team Knowledge Share |
+| Development governance | Ron Snyder, David Blondel | entroCIM Daily Stand Up; entroCIM Backlog Deep Dive; DCOE & entroCIM Weekly; Showcase recurring; WAM Product Backlog Refinement; WAM Sprint Review; WAM India Dev Team weekly; WAM Product discussion; ADM connect with Natalie; Product Team / Platform Team connect |
+
 ## Engagement Levels
 
 - **Own** — Darryl chairs; his presence is the forum.
@@ -20,6 +31,8 @@
 
 | Forum | Cadence | Owner | Purpose / Signal | Engagement |
 |---|---|---|---|---|
+| Delivery governance (new 2026-10-16) | Weekly, to be scheduled | **Darryl Benson**, with Chad Steger and Syed Jamshed Zaidi | Work the Pulse for the delivery track from its weekly governance agenda: stuck, decisions, new, quiet, escalated | Own |
+| Development governance (new 2026-10-16) | Weekly, to be scheduled | **Darryl Benson**, with Ron Snyder and David Blondel | Work the Pulse for the development track (entroCIM and WAM) from its weekly governance agenda | Own |
 | WAM Product Leadership Sync | Weekly | David Blondel | WAM leadership alignment, product direction. **Structured format imposed 2026-09-01** (`Reference/Meeting_Agenda_Standard.md` v2.1): Darryl maintains and publishes a rolling agenda register (`Deliverables/Portfolio_Admin/WAM_Product_Leadership_Sync_Agenda.md`), David chairs to it, transcription on and recording off, summary to the chat inside 24 hours. Format reviewed at six sessions, roughly 2026-10-20 | Attend |
 | ADM connect with Natalie | Weekly | Akansh Gangil | ADM/WAM execution, supplier data, renewal notifications | By exception — **raise to Attend while the truncated part number and leaf-node dependencies are open.** Cadence reconfirmed 2026-08-25 by the facilitator. This is where WAM's data-foundation defects actually surface, and both current blockers were first evidenced here |
 | WAM Product discussion | Weekly (cadence being adjusted 08-03 evidence — likely to avoid conflict with the new Wesco Asset Manager Backlog Deep Dive) | Akansh Gangil | WAM product + commercial/operational alignment | By exception |
