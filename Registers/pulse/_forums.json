@@ -1,5 +1,5 @@
 {
- "note": "Team-governed forums: run on the team's own governance (project process or sprint cycle). Their issues live in the Pulse, not the registers. 'confirmed' = Darryl has confirmed the classification. Source: 07_Operating_Cadence.md, 2026-10-16. Edit by hand or ask Claude.",
+ "note": "Team-governed forums: run on the team's own governance (project process or sprint cycle). Their issues live in the Pulse, not the registers. All classifications confirmed by Darryl 2026-10-16: he attends some of these forums and is invited to all of them on purpose, to keep his finger on the pulse; attendance is awareness, not ownership. Each forum belongs to one of Darryl's two weekly governance tracks. Source: 07_Operating_Cadence.md.",
  "forums": [
   {
    "key": "deployment-scrum",
@@ -16,7 +16,8 @@
     "Deployment Daily Scrum",
     "Daily Scrum"
    ],
-   "confirmed": true
+   "confirmed": true,
+   "track": "delivery"
   },
   {
    "key": "entrocim-standup",
@@ -32,7 +33,8 @@
     "Daily Stand Up",
     "Daily Standup"
    ],
-   "confirmed": true
+   "confirmed": true,
+   "track": "development"
   },
   {
    "key": "entrocim-backlog",
@@ -44,8 +46,9 @@
     "entroCIM"
    ],
    "aliases": [],
-   "confirmed": false,
-   "notes": "07 lists Darryl as Attend; confirm it is team-governed"
+   "confirmed": true,
+   "notes": "07 lists Darryl as Attend; confirm it is team-governed",
+   "track": "development"
   },
   {
    "key": "dcoe-entrocim",
@@ -57,7 +60,8 @@
     "entroCIM"
    ],
    "aliases": [],
-   "confirmed": false
+   "confirmed": true,
+   "track": "development"
   },
   {
    "key": "quest-migration",
@@ -69,7 +73,8 @@
     "entroCIM"
    ],
    "aliases": [],
-   "confirmed": false
+   "confirmed": true,
+   "track": "delivery"
   },
   {
    "key": "showcase",
@@ -81,7 +86,8 @@
     "entroCIM"
    ],
    "aliases": [],
-   "confirmed": false
+   "confirmed": true,
+   "track": "development"
   },
   {
    "key": "deployment-knowledge-share",
@@ -93,7 +99,8 @@
     "entroCIM"
    ],
    "aliases": [],
-   "confirmed": false
+   "confirmed": true,
+   "track": "delivery"
   },
   {
    "key": "wam-backlog-refinement",
@@ -105,7 +112,8 @@
     "WAM"
    ],
    "aliases": [],
-   "confirmed": false
+   "confirmed": true,
+   "track": "development"
   },
   {
    "key": "wam-sprint-review",
@@ -117,7 +125,8 @@
     "WAM"
    ],
    "aliases": [],
-   "confirmed": false
+   "confirmed": true,
+   "track": "development"
   },
   {
    "key": "wam-india-dev",
@@ -129,7 +138,8 @@
     "WAM"
    ],
    "aliases": [],
-   "confirmed": false
+   "confirmed": true,
+   "track": "development"
   },
   {
    "key": "wam-product-discussion",
@@ -141,7 +151,8 @@
     "WAM"
    ],
    "aliases": [],
-   "confirmed": false
+   "confirmed": true,
+   "track": "development"
   },
   {
    "key": "adm-connect",
@@ -153,8 +164,9 @@
     "WAM"
    ],
    "aliases": [],
-   "confirmed": false,
-   "notes": "07 raises Darryl to Attend while the part-number and leaf-node dependencies are open"
+   "confirmed": true,
+   "notes": "07 raises Darryl to Attend while the part-number and leaf-node dependencies are open",
+   "track": "development"
   },
   {
    "key": "product-platform-connect",
@@ -164,7 +176,28 @@
    "cadence": "Weekly",
    "products": [],
    "aliases": [],
-   "confirmed": false
+   "confirmed": true,
+   "track": "development"
+  }
+ ],
+ "tracks": [
+  {
+   "key": "delivery",
+   "name": "Delivery governance",
+   "leads": [
+    "Chad Steger",
+    "Syed Jamshed Zaidi"
+   ],
+   "scope": "Customer and internal deployments, migration, deployment practice"
+  },
+  {
+   "key": "development",
+   "name": "Development governance",
+   "leads": [
+    "Ron Snyder",
+    "David Blondel"
+   ],
+   "scope": "entroCIM and WAM development, backlog, release governance"
   }
  ]
 }
