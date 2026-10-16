@@ -22,7 +22,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **K002** entroCIM release packaging, sprint coordination and platform engineering (knowledge concentration). Test: An absence or departure is near, or has passed, and the handover is not confirmed.
 - **K005** Dell FTE Franklin/Apex/Hortolandia stability assessment and India deployment support (knowledge concentration). Test: An absence or departure is near, or has passed, and the handover is not confirmed.
 
 ## Knowledge concentration
@@ -32,7 +31,6 @@ Where one person holds knowledge a customer, a release or a migration depends on
 | ID | Knowledge area | Held by | Backup | Coverage | Exposure | Mitigation | Last evidence |
 |---|---|---|---|---|---|---|---|
 | K005 | Dell FTE Franklin/Apex/Hortolandia stability assessment and India deployment support | Chethan GR | none named | unknown | customer | Departure extended to 2026-10-08 as a knowledge-transfer window | 2026-09-14 |
-| K002 | entroCIM release packaging, sprint coordination and platform engineering | Ron Snyder | David Blondel (stand-up, sprint planning), Chad Steger (release communication, escalation), Joseph Kusnir (frontend), during PTO | partial | release, customer | PTO coverage note issued 2026-10-13; no return date | 2026-10-14 |
 | K001 | entroCIM tenant behavior and access model | Jason Ganiatsas | none named | partial | release | Michael Pieschel documenting in Confluence; Maggie Becker building enablement material | 2026-10-15 |
 
 Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS energy points and KPIs, global metering due diligence (Elias Brewer).
@@ -42,7 +40,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
 | Akansh Gangil | 0 | 0 | 19 | 0 |  |
-| Ron Snyder | 1 | 0 | 10 | 1 | 2026 Deployment Daily Scrum |
+| Ron Snyder | 1 | 0 | 10 | 0 | 2026 Deployment Daily Scrum |
 | Syed Jamshed Zaidi | 4 | 0 | 6 | 0 | 2026 Deployment Daily Scrum |
 | Natalie Marquardt | 0 | 0 | 9 | 0 |  |
 | Chad Steger | 0 | 2 | 8 | 0 | 2026 Deployment Daily Scrum |
