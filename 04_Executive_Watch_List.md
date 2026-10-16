@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-10-15 16:19 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 10:01 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 26 (ceiling 20) · Passive 53 · Retired 18.
+**Counts at generation:** Active 27 (ceiling 20) · Passive 53 · Retired 18.
 
 ## Active
 
@@ -34,6 +34,7 @@
 | W022 | IDP/ADM production integration — approved but unstaffed | High | New | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-10-15 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
 | W025 | entroCIM SSL certificate ownership undefined | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Outage resolved (GoDaddy certificate installed), but renewal, monitoring, and ownership of the certificate are not formalized -- repeat outage possible until they are. |
 | W026 | FRBNY Smart Building bid -- pricing deadline 2026-10-21 | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Mandatory scope and quantities due 2026-10-21, six days out. |
+| W098 | PC1 Grid Board site-selection defect blocking dashboard/KWH report delivery | High | New | Direct (2026 Deployment - Daily Scrum, 2026-10-15, transcript retrieved complete) | 2026-10-16 | New 2026-10-16. |
 | W023 | Managed-services staffing readiness for day-two entroCIM monitoring | Medium | New | Direct (entroCIM Backlog Deep Dive, 2026-09-08, verbatim transcript) | 2026-09-08 | Leadership (Brad Stevens, Nathan Kehr) expects commercial growth in managed monitoring/analytics but has not settled operating location, required building-domain skills, NOC placement, training path, or headcount. |
 | W008 | Ford entroCIM (UDAC) renewal and platform-trust gap | Medium | ↑ | Direct (`Wesco & Ford - entroCIM Platform - Re-Alignment & Action Item Call`, 08-26; RE: SLA Verbiage email thread, weekly evidence 2026-09-02 to 09-09) | 2026-10-05 | Ford and Wesco aligned on 08-26 to renew UDAC support and let EDC support expire, using an SLA for unplanned support and SOW/SME hours for planned scope (Darryl: "Hours buy Capacity, SLA buys commitment" — `Products/entroCIM/entroCIM.md`). |
 | W027 | Quest/Azure decommission -- secure data-removal validation T&M approval unresolved | Medium | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Secure data-removal validation on the Quest exit requires approval of a $245/hour T&M consultation; |

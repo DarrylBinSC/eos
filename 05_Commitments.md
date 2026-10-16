@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-15 16:19 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 10:01 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 124 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 127 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -88,7 +88,10 @@ Four registers. The delineation is the point.
 | B100 | Confirm the MuleSoft/current integration architecture and prepare a WAM-limitations slide for Darryl, ahead of the Sean McCloskey capacity discussion | Akansh Gangil | Delegated | Before Darryl's Sean McCloskey discussion; exact date not stated | **Critical** -- feeds `05` A61 and the `03` WAM/ADM reduced-capacity reset Radar item directly | 2026-10-14 | New 2026-10-13 (weekly evidence, WAM Leadership Sync transcript, 2026-10-05). |
 | B106 | Complete WAM global-attributes analysis and set up a review call | Natalie Marquardt | Delegated | Not stated | -- | 2026-10-14 | New 2026-10-14. |
 | B107 | Discuss the full-manufacturer-part-number enhancement with engineering and determine next steps | Akansh Gangil | Delegated | Not stated | -- | 2026-10-15 | New 2026-10-14. |
+| B108 | Find the prior PC1 report and send it to the Dell deployment team | Scott Dunn | Delegated | Not dated in evidence | -- | 2026-10-16 | New 2026-10-16. |
+| B109 | Track and log the Dell PC1 meter discrepancies so they are not lost | Syed Jamshed Zaidi | Delegated | Not dated in evidence | -- | 2026-10-16 | New 2026-10-16. |
 | B11 | ServiceNow integration timing for resource planning | Ron Snyder, Sean Comunale | Delegated | Darryl / Ron weekly 1:1 | -- | 2026-10-15 |  |
+| B110 | Book a review with Robbie and the Dell IT team on the entroCIM application topic | Syed Jamshed Zaidi | Delegated | Not dated in evidence | -- | 2026-10-16 | New 2026-10-16. |
 | B12 | DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian | Akansh Gangil (reassigned 07-27) | Delegated | DDP Entrance Call (weekly) | -- | 2026-10-15 |  |
 | B14 | Update Dell ticketing/routing documentation | Scott Dunn | Delegated | Dell Service Management Process forum | -- | 2026-10-15 |  |
 | B17 | Confirm SAML/SSO closure for PaaS-01 through PaaS-06 | Babu Papanna / Senthil Chockkalingam | Delegated | Ticket closure confirmation (supports C6) | -- | 2026-10-15 |  |
