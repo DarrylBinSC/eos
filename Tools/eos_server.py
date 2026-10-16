@@ -579,6 +579,104 @@ button.ppl{width:100%;background:none;border:0;border-top:1px solid var(--line2)
  .pv-trk{padding:12px 12px 10px}
  .pv-fr{min-height:44px}
 }
+/* Pulse redesign Phase 2 (C14 to C19), 2026-10-16 */
+.pv-b{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:4px;padding:0 6px;font-size:11.5px;line-height:18px;color:var(--ink2);font-weight:600;white-space:nowrap}
+.pv-b.sev-high,.pv-b.sev-mediumhigh,.pv-b.red{border-color:var(--red);color:var(--red)}
+.pv-b.grn{border-color:var(--grn);color:var(--grn)}
+.pv-b.stuck{background:var(--ambFill);border-color:var(--ambFill);color:var(--ambInk)}
+.pv-b.new,.pv-b.esc{border-color:var(--acc);color:var(--acc)}
+.pv-b.call{background:var(--acc);border-color:var(--acc);color:var(--accInk)}
+.pv-iss .ghead,.pv-kn .ghead,.pv-ppl .ghead{flex-wrap:wrap;align-items:center}
+.ghead .sub.r,.pv-srt{margin-left:auto}
+.pv-sl{flex:1;text-align:right}
+.pv-srt{display:inline-flex;gap:6px;align-items:center;text-transform:none;letter-spacing:0}
+.pv-srt select{height:30px;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:0 8px;font-size:13px;color:var(--ink)}
+.pv-ir{display:grid;grid-template-columns:48px minmax(0,1fr) 236px;gap:14px;padding:12px 18px;border-top:1px solid var(--line2);align-items:start;cursor:pointer}
+.pv-ir:hover{background:var(--bg)}.pv-ir.sel{background:var(--sel)}
+.pv-ir .id{font:12.5px ui-monospace,Menlo,monospace;color:var(--muted);line-height:21px}
+.pv-ir .ttl{display:block;font-size:15px;line-height:21px;font-weight:600;text-align:left;background:none;border:0;padding:0;color:var(--ink);cursor:pointer;overflow-wrap:anywhere}
+.pv-ir .ttl:hover{text-decoration:underline}
+.pv-ir .iid{font:12.5px ui-monospace,Menlo,monospace;color:var(--muted);font-weight:400;margin-right:6px}
+.pv-ir .bdg,#pv-sheet .bdg,#pv-meet .bdg{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 4px}
+.pv-ir .ow{font-size:13px;color:var(--ink2);line-height:19px}
+.pv-ir .ow .no,#pv-sheet .no{color:var(--red);font-weight:700}
+.pv-ir .nx{font-size:13px;color:var(--muted);line-height:19px;margin-top:3px}
+.pv-ir .ac{display:flex;gap:8px;justify-content:flex-end;align-items:center;flex-wrap:wrap}
+.pv-ir .ac .lw{font-size:13px;color:var(--muted)}
+.pv-wl{font-size:13.5px;color:var(--acc)}
+.pv-ir.dim .ttl{color:var(--muted)}.pv-ir.done .ttl{text-decoration:line-through;color:var(--muted)}
+.pv-kr{grid-template-columns:48px minmax(0,1fr)}
+.pv-chk{display:flex;align-items:center;gap:10px;width:100%;min-height:44px;padding:8px 18px;border:0;border-top:1px solid var(--line2);background:none;font:inherit;font-size:13.5px;color:var(--ink2);text-align:left;cursor:pointer}
+.pv-chk .bx{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border:1.5px solid var(--muted);border-radius:3px;font-size:12px;color:var(--acc);flex:none}
+.pv-chk[aria-checked=true] .bx{border-color:var(--acc)}
+.pv-chip{position:sticky;top:var(--hdrH,96px);z-index:4;background:var(--bg);padding:6px 0;margin:-6px 0}
+.pv-kf{padding:10px 18px 12px;border-top:1px solid var(--line2);font-size:13px;color:var(--muted)}
+.ppl.pv-pp{grid-template-columns:minmax(0,1fr) 70px 80px 96px}
+.pv-pp.g{cursor:default;padding-bottom:0;border-top:0;font-size:11.5px;color:var(--muted);font-weight:650}
+.pv-pp.g .gl{grid-column:span 2;text-align:center;border-bottom:1px solid var(--line);padding-bottom:3px}
+.pv-pp.g .gl.r{grid-column:span 1}
+.pv-pp.h{border-top:0}
+.pv-pp .z{color:var(--muted)}
+button.pv-pp{min-height:40px;align-items:center}
+.pv-pmore{padding-left:16px}
+.pv-pn{padding-top:10px;border-top:1px solid var(--line2);font-size:12.5px}
+/* C16 sheet */
+#pv-sheet{position:fixed;inset:0;z-index:30}
+#pv-sheet .sc{position:absolute;inset:0;background:var(--scrim)}
+#pv-sheet .sh{position:absolute;left:0;right:0;bottom:0;max-height:min(640px,92vh);overflow:auto;background:var(--card);border-radius:14px 14px 0 0;padding:8px 16px calc(16px + env(safe-area-inset-bottom));box-shadow:0 -4px 20px rgba(0,0,0,.18)}
+#pv-sheet .grab{width:36px;height:4px;border-radius:2px;background:var(--line);margin:0 auto 10px}
+#pv-sheet .l1{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+#pv-sheet .l1 .id{font-family:ui-monospace,Menlo,monospace}
+#pv-sheet .cl{margin-left:auto;min-height:44px;font-size:15px}
+#pv-sheet h2{font-size:19px;line-height:25px;font-weight:650;margin:4px 0 8px}
+#pv-sheet .nb{background:var(--sunk);border-radius:8px;padding:10px 12px;font-size:15px;line-height:21px;margin:10px 0}
+#pv-sheet .nb span,#pv-sheet .facts span{display:block;font-size:12.5px;color:var(--muted)}
+#pv-sheet .facts{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;font-size:14.5px;margin:12px 0 14px}
+#pv-sheet .facts .w{grid-column:1/-1}#pv-sheet .facts a{color:var(--acc)}
+#pv-sheet .ft{border-top:1px solid var(--line2);padding-top:12px;margin:0 -16px;padding-left:16px;padding-right:16px}
+#pv-sheet .b2{display:flex;gap:10px}#pv-sheet .b2 .btn{flex:1;height:44px}
+#pv-sheet .full{display:block;margin:10px auto 0;min-height:44px;font-size:15px}
+#pv-sheet .snf{display:flex;flex-direction:column;gap:8px;margin-top:10px}#pv-sheet textarea{min-height:90px;font-size:16px}
+/* C17 meeting view */
+#pv-meet{position:fixed;inset:0;z-index:25;overflow:auto;background:var(--bg);color:var(--ink);font-size:17px;outline:0}
+#pv-meet .mw{max-width:1240px;margin:0 auto;padding:40px 64px}
+#pv-meet .mh{display:flex;gap:16px;align-items:flex-start}#pv-meet .mh>div:first-child{flex:1;min-width:0}
+#pv-meet .kk{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+#pv-meet h2{font-size:34px;line-height:42px;font-weight:650;margin:2px 0 4px}
+#pv-meet .sb{font-size:16px;color:var(--ink2)}
+#pv-meet .mb{display:flex;gap:8px;flex-wrap:wrap}
+#pv-meet .mban{display:flex;gap:14px;border:1.5px dashed var(--muted);border-radius:8px;padding:14px 18px;margin:28px 0 8px;background:var(--card)}
+#pv-meet .mban .hx{width:22px;flex:none;background:repeating-linear-gradient(135deg,var(--hatch) 0 1.5px,transparent 1.5px 5px)}
+#pv-meet .mban b{font-size:19px;font-weight:650}#pv-meet .mban p{margin:4px 0 0;font-size:16px;line-height:24px;color:var(--ink2)}
+#pv-meet .mg{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:start;margin-top:24px}
+#pv-meet .ms{margin-bottom:28px}
+#pv-meet .ms h3{display:flex;align-items:baseline;gap:10px;font-size:15px;letter-spacing:.05em;text-transform:uppercase;font-weight:650;margin:0;padding-bottom:10px;border-bottom:1px solid var(--line)}
+#pv-meet .ms h3 .nm{font-size:28px;color:var(--muted);letter-spacing:0}
+#pv-meet .mi{display:grid;grid-template-columns:72px minmax(0,1fr);gap:0;padding:14px 0;border-bottom:1px solid var(--line2)}
+#pv-meet .mi.none{display:block;color:var(--muted);font-size:15px}
+#pv-meet .mi .id{font:14px ui-monospace,Menlo,monospace;color:var(--muted);line-height:26px}
+#pv-meet .mt{font-size:18px;line-height:26px;font-weight:600;background:none;border:0;padding:0;text-align:left;color:var(--ink);cursor:pointer}
+#pv-meet .mt:hover{text-decoration:underline}
+#pv-meet .mm{font-size:15px;color:var(--ink2);margin-top:2px}#pv-meet .mn{font-size:15px;color:var(--muted);margin-top:4px}
+#pv-meet .mr{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;position:sticky;top:20px}
+#pv-meet .rh{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+#pv-meet .rh.sep{border-top:1px solid var(--line2);padding-top:14px;margin-top:14px}
+#pv-meet .rc{font-size:16px;margin-bottom:18px}#pv-meet .rh.sep+.rc{margin-bottom:4px}
+#pv-meet .rf{display:flex;gap:10px;align-items:flex-start;font-size:15px;margin-bottom:12px}#pv-meet .rf .pv-mk{width:14px;height:14px;margin-top:4px}
+#pv-meet .rf small{display:block;font-size:13px;color:var(--muted)}
+@media (max-width:1099px){#pv-meet .mw{padding:28px 28px}#pv-meet .mg{grid-template-columns:minmax(0,1fr) 280px;gap:28px}}
+@media (max-width:820px){
+ .pv-ir{grid-template-columns:minmax(0,1fr);gap:8px;padding:12px}.pv-ir>.id{display:none}
+ .pv-ir .ac{justify-content:stretch}.pv-ir .ac .btn{flex:1;height:44px}.pv-ir .ac:empty{display:none}
+ .pv-ir .ac .lw{flex:1}.pv-wl{display:inline-flex;align-items:center;min-height:44px}
+ .pv-sl{flex-basis:100%;text-align:left;order:3}.pv-srt select{height:40px;font-size:16px}
+ .pv-chk{padding:8px 12px}.pv-kf{padding:10px 12px}
+ .ppl.pv-pp{grid-template-columns:minmax(0,1fr) 52px 64px 78px}
+ #pv-meet{font-size:16px}#pv-meet .mw{padding:calc(16px + env(safe-area-inset-top)) 16px 40px}
+ #pv-meet .mh{flex-direction:column}#pv-meet h2{font-size:26px;line-height:32px}#pv-meet .mb{width:100%}#pv-meet .mb .btn{flex:1}#pv-meet [data-mfs]{display:none}
+ #pv-meet .mg{grid-template-columns:minmax(0,1fr);gap:20px}#pv-meet .mr{position:static;order:-1}
+ #pv-meet .mi{grid-template-columns:56px minmax(0,1fr)}#pv-meet .mt{font-size:16.5px;line-height:23px}
+}
 /* tablet: panel overlays */
 @media (max-width:1099px){body.docked{padding-right:0}}
 /* phone */
@@ -766,13 +864,22 @@ function render(){
   const dt=new Date(dn(TODAY));
   $('#meta').innerHTML=m('Register A','A',A,15)+m('Watch active','Watch',W,20)+m('Radar','Radar',D,20)+pulseCaps()+`<div class="cap"><span class="dot"></span><span class="l">Needs triage</span><span class="s">Triage</span><b>${N}</b></div><span class="today">${a.length} shown · ${['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][dt.getUTCDay()]}, ${fmt(TODAY)}</span>`;
   $('#logBtn').innerHTML='Changes'+(SESSION.length?`<span class="badge">${SESSION.length}</span>`:'');
-  if(VIEW==='pulse'){$('#list').innerHTML=pulseHtml();return}
+  if(VIEW==='pulse'){$('#list').innerHTML=pulseHtml();const hd=document.querySelector('header');if(hd)document.documentElement.style.setProperty('--hdrH',hd.offsetHeight+'px');return}
   const gs=groups(a);
   $('#list').innerHTML=sortBar(VIEW,a.length)+(gs.map(g=>{let rows=g.rows,more='';
     if(g.k==='watch'&&rows.length>3){more=`<button class="more" data-more>${MOREW?'Show fewer':'Show '+(rows.length-3)+' more risks'}</button>`;if(!MOREW)rows=rows.slice(0,3)}
     return `<section class="group"><h2 class="ghead ${g.k}">${g.l}<span class="n">${g.rows.length}</span></h2>${rows.map(rowHtml).join('')}${more}</section>`}).join('')||'<div class="empty">Nothing here.</div>');
 }
 document.addEventListener('click',e=>{
+  if(e.target.closest('[data-sclose]')){closeSheet();return}
+  if(e.target.closest('[data-snote]')){SHEETNOTE=!SHEETNOTE;openSheet(SHEET);return}
+  if(e.target.closest('[data-sfull]')){const id=SHEET;closeSheet();openDrawer(id);return}
+  const so=e.target.closest('[data-sopen]');if(so){e.preventDefault();closeSheet();closeMeet();openDrawer(so.dataset.sopen);return}
+  if(e.target.closest('[data-mclose]')){closeMeet();return}
+  if(e.target.closest('[data-mcopy]')){const txt=agendaMd(MEET);(navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(()=>toast('Copied'),()=>toast('Copy is blocked here; select the text instead'));return}
+  if(e.target.closest('[data-mfs]')){const el=$('#pv-meet');if(document.fullscreenElement)document.exitFullscreen();else if(el&&el.requestFullscreen)el.requestFullscreen().catch(()=>toast('Full screen is not available here'));else toast('Full screen is not available here');return}
+  const mo=e.target.closest('[data-mopen]');if(mo){closeMeet();openDrawer(mo.dataset.mopen);return}
+  if(e.target.closest('[data-pplall]')){PPLALL=!PPLALL;render();return}
   const s=e.target.closest('.seg button');if(s){e.stopPropagation();const i=ITEMS.find(x=>x.id===s.dataset.id);if(i&&i[s.dataset.k]!==s.dataset.val)patch(s.dataset.id,{[s.dataset.k]:s.dataset.val},'');return}
   const c=e.target.closest('.tab[data-v]');if(c){VIEW=c.dataset.v;MOREW=false;for(const k in BASE)delete BASE[k];render();scrollTo(0,0);return}
   if(e.target.closest('[data-more]')){MOREW=!MOREW;render();return}
@@ -792,6 +899,8 @@ document.addEventListener('click',e=>{
   if(e.target.closest('[data-kall]')){KALL=!KALL;render();return}
   if(e.target.closest('[data-pv]')){VIEW='pulse';PF={};render();scrollTo(0,0);return}
   const pf=e.target.closest('[data-pf]');if(pf){const k=pf.dataset.pf,v=pf.dataset.val;const fromCap=!!pf.closest('#meta');PF=(!fromCap&&PF[k]===v)?{}:{[k]:v};VIEW='pulse';render();if(fromCap)scrollTo(0,0);if(PF[k]){const c=document.getElementById('pv-issues');if(c){c.scrollIntoView({block:'start'});scrollBy(0,-110)}}return}
+  const pi=e.target.closest('[data-pi]');if(pi){if(PHONE())openSheet(pi.dataset.pi);else openDrawer(pi.dataset.pi);return}
+  const kr=e.target.closest('[data-kid]');if(kr){openDrawer(kr.dataset.kid);return}
   const r=e.target.closest('.row[data-id]');if(r){openDrawer(r.dataset.id)}
 });
 $('#q').addEventListener('input',e=>{Q=e.target.value.trim();render()});
@@ -825,10 +934,60 @@ function ptags(i){let t='';
   if(i.escalated_to)t+=`<span class="t-esc">Escalated · ${esc(i.escalated_to)}</span>`;else if(i._candidate)t+='<span class="t-esc">Needs your call</span>';
   if(i._state!=='live')t+=`<span>${cap(i._state)}</span>`;
   return t}
-function prow(i){const c=i.next_action?plain(i.next_action):context(i).t;const cls=i._state==='live'?'':i._state==='quiet'?' dim':' done';
-  return `<div class="row prow${SEL===i.id?' sel':''}${cls}" data-id="${esc(i.id)}"><div class="id">${esc(i.id)}</div>
-   <div class="body"><div class="title">${esc(i.title)}</div>${c?`<div class="next ctx">${esc(c)}</div>`:''}<div class="meta">${ptags(i)}<span>${esc([i.account,fname(i.forum),i.owner?'Owner: '+i.owner:'No owner named'].filter(Boolean).join(' · '))}</span></div></div>
-   <div class="due"><b>${fmt(i.last_seen||i.first_seen)}</b><span>${i.sightings||1}× since ${fmt(i.first_seen)}</span></div></div>`}
+/* Phase 2, C14: issue rows on a shared grid (48px · body · 236px actions). Badges are additive; the drawer is unchanged. */
+const isNewI=i=>dn(String(i.first_seen||'1970-01-01').slice(0,10))>=dn(TODAY)-7*864e5;
+const stOf=i=>i.escalated_to?'esc':i.escalation==='declined'?'left':'open';
+function ibadges(i,withState){let t='';const sv=String(i.severity||'');
+  if(sv)t+=`<span class="pv-b sev-${esc(sv.toLowerCase().replace(/[^a-z]/g,''))}">${esc(sv)}</span>`;
+  if(i.customer_visible)t+='<span class="pv-b">Customer-visible</span>';
+  if(i._stuck)t+=`<span class="pv-b stuck">Stuck · raised since ${fmt(i.first_seen)}</span>`;
+  if(isNewI(i)&&i._state==='live')t+='<span class="pv-b new">New</span>';
+  if(i.escalated_to)t+=`<span class="pv-b esc">Escalated · ${esc(i.escalated_to)}</span>`;
+  else if(i._candidate)t+='<span class="pv-b call">Needs your call</span>';
+  if(withState&&!i.escalated_to&&i.escalation==='declined')t+='<span class="pv-b">Left with team</span>';
+  if(i._state!=='live')t+=`<span class="pv-b">${cap(i._state)}</span>`;
+  return t}
+function iacts(i){if(i._state!=='live')return '';const s=stOf(i),id=esc(i.id);
+  if(s==='esc')return `<a href="#" class="pv-wl" data-open="${esc(i.escalated_to)}">Open Watch ${esc(i.escalated_to)}</a>`;
+  if(s==='left')return `<span class="lw">Left with team</span><button type="button" class="btn" data-esc="escalate" data-id="${id}">Escalate</button>`;
+  return `<button type="button" class="btn primary" data-esc="escalate" data-id="${id}">Escalate</button><button type="button" class="btn" data-esc="decline" data-id="${id}">Leave with team</button>`}
+function prow(i){const ph=PHONE(),id=esc(i.id),cls=i._state==='live'?'':i._state==='quiet'?' dim':' done';
+  const own=i.owner?'Owner: '+esc(i.owner):'<b class="no">No owner named</b>';
+  const meta=[own,esc(i.account||'No account'),ph?'':esc(fname(i.forum)),(ph?'':'last raised ')+fmt(i.last_seen||i.first_seen)].filter(Boolean).join(' · ');
+  const nx=!ph&&i.next_action?`<div class="nx">Next: ${esc(plain(i.next_action))}</div>`:'';
+  return `<div class="pv-ir${SEL===i.id?' sel':''}${cls}" data-pi="${id}"><div class="id">${id}</div>
+   <div class="bd"><button type="button" class="ttl" data-pi="${id}">${ph?`<span class="iid">${id}</span>`:''}${esc(i.title)}</button><div class="bdg">${ibadges(i)}</div><div class="ow">${meta}</div>${nx}</div>
+   <div class="ac">${iacts(i)}</div></div>`}
+/* C14 footer: a real toggle with the quiet IDs named */
+function allToggle(scope){const q=scope.filter(i=>i._state==='quiet'),r=scope.filter(i=>i._state!=='live'&&i._state!=='quiet');
+  if(!q.length&&!r.length&&!PALL)return '';
+  const what=[q.length?`${q.length} quiet: ${q.map(i=>i.id).join(', ')}`:'',r.length?`${r.length} resolved or dropped`:''].filter(Boolean).join('; ');
+  return `<button type="button" class="pv-chk" role="checkbox" aria-checked="${PALL}" data-pall><span class="bx" aria-hidden="true">${PALL?'✓':''}</span>Include quiet and resolved (${esc(what)})</button>`}
+function sortMini(n){const c=SORTS.pulse,s=sortOf('pulse');
+  const lab=s.k==='pulse'?'Sorted by attention: stuck, severity, customer-visible, most recent':`${n} shown · `+(SORTDESC[s.k]||((s.dir>0?'ascending':'descending')+', ties by ID'));
+  return `<span class="sub pv-sl">${esc(lab)}</span><span class="pv-srt"><select id="sortSel" aria-label="Sort live issues">${c.opts.map(o=>`<option value="${o[0]}"${o[0]===s.k?' selected':''}>${o[0]==='pulse'?'Attention':o[1]}</option>`).join('')}</select>${s.k==='pulse'||SORTDESC[s.k]?'':`<button type="button" class="btn sm" id="sortDir" aria-label="Reverse the order">${s.dir>0?'↑':'↓'}</button>`}</span>`}
+
+/* Phase 2, C16: phone preview sheet. Desktop keeps the drawer. */
+let SHEET=null,SHEETNOTE=false;
+function openSheet(id){const i=ITEMS.find(x=>x.id===id);if(!i)return;SHEET=id;
+  let el=$('#pv-sheet');if(!el){el=document.createElement('div');el.id='pv-sheet';document.body.appendChild(el)}
+  const ppl=(i.people||[]).filter(p=>p!==i.owner);
+  const links=(i.links||[]).map(l=>`<a href="#" data-sopen="${esc(l)}">${esc(l)}</a>`).join(' · ');
+  const s=stOf(i);
+  const act=i._state!=='live'?'':s==='esc'?`<button type="button" class="btn primary" data-sopen="${esc(i.escalated_to)}">Open Watch ${esc(i.escalated_to)}</button>`:s==='left'?`<button type="button" class="btn primary" data-esc="escalate" data-id="${esc(i.id)}">Escalate</button>`:`<button type="button" class="btn primary" data-esc="escalate" data-id="${esc(i.id)}">Escalate</button><button type="button" class="btn" data-esc="decline" data-id="${esc(i.id)}">Leave with team</button>`;
+  el.innerHTML=`<div class="sc" data-sclose></div><div class="sh" role="dialog" aria-modal="true" aria-label="${esc(i.id)} preview"><div class="grab" aria-hidden="true"></div>
+   <div class="l1"><span class="id">${esc(i.id)}</span><span>Pulse issue${i.account?' · '+esc(i.account):''}</span><button type="button" class="pv-lk cl" data-sclose>Close</button></div>
+   <h2>${esc(i.title)}</h2><div class="bdg">${ibadges(i,true)}</div>
+   ${i.next_action?`<div class="nb"><span>Next action</span>${esc(plain(i.next_action))}</div>`:''}
+   <div class="facts"><div><span>Owner</span>${i.owner?esc(i.owner):'<b class="no">No owner named</b>'}</div><div><span>Named in evidence</span>${ppl.length?esc(ppl.join(', ')):'None named'}</div>
+   <div><span>Forum</span>${esc(fname(i.forum))}</div><div><span>First and last raised</span>${fmt(i.first_seen)} · ${fmt(i.last_seen||i.first_seen)}</div>
+   ${links?`<div class="w"><span>Linked</span>${links}</div>`:''}</div>
+   <div class="ft"><div class="b2">${act}<button type="button" class="btn" data-snote>Add a note</button></div>
+   ${SHEETNOTE?`<form id="snf" class="snf"><textarea id="snote" placeholder="What happened, what you decided, what Claude should know…"></textarea><button type="submit" class="btn primary">Save note</button></form>`:''}
+   <button type="button" class="pv-lk full" data-sfull>Full detail and history</button></div></div>`;
+  document.body.classList.add('locked');
+  const f=$('#snf');if(f){$('#snote').focus();f.onsubmit=async ev=>{ev.preventDefault();const n=$('#snote').value;if(!n.trim())return;SHEETNOTE=false;await patch(id,{},n);if(SHEET===id)openSheet(id)}}}
+function closeSheet(){SHEET=null;SHEETNOTE=false;const el=$('#pv-sheet');if(el)el.remove();if(!DRAWER)document.body.classList.remove('locked')}
 /* ---------- Pulse redesign, 2026-10-16 (Claude Design handoff, Phase 1: C1-C13) ---------- */
 const PIN_SVG=f=>`<svg class="pinsvg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M5.5 1.5h5l-.8 4.2 2.6 2.6v1.2H8.6V14L8 15.2 7.4 14V9.5H3.7V8.3l2.6-2.6z" fill="${f?'currentColor':'none'}" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>`;
 const PHONEQ=matchMedia('(max-width:820px)');const PHONE=()=>PHONEQ.matches;
@@ -913,70 +1072,78 @@ function pulseHtml(){
   const P=PULSE,ph=PHONE(),all=ITEMS.filter(i=>i.kind==='pulse'&&i.category!=='knowledge'),know=ITEMS.filter(i=>i.kind==='pulse'&&i.category==='knowledge');
   const fk=Object.keys(PF)[0],fv=fk?PF[fk]:null;
   const trk=fk==='track'?((P.tracks||[]).find(t=>t.key===fv)||{forums:[]}):null;
-  const wk=dn(TODAY)-7*864e5,isNew=i=>dn(String(i.first_seen||'1970-01-01').slice(0,10))>=wk;
-  const match=i=>!fk||(fk==='account'?i.account===fv:fk==='forum'?i.forum===fv:fk==='track'?trk.forums.includes(i.forum):fk==='new'?isNew(i):(i._people||[]).includes(fv));
+  const match=i=>!fk||(fk==='account'?i.account===fv:fk==='forum'?i.forum===fv:fk==='track'?trk.forums.includes(i.forum):fk==='new'?isNewI(i):(i._people||[]).includes(fv));
   const scope=all.filter(match);
   let a=scope.filter(i=>PALL||i._state==='live');
   if(Q){const q=Q.toLowerCase();a=a.filter(i=>[i.id,i.title,i.owner,i.account,i.body,(i.people||[]).join(' ')].join(' ').toLowerCase().includes(q))}
-  const sv={high:0,medium:1,low:2},st={live:0,quiet:1,resolved:2,dropped:3};
+  const sv={high:0,mediumhigh:0.5,medium:1,low:2},st={live:0,quiet:1,resolved:2,dropped:3};
+  const svk=i=>sv[String(i.severity||'').toLowerCase().replace(/[^a-z]/g,'')]??3;
   const pso=sortOf('pulse');
-  if(pso.k!=='pulse')a.sort(cmpBy(pso.k,pso.dir));else a.sort((x,y)=>(st[x._state]-st[y._state])||((y._stuck?1:0)-(x._stuck?1:0))||((sv[String(x.severity||'').toLowerCase()]??3)-(sv[String(y.severity||'').toLowerCase()]??3))||String(y.last_seen||'').localeCompare(String(x.last_seen||'')));
+  /* attention: state, stuck, severity, customer-visible, most recent (C14 head states this order) */
+  if(pso.k!=='pulse')a.sort(cmpBy(pso.k,pso.dir));else a.sort((x,y)=>(st[x._state]-st[y._state])||((y._stuck?1:0)-(x._stuck?1:0))||(svk(x)-svk(y))||((y.customer_visible?1:0)-(x.customer_visible?1:0))||String(y.last_seen||'').localeCompare(String(x.last_seen||''))||cmpId(x,y));
   const cs=P.candidates.filter(c=>{const i=ITEMS.find(z=>z.id===c.id);if(!i)return false;if(i.category==='knowledge')return !fk||fk==='new'||(fk==='track'&&i.track===fv)||(fk==='person'&&i.holder===fv)||(fk==='account'&&i.account===fv);return match(i)});
-  /* C1: title, Today row (calls, pinned account, evidence), account health, issues beside governance, knowledge beside people */
   let h=`<div class="pv"><div class="pv-title"><h2>Pulse</h2><p>Rolling ${P.window.days} days, ${fmt(P.window.start)} to ${fmt(P.window.end)}. What your team-governed forums are carrying. The teams own the work; escalate only what needs you.</p><button type="button" class="pv-lk" data-guide>How to read this page</button></div>`;
   h+=`<div class="pv-today">${callsCard(P,cs)}${pinnedCard(P)}${evidenceCard(P)}</div>`;
   h+=accountsSec(P,fk,fv);
-  /* left column: filter chip, issues, register items behind the numbers */
+  /* C15: the filter chip is sticky under the header strip */
   const fname2=fk==='forum'?fname(fv):fk==='track'?(trk.name||fv):fk==='new'?'new in the last 7 days':fv;
-  let L=fk?`<div class="chips" id="pv-issues"><span class="chip">Showing ${fk==='new'?'':esc(fk)+': '}<b>${esc(fname2)}</b></span><button type="button" class="chip x" data-pclear>Clear</button></div>`:'<span id="pv-issues"></span>';
-  const hidden=scope.length-scope.filter(i=>i._state==='live').length;
-  const foot=hidden||PALL?`<button type="button" class="more" data-pall>${PALL?'Show live only':'Include quiet and resolved ('+hidden+')'}</button>`:'';
+  let L=fk?`<div class="chips pv-chip" id="pv-issues"><span class="chip">Showing ${fk==='new'?'':esc(fk)+': '}<b>${esc(fname2)}</b></span><button type="button" class="chip x" data-pclear>Clear</button></div>`:'<span id="pv-issues"></span>';
   const lim=rows=>ph&&!ISSALL&&rows.length>4?rows.slice(0,4):rows;
-  const showAll=rows=>ph&&rows.length>4?`<button type="button" class="more" data-issall>${ISSALL?'Show fewer':'Show all '+rows.length+' live issues'}</button>`:'';
-  const sec=(t,rows,note,ft)=>`<section class="group"><h2 class="ghead">${t}<span class="n">${rows.length}</span></h2>${note?`<p class="gnote">${note}</p>`:''}${lim(rows).map(prow).join('')||`<div class="empty" style="padding:16px">None in the Pulse.${fk==='account'||fk==='person'?' Anything on your registers is listed below.':''}</div>`}${showAll(rows)}${ft||''}</section>`;
+  const showAll=rows=>ph&&rows.length>4?`<button type="button" class="more" data-issall>${ISSALL?'Show fewer':'Show all '+rows.length+' '+(PALL?'issues':'live issues')}</button>`:'';
+  const sec=(t,rows,note,ft,hd)=>`<section class="group pv-iss"><h2 class="ghead">${t}<span class="n">${rows.length}</span>${hd||''}</h2>${note?`<p class="gnote">${note}</p>`:''}${lim(rows).map(prow).join('')||`<div class="empty" style="padding:16px">None in the Pulse.${fk==='account'||fk==='person'?' Anything on your registers is listed below.':''}</div>`}${showAll(rows)}${ft||''}</section>`;
   const focus=fk==='account'||fk==='person';
   const linked=regLinked(P,fk,fv,scope.length);
+  const foot=allToggle(scope);
   if(!(focus&&!scope.length&&linked)){
-    L+=sortBar('pulse',a.length);
     if(fk==='person'){const own=a.filter(i=>(i._owners||[]).includes(fv)),inv=a.filter(i=>!(i._owners||[]).includes(fv));
-      L+=sec(`Owned by ${esc(fv)}`,own,'')+sec(`${esc(fv)} named, someone else owns`,inv,`${esc(fv)} is named on these in the evidence (a statement, a commitment or a stated role) but is not the owner. The owner is on each row.`,foot)}
-    else L+=sec(PALL?'All issues':'Live issues',a,'',foot);
+      L+=sec(`Owned by ${esc(fv)}`,own,'','',sortMini(a.length))+sec(`${esc(fv)} named, someone else owns`,inv,`${esc(fv)} is named on these in the evidence (a statement, a commitment or a stated role) but is not the owner. The owner is on each row.`,foot)}
+    else L+=sec(PALL?'All issues':'Live issues',a,'',foot,sortMini(a.length));
   }
   L+=linked;
   h+=`<div class="pv-g2"><div class="pv-col">${L}</div><div class="pv-col">${govSec(P,fk,fv)}</div></div>`;
-  /* knowledge beside people; one-line summaries on phone */
   const kn=knowHtml(know,fk,fv,trk);
-  const pp=(fk==='person'?P.people.filter(r=>r.name===fv):P.people).slice(0,15);
-  const peo=`<section class="group"><h2 class="ghead">People carrying the most<span class="n">${P.people.length}</span></h2><p class="gnote">Owns: owner of a live Pulse issue. Involved: named in the evidence on a live issue, not the owner. Delegated: open delegated or awaited register items they own. Sole: knowledge areas they hold with no confirmed backup. Highlighted at 8 or more owned or delegated.</p><div class="ppl h"><span>Person</span><span class="num">Owns</span><span class="num">Involved</span><span class="num">Delegated</span><span class="num">Sole</span><span class="fl">Forums</span></div>${pp.map(r=>`<button type="button" class="ppl${fk==='person'&&fv===r.name?' on':''}" data-pf="person" data-val="${esc(r.name)}"><span class="${r.total>=8?'hot':''}">${esc(r.name)}</span><span class="num">${r.owns??r.pulse}</span><span class="num">${r.involved??0}</span><span class="num">${r.delegated}</span><span class="num${r.sole?' hot':''}">${r.sole||0}</span><span class="fl">${esc(r.forums.map(fname).join(', '))}</span></button>`).join('')}</section>`;
+  const peo=peopleHtml(P,fk,fv);
   if(ph){const kl=know.filter(i=>i._state==='live'),kc=kl.filter(i=>i._candidate).length,kq=know.filter(i=>i._state==='quiet').length;
     h+=`<button type="button" class="pv-sum" data-kopen aria-expanded="${KOPEN}"><b>Knowledge concentration</b> · ${kl.length} live${kc?' · '+kc+' needs your call':''}${kq?' · '+kq+' quiet':''} <span aria-hidden="true">${KOPEN?'⌃':'›'}</span></button>${KOPEN?kn:''}`;
     h+=`<button type="button" class="pv-sum" data-popen aria-expanded="${POPEN}"><b>People carrying the most</b> · ${P.people.length} people · top: ${esc(P.people.slice(0,3).map(r=>r.name).join(', '))} <span aria-hidden="true">${POPEN?'⌃':'›'}</span></button>${POPEN?peo:''}`}
   else h+=`<div class="pv-g3"><div class="pv-col">${kn}</div><div class="pv-col">${peo}</div></div>`;
   return h+'</div>'}
+/* Phase 2, C18: top 8, grouped columns, Sole removed, zero shown as a dot */
+let PPLALL=false;
+function peopleHtml(P,fk,fv){const ph=PHONE();
+  const src=fk==='person'?P.people.filter(r=>r.name===fv):P.people;const pp=PPLALL||fk==='person'?src:src.slice(0,8);
+  const z=n=>n?`${n}`:'<span class="z" aria-label="none">·</span>';
+  const rows=pp.map(r=>`<button type="button" class="ppl pv-pp${fk==='person'&&fv===r.name?' on':''}" data-pf="person" data-val="${esc(r.name)}" title="${esc(r.forums.map(fname).join(', ')||'No forum')}"><span>${esc(r.name)}</span><span class="num">${z(r.owns??r.pulse)}</span><span class="num">${z(r.involved??0)}</span><span class="num">${z(r.delegated)}</span></button>`).join('');
+  const more=fk!=='person'&&P.people.length>8?`<button type="button" class="more pv-pmore" data-pplall>${PPLALL?'Show top 8':'Show all '+P.people.length+' people'}</button>`:'';
+  return `<section class="group pv-ppl"><h2 class="ghead">People carrying the most<span class="sub">${PPLALL||fk==='person'?P.people.length+' people':'top 8 of '+P.people.length}</span>${ph?'':'<span class="sub r">Select a name to filter</span>'}</h2>
+   <div class="ppl pv-pp g" aria-hidden="true"><span></span><span class="gl">In the Pulse</span><span class="gl r">Your registers</span></div>
+   <div class="ppl pv-pp h"><span>Person</span><span class="num">Owns</span><span class="num">Involved</span><span class="num">Delegated</span></div>${rows}${more}
+   <p class="gnote pv-pn">Owns: owner of a live Pulse issue. Involved: named in the evidence on a live issue, not the owner. Delegated: open delegated or awaited items on your registers.</p></section>`}
+/* Phase 2, C19: knowledge concentration stays the one view of single points of failure */
+const KCOV={none:['No backup','red'],unknown:['Backup unknown','red'],partial:['Partly covered',''],covered:['Covered','grn']};
+const TRK=k=>((PULSE&&PULSE.tracks)||[]).find(t=>t.key===k)?.name||k||'';
+const bkp=i=>i.backup?i.backup:(i.coverage||'unknown')==='unknown'?'not confirmed':'none named';
+function xpo(i){return (i.exposure||[]).map(x=>{x=String(x);return x==='customer'&&i.account?'Customer · '+i.account:cap(x)})}
+function krow(i){const cov=KCOV[i.coverage||'unknown']||KCOV.unknown;const cls=i._state==='live'?'':i._state==='quiet'?' dim':' done';
+  const bd=`<span class="pv-b ${cov[1]}">${cov[0]}</span>${xpo(i).map(x=>`<span class="pv-b">${esc(x)}</span>`).join('')}${i.escalated_to?`<span class="pv-b esc">Escalated · ${esc(i.escalated_to)}</span>`:i._candidate?'<span class="pv-b call">Needs your call</span>':''}${i.absence_date?`<span class="pv-b">Away from ${fmt(i.absence_date)}</span>`:''}${i._state!=='live'?`<span class="pv-b">${cap(i._state)}</span>`:''}`;
+  return `<div class="pv-ir pv-kr${SEL===i.id?' sel':''}${cls}" data-kid="${esc(i.id)}"><div class="id">${esc(i.id)}</div>
+   <div class="bd"><button type="button" class="ttl" data-open="${esc(i.id)}">${PHONE()?`<span class="iid">${esc(i.id)}</span>`:''}${esc(i.title)}</button><div class="bdg">${bd}</div><div class="ow">Held by ${esc(i.holder||'?')} · Backup: ${esc(bkp(i))}</div>${i.mitigation?`<div class="nx">${esc(plain(i.mitigation))}</div>`:''}</div></div>`}
+let KALL=false;
+function knowHtml(know,fk,fv,trk){
+  if(fk&&fk!=='person'&&fk!=='track'&&fk!=='account')return '';
+  const k=know.filter(i=>!fk||(fk==='person'?(i.holder===fv||(i.backup||'').includes(fv)):fk==='track'?i.track===fv:i.account===fv));
+  const live=k.filter(i=>i._state==='live'),quiet=k.filter(i=>i._state==='quiet');
+  const cr={none:0,unknown:1,partial:2,covered:3};
+  const rows=(KALL?k:live).slice().sort((a,b)=>((a._state==='live'?0:1)-(b._state==='live'?0:1))||((b._candidate?1:0)-(a._candidate?1:0))||((cr[a.coverage||'unknown']??1)-(cr[b.coverage||'unknown']??1))||String(b.last_seen||'').localeCompare(String(a.last_seen||'')));
+  const qd=quiet.map(i=>`${i.id} (${(KCOV[i.coverage||'unknown']||KCOV.unknown)[0].toLowerCase()}${i.backup?', backup '+i.backup:''})`);
+  const foot=`<div class="pv-kf">${quiet.length?`${quiet.length} quiet: ${esc(joinAnd(qd))}. `:''}Live for 45 days after last evidence.${quiet.length||KALL?` <button type="button" class="pv-lk" data-kall>${KALL?'Hide quiet':'Show quiet'}</button>`:''}</div>`;
+  return `<section class="group pv-kn"><h2 class="ghead">Knowledge concentration<span class="sub">${live.length} live</span><span class="sub r">One person holds what a customer or release depends on</span></h2>${rows.map(krow).join('')||'<div class="empty" style="padding:16px">None.</div>'}${foot}</section>`}
 async function pinAccount(name){const x=(PULSE.health||[]).find(h=>h.account===name);if(x&&x.pinned)return;
   const r=await fetch('/api/pulse/pin',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({account:name})});
   if(!r.ok){toast('Pin failed · '+name);return}PULSE=await r.json();
   SESSION.unshift({id:name,what:'pinned to the top',t:new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})});
   toast(name+' pinned to the top');render()}
 PHONEQ.addEventListener('change',()=>render());
-const KCOV={none:['No backup','b-red'],unknown:['Backup unknown','b-amber'],partial:['Partly covered','b-amber'],covered:['Covered','b-green']};
-const TRK=k=>((PULSE&&PULSE.tracks)||[]).find(t=>t.key===k)?.name||k||'';
-function krow(i){const cov=KCOV[i.coverage||'unknown']||KCOV.unknown;const cls=i._state==='live'?'':i._state==='quiet'?' dim':' done';
-  const sub=[i.holder?'Held by '+i.holder:'',i.backup?'Backup: '+i.backup:'No backup named',i.mitigation?'Mitigation: '+plain(i.mitigation):''].filter(Boolean).join(' · ');
-  return `<div class="row prow${SEL===i.id?' sel':''}${cls}" data-id="${esc(i.id)}"><div class="id">${esc(i.id)}</div>
-   <div class="body"><div class="title">${esc(i.title)}</div><div class="next ctx">${esc(sub)}</div><div class="meta"><span class="kcov ${cov[1]}">${cov[0]}</span>${(i.exposure||[]).map(x=>`<span class="xp">${esc(cap(String(x)))}</span>`).join('')}${i.absence_date?`<span>Away from ${fmt(i.absence_date)}</span>`:''}${i.escalated_to?`<span class="t-esc">Escalated · ${esc(i.escalated_to)}</span>`:i._candidate?'<span class="t-esc">Needs your call</span>':''}${i._state==='quiet'?'<span>Not seen in 45+ days</span>':''}<span>${esc(TRK(i.track))}</span></div></div>
-   <div class="due"><b>${fmt(i.last_seen||i.first_seen)}</b><span>${i.sightings||1}× since ${fmt(i.first_seen)}</span></div></div>`}
-let KALL=false;
-function knowHtml(know,fk,fv,trk){
-  let k=know.filter(i=>!fk||(fk==='person'?(i.holder===fv||(i.backup||'').includes(fv)):fk==='track'?i.track===fv:fk==='account'?i.account===fv:false));
-  if(fk&&fk!=='person'&&fk!=='track'&&fk!=='account')return '';
-  const live=k.filter(i=>i._state==='live'),quiet=k.filter(i=>i._state==='quiet');
-  const cr={none:0,unknown:1,partial:2,covered:3};
-  const rows=(KALL?k:live).slice().sort((a,b)=>((a._state==='live'?0:1)-(b._state==='live'?0:1))||((cr[a.coverage||'unknown']??1)-(cr[b.coverage||'unknown']??1))||((b._candidate?1:0)-(a._candidate?1:0))||String(b.last_seen||'').localeCompare(String(a.last_seen||'')));
-  const n=c=>live.filter(i=>(i.coverage||'unknown')===c).length;
-  const strip=`<div class="kstrip"><span class="b-red"><b>${n('none')}</b> no backup</span><span class="b-amber"><b>${n('unknown')}</b> backup unknown</span><span class="b-amber"><b>${n('partial')}</b> partly covered</span><span class="b-green"><b>${n('covered')}</b> covered</span></div>`;
-  const foot=quiet.length||KALL?`<button type="button" class="more" data-kall>${KALL?'Show live only':'Include not seen in 45+ days ('+quiet.length+')'}</button>`:'';
-  return `<section class="group"><h2 class="ghead">Knowledge concentration<span class="n">${live.length}</span></h2><p class="gnote">Where one person holds knowledge a customer, a release or a migration depends on. This is a different risk from load: the fix is a named backup, documentation or cross-training. Entries stay live for 45 days after the last evidence, because silence does not remove a single point of failure.</p>${strip}${rows.map(krow).join('')||'<div class="empty" style="padding:16px">None.</div>'}${foot}</section>`}
 /* Items behind a tile or a person that live in the registers, not the Pulse (2026-10-16). Tap opens the item; the row says which register. */
 function regLinked(P,fk,fv,nPulse){
   let ids=[],what='';
@@ -989,48 +1156,71 @@ function regLinked(P,fk,fv,nPulse){
   if(!rows.length)return '';
   const lead=nPulse?'':`<b>No Pulse issues for ${esc(fv)}.</b> `;
   return `<section class="group"><h2 class="ghead">On your registers<span class="n">${rows.length}</span></h2><p class="gnote">${lead}${what} They live in your registers, not the Pulse; each row shows which one. Tap to open it here, or use the status buttons as you would on that tab.</p>${rows.map(rowHtml).join('')}</section>`}
-function agendaMd(k){let it,L,multi=false;
-  const wk=dn(TODAY)-7*864e5,fs=i=>dn(String(i.first_seen||TODAY).slice(0,10));
-  if(k.startsWith('track:')){const t=(PULSE.tracks||[]).find(x=>x.key===k.slice(6))||{name:k,forums:[],leads:[]};multi=true;
-    it=ITEMS.filter(i=>i.kind==='pulse'&&t.forums.includes(i.forum));
-    L=[`# ${t.name}: weekly governance review, ${fmt(TODAY)}`,'',`With ${(t.leads||[]).join(' and ')}. Window ${fmt(PULSE.window.start)} to ${fmt(PULSE.window.end)}. Covers: ${t.forums.map(fname).join(', ')}.`,''];
-    /* C13: open with the forums that were not heard, so silence is never read as calm */
-    if((t.not_heard||[]).length){const nh=t.not_heard.map(f=>`${f.name} (${f.last_evidence?'last evidence '+fmt(f.last_evidence):'no evidence on file'})`);
-      L.push(`**Heard from ${t.heard} of ${t.total} forums this window.** Not heard: ${joinAnd(nh)}. Ask for status before reading these counts as calm.`,'')}}
-  else{const f=PULSE.forums.find(x=>x.key===k)||{name:k};it=ITEMS.filter(i=>i.kind==='pulse'&&i.forum===k);
-    L=[`# ${f.name}: governance review, ${fmt(TODAY)}`,'',`Window ${fmt(PULSE.window.start)} to ${fmt(PULSE.window.end)}. Owner: ${f.owner||'TBC'}. Governance: ${f.governance||''}.`,''];
-    if(f.ev_state==='not_heard')L.push(`**Not heard this window** (${f.last_evidence?'last evidence '+fmt(f.last_evidence):'no evidence on file'}). Ask for status before reading these counts as calm.`,'')}
-  const ln=i=>`**${i.id}** ${plain(i.title)}${multi?' ['+fname(i.forum)+']':''}${i.owner?' (owner: '+i.owner+')':' (no owner named)'}${i.next_action?'. Next: '+plain(i.next_action).replace(/\.$/,''):''}`;
-  const sec=(t,xs,line)=>{L.push('## '+t,'');if(xs.length)xs.forEach(i=>L.push('- '+(line||ln)(i)));else L.push('- None.');L.push('')};
+/* Phase 2, C17: governance meeting view. One model feeds the presentable view and "Copy as text". */
+function agendaModel(k){const P=PULSE,wk=dn(TODAY)-7*864e5,fs=i=>dn(String(i.first_seen||TODAY).slice(0,10));
+  let it,m,multi=false,t=null;
+  const dt=new Date(dn(TODAY)),day=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][dt.getUTCDay()];
+  if(k.startsWith('track:')){t=(P.tracks||[]).find(x=>x.key===k.slice(6))||{name:k,forums:[],leads:[],not_heard:[],heard:0,total:0};multi=true;
+    it=ITEMS.filter(i=>i.kind==='pulse'&&i.category!=='knowledge'&&t.forums.includes(i.forum));
+    m={kicker:'Weekly governance review',title:t.name,sub:`${day}, ${fmt(TODAY)} · with ${joinAnd(t.leads||[])} · evidence window ${fmt(P.window.start)} to ${fmt(P.window.end)}`,
+      forums:t.forums.map(x=>P.forums.find(f=>f.key===x)).filter(Boolean)}}
+  else{const f=P.forums.find(x=>x.key===k)||{name:k,key:k};it=ITEMS.filter(i=>i.kind==='pulse'&&i.category!=='knowledge'&&i.forum===k);
+    m={kicker:'Governance review',title:f.name,sub:`${day}, ${fmt(TODAY)} · owner ${f.owner||'TBC'} · evidence window ${fmt(P.window.start)} to ${fmt(P.window.end)}`,forums:[f]}}
+  const nh=m.forums.filter(f=>f.ev_state==='not_heard');
+  m.banner=nh.length?{h:`Heard from ${m.forums.length-nh.length} of ${m.forums.length} forum${m.forums.length>1?'s':''} this window`,
+    t:`Not heard: ${joinAnd(nh.map(f=>`${f.name} (${f.last_evidence?'last evidence '+fmt(f.last_evidence):'no evidence on file'})`))}. Ask for status before reading these counts as calm.`}:null;
   const live=it.filter(i=>i._state==='live');
-  sec('Stuck: what unblocks it, who decides, by when',live.filter(i=>i._stuck));
-  const kc=multi?ITEMS.filter(i=>i.kind==='pulse'&&i.category==='knowledge'&&i.track===k.slice(6)&&i._candidate):[];
-  sec('Needs a decision or escalation',[...live.filter(i=>i._candidate&&!i._stuck),...kc],i=>(i.category==='knowledge'?`**${i.id}** ${plain(i.title)} (knowledge risk; held by ${i.holder||'?'})`:ln(i))+'. Test: '+(PULSE.tests[i._candidate]||i._candidate));
-  sec('New this week',live.filter(i=>!i._stuck&&!i._candidate&&fs(i)>=wk));
-  sec('Still open',live.filter(i=>!i._stuck&&!i._candidate&&fs(i)<wk));
-  sec('Gone quiet: resolved, or dropped?',it.filter(i=>i._state==='quiet'));
-  sec('Escalated to my registers',it.filter(i=>i.escalated_to),i=>`**${i.id}** ${plain(i.title)}, now ${i.escalated_to}`);
-  if(multi){const t=k.slice(6);const kn=ITEMS.filter(i=>i.kind==='pulse'&&i.category==='knowledge'&&i.track===t&&i._state==='live'&&(i.coverage||'unknown')!=='covered');
-    sec('Knowledge risks: who backs up whom, and by when',kn,i=>`**${i.id}** ${plain(i.title)}: held by ${i.holder||'?'}; backup ${i.backup||'none named'} (${(KCOV[i.coverage||'unknown']||KCOV.unknown)[0].toLowerCase()})${i.mitigation?'. Mitigation: '+plain(i.mitigation).replace(/\.$/,''):''}${i.absence_date?'. Away from '+fmt(i.absence_date):''}`)}
+  const sevw=i=>[i.severity,i.customer_visible?'customer-visible':'internal'].filter(Boolean).join(' · ');
+  const own=i=>i.owner?'owner '+i.owner:'no owner named';
+  const nx=i=>i.next_action?'Next: '+plain(i.next_action).replace(/\.$/,'')+'.':'';
+  const kn=multi?ITEMS.filter(i=>i.kind==='pulse'&&i.category==='knowledge'&&i.track===t.key):[];
+  const cand=P.candidates||[];const why=id=>(cand.find(c=>c.id===id)||{}).reason_line||'';
+  const S=[];
+  S.push({t:'Stuck: what unblocks it, who decides, by when',items:live.filter(i=>i._stuck).map(i=>({id:i.id,title:i.title,b:i,meta:`Owner: ${i.owner||'no owner named'} · last raised ${fmt(i.last_seen||i.first_seen)}${multi?' · '+fname(i.forum):''}`,next:nx(i)}))});
+  S.push({t:'Needs a decision or escalation',items:[...live.filter(i=>i._candidate&&!i._stuck).map(i=>({id:i.id,title:i.title,meta:`${sevw(i)} · ${own(i)} · ${i.account||'no account'}`,next:why(i.id)||('Test: '+(P.tests[i._candidate]||i._candidate))})),
+    ...kn.filter(i=>i._candidate&&i._state==='live').map(i=>({id:i.id,title:i.title,meta:`Knowledge risk · held by ${i.holder||'?'}${i.absence_date?' · away from '+fmt(i.absence_date):''} · backup ${bkp(i)}`,next:why(i.id)||'Decide: who holds this now, and when the handover is confirmed.'}))]});
+  const rest=live.filter(i=>!i._stuck&&!i._candidate);
+  S.push({t:'New this week',items:rest.filter(i=>fs(i)>=wk).map(i=>({id:i.id,title:i.title,meta:`${sevw(i)} · ${own(i)} · ${i.account||'no account'}${multi?' · '+fname(i.forum):''}`,next:nx(i)}))});
+  const older=rest.filter(i=>fs(i)<wk);
+  if(older.length)S.push({t:'Still open',items:older.map(i=>({id:i.id,title:i.title,meta:`${sevw(i)} · ${own(i)} · ${i.account||'no account'} · raised since ${fmt(i.first_seen)}`,next:nx(i)}))});
+  S.push({t:'Gone quiet: resolved, or dropped?',items:it.filter(i=>i._state==='quiet').map(i=>({id:i.id,title:i.title,meta:`${[i.severity,i.account].filter(Boolean).join(' · ')} · ${own(i)} · last raised ${fmt(i.last_seen||i.first_seen)}`,next:''}))});
+  if(multi)S.push({t:'Who backs up whom, and by when',items:kn.filter(i=>i._state==='live'||i._state==='quiet').map(i=>({id:i.id,title:i.title,meta:`${i.holder||'?'} · backup ${bkp(i)}${(i.exposure||[]).length?' · '+(i.exposure||[]).map(x=>String(x)==='customer'&&i.account?'customer exposure ('+i.account+')':String(x)+' exposure').join(', '):''}${i._state==='quiet'?' · quiet; confirm still current':''}`,next:i.mitigation?plain(i.mitigation):''}))});
+  m.sections=S;
+  m.counts=multi?[t.live+' live',t.new7+' new',t.stuck+' stuck',t.candidates+' call'+(t.candidates===1?'':'s'),t.quiet+' quiet'].join(' · '):[live.length+' live',it.filter(i=>i._state==='quiet').length+' quiet'].join(' · ');
+  m.escalated=it.filter(i=>i.escalated_to).map(i=>`${i.id} → Watch ${i.escalated_to}`);
+  return m}
+function agendaMd(k){const m=agendaModel(k);const L=[`# ${m.title}: ${m.kicker.toLowerCase()}`,'',m.sub,''];
+  if(m.banner)L.push(`${m.banner.h}. ${m.banner.t}`,'');
+  m.sections.forEach((s,n)=>{L.push(`## ${n+1}. ${s.t}`,'');if(!s.items.length)L.push('- None.');s.items.forEach(x=>L.push(`- ${x.id} ${plain(x.title)}. ${x.meta}.${x.next?' '+x.next:''}`));L.push('')});
+  L.push('## This track','',m.counts,'');m.forums.forEach(f=>L.push(`- ${f.name}: ${evLine(f)}`));
+  if(m.escalated.length)L.push('','## Escalated to you','',...m.escalated.map(e=>'- '+e));
   return L.join('\n')}
-function openAgenda(k){return openAgendaText(agendaMd(k))}
-function openAgendaText(txt){SEL=null;
-  $('#panel').innerHTML=`<div class="p-top">${head('','Governance agenda')}</div><div class="p-act"><button type="button" class="btn primary" id="cpy">Copy as text</button></div><div class="p-sec md">${md(txt)}</div>`;
-  showDrawer('agenda');$('#drawer').scrollTop=0;
-  $('#cpy').onclick=async()=>{try{await navigator.clipboard.writeText(txt.replace(/\*\*/g,''));toast('Copied')}catch(e){toast('Copy is blocked here; select the text instead')}};render()}
+let MEET=null;
+function openAgenda(k){MEET=k;const m=agendaModel(k);
+  let el=$('#pv-meet');if(!el){el=document.createElement('div');el.id='pv-meet';el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');document.body.appendChild(el)}
+  const bd=b=>b?ibadges(b):'';
+  const secs=m.sections.map((s,n)=>`<section class="ms"><h3><span class="nm">${n+1}</span>${esc(s.t)}</h3>${s.items.length?s.items.map(x=>`<div class="mi"><span class="id">${esc(x.id)}</span><div><button type="button" class="mt" data-mopen="${esc(x.id)}">${esc(x.title)}</button>${x.b?`<div class="bdg">${bd(x.b)}</div>`:''}<div class="mm">${esc(x.meta)}</div>${x.next?`<div class="mn">${esc(x.next)}</div>`:''}</div></div>`).join(''):'<div class="mi none">None.</div>'}</section>`).join('');
+  const rail=`<aside class="mr"><div class="rh">This track</div><div class="rc">${esc(m.counts)}</div><div class="rh">Forums</div>${m.forums.map(f=>`<div class="rf">${mk(f.ev_state)}<div>${esc(f.name)}<small>${esc(evLine(f))}${f.ev_state==='raised'?' · '+f.live+' live':''}</small></div></div>`).join('')}${m.escalated.length?`<div class="rh sep">Escalated to you</div>${m.escalated.map(e=>`<div class="rc">${esc(e)}</div>`).join('')}`:''}</aside>`;
+  el.innerHTML=`<div class="mw"><div class="mh"><div><div class="kk">${esc(m.kicker)}</div><h2>${esc(m.title)}</h2><div class="sb">${esc(m.sub)}</div></div>
+   <div class="mb"><button type="button" class="btn primary" data-mcopy>Copy as text</button><button type="button" class="btn" data-mfs>${document.fullscreenElement?'Exit full screen':'Present full screen'}</button><button type="button" class="btn" data-mclose>Close</button></div></div>
+   ${m.banner?`<div class="mban"><span class="hx" aria-hidden="true"></span><div><b>${esc(m.banner.h)}</b><p>${esc(m.banner.t)}</p></div></div>`:''}
+   <div class="mg"><div class="msecs">${secs}</div>${rail}</div></div>`;
+  document.body.classList.add('locked');el.scrollTop=0;el.focus&&el.setAttribute('tabindex','-1');el.focus()}
+function closeMeet(){MEET=null;if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});const el=$('#pv-meet');if(el)el.remove();if(!DRAWER&&!SHEET)document.body.classList.remove('locked')}
+document.addEventListener('fullscreenchange',()=>{const b=document.querySelector('[data-mfs]');if(b)b.textContent=document.fullscreenElement?'Exit full screen':'Present full screen'});
 async function escalateP(id,decision){
   const r=await fetch('/api/pulse/'+encodeURIComponent(id)+'/escalate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({decision})});
   if(!r.ok){toast('Save failed · '+id);return}const j=await r.json();
   SESSION.unshift({id,what:j.watch?'escalated to '+j.watch:'left with team',t:new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})});
   toast(j.watch?`${id} escalated · ${j.watch} is on your Watch list`:`${id} left with the team`);
-  await load();if(DRAWER==='item'&&SEL===id)openDrawer(id)}
+  await load();if(SHEET===id)openSheet(id);if(DRAWER==='item'&&SEL===id)openDrawer(id)}
 /* ---------- panel ---------- */
 function layout(){const open=!!DRAWER;const dock=open&&innerWidth>=1100&&DRAWER==='item';
   document.body.classList.toggle('docked',dock);$('#scrim').style.display=open&&!dock?'block':'none';$('#drawer').classList.toggle('open',open);document.body.classList.toggle('locked',open&&!dock)}
 function showDrawer(kind){DRAWER=kind;layout()}
 function closeDrawer(){DRAWER=null;SEL=null;layout();render()}
 addEventListener('resize',layout);
-addEventListener('keydown',e=>{if(e.key==='Escape'&&DRAWER)closeDrawer()});
+addEventListener('keydown',e=>{if(e.key!=='Escape')return;if(SHEET){closeSheet();return}if(MEET&&!document.fullscreenElement){closeMeet();return}if(DRAWER)closeDrawer()});
 $('#scrim').onclick=closeDrawer;
 function head(id,meta){return `<div class="p-meta"><button type="button" class="p-back" data-close>‹ Back</button>${id?`<span class="id">${esc(id)}</span>`:''}<span>${meta}</span><button type="button" class="p-close" data-close>Close</button></div>`}
 function history(i){
