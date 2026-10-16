@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-16 13:15 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 13:31 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-02 to 2026-10-16. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -22,11 +22,11 @@ Score = 100 minus: live high visible x8, live high x6, live medium x3, live low 
 | Person | Live Pulse issues | Open delegated/awaited | Forums |
 |---|---|---|---|
 | Akansh Gangil | 0 | 19 |  |
-| Syed Jamshed Zaidi | 5 | 6 | 2026 Deployment Daily Scrum |
 | Ron Snyder | 1 | 10 | 2026 Deployment Daily Scrum |
+| Syed Jamshed Zaidi | 3 | 6 | 2026 Deployment Daily Scrum |
 | Chad Steger | 1 | 8 | 2026 Deployment Daily Scrum |
-| David Blondel | 1 | 8 | entroCIM Daily Stand Up |
 | Natalie Marquardt | 0 | 9 |  |
+| David Blondel | 0 | 8 |  |
 | Scott Dunn | 2 | 5 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 0 | 7 |  |
 | Nathan Kehr | 0 | 5 |  |
