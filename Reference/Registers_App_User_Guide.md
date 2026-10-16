@@ -16,7 +16,7 @@ Everything you change in the app is written to that item's file, the summary fil
 
 | Tab | Shows |
 |---|---|
-| **Pulse** | What your team-governed forums are carrying, in a rolling 14-day window: account health (Dell pinned), what needs your call, live issues, forums, and the people carrying the most. See Pulse, below |
+| **Pulse** | What your team-governed forums are carrying, in a rolling 14-day window: what needs your call, your pinned account, how many forums you heard from, account health, live issues, your weekly governance, knowledge risks, and the people carrying the most. See Pulse, below |
 | **Triage** | What needs your attention: your own actions, Critical other-owned actions, Active risks, and Radar decisions, in bands by urgency (needs triage, overdue, due this week, later, no date, watch) |
 | **Mine** | Register A: actions only you can move. Ceiling 15 |
 | **Other-owned** | Actions you delegated (Delegated) or are waiting on from someone else (Awaited) |
@@ -110,6 +110,8 @@ Lists what you changed this session and the recent git commits. Every save is a 
 
 ## Pulse (added 2026-10-16)
 
+**Layout (updated 2026-10-16).** The top row is Today: **Needs your call** (each with a one-line reason: you were asked, it crosses a team boundary, it has been stuck ten business days, and so on), your **pinned account** (score out of 100; the bar shows how many points the team's issues cost against how many your own register items cost), and **Evidence**, which says how many of the 13 forums you heard from in the window. In the evidence strip and in governance, a filled mark means an issue was raised, an outline means the forum met and nothing was raised, and hatching (or a dash) means no evidence: the forum may have been quiet or may simply not have been covered. Treat "not heard" as a gap, not as good news; the governance agenda opens by naming those forums so you can ask. **Pinning:** use Pin on any row of the account table to make that account the one in the Today row; only one account is pinned at a time. **Phone:** the page runs calls, pinned account, evidence, live issues (first four, then Show all), governance (summary, Open agenda, Forums), then accounts, knowledge and people as summary rows you can open.
+
 The Pulse is how you keep a finger on the organization without tracking work that belongs to someone else. Issues raised in team-governed forums (the Deployment Daily Scrum, the entroCIM Daily Stand Up, backlog refinement, sprint reviews and the rest) run on each team's own governance: a project process or a sprint cycle. They live here, not in the registers.
 
 **Nothing in the Pulse needs closing.** An issue stays live while the forum keeps raising it. When it has not been raised for 14 days it goes **quiet**: either it was resolved or nobody is talking about it, and the governance agenda asks the team which. You can mark an issue Resolved if you know it is.
@@ -121,7 +123,7 @@ The Pulse is how you keep a finger on the organization without tracking work tha
 - **Escalate** creates an Active Watch item linked to the issue. The team still owns the work; the Watch item tracks your part.
 - **Leave with team** records that you looked and decided it is theirs. It stays in the Pulse and can still be escalated later.
 
-**Account tiles.** One tile per account on the roster (`Registers/pulse/_accounts.json`: Dell, Wesco Warehouse, Ford, Federal Reserve, Coca-Cola, BAE, Stanford, Louvre Abu Dhabi, UWM) that has a live Pulse issue or an open item on your registers. Accounts with neither are listed underneath as "no signals." Dell is pinned first; the rest run from lowest score up. Internal and partner accounts are labelled.
+**Account table** (formerly tiles). One tile per account on the roster (`Registers/pulse/_accounts.json`: Dell, Wesco Warehouse, Ford, Federal Reserve, Coca-Cola, BAE, Stanford, Louvre Abu Dhabi, UWM) that has a live Pulse issue or an open item on your registers. Accounts with neither are listed underneath as "no signals." Dell is pinned first; the rest run from lowest score up. Internal and partner accounts are labelled.
 
 **Following a tile or a name to the items.** Tap an account tile or a person and the Pulse filters to them: their Pulse issues come straight after the tiles, followed by **On your registers**, the register items behind the numbers (for an account, the "on your registers" count in its tile; for a person, their Delegated count). Each row says which register it lives in; tap it to open it, or use its status buttons as you would on that tab. When an account or person has nothing in the Pulse at all, only that register list shows. Clear returns to the full Pulse.
 

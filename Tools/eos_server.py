@@ -297,6 +297,16 @@ class H(BaseHTTPRequestHandler):
                 return self._json(404, {"error": "not found"})
             except ValueError as e:
                 return self._json(400, {"error": str(e)})
+        if u.path == "/api/pulse/pin":
+            acct = (d.get("account") or "").strip()
+            try:
+                with LOCK:
+                    P.set_pinned(acct)
+                    R.regenerate_all()
+                    git_commit(f"web: pinned account -> {acct}")
+                    return self._json(200, P.summary())
+            except KeyError:
+                return self._json(404, {"error": "unknown account"})
         if u.path == "/api/regenerate":
             with LOCK:
                 counts = R.regenerate_all()
@@ -312,9 +322,9 @@ HTML = r"""<!doctype html>
 <meta name="color-scheme" content="light dark">
 <title>EOS Registers</title>
 <style>
-:root{--bg:#f6f5f2;--card:#fff;--sunk:#efede8;--segOn:#fff;--ink:#1e2226;--ink2:#3c4249;--muted:#5f666e;--line:#e2dfd9;--line2:#eeece7;--acc:#2b5aa6;--accInk:#fff;--sel:#eef3fb;--red:#b23f2c;--grn:#2f7a47;--amb:#94600a;--ambFill:#f2c66e;--ambInk:#3a2600;--shadow:0 1px 2px rgba(0,0,0,.12);--scrim:rgba(20,22,26,.32)}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#16181b;--card:#1d2024;--sunk:#26292e;--segOn:#3a3f46;--ink:#ecebe7;--ink2:#c8c6c1;--muted:#9ca1a8;--line:#33373d;--line2:#272a2f;--acc:#94b5ec;--accInk:#0f1520;--sel:#232b37;--red:#f2917f;--grn:#7cc896;--amb:#e8b762;--ambFill:#e8b762;--ambInk:#1e1607;--shadow:0 1px 2px rgba(0,0,0,.5);--scrim:rgba(0,0,0,.55)}}
-:root[data-theme=dark]{--bg:#16181b;--card:#1d2024;--sunk:#26292e;--segOn:#3a3f46;--ink:#ecebe7;--ink2:#c8c6c1;--muted:#9ca1a8;--line:#33373d;--line2:#272a2f;--acc:#94b5ec;--accInk:#0f1520;--sel:#232b37;--red:#f2917f;--grn:#7cc896;--amb:#e8b762;--ambFill:#e8b762;--ambInk:#1e1607;--shadow:0 1px 2px rgba(0,0,0,.5);--scrim:rgba(0,0,0,.55)}
+:root{--bg:#f6f5f2;--card:#fff;--sunk:#efede8;--segOn:#fff;--ink:#1e2226;--ink2:#3c4249;--muted:#5f666e;--line:#e2dfd9;--line2:#eeece7;--acc:#2b5aa6;--accInk:#fff;--sel:#eef3fb;--red:#b23f2c;--grn:#2f7a47;--hatch:#a8a39a;--barT:#3c4249;--barR:#8ea6d0;--amb:#94600a;--ambFill:#f2c66e;--ambInk:#3a2600;--shadow:0 1px 2px rgba(0,0,0,.12);--scrim:rgba(20,22,26,.32)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#16181b;--card:#1d2024;--sunk:#26292e;--segOn:#3a3f46;--ink:#ecebe7;--ink2:#c8c6c1;--muted:#9ca1a8;--line:#33373d;--line2:#272a2f;--acc:#94b5ec;--accInk:#0f1520;--sel:#232b37;--red:#f2917f;--grn:#7cc896;--hatch:#6b7078;--barT:#d9d7d2;--barR:#4d6797;--amb:#e8b762;--ambFill:#e8b762;--ambInk:#1e1607;--shadow:0 1px 2px rgba(0,0,0,.5);--scrim:rgba(0,0,0,.55)}}
+:root[data-theme=dark]{--bg:#16181b;--card:#1d2024;--sunk:#26292e;--segOn:#3a3f46;--ink:#ecebe7;--ink2:#c8c6c1;--muted:#9ca1a8;--line:#33373d;--line2:#272a2f;--acc:#94b5ec;--accInk:#0f1520;--sel:#232b37;--red:#f2917f;--grn:#7cc896;--hatch:#6b7078;--barT:#d9d7d2;--barR:#4d6797;--amb:#e8b762;--ambFill:#e8b762;--ambInk:#1e1607;--shadow:0 1px 2px rgba(0,0,0,.5);--scrim:rgba(0,0,0,.55)}
 *{box-sizing:border-box}html,body{margin:0}
 body{background:var(--bg);color:var(--ink);font:15px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%}
 button,input,select,textarea{font:inherit;color:inherit}a{color:var(--acc)}
@@ -415,7 +425,7 @@ summary:hover .sl{text-decoration:underline}
 .hcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;cursor:pointer;text-align:left;width:100%}
 .hcard.on{outline:2px solid var(--acc)}
 .hcard .top{display:flex;align-items:baseline;gap:10px}.hcard .acct{font-weight:650;font-size:15px}
-.hcard .pin{font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+
 .score{font-size:34px;line-height:38px;font-weight:700;font-variant-numeric:tabular-nums;margin-top:6px}
 .band{font-size:13px;font-weight:600}
 .b-green{color:var(--grn)}.b-amber{color:var(--amb)}.b-red{color:var(--red)}
@@ -445,6 +455,130 @@ summary:hover .sl{text-decoration:underline}
 .kcov{font-weight:650}.xp{border:1px solid var(--line);border-radius:4px;padding:0 6px;font-size:11.5px;color:var(--ink2)}
 .kstrip{display:flex;gap:16px;flex-wrap:wrap;padding:0 16px 10px;font-size:13px}.kstrip b{font-variant-numeric:tabular-nums}
 .gnote{margin:0;padding:0 16px 10px;font-size:13px;color:var(--muted);line-height:19px}
+/* Pulse redesign 2026-10-16 (Claude Design handoff, Phase 1). Classes prefixed pv- are Pulse-only. */
+.pv{display:flex;flex-direction:column;gap:16px}
+.pv .group{margin-bottom:0}
+.pv-col{display:flex;flex-direction:column;gap:16px;min-width:0}
+.pv-g2{display:grid;grid-template-columns:minmax(0,1fr) 470px;gap:16px;align-items:start}
+.pv-g3{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start}
+.pv-title{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:0 2px}
+.pv-title h2{font-size:20px;font-weight:650;margin:0}
+.pv-title p{margin:0;font-size:14px;color:var(--ink2);flex:1;min-width:260px}
+.pv-lk{font-size:13.5px;color:var(--acc);background:none;border:0;padding:0;cursor:pointer}
+.pv-today{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:16px;align-items:stretch}
+.pv-card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;display:flex;flex-direction:column;min-width:0;text-align:left;font:inherit;color:inherit}
+.pv-card.acc{border-color:var(--acc)}
+.pv-h{font-size:12px;font-weight:650;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:0 0 10px;display:flex;align-items:center;gap:8px}
+.pv-h.acc{color:var(--acc)}
+.pv-badge{background:var(--acc);color:var(--accInk);border-radius:9px;padding:0 7px;font-size:11.5px;line-height:18px;font-weight:650;letter-spacing:0}
+.pv-foot{display:block;margin-top:auto;padding-top:10px;border-top:1px solid var(--line2);font-size:13px;color:var(--muted);line-height:19px}
+.pv-empty{margin:0 0 6px;font-size:14px;color:var(--ink2)}
+.pv-call{display:grid;grid-template-columns:44px minmax(0,1fr);gap:4px 10px;padding:12px 0;border-top:1px solid var(--line2)}
+.pv-calls .pv-h+.pv-call{border-top:0;padding-top:0}
+.pv-call .id{font-size:12.5px;line-height:22px}
+.pv-call .ttl{font-size:16px;line-height:22px;font-weight:600;text-align:left;background:none;border:0;padding:0;color:var(--ink);cursor:pointer;overflow-wrap:anywhere}
+.pv-call .ttl:hover{text-decoration:underline}
+.pv-call .why,.pv-call .bd,.pv-call .acts{grid-column:2}
+.pv-call .why{font-size:13.5px;line-height:19px;color:var(--ink2)}
+.pv-call .bd{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px}
+.pv-call .acts{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
+.pv-tag{border:1px solid var(--line);border-radius:4px;padding:0 6px;font-size:11.5px;color:var(--ink2);line-height:18px}
+.pv-calls .pv-lk{align-self:flex-start;margin:4px 0 2px 54px}
+.pv-pin{cursor:pointer;width:100%}
+.pv-pin:hover{border-color:var(--muted)}
+.pv-pin .l1{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.pv-pin .nm{font-size:16px;font-weight:650;white-space:nowrap}
+.pv-pin .pt{font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);white-space:nowrap;display:inline-flex;gap:4px;align-items:center}
+.pv-pin .vi{margin-left:auto;font-size:13px;color:var(--acc);white-space:nowrap}
+.pv-pin .l2{display:flex;align-items:baseline;gap:8px;margin-top:8px;flex-wrap:wrap}
+.pv-pin .sc{font-size:40px;line-height:44px;font-weight:650;font-variant-numeric:tabular-nums}
+.pv-pin .of{font-size:16px;color:var(--muted)}
+.pv-pin .bw{font-size:15px;font-weight:650}
+.pv-bar{display:flex;background:var(--sunk);border-radius:5px;overflow:hidden;margin:10px 0 8px}
+.pv-bar i{display:block;height:100%}
+.pv-bar .t{background:var(--barT)}.pv-bar .r{background:var(--barR)}
+.pv-leg{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--ink2);align-items:center}
+.pv-leg span{display:inline-flex;align-items:center;gap:6px}
+.pv-sw{display:inline-block;width:10px;height:10px;border-radius:2px;flex:none}
+.pv-sw.t{background:var(--barT)}.pv-sw.r{background:var(--barR)}
+.pv-drv{display:block;font-size:13px;color:var(--ink2);margin:6px 0 10px}
+.pinsvg{flex:none;vertical-align:-1px}
+.pv-ev .hl{font-size:16px;font-weight:700}
+.pv-strip{display:flex;flex-wrap:wrap;gap:4px;margin:10px 0}
+.pv-mk{display:inline-block;width:22px;height:22px;border-radius:3px;flex:none;box-sizing:border-box}
+.pv-mk.raised{background:var(--barT)}
+.pv-mk.nothing{border:2px solid var(--barT)}
+.pv-mk.nh{background:repeating-linear-gradient(135deg,var(--hatch) 0 1.5px,transparent 1.5px 5px);border:1px dashed var(--muted)}
+.pv-evl{display:flex;flex-direction:column;gap:5px;font-size:13px;color:var(--ink2)}
+.pv-evl span{display:inline-flex;align-items:center;gap:8px}
+.pv-evl .pv-mk,.pv-fr .pv-mk,.pv-afoot .pv-mk,.c-n .pv-mk{width:14px;height:14px}
+.pv-evl.ph{display:block;line-height:24px}.pv-evl.ph .pv-mk{width:12px;height:12px;vertical-align:-1px;margin-right:3px}
+.pv-sil{font-size:13px;color:var(--muted);margin:8px 0 10px}
+.pv-ah .ghead,.pv-gov .ghead{flex-wrap:wrap;align-items:baseline}
+.ghead .sub{font-size:13px;color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0}
+.pv-arow{display:grid;grid-template-columns:minmax(0,1fr) 104px;gap:12px;align-items:center;padding:0 18px;border-top:1px solid var(--line2)}
+.pv-arow.pinned{background:var(--sel)}.pv-arow.sel .af{box-shadow:inset 3px 0 0 var(--acc)}
+.pv-arow .af{display:grid;grid-template-columns:200px 150px 190px 150px 110px minmax(0,1fr) 20px;gap:16px;align-items:center;padding:10px 0;width:100%;background:none;border:0;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.pv-arow.hd{border-top:0}.pv-arow.hd .af{cursor:default;padding:0 0 6px;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:650}
+.pv-arow.hd .c-pinh{font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:650;text-align:center;padding-bottom:6px}
+.pv-arow .an{font-weight:600}.pv-arow .at{font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.pv-arow .as{font-size:22px;font-variant-numeric:tabular-nums}.pv-arow .of{font-size:13px;color:var(--muted)}.pv-arow .ab{font-size:13px}
+.pv-arow .c-bar .pv-bar{margin:0}
+.pv-arow .c-n b{display:flex;align-items:center;gap:6px;font-size:14px}.pv-arow .c-n b.nhv{color:var(--ink2)}
+.pv-arow .c-n small{display:block;font-size:12px;color:var(--muted)}
+.pv-arow .c-drv{font-size:13px;color:var(--ink2)}
+.pv-arow .c-ch{color:var(--muted);font-size:18px}
+.pv-arow .af:hover .an{text-decoration:underline}
+.pinbtn{display:inline-flex;align-items:center;justify-content:center;gap:6px;height:32px;padding:0 10px;border:1px solid var(--line);border-radius:8px;background:transparent;color:var(--ink2);font-size:13px;cursor:pointer;justify-self:stretch}
+.pinbtn.on{border-color:var(--acc);color:var(--acc);background:var(--card);font-weight:600;cursor:default}
+.pv-afoot{display:flex;flex-wrap:wrap;gap:6px 24px;align-items:center;padding:10px 18px 12px;border-top:1px solid var(--line2);font-size:13px;color:var(--muted)}
+.pv-afoot>div:last-child:not(.pv-leg){flex-basis:100%}
+.pv-trk{padding:12px 18px 10px;border-top:1px solid var(--line2)}
+.pv-gov .ghead+.pv-trk{border-top:0;padding-top:2px}
+.pv-trk.on{box-shadow:inset 3px 0 0 var(--acc)}
+.pv-trk .r1{display:flex;align-items:flex-start;gap:10px}.pv-trk .tt{flex:1;min-width:0}
+.pv-trk .tn{font-size:15px;font-weight:650;background:none;border:0;padding:0;text-align:left;color:var(--ink);cursor:pointer}
+.pv-trk .tn:hover{text-decoration:underline}
+.pv-trk .ld{font-size:13px;color:var(--muted)}
+.pv-trk .cn{font-size:13.5px;margin-top:6px}
+.pv-hbox{background:var(--sunk);border-radius:6px;padding:8px 10px;margin:8px 0 4px;font-size:13.5px}
+.pv-hbox .v{font-size:13px;color:var(--ink2);margin-top:2px}
+.pv-fr{display:grid;grid-template-columns:14px minmax(0,1fr) auto;gap:10px;align-items:center;min-height:40px;width:100%;background:none;border:0;border-top:1px solid var(--line2);padding:6px 4px;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.pv-frs .pv-fr:first-child{border-top:0}
+.pv-fr:hover{background:var(--bg)}.pv-fr.on{background:var(--sel)}
+.pv-fr .fn{font-size:13.5px;min-width:0}.pv-fr .fs{display:block;font-size:12px;color:var(--muted)}
+.pv-fr .fc{font-size:13px;color:var(--ink2);white-space:nowrap}.pv-fr .fc.dash{color:var(--muted);font-size:15px}
+.pv-2b{display:flex;gap:8px;margin-top:8px}.pv-2b .btn{flex:1}
+.pv-sum{display:flex;align-items:center;gap:6px;width:100%;min-height:48px;padding:10px 16px;background:var(--card);border:1px solid var(--line);border-radius:10px;font:inherit;font-size:14px;color:var(--ink2);text-align:left;cursor:pointer}
+.pv-sum b{color:var(--ink)}.pv-sum span{margin-left:auto;color:var(--muted)}
+.pv-newrow{width:100%;min-height:44px;background:none;border:0;border-top:1px solid var(--line2);text-align:left;cursor:pointer;color:var(--ink2);font:inherit;font-size:13.5px}
+button.ppl{width:100%;background:none;border:0;border-top:1px solid var(--line2);font:inherit;color:inherit;text-align:left}
+.cap .pinsvg{color:var(--muted)}
+@media (max-width:1099px){
+ .pv-today{grid-template-columns:1fr 1fr}.pv-calls{grid-column:1/-1}
+ .pv-g2,.pv-g3{grid-template-columns:minmax(0,1fr)}
+ .pv-arow .af{grid-template-columns:minmax(120px,1.2fr) 130px minmax(90px,1fr) 120px 100px 16px}
+ .pv-arow .c-drv{display:none}
+}
+@media (max-width:820px){
+ .pv{padding:0 12px;gap:12px}.pv .group{border-radius:10px;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+ .pv-col{gap:12px}
+ .pv-title p{font-size:13px;min-width:0;flex-basis:100%}
+ .pv-today{grid-template-columns:minmax(0,1fr);gap:12px}
+ .pv-card{padding:14px 16px}
+ .pv-call{grid-template-columns:minmax(0,1fr)}.pv-call .id{display:none}.pv-call .why,.pv-call .bd,.pv-call .acts{grid-column:1}
+ .pv-call .acts .btn{flex:1;height:44px}.pv-calls .pv-lk{margin-left:0;min-height:44px}
+ .pv-strip{flex-wrap:nowrap;gap:3px}.pv-strip .pv-mk{flex:1;width:auto;height:18px}
+ .pv-arow.ph{grid-template-columns:minmax(0,1fr) 44px;gap:8px;padding:0 12px}
+ .pv-arow.ph .af{display:block;padding:10px 0}
+ .pv-arow.ph .a1{display:flex;align-items:baseline;gap:5px}.pv-arow.ph .an{flex:1;min-width:0}
+ .pv-arow.ph .as{font-size:18px}.pv-arow.ph .ab{min-width:58px;text-align:right}
+ .pv-arow.ph .pv-bar{margin:6px 0}.pv-arow.ph .a3{display:block;font-size:12.5px;color:var(--ink2)}
+ .pinbtn{flex-direction:column;gap:1px;width:44px;height:44px;padding:0;font-size:10.5px}
+ .pv-afoot{padding:10px 12px}
+ .pv-trk{padding:12px 12px 10px}
+ .pv-fr{min-height:44px}
+}
 /* tablet: panel overlays */
 @media (max-width:1099px){body.docked{padding-right:0}}
 /* phone */
@@ -648,9 +782,16 @@ document.addEventListener('click',e=>{
   if(e.target.closest('[data-pclear]')){PF={};render();return}
   if(e.target.closest('#sortDir')){const so=sortOf(VIEW);SORT[VIEW]={k:so.k,dir:-so.dir};saveSort();render();return}
   if(e.target.closest('[data-pall]')){PALL=!PALL;render();return}
+  const pinb=e.target.closest('[data-pin]');if(pinb){e.stopPropagation();pinAccount(pinb.dataset.pin);return}
+  if(e.target.closest('[data-callall]')){CALLALL=!CALLALL;render();return}
+  if(e.target.closest('[data-issall]')){ISSALL=!ISSALL;render();return}
+  if(e.target.closest('[data-kopen]')){KOPEN=!KOPEN;render();return}
+  if(e.target.closest('[data-popen]')){POPEN=!POPEN;render();return}
+  const tko=e.target.closest('[data-trk]');if(tko){TRKOPEN[tko.dataset.trk]=!TRKOPEN[tko.dataset.trk];render();return}
+  if(e.target.closest('[data-guide]')){$('#helpBtn').click();return}
   if(e.target.closest('[data-kall]')){KALL=!KALL;render();return}
   if(e.target.closest('[data-pv]')){VIEW='pulse';PF={};render();scrollTo(0,0);return}
-  const pf=e.target.closest('[data-pf]');if(pf){const k=pf.dataset.pf,v=pf.dataset.val;const fromCap=!!pf.closest('#meta');PF=(!fromCap&&PF[k]===v)?{}:{[k]:v};VIEW='pulse';render();if(fromCap)scrollTo(0,0);else{const c=document.querySelector('.chips');if(c){c.scrollIntoView({block:'start'});scrollBy(0,-110)}}return}
+  const pf=e.target.closest('[data-pf]');if(pf){const k=pf.dataset.pf,v=pf.dataset.val;const fromCap=!!pf.closest('#meta');PF=(!fromCap&&PF[k]===v)?{}:{[k]:v};VIEW='pulse';render();if(fromCap)scrollTo(0,0);if(PF[k]){const c=document.getElementById('pv-issues');if(c){c.scrollIntoView({block:'start'});scrollBy(0,-110)}}return}
   const r=e.target.closest('.row[data-id]');if(r){openDrawer(r.dataset.id)}
 });
 $('#q').addEventListener('input',e=>{Q=e.target.value.trim();render()});
@@ -674,7 +815,8 @@ async function patch(id,p,note){
 const BANDCLS={green:'b-green',amber:'b-amber',red:'b-red'};
 const fname=k=>((PULSE&&PULSE.forums)||[]).find(f=>f.key===k)?.name||k||'Unassigned forum';
 function pulseCaps(){if(!PULSE)return '';const d=(PULSE.health||[]).find(h=>h.pinned);const c=(PULSE.candidates||[]).length;
-  return (d?`<div class="cap" data-pf="account" data-val="${esc(d.account)}"><span class="l">${esc(d.account)} health score</span><span class="s">${esc(d.account)}</span><b class="hs ${BANDCLS[d.band]}">${d.score}/100</b></div>`:'')+
+  /* C10: the pinned account (a setting, Dell by default), with score and band word, on every tab */
+  return (d?`<div class="cap" data-pf="account" data-val="${esc(d.account)}" title="Pinned account">${PIN_SVG(1)}<span>${esc(d.account)}</span><b class="hs ${BANDCLS[d.band]}">${d.score}/100</b><b class="hs ${BANDCLS[d.band]}">· ${esc(d.label)}</b></div>`:'')+
    `<div class="cap" data-pv="1"><span class="l">Pulse calls</span><span class="s">Calls</span><b${c?' class="hs b-amber"':''}>${c}</b></div>`}
 function ptags(i){let t='';
   if(i.severity)t+=`<span class="t-sev ${esc(String(i.severity).toLowerCase())}">${esc(i.severity)}</span>`;
@@ -687,46 +829,136 @@ function prow(i){const c=i.next_action?plain(i.next_action):context(i).t;const c
   return `<div class="row prow${SEL===i.id?' sel':''}${cls}" data-id="${esc(i.id)}"><div class="id">${esc(i.id)}</div>
    <div class="body"><div class="title">${esc(i.title)}</div>${c?`<div class="next ctx">${esc(c)}</div>`:''}<div class="meta">${ptags(i)}<span>${esc([i.account,fname(i.forum),i.owner?'Owner: '+i.owner:'No owner named'].filter(Boolean).join(' · '))}</span></div></div>
    <div class="due"><b>${fmt(i.last_seen||i.first_seen)}</b><span>${i.sightings||1}× since ${fmt(i.first_seen)}</span></div></div>`}
+/* ---------- Pulse redesign, 2026-10-16 (Claude Design handoff, Phase 1: C1-C13) ---------- */
+const PIN_SVG=f=>`<svg class="pinsvg" viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path d="M5.5 1.5h5l-.8 4.2 2.6 2.6v1.2H8.6V14L8 15.2 7.4 14V9.5H3.7V8.3l2.6-2.6z" fill="${f?'currentColor':'none'}" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>`;
+const PHONEQ=matchMedia('(max-width:820px)');const PHONE=()=>PHONEQ.matches;
+let CALLALL=false,ISSALL=false,KOPEN=false,POPEN=false;const TRKOPEN={};
+const joinAnd=xs=>xs.length<2?(xs[0]||''):xs.slice(0,-1).join(', ')+' and '+xs[xs.length-1];
+const TYPEW={customer:'Customer',internal:'Internal',partner:'Partner'};
+function evLine(f){if(f.ev_state==='not_heard')return f.last_evidence?`Not heard · last evidence ${fmt(f.last_evidence)}`:'Not heard · no evidence on file';return `Heard ${fmt(f.last_evidence)}`}
+function evCount(f){if(f.ev_state==='not_heard')return '<span class="fc dash" aria-label="no evidence">—</span>';if(f.ev_state==='nothing_raised')return '<span class="fc">Nothing raised</span>';
+  return `<span class="fc">${[f.live+' live',f.stuck?f.stuck+' stuck':'',f.quiet?f.quiet+' quiet':''].filter(Boolean).join(' · ')}</span>`}
+const mk=st=>`<span class="pv-mk ${st==='raised'?'raised':st==='nothing_raised'?'nothing':'nh'}" aria-hidden="true"></span>`;
+function verdict(t){if(t.heard>=t.total)return '';if(t.heard<=t.total/2)return 'Mostly not heard: these counts are incomplete.';
+  const n=t.not_heard.map(f=>f.name);return n.length<=2?`${joinAnd(n)} not heard; their counts are unknown.`:`${n.length} forums not heard; their counts are unknown.`}
+function drivers(c){return [c.live_high_visible?c.live_high_visible+' High customer-visible':'',c.live_high?c.live_high+' High internal':'',c.live_medium?c.live_medium+' Medium':'',c.live_low?c.live_low+' Low':'',c.stuck?c.stuck+' stuck':'',c.quiet?c.quiet+' quiet':'',c.candidate?c.candidate+' open call'+(c.candidate>1?'s':''):'',c.at_your_level?c.at_your_level+' register item'+(c.at_your_level>1?'s':''):''].filter(Boolean).join(' · ')}
+function ptsBar(x,h){const w=v=>Math.min(100,v/60*100);const t=w(x.teams_points),r=Math.min(100-t,w(x.registers_points));
+  return `<div class="pv-bar" style="height:${h||10}px" role="img" aria-label="Points lost: teams raised ${x.teams_points}, your registers ${x.registers_points}"><i class="t" style="width:${t}%"></i><i class="r" style="width:${r}%"></i></div>`}
+function teamsCell(x,P){if(x.teams_points>0)return {v:'−'+x.teams_points,n:[x.live?x.live+' live':'',x.quiet?x.quiet+' quiet':'',x.calls?x.calls+' call'+(x.calls>1?'s':''):''].filter(Boolean).join(' · ')};
+  const sc=(P.forums||[]).find(f=>f.key==='deployment-scrum');
+  if(x.open_project===false)return {v:'No open project',n:''};
+  if(x.open_project==null)return {v:'None raised',n:'Project status not set'};
+  if(sc&&!sc.evidence_in_window)return {v:'Not heard',n:sc.last_evidence?'Last evidence '+fmt(sc.last_evidence):'No evidence on file',nh:true};
+  return {v:'None raised',n:sc?'Heard '+fmt(sc.last_evidence):''}}
+function callsCard(P,cs){
+  const shown=CALLALL?cs:cs.slice(0,3);
+  const tag=t=>`<span class="pv-tag">${esc(t)}</span>`;
+  const rows=shown.map(c=>{const i=ITEMS.find(z=>z.id===c.id)||{};
+    const bd=[c.severity?`<span class="t-sev ${esc(String(c.severity).toLowerCase())}">${esc(c.severity)}</span>`:'',tag(c.category==='knowledge'?'Knowledge risk':'Issue'),c.account?tag(c.account):'',c.track?tag(TRK(c.track)):(c.forum?tag(fname(c.forum)):'')].join('');
+    return `<div class="pv-call"><div class="id">${esc(c.id)}</div><button type="button" class="ttl" data-open="${esc(c.id)}">${esc(c.title)}</button><div class="why">${esc(c.reason_line||c.reason_text)}</div><div class="bd">${bd}</div><div class="acts"><button type="button" class="btn primary" data-esc="escalate" data-id="${esc(c.id)}">Escalate</button><button type="button" class="btn" data-esc="decline" data-id="${esc(c.id)}">Leave with team</button></div></div>`}).join('');
+  const more=cs.length>3?`<button type="button" class="pv-lk" data-callall>${CALLALL?'Show fewer':'Show all '+cs.length}</button>`:'';
+  const el=(P.escalated_live||[]);
+  const foot=el.length?`<div class="pv-foot">Already escalated and still live: ${el.map(e=>`<a href="#" data-open="${esc(e.id)}">${esc(e.id)} ${esc(e.title)}</a> → <a href="#" data-open="${esc(e.watch)}">Watch ${esc(e.watch)}</a>`).join('; ')}</div>`:'';
+  return `<section class="pv-card acc pv-calls" aria-label="Needs your call"><h2 class="pv-h acc">Needs your call <span class="pv-badge">${cs.length}</span></h2>${rows||'<p class="pv-empty">Nothing needs your call.</p>'}${more}${foot}</section>`}
+function pinnedCard(P){const x=(P.health||[]).find(h=>h.pinned);if(!x)return '';
+  const bc=BANDCLS[x.band];
+  return `<button type="button" class="pv-card pv-pin" data-pf="account" data-val="${esc(x.account)}" aria-label="${esc(x.account)}, pinned account, health score ${x.score} out of 100, ${esc(x.label)}. Select to see its items.">
+   <span class="l1"><span class="nm">${esc(x.account)}</span><span class="pt">${PIN_SVG(1)} Pinned · ${esc(TYPEW[x.type]||'Customer')}</span><span class="vi">View items ›</span></span>
+   <span class="l2"><span class="sc ${bc}">${x.score}</span><span class="of">/100 health score</span><span class="bw ${bc}">${esc(x.label)}</span></span>
+   ${ptsBar(x,10)}
+   <span class="pv-leg"><span><i class="pv-sw t"></i>Teams raised <b>${x.teams_points?'−'+x.teams_points:'none'}</b></span><span><i class="pv-sw r"></i>Your registers <b>${x.registers_points?'−'+x.registers_points:'none'}</b></span></span>
+   <span class="pv-drv">${esc(drivers(x.components)||'No signals')}</span>
+   ${PHONE()?'':'<span class="pv-foot">Pin a different account from Account health below.</span>'}</button>`}
+function evidenceCard(P){const e=P.evidence;if(!e)return '';
+  const order=[...P.forums].sort((a,b)=>({raised:0,nothing_raised:1,not_heard:2}[a.ev_state]-{raised:0,nothing_raised:1,not_heard:2}[b.ev_state]));
+  const strip=`<div class="pv-strip" role="img" aria-label="${e.raised} forums heard with items raised, ${e.nothing_raised} heard with nothing raised, ${e.not_heard} not heard">${order.map(f=>mk(f.ev_state).replace('aria-hidden="true"',`title="${esc(f.name)}: ${esc(evLine(f))}" aria-hidden="true"`)).join('')}</div>`;
+  const leg=PHONE()?`<div class="pv-evl ph">${mk('raised')} Raised <b>${e.raised}</b> · ${mk('nothing_raised')} Nothing raised <b>${e.nothing_raised}</b> · ${mk('not_heard')} Not heard <b>${e.not_heard}</b></div>`
+    :`<div class="pv-evl"><span>${mk('raised')}Heard, items raised <b>${e.raised}</b></span><span>${mk('nothing_raised')}Heard, nothing raised <b>${e.nothing_raised}</b></span><span>${mk('not_heard')}Not heard <b>${e.not_heard}</b></span></div>`;
+  const sil=e.not_heard>e.total/2?'<p class="pv-sil">Silence below mostly means not heard, not all clear.</p>':'';
+  const byT=(e.new7_by_track||[]).map(t=>`${esc(t.name.replace(/ governance$/,''))} ${t.new7}`).join(' · ');
+  const foot=PHONE()?`<button type="button" class="pv-foot pv-newrow" data-pf="new" data-val="7"><b>${e.new7} new</b> in the last 7 days ›</button>`
+    :`<div class="pv-foot"><b>${e.new7} new</b> in the last 7 days${byT?' · '+byT:''} · <button type="button" class="pv-lk" data-pf="new" data-val="7">Show new</button></div>`;
+  return `<section class="pv-card pv-ev" aria-label="Evidence this window"><h2 class="pv-h">Evidence this window</h2><div class="hl">Heard from ${e.heard} of ${e.total} forums</div>${strip}${leg}${sil}${foot}</section>`}
+function accountsSec(P,fk,fv){
+  const ph=PHONE();
+  const pinBtn=x=>`<button type="button" class="pinbtn${x.pinned?' on':''}" data-pin="${esc(x.account)}" aria-pressed="${x.pinned}" aria-label="${x.pinned?esc(x.account)+' is pinned to the top':'Pin '+esc(x.account)+' to the top'}">${PIN_SVG(x.pinned)}<span>${x.pinned?'Pinned':'Pin'}</span></button>`;
+  const rows=P.health.map(x=>{const bc=BANDCLS[x.band],tc=teamsCell(x,P),on=fk==='account'&&fv===x.account;
+    const rg=x.registers_points?{v:'−'+x.registers_points,n:x.components.at_your_level+' item'+(x.components.at_your_level>1?'s':'')}:{v:'None',n:''};
+    if(ph){const l3=`${x.teams_points?'Teams −'+x.teams_points:tc.v==='No open project'?'Teams: no open project':tc.v==='Not heard'?'Teams: not heard':'Teams: none raised'} · ${x.registers_points?'Your registers −'+x.registers_points:'Your registers: none'}`;
+      return `<div class="pv-arow ph${x.pinned?' pinned':''}${on?' sel':''}"><button type="button" class="af" data-pf="account" data-val="${esc(x.account)}"><span class="a1"><span class="an">${esc(x.account)}</span><b class="as ${bc}">${x.score}</b><span class="of">/100</span><b class="ab ${bc}">${esc(x.label)}</b></span>${ptsBar(x,8)}<span class="a3">${esc(l3)}</span></button>${pinBtn(x)}</div>`}
+    return `<div class="pv-arow${x.pinned?' pinned':''}${on?' sel':''}"><button type="button" class="af" data-pf="account" data-val="${esc(x.account)}">
+      <span class="c-ac"><span class="an">${esc(x.account)}</span> <span class="at">${esc(TYPEW[x.type]||'Customer')}</span></span>
+      <span class="c-sc"><b class="as ${bc}">${x.score}</b><span class="of">/100</span> <b class="ab ${bc}">${esc(x.label)}</b></span>
+      <span class="c-bar">${ptsBar(x,10)}</span>
+      <span class="c-n"><b${tc.nh?' class="nhv"':''}>${tc.nh?mk('not_heard'):''}${esc(tc.v)}</b><small>${esc(tc.n)}</small></span>
+      <span class="c-n"><b>${esc(rg.v)}</b><small>${esc(rg.n)}</small></span>
+      <span class="c-drv">${esc(drivers(Object.assign({},x.components,{at_your_level:0}))||(x.registers_points?'Register items only':''))}</span>
+      <span class="c-ch" aria-hidden="true">›</span></button>${pinBtn(x)}</div>`}).join('');
+  const hd=ph?'':`<div class="pv-arow hd" aria-hidden="true"><span class="af"><span>Account</span><span>Health score</span><span>Points lost</span><span>Teams raised</span><span>Your registers</span><span class="c-drv">What drives it</span><span></span></span><span class="c-pinh">Pin to top</span></div>`;
+  const q=(P.quiet_accounts||[]).length?`No signals this window: ${esc(P.quiet_accounts.join(', '))}. `:'';
+  const ua=(P.unattributed||[]).length?`<div>Not scored because it names more than one account: ${P.unattributed.map(u=>`<a href="#" data-open="${esc(u.id)}">${esc(u.id)}</a> (${esc(u.accounts.join(', '))})`).join('; ')}. Set its account to count it once.</div>`:'';
+  return `<section class="group pv-ah"><h2 class="ghead">Account health${ph?'':'<span class="sub">Score out of 100 · points lost to what teams raised and to your own registers · select a row to filter · pin one account to the top</span>'}</h2>${hd}${rows}
+    <div class="pv-afoot"><div>${q}Trend appears after a week of history.</div><div class="pv-leg"><span><i class="pv-sw t"></i>Teams raised</span><span><i class="pv-sw r"></i>Your registers</span></div>${ua}</div></section>`}
+function govSec(P,fk,fv){const ph=PHONE();
+  const tr=(P.tracks||[]).map(t=>{const fs=t.forums.map(k=>P.forums.find(f=>f.key===k)).filter(Boolean).sort((a,b)=>({raised:0,nothing_raised:1,not_heard:2}[a.ev_state]-{raised:0,nothing_raised:1,not_heard:2}[b.ev_state]));
+    const cnt=[t.live+' live',t.new7+' new',t.stuck+' stuck',t.candidates+' call'+(t.candidates===1?'':'s'),t.knowledge?t.knowledge+' knowledge risk'+(t.knowledge>1?'s':''):''].filter(Boolean).join(' · ');
+    const v=verdict(t);const box=`<div class="pv-hbox"><b>Heard from ${t.heard} of ${t.total} forums</b>${v?`<div class="v">${esc(v)}</div>`:''}</div>`;
+    const frows=fs.map(f=>`<button type="button" class="pv-fr${fk==='forum'&&fv===f.key?' on':''}" data-pf="forum" data-val="${esc(f.key)}">${mk(f.ev_state)}<span class="fn">${esc(f.name)}<span class="fs">${esc(evLine(f))}</span></span>${evCount(f)}</button>`).join('');
+    const open=!ph||TRKOPEN[t.key];
+    return `<div class="pv-trk${fk==='track'&&fv===t.key?' on':''}"><div class="r1"><div class="tt"><button type="button" class="tn" data-pf="track" data-val="${esc(t.key)}">${esc(t.name)}</button><div class="ld">With ${esc(joinAnd(t.leads||[]))}</div></div>${ph?'':`<button type="button" class="btn sm" data-agenda="track:${esc(t.key)}">Open agenda</button>`}</div>
+      <div class="cn">${esc(cnt)}</div>${box}${ph?`<div class="pv-2b"><button type="button" class="btn" data-agenda="track:${esc(t.key)}">Open agenda</button><button type="button" class="btn" data-trk="${esc(t.key)}" aria-expanded="${!!TRKOPEN[t.key]}">Forums (${fs.length})</button></div>`:''}${open?`<div class="pv-frs">${frows}</div>`:''}</div>`}).join('');
+  return `<section class="group pv-gov"><h2 class="ghead">Your weekly governance${ph?'':'<span class="sub">Select a forum to filter</span>'}</h2>${tr}</section>`}
 function pulseHtml(){
   if(!PULSE)return '<div class="empty">The Pulse did not load. Restart the EOS server so it picks up the new version.</div>';
-  const P=PULSE,all=ITEMS.filter(i=>i.kind==='pulse'&&i.category!=='knowledge'),know=ITEMS.filter(i=>i.kind==='pulse'&&i.category==='knowledge');
+  const P=PULSE,ph=PHONE(),all=ITEMS.filter(i=>i.kind==='pulse'&&i.category!=='knowledge'),know=ITEMS.filter(i=>i.kind==='pulse'&&i.category==='knowledge');
   const fk=Object.keys(PF)[0],fv=fk?PF[fk]:null;
   const trk=fk==='track'?((P.tracks||[]).find(t=>t.key===fv)||{forums:[]}):null;
-  const match=i=>!fk||(fk==='account'?i.account===fv:fk==='forum'?i.forum===fv:fk==='track'?trk.forums.includes(i.forum):(i._people||[]).includes(fv));
+  const wk=dn(TODAY)-7*864e5,isNew=i=>dn(String(i.first_seen||'1970-01-01').slice(0,10))>=wk;
+  const match=i=>!fk||(fk==='account'?i.account===fv:fk==='forum'?i.forum===fv:fk==='track'?trk.forums.includes(i.forum):fk==='new'?isNew(i):(i._people||[]).includes(fv));
   const scope=all.filter(match);
   let a=scope.filter(i=>PALL||i._state==='live');
   if(Q){const q=Q.toLowerCase();a=a.filter(i=>[i.id,i.title,i.owner,i.account,i.body,(i.people||[]).join(' ')].join(' ').toLowerCase().includes(q))}
   const sv={high:0,medium:1,low:2},st={live:0,quiet:1,resolved:2,dropped:3};
   const pso=sortOf('pulse');
   if(pso.k!=='pulse')a.sort(cmpBy(pso.k,pso.dir));else a.sort((x,y)=>(st[x._state]-st[y._state])||((y._stuck?1:0)-(x._stuck?1:0))||((sv[String(x.severity||'').toLowerCase()]??3)-(sv[String(y.severity||'').toLowerCase()]??3))||String(y.last_seen||'').localeCompare(String(x.last_seen||'')));
-  let h=`<div class="pwrap"><p class="pintro">Rolling ${P.window.days}-day window, ${fmt(P.window.start)} to ${fmt(P.window.end)}: what your team-governed forums are carrying. Each team's own governance owns the work. Issues go quiet when the forum stops raising them; nothing here needs closing. Escalate only what needs you.</p>`;
-  if(fk)h+=`<div class="chips"><span class="chip">Showing ${fk}: <b>${esc(fk==='forum'?fname(fv):fk==='track'?(trk.name||fv):fv)}</b></span><button type="button" class="chip x" data-pclear>Clear</button></div>`;
-  h+=`<div class="hgrid">${P.health.map(x=>{const c=x.components;
-    const parts=[c.live_high_visible?c.live_high_visible+' High customer-visible':'',c.live_high?c.live_high+' High internal':'',c.live_medium?c.live_medium+' Medium':'',c.live_low?c.live_low+' Low':'',c.stuck?c.stuck+' stuck':'',c.quiet?c.quiet+' quiet':'',c.candidate?c.candidate+' need your call':'',c.at_your_level?c.at_your_level+' on your registers':''].filter(Boolean).join(' · ')||'No live issues';
-    const d=x.delta==null?'Trend starts once a week of history exists':((x.delta>0?'+':'')+x.delta+' since '+fmt(x.prior.date));
-    return `<button type="button" class="hcard${fk==='account'&&fv===x.account?' on':''}" data-pf="account" data-val="${esc(x.account)}"><div class="top"><span class="acct">${esc(x.account)}</span>${x.pinned?'<span class="pin">Largest customer</span>':x.type==='internal'?'<span class="pin">Internal</span>':x.type==='partner'?'<span class="pin">Partner</span>':''}</div><div class="score ${BANDCLS[x.band]}">${x.score}<span class="of">/100</span></div><div class="band ${BANDCLS[x.band]}">${esc(x.label)} · health score</div><div class="comp">${esc(parts)}</div><div class="comp">${esc(d)}</div></button>`}).join('')}</div>${(P.quiet_accounts||[]).length?`<p class="pintro">No signals in the window: ${esc(P.quiet_accounts.join(', '))}. A tile appears when an account has a Pulse issue or an item on your registers.</p>`:''}${(P.unattributed||[]).length?`<p class="pintro">Not scored because it names more than one account: ${P.unattributed.map(u=>`<a data-open="${esc(u.id)}">${esc(u.id)}</a> (${esc(u.accounts.join(', '))})`).join('; ')}. Set its account to count it once.</p>`:''}`;
-  const cs=P.candidates.filter(c=>{const i=ITEMS.find(z=>z.id===c.id);if(!i)return false;if(i.category==='knowledge')return !fk||(fk==='track'&&i.track===fv)||(fk==='person'&&i.holder===fv)||(fk==='account'&&i.account===fv);return match(i)});
-  let mid=`<section class="group"><h2 class="ghead${cs.length?' tri':''}">Needs your call<span class="n">${cs.length}</span></h2>${cs.length?cs.map(c=>`<div class="cand"><div class="id">${esc(c.id)}</div><div><div class="title" data-open="${esc(c.id)}" style="cursor:pointer">${esc(c.title)}</div><div class="why">${esc(c.reason_text)} · ${c.category==='knowledge'?'Knowledge concentration':esc(fname(c.forum))}${c.account?' · '+esc(c.account):''}</div></div><div class="acts"><button type="button" class="btn primary" data-esc="escalate" data-id="${esc(c.id)}">Escalate</button><button type="button" class="btn" data-esc="decline" data-id="${esc(c.id)}">Leave with team</button></div></div>`).join(''):'<div class="empty" style="padding:16px">Nothing needs you this cycle.</div>'}</section>`;
+  const cs=P.candidates.filter(c=>{const i=ITEMS.find(z=>z.id===c.id);if(!i)return false;if(i.category==='knowledge')return !fk||fk==='new'||(fk==='track'&&i.track===fv)||(fk==='person'&&i.holder===fv)||(fk==='account'&&i.account===fv);return match(i)});
+  /* C1: title, Today row (calls, pinned account, evidence), account health, issues beside governance, knowledge beside people */
+  let h=`<div class="pv"><div class="pv-title"><h2>Pulse</h2><p>Rolling ${P.window.days} days, ${fmt(P.window.start)} to ${fmt(P.window.end)}. What your team-governed forums are carrying. The teams own the work; escalate only what needs you.</p><button type="button" class="pv-lk" data-guide>How to read this page</button></div>`;
+  h+=`<div class="pv-today">${callsCard(P,cs)}${pinnedCard(P)}${evidenceCard(P)}</div>`;
+  h+=accountsSec(P,fk,fv);
+  /* left column: filter chip, issues, register items behind the numbers */
+  const fname2=fk==='forum'?fname(fv):fk==='track'?(trk.name||fv):fk==='new'?'new in the last 7 days':fv;
+  let L=fk?`<div class="chips" id="pv-issues"><span class="chip">Showing ${fk==='new'?'':esc(fk)+': '}<b>${esc(fname2)}</b></span><button type="button" class="chip x" data-pclear>Clear</button></div>`:'<span id="pv-issues"></span>';
   const hidden=scope.length-scope.filter(i=>i._state==='live').length;
   const foot=hidden||PALL?`<button type="button" class="more" data-pall>${PALL?'Show live only':'Include quiet and resolved ('+hidden+')'}</button>`:'';
-  const sec=(t,rows,note,ft)=>`<section class="group"><h2 class="ghead">${t}<span class="n">${rows.length}</span></h2>${note?`<p class="gnote">${note}</p>`:''}${rows.map(prow).join('')||`<div class="empty" style="padding:16px">None in the Pulse.${fk==='account'||fk==='person'?' Anything on your registers is listed below.':''}</div>`}${ft||''}</section>`;
-  if((P.tracks||[]).length)mid+=`<section class="group"><h2 class="ghead">Your weekly governance<span class="n">${P.tracks.length}</span></h2><div class="fgrid2">${P.tracks.map(t=>`<div class="fcard tcard${fk==='track'&&fv===t.key?' on':''}" data-pf="track" data-val="${esc(t.key)}" role="button" tabindex="0"><div class="fn">${esc(t.name)}</div><div class="fg">With ${esc((t.leads||[]).join(' and '))} · ${t.forums.length} forums</div><div class="fs">${t.live} live · ${t.new7} new this week · ${t.stuck} stuck · ${t.candidates} need your call${t.knowledge?' · '+t.knowledge+' knowledge risk'+(t.knowledge>1?'s':''):''}</div>${t.no_evidence?`<div class="fg">No evidence in the window from ${t.no_evidence} of ${t.forums.length} forums</div>`:''}<button type="button" class="ag" data-agenda="track:${esc(t.key)}">Weekly governance agenda</button></div>`).join('')}</div></section>`;
+  const lim=rows=>ph&&!ISSALL&&rows.length>4?rows.slice(0,4):rows;
+  const showAll=rows=>ph&&rows.length>4?`<button type="button" class="more" data-issall>${ISSALL?'Show fewer':'Show all '+rows.length+' live issues'}</button>`:'';
+  const sec=(t,rows,note,ft)=>`<section class="group"><h2 class="ghead">${t}<span class="n">${rows.length}</span></h2>${note?`<p class="gnote">${note}</p>`:''}${lim(rows).map(prow).join('')||`<div class="empty" style="padding:16px">None in the Pulse.${fk==='account'||fk==='person'?' Anything on your registers is listed below.':''}</div>`}${showAll(rows)}${ft||''}</section>`;
   const focus=fk==='account'||fk==='person';
-  if(!focus)h+=mid;  /* filtered by an account or a person: their issues and register items come straight after the tiles */
   const linked=regLinked(P,fk,fv,scope.length);
   if(!(focus&&!scope.length&&linked)){
-    h+=sortBar('pulse',a.length);
+    L+=sortBar('pulse',a.length);
     if(fk==='person'){const own=a.filter(i=>(i._owners||[]).includes(fv)),inv=a.filter(i=>!(i._owners||[]).includes(fv));
-      h+=sec(`Owned by ${esc(fv)}`,own,'')+sec(`${esc(fv)} named, someone else owns`,inv,`${esc(fv)} is named on these in the evidence (a statement, a commitment or a stated role) but is not the owner. The owner is on each row.`,foot)}
-    else h+=sec(PALL?'All issues':'Live issues',a,'',foot);
+      L+=sec(`Owned by ${esc(fv)}`,own,'')+sec(`${esc(fv)} named, someone else owns`,inv,`${esc(fv)} is named on these in the evidence (a statement, a commitment or a stated role) but is not the owner. The owner is on each row.`,foot)}
+    else L+=sec(PALL?'All issues':'Live issues',a,'',foot);
   }
-  h+=linked;
-  if(focus)h+=mid;
-  h+=knowHtml(know,fk,fv,trk);
-  h+=`<section class="group"><h2 class="ghead">Team-governed forums<span class="n">${P.forums.length}</span></h2><div class="fgrid2">${P.forums.filter(f=>f.live||f.quiet).map(f=>`<div class="fcard${f.live?'':' zero'}${fk==='forum'&&fv===f.key?' on':''}" data-pf="forum" data-val="${esc(f.key)}" role="button" tabindex="0"><div class="fn">${esc(f.name)}</div><div class="fg">${esc(f.governance||'')} · ${esc(f.owner||'Owner TBC')}${f.confirmed===false?' · not yet confirmed':''}</div><div class="fs">${f.live} live · ${f.new7} new this week · ${f.stuck} stuck${f.quiet?' · '+f.quiet+' quiet':''}</div><button type="button" class="ag" data-agenda="${esc(f.key)}">Governance agenda</button></div>`).join('')}</div>${(()=>{const e=P.forums.filter(f=>!f.live&&!f.quiet),lk=f=>`<a data-agenda="${esc(f.key)}">${esc(f.name)}</a>${f.confirmed===false?'*':''}`,a=e.filter(f=>f.evidence_in_window),b=e.filter(f=>!f.evidence_in_window);return (a.length?`<div class="fempty">Evidence in the window, nothing raised: ${a.map(lk).join(', ')}.</div>`:'')+(b.length?`<div class="fempty">No evidence in the window, so silence here means nothing: ${b.map(f=>lk(f)+(f.last_evidence?' (last '+fmt(f.last_evidence)+')':' (never)')).join(', ')}.</div>`:'')+(e.some(f=>f.confirmed===false)?'<div class="fempty">* classification not yet confirmed.</div>':'')})()}</section>`;
+  L+=linked;
+  h+=`<div class="pv-g2"><div class="pv-col">${L}</div><div class="pv-col">${govSec(P,fk,fv)}</div></div>`;
+  /* knowledge beside people; one-line summaries on phone */
+  const kn=knowHtml(know,fk,fv,trk);
   const pp=(fk==='person'?P.people.filter(r=>r.name===fv):P.people).slice(0,15);
-  h+=`<section class="group"><h2 class="ghead">People carrying the most<span class="n">${P.people.length}</span></h2><p class="gnote">Owns: owner of a live Pulse issue. Involved: named in the evidence on a live issue, not the owner. Delegated: open delegated or awaited register items they own. Sole: knowledge areas they hold with no confirmed backup. Highlighted at 8 or more owned or delegated.</p><div class="ppl h"><span>Person</span><span class="num">Owns</span><span class="num">Involved</span><span class="num">Delegated</span><span class="num">Sole</span><span class="fl">Forums</span></div>${pp.map(r=>`<div class="ppl${fk==='person'&&fv===r.name?' on':''}" data-pf="person" data-val="${esc(r.name)}"><span class="${r.total>=8?'hot':''}">${esc(r.name)}</span><span class="num">${r.owns??r.pulse}</span><span class="num">${r.involved??0}</span><span class="num">${r.delegated}</span><span class="num${r.sole?' hot':''}">${r.sole||0}</span><span class="fl">${esc(r.forums.map(fname).join(', '))}</span></div>`).join('')}</section>`;
+  const peo=`<section class="group"><h2 class="ghead">People carrying the most<span class="n">${P.people.length}</span></h2><p class="gnote">Owns: owner of a live Pulse issue. Involved: named in the evidence on a live issue, not the owner. Delegated: open delegated or awaited register items they own. Sole: knowledge areas they hold with no confirmed backup. Highlighted at 8 or more owned or delegated.</p><div class="ppl h"><span>Person</span><span class="num">Owns</span><span class="num">Involved</span><span class="num">Delegated</span><span class="num">Sole</span><span class="fl">Forums</span></div>${pp.map(r=>`<button type="button" class="ppl${fk==='person'&&fv===r.name?' on':''}" data-pf="person" data-val="${esc(r.name)}"><span class="${r.total>=8?'hot':''}">${esc(r.name)}</span><span class="num">${r.owns??r.pulse}</span><span class="num">${r.involved??0}</span><span class="num">${r.delegated}</span><span class="num${r.sole?' hot':''}">${r.sole||0}</span><span class="fl">${esc(r.forums.map(fname).join(', '))}</span></button>`).join('')}</section>`;
+  if(ph){const kl=know.filter(i=>i._state==='live'),kc=kl.filter(i=>i._candidate).length,kq=know.filter(i=>i._state==='quiet').length;
+    h+=`<button type="button" class="pv-sum" data-kopen aria-expanded="${KOPEN}"><b>Knowledge concentration</b> · ${kl.length} live${kc?' · '+kc+' needs your call':''}${kq?' · '+kq+' quiet':''} <span aria-hidden="true">${KOPEN?'⌃':'›'}</span></button>${KOPEN?kn:''}`;
+    h+=`<button type="button" class="pv-sum" data-popen aria-expanded="${POPEN}"><b>People carrying the most</b> · ${P.people.length} people · top: ${esc(P.people.slice(0,3).map(r=>r.name).join(', '))} <span aria-hidden="true">${POPEN?'⌃':'›'}</span></button>${POPEN?peo:''}`}
+  else h+=`<div class="pv-g3"><div class="pv-col">${kn}</div><div class="pv-col">${peo}</div></div>`;
   return h+'</div>'}
+async function pinAccount(name){const x=(PULSE.health||[]).find(h=>h.account===name);if(x&&x.pinned)return;
+  const r=await fetch('/api/pulse/pin',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({account:name})});
+  if(!r.ok){toast('Pin failed · '+name);return}PULSE=await r.json();
+  SESSION.unshift({id:name,what:'pinned to the top',t:new Date().toLocaleTimeString([], {hour:'numeric',minute:'2-digit'})});
+  toast(name+' pinned to the top');render()}
+PHONEQ.addEventListener('change',()=>render());
 const KCOV={none:['No backup','b-red'],unknown:['Backup unknown','b-amber'],partial:['Partly covered','b-amber'],covered:['Covered','b-green']};
 const TRK=k=>((PULSE&&PULSE.tracks)||[]).find(t=>t.key===k)?.name||k||'';
 function krow(i){const cov=KCOV[i.coverage||'unknown']||KCOV.unknown;const cls=i._state==='live'?'':i._state==='quiet'?' dim':' done';
@@ -761,9 +993,13 @@ function agendaMd(k){let it,L,multi=false;
   const wk=dn(TODAY)-7*864e5,fs=i=>dn(String(i.first_seen||TODAY).slice(0,10));
   if(k.startsWith('track:')){const t=(PULSE.tracks||[]).find(x=>x.key===k.slice(6))||{name:k,forums:[],leads:[]};multi=true;
     it=ITEMS.filter(i=>i.kind==='pulse'&&t.forums.includes(i.forum));
-    L=[`# ${t.name}: weekly governance review, ${fmt(TODAY)}`,'',`With ${(t.leads||[]).join(' and ')}. Window ${fmt(PULSE.window.start)} to ${fmt(PULSE.window.end)}. Covers: ${t.forums.map(fname).join(', ')}.`,'']}
+    L=[`# ${t.name}: weekly governance review, ${fmt(TODAY)}`,'',`With ${(t.leads||[]).join(' and ')}. Window ${fmt(PULSE.window.start)} to ${fmt(PULSE.window.end)}. Covers: ${t.forums.map(fname).join(', ')}.`,''];
+    /* C13: open with the forums that were not heard, so silence is never read as calm */
+    if((t.not_heard||[]).length){const nh=t.not_heard.map(f=>`${f.name} (${f.last_evidence?'last evidence '+fmt(f.last_evidence):'no evidence on file'})`);
+      L.push(`**Heard from ${t.heard} of ${t.total} forums this window.** Not heard: ${joinAnd(nh)}. Ask for status before reading these counts as calm.`,'')}}
   else{const f=PULSE.forums.find(x=>x.key===k)||{name:k};it=ITEMS.filter(i=>i.kind==='pulse'&&i.forum===k);
-    L=[`# ${f.name}: governance review, ${fmt(TODAY)}`,'',`Window ${fmt(PULSE.window.start)} to ${fmt(PULSE.window.end)}. Owner: ${f.owner||'TBC'}. Governance: ${f.governance||''}.`,'']}
+    L=[`# ${f.name}: governance review, ${fmt(TODAY)}`,'',`Window ${fmt(PULSE.window.start)} to ${fmt(PULSE.window.end)}. Owner: ${f.owner||'TBC'}. Governance: ${f.governance||''}.`,''];
+    if(f.ev_state==='not_heard')L.push(`**Not heard this window** (${f.last_evidence?'last evidence '+fmt(f.last_evidence):'no evidence on file'}). Ask for status before reading these counts as calm.`,'')}
   const ln=i=>`**${i.id}** ${plain(i.title)}${multi?' ['+fname(i.forum)+']':''}${i.owner?' (owner: '+i.owner+')':' (no owner named)'}${i.next_action?'. Next: '+plain(i.next_action).replace(/\.$/,''):''}`;
   const sec=(t,xs,line)=>{L.push('## '+t,'');if(xs.length)xs.forEach(i=>L.push('- '+(line||ln)(i)));else L.push('- None.');L.push('')};
   const live=it.filter(i=>i._state==='live');
@@ -772,7 +1008,7 @@ function agendaMd(k){let it,L,multi=false;
   sec('Needs a decision or escalation',[...live.filter(i=>i._candidate&&!i._stuck),...kc],i=>(i.category==='knowledge'?`**${i.id}** ${plain(i.title)} (knowledge risk; held by ${i.holder||'?'})`:ln(i))+'. Test: '+(PULSE.tests[i._candidate]||i._candidate));
   sec('New this week',live.filter(i=>!i._stuck&&!i._candidate&&fs(i)>=wk));
   sec('Still open',live.filter(i=>!i._stuck&&!i._candidate&&fs(i)<wk));
-  sec('Gone quiet: confirm resolved or still open',it.filter(i=>i._state==='quiet'));
+  sec('Gone quiet: resolved, or dropped?',it.filter(i=>i._state==='quiet'));
   sec('Escalated to my registers',it.filter(i=>i.escalated_to),i=>`**${i.id}** ${plain(i.title)}, now ${i.escalated_to}`);
   if(multi){const t=k.slice(6);const kn=ITEMS.filter(i=>i.kind==='pulse'&&i.category==='knowledge'&&i.track===t&&i._state==='live'&&(i.coverage||'unknown')!=='covered');
     sec('Knowledge risks: who backs up whom, and by when',kn,i=>`**${i.id}** ${plain(i.title)}: held by ${i.holder||'?'}; backup ${i.backup||'none named'} (${(KCOV[i.coverage||'unknown']||KCOV.unknown)[0].toLowerCase()})${i.mitigation?'. Mitigation: '+plain(i.mitigation).replace(/\.$/,''):''}${i.absence_date?'. Away from '+fmt(i.absence_date):''}`)}

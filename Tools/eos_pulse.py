@@ -51,7 +51,7 @@ HEALTH_WEIGHTS = {
     "at_your_level": 5,       # per open register item about the account (Watch Active, Register A, Critical)
 }
 BANDS = [(80, "green", "Healthy"), (60, "amber", "Strained"), (0, "red", "At risk")]
-PINNED_ACCOUNTS = ["Dell"]    # Darryl, 2026-10-16: Dell is the largest customer; keep it in front of him
+DEFAULT_PINNED = "Dell"   # Darryl, 2026-10-16: the pinned account is a setting (`pinned: true` in _accounts.json); Dell is the default
 
 ESCALATION_TESTS = {
     "asked": "Darryl named or asked for a decision, resource or escalation",
@@ -283,8 +283,9 @@ def account_health(pulse, regs, today=None, know=None) -> tuple[list[dict], list
         a = (m.get("account") or "").strip()
         if a:
             accts.setdefault(alias_to.get(a.lower(), a), []).append(m)
-    for a in PINNED_ACCOUNTS:
-        accts.setdefault(a, [])
+    pinned_name = next((n for n, r in roster.items() if r.get("pinned")), None) or (DEFAULT_PINNED if DEFAULT_PINNED in roster else None)
+    if pinned_name:
+        accts.setdefault(pinned_name, [])
     snaps = _load_snapshots()
     out = []
     for a, ms in accts.items():
@@ -316,17 +317,67 @@ def account_health(pulse, regs, today=None, know=None) -> tuple[list[dict], list
         score = max(0, 100 - penalty)
         band, label = _band(score)
         prior = _prior_score(snaps, a, today)
+        reg_pts = c["at_your_level"] * HEALTH_WEIGHTS["at_your_level"]
         out.append({
             "account": a, "score": score, "band": band, "label": label,
-            "pinned": a in PINNED_ACCOUNTS or bool((roster.get(a) or {}).get("pinned")), "components": c, "penalty": penalty,
+            "pinned": a == pinned_name, "components": c, "penalty": penalty,
+            # Redesign 2026-10-16 (C3, C8): one blended score, with its two sources shown beside it.
+            "registers_points": reg_pts, "teams_points": penalty - reg_pts,
+            "quiet": sum(1 for m in ms if not is_knowledge(m) and state(m, today) == "quiet"),
+            "calls": c["candidate"], "open_project": (roster.get(a) or {}).get("open_project"),
             "type": (roster.get(a) or {}).get("type", "customer"),
             "signals": bool(ms) or bool(regitems),
             "live": sum(1 for m in ms if not is_knowledge(m) and state(m, today) == "live"),
             "register_items": regitems,
             "prior": prior, "delta": (score - prior["score"]) if prior else None,
         })
+    if not pinned_name and out:  # pinned account left the roster and there is no Dell: lowest score leads
+        min(out, key=lambda h: (h["score"], h["account"]))["pinned"] = True
     out.sort(key=lambda h: (not h["pinned"], h["score"], h["account"]))
     return out, unattributed
+
+
+def set_pinned(account: str) -> str:
+    """Pin one account to the top (C8a). Exactly one account carries `pinned: true`; pinning another replaces it."""
+    doc = json.loads(ACCOUNTS_FILE.read_text(encoding="utf-8"))
+    names_ = [a["name"] for a in doc.get("accounts", [])]
+    if account not in names_:
+        raise KeyError(account)
+    for a in doc["accounts"]:
+        if a["name"] == account:
+            a["pinned"] = True
+        else:
+            a.pop("pinned", None)
+    ACCOUNTS_FILE.write_text(json.dumps(doc, indent=1) + "\n", encoding="utf-8")
+    return account
+
+
+def _md(d) -> str:
+    d = _d(d)
+    return f"{d.strftime('%b')} {d.day}" if d else ""
+
+
+def reason_line(m: dict, r: str, today=None) -> str:
+    """Plain-words reason for a call, generated from the item's fields (redesign C2). The formal test stays in the drawer."""
+    if r == "absence":
+        ab = _d(m.get("absence_date")); today_d = _d(today) or _dt.date.today()
+        when = (f"departure window ended {_md(ab)}" if ab and ab <= today_d else f"away from {_md(ab)}") if ab else "absence date not recorded"
+        s = f"Handover not confirmed. Holder {m.get('holder') or 'not named'}; {when}."
+        return s + (" No backup confirmed." if not m.get("backup") else "")
+    if r == "single":
+        exp = ", ".join(str(x) for x in (m.get("exposure") or [])) or "not recorded"
+        return f"Only {m.get('holder') or 'one person'} holds this; no backup confirmed. Exposed: {exp}."
+    if r == "asked":
+        return "You were asked for a decision, resource or escalation." + (f" Owner: {m['owner']}." if m.get("owner") else "")
+    if r == "boundary":
+        what = m.get("boundary_note") or ""
+        return f"Crossed out of the forum: {what}." if what else "Needs a call outside the forum."
+    if r == "stuck":
+        n = bdays(m.get("first_seen"), m.get("last_seen") or m.get("first_seen"))
+        return f"Still raised {n} business days after it was first raised ({_md(m.get('first_seen'))})."
+    if r == "gap":
+        return "No owner named."
+    return ESCALATION_TESTS.get(r, r)
 
 
 def _load_snapshots() -> dict:
@@ -426,6 +477,8 @@ def summary(today=None, write_snapshot: bool = False) -> dict:
         r = frows[-1]
         r["last_evidence"] = max(str(f.get("last_evidence") or ""), r["last_seen"])
         r["evidence_in_window"] = bool(r["last_evidence"]) and r["last_evidence"] >= win_start
+        # Redesign C5: three evidence states. A forum that sent nothing is never shown as a calm zero.
+        r["ev_state"] = "not_heard" if not r["evidence_in_window"] else ("raised" if r["live"] + r["quiet"] > 0 else "nothing_raised")
     trows = []
     for t in load_tracks():
         fs = [f for f in frows if f.get("track") == t.get("key")]
@@ -436,6 +489,9 @@ def summary(today=None, write_snapshot: bool = False) -> dict:
                "no_evidence": sum(1 for f in fs if not f["evidence_in_window"])}
         # Knowledge calls belong to the track's call count too (fixed 2026-10-16: K005 showed 0 for Delivery).
         row["candidates"] += sum(1 for m in kn if candidate_reason(m, today))
+        row["heard"] = sum(1 for f in fs if f["evidence_in_window"])
+        row["total"] = len(fs)
+        row["not_heard"] = [{"key": f["key"], "name": f["name"], "last_evidence": f["last_evidence"]} for f in fs if not f["evidence_in_window"]]
         trows.append(row)
     cands = []
     for m, _b, _p in allp:
@@ -444,7 +500,8 @@ def summary(today=None, write_snapshot: bool = False) -> dict:
             cands.append({"id": m["id"], "title": m.get("title", ""), "reason": r,
                           "reason_text": ESCALATION_TESTS.get(r, r), "forum": m.get("forum", ""),
                           "account": m.get("account", ""), "severity": m.get("severity", "") or ("High" if r in ("single", "absence") else ""),
-                          "category": m.get("category", "") or "issue", "track": m.get("track", "")})
+                          "category": m.get("category", "") or "issue", "track": m.get("track", ""),
+                          "reason_line": reason_line(m, r, today)})
     sev = {"High": 0, "Medium": 1, "Low": 2}
     cands.sort(key=lambda c: (sev.get(c["severity"], 3), c["id"]))
     return {
@@ -453,6 +510,18 @@ def summary(today=None, write_snapshot: bool = False) -> dict:
                    "days": WINDOW_DAYS, "stuck_bdays": STUCK_BDAYS},
         "forums": frows,
         "tracks": trows,
+        "evidence": {
+            "total": len(frows),
+            "heard": sum(1 for f in frows if f["evidence_in_window"]),
+            "raised": sum(1 for f in frows if f["ev_state"] == "raised"),
+            "nothing_raised": sum(1 for f in frows if f["ev_state"] == "nothing_raised"),
+            "not_heard": sum(1 for f in frows if f["ev_state"] == "not_heard"),
+            "new7": sum(f["new7"] for f in frows),
+            "new7_by_track": [{"key": t["key"], "name": t["name"], "new7": t["new7"]} for t in trows],
+        },
+        "escalated_live": [{"id": m["id"], "title": m.get("title", ""), "watch": m.get("escalated_to")}
+                           for m, _b, _p in allp if m.get("escalated_to") and state(m, today) == "live"],
+        "pinned": next((h["account"] for h in health if h["pinned"]), None),
         "health": [h for h in health if h["signals"] or h["pinned"]],
         "quiet_accounts": [h["account"] for h in health if not (h["signals"] or h["pinned"])],
         "unattributed": unattributed,
