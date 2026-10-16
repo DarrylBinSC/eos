@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-16 14:05 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 14:07 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 124 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 123 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -59,7 +59,6 @@ Four registers. The delineation is the point.
 | B35 | Internal assessment of developer AI access and cost allocation | Sudhi Rao | Delegated | 2026-08-14 open-input target | -- | 2026-08-14 | Feeds the same AOP AI-cost question as A25 |
 | B48 | Complete the Innovance LicenseManager privacy survey assessment | Akansh Gangil (with Balasubramanian K) | Delegated | 2026-08-20 | -- | 2026-08-20 | New 08-19. |
 | B57 | Research Intel SceneScape fit and return an answer on roadmap displacement and joint go-to-market | Ron Snyder | Delegated | 2026-08-20 End of week following | -- | 2026-08-20 | Ron Snyder: "Yeah, I'll start looking into it and get you an answer." Owed to Ajay Bhat and Intel / Innovation Center |
-| B59 | Run the Sales overview of entroCIM training offerings, intake, scheduling and delivery | Maggie Becker and David Blondel | Delegated | 2026-08-24 Week following | -- | 2026-08-24 | Maggie Becker, explicit. |
 | B63 | Schedule the ALM walkthrough for the I2S team, including the entire I2S team on the invitation | Akansh Gangil | Delegated | 2026-08-31 Week of | -- | 2026-08-31 | Darryl: "I will ask Akansh Gangil to schedule this for sometime next week." Beatrice Hernandez asked that the full I2S team be included. |
 | B64 | Issue legal termination notice for Jeff Verdon's contractor engagement | Chris Gazdic | Delegated | 2026-08-31 to preserve a September end date — passed | -- | 2026-08-31 | Gated on Darryl confirming the decision with Babu and giving Chris the answer (see A-candidate note below). |
 | C44 | Send WAM/Strev enhancement ticket numbers for bulk parent-child linking and warranty-date calculation | Violet Moyer | Awaited | 2026-09-01 After the call | -- | 2026-09-01 | New 09-09. |
@@ -189,6 +188,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-10-16 | **B59 — Run the Sales overview of entroCIM training offerings, intake, scheduling and delivery** | Darryl, EOS web app, 2026-10-16 | Maggie Becker, explicit. |
 | 2026-10-15 | **C66 — Strev restores the SSO/token-generation outage behind the ADM to Strev production integration failures (INC5630763), with restoration confirmed in writing; Akansh Gangil's team then validates the sync** | Darryl, EOS web app, 2026-10-15 | New 2026-10-07. |
 | 2026-10-15 | **C54 — Determine whether FRB's temporary server remains Wesco-owned or transfers to FRB, then route purchasing accordingly** | Darryl, EOS web app, 2026-10-15 | New 2026-09-17. |
 | 2026-10-15 | **C49 — Replacement Strev/Revnue entitlement document — the current version superseding v2.5 (May 2026)** | Darryl, EOS web app, 2026-10-15 | New 2026-09-17. |
