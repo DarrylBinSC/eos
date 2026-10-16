@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-16 14:48 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 14:51 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -162,7 +162,7 @@ Four registers. The delineation is the point.
 | C52 | Amy's UiPath intake filing for the Strev AI use cases, and the demo requested in front of "Kehr" | Amy Aguirre | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C53 | Wade Bursch's business case and PowerPoint for the Virtual Site Survey | Wade Bursch (TS; reports to Matt Powers) | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C55 | Decide an approved path (policy exception or alternate environment) for the entroCIM RFP Intelligence Power Platform POC, currently blocked by DLP | Power Platform governance — owner unclear | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
-| C57 | Provide Dell budgetary server pricing for FRB Cash Services through the lowest-cost procurement avenue (Rahi banner constraint) | Todd Hicks / Natalie Marquardt | Awaited | Not dated | **Critical** | 2026-09-18 | New 2026-09-18. |
+| C57 | Provide Dell budgetary server pricing for FRB Cash Services through the lowest-cost procurement avenue (Rahi banner constraint) | Todd Hicks / Natalie Marquardt | Awaited | Not dated | **Critical** | 2026-10-16 | New 2026-09-18. |
 | C58 | Identify the current Cisco-side owner of the Cisco Connected Real Estate opportunity (NetBotz replacement, MDF power visibility) and tell Dave McCain that CDA is in development | Bob Caprise | Awaited | Not dated | -- | 2026-09-18 | New 2026-09-18. |
 | C59 | Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment | Bob Caprise | Awaited | On Darryl's email | -- | 2026-09-18 | New 2026-09-18. |
 | C60 | Send Darryl the WAM/ADM slide deck or link, with Azure Databricks added to the integration-engineer skill description | Akansh Gangil | Awaited | Not dated | -- | 2026-10-01 | New 2026-10-01. |
