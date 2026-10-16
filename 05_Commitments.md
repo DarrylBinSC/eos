@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-16 14:07 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 14:08 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 122 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 121 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -135,7 +135,6 @@ Four registers. The delineation is the point.
 | B89 | Prepare Dell executive-summit value/benefit content with named platform leads | Adam Lazare, with named platform leads | Delegated | End of October 2026 (exact date not stated) | -- | 2026-09-28 | New 2026-09-28. |
 | B9 | entroCIM release controls applied consistently | Ron Snyder | Delegated | Darryl / Ron weekly 1:1 | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: release-governance discipline with no date and no external exposure. |
 | B93 | Confirm Mosquitto/FOSS approval status for production MQTT with Hansraj's team and report by email | Babu Papanna | Delegated | Not dated | -- | 2026-10-05 | New 2026-10-01. |
-| B95 | Work with Natalia Shtern to revise entroCIM brochure terminology ("DCIM" to "Data Center" / "IT Asset") | David Blondel | Delegated | Not dated | -- | 2026-10-05 | New 2026-10-05. |
 | B96 | Coordinate Ford audit resources once the customer schedules the system audit | Chad Steger | Delegated | Gated on Tim Scott scheduling the audit; no date yet | -- | 2026-10-07 | New 2026-10-07 (daily evidence, folded into this week's reconciliation). |
 | B97 | Send Ford account credentials and establish a shared SharePoint exchange area for the working team | Jacob Nicosia | Delegated | Not stated | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | C-i3-3b | i3's answers to six pre-signature diligence questions | i3, via Wesco Legal | Awaited | Gate: not yet raised | -- | 2026-10-15 | Listed in the memo. |
@@ -187,6 +186,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-10-16 | **B95 — Work with Natalia Shtern to revise entroCIM brochure terminology ("DCIM" to "Data Center" / "IT Asset")** | Darryl, EOS web app, 2026-10-16 | New 2026-10-05. |
 | 2026-10-16 | **B59 — Run the Sales overview of entroCIM training offerings, intake, scheduling and delivery** | Darryl, EOS web app, 2026-10-16 | Maggie Becker, explicit. |
 | 2026-10-15 | **C66 — Strev restores the SSO/token-generation outage behind the ADM to Strev production integration failures (INC5630763), with restoration confirmed in writing; Akansh Gangil's team then validates the sync** | Darryl, EOS web app, 2026-10-15 | New 2026-10-07. |
 | 2026-10-15 | **C54 — Determine whether FRB's temporary server remains Wesco-owned or transfers to FRB, then route purchasing accordingly** | Darryl, EOS web app, 2026-10-15 | New 2026-09-17. |
