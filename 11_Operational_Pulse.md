@@ -45,7 +45,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Natalie Marquardt | 0 | 0 | 9 | 0 |  |
 | Chad Steger | 0 | 2 | 8 | 0 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 0 | 0 | 7 | 0 |  |
-| David Blondel | 0 | 0 | 7 | 0 |  |
+| David Blondel | 0 | 0 | 6 | 0 |  |
 | Scott Dunn | 0 | 2 | 5 | 0 | 2026 Deployment Daily Scrum |
 | Nathan Kehr | 0 | 0 | 5 | 0 |  |
 | Adam Lazare | 0 | 0 | 4 | 0 |  |

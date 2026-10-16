@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 123 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 122 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -131,7 +131,6 @@ Four registers. The delineation is the point.
 | B84 | Assist with fleet-wide Dell cluster configuration cleanup following the session-loss RCA | Syed Jamshed Zaidi, with Elias Brewer | Delegated | Not dated | -- | 2026-09-18 | New 2026-09-18. |
 | B85 | Priya Agarwal to Nathan Kehr introduction + co-sell plan | Nathan Kehr | Delegated | Not dated | -- | 2026-09-18 | Moved from Register A (A7) at the 2026-09-18 disposal sweep, Darryl approved. |
 | B86 | Respond to Cybersecurity GRC on the CrowdStrike Azure VM ingress-rule remediation | Ron Snyder | Delegated | Not dated | -- | 2026-09-18 | Moved from Register A (A32) at the 2026-09-18 disposal sweep, Darryl approved. |
-| B87 | Interview the EES team on asset-tracking requirements and document use cases before development begins | David Blondel | Delegated | Not dated | -- | 2026-09-28 | New 2026-09-28 (14-day evidence window). |
 | B88 | Finalize the WAM/ADM resource needs and skill sets required by the new Wesco-owned-data strategy | Akansh Gangil | Delegated | Not dated | -- | 2026-09-28 | New 2026-09-28. |
 | B89 | Prepare Dell executive-summit value/benefit content with named platform leads | Adam Lazare, with named platform leads | Delegated | End of October 2026 (exact date not stated) | -- | 2026-09-28 | New 2026-09-28. |
 | B9 | entroCIM release controls applied consistently | Ron Snyder | Delegated | Darryl / Ron weekly 1:1 | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: release-governance discipline with no date and no external exposure. |
@@ -305,6 +304,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Item | Was | Dropped | Reason |
 |---|---|---|---|
+| **Interview the EES team on asset-tracking requirements and document use cases before development begins** | B87 | 2026-10-16 | New 2026-09-28 (14-day evidence window). |
 | **Book a review with Robbie and the Dell IT team on the entroCIM application topic** | B110 | 2026-10-16 | Created this morning under the old intake rule; moved to the Pulse as P003. |
 | **Track and log the Dell PC1 meter discrepancies so they are not lost** | B109 | 2026-10-16 | Created this morning under the old intake rule; moved to the Pulse as P002. |
 | **Find the prior PC1 report and send it to the Dell deployment team** | B108 | 2026-10-16 | Created this morning under the old intake rule; moved to the Pulse as P001. |
