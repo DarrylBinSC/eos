@@ -185,6 +185,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-10-16 | **C11 — Confirmation or correction of the controller-capacity diagnosis** | Darryl, EOS web app, 2026-10-16 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a confirmation of a diagnosis; |
 | 2026-10-16 | **B95 — Work with Natalia Shtern to revise entroCIM brochure terminology ("DCIM" to "Data Center" / "IT Asset")** | Darryl, EOS web app, 2026-10-16 | New 2026-10-05. |
 | 2026-10-16 | **B59 — Run the Sales overview of entroCIM training offerings, intake, scheduling and delivery** | Darryl, EOS web app, 2026-10-16 | Maggie Becker, explicit. |
 | 2026-10-15 | **C66 — Strev restores the SSO/token-generation outage behind the ADM to Strev production integration failures (INC5630763), with restoration confirmed in writing; Akansh Gangil's team then validates the sync** | Darryl, EOS web app, 2026-10-15 | New 2026-10-07. |
@@ -303,7 +304,6 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Item | Was | Dropped | Reason |
 |---|---|---|---|
-| **Confirmation or correction of the controller-capacity diagnosis** | C11 | 2026-10-16 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a confirmation of a diagnosis; |
 | **Interview the EES team on asset-tracking requirements and document use cases before development begins** | B87 | 2026-10-16 | New 2026-09-28 (14-day evidence window). |
 | **Book a review with Robbie and the Dell IT team on the entroCIM application topic** | B110 | 2026-10-16 | Created this morning under the old intake rule; moved to the Pulse as P003. |
 | **Track and log the Dell PC1 meter discrepancies so they are not lost** | B109 | 2026-10-16 | Created this morning under the old intake rule; moved to the Pulse as P002. |
