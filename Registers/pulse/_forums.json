@@ -1,0 +1,170 @@
+{
+ "note": "Team-governed forums: run on the team's own governance (project process or sprint cycle). Their issues live in the Pulse, not the registers. 'confirmed' = Darryl has confirmed the classification. Source: 07_Operating_Cadence.md, 2026-10-16. Edit by hand or ask Claude.",
+ "forums": [
+  {
+   "key": "deployment-scrum",
+   "name": "2026 Deployment Daily Scrum",
+   "governance": "Project management",
+   "owner": "Chad Steger",
+   "facilitator": "Syed Jamshed Zaidi",
+   "cadence": "Daily",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [
+    "2026 Deployment - Daily Scrum",
+    "Deployment Daily Scrum",
+    "Daily Scrum"
+   ],
+   "confirmed": true
+  },
+  {
+   "key": "entrocim-standup",
+   "name": "entroCIM Daily Stand Up",
+   "governance": "Sprint (2-week)",
+   "owner": "Ron Snyder",
+   "facilitator": "David Blondel (cover)",
+   "cadence": "Daily",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [
+    "Daily Stand Up",
+    "Daily Standup"
+   ],
+   "confirmed": true
+  },
+  {
+   "key": "entrocim-backlog",
+   "name": "entroCIM Backlog Deep Dive",
+   "governance": "Sprint / backlog",
+   "owner": "David Blondel",
+   "cadence": "Bi-weekly",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": false,
+   "notes": "07 lists Darryl as Attend; confirm it is team-governed"
+  },
+  {
+   "key": "dcoe-entrocim",
+   "name": "DCOE & entroCIM Weekly",
+   "governance": "Release governance (DCOE)",
+   "owner": "Balachandar Murali",
+   "cadence": "Weekly",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": false
+  },
+  {
+   "key": "quest-migration",
+   "name": "Quest Migration Weekly Check-In",
+   "governance": "Project management",
+   "owner": "Chad Steger",
+   "cadence": "Weekly",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": false
+  },
+  {
+   "key": "showcase",
+   "name": "Showcase recurring",
+   "governance": "Project management",
+   "owner": "David Blondel",
+   "cadence": "Bi-weekly",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": false
+  },
+  {
+   "key": "deployment-knowledge-share",
+   "name": "Deployment Team Knowledge Share",
+   "governance": "Team practice",
+   "owner": "TBC",
+   "cadence": "Periodic",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": false
+  },
+  {
+   "key": "wam-backlog-refinement",
+   "name": "WAM Product Backlog Refinement",
+   "governance": "Sprint",
+   "owner": "Sakshi Mathur",
+   "cadence": "Bi-weekly",
+   "products": [
+    "WAM"
+   ],
+   "aliases": [],
+   "confirmed": false
+  },
+  {
+   "key": "wam-sprint-review",
+   "name": "WAM Sprint Review",
+   "governance": "Sprint",
+   "owner": "Sakshi Mathur",
+   "cadence": "Bi-weekly",
+   "products": [
+    "WAM"
+   ],
+   "aliases": [],
+   "confirmed": false
+  },
+  {
+   "key": "wam-india-dev",
+   "name": "WAM India Dev Team weekly",
+   "governance": "Sprint",
+   "owner": "TBC",
+   "cadence": "Weekly",
+   "products": [
+    "WAM"
+   ],
+   "aliases": [],
+   "confirmed": false
+  },
+  {
+   "key": "wam-product-discussion",
+   "name": "WAM Product discussion",
+   "governance": "Product execution",
+   "owner": "Akansh Gangil",
+   "cadence": "Weekly",
+   "products": [
+    "WAM"
+   ],
+   "aliases": [],
+   "confirmed": false
+  },
+  {
+   "key": "adm-connect",
+   "name": "ADM connect with Natalie",
+   "governance": "Product execution",
+   "owner": "Akansh Gangil",
+   "cadence": "Weekly",
+   "products": [
+    "WAM"
+   ],
+   "aliases": [],
+   "confirmed": false,
+   "notes": "07 raises Darryl to Attend while the part-number and leaf-node dependencies are open"
+  },
+  {
+   "key": "product-platform-connect",
+   "name": "Product Team / Platform Team connect",
+   "governance": "Team practice",
+   "owner": "Keyur Patel",
+   "cadence": "Weekly",
+   "products": [],
+   "aliases": [],
+   "confirmed": false
+  }
+ ]
+}

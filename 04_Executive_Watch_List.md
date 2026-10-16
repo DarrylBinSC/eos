@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-10-16 10:01 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 13:09 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 27 (ceiling 20) · Passive 53 · Retired 18.
+**Counts at generation:** Active 22 (ceiling 20) · Passive 53 · Retired 23.
 
 ## Active
 
@@ -16,8 +16,6 @@
 |---|---|---|---|---|---|---|
 | W015 | AI adoption governance + team assignment | High | → | Direct (All Hands 07-13; Agile Staff 07-14; Portfolio Review 07-20; SkyFoundry 07-21; IDP/WAM + Agile Staff 07-22; WAM Data Challenges 07-22/23; weekly evidence 07-27; WAM Data Challenges 07-30; entroCIM Backlog Deep Dive + Claude Code Enablement 08-12; AI Council \| Ice Breaker \| Discussion on entroCIM AI, 08-19; Darryl session 08-25) | 2026-08-25 | 08-19: the Woolly/entroCIM AI evaluation thread advanced with a formal governance path. |
 | W007 | Integrated Navigator / entroCIM / WAM value proposition pitched ahead of the build | High | New | Direct (Brad Stevens agenda, relayed by Darryl 2026-09-03) | 2026-09-03 | Brad intends to pitch all three value propositions as one overall service on future Facility Management and Data Center Management opportunities. |
-| W012 | PC1/JCI large-scale point faults and intermittent site access | High | New | Direct (`2026 Deployment - Daily Scrum` 09-15; roughly half the points described as faulted, including a reference to 12,000 points) | 2026-09-15 | On-site stakeholders reportedly treated it as emergency service; |
-| W013 | TCCC (Coca-Cola)/AOC Modbus gateway sourcing may delay gas-sensor integration | High | New | Direct (`2026 Deployment - Daily Scrum` 09-15; Scott Dunn: sourcing "is going to hold it up") | 2026-09-15 | Required Modbus gateways may have long lead times, risking customer schedule delay and panel rework. |
 | W005 | Stanford commissioning-report remediation — escalated to a retention risk, no accountable owner | High | ↑ | Direct (Stanford Test Project_New email, 2026-09-17) | 2026-09-17 | Reopened from Passive on contradiction, not echo (demoted 08-19 as High/New on the objective silence test; |
 | W006 | Strev AI Feature Pack: unpriced consumption commitment with no budget home | High | New | Direct (Revnue v2.5 entitlement document, May 2026; Lisa Orton email 2026-09-15; Wesco WAM cost model; Amy Aguirre call transcript 2026-09-17) | 2026-09-17 | Two Strev AI use cases entered UiPath intake on 2026-09-15. |
 | W010 | i3 Alliance Agreement — Section 8 puts entroCIM downstream of i3's data model | High | ↓ | Direct (CDK- 0728.26Master -WESCO revision 7-30, clause text and tracked changes; Comment 115, Brandon Thompson 07-30) | 2026-10-05 | §8.2 bars routing project data into Wesco platforms until i3 has ingested and validated it, with no latency or availability commitment anywhere in the agreement, and makes partner systems "downstream consumers." §8.4 makes i3's model the single source of trut… |
@@ -25,21 +23,18 @@
 | W001 | CDA commercial viability — enterprise pricing, willingness to pay and TSS delivery capacity unproven | High | New | Direct (Connected Device Assurance: business case review and sponsorship, 2026-10-02 transcript; CDA Business Case - Site-Based Market.pdf) | 2026-10-06 | 10-06: build home changed, commercial question unchanged. |
 | W003 | entroCIM 2027 development capacity reduction — managed roadmap reset | High | New | Direct (2027 entroCIM Roadmap Discussion, verbatim transcript, 2026-09-16) | 2026-10-06 | 10-06: final cuts in progress. |
 | W018 | entroCIM commercial performance vs. 2026 objectives; viability of another year below sales break-even | High | ↑ | Direct (Engel deck + MBR 07-14; Darryl, session 08-05) | 2026-10-06 | 10-06 (Darryl, Sean's FY27 AOP update): viability is now an explicit leadership question, and this row carries it (single home; |
-| W009 | Dell alarm reliability — alarm-database corruption stops alarming | High | ↑ | Direct (`2026 Deployment - Daily Scrum` 08-25, 09-15; Daily Stand Up 09-15) | 2026-10-14 | Intermittent alarming failures traced to alarm-database corruption. |
 | W016 | WAM/ADM data integrity + scalability (operational hardening) | High | ↑ | Direct (Backlog Refinement 07-20 — transcript/Loop; speaker attributions unconfirmed; WAM Data Challenges 07-30; Requirement Estimation doc, 08-06) | 2026-10-14 | Seven-problem stabilization plan (full dump: `WAM_Product_Backlog_Refinement_Problems_Work_Plan_2026-07-20.md`). |
-| W024 | Commissioned El Dorado and Panama devices (entroCIM) not producing expected alarms ahead of environment decommissioning | High | New | Direct (`2026 Deployment - Daily Scrum` transcript, 2026-10-14) | 2026-10-14 | Syed Zaidi, direct: the customer is not getting alarms from commissioned devices, and called visibility critical before an environment decommissioning expected within weeks. |
 | W017 | JCI (Johnson Controls) MSP agreement stall | High | ↓ | Direct (email evidence through 06-08; Darryl field note 07-22) + Repetition (8+ month negotiation, no signature); Direct (Darryl, chat, 2026-09-01) | 2026-10-15 | MSP model decided 05-26 (not reseller); |
 | W019 | Louvre Abu Dhabi closeout — snag-list stall | High | ↑ | Direct (Deployment Daily Scrum 07-22; Re: IoT Consolidation Platform - Project Deployment Meeting, 08-04) | 2026-10-15 | Escalated from Medium 08-05. |
 | W021 | Federal Reserve (FRBNY) release 3.1.12.13 — held, customer not told | High | ↑ | Direct (Sarah Monteleone quoting Chad Steger, `Re: entroCIM Release – Version 3.1.12.13`, weekly evidence 2026-08-24 to 08-31) | 2026-10-15 | Escalated back to Active 2026-09-01 on a direct signal — held Passive since 08-27 on the reasoning that engineering already owned the fix, but this week's evidence shows the stall continuing rather than closing. |
 | W022 | IDP/ADM production integration — approved but unstaffed | High | New | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-10-15 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
 | W025 | entroCIM SSL certificate ownership undefined | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Outage resolved (GoDaddy certificate installed), but renewal, monitoring, and ownership of the certificate are not formalized -- repeat outage possible until they are. |
 | W026 | FRBNY Smart Building bid -- pricing deadline 2026-10-21 | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Mandatory scope and quantities due 2026-10-21, six days out. |
-| W098 | PC1 Grid Board site-selection defect blocking dashboard/KWH report delivery | High | New | Direct (2026 Deployment - Daily Scrum, 2026-10-15, transcript retrieved complete) | 2026-10-16 | New 2026-10-16. |
+| W009 | Dell alarm reliability — alarm-database corruption stops alarming | High | ↑ | Direct (`2026 Deployment - Daily Scrum` 08-25, 09-15; Daily Stand Up 09-15) | 2026-10-16 | Intermittent alarming failures traced to alarm-database corruption. |
 | W023 | Managed-services staffing readiness for day-two entroCIM monitoring | Medium | New | Direct (entroCIM Backlog Deep Dive, 2026-09-08, verbatim transcript) | 2026-09-08 | Leadership (Brad Stevens, Nathan Kehr) expects commercial growth in managed monitoring/analytics but has not settled operating location, required building-domain skills, NOC placement, training path, or headcount. |
 | W008 | Ford entroCIM (UDAC) renewal and platform-trust gap | Medium | ↑ | Direct (`Wesco & Ford - entroCIM Platform - Re-Alignment & Action Item Call`, 08-26; RE: SLA Verbiage email thread, weekly evidence 2026-09-02 to 09-09) | 2026-10-05 | Ford and Wesco aligned on 08-26 to renew UDAC support and let EDC support expire, using an SLA for unplanned support and SOW/SME hours for planned scope (Darryl: "Hours buy Capacity, SLA buys commitment" — `Products/entroCIM/entroCIM.md`). |
 | W027 | Quest/Azure decommission -- secure data-removal validation T&M approval unresolved | Medium | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Secure data-removal validation on the Quest exit requires approval of a $245/hour T&M consultation; |
 | W020 | CrowdStrike: Azure VM overly permissive ingress rule | Medium-High | ↑ | Direct (Discuss CrowdStrike Vulnerability Risk, 07-28; Teams chat with Venkateswara Devathi, 08-27) | 2026-08-27 | Escalated back to Active 2026-08-27 on a direct signal, per the Passive-tier return condition set 08-19. |
-| W004 | Dell cluster session-loss — bidirectional connection initiation | Medium-High | ↓ | Direct (`Re: Server Session Lost Issues` email, 2026-09-16 to 09-18, retrieved complete) | 2026-09-18 | Trend improving. |
 | W002 | Dell account staffing — second dedicated entroCIM/EMS FTE requested | Medium-High | New | Direct (RE: Dell EMS Program FTE New Hire Discussion, weekly evidence 2026-10-05) | 2026-10-05 | Dell asked for a second dedicated FTE within three to five months. |
 
 ## Passive Watch
@@ -106,6 +101,11 @@ Logged for completeness. No action required; does not count toward risk load. Es
 
 | Retired | ID | Item | Reason |
 |---|---|---|---|
+| 2026-10-16 | W098 | PC1 Grid Board site-selection defect blocking dashboard/KWH report delivery | Returned to team governance; tracked in the Pulse as P001. Reversible: set tier to active. |
+| 2026-10-16 | W024 | Commissioned El Dorado and Panama devices (entroCIM) not producing expected alarms ahead of environment decommissioning | Returned to team governance; tracked in the Pulse as P005. Reversible: set tier to active. |
+| 2026-10-16 | W013 | TCCC (Coca-Cola)/AOC Modbus gateway sourcing may delay gas-sensor integration | Returned to team governance; tracked in the Pulse as P009. Reversible: set tier to active. |
+| 2026-10-16 | W012 | PC1/JCI large-scale point faults and intermittent site access | Returned to team governance; tracked in the Pulse as P007. Reversible: set tier to active. |
+| 2026-10-16 | W004 | Dell cluster session-loss — bidirectional connection initiation | Returned to team governance; tracked in the Pulse as P008. Reversible: set tier to active. |
 | 2026-10-15 | W074 | Docker Hub / EntraSim security posture (Risk 1660) | Formally tracked in the risk register, stable. |
 | 2026-10-15 | W014 | Disney SSO onboarding failure (7 Hudson entroCIM deployment) | Network changes completed (Victor Guzman), but SSO still returns an audience/metadata-related error on subsequent test (Shawn Clark). |
 | 2026-10-14 | W082 | Strev production API outage (SSO, token generation), open since 2026-09-25 | Resolved (Darryl, direct, 2026-10-14). |
