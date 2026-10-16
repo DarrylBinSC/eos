@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-10-16 13:44 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 13:54 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 22 (ceiling 20) · Passive 52 · Retired 24.
+**Counts at generation:** Active 22 (ceiling 20) · Passive 51 · Retired 25.
 
 ## Active
 
@@ -81,7 +81,6 @@ Logged for completeness. No action required; does not count toward risk load. Es
 | W063 | Staffing and role clarity | Medium | Direct (Darryl 07-15; Darryl 07-27) | 2026-07-27 | Demoted from Active 2026-08-19 at the register cap re-rank (was Medium, trend ↓). |
 | W058 | WAM data dependencies (post-DDP/EUDM connection) | Medium | Direct (3 meetings 07-14; Darryl 07-15/07-16; M365 evidence 07-16) | 2026-07-27 | Demoted from Active 2026-08-19 at the register cap re-rank (was Medium, trend ↓). |
 | W053 | Mapbox token exposure (security) | Medium | Direct (Daily Stand Up 07-22) | 2026-07-27 | Demoted from Active 2026-08-19 at the register cap re-rank (was Medium-High, trend →). |
-| W066 | Knowledge concentration / engineering quality | Low | Direct (All Hands 07-13; Quest Migration/SAML threads 07-22) | 2026-07-24 | Demoted from Active 2026-08-19 at the register cap re-rank (was Low-Medium, trend →). |
 | W055 | entroCIM commercialization model — undecided path (payback vs. scale-up) | Medium | Direct (v5 deck + report analyzed 07-24) | 2026-07-24 | Demoted from Active 2026-08-19 at the register cap re-rank (was Medium, trend →). |
 | W054 | UWM decommission pending customer sign-off | Medium | Direct (M365 evidence 07-24) | 2026-07-24 | Demoted from Active 2026-08-19 at the register cap re-rank (was Medium, trend →). |
 | W079 | IoT Consolidation Platform (unconfirmed initiative) |  | Direct, single document (LAD Snaglist/project plan 07-22) | 2026-07-22 | Initiative name not tracked in `01` or `Products/`; |
@@ -101,6 +100,7 @@ Logged for completeness. No action required; does not count toward risk load. Es
 | Retired | ID | Item | Reason |
 |---|---|---|---|
 | 2026-10-16 | W098 | PC1 Grid Board site-selection defect blocking dashboard/KWH report delivery | Returned to team governance; tracked in the Pulse as P001. Reversible: set tier to active. |
+| 2026-10-16 | W066 | Knowledge concentration / engineering quality | Moved to the Pulse knowledge-concentration area (K001-K005). Reversible: set tier to active. |
 | 2026-10-16 | W028 | Dell SOC 2 / security-evidence request — scope and gating unknown | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | 2026-10-16 | W024 | Commissioned El Dorado and Panama devices (entroCIM) not producing expected alarms ahead of environment decommissioning | Returned to team governance; tracked in the Pulse as P005. Reversible: set tier to active. |
 | 2026-10-16 | W013 | TCCC (Coca-Cola)/AOC Modbus gateway sourcing may delay gas-sensor integration | Returned to team governance; tracked in the Pulse as P009. Reversible: set tier to active. |

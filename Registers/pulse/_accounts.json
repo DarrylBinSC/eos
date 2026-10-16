@@ -1,0 +1,75 @@
+{
+ "note": "Account roster for the Pulse health tiles (2026-10-16). Aliases match Pulse accounts and register titles. type: customer | internal | partner. A tile shows when the account has a Pulse issue or an item on Darryl's registers. Edit freely; confirm with Darryl.",
+ "accounts": [
+  {
+   "name": "Dell",
+   "type": "customer",
+   "pinned": true,
+   "aliases": [
+    "Limerick",
+    "El Dorado",
+    "PC1"
+   ],
+   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16)"
+  },
+  {
+   "name": "Wesco Warehouse",
+   "type": "internal",
+   "aliases": [
+    "Panama"
+   ],
+   "note": "Internal program deploying entroCIM at Wesco; Panama is a Wesco site (Darryl, 2026-10-16)"
+  },
+  {
+   "name": "Ford",
+   "type": "customer",
+   "aliases": [
+    "UDAC",
+    "Rouge"
+   ]
+  },
+  {
+   "name": "Federal Reserve",
+   "type": "customer",
+   "aliases": [
+    "FRB",
+    "FRBNY",
+    "SASTEC",
+    "Federal Reserve Bank"
+   ]
+  },
+  {
+   "name": "Coca-Cola (TCCC)",
+   "type": "customer",
+   "aliases": [
+    "TCCC",
+    "Coca-Cola",
+    "AOC"
+   ]
+  },
+  {
+   "name": "BAE",
+   "type": "customer",
+   "aliases": [
+    "BAE Systems"
+   ]
+  },
+  {
+   "name": "Stanford",
+   "type": "customer",
+   "aliases": []
+  },
+  {
+   "name": "Louvre Abu Dhabi",
+   "type": "customer",
+   "aliases": [
+    "Louvre"
+   ]
+  },
+  {
+   "name": "UWM",
+   "type": "customer",
+   "aliases": []
+  }
+ ]
+}
