@@ -9,7 +9,8 @@
     "El Dorado",
     "PC1"
    ],
-   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16)"
+   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16)",
+   "pinned": true
   },
   {
    "name": "Wesco Warehouse",
@@ -63,8 +64,7 @@
    "type": "customer",
    "aliases": [
     "Louvre"
-   ],
-   "pinned": true
+   ]
   },
   {
    "name": "UWM",

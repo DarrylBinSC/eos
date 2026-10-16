@@ -8,12 +8,12 @@
 
 | Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|
-| Louvre Abu Dhabi | 95 | Healthy | no prior week | 0 | 0 | 0 | 1 |
 | Dell | 46 | At risk | no prior week | 6 | 1 | 2 | 2 |
 | Federal Reserve | 75 | Strained | no prior week | 0 | 0 | 0 | 5 |
 | Ford | 85 | Healthy | no prior week | 0 | 0 | 0 | 3 |
 | Wesco Warehouse | 92 | Healthy | no prior week | 1 | 0 | 0 | 0 |
 | Coca-Cola (TCCC) | 94 | Healthy | no prior week | 0 | 0 | 1 | 1 |
+| Louvre Abu Dhabi | 95 | Healthy | no prior week | 0 | 0 | 0 | 1 |
 | Stanford | 95 | Healthy | no prior week | 0 | 0 | 0 | 1 |
 
 Score = 100 minus: live high visible x8, live high x6, live medium x3, live low x1, stuck x4, quiet x1, candidate x3, at your level x5. Bands: 80+ healthy, 60 to 79 strained, below 60 at risk. Friction index from evidence, not customer sentiment.
