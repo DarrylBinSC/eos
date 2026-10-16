@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-16 14:51 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 14:53 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-02 to 2026-10-16. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,7 +8,7 @@
 
 | Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|
-| Dell | 36 | At risk | no prior week | 6 | 1 | 2 | 4 |
+| Dell | 43 | At risk | no prior week | 6 | 1 | 2 | 2 |
 | Federal Reserve | 75 | Strained | no prior week | 0 | 0 | 0 | 5 |
 | Ford | 85 | Healthy | no prior week | 0 | 0 | 0 | 3 |
 | Wesco Warehouse | 92 | Healthy | no prior week | 1 | 0 | 0 | 0 |
@@ -56,7 +56,7 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stuck 1, quiet 3. Last sighting: 2026-10-15.
+Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stuck 1, quiet 3. Last sighting: 2026-10-15. Last evidence: 2026-10-16.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -72,7 +72,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P007 PC
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 1, new this week 1, stuck 0, quiet 0. Last sighting: 2026-10-15.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 1, new this week 1, stuck 0, quiet 0. Last sighting: 2026-10-15. Last evidence: 2026-10-16.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -80,66 +80,66 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 1, new this week 1, stuck 0
 
 ## entroCIM Backlog Deep Dive
 
-Governance: Sprint / backlog. Owner: David Blondel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Sprint / backlog. Owner: David Blondel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-09-14 (none in the window).
 
 No issues in the Pulse yet.
 
 ## DCOE & entroCIM Weekly
 
-Governance: Release governance (DCOE). Owner: Balachandar Murali. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Release governance (DCOE). Owner: Balachandar Murali. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-10-05.
 
 No issues in the Pulse yet.
 
 ## Quest Migration Weekly Check-In
 
-Governance: Project management. Owner: Chad Steger. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Project management. Owner: Chad Steger. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-09-14 (none in the window).
 
 No issues in the Pulse yet.
 
 ## Showcase recurring
 
-Governance: Project management. Owner: David Blondel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Project management. Owner: David Blondel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: none received (none in the window).
 
 No issues in the Pulse yet.
 
 ## Deployment Team Knowledge Share
 
-Governance: Team practice. Owner: TBC. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Team practice. Owner: TBC. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: none received (none in the window).
 
 No issues in the Pulse yet.
 
 ## WAM Product Backlog Refinement
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Sprint. Owner: Sakshi Mathur. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-09-14 (none in the window).
 
 No issues in the Pulse yet.
 
 ## WAM Sprint Review
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Sprint. Owner: Sakshi Mathur. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-08-25 (none in the window).
 
 No issues in the Pulse yet.
 
 ## WAM India Dev Team weekly
 
-Governance: Sprint. Owner: TBC. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Sprint. Owner: TBC. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: none received (none in the window).
 
 No issues in the Pulse yet.
 
 ## WAM Product discussion
 
-Governance: Product execution. Owner: Akansh Gangil. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Product execution. Owner: Akansh Gangil. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-09-09 (none in the window).
 
 No issues in the Pulse yet.
 
 ## ADM connect with Natalie
 
-Governance: Product execution. Owner: Akansh Gangil. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Product execution. Owner: Akansh Gangil. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-09-09 (none in the window).
 
 No issues in the Pulse yet.
 
 ## Product Team / Platform Team connect
 
-Governance: Team practice. Owner: Keyur Patel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet.
+Governance: Team practice. Owner: Keyur Patel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: none received (none in the window).
 
 No issues in the Pulse yet.
