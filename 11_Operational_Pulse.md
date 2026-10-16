@@ -8,14 +8,14 @@
 
 | Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|
-| Dell | 41 | At risk | no prior week | 5 | 1 | 2 | 4 |
+| Dell | 44 | At risk | no prior week | 5 | 1 | 2 | 4 |
 | Coca-Cola (TCCC) | 99 | Healthy | no prior week | 0 | 0 | 1 | 0 |
 
 Score = 100 minus: live high visible x8, live high x6, live medium x3, live low x1, stuck x4, quiet x1, candidate x3, at your level x5. Bands: 80+ healthy, 60 to 79 strained, below 60 at risk. Friction index from evidence, not customer sentiment.
 
 ## Needs your call
 
-- **P004** Dell visualization scope unsettled: point pages only, or basic graphics and floor plans (El Dorado) (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- None this cycle.
 
 ## People carrying the most
 
@@ -45,7 +45,7 @@ Governance: Project management. Owner: Chad Steger. Live 6, new this week 5, stu
 | P001 | PC1 Grid Board site-selection defect blocking the KWH report and dashboard | Dell |  | High | 2026-10-15 | 2026-10-15 | 1 | customer-visible |
 | P002 | Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches | Dell | Syed Jamshed Zaidi | High | 2026-10-15 | 2026-10-15 | 1 | customer-visible |
 | P003 | Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation | Dell | Syed Jamshed Zaidi | Medium | 2026-10-15 | 2026-10-15 | 1 |  |
-| P004 | Dell visualization scope unsettled: point pages only, or basic graphics and floor plans (El Dorado) | Dell |  | Medium | 2026-10-15 | 2026-10-15 | 1 | customer-visible, candidate: boundary |
+| P004 | Dell visualization scope unsettled: point pages only, or basic graphics and floor plans (El Dorado) | Dell |  | Medium | 2026-10-15 | 2026-10-15 | 1 | customer-visible |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P007 PC1/JCI large-scale point faults and intermittent site access; P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration.
 
