@@ -9,34 +9,52 @@
 | Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|
 | Dell | 36 | At risk | no prior week | 6 | 1 | 2 | 4 |
+| Federal Reserve | 75 | Strained | no prior week | 0 | 0 | 0 | 5 |
+| Ford | 85 | Healthy | no prior week | 0 | 0 | 0 | 3 |
 | Wesco Warehouse | 92 | Healthy | no prior week | 1 | 0 | 0 | 0 |
-| Coca-Cola (TCCC) | 99 | Healthy | no prior week | 0 | 0 | 1 | 0 |
+| Coca-Cola (TCCC) | 94 | Healthy | no prior week | 0 | 0 | 1 | 1 |
+| Louvre Abu Dhabi | 95 | Healthy | no prior week | 0 | 0 | 0 | 1 |
+| Stanford | 95 | Healthy | no prior week | 0 | 0 | 0 | 1 |
 
 Score = 100 minus: live high visible x8, live high x6, live medium x3, live low x1, stuck x4, quiet x1, candidate x3, at your level x5. Bands: 80+ healthy, 60 to 79 strained, below 60 at risk. Friction index from evidence, not customer sentiment.
 
+No signals in the window: BAE, UWM.
+
 ## Needs your call
 
-- **K001** entroCIM tenant behavior and access model (no account; Unassigned forum). Test: No owner, or the customer is unaware of a material problem.
-- **K002** entroCIM release packaging, sprint coordination and platform engineering (no account; Unassigned forum). Test: Still being raised 10+ business days after it was first raised.
+- **K002** entroCIM release packaging, sprint coordination and platform engineering (knowledge concentration). Test: An absence or departure is near, or has passed, and the handover is not confirmed.
+- **K005** Dell FTE Franklin/Apex/Hortolandia stability assessment and India deployment support (knowledge concentration). Test: An absence or departure is near, or has passed, and the handover is not confirmed.
+
+## Knowledge concentration
+
+Where one person holds knowledge a customer, a release or a migration depends on. Silence does not remove the risk: entries stay live for 45 days after the last evidence.
+
+| ID | Knowledge area | Held by | Backup | Coverage | Exposure | Mitigation | Last evidence |
+|---|---|---|---|---|---|---|---|
+| K005 | Dell FTE Franklin/Apex/Hortolandia stability assessment and India deployment support | Chethan GR | none named | unknown | customer | Departure extended to 2026-10-08 as a knowledge-transfer window | 2026-09-14 |
+| K002 | entroCIM release packaging, sprint coordination and platform engineering | Ron Snyder | David Blondel (stand-up, sprint planning), Chad Steger (release communication, escalation), Joseph Kusnir (frontend), during PTO | partial | release, customer | PTO coverage note issued 2026-10-13; no return date | 2026-10-14 |
+| K001 | entroCIM tenant behavior and access model | Jason Ganiatsas | none named | partial | release | Michael Pieschel documenting in Confluence; Maggie Becker building enablement material | 2026-10-15 |
+
+Not seen in 45+ days (confirm whether still true): K003 Quest-to-Azure migration and SAML/authentication (PaaS-02) (Babu Papanna); K004 FRB load shed, Dell GMS energy points and KPIs, global metering due diligence (Elias Brewer).
 
 ## People carrying the most
 
-| Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Forums |
-|---|---|---|---|---|
-| Akansh Gangil | 0 | 0 | 19 |  |
-| Ron Snyder | 1 | 0 | 10 | 2026 Deployment Daily Scrum |
-| Syed Jamshed Zaidi | 4 | 0 | 6 | 2026 Deployment Daily Scrum |
-| Natalie Marquardt | 0 | 0 | 9 |  |
-| Chad Steger | 0 | 2 | 8 | 2026 Deployment Daily Scrum |
-| David Blondel | 0 | 0 | 8 |  |
-| Babu Papanna | 0 | 0 | 7 |  |
-| Scott Dunn | 0 | 2 | 5 | 2026 Deployment Daily Scrum |
-| Nathan Kehr | 0 | 0 | 5 |  |
-| Adam Lazare | 0 | 0 | 4 |  |
-| Amy Aguirre | 0 | 0 | 3 |  |
-| Ankit Chadha | 0 | 0 | 3 |  |
+| Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
+|---|---|---|---|---|---|
+| Akansh Gangil | 0 | 0 | 19 | 0 |  |
+| Ron Snyder | 1 | 0 | 10 | 1 | 2026 Deployment Daily Scrum |
+| Syed Jamshed Zaidi | 4 | 0 | 6 | 0 | 2026 Deployment Daily Scrum |
+| Natalie Marquardt | 0 | 0 | 9 | 0 |  |
+| Chad Steger | 0 | 2 | 8 | 0 | 2026 Deployment Daily Scrum |
+| David Blondel | 0 | 0 | 8 | 0 |  |
+| Babu Papanna | 0 | 0 | 7 | 0 |  |
+| Scott Dunn | 0 | 2 | 5 | 0 | 2026 Deployment Daily Scrum |
+| Nathan Kehr | 0 | 0 | 5 | 0 |  |
+| Adam Lazare | 0 | 0 | 4 | 0 |  |
+| Amy Aguirre | 0 | 0 | 3 | 0 |  |
+| Ankit Chadha | 0 | 0 | 3 | 0 |  |
 
-Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own.
+Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own. Sole holder: knowledge areas they hold without a confirmed backup.
 
 ## 2026 Deployment Daily Scrum
 
