@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-10-16 13:41 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 13:42 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 22 (ceiling 20) · Passive 53 · Retired 23.
+**Counts at generation:** Active 22 (ceiling 20) · Passive 52 · Retired 24.
 
 ## Active
 
@@ -45,7 +45,6 @@ Logged for completeness. No action required; does not count toward risk load. Es
 |---|---|---|---|---|---|
 | W042 | Complex-build asset attributes (WMX/VAS/GPO path post-ACT) | High | Direct (VAS Roadmap 07-14; M365 evidence 07-15; Darryl 07-17; WAM/ADM complex builds evidence 08-27) | 2026-10-15 | Demoted from Active 2026-08-27 (was High, trend →), on the objective test — no decision is needed from Darryl today. |
 | W029 | Returnable asset tracking: build direction set before the cost basis exists | Medium | Direct (returnable asset tracking discussion transcript 2026-09-16; entroCIM Sensolus connector documentation 2026-09-16) | 2026-10-05 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
-| W028 | Dell SOC 2 / security-evidence request — scope and gating unknown | Medium | Direct (`EntroCIM Platform Solution & Delivery Group`, 08-18 onward) | 2026-10-05 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | W030 | Sales orders missing from EUDM/DDP data lake | High | Direct (FW: WAM - Records are created in Core ERP but not available in eudm table, 07-27; INC5456198) | 2026-09-17 | Demoted from Active 2026-09-17 (was High, trend ↑) on the objective silence test — no referencing evidence since 07-28, 51 days, and superseded in substance by the current WAM/ADM data integrity row above, which tracks the same truncated-part-number root caus… |
 | W033 | QPM 3.4.3 nested finished-good capability — Charlotte go-live dependency | High | Direct (Digital Products Portfolio Review 07-20; Digital Products / Agile Staff 07-21) | 2026-09-15 | Demoted from Active 2026-09-15 (was High, trend ↑) on the objective silence test — no referencing evidence since 07-27, 50 days. |
 | W032 | WAM financial narrative / resource allocation (cash-flow P&L, development carve-back) | High | Direct (Sync: Dirk & Akash meeting, 07-28) | 2026-09-15 | Demoted from Active 2026-09-15 (was High, trend New) on the objective silence test — no referencing evidence since 07-29, 48 days. |
@@ -102,6 +101,7 @@ Logged for completeness. No action required; does not count toward risk load. Es
 | Retired | ID | Item | Reason |
 |---|---|---|---|
 | 2026-10-16 | W098 | PC1 Grid Board site-selection defect blocking dashboard/KWH report delivery | Returned to team governance; tracked in the Pulse as P001. Reversible: set tier to active. |
+| 2026-10-16 | W028 | Dell SOC 2 / security-evidence request — scope and gating unknown | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | 2026-10-16 | W024 | Commissioned El Dorado and Panama devices (entroCIM) not producing expected alarms ahead of environment decommissioning | Returned to team governance; tracked in the Pulse as P005. Reversible: set tier to active. |
 | 2026-10-16 | W013 | TCCC (Coca-Cola)/AOC Modbus gateway sourcing may delay gas-sensor integration | Returned to team governance; tracked in the Pulse as P009. Reversible: set tier to active. |
 | 2026-10-16 | W012 | PC1/JCI large-scale point faults and intermittent site access | Returned to team governance; tracked in the Pulse as P007. Reversible: set tier to active. |
