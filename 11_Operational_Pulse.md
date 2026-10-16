@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-16 13:31 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-16 13:38 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-02 to 2026-10-16. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -19,20 +19,22 @@ Score = 100 minus: live high visible x8, live high x6, live medium x3, live low 
 
 ## People carrying the most
 
-| Person | Live Pulse issues | Open delegated/awaited | Forums |
-|---|---|---|---|
-| Akansh Gangil | 0 | 19 |  |
-| Ron Snyder | 1 | 10 | 2026 Deployment Daily Scrum |
-| Syed Jamshed Zaidi | 3 | 6 | 2026 Deployment Daily Scrum |
-| Chad Steger | 1 | 8 | 2026 Deployment Daily Scrum |
-| Natalie Marquardt | 0 | 9 |  |
-| David Blondel | 0 | 8 |  |
-| Scott Dunn | 2 | 5 | 2026 Deployment Daily Scrum |
-| Babu Papanna | 0 | 7 |  |
-| Nathan Kehr | 0 | 5 |  |
-| Adam Lazare | 0 | 4 |  |
-| Maggie Becker | 1 | 2 | entroCIM Daily Stand Up |
-| Amy Aguirre | 0 | 3 |  |
+| Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Forums |
+|---|---|---|---|---|
+| Akansh Gangil | 0 | 0 | 19 |  |
+| Ron Snyder | 1 | 0 | 10 | 2026 Deployment Daily Scrum |
+| Syed Jamshed Zaidi | 3 | 0 | 6 | 2026 Deployment Daily Scrum |
+| Natalie Marquardt | 0 | 0 | 9 |  |
+| Chad Steger | 0 | 1 | 8 | 2026 Deployment Daily Scrum |
+| David Blondel | 0 | 0 | 8 |  |
+| Babu Papanna | 0 | 0 | 7 |  |
+| Scott Dunn | 0 | 2 | 5 | 2026 Deployment Daily Scrum |
+| Nathan Kehr | 0 | 0 | 5 |  |
+| Adam Lazare | 0 | 0 | 4 |  |
+| Amy Aguirre | 0 | 0 | 3 |  |
+| Ankit Chadha | 0 | 0 | 3 |  |
+
+Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own.
 
 ## 2026 Deployment Daily Scrum
 
