@@ -35,7 +35,7 @@ Where one person holds knowledge a customer, a release or a migration depends on
 | K002 | entroCIM release packaging, sprint coordination and platform engineering | Ron Snyder | David Blondel (stand-up, sprint planning), Chad Steger (release communication, escalation), Joseph Kusnir (frontend), during PTO | partial | release, customer | PTO coverage note issued 2026-10-13; no return date | 2026-10-14 |
 | K001 | entroCIM tenant behavior and access model | Jason Ganiatsas | none named | partial | release | Michael Pieschel documenting in Confluence; Maggie Becker building enablement material | 2026-10-15 |
 
-Not seen in 45+ days (confirm whether still true): K003 Quest-to-Azure migration and SAML/authentication (PaaS-02) (Babu Papanna); K004 FRB load shed, Dell GMS energy points and KPIs, global metering due diligence (Elias Brewer).
+Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS energy points and KPIs, global metering due diligence (Elias Brewer).
 
 ## People carrying the most
 
