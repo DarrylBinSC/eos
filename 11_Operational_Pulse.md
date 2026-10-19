@@ -8,7 +8,7 @@
 
 | Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|
-| Dell | 19 | At risk | no prior week | 9 | 2 | 2 | 1 |
+| Dell | 0 | At risk | no prior week | 12 | 2 | 2 | 1 |
 | Federal Reserve | 75 | Strained | no prior week | 0 | 0 | 0 | 5 |
 | Wesco Warehouse | 84 | Healthy | no prior week | 2 | 0 | 0 | 0 |
 | Ford | 85 | Healthy | no prior week | 0 | 0 | 0 | 3 |
@@ -26,7 +26,12 @@ No signals in the window: BAE, UWM.
 - **P014** Dell non-DC server unavailable since the prior week, blocking meter verification (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P020** WAM historical upload mishandles one customer ID with different names; duplicate ETL error records (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P022** Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion (no account; WAM Sprint Review). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P023** Penang 2: down points not triggering the expected faults or notifications (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
+- **P027** Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
+- **P028** Site-meter information missing at several Dell sites (Chile named), blocking rollup views (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P016** Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P024** Standardized UPS/device point list for integration and alarm rules still unavailable (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P029** Prospective data-center customer substation request cannot be scoped (equipment, model and IP readiness unknown) (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 
 ## Knowledge concentration
 
@@ -35,6 +40,7 @@ Where one person holds knowledge a customer, a release or a migration depends on
 | ID | Knowledge area | Held by | Backup | Coverage | Exposure | Mitigation | Last evidence |
 |---|---|---|---|---|---|---|---|
 | K005 | Dell FTE Franklin/Apex/Hortolandia stability assessment and India deployment support | Chethan GR | none named | unknown | customer | Departure extended to 2026-10-08 as a knowledge-transfer window | 2026-09-14 |
+| K006 | Dell Limerick alarm-handler RCA and release/build context for affected pod updates | Keith Bishop | none named | partial | customer, release | Ron Snyder mentioned as someone to ask; not named as backup (and away this week and next) | 2026-10-14 |
 | K001 | entroCIM tenant behavior and access model | Jason Ganiatsas | none named | partial | release | Michael Pieschel documenting in Confluence; Maggie Becker building enablement material | 2026-10-15 |
 
 Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS energy points and KPIs, global metering due diligence (Elias Brewer).
@@ -44,11 +50,11 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
 | Akansh Gangil | 0 | 4 | 13 | 0 | WAM Product Backlog Refinement, WAM Sprint Review |
-| Chad Steger | 0 | 2 | 6 | 0 | 2026 Deployment Daily Scrum |
-| Syed Jamshed Zaidi | 4 | 1 | 1 | 0 | 2026 Deployment Daily Scrum |
+| Syed Jamshed Zaidi | 7 | 3 | 1 | 0 | 2026 Deployment Daily Scrum |
+| Chad Steger | 0 | 3 | 6 | 0 | 2026 Deployment Daily Scrum |
+| Scott Dunn | 3 | 8 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 1 | 0 | 4 | 0 | entroCIM Daily Stand Up |
 | Natalie Marquardt | 0 | 0 | 5 | 0 |  |
-| Scott Dunn | 2 | 4 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Ron Snyder | 1 | 0 | 3 | 0 | 2026 Deployment Daily Scrum |
 | Nathan Kehr | 0 | 0 | 4 | 0 |  |
 | Adam Lazare | 0 | 0 | 3 | 0 |  |
@@ -60,7 +66,7 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 12, new this week 10, stuck 2, quiet 3. Last sighting: 2026-10-15. Last evidence: 2026-10-16.
+Governance: Project management. Owner: Chad Steger. Live 19, new this week 17, stuck 2, quiet 3. Last sighting: 2026-10-15. Last evidence: 2026-10-16.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -71,11 +77,18 @@ Governance: Project management. Owner: Chad Steger. Live 12, new this week 10, s
 | P005 | Commissioned Panama devices not producing expected alarms ahead of environment decommissioning | Wesco Warehouse | Syed Jamshed Zaidi | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible |
 | P011 | Commissioned El Dorado devices not producing expected alarms ahead of environment decommissioning | Dell | Syed Jamshed Zaidi | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible |
 | P017 | North America lighting-site UPS alarms visible in PME/NMC but not reaching entroCIM |  | Leanne | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible |
+| P023 | Penang 2: down points not triggering the expected faults or notifications |  |  | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible, candidate: gap |
 | P001 | PC1 Grid Board site-selection defect blocking the KWH report and dashboard | Dell |  | High | 2026-10-13 | 2026-10-15 | 2 | customer-visible |
 | P002 | Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches | Dell | Syed Jamshed Zaidi | High | 2026-10-13 | 2026-10-15 | 3 | customer-visible |
+| P027 | Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara |  |  | High | 2026-10-15 | 2026-10-15 | 1 | customer-visible, candidate: gap |
+| P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-15 | 2 | customer-visible, candidate: boundary |
 | P016 | Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation | Dell | Matthew Heid | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible, candidate: boundary |
+| P025 | Dell "three-creatures" requirements undefined; related work waits on a Dell workshop | Dell | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
+| P026 | New York: two meters in commissioning, two with connection issues |  | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
+| P024 | Standardized UPS/device point list for integration and alarm rules still unavailable | Dell |  | Medium | 2026-10-14 | 2026-10-14 | 1 | customer-visible, candidate: boundary |
 | P003 | Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation | Dell | Syed Jamshed Zaidi | Medium | 2026-10-15 | 2026-10-15 | 1 |  |
 | P004 | Dell visualization scope unsettled: point pages only, or basic graphics and floor plans (El Dorado) | Dell |  | Medium | 2026-10-15 | 2026-10-15 | 1 | customer-visible |
+| P029 | Prospective data-center customer substation request cannot be scoped (equipment, model and IP readiness unknown) |  | Syed Jamshed Zaidi | Medium | 2026-10-15 | 2026-10-15 | 1 | customer-visible, candidate: boundary |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review.
 
