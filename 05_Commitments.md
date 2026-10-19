@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 79 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 80 (Critical 17) · Needs triage 0.
 
 ---
 
@@ -75,6 +75,7 @@ Four registers. The delineation is the point.
 | B99 | Check whether reciprocal Wesco/manufacturer part-number completion can fit the current WAM Data Enrichment iteration | Akansh Gangil | Delegated | 2026-10-30 Before the enrichment target, if feasible | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
 | B10 | MDM attribute progress follow-up | Akansh Gangil | Delegated | IDP/WAM process review | -- | 2026-10-19 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm (aging sweep found resolution evidence, so this goes to Closed on Darryl's yes, not to Aged Out): DDPTRK-6346 marked complete via MDM Governance in the Digi… |
+| B100 | Confirm the MuleSoft/current integration architecture and prepare a WAM-limitations slide for Darryl, ahead of the Sean McCloskey capacity discussion | Akansh Gangil | Delegated | Before Darryl's Sean McCloskey discussion; exact date not stated | **Critical** -- feeds `05` A61 and the `03` WAM/ADM reduced-capacity reset Radar item directly | 2026-10-19 | New 2026-10-13 (weekly evidence, WAM Leadership Sync transcript, 2026-10-05). |
 | B106 | Complete WAM global-attributes analysis and set up a review call | Natalie Marquardt | Delegated | Not stated | -- | 2026-10-14 | New 2026-10-14. |
 | B107 | Discuss the full-manufacturer-part-number enhancement with engineering and determine next steps | Akansh Gangil | Delegated | Not stated | -- | 2026-10-15 | New 2026-10-14. |
 | B12 | DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian | Akansh Gangil (reassigned 07-27) | Delegated | DDP Entrance Call (weekly) | -- | 2026-10-19 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm. |
@@ -144,7 +145,6 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
-| 2026-10-19 | **B100 — Confirm the MuleSoft/current integration architecture and prepare a WAM-limitations slide for Darryl, ahead of the Sean McCloskey capacity discussion** | Darryl, EOS web app, 2026-10-19 | New 2026-10-13 (weekly evidence, WAM Leadership Sync transcript, 2026-10-05). |
 | 2026-10-16 | **C11 — Confirmation or correction of the controller-capacity diagnosis** | Darryl, EOS web app, 2026-10-16 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a confirmation of a diagnosis; |
 | 2026-10-16 | **C-i3-3b — i3's answers to six pre-signature diligence questions** | Darryl, EOS web app, 2026-10-16 | Listed in the memo. |
 | 2026-10-16 | **B95 — Work with Natalia Shtern to revise entroCIM brochure terminology ("DCIM" to "Data Center" / "IT Asset")** | Darryl, EOS web app, 2026-10-16 | New 2026-10-05. |
