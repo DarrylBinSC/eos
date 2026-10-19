@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-19 13:53 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-19 13:57 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -64,7 +64,7 @@ Four registers. The delineation is the point.
 | C65 | Emily Munk's reply and a 30-minute walkthrough of CDA: TSS delivery and support ownership, positioning for TSS, route to Greg O'Brien | Emily Munk | Awaited | 2026-10-07 Requested within two weeks of (by 2026-10-21) | -- | 2026-10-19 | New 2026-10-07. |
 | B98 | Provide the larger WAM/MSAV data set to Akansh Gangil | Violet Moyer | Delegated | 2026-10-08 (now 5 days overdue) | -- | 2026-10-13 | New 2026-10-13 (weekly evidence, WAM Product discussion transcript, 2026-10-08). |
 | B101 | Revise the client-facing entroCIM deployment discussion framework per Darryl's comments and schedule a review call | Valli Poornakumar | Delegated | 2026-10-12 Late week of or early the following week | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
-| B102 | Validate remaining Strev SOW 3 deliverables (completed and outstanding), open bugs, and the notification mechanism | Akansh Gangil | Delegated | 2026-10-15 (review call) | **Critical** -- gates a dated vendor/commercial closure | 2026-10-15 | New 2026-10-14. |
+| B102 | Validate remaining Strev SOW 3 deliverables (completed and outstanding), open bugs, and the notification mechanism | Akansh Gangil | Delegated | 2026-10-15 (review call) | **Critical** -- gates a dated vendor/commercial closure | 2026-10-19 | New 2026-10-14. |
 | B103 | Review the Claude Code tickets (starting with Ron Snyder's) and determine whether backend changes or another ticket are required | Ankit Chadha | Delegated | 2026-10-15 /16 | -- | 2026-10-15 | New 2026-10-14. |
 | B104 | Investigate why Claude Code is unavailable from the India office | Ankit Chadha | Delegated | 2026-10-15 /16 | -- | 2026-10-15 | New 2026-10-14. |
 | B92 | Share the WAM/ADM data points already known to be required with the cross-SBU VAS/WMX/ADM/Strev working team | Akansh Gangil | Delegated | 2026-10-16 Ahead of the use-case deadline (not individually dated) | -- | 2026-10-15 | New 2026-10-01 (M365 evidence, 09-30 to 10-01). |
