@@ -17,7 +17,7 @@ Everything you change in the app is written to that item's file, the summary fil
 | Tab | Shows |
 |---|---|
 | **Pulse** | What your team-governed forums are carrying, in a rolling 14-day window: what needs your call, your pinned account, how many forums you heard from, account health, live issues, your weekly governance, knowledge risks, and the people carrying the most. See Pulse, below |
-| **Triage** | What needs your attention: your own actions, Critical other-owned actions, Active risks, and Radar decisions, in bands by urgency (needs triage, overdue, due this week, later, no date, watch) |
+| **Focus** (renamed from Triage 2026-10-19) | What needs your attention: your own actions, Critical other-owned actions, Active risks, and Radar decisions, in bands by urgency (needs triage, overdue, due this week, later, no date, watch) |
 | **Mine** | Register A: actions only you can move. Ceiling 15 |
 | **Other-owned** | Actions you delegated (Delegated) or are waiting on from someone else (Awaited) |
 | **Watch** | All open risks, Active and Passive |
@@ -89,7 +89,7 @@ Lists what you changed this session and the recent git commits. Every save is a 
 
 ## Best practices
 
-- Clear the Triage view, top band first, when you have five minutes. Overdue first, then due this week.
+- Clear the Focus view, top band first, when you have five minutes. Overdue first, then due this week.
 - Status on the row, note in the panel. Do not write "closed" in a note; tap Closed.
 - One line of next action per open item is the most useful text on the page. If the next action shown is stale, fix it in Details.
 - Keep dropping things. Register A comes down only by disposal; Watch Active and Radar come down by moving items to Passive and Backlog. Caps in red are a disposal prompt, not a failure.

@@ -740,7 +740,7 @@ const plain=s=>String(s??'').replace(/\*\*([^*]+)\*\*/g,'$1').replace(/`([^`]+)`
 let toastT;function toast(t){const e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toastT);toastT=setTimeout(()=>e.style.display='none',2200)}
 async function load(){const [j,p]=await Promise.all([fetch('/api/items').then(r=>r.json()),fetch('/api/pulse').then(r=>r.ok?r.json():null).catch(()=>null)]);ITEMS=j.items;TODAY=j.today;PULSE=p;render();const o=new URLSearchParams(location.search).get('open');if(o&&!DRAWER)openDrawer(o)}
 
-const VIEWS=[['triage','Triage'],['pulse','Pulse'],['A','Mine'],['other','Other-owned'],['watch','Watch'],['decision','Decisions'],['needs','Needs triage'],['closed','Disposed']];
+const VIEWS=[['triage','Focus'],['pulse','Pulse'],['A','Mine'],['other','Other-owned'],['watch','Watch'],['decision','Decisions'],['needs','Needs triage'],['closed','Disposed']];
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],WD=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const dn=s=>{const[y,m,d]=s.split('-').map(Number);return Date.UTC(y,m-1,d)};
 const days=s=>Math.round((dn(s)-dn(TODAY))/864e5);
