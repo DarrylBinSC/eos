@@ -576,7 +576,7 @@ summary:hover .sl{text-decoration:underline}
 .pv-ah .ghead,.pv-gov .ghead{flex-wrap:wrap;align-items:baseline}
 .ghead .sub{font-size:13px;color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0}
 .pv-arow{display:grid;grid-template-columns:minmax(0,1fr) 104px;gap:12px;align-items:center;padding:0 18px;border-top:1px solid var(--line2)}
-.pv-arow.pinned{background:var(--sel)}.pv-arow.sel .af{box-shadow:inset 3px 0 0 var(--acc)}
+.pv-arow.pinned{background:var(--sel)}.pv-arow.sel{box-shadow:inset 3px 0 0 var(--acc)}
 .pv-arow .af{display:grid;grid-template-columns:200px 150px 190px 150px 110px minmax(0,1fr) 20px;gap:16px;align-items:center;padding:10px 0;width:100%;background:none;border:0;text-align:left;font:inherit;color:inherit;cursor:pointer}
 .pv-arow.hd{border-top:0}.pv-arow.hd .af{cursor:default;padding:0 0 6px;font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:650}
 .pv-arow.hd .c-pinh{font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:650;text-align:center;padding-bottom:6px}
