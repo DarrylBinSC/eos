@@ -121,6 +121,61 @@ def copilot_prompts(today: dt.date | None = None) -> dict:
     return {"today": today.isoformat(), "advice": advice, "prompts": out}
 
 
+def _fixed_prompt(section_head: str) -> str:
+    """The Daily and Weekly prompts live in 02_Copilot_Intake_Prompts.md (single source); serve its first code block."""
+    f = R.ROOT / "02_Copilot_Intake_Prompts.md"
+    try:
+        txt = f.read_text(encoding="utf-8")
+        s = txt.index(section_head)
+        e = txt.find("\n## ", s + 5)
+        m = re.search(r"```\n(.*?)\n```", txt[s:e if e > 0 else None], re.S)
+        return m.group(1) if m else ""
+    except (OSError, ValueError):
+        return ""
+
+
+def _last_package(kind: str) -> str:
+    ev = R.ROOT / "Evidence"
+    dates = []
+    for f in ev.glob(f"M365_Evidence_{kind}_*.md") if ev.exists() else []:
+        m = re.search(r"(\d{4}-?\d{2}-?\d{2})", f.name)
+        if m:
+            d = m.group(1)
+            dates.append(d if "-" in d else f"{d[:4]}-{d[4:6]}-{d[6:]}")
+    return max(dates) if dates else ""
+
+
+def copilot_all(today: dt.date | None = None) -> dict:
+    today = today or dt.date.today()
+    monday = today.weekday() == 0
+    weekend = today.weekday() >= 5
+    pulse = copilot_prompts(today)
+    ld, lw = _last_package("Daily"), _last_package("Weekly")
+    fixed = [
+        {"id": "weekly", "label": "Weekly prompt", "sub": "Leadership evidence, last 8 days. Mondays.",
+         "today": monday, "last": lw, "done": lw == today.isoformat(),
+         "text": _fixed_prompt("## 3. Weekly Prompt")},
+        {"id": "daily", "label": "Daily prompt", "sub": "Leadership evidence, last 24 hours, plus the Daily Scrum and Daily Stand Up. Tuesday to Friday.",
+         "today": not monday and not weekend, "last": ld, "done": ld == today.isoformat(),
+         "text": _fixed_prompt("## 2. Daily Prompt")},
+    ]
+    if not monday:
+        fixed.reverse()
+    first = next((f for f in fixed if f["today"]), None)
+    steps = []
+    if first:
+        steps.append(("done" if first["done"] else "todo", f'{first["label"]}' + (" (today's package is saved)" if first["done"] else "")))
+    else:
+        steps.append(("skip", "Weekend: no Daily or Weekly prompt today"))
+    need = [o for o in pulse["prompts"] if o["needed"]]
+    if need:
+        steps.append(("todo", " and ".join(f'Pulse Prompt {o["n"]} ({o["label"]})' for o in need)
+                      + (", each in its own new Copilot chat" if len(need) == 2 else "")))
+    else:
+        steps.append(("done", "Pulse prompts: nothing needed, every forum heard within its cadence"))
+    return {"today": today.isoformat(), "weekday": today.strftime("%A"), "steps": steps, "fixed": fixed, "pulse": pulse}
+
+
 def _prompt_text(n, label, rows, start, end, tracked) -> str:
     head = f"PROMPT {n} OF 2: PULSE SWEEP, {label.upper()}"
     fl = "\n".join(f'{i}. {r["name"]}' + (f' (aliases: {", ".join(r["aliases"])})' if r["aliases"] else "")
@@ -407,6 +462,9 @@ class H(BaseHTTPRequestHandler):
             if not f:
                 return self._json(404, {"error": "not found"})
             return self._json(200, item_json(*f))
+        if u.path == "/api/copilot":
+            with LOCK:
+                return self._json(200, copilot_all())
         if u.path == "/api/pulse/prompts":
             with LOCK:
                 return self._json(200, copilot_prompts())
@@ -949,6 +1007,9 @@ button.pv-pp{min-height:40px;align-items:center}
 .cp-f li{display:flex;justify-content:space-between;gap:10px;padding:3px 0;border-bottom:1px solid var(--line2);color:var(--muted)}.cp-f li.d{color:var(--ink)}.cp-f li span:last-child{font-size:12px;color:var(--muted);white-space:nowrap}
 .cp-adv{font-size:15px;font-weight:650;line-height:22px}.cp-how{font-size:13px;color:var(--muted);line-height:19px;margin:6px 0 0}
 .cp-t{margin-top:8px}.cp-t textarea{width:100%;height:220px;font:12px ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:8px;background:var(--sunk);color:var(--ink);padding:8px}
+.csteps{margin:0;padding:0;list-style:none}.cs{display:flex;gap:10px;align-items:flex-start;padding:5px 0;font-size:14.5px;line-height:21px}
+.cs .ck{flex:none;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;background:var(--acc);color:var(--accInk)}
+.cs.done .ck{background:var(--grn)}.cs.done span:last-child{color:var(--muted)}.cs.skip .ck{background:var(--sunk);color:var(--muted)}
 </style></head><body>
 <header>
  <div class="hbar">
@@ -957,6 +1018,7 @@ button.pv-pp{min-height:40px;align-items:center}
   <input type="search" id="q" placeholder="Search title, owner, ID, notes…" autocomplete="off">
   <button class="btn" id="searchBtn">Search</button>
   <button class="btn primary" id="newBtn">Add</button>
+  <button class="btn" id="cpBtn" data-cprompts>Copilot</button>
   <button class="btn" id="logBtn">Changes</button>
   <button class="btn" id="helpBtn" aria-label="Help">?</button>
  </div>
@@ -1121,7 +1183,7 @@ document.addEventListener('click',e=>{
   if(e.target.closest('[data-pplall]')){PPLALL=!PPLALL;render();return}
   const s=e.target.closest('.seg button');if(s){e.stopPropagation();const i=ITEMS.find(x=>x.id===s.dataset.id);if(i&&i[s.dataset.k]!==s.dataset.val)patch(s.dataset.id,{[s.dataset.k]:s.dataset.val},'');return}
   if(e.target.closest('[data-cprompts]')){openPrompts();return}
-  const cpy=e.target.closest('[data-cpy]');if(cpy){copyPrompt(+cpy.dataset.cpy);return}
+  const cpy=e.target.closest('[data-cpy]');if(cpy){copyPrompt(cpy.dataset.cpy);return}
   const tc=e.target.closest('[data-toc]');if(tc){e.preventDefault();jumpSec(tc.dataset.toc);return}
   const bi=e.target.closest('[data-brief]');if(bi){openBrief(bi.dataset.brief,'list');return}
   if(e.target.closest('[data-bback]')){BREAD=false;render();scrollTo(0,0);return}
@@ -1646,19 +1708,28 @@ function jumpSec(id){const d=document.getElementById(id);if(!d)return;d.open=tru
 document.addEventListener('change',e=>{const s=e.target.closest('[data-tocsel]');if(s&&s.value){jumpSec(s.value);s.value=''}});
 /* ---------- Copilot prompts (2026-10-19): Prompt 1 = Delivery track, Prompt 2 = Development track ---------- */
 let CPR=null;
-async function openPrompts(){try{CPR=await (await fetch('/api/pulse/prompts')).json()}catch(e){toast('Could not build the prompts');return}
-  SEL=null;const ph=o=>`<section class="cp${o.needed?' need':''}"><div class="cp-h"><span class="cp-n">Prompt ${o.n}</span><b>${esc(o.label)}</b><span class="cp-b ${o.needed?'y':'n'}">${o.needed?'Needed':'Not needed'}</span></div>
+async function openPrompts(){try{CPR=await (await fetch('/api/copilot')).json()}catch(e){toast('Could not build the prompts');return}
+  SEL=null;const P=CPR.pulse;
+  const stp=CPR.steps.map((s,i)=>`<li class="cs ${s[0]}"><span class="ck">${s[0]==='done'?'✓':s[0]==='skip'?'–':i+1}</span><span>${esc(s[1])}</span></li>`).join('');
+  const fx=o=>`<section class="cp${o.today&&!o.done?' need':''}"><div class="cp-h"><b>${esc(o.label)}</b><span class="cp-b ${o.today&&!o.done?'y':'n'}">${o.today?(o.done?'Done today':'Today'):'Not today'}</span></div>
+    <div class="cp-m">${esc(o.sub)} Last package saved: ${o.last?fmt(o.last):'none'}.</div>
+    <button type="button" class="btn${o.today&&!o.done?' primary':''}" data-cpy="${o.id}">Copy ${esc(o.label)}</button>
+    <details class="cp-t"><summary>Show ${esc(o.label)} text</summary><textarea readonly id="cpt${o.id}">${esc(o.text)}</textarea></details></section>`;
+  const ph=o=>`<section class="cp${o.needed?' need':''}"><div class="cp-h"><span class="cp-n">Prompt ${o.n}</span><b>Pulse · ${esc(o.label)}</b><span class="cp-b ${o.needed?'y':'n'}">${o.needed?'Needed':'Not needed'}</span></div>
     <div class="cp-m">Window ${fmt(o.window[0])} to ${fmt(o.window[1])} · ${o.forums.filter(f=>f.due).length||o.forums.length} forum${(o.forums.filter(f=>f.due).length||o.forums.length)===1?'':'s'} to search · ${o.tracked} tracked issue${o.tracked===1?'':'s'} listed</div>
     <ul class="cp-f">${o.forums.map(f=>`<li class="${f.due?'d':''}"><span>${esc(f.name)}</span><span>${f.due?'search':'heard'} · ${esc(f.why)}</span></li>`).join('')}</ul>
     <button type="button" class="btn${o.needed?' primary':''}" data-cpy="${o.n}">Copy Prompt ${o.n} · ${esc(o.label)}${o.needed?'':' (anyway)'}</button>
     <details class="cp-t"><summary>Show Prompt ${o.n} text</summary><textarea readonly id="cpt${o.n}">${esc(o.text)}</textarea></details></section>`;
-  $('#panel').innerHTML=`<div class="p-top">${head('','Copilot prompts')}<h2 class="p-title">Pulse sweep prompts</h2></div>
-   <div class="p-sec"><div class="cp-adv">${esc(CPR.advice)}</div><p class="cp-how">Prompt 1 searches the delivery forums, Prompt 2 the development forums. Paste each into its own new Copilot chat; each answer starts with its prompt number, so you can paste both results here in any order. Only forums not heard within their cadence are searched.</p></div>
-   <div class="p-sec">${CPR.prompts.map(ph).join('')}</div>`;
+  $('#panel').innerHTML=`<div class="p-top">${head('','Copilot')}<h2 class="p-title">Copilot prompts · ${esc(CPR.weekday)}</h2></div>
+   <div class="p-sec"><h3 class="p-label">Today</h3><ol class="csteps">${stp}</ol><p class="cp-how">Run each prompt in its own new Copilot chat and paste the answer to Claude. Pulse answers start with "PROMPT 1 OF 2" or "PROMPT 2 OF 2", so they can come back in any order.</p></div>
+   <div class="p-sec"><h3 class="p-label">Leadership evidence</h3>${CPR.fixed.map(fx).join('')}</div>
+   <div class="p-sec" id="cp-pulse"><h3 class="p-label">Pulse: team-governed forums</h3><div class="cp-adv">${esc(P.advice)}</div><p class="cp-how">Prompt 1 searches the delivery forums, Prompt 2 the development forums, and only those not heard within their cadence.</p>${P.prompts.map(ph).join('')}</div>`;
   showDrawer('prompts');$('#drawer').scrollTop=0;render()}
-function copyPrompt(n){const o=CPR&&CPR.prompts.find(x=>x.n===n);if(!o)return;
-  const done=()=>toast(`Prompt ${n} copied (${o.label}). Paste it into a new Copilot chat.`);
-  const fall=()=>{const ta=document.getElementById('cpt'+n);if(!ta)return toast('Copy blocked: open "Show Prompt '+n+' text" and copy it');ta.closest('details').open=true;ta.focus();ta.select();try{document.execCommand('copy')?done():toast('Text selected: press Cmd-C to copy Prompt '+n)}catch(e){toast('Text selected: press Cmd-C to copy Prompt '+n)}};
+function copyPrompt(id){const all=[...CPR.fixed.map(o=>({k:o.id,label:o.label,text:o.text})),...CPR.pulse.prompts.map(o=>({k:String(o.n),label:`Prompt ${o.n} (${o.label})`,text:o.text}))];
+  const o=all.find(x=>x.k===String(id));if(!o)return;
+  if(!o.text){toast(o.label+' text not found in the prompts file');return}
+  const done=()=>toast(`${o.label} copied. Paste it into a new Copilot chat.`);
+  const fall=()=>{const ta=document.getElementById('cpt'+id);if(!ta)return toast('Copy blocked: open the text and copy it');ta.closest('details').open=true;ta.focus();ta.select();try{document.execCommand('copy')?done():toast('Text selected: press Cmd-C to copy '+o.label)}catch(e){toast('Text selected: press Cmd-C to copy '+o.label)}};
   if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(o.text).then(done,fall);else fall()}
 $('#helpBtn').onclick=async()=>{const j=await (await fetch('/api/guide')).json();SEL=null;
   $('#panel').innerHTML=`<div class="p-top">${head('','Help')}</div><div class="p-sec md">${md(j.markdown)}</div>`;
