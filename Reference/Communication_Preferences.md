@@ -283,6 +283,16 @@ Darryl: "No one but my team knows what PODs are." In any material that leaves th
 
 All outbound material and working files in US English: license, labor, modeling, organization, color, center, analyze, program, amortize, capitalize. Caught on the CDA deck and pro forma on 2026-09-30, where UK spellings had crept in across both files; 83 replacements were needed. Check before delivery.
 
+## Briefings: write for scanning (2026-10-19)
+
+Briefs are read in the web app's Briefs tab, usually between meetings. Darryl, 2026-10-19: the reader was "not as easy to read as I'd hoped." A readability scan of that day's weekly showed why: vocabulary was fine (grade 10.8), but 21 of 32 text blocks ran past 80 words. The rules:
+
+- A paragraph or bullet stays at or under 60 words; a sentence at or under 35. One idea per bullet.
+- Each Top-3 priority keeps its labelled fields (Business impact, Why you personally, Risk if delayed, Next step, Expected outcome). The reader turns them into a card, one field per line, with the next step highlighted; Word shows them as written.
+- Coverage and counts go in a short bulleted list, not a run-on sentence.
+- "Changes since last brief" is its own section.
+- Check with `Tools/brief_readability.py` before saving.
+
 ## Markdown for the Word pipeline (2026-10-05)
 
 Applies to any .md that goes through `Pandoc/` to become a .docx. The template and filter are described in `Pandoc/README.md`; these are the writing rules that make them work.
