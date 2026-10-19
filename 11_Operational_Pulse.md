@@ -8,9 +8,9 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Wesco Warehouse | Baseline | n/a | 16 | n/a | 2 | 0 | 0 | 0 |
 | Dell | Baseline | n/a | 104 | n/a | 13 | 2 | 2 | 1 |
 | Federal Reserve | Baseline | n/a | 25 | n/a | 0 | 0 | 0 | 5 |
+| Wesco Warehouse | Baseline | n/a | 16 | n/a | 2 | 0 | 0 | 0 |
 | Ford | Baseline | n/a | 15 | n/a | 0 | 0 | 0 | 3 |
 | Coca-Cola (TCCC) | Baseline | n/a | 6 | n/a | 0 | 0 | 1 | 1 |
 | Louvre Abu Dhabi | Baseline | n/a | 5 | n/a | 0 | 0 | 0 | 1 |
