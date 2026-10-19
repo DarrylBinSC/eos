@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-19 13:48 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-19 13:49 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-05 to 2026-10-19. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,8 +8,8 @@
 
 | Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|
-| Dell | 45 | At risk | no prior week | 6 | 1 | 3 | 2 |
 | Federal Reserve | 75 | Strained | no prior week | 0 | 0 | 0 | 5 |
+| Dell | 45 | At risk | no prior week | 6 | 1 | 3 | 2 |
 | Ford | 85 | Healthy | no prior week | 0 | 0 | 0 | 3 |
 | Wesco Warehouse | 92 | Healthy | no prior week | 1 | 0 | 0 | 0 |
 | Coca-Cola (TCCC) | 94 | Healthy | no prior week | 0 | 0 | 1 | 1 |
