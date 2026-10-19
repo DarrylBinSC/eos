@@ -137,6 +137,18 @@ Darryl generally wants:
 - Direct wording
 - Limited jargon unless the audience is technical
 
+### CEO deep-dive update slides (Darryl, 2026-10-19, John Engel deep dive)
+
+Learned while updating the entroCIM and WAM update slides in the Engel deep-dive deck (slide owner's template: Product Update / Commercial Update, Business Sponsor and Product Executive line).
+
+- Keep the deck owner's slide structure; update content bullet by bullet from the EOS record rather than rewriting the slide.
+- Mirror the original's verb-led openers (Delivered, Established, Scheduled, Reduced); in-progress items take a present participle (Reconciling, Transitioning, Working with).
+- Four or five bullets per section at most; one line to a line and a half each. If a bullet needs a second clause to explain itself, it is too detailed for the CEO.
+- Internal governance names are welcome (DCOE, AI Council, C2P, FY27 AOP, GPOs); they ground the update in company process. Rollout day counts, feature inventories, per-learner prices, vendor names and reviewer-level detail go to the talk track.
+- Realized-value figures belong on the slide when they exist (WAM Sales Operations scorecard); attribution of who reported them stays verbal.
+- Drop bullets that describe ordinary delivery work (a data-enrichment release, an order-coverage change); the CEO reads them as noise.
+- Constraints are stated as one plain sentence of dependency, not a list of gaps and owners; the detail sits on a backup slide.
+
 ## 5. Benefit Notes Format
 
 Preferred notes structure:

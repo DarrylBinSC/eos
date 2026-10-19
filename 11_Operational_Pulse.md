@@ -1,14 +1,14 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-16 16:33 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-19 15:36 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-> Rolling window 2026-10-02 to 2026-10-16. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
+> Rolling window 2026-10-05 to 2026-10-19. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
 ## Account health
 
 | Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|
-| Dell | 46 | At risk | no prior week | 6 | 1 | 2 | 2 |
+| Dell | 45 | At risk | no prior week | 6 | 1 | 3 | 2 |
 | Federal Reserve | 75 | Strained | no prior week | 0 | 0 | 0 | 5 |
 | Ford | 85 | Healthy | no prior week | 0 | 0 | 0 | 3 |
 | Wesco Warehouse | 92 | Healthy | no prior week | 1 | 0 | 0 | 0 |
@@ -39,24 +39,24 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Akansh Gangil | 0 | 0 | 19 | 0 |  |
-| Ron Snyder | 1 | 0 | 10 | 0 | 2026 Deployment Daily Scrum |
-| Syed Jamshed Zaidi | 4 | 0 | 6 | 0 | 2026 Deployment Daily Scrum |
-| Natalie Marquardt | 0 | 0 | 9 | 0 |  |
-| Chad Steger | 0 | 2 | 8 | 0 | 2026 Deployment Daily Scrum |
-| Babu Papanna | 0 | 0 | 7 | 0 |  |
-| David Blondel | 0 | 0 | 5 | 0 |  |
-| Nathan Kehr | 0 | 0 | 5 | 0 |  |
-| Scott Dunn | 0 | 2 | 4 | 0 | 2026 Deployment Daily Scrum |
-| Adam Lazare | 0 | 0 | 4 | 0 |  |
+| Akansh Gangil | 0 | 0 | 13 | 0 |  |
+| Syed Jamshed Zaidi | 4 | 0 | 2 | 0 | 2026 Deployment Daily Scrum |
+| Chad Steger | 0 | 2 | 6 | 0 | 2026 Deployment Daily Scrum |
+| Natalie Marquardt | 0 | 0 | 5 | 0 |  |
+| Ron Snyder | 1 | 0 | 3 | 0 | 2026 Deployment Daily Scrum |
+| Babu Papanna | 0 | 0 | 4 | 0 |  |
+| Nathan Kehr | 0 | 0 | 4 | 0 |  |
+| Adam Lazare | 0 | 0 | 3 | 0 |  |
 | Amy Aguirre | 0 | 0 | 3 | 0 |  |
 | Ankit Chadha | 0 | 0 | 3 | 0 |  |
+| Sean McCloskey | 0 | 0 | 3 | 0 |  |
+| Tim Scott | 0 | 0 | 3 | 0 |  |
 
 Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own. Sole holder: knowledge areas they hold without a confirmed backup.
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stuck 1, quiet 3. Last sighting: 2026-10-15. Last evidence: 2026-10-16.
+Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stuck 1, quiet 4. Last sighting: 2026-10-15. Last evidence: 2026-10-16.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -68,7 +68,7 @@ Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stu
 | P003 | Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation | Dell | Syed Jamshed Zaidi | Medium | 2026-10-15 | 2026-10-15 | 1 |  |
 | P004 | Dell visualization scope unsettled: point pages only, or basic graphics and floor plans (El Dorado) | Dell |  | Medium | 2026-10-15 | 2026-10-15 | 1 | customer-visible |
 
-Quiet (no sighting in 14+ days; confirm with the team whether resolved): P007 PC1/JCI large-scale point faults and intermittent site access; P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration.
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P007 PC1/JCI large-scale point faults and intermittent site access; P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review.
 
 ## entroCIM Daily Stand Up
 
@@ -92,9 +92,9 @@ No issues in the Pulse yet.
 
 ## Quest Migration Weekly Check-In
 
-Governance: Project management. Owner: Chad Steger. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-09-14 (none in the window).
+Governance: Project management. Owner: Chad Steger. Live 0, new this week 0, stuck 0, quiet 1. Last sighting: 2026-09-16. Last evidence: 2026-09-16 (none in the window).
 
-No issues in the Pulse yet.
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P013 Quest exit inventory: what must be retained and transferred to Wesco.
 
 ## Showcase recurring
 

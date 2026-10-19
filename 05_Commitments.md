@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-16 16:33 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-19 15:36 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 119 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 80 (Critical 17) · Needs triage 0.
 
 ---
 
@@ -53,25 +53,16 @@ Four registers. The delineation is the point.
 | # | Item | Owner | Type | Gate / Due | Critical? | Last evidence | Note |
 |---|---|---|---|---|---|---|---|
 | C8 | JCI technical data for the WAB submission | Jeff McCorvey | Awaited | 2026-07-30 NEED BY | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: JCI technical preparation rather than contract or customer exposure. |
-| C4 | Backup email distribution list for failed notification routing | Natalie Marquardt | Awaited | 2026-08-03 Before | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: minor and superseded by the shipped notification release. |
-| C16 | Agreed, documented basis for FY27 financial assumptions | Tom Boss / Finance, with Darryl | Awaited | 2026-08-07 Recommend | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: the FY27 AOP has now submitted on these assumptions, so this is a question about what was submitted rather than a gate in front of anything. |
-| B35 | Internal assessment of developer AI access and cost allocation | Sudhi Rao | Delegated | 2026-08-14 open-input target | -- | 2026-08-14 | Feeds the same AOP AI-cost question as A25 |
-| B48 | Complete the Innovance LicenseManager privacy survey assessment | Akansh Gangil (with Balasubramanian K) | Delegated | 2026-08-20 | -- | 2026-08-20 | New 08-19. |
-| B57 | Research Intel SceneScape fit and return an answer on roadmap displacement and joint go-to-market | Ron Snyder | Delegated | 2026-08-20 End of week following | -- | 2026-08-20 | Ron Snyder: "Yeah, I'll start looking into it and get you an answer." Owed to Ajay Bhat and Intel / Innovation Center |
-| B63 | Schedule the ALM walkthrough for the I2S team, including the entire I2S team on the invitation | Akansh Gangil | Delegated | 2026-08-31 Week of | -- | 2026-08-31 | Darryl: "I will ask Akansh Gangil to schedule this for sometime next week." Beatrice Hernandez asked that the full I2S team be included. |
-| B64 | Issue legal termination notice for Jeff Verdon's contractor engagement | Chris Gazdic | Delegated | 2026-08-31 to preserve a September end date — passed | -- | 2026-08-31 | Gated on Darryl confirming the decision with Babu and giving Chris the answer (see A-candidate note below). |
-| C44 | Send WAM/Strev enhancement ticket numbers for bulk parent-child linking and warranty-date calculation | Violet Moyer | Awaited | 2026-09-01 After the call | -- | 2026-09-01 | New 09-09. |
+| B64 | Issue legal termination notice for Jeff Verdon's contractor engagement | Chris Gazdic | Delegated | 2026-08-31 to preserve a September end date — passed | -- | 2026-10-19 | Gated on Darryl confirming the decision with Babu and giving Chris the answer (see A-candidate note below). |
 | B74 | Investigate IDP engineering capacity via John, Sathish, and the Bangalore AI team | Ankit Chadha | Delegated | 2026-09-02 Within one to two weeks of | -- | 2026-10-05 | New 09-09. |
-| B70 | Preserve an administrative Ford SOW copy and extend view access to Bill Rose, Lindsay Cotten, and Natalie Marquardt | Leanne Gordon | Delegated | 2026-09-14 Trigger fired — now live | -- | 2026-09-14 | New 09-09. |
-| B82 | Send a follow-up email on the outstanding Azure listener dependency if unresolved after one more day | Babu Papanna | Delegated | 2026-09-17 | -- | 2026-09-17 | New 09-16. |
+| B82 | Send a follow-up email on the outstanding Azure listener dependency if unresolved after one more day | Babu Papanna | Delegated | 2026-09-17 | -- | 2026-10-19 | New 09-16. |
 | C50 | Strev pricing for the Virtual Site Survey: professional services development price, and a per-site run rate | Sunny Sharma and Christina (Revnue), chased by Amy Aguirre | Awaited | 2026-09-17 Requested on or before ; not dated | -- | 2026-09-17 | New 2026-09-17. |
-| C43 | Define Ford pricing-model language | Leanne Gordon | Awaited | 2026-09-19 confirm or close | -- | 2026-09-19 | New 09-09. |
-| B80 | Generate 25 targeted smart-building accounts, ≥2 stakeholders each, assign to Sales | Nathan Kehr / Centralized Sales (team goal — individual owner not stated) | Delegated | 2026-09-23 | -- | 2026-09-23 | Inferred attribution — email defines a team goal, no individual quoted accepting it. |
+| C43 | Define Ford pricing-model language | Leanne Gordon | Awaited | 2026-09-19 confirm or close | -- | 2026-10-19 | New 09-09. |
 | B91 | Update the commercialization deck with product-owner input (support ownership, service levels, onboarding, scale readiness) for WAM, entroCIM, Navigator and CDA | Sridhar Loke and product owners | Delegated | 2026-09-29 Within one week of (exact date not stated) | -- | 2026-10-06 | New 2026-10-01; |
 | B90 | Schedule a requirements-definition call with Alan, Daniel and Ramesh on the WAM/ADM complex-build capture path | Akansh Gangil | Delegated | 2026-09-30 Stated as "next week" (as of ); not yet scheduled — confirm date | -- | 2026-10-15 | New 2026-10-01 (M365 evidence, 2026-09-28 to 2026-09-30). |
 | C61 | Walmart conversation for CDA, refrigeration and produce systems as the entry point through Wesco's MRO relationship | David Fisher | Awaited | 2026-10-02 Longer term (Darryl, ): not before CDA is further into development; revisit when a pilot is running | -- | 2026-10-02 | New 2026-10-02. |
-| B72 | Share the entroCIM 3.1.12.14 release deck and build sales messaging with Valli Poornakumar and Leanne Gordon | David Blondel | Delegated | 2026-10-05 Before | -- | 2026-10-05 | New 09-09. |
-| C65 | Emily Munk's reply and a 30-minute walkthrough of CDA: TSS delivery and support ownership, positioning for TSS, route to Greg O'Brien | Emily Munk | Awaited | 2026-10-07 Requested within two weeks of (by 2026-10-21) | -- | 2026-10-14 | New 2026-10-07. |
+| B72 | Share the entroCIM 3.1.12.14 release deck and build sales messaging with Valli Poornakumar and Leanne Gordon | David Blondel | Delegated | 2026-10-05 Before | -- | 2026-10-19 | New 09-09. |
+| C65 | Emily Munk's reply and a 30-minute walkthrough of CDA: TSS delivery and support ownership, positioning for TSS, route to Greg O'Brien | Emily Munk | Awaited | 2026-10-07 Requested within two weeks of (by 2026-10-21) | -- | 2026-10-19 | New 2026-10-07. |
 | B98 | Provide the larger WAM/MSAV data set to Akansh Gangil | Violet Moyer | Delegated | 2026-10-08 (now 5 days overdue) | -- | 2026-10-13 | New 2026-10-13 (weekly evidence, WAM Product discussion transcript, 2026-10-08). |
 | B101 | Revise the client-facing entroCIM deployment discussion framework per Darryl's comments and schedule a review call | Valli Poornakumar | Delegated | 2026-10-12 Late week of or early the following week | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | B102 | Validate remaining Strev SOW 3 deliverables (completed and outstanding), open bugs, and the notification mechanism | Akansh Gangil | Delegated | 2026-10-15 (review call) | **Critical** -- gates a dated vendor/commercial closure | 2026-10-15 | New 2026-10-14. |
@@ -80,90 +71,60 @@ Four registers. The delineation is the point.
 | B92 | Share the WAM/ADM data points already known to be required with the cross-SBU VAS/WMX/ADM/Strev working team | Akansh Gangil | Delegated | 2026-10-16 Ahead of the use-case deadline (not individually dated) | -- | 2026-10-15 | New 2026-10-01 (M365 evidence, 09-30 to 10-01). |
 | C63 | Outcome of Sean McCloskey's meeting with Akash Khurana on Digital Products taking over WAM development (the WAM team is still with Merwin's Platforms team) | Sean McCloskey | Awaited | 2026-10-19 After Sean's PTO; Darryl has no time with him before the week of | -- | 2026-10-14 | New 2026-10-06. |
 | B105 | Provide Ron Snyder guidance on tracking Claude Code usage | Naveen Kumar, coordinated by Ankit Chadha | Delegated | 2026-10-20 ~ (approximately one week; no ISO date stated) | -- | 2026-10-14 | New 2026-10-14. |
+| C72 | Ascent Navigator production WAB evidence pack, complete for the 2026-10-23 review | Not named in evidence (Navigator delivery team presumed; confirm with DJ Vaughn) | Awaited | 2026-10-23 Ascent Navigator - PROD WAB | **Critical** -- Gates something on a date: the 2026-10-23 production WAB review | 2026-10-19 | 2026-10-19 (Claude, weekly brief): New. |
 | B99 | Check whether reciprocal Wesco/manufacturer part-number completion can fit the current WAM Data Enrichment iteration | Akansh Gangil | Delegated | 2026-10-30 Before the enrichment target, if feasible | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
-| B10 | MDM attribute progress follow-up | Akansh Gangil | Delegated | IDP/WAM process review | -- | 2026-10-15 |  |
+| B10 | MDM attribute progress follow-up | Akansh Gangil | Delegated | IDP/WAM process review | -- | 2026-10-19 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm (aging sweep found resolution evidence, so this goes to Closed on Darryl's yes, not to Aged Out): DDPTRK-6346 marked complete via MDM Governance in the Digi… |
 | B100 | Confirm the MuleSoft/current integration architecture and prepare a WAM-limitations slide for Darryl, ahead of the Sean McCloskey capacity discussion | Akansh Gangil | Delegated | Before Darryl's Sean McCloskey discussion; exact date not stated | **Critical** -- feeds `05` A61 and the `03` WAM/ADM reduced-capacity reset Radar item directly | 2026-10-14 | New 2026-10-13 (weekly evidence, WAM Leadership Sync transcript, 2026-10-05). |
 | B106 | Complete WAM global-attributes analysis and set up a review call | Natalie Marquardt | Delegated | Not stated | -- | 2026-10-14 | New 2026-10-14. |
 | B107 | Discuss the full-manufacturer-part-number enhancement with engineering and determine next steps | Akansh Gangil | Delegated | Not stated | -- | 2026-10-15 | New 2026-10-14. |
-| B11 | ServiceNow integration timing for resource planning | Ron Snyder, Sean Comunale | Delegated | Darryl / Ron weekly 1:1 | -- | 2026-10-15 |  |
-| B12 | DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian | Akansh Gangil (reassigned 07-27) | Delegated | DDP Entrance Call (weekly) | -- | 2026-10-15 |  |
-| B14 | Update Dell ticketing/routing documentation | Scott Dunn | Delegated | Dell Service Management Process forum | -- | 2026-10-15 |  |
-| B17 | Confirm SAML/SSO closure for PaaS-01 through PaaS-06 | Babu Papanna / Senthil Chockkalingam | Delegated | Ticket closure confirmation (supports C6) | -- | 2026-10-15 |  |
+| B12 | DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian | Akansh Gangil (reassigned 07-27) | Delegated | DDP Entrance Call (weekly) | -- | 2026-10-19 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm. |
 | B18 | TCCC/AOC connectivity — five-step diagnostic sequence | Scott Dunn | Delegated | Before Wednesday customer discussion; Syed Zaidi tracking | **Critical** | 2026-10-15 | No evidence any of the five landed as of 08-03 |
 | B2 | Vendor attribute data collection ahead of CSS-DDP integration | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
 | B20 | Confirm why EUDM/DDP vendor part numbers are truncated; resend corrected Milestone Q2 data | Natalie Marquardt | Delegated | ADM connect with Natalie (weekly) | -- | 2026-10-15 | 08-12: reconfirmed and escalated — same 15-character vendor part-number limitation, still unresolved a cycle later; |
 | B21 | TCCC/AOC Managed Services follow-through (KMC tie-in, alarm-management meeting, recurring Dan Fife/Jesse Dougherty meeting) | Nathan Kehr / Sarah Monteleone / Scott Dunn | Delegated | Sequence after B18 holds | -- | 2026-10-15 | Do not let this get ahead of B18 |
-| B22 | WAM quarterly roadmap deck, Rhombus IDP design, AI-classification evaluation, taxonomy criteria | David Blondel / Akansh Gangil | Delegated | WAM Data Challenges forum (next session) | -- | 2026-10-15 |  |
-| B23 | Categorize Dell FTE Franklin tracker items; Scott Dunn review | Chethan GR / Scott Dunn | Delegated | Deployment Daily Scrum | -- | 2026-10-15 |  |
 | B24 | FRBNY QA-1 non-VPN test and map-defect root cause | Ron Snyder / Babu Papanna / Adam Slingerland | Delegated | Darryl / Ron weekly 1:1 | **Critical** | 2026-10-15 | Gates further FRB server updates. |
 | B25 | Confirm FRB SASTEC customer PO references the correct (Lab) environment | Sarah Monteleone / Lindsay Cotten | Delegated | FRB SASTEC pilot follow-up | **Critical** | 2026-10-15 | PO/provisioning mismatch risk |
-| B29 | Validate WAM SOW Batch 2 in QA; make the production go/no-go call | Akansh Gangil | Delegated | WAM Product Leadership Sync — documented QA outcome before production | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: Darryl does not take this decision, and the row says so. |
 | B3 | New attributes into P360 with Rochelle and Darren Taylor's team | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
 | B31 | LAD task assignments from the 08-04 deployment meeting | Syed Zaidi | Delegated | Dated closeout plan by owner and blocker | **Critical** | 2026-10-15 | Escalated LAD row in `04` |
 | B32 | Identify missing AQI and people-counting sensor data; integrate once fixed | Marjan Fathima / Valli Poornakumar; Adam Slingerland / Pradyumna Umarji | Delegated | LAD snag-list review | -- | 2026-10-15 | Route identified 08-04, integration not complete |
-| B33 | Reconcile a single authoritative entroCIM project-closeout package | Adam Lazare (with Mike Reed) | Delegated | Rescheduled closeout review | -- | 2026-10-15 | Prior documents "could be looked at two different ways" |
-| B38 | Investigate Freshdesk custom-mailbox (support.ec@wesco.com) send failure | Shawn Clark, Babu Papanna | Delegated | Reply to Darryl | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: the corresponding watch row was demoted to Passive on 08-25 after 18 days absent from the evidence. |
 | B4 | Ascent POC — get it running | Chad Steger (technical POC), Chris Askew (JACE access) | Delegated | Gate passed 08-15; superseded by direct evidence | -- | 2026-10-16 | Advanced, 09-15 to 09-28 evidence. |
-| B40 | Investigate automating manual sales-order extraction | Akansh Gangil | Delegated | Not dated | -- | 2026-10-15 | New 08-12. |
-| B42 | Check/complete AD group access mapping for Claude Code rollout | Darryl Benson | Delegated | — | -- | 2026-10-15 | Superseded 08-17 — promoted to Register A28. |
-| B43 | Document the entroCIM containerization deployment process for Sales and IT | David Blondel, with Darryl | Delegated | Not dated | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: internal documentation, no customer or contract exposure. |
-| B44 | Coordinate with Sarah Monteleone to finalize and close out the Federal Reserve lab project | Chad Steger | Delegated | Not dated | -- | 2026-10-15 | New 08-17, CSS Platforms All Hands. |
-| B45 | Complete BAE sensor integration | Chad Steger, Ron Snyder | Delegated | Not dated | -- | 2026-10-15 | New 08-17, CSS Platforms All Hands. |
-| B46 | Prepare and coordinate SkySpark 4 training rollout | Ron Snyder, Maggie Becker | Delegated | Not dated | -- | 2026-10-15 | New 08-17, CSS Platforms All Hands. |
-| B47 | Establish and communicate a ServiceNow migration timeline | David Blondel | Delegated | Not dated | -- | 2026-10-15 | New 08-17, CSS Platforms All Hands. |
+| B42 | Check/complete AD group access mapping for Claude Code rollout | Darryl Benson | Delegated | — | -- | 2026-10-19 | Superseded 08-17 — promoted to Register A28. |
 | B49 | Check legacy-system manufacturer part numbers and contact the UDM team (source of DDP/eUDM truncation) | Priyambada Dash | Delegated | Not dated | -- | 2026-10-15 | New 08-19, RE: Anixter P360 CORE Parts Character limitation for MANUFACTURER PART # in DDP (eUDM). |
 | B53 | Follow up the truncated manufacturer part number issue, summarise the need, and copy Darryl | Akansh Gangil | Delegated | Immediately, per 08-25 | **Critical** | 2026-10-15 | Akansh Gangil: "I will drop an e-mail and copy you also." Feeds A29 — if this produces no owner, A29 fires. |
-| B54 | Confirm what Dell is requesting for SOC 2 / security evidence and whether it gates anything | Syed Jamshed Zaidi | Delegated | Not stated | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a clarification question; |
 | B55 | Draft a one-page Dell response stating SOC 2 does not apply to a customer-hosted, customer-operated deployment | Syed Jamshed Zaidi | Delegated | After B44 clarifies | **Critical** | 2026-10-15 | Darryl: "To me for review before it goes out." Darryl reviews before send |
-| B56 | Determine whether the TCCC 62443-4-1 material can be repurposed for the Dell response | Ron Snyder | Delegated | Not stated | -- | 2026-10-15 | Darryl: "Ron, can we repurpose the TCCC work you are all working on and offer the 62443-4-1 material already being produced?" |
 | B58 | Provide the entroCIM AI one-pager details: business value, costs, benefits, incremental revenue | Ron Snyder | Delegated | Not stated | -- | 2026-10-15 | Gates the AI Tech Review submission. |
 | B60 | Export and audit the Freshdesk user-access report for Ford | Chad Steger | Delegated | Not dated | -- | 2026-10-15 | New 08-27. |
 | B61 | Contact UDAC POC Atif Iqbal to confirm receipt of pod updates and offer remote assistance | Chad Steger | Delegated | Not dated | -- | 2026-10-15 | New 08-27. |
 | B62 | Coordinate an over-the-shoulder audit of UDAC entroCIM environments (versions, licensing, integrations, data quality, system health) and document recommendations | Chad Steger / Tim Scott | Delegated | Not dated | **Critical** | 2026-10-15 | New 08-27. |
-| B66 | Keep Akansh Gangil copied on Milestone reports; route incomplete-data questions through Natalie Marquardt | Natalie Marquardt | Delegated | Not dated | -- | 2026-10-15 | Inferred. |
-| B67 | Review production impact before enabling WAM/ADM notification custom fields | Natalie Marquardt | Delegated | Approx. end of 2026-09 | -- | 2026-10-15 | Inferred. |
 | B73 | Identify managed-services resources and headcount for day-two entroCIM monitoring | Brad Stevens and Nathan Kehr | Delegated | Not dated | -- | 2026-10-15 | New 09-09. |
-| B75 | Provide Ross with the additional Azure Foundry authentication requirements | Ron Snyder | Delegated | Not dated | -- | 2026-10-15 | New 09-14. |
-| B78 | Follow up on Panama UPS login information | Syed Jamshed Zaidi | Delegated | Not dated | -- | 2026-10-15 | Owed to Matthew Heid. |
-| B81 | Complete the Quest exit inventory and identify what must be retained and transferred to Wesco | Babu Papanna and Shawn Clark | Delegated | Not dated | -- | 2026-10-15 | New 09-16. |
-| B84 | Assist with fleet-wide Dell cluster configuration cleanup following the session-loss RCA | Syed Jamshed Zaidi, with Elias Brewer | Delegated | Not dated | -- | 2026-09-18 | New 2026-09-18. |
 | B85 | Priya Agarwal to Nathan Kehr introduction + co-sell plan | Nathan Kehr | Delegated | Not dated | -- | 2026-09-18 | Moved from Register A (A7) at the 2026-09-18 disposal sweep, Darryl approved. |
 | B86 | Respond to Cybersecurity GRC on the CrowdStrike Azure VM ingress-rule remediation | Ron Snyder | Delegated | Not dated | -- | 2026-09-18 | Moved from Register A (A32) at the 2026-09-18 disposal sweep, Darryl approved. |
 | B88 | Finalize the WAM/ADM resource needs and skill sets required by the new Wesco-owned-data strategy | Akansh Gangil | Delegated | Not dated | -- | 2026-09-28 | New 2026-09-28. |
 | B89 | Prepare Dell executive-summit value/benefit content with named platform leads | Adam Lazare, with named platform leads | Delegated | End of October 2026 (exact date not stated) | -- | 2026-09-28 | New 2026-09-28. |
-| B9 | entroCIM release controls applied consistently | Ron Snyder | Delegated | Darryl / Ron weekly 1:1 | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: release-governance discipline with no date and no external exposure. |
 | B93 | Confirm Mosquitto/FOSS approval status for production MQTT with Hansraj's team and report by email | Babu Papanna | Delegated | Not dated | -- | 2026-10-05 | New 2026-10-01. |
 | B96 | Coordinate Ford audit resources once the customer schedules the system audit | Chad Steger | Delegated | Gated on Tim Scott scheduling the audit; no date yet | -- | 2026-10-07 | New 2026-10-07 (daily evidence, folded into this week's reconciliation). |
 | B97 | Send Ford account credentials and establish a shared SharePoint exchange area for the working team | Jacob Nicosia | Delegated | Not stated | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | C10 | JCI open contract items (8) | JCI / Brian Miller / Wesco Legal | Awaited | Gate: C1 markup | **Critical** | 2026-10-15 | Eight rows consolidated. |
-| C14 | Confirm JCI Airwall Conductor API access requirements | Babu Papanna / Shawn Clark | Awaited | Not dated | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: JCI technical preparation; |
-| C15 | Guidance on how to proceed with the WAM AI Council presentation | Keyur Patel | Awaited | Not dated — new 08-05 | -- | 2026-10-15 | Gates A8 |
-| C17 | Provide FAQ SharePoint URL and suggested email text for the MVP1 rollout | Natalie Marquardt | Awaited | Not dated | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: companion to C4, same reasoning. |
+| C14 | Confirm JCI Airwall Conductor API access requirements | Babu Papanna / Shawn Clark | Awaited | Not dated | -- | 2026-10-19 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: JCI technical preparation; |
 | C30 | Share the blank AI intake template and shepherd the entroCIM AI use case through review | Sourav Pradhan | Awaited | Immediately after the 08-19 session | -- | 2026-10-15 | Sourav Pradhan: "I will share a default blank template with you immediately after this meeting." New governance relationship |
 | C31 | Check whether the entroCIM AI initiative has a SOX impact | Sourav Pradhan | Awaited | Not stated | -- | 2026-10-15 | Sourav Pradhan: "Mostly I will check with Stephen from SOX team to see if there is any bit of impact." |
 | C32 | Return the software/licence catalogue leaf nodes needed to identify licence products for ADM onboarding | Jen Turnage | Awaited | Awaiting response ~2 weeks as of 08-25 | **Critical** | 2026-10-15 | Blocks supplier and software onboarding. |
 | C33 | Review supplier data for missing SLCs and dates and return it for correction | Natalie Marquardt | Awaited | Not stated | -- | 2026-10-15 | Natalie Marquardt: "I'll have a relook at that one." Business-quality gate for ADM supplier data |
-| C34 | Provide the Federal Reserve's proposed training topics, audience and preferred timing | Sarah Monteleone | Awaited | Not stated | -- | 2026-10-15 | David Blondel: "For the Federal Reserve request, please send us the proposed topics, audience, and preferred timing." |
 | C35 | Provide the Ford support scope document covering priorities and escalation process | Adam Lazare | Awaited | Not stated | **Critical** | 2026-10-01 | Adam Lazare: "There will be a forthcoming scope document provided laying out the new process including Priorities, Escalations, etc." UDAC coverage extended to 2026-10-01 meanwhile. |
 | C36 | Sponsor approval for the entroCIM AI (Woolly) initiative | Sean McCloskey | Awaited | After Ron Snyder's one-pager (B58) reaches AI Tech Review | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a real gate, but nothing is waiting on Sean until Ron Snyder's one-pager (B58) exists. |
 | C37 | Confirm Ford renewal PO structure — one consolidated PO or separate POs | Tim Scott / Jeffrey Pizzo, Ford finance | Awaited | Not dated | -- | 2026-10-15 | New 08-27. |
 | C38 | Determine Ford's approved secure remote-access method and provide requirements to Wesco | Tim Scott / Adam Lazare | Awaited | Not dated | -- | 2026-10-15 | New 08-27. |
 | C39 | Confirm current and future-state IDP document-volume assumptions (10 vs. 50 documents/day cited) | Owner unconfirmed — WAM/ADM/IDP team | Awaited | Not dated | -- | 2026-10-15 | Owed to Moe Aminlari. |
-| C40 | Send the FRB SASTEC agreement to Nathan Kehr for signature | Owner unclear (sender not named in evidence) | Awaited | Not dated | -- | 2026-10-15 | New 08-27. |
-| C41 | Sign the FRB SASTEC agreement once received | Nathan Kehr | Awaited | Not dated | -- | 2026-10-15 | New 08-27. |
+| C40 | Send the FRB SASTEC agreement to Nathan Kehr for signature | Owner unclear (sender not named in evidence) | Awaited | Not dated | -- | 2026-10-19 | New 08-27. |
+| C41 | Sign the FRB SASTEC agreement once received | Nathan Kehr | Awaited | Not dated | -- | 2026-10-19 | New 08-27. |
 | C42 | Help identify CDA pilot accounts and route engagement through sales leadership | Chris Mooney and Bill Muczko | Awaited | Not dated | -- | 2026-09-18 | Darryl: "I am asking for your view on whether it is worth building and for your help finding two or three pilot accounts." Companion to A37; |
 | C45 | i3 Alliance Agreement — Wesco signature | Lee Osterman | Awaited | Gated on A41 (Section 12 redline must go back to Brandon Thompson first) | **Critical** | 2026-09-17 | Lee Osterman, explicit: "I will sign once it comes back." Legal confirmed a VP may sign without Finance input since the agreement itself doesn't generate sales directly. |
-| C47 | Send Darryl the existing portfolio deck link | Chris Gazdic | Awaited | Not dated | -- | 2026-10-15 | New 09-16. |
-| C48 | Complete and share the one-slide-per-product strategic deck with each product owner | Sridhar Loke | Awaited | Not dated | -- | 2026-10-15 | New 09-16. |
-| C5 | UWM customer sign-off enabling decommission | Syed Zaidi | Awaited | Not dated | -- | 2026-10-15 | Dual-environment cost until closed |
 | C52 | Amy's UiPath intake filing for the Strev AI use cases, and the demo requested in front of "Kehr" | Amy Aguirre | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C53 | Wade Bursch's business case and PowerPoint for the Virtual Site Survey | Wade Bursch (TS; reports to Matt Powers) | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
-| C55 | Decide an approved path (policy exception or alternate environment) for the entroCIM RFP Intelligence Power Platform POC, currently blocked by DLP | Power Platform governance — owner unclear | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C57 | Provide Dell budgetary server pricing for FRB Cash Services through the lowest-cost procurement avenue (Rahi banner constraint) | Todd Hicks / Natalie Marquardt | Awaited | Not dated | **Critical** | 2026-10-16 | New 2026-09-18. |
 | C58 | Identify the current Cisco-side owner of the Cisco Connected Real Estate opportunity (NetBotz replacement, MDF power visibility) and tell Dave McCain that CDA is in development | Bob Caprise | Awaited | Not dated | -- | 2026-09-18 | New 2026-09-18. |
-| C59 | Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment | Bob Caprise | Awaited | On Darryl's email | -- | 2026-09-18 | New 2026-09-18. |
-| C60 | Send Darryl the WAM/ADM slide deck or link, with Azure Databricks added to the integration-engineer skill description | Akansh Gangil | Awaited | Not dated | -- | 2026-10-01 | New 2026-10-01. |
+| C59 | Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment | Bob Caprise | Awaited | On Darryl's email | -- | 2026-10-19 | New 2026-09-18. |
 | C62 | Dell's request for a second dedicated entroCIM/EMS FTE within three to five months -- assess and recommend whether Wesco commits to the hire | Chad Steger (assessment); decision owner not yet named | Awaited |  | **Critical** -- customer-driven staffing ask with a real lead time; silence has a cost if recruiting needs to start | 2026-10-05 | New 2026-10-05. |
 | C64 | More information on Aris (scope, product, team, timing of the move to Sean) | Sean McCloskey / Prassada | Awaited | Not dated; Darryl pausing the investigation until he hears more | -- | 2026-10-06 | New 2026-10-06. |
 | C67 | Replies from Amy Aguirre, Senthil Govindaswamy and Natalie Marquardt naming any workflows currently dependent on ADM to Strev sync | Amy Aguirre, Senthil Govindaswamy, Natalie Marquardt | Awaited | Not dated | -- | 2026-10-07 | New 2026-10-07. |
@@ -285,6 +246,43 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date aged out | Item | Was | Gate/date it passed | Reopened? |
 |---|---|---|---|---|
+| 2026-10-19 | Send Darryl the WAM/ADM slide deck or link, with Azure Databricks added to the integration-engineer skill description | C60 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Decide an approved path (policy exception or alternate environment) for the entroCIM RFP Intelligence Power Platform POC, currently blocked by DLP | C55 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | UWM customer sign-off enabling decommission | C5 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Complete and share the one-slide-per-product strategic deck with each product owner | C48 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Send Darryl the existing portfolio deck link | C47 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Send WAM/Strev enhancement ticket numbers for bulk parent-child linking and warranty-date calculation | C44 | 2026-09-01 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Backup email distribution list for failed notification routing | C4 | 2026-08-03 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Provide the Federal Reserve's proposed training topics, audience and preferred timing | C34 | Not stated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Provide FAQ SharePoint URL and suggested email text for the MVP1 rollout | C17 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Agreed, documented basis for FY27 financial assumptions | C16 | 2026-08-07 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Guidance on how to proceed with the WAM AI Council presentation | C15 | Not dated — new 08-05 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | entroCIM release controls applied consistently | B9 | Darryl / Ron weekly 1:1 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Generate 25 targeted smart-building accounts, ≥2 stakeholders each, assign to Sales | B80 | 2026-09-23 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Follow up on Panama UPS login information | B78 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Provide Ross with the additional Azure Foundry authentication requirements | B75 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Preserve an administrative Ford SOW copy and extend view access to Bill Rose, Lindsay Cotten, and Natalie Marquardt | B70 | 2026-09-14 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Review production impact before enabling WAM/ADM notification custom fields | B67 | Approx. end of 2026-09 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Keep Akansh Gangil copied on Milestone reports; route incomplete-data questions through Natalie Marquardt | B66 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Schedule the ALM walkthrough for the I2S team, including the entire I2S team on the invitation | B63 | 2026-08-31 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Research Intel SceneScape fit and return an answer on roadmap displacement and joint go-to-market | B57 | 2026-08-20 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Determine whether the TCCC 62443-4-1 material can be repurposed for the Dell response | B56 | Not stated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Confirm what Dell is requesting for SOC 2 / security evidence and whether it gates anything | B54 | Not stated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Complete the Innovance LicenseManager privacy survey assessment | B48 | 2026-08-20 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Establish and communicate a ServiceNow migration timeline | B47 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Prepare and coordinate SkySpark 4 training rollout | B46 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Complete BAE sensor integration | B45 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Coordinate with Sarah Monteleone to finalize and close out the Federal Reserve lab project | B44 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Document the entroCIM containerization deployment process for Sales and IT | B43 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Investigate automating manual sales-order extraction | B40 | Not dated | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Investigate Freshdesk custom-mailbox (support.ec@wesco.com) send failure | B38 | Reply to Darryl | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Internal assessment of developer AI access and cost allocation | B35 | 2026-08-14 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Reconcile a single authoritative entroCIM project-closeout package | B33 | Rescheduled closeout review | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Validate WAM SOW Batch 2 in QA; make the production go/no-go call | B29 | WAM Product Leadership Sync — documented QA outcome before production | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | WAM quarterly roadmap deck, Rhombus IDP design, AI-classification evaluation, taxonomy criteria | B22 | WAM Data Challenges forum (next session) | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Confirm SAML/SSO closure for PaaS-01 through PaaS-06 | B17 | Ticket closure confirmation (supports C6) | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | Update Dell ticketing/routing documentation | B14 | Dell Service Management Process forum | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
+| 2026-10-19 | ServiceNow integration timing for resource planning | B11 | Darryl / Ron weekly 1:1 | Presumed resolved by silence, not confirmed. Reopens on contradicting evidence. |
 | 2026-08-25 | JCI Tech Talk video, consultant booking link, Aug-15 POC invite | C9 | — | Not reopened. |
 | 2026-08-25 | Power BI dashboard access | C3 | — | Not reopened. |
 | 2026-08-25 | Export the ADM database for the WAM Data Challenges team | B7 | — | Not reopened. |
@@ -304,6 +302,9 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Item | Was | Dropped | Reason |
 |---|---|---|---|
+| **Assist with fleet-wide Dell cluster configuration cleanup following the session-loss RCA** | B84 | 2026-10-19 | Returned to team governance; tracked in the Pulse as P008. Reversible: set status to open. |
+| **Complete the Quest exit inventory and identify what must be retained and transferred to Wesco** | B81 | 2026-10-19 | Returned to team governance; tracked in the Pulse as P013. Reversible: set status to open. |
+| **Categorize Dell FTE Franklin tracker items; Scott Dunn review** | B23 | 2026-10-19 | Returned to team governance; tracked in the Pulse as P012. Reversible: set status to open. |
 | **Interview the EES team on asset-tracking requirements and document use cases before development begins** | B87 | 2026-10-16 | New 2026-09-28 (14-day evidence window). |
 | **Book a review with Robbie and the Dell IT team on the entroCIM application topic** | B110 | 2026-10-16 | Created this morning under the old intake rule; moved to the Pulse as P003. |
 | **Track and log the Dell PC1 meter discrepancies so they are not lost** | B109 | 2026-10-16 | Created this morning under the old intake rule; moved to the Pulse as P002. |

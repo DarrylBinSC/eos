@@ -22,6 +22,16 @@
 
 ## Decisions Made
 
+### 2026-10-16 — Operational Pulse: team-governed forums leave the registers (lane model)
+- Status: Made
+- Owner: Darryl Benson
+- Context: Issues from the Deployment Daily Scrum, the entroCIM Daily Stand Up and eleven other team-governed forums were entering the registers as Darryl's items; six of 27 Watch Active items on 10-16 cited the Daily Scrum. Darryl: he does not track those, each team's governance does; he wants visibility and the ability to lean in, in the web app.
+- Options considered: keep filtering by the 08-25 sprint-task rule; exclude the forums; route them to a separate lane.
+- Decision / Recommended path: a lane, not an exclusion. Signals from the 13 confirmed team-governed forums go to `Registers/pulse/` and reach the registers only when Darryl escalates on one of four tests (asked, boundary, stuck, gap). Dell health score, pinned in the web app; two weekly governance tracks (delivery: Chad Steger and Syed Jamshed Zaidi; development: Ron Snyder and David Blondel), Darryl-owned. Same day: P001, P004 and K005 left with the team; K002 and K003 resolved on Darryl's notes.
+- Risk of waiting (if open): n/a.
+- Forum where this should be decided: decided in session, 2026-10-16.
+- Follow-up: schedule the first delivery and development governance sessions (`07`, "Weekly, to be scheduled"); calibrate Dell health at the first weekly (2026-10-19). Recorded here 2026-10-19; it was in `CLAUDE.md` but had not reached this log.
+
 ### 2026-10-15 — EOS registers moved to one item per file; LAN web app adopted with the "Ledger" (1a) design
 - Status: Made
 - Owner: Darryl Benson
@@ -798,9 +808,9 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-16 16:33 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-19 15:36 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 25.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
 ### 2026-10-07 — WAM/ADM reduced-capacity reset: what runs, completes, stops or defers
 - ID: D001
@@ -950,33 +960,6 @@
 - Risk of waiting: the FY27 case is written on a roadmap the market is not currently buying, and the gap is discovered at review rather than declared by Darryl.
 - Follow-up: cross-reference `Products/WAM/WAM.md` framing correction (08-05) and `Products/WAM/WAM_Roadmap.md`, which is the license-track roadmap rather than the complete WAM plan.
 
-### 2026-07-27 — AI-enabled development pilot approved — Copilot + Claude Design, Orlando workshop
-- ID: D035
-- Owner: Sean McCloskey (direction), Digital Products leadership (execution)
-- Forum: Digital Products / Agile Staff Meeting.
-- Next action: Sean owes Darryl's team (and Dj Vaughn) additional Claude Design licenses — track under Commitments Owed to Darryl (05).
-- Added: 2026-07-27 (M365 weekly evidence — Digital Products / Agile Staff Meeting 07-21)
-- Context: a pilot for a fully AI-enabled development cycle using GitHub Copilot and Claude Design was approved, including a planned two-day Orlando workshop for portal requirements and design (feeds the QPMSupport portal initiative). Moves AI adoption from concept into a live delivery-method experiment — connects directly to the standing "AI adoption governance + team assignment" watch item and to Darryl's owed deliverable (product ideas + AI-researched needs analysis for Sean).
-- Risk of waiting: Claude Design license distribution and product-owner training are unresolved — the pilot could proceed unevenly across teams without them.
-
-### 2026-07-27 — Product ownership model shift — two-tier structure (GPO peer + Claude Design owner)
-- ID: D034
-- Owner: Sean McCloskey (per evidence, Inferred — not independently confirmed)
-- Forum: Digital Products / Agile Staff Meeting (weekly).
-- Next action: confirm this reading directly — evidence marks the decision-maker as Inferred, and it materially changes product-owner role expectations across the portfolio.
-- Added: 2026-07-27 (M365 weekly evidence — Digital Products / Agile Staff Meeting 07-21; decision-maker Inferred as Sean McCloskey)
-- Context: product ownership model shifting toward a two-tier structure — a GPO peer role and a Claude Design owner role — with training and license distribution not yet resolved. Affects how product requirements, customer sessions, design artifacts, and handoffs get owned going forward; touches hiring/staffing expectations.
-- Risk of waiting: the AI-enabled development pilot and new ownership model could stall or land inconsistently across teams without a license/training plan.
-
-### 2026-07-27 — entroCIM release governance tightened — DCOE-driven production controls (new 2026-07-27)
-- ID: D032
-- Owner: Ron Snyder
-- Forum: Daily Stand Up (entroCIM).
-- Next action: confirm with Ron that the new controls are applied consistently, not just discussed once; watch whether the shared-component/repo decision lands on the same governance model.
-- Added: 2026-07-27 (M365 weekly evidence — Daily Stand Up 07-21)
-- Context: distinct from the already-closed 07-22 DCOE compliance-hold entry (that one was about release 3.1.12.13 specifically and is resolved/approved). This is a **forward-looking process change**: production code now requires tagging, two reviewers, a GitHub commit, conventional-commit format with JIRA issue numbers, and documented testing evidence before release. Ron stated the standup-cycle release was on hold pending this sign-off discipline.
-- Risk of waiting: inconsistent adoption across teams could leave DCOE evidence gaps recurring rather than resolved; a related open decision (shared UI component/helper repo and release-documentation strategy across front-end teams — Joseph Kusnir, Priyatosh Patra, Michael Pieschel, David Blondel, Ron Snyder) could keep release evidence inconsistent if not aligned to the same standard.
-
 ### 2026-07-23 — New product concept for AOP 2027 funding proposal
 - ID: D017
 - Status: Approaching — initiative in Phase 3/4 (funding package and AOP intake)
@@ -1011,44 +994,6 @@
 - Risk of waiting: AOP 2027 cycle timing; concept needs research validation (competitive scan, firmware redistribution rights, Airwall commercial terms) before a funding conversation.
 - Follow-up: phased joint workplan agreed 07-23 (`Deliverables/2026-07-23_ChatGPT_Addendum_and_Joint_Workplan.md`) — Phase 1 diverge (ChatGPT run + Claude merge → shortlist), Phase 2 deep dives + Claude competitive research → concept freeze, Phase 3 funding package → Sean 1:1, Phase 4 AOP submission. Checkpoint outcomes logged here. Make-or-break gate to start immediately: manufacturer firmware redistribution rights (informal supplier-relations/legal question, don't wait for Phase 2).
 
-### 2026-07-22 — Mapbox token exposure remediation (new 2026-07-22)
-- ID: D031
-- Owner: Ron Snyder / Boris (security) / Priyatosh Patra / Shubham Kumar Singh
-- Forum: Daily Stand Up; raise directly in the Darryl–Ron 1:1 if no rotation plan lands this week.
-- Next action: Ron to confirm rotation timing and customer-impact plan with security (Boris).
-- Added: 2026-07-22 (M365 evidence — Daily Stand Up 07-22)
-- Context: a Mapbox token was exposed in git history. Immediate revocation could break customer-facing maps; team prefers a coordinated rotation with a grace period over relying on git-history filtering alone.
-- Options: rotate with a grace period and customer-impact plan vs. immediate revocation vs. git-history filtering only.
-- Risk of waiting: security exposure persists the longer rotation is deferred; conversely, an uncoordinated revocation breaks customer map functionality.
-- **Update 07-27 (M365 weekly evidence, Daily Stand Up 07-22): sharper detail on the constraint — existing tokens are customer-facing, and revocation could disrupt maps specifically for on-premise customers who haven't received a pod update.** Stated team preference: token rotation over git-history filtering, coordinated with security. Commitments: Ron to meet with Boris on the leaked-token issue; Priyatosh Patra to rotate the exposed token and send the updated token to Boris. No rotation date confirmed yet — still open, not resolved.
-
-### 2026-07-22 — GitHub Copilot enablement — blocked by Vibe Guard compatibility (new 2026-07-22)
-- ID: D022
-- Owner: AI leadership stakeholders (unconfirmed beyond evidence)
-- Forum: Digital Products / Agile Staff Meeting.
-- Next action: security direction needed before a path is chosen.
-- Added: 2026-07-22 (M365 evidence — Digital Products / Agile Staff Meeting)
-- Context: GitHub Copilot access blocked by Vibe Guard compatibility concerns. Distinct thread from the IDP/WOB governance item above and from the Claude-code WAB approval track — three separate AI-tooling governance questions now open at once.
-- Options: SOP update vs. tooling change.
-- Risk of waiting: developer productivity impact; AI-pace dissatisfaction (Sean, already tracked) compounds if multiple AI-tooling paths stall simultaneously.
-
-### 2026-07-20 — Connected Safety — take on as a digital product?
-- ID: D030
-- Owner: Darryl (recommendation) → Sean McCloskey
-- Forum: Sean McCloskey discussion (same message as CMP).
-- Added: 2026-07-20 (Darryl, Brad Stevens conversation)
-- Context: Sean Gregg's replacement not yet named; program in limbo until then. Question: does Darryl's team take Connected Safety on as a digital product? Not the biggest business, but needed across customers and divisions. Pros and cons acknowledged, not yet enumerated.
-- Options: take on as digital product / leave with the successor org once named / hybrid (platform support without program ownership) — to be worked before the Sean discussion.
-- Risk of waiting: low near-term (program is parked), but limbo has no owner and no clock; a successor hire could foreclose the option.
-
-### 2026-07-20 — CMP (Cellular Management Platform) — where does the tool reside?
-- ID: D029
-- Owner: Darryl + Sean McCloskey (portfolio placement); Brad Stevens driving the business side
-- Forum: Sean McCloskey discussion (Teams message raising it drafted 07-20).
-- Added: 2026-07-20 (Darryl, Brad Stevens conversation)
-- Context: CMP manages any Wesco-sold product carrying a cellular plan (SIM). Built by Fanny Scargle (Dir. Business Development, UBS; cellular SME) with Merwan's team; the tool is the mechanism. Brad Stevens may pull Fanny into his team to own the business side, which leaves tool ownership/residence open.
-- Risk of waiting: if Fanny moves before placement is discussed, the tool's home gets decided by default rather than by portfolio logic.
-
 ### 2026-07-20 — WAB approval for Claude code — AI-enabled assortment/QPM tooling
 - ID: D028
 - Owner: Prasada / Maddy (per Loop notes)
@@ -1058,18 +1003,6 @@
 - Risk of waiting: AI-enabled assortment/QPM development slips if approval isn't sequenced against the named Friday target.
 - Note: distinct WAB approval track from the JCI API-connection WAB item above — do not conflate the two Architecture Review Board items.
 - **Update 2026-08-25 (Darryl, session).** Two things this thread was missing now exist. **Access path is settled at policy level:** Wesco AI Council and IT practices require API keys rather than individual accounts (logged under Decisions Made, 2026-08-25), which forecloses seat-based plans. **A cost basis now exists:** roughly $195 per developer per month on a Sonnet-primary model mix, $290 with contingency, method and rates in `Reference/AI_Development_Tooling_Cost_Model.md`. Neither changes the WAB approval question itself, but both remove reasons a reviewer could send the package back. **Corrected later the same session:** the API-key-path question is not open. **Woolly does not support Azure AI Foundry at this point**, so direct Anthropic keys are technically required for the harness; Claude Code separately does run on Foundry, which is why the `entroCIM_Ops` enablement and Darryl's direction are both true. **What remains unrouted is narrower and still unowned:** which budget carries the Anthropic spend, given it cannot ride the Azure envelope; and whether anyone sets model policy for the automated Woolly test suite, which on the corrected model is 56% of interaction volume and the only line with no human deciding each call. Recommend both at the Digital Products Portfolio Review alongside the WAB item rather than as separate threads. Note the cost figure in the sentence above was superseded within the session: it priced developer coding assistance, not harness runtime. Corrected Anthropic API budget line is $6,050 for six months; see `Deliverables/entroCIM/2026-08-25_Woolly_Dev_Test_API_Cost_Estimate.md`.
-
-### 2026-07-20 — WAM/ADM operational hardening plan — sequencing and gate scoping
-- ID: D027
-- Owner: Akansh Gangil / WAM-ADM team (execution); Darryl sets the gate standard and sequencing expectations
-- Forum: WAM Product Backlog Refinement (bi-weekly) + the one-page MVP1 gate view requested from Akansh — recommend expanding that gate view to cover cleanup sequencing, activation fixes, and scheduler investigation.
-- Added: 2026-07-20 (verbose meeting dump, WAM Product Backlog Refinement — filed as `WAM_Product_Backlog_Refinement_Problems_Work_Plan_2026-07-20.md`; exec summary in `Deliverables/2026-07-20_WAM_Operational_Hardening_Executive_Summary.md`)
-- Timing (Darryl, 07-20): the bugs surfaced after the 07-03 DDP/EUDM integration go-live — the most recent production update — and the teams have been finding and defining them since. The Backlog Refinement session consolidated that discovery work.
-- Context: Backlog Refinement was a data-quality stabilization session — seven problem areas with work plans: (1) cancelled-order contamination (one-time hard delete + three tracks: data-layer status, UI exclusion, audit tab), (2) reported data loss (working conclusion: data intact, visibility defect — bug 7827), (3) license activation failures (null start dates / missing SO dates the main driver), (4) duplicate record creation in lower envs, (5) filter scalability (~50K records; architecture review before implementation), (6) ADM database growth (archival strategy needed), (7) end-user matching normalization. Items 1–3 overlap the MVP1 Aug 3 gate (tracked in that entry above).
-- Open decisions: (a) **sequencing conflict — the one-time hard delete of cancelled records precedes the audit tab (Track C); without a pre-delete snapshot/export, traceability is lost, contradicting the plan's own intent**; (b) whether a new "removed" status is added to the data model (Tracks A/B depend on it); (c) which items are on the Aug 3 critical path; (d) named owners/dates per track — not yet in the record.
-- Risk of waiting: hard delete runs unaudited; "data loss" perception hardens with Sales Ops (Natalie/Debbie Hunter) before the intact-data narrative is placed.
-- Evidence note: transcript/Loop-sourced; speaker attributions (Akansh, Krishnanunni) unconfirmed per evidence discipline.
-- **Update 08-05 (WAM Backlog Deep Dive deck):** two of the seven problem areas now show closure. The post-EUDM-integration defect and ADM UI slowness under large data volume are both marked complete in Sprint 26Q3 Sprint 2. License activation failures (item 3, null/missing SO dates) remain ongoing, as do cancelled-order removal and automatic identification of cancelled line license records (item 1). The deck does not address items 4 through 7 (duplicate creation, filter scalability, database growth/archival, end-user matching), so absence of mention is not closure. Open decisions (a) through (d) above remain open; in particular the hard-delete-before-audit-tab sequencing conflict is still not addressed in any artifact, and the Q4 roadmap item "removing cancelled license orders automatically" is where it will surface if unresolved.
 
 ### 2026-07-16 — JCI (Johnson Controls) MSP agreement — drive to signature
 - ID: D019
@@ -1086,26 +1019,6 @@
 - Risk of waiting: Hosted entroCIM's site-connectivity path (live telemetry) depends on this partner stack; continued drift leaves the agreement unsigned indefinitely and weakens the Managed Services delivery story.
 - Follow-up: Full detail, contacts, and dated next-steps list in `Products/JCI_Partnership.md`. Darryl to supply 07-15 meeting notes via `08_Field_Notes.md`.
 - **Update 07-28 (M365 evidence, "Re: API Detail" thread): the WAB/API technical path sharpened.** Babu Papanna specified concrete requirements for the Airwall Conductor API/metering-agent access: static public IP allow-listing, an Azure NSG/firewall change scoped to a single REST endpoint, and TLS certificate validation. Darryl asked Babu Papanna and Shawn Clark directly to confirm whether this needs Azure Front Door, a static source IP, and what infrastructure/security changes are required — that confirmation has not landed yet (Register C14). Once confirmed internally, the outstanding ask to JCI (static IPs, API origination details, port/NAT/rate scope) still needs to go out — do not treat this as already sent. This is detail on the existing A6/C8 WAB submission path, not a new decision thread.
-
-### 2026-07-13 — Support-model realignment — scoped 07-15
-- ID: D021
-- Forum: (1) confirm CSS/TSS ownership when the MS conversation next surfaces at CSS level; (2)+(3) entroCIM Leadership Collaboration once Adam's internal CX alignment lands (post-coverage window realistically).
-- Added: 2026-07-13 (All Hands). **Clarified 2026-07-15 (Darryl):** entroCIM team owns product support — SLA, effort, progress tracking, and pricing feedback to sales. The Managed Services piece will most likely be owned by CSS/TSS (not Darryl's team). Scott Dunn is delivery-focused; Amy Aguirre is not in Darryl's org (parallel to Nathan Kehr for WAM, with her own WAM delivery team).
-- Remaining decisions: (1) formalize CSS/TSS ownership of Managed Services — outside Darryl's team; his role is confirming, not owning; (2) define the product-support ↔ Managed Services interface (escalation path, SLA boundary, pricing inputs); (3) internal CX-app ownership (first alignment attempt failed — Adam Slingerland leading redo with Keith Bishop/Prady, per Chad's handoff).
-- Risk of waiting: reduced — the ownership shape is now understood; residual risk is the undefined interface surfacing as customer inconsistency (FRBNY is the live example).
-- **Update 07-30 (M365 evidence, Re: 211 West Fort St - Tridium Info Request): second live test case — Colliers (211 West Fort St).** Customer has hosting only, no formal support agreement, and has received occasional free support in the past; the thread exposed conflicting CSM-vs-Support expectations. Mike Reed sent the immediate customer response but explicitly asked Darryl for leadership direction on the operating model (CSM-owned, Support-owned, paid T&M, or fixed-fee SLA). Register A16 added. This is the same undefined-interface risk as FRBNY, now with a second, independent instance — worth treating as a pattern rather than two one-off account issues.
-
-### 2026-07-13 — AI roadmap direction — SkySpark 4, Wooly AI, Copilot enablement, DP AI Initiative
-- ID: D020
-- Owner: Darryl (team-assignment analysis); broader governance still unassigned.
-- Forum: response to Sean — today's meeting (07-21) is the venue; CSS AI backlog already on its agenda.
-- Added: 2026-07-13 (All Hands). **Updated 07-14: forcing function arrived** — leadership dissatisfaction with AI pace stated at Agile Staff **by Sean McCloskey** (attribution corrected 07-14: loop notes credited Maddy Taylor, but Sean was using her computer while traveling with her); Sean asked Darryl to analyze AI ideas his team could own (CSS synergies). Blocked on Power BI access (Ankit).
-- **Update 07-21 (Darryl, SkyFoundry release email): SkySpark 4.0.6 shipped — first production release of 4.0, including the beta of Woolly**, SkySpark's own LLM agent harness (Anthropic/Gemini/OpenAI, customer-supplied API keys, free during beta). This turns the "Wooly AI" thread in this decision from a roadmap mention into a real, usable tool Darryl's team already has access to (sent directly to Chad Steger, Keith Bishop, Ron Snyder). **Correction 07-21 (Darryl):** the release notes' "no guardrails or plan mode" language is SkyFoundry describing a beta-stage feature gap (plan mode/guardrails are on their near-term roadmap), not a disclosed defect — access itself follows the standard SkySpark/entroCIM model, scoped to whatever the signed-in user's own account is already permitted to do. The transcript-sharing default is governed by a documented, one-step `shareTranscript` flag. Practical note for any pilot: use an appropriately scoped account and turn off `shareTranscript` if testing against anything customer-adjacent — normal setup discipline, not an open governance gap. Full detail: `Products/SkyFoundry.md`.
-- **Timing note:** this lands the same day as Darryl's Sean meeting on the AI-project-ideas analysis — directly relevant input, not a coincidence to let pass unused.
-- Risk of waiting: AOP planning proceeds without credible AI commitments; separately, an ungoverned Woolly pilot (default transcript sharing, no guardrails) could create a data-governance incident before any team formally decides to adopt it.
-- **Update 07-22 (M365 evidence, Agile Staff Meeting 07-21): AOP planning accelerated — alignment deadline now Aug-21, and product investments require stronger business-case justification.** New commitment: Darryl to coordinate AOP alignment meetings with Lisa, Brad, and Gregg O'Brien before that deadline (Gregg O'Brien is a new name — not yet in `06_Stakeholder_Map.md`; "Lisa" and "Brad" read as Lisa Orton and Brad Stevens by context but not independently confirmed in this evidence — apply name-collision caution before treating as settled). Separately, GitHub Copilot enablement is now blocked by Vibe Guard compatibility concerns — a distinct AI-tooling governance thread alongside the Claude-code WAB track (see entries above/below). **Correction 07-22 (Darryl, field note): the IDP/WAM item is not a third governance path — "WOB" was a naming error for WAB, and IDP integration is not approval-blocked (see corrected entry above). AI-tooling governance is now two open threads (Claude-code WAB, GitHub Copilot/Vibe Guard), not three.**
-- **Update 07-23 (Darryl, field note dated 07-22): Darryl owes Sean product ideas plus an AI-researched needs analysis for CSS** — this is the concrete deliverable that came out of the 07-21 Sean meeting's "analyze AI ideas" ask (see the linked commitment below, and the related entry two rows down). Separately, SkySpark/AI Council and WAM Data Challenges evidence (07-22/23) shows the AI-POC thread moving from problem-definition talk toward actual scoped pilots — first forward motion on the long-stalled "AI adoption governance" pattern.
-- **Update 08-12 (entroCIM Backlog Deep Dive): SkySpark 4 production version deployed for early testing** — advances the migration tracked in `Products/entroCIM/entroCIM.md` (08-10: "nearly complete, testing underway") to an actual production deployment; still early-testing stage, not a completed cutover. Same session, the **Woolly AI / AI Council productization decision (approve, limit, or defer) was reconfirmed as still open** — no governance outcome evidenced; this is the same thread as the 07-27 "installation deferred pending Ion framework readiness review" entry above, not a new decision. Separately, a **Claude Code Enablement session (08-12)** scoped a controlled rollout model (approvals + AD groups) for Darryl's team and Digital Products more broadly — a third, more concrete AI-tooling governance thread alongside Woolly and GitHub Copilot/Vibe Guard. Darryl asked to check AD groups for Claude access (Copilot attribution: Inferred — surfaced as a confirmation question, not written to Register A); Nidhishree Sanam owes access documentation (`05`).
 
 ### WAM data challenge remediation approach
 - ID: D024
@@ -1125,7 +1038,7 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 67.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 77.*
 
 ### 2026-10-15 — Quest/Azure decommission: approve $245/hour T&M for secure data-removal validation (new, Decision Backlog)
 - ID: D037
@@ -1700,6 +1613,28 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Follow-up: treat the session as a decision forum on the complex-build path, not only an as-is walkthrough. Confirm John Barlolotti at working level.
 - **Update 2026-08-05 (daily evidence, session held 08-04 09:00-09:30):** a working position emerged, **use VAS for complex finished goods and WMX for simplified products**. Treat this as the session's working position rather than a ratified decision; it was recorded in facilitator notes, and the session was rescheduled again before closing. Akansh Gangil agreed to reschedule "for Tuesday" accounting for time zones so Steve Leslie can attend (**exact ISO date not stated in the source; likely 2026-08-11, unconfirmed — do not treat as fixed**). Open questions carried forward: WMX versus VAS ownership, whether capture is mandatory, P360 configuration, and impact to non-DDP sites. Follow-up tasks named at working level: add a work-instruction field for MAC address and serial-number capture (Steven Leslie, Govardhan Shetty) and share the Jira link for WMX asset-tracking enhancements in the WMX chat (Steven Leslie, John Bartolotti). The end-of-July target Darryl set has now passed without the decision path closing; the session has moved at least twice.
 
+### 2026-07-27 — AI-enabled development pilot approved — Copilot + Claude Design, Orlando workshop
+- ID: D035
+- Owner: Sean McCloskey (direction), Digital Products leadership (execution)
+- Forum: Digital Products / Agile Staff Meeting.
+- Next action: Sean owes Darryl's team (and Dj Vaughn) additional Claude Design licenses — track under Commitments Owed to Darryl (05).
+- Added: 2026-07-27 (M365 weekly evidence — Digital Products / Agile Staff Meeting 07-21)
+- Context: a pilot for a fully AI-enabled development cycle using GitHub Copilot and Claude Design was approved, including a planned two-day Orlando workshop for portal requirements and design (feeds the QPMSupport portal initiative). Moves AI adoption from concept into a live delivery-method experiment — connects directly to the standing "AI adoption governance + team assignment" watch item and to Darryl's owed deliverable (product ideas + AI-researched needs analysis for Sean).
+- Risk of waiting: Claude Design license distribution and product-owner training are unresolved — the pilot could proceed unevenly across teams without them.
+
+2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
+
+### 2026-07-27 — Product ownership model shift — two-tier structure (GPO peer + Claude Design owner)
+- ID: D034
+- Owner: Sean McCloskey (per evidence, Inferred — not independently confirmed)
+- Forum: Digital Products / Agile Staff Meeting (weekly).
+- Next action: confirm this reading directly — evidence marks the decision-maker as Inferred, and it materially changes product-owner role expectations across the portfolio.
+- Added: 2026-07-27 (M365 weekly evidence — Digital Products / Agile Staff Meeting 07-21; decision-maker Inferred as Sean McCloskey)
+- Context: product ownership model shifting toward a two-tier structure — a GPO peer role and a Claude Design owner role — with training and license distribution not yet resolved. Affects how product requirements, customer sessions, design artifacts, and handoffs get owned going forward; touches hiring/staffing expectations.
+- Risk of waiting: the AI-enabled development pilot and new ownership model could stall or land inconsistently across teams without a license/training plan.
+
+2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
+
 ### 2026-07-27 — Dell/Wesco service management process — handoff model across Freshdesk and ServiceNow (new 2026-07-27)
 - ID: D033
 - Owner: Syed Jamshed Zaidi, with Darryl, Scott Dunn, Adam Lazare; Dell-side participants unconfirmed
@@ -1715,6 +1650,17 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 2. COOL
 - Bullet
 -
+
+### 2026-07-27 — entroCIM release governance tightened — DCOE-driven production controls (new 2026-07-27)
+- ID: D032
+- Owner: Ron Snyder
+- Forum: Daily Stand Up (entroCIM).
+- Next action: confirm with Ron that the new controls are applied consistently, not just discussed once; watch whether the shared-component/repo decision lands on the same governance model.
+- Added: 2026-07-27 (M365 weekly evidence — Daily Stand Up 07-21)
+- Context: distinct from the already-closed 07-22 DCOE compliance-hold entry (that one was about release 3.1.12.13 specifically and is resolved/approved). This is a **forward-looking process change**: production code now requires tagging, two reviewers, a GitHub commit, conventional-commit format with JIRA issue numbers, and documented testing evidence before release. Ron stated the standup-cycle release was on hold pending this sign-off discipline.
+- Risk of waiting: inconsistent adoption across teams could leave DCOE evidence gaps recurring rather than resolved; a related open decision (shared UI component/helper repo and release-documentation strategy across front-end teams — Joseph Kusnir, Priyatosh Patra, Michael Pieschel, David Blondel, Ron Snyder) could keep release evidence inconsistent if not aligned to the same standard.
+
+2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
 
 ### 2026-07-24 — FY27 AOP resource allocation — Build vs. COGS
 - ID: D080
@@ -1749,6 +1695,31 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Context: IDP/WAM AI-document-extraction POC requires re-validation against current supplier documents before integration decisions proceed.
 - Risk of waiting: value case takes longer to land if document-type scope isn't prioritized; no longer an approval-gate risk.
 
+### 2026-07-22 — Mapbox token exposure remediation (new 2026-07-22)
+- ID: D031
+- Owner: Ron Snyder / Boris (security) / Priyatosh Patra / Shubham Kumar Singh
+- Forum: Daily Stand Up; raise directly in the Darryl–Ron 1:1 if no rotation plan lands this week.
+- Next action: Ron to confirm rotation timing and customer-impact plan with security (Boris).
+- Added: 2026-07-22 (M365 evidence — Daily Stand Up 07-22)
+- Context: a Mapbox token was exposed in git history. Immediate revocation could break customer-facing maps; team prefers a coordinated rotation with a grace period over relying on git-history filtering alone.
+- Options: rotate with a grace period and customer-impact plan vs. immediate revocation vs. git-history filtering only.
+- Risk of waiting: security exposure persists the longer rotation is deferred; conversely, an uncoordinated revocation breaks customer map functionality.
+- **Update 07-27 (M365 weekly evidence, Daily Stand Up 07-22): sharper detail on the constraint — existing tokens are customer-facing, and revocation could disrupt maps specifically for on-premise customers who haven't received a pod update.** Stated team preference: token rotation over git-history filtering, coordinated with security. Commitments: Ron to meet with Boris on the leaked-token issue; Priyatosh Patra to rotate the exposed token and send the updated token to Boris. No rotation date confirmed yet — still open, not resolved.
+
+2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
+
+### 2026-07-22 — GitHub Copilot enablement — blocked by Vibe Guard compatibility (new 2026-07-22)
+- ID: D022
+- Owner: AI leadership stakeholders (unconfirmed beyond evidence)
+- Forum: Digital Products / Agile Staff Meeting.
+- Next action: security direction needed before a path is chosen.
+- Added: 2026-07-22 (M365 evidence — Digital Products / Agile Staff Meeting)
+- Context: GitHub Copilot access blocked by Vibe Guard compatibility concerns. Distinct thread from the IDP/WOB governance item above and from the Claude-code WAB approval track — three separate AI-tooling governance questions now open at once.
+- Options: SOP update vs. tooling change.
+- Risk of waiting: developer productivity impact; AI-pace dissatisfaction (Sean, already tracked) compounds if multiple AI-tooling paths stall simultaneously.
+
+2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
+
 ### 2026-07-21 — Dell ServiceNow/Freshdesk support workflow redesign (new 2026-07-21)
 - ID: D089
 - Owner: unconfirmed — evidence infers Operations leadership
@@ -1781,6 +1752,41 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - **Update 07-27 (M365 weekly evidence, Digital Products / Agile Staff Meeting + Digital Products Portfolio Review 07-20/21): status worsened — notes state the team is "significantly behind" on 3.4.3, with a decision expected at an upcoming report-out call.** Apparent owners named more specifically this cycle: **Sudhi Rao and Anna Baker**, target to finalize requirements and CPQ/QPMSupport alignment in the **first week of August**. Second open question: how a 3.4.3 delivery-date shift affects dependent Digital Products commitments — not yet assessed. **Name-collision note:** this evidence gives "Anna Baker" with surname (Loop notes, decision-maker inferred) — this may resolve the 07-20 "Anna" ambiguity, but treat as probable, not confirmed, until corroborated independently; her existing tracked scope (DDP/MDM, Monday Entrance Call) doesn't obviously overlap with QPM ownership.
 - Risk of waiting (updated): Charlotte go-live exposure is now a schedule problem, not just an unconfirmed-commitment problem — "significantly behind" is a harder signal than the 07-20 read.
 
+### 2026-07-20 — Connected Safety — take on as a digital product?
+- ID: D030
+- Owner: Darryl (recommendation) → Sean McCloskey
+- Forum: Sean McCloskey discussion (same message as CMP).
+- Added: 2026-07-20 (Darryl, Brad Stevens conversation)
+- Context: Sean Gregg's replacement not yet named; program in limbo until then. Question: does Darryl's team take Connected Safety on as a digital product? Not the biggest business, but needed across customers and divisions. Pros and cons acknowledged, not yet enumerated.
+- Options: take on as digital product / leave with the successor org once named / hybrid (platform support without program ownership) — to be worked before the Sean discussion.
+- Risk of waiting: low near-term (program is parked), but limbo has no owner and no clock; a successor hire could foreclose the option.
+
+2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
+
+### 2026-07-20 — CMP (Cellular Management Platform) — where does the tool reside?
+- ID: D029
+- Owner: Darryl + Sean McCloskey (portfolio placement); Brad Stevens driving the business side
+- Forum: Sean McCloskey discussion (Teams message raising it drafted 07-20).
+- Added: 2026-07-20 (Darryl, Brad Stevens conversation)
+- Context: CMP manages any Wesco-sold product carrying a cellular plan (SIM). Built by Fanny Scargle (Dir. Business Development, UBS; cellular SME) with Merwan's team; the tool is the mechanism. Brad Stevens may pull Fanny into his team to own the business side, which leaves tool ownership/residence open.
+- Risk of waiting: if Fanny moves before placement is discussed, the tool's home gets decided by default rather than by portfolio logic.
+
+2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
+
+### 2026-07-20 — WAM/ADM operational hardening plan — sequencing and gate scoping
+- ID: D027
+- Owner: Akansh Gangil / WAM-ADM team (execution); Darryl sets the gate standard and sequencing expectations
+- Forum: WAM Product Backlog Refinement (bi-weekly) + the one-page MVP1 gate view requested from Akansh — recommend expanding that gate view to cover cleanup sequencing, activation fixes, and scheduler investigation.
+- Added: 2026-07-20 (verbose meeting dump, WAM Product Backlog Refinement — filed as `WAM_Product_Backlog_Refinement_Problems_Work_Plan_2026-07-20.md`; exec summary in `Deliverables/2026-07-20_WAM_Operational_Hardening_Executive_Summary.md`)
+- Timing (Darryl, 07-20): the bugs surfaced after the 07-03 DDP/EUDM integration go-live — the most recent production update — and the teams have been finding and defining them since. The Backlog Refinement session consolidated that discovery work.
+- Context: Backlog Refinement was a data-quality stabilization session — seven problem areas with work plans: (1) cancelled-order contamination (one-time hard delete + three tracks: data-layer status, UI exclusion, audit tab), (2) reported data loss (working conclusion: data intact, visibility defect — bug 7827), (3) license activation failures (null start dates / missing SO dates the main driver), (4) duplicate record creation in lower envs, (5) filter scalability (~50K records; architecture review before implementation), (6) ADM database growth (archival strategy needed), (7) end-user matching normalization. Items 1–3 overlap the MVP1 Aug 3 gate (tracked in that entry above).
+- Open decisions: (a) **sequencing conflict — the one-time hard delete of cancelled records precedes the audit tab (Track C); without a pre-delete snapshot/export, traceability is lost, contradicting the plan's own intent**; (b) whether a new "removed" status is added to the data model (Tracks A/B depend on it); (c) which items are on the Aug 3 critical path; (d) named owners/dates per track — not yet in the record.
+- Risk of waiting: hard delete runs unaudited; "data loss" perception hardens with Sales Ops (Natalie/Debbie Hunter) before the intact-data narrative is placed.
+- Evidence note: transcript/Loop-sourced; speaker attributions (Akansh, Krishnanunni) unconfirmed per evidence discipline.
+- **Update 08-05 (WAM Backlog Deep Dive deck):** two of the seven problem areas now show closure. The post-EUDM-integration defect and ADM UI slowness under large data volume are both marked complete in Sprint 26Q3 Sprint 2. License activation failures (item 3, null/missing SO dates) remain ongoing, as do cancelled-order removal and automatic identification of cancelled line license records (item 1). The deck does not address items 4 through 7 (duplicate creation, filter scalability, database growth/archival, end-user matching), so absence of mention is not closure. Open decisions (a) through (d) above remain open; in particular the hard-delete-before-audit-tab sequencing conflict is still not addressed in any artifact, and the Q4 roadmap item "removing cancelled license orders automatically" is where it will surface if unresolved.
+
+2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
+
 ### 2026-07-16 — ServiceNow Field Services integration path
 - ID: D084
 - Owner: Ron Snyder (intake) / Sean Comunale (Brady approval, backlog position); Darryl tracks the approval milestone only
@@ -1802,6 +1808,8 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Progress 07-16 (Darryl field note): second Data Requirements meeting didn't happen as scheduled, but Dan Totino called Darryl directly — got Priyambada Dash and Gandhi Subramanian on the line. They will action the 6 attributes in the ticket. Next: sync with the Governance team (dependency creation) — technical and governance classes in parallel. Gandhi will read the ticket and route questions to Dan and Darryl. **Anna Baker has invited Darryl to the Monday DDP Entrance Call** to keep DDPTRK-6346 tracking inside the broader DDP plan.
 - Context: downstream impact — product classification, software/hardware differentiation, warranty/subscription handling, notification logic.
 - Risk of waiting: reduced — attendance/ownership gap that stalled 07-15 is now addressed with named owners and a standing check-in (Monday Entrance Call).
+
+2026-10-19 (Claude, weekly brief): DDPTRK-6346 marked completed in the Digital Products Portfolio Status Update. The ownership decision this entry records (07-16) has run its course; candidate to close with B12 on Darryl's confirmation. `Evidence/M365_Evidence_Weekly_2026-10-19.md`
 
 ### 2026-07-16 — WAM MVP1 notification rollout — production readiness gate
 - ID: D018
@@ -1856,6 +1864,30 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Added: 2026-07-13 (field note)
 - Context: Broaden team scope across entroCIM, WAM, CSS AI backlog, and Navigator; align resources and costs with portfolio priorities; Product/Platforms/Deployment org structure.
 - Risk of waiting: budgeting and ownership ambiguity persists across the expanded portfolio; this is the upward-alignment move the baseline flagged as missing.
+
+### 2026-07-13 — Support-model realignment — scoped 07-15
+- ID: D021
+- Forum: (1) confirm CSS/TSS ownership when the MS conversation next surfaces at CSS level; (2)+(3) entroCIM Leadership Collaboration once Adam's internal CX alignment lands (post-coverage window realistically).
+- Added: 2026-07-13 (All Hands). **Clarified 2026-07-15 (Darryl):** entroCIM team owns product support — SLA, effort, progress tracking, and pricing feedback to sales. The Managed Services piece will most likely be owned by CSS/TSS (not Darryl's team). Scott Dunn is delivery-focused; Amy Aguirre is not in Darryl's org (parallel to Nathan Kehr for WAM, with her own WAM delivery team).
+- Remaining decisions: (1) formalize CSS/TSS ownership of Managed Services — outside Darryl's team; his role is confirming, not owning; (2) define the product-support ↔ Managed Services interface (escalation path, SLA boundary, pricing inputs); (3) internal CX-app ownership (first alignment attempt failed — Adam Slingerland leading redo with Keith Bishop/Prady, per Chad's handoff).
+- Risk of waiting: reduced — the ownership shape is now understood; residual risk is the undefined interface surfacing as customer inconsistency (FRBNY is the live example).
+- **Update 07-30 (M365 evidence, Re: 211 West Fort St - Tridium Info Request): second live test case — Colliers (211 West Fort St).** Customer has hosting only, no formal support agreement, and has received occasional free support in the past; the thread exposed conflicting CSM-vs-Support expectations. Mike Reed sent the immediate customer response but explicitly asked Darryl for leadership direction on the operating model (CSM-owned, Support-owned, paid T&M, or fixed-fee SLA). Register A16 added. This is the same undefined-interface risk as FRBNY, now with a second, independent instance — worth treating as a pattern rather than two one-off account issues.
+
+2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
+
+### 2026-07-13 — AI roadmap direction — SkySpark 4, Wooly AI, Copilot enablement, DP AI Initiative
+- ID: D020
+- Owner: Darryl (team-assignment analysis); broader governance still unassigned.
+- Forum: response to Sean — today's meeting (07-21) is the venue; CSS AI backlog already on its agenda.
+- Added: 2026-07-13 (All Hands). **Updated 07-14: forcing function arrived** — leadership dissatisfaction with AI pace stated at Agile Staff **by Sean McCloskey** (attribution corrected 07-14: loop notes credited Maddy Taylor, but Sean was using her computer while traveling with her); Sean asked Darryl to analyze AI ideas his team could own (CSS synergies). Blocked on Power BI access (Ankit).
+- **Update 07-21 (Darryl, SkyFoundry release email): SkySpark 4.0.6 shipped — first production release of 4.0, including the beta of Woolly**, SkySpark's own LLM agent harness (Anthropic/Gemini/OpenAI, customer-supplied API keys, free during beta). This turns the "Wooly AI" thread in this decision from a roadmap mention into a real, usable tool Darryl's team already has access to (sent directly to Chad Steger, Keith Bishop, Ron Snyder). **Correction 07-21 (Darryl):** the release notes' "no guardrails or plan mode" language is SkyFoundry describing a beta-stage feature gap (plan mode/guardrails are on their near-term roadmap), not a disclosed defect — access itself follows the standard SkySpark/entroCIM model, scoped to whatever the signed-in user's own account is already permitted to do. The transcript-sharing default is governed by a documented, one-step `shareTranscript` flag. Practical note for any pilot: use an appropriately scoped account and turn off `shareTranscript` if testing against anything customer-adjacent — normal setup discipline, not an open governance gap. Full detail: `Products/SkyFoundry.md`.
+- **Timing note:** this lands the same day as Darryl's Sean meeting on the AI-project-ideas analysis — directly relevant input, not a coincidence to let pass unused.
+- Risk of waiting: AOP planning proceeds without credible AI commitments; separately, an ungoverned Woolly pilot (default transcript sharing, no guardrails) could create a data-governance incident before any team formally decides to adopt it.
+- **Update 07-22 (M365 evidence, Agile Staff Meeting 07-21): AOP planning accelerated — alignment deadline now Aug-21, and product investments require stronger business-case justification.** New commitment: Darryl to coordinate AOP alignment meetings with Lisa, Brad, and Gregg O'Brien before that deadline (Gregg O'Brien is a new name — not yet in `06_Stakeholder_Map.md`; "Lisa" and "Brad" read as Lisa Orton and Brad Stevens by context but not independently confirmed in this evidence — apply name-collision caution before treating as settled). Separately, GitHub Copilot enablement is now blocked by Vibe Guard compatibility concerns — a distinct AI-tooling governance thread alongside the Claude-code WAB track (see entries above/below). **Correction 07-22 (Darryl, field note): the IDP/WAM item is not a third governance path — "WOB" was a naming error for WAB, and IDP integration is not approval-blocked (see corrected entry above). AI-tooling governance is now two open threads (Claude-code WAB, GitHub Copilot/Vibe Guard), not three.**
+- **Update 07-23 (Darryl, field note dated 07-22): Darryl owes Sean product ideas plus an AI-researched needs analysis for CSS** — this is the concrete deliverable that came out of the 07-21 Sean meeting's "analyze AI ideas" ask (see the linked commitment below, and the related entry two rows down). Separately, SkySpark/AI Council and WAM Data Challenges evidence (07-22/23) shows the AI-POC thread moving from problem-definition talk toward actual scoped pilots — first forward motion on the long-stalled "AI adoption governance" pattern.
+- **Update 08-12 (entroCIM Backlog Deep Dive): SkySpark 4 production version deployed for early testing** — advances the migration tracked in `Products/entroCIM/entroCIM.md` (08-10: "nearly complete, testing underway") to an actual production deployment; still early-testing stage, not a completed cutover. Same session, the **Woolly AI / AI Council productization decision (approve, limit, or defer) was reconfirmed as still open** — no governance outcome evidenced; this is the same thread as the 07-27 "installation deferred pending Ion framework readiness review" entry above, not a new decision. Separately, a **Claude Code Enablement session (08-12)** scoped a controlled rollout model (approvals + AD groups) for Darryl's team and Digital Products more broadly — a third, more concrete AI-tooling governance thread alongside Woolly and GitHub Copilot/Vibe Guard. Darryl asked to check AD groups for Claude access (Copilot attribution: Inferred — surfaced as a confirmation question, not written to Register A); Nidhishree Sanam owes access documentation (`05`).
+
+2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
 
 ### entroCIM showcase environment strategy
 - ID: D087

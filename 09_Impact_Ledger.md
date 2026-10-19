@@ -13,6 +13,16 @@
 
 ## Entries
 
+### 2026-10-19 — entroCIM 3.1.12.14 generally available, with release communication done at release
+- 3.1.12.14 (Global Search beta, Tiles/Gridboard, Kiosk Mode, Graphics Builder, Batch Point Writer, security and platform modernization) made available 2026-10-16, with documentation, sales guide, knowledge base and deployment communication issued together (David Blondel).
+- Impact: first release where the product-to-sales/deployment handoff is evidenced as complete at release rather than after it (the gap logged 07-28, `04` W046). Customer-delivery dates by account not yet evidenced; do not claim customers are upgraded.
+- Source: weekly M365 evidence 2026-10-19, release email. Communicated: not yet.
+
+### 2026-10-19 — DDPTRK-6346 global attributes delivered
+- Global warranty, license, delivery and software attributes marked complete in the Digital Products Portfolio Status Update (MDM Governance, Product MDM, Data Lake). Tracked since 07-16, when Darryl got Dan Totino, Priyambada Dash and Gandhi Subramanian onto the ticket after a stalled meeting.
+- Impact: removes one of the WAM/ADM data dependencies behind product classification, warranty/subscription handling and notifications. Part-number matching and supplier-attribute coverage remain open, so this is a foundation delivered, not the data-quality problem solved.
+- Source: weekly M365 evidence 2026-10-19. Communicated: not yet.
+
 ### 2026-10-14 — Technology Services leadership aligned behind CDA
 
 - **What happened:** Matt Powers (VP, Technology Services) reviewed CDA with Darryl and endorsed it as a way into accounts, a pull-through for ALM and WAM, and the kind of sticky services model TS needs as hardware margins compress. He independently proposed the same delivery model Darryl had designed: an operations center, mostly India-based, with in-market tier 2.

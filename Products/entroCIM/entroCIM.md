@@ -431,3 +431,13 @@ Source: Daily Stand Up transcript (2026-10-15, retrieved complete) and RE: Ascen
 
 - **Tenant redesign (access-boundary rework) is roughly three-quarters complete** (Michael Pieschel's own estimate): tenant creation, asset assignment/removal, and user-to-tenant access boundaries. **New boot-mode routing** supports a user-specific dev URL and dev view; a new application landing page is part of the same plan. No acceptance criteria, migration plan, or release date surfaced in evidence yet — this is a capability change affecting tenant administration and customer-facing navigation, not yet a scheduled release.
 - **Ascent/Airwall: durable shift in partner expectation.** Chris Askew asked Chad Steger directly for Wesco's "standard" onboarding checklist/process rather than continuing the ad hoc path used to get the Ascent HQ Airwall running. Airwall itself is installed, online, and visible to the Wesco team (reconfirms 09-28); JACE IP/credentials from Ascent are still outstanding (`05` C69). See `05` B4 (updated 2026-10-16).
+
+## Release 3.1.12.14 generally available (added 2026-10-19)
+
+Source: weekly M365 evidence 2026-10-12 to 2026-10-19 (`Evidence/M365_Evidence_Weekly_2026-10-19.md`). Primary source: "Available for Release: entroCIM Version: 3.1.12.14" email thread, 2026-10-16, retrieved complete.
+
+- **3.1.12.14 is available (Durable, stated outright by David Blondel, 2026-10-16).** Shipped: Global Search (Beta), Tiles/Gridboard, Kiosk Mode, Graphics Builder, Batch Point Writer, security and platform modernization, performance, usability and defect fixes. This is the release packaged and entered into DCOE governance on 2026-10-06 (section above, 2026-10-13); DCOE approval itself is not separately evidenced, but general availability implies it.
+- **Release communication went out as one package:** release documentation, sales guide, knowledge-base material and deployment/sales communication prepared together. This is the first release since the 07-28 finding on the product-to-deployment/sales handoff (`04` Passive W046) where the handoff is evidenced as done at release rather than after it. A customer and sales walkthrough is planned for the week of 2026-10-26.
+- **Not established:** customer delivery dates by account under the +1/+2/+5 day sequence, and whether the Federal Reserve receives 3.1.12.14 in place of the held 3.1.12.13 (`04` W021). Do not describe any customer as upgraded until evidence says so.
+- Register: `05` B72 (sales messaging) marked potentially closed, awaiting Darryl's confirmation.
+

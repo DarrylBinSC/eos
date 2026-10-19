@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-10-16 16:33 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-19 15:36 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 22 (ceiling 20) · Passive 51 · Retired 25.
+**Counts at generation:** Active 20 (ceiling 20) · Passive 53 · Retired 25.
 
 ## Active
 
@@ -25,16 +25,14 @@
 | W018 | entroCIM commercial performance vs. 2026 objectives; viability of another year below sales break-even | High | ↑ | Direct (Engel deck + MBR 07-14; Darryl, session 08-05) | 2026-10-06 | 10-06 (Darryl, Sean's FY27 AOP update): viability is now an explicit leadership question, and this row carries it (single home; |
 | W016 | WAM/ADM data integrity + scalability (operational hardening) | High | ↑ | Direct (Backlog Refinement 07-20 — transcript/Loop; speaker attributions unconfirmed; WAM Data Challenges 07-30; Requirement Estimation doc, 08-06) | 2026-10-14 | Seven-problem stabilization plan (full dump: `WAM_Product_Backlog_Refinement_Problems_Work_Plan_2026-07-20.md`). |
 | W017 | JCI (Johnson Controls) MSP agreement stall | High | ↓ | Direct (email evidence through 06-08; Darryl field note 07-22) + Repetition (8+ month negotiation, no signature); Direct (Darryl, chat, 2026-09-01) | 2026-10-15 | MSP model decided 05-26 (not reseller); |
-| W022 | IDP/ADM production integration — approved but unstaffed | High | New | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-10-15 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
 | W025 | entroCIM SSL certificate ownership undefined | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Outage resolved (GoDaddy certificate installed), but renewal, monitoring, and ownership of the certificate are not formalized -- repeat outage possible until they are. |
 | W026 | FRBNY Smart Building bid -- pricing deadline 2026-10-21 | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Mandatory scope and quantities due 2026-10-21, six days out. |
 | W009 | Dell alarm reliability — alarm-database corruption stops alarming | High | ↑ | Direct (`2026 Deployment - Daily Scrum` 08-25, 09-15; Daily Stand Up 09-15) | 2026-10-16 | Intermittent alarming failures traced to alarm-database corruption. |
-| W019 | Louvre Abu Dhabi closeout — snag-list stall | High | ↑ | Direct (Deployment Daily Scrum 07-22; Re: IoT Consolidation Platform - Project Deployment Meeting, 08-04) | 2026-10-16 | Escalated from Medium 08-05. |
-| W021 | Federal Reserve (FRBNY) release 3.1.12.13 — held, customer not told | High | ↑ | Direct (Sarah Monteleone quoting Chad Steger, `Re: entroCIM Release – Version 3.1.12.13`, weekly evidence 2026-08-24 to 08-31) | 2026-10-16 | Escalated back to Active 2026-09-01 on a direct signal — held Passive since 08-27 on the reasoning that engineering already owned the fix, but this week's evidence shows the stall continuing rather than closing. |
-| W023 | Managed-services staffing readiness for day-two entroCIM monitoring | Medium | New | Direct (entroCIM Backlog Deep Dive, 2026-09-08, verbatim transcript) | 2026-09-08 | Leadership (Brad Stevens, Nathan Kehr) expects commercial growth in managed monitoring/analytics but has not settled operating location, required building-domain skills, NOC placement, training path, or headcount. |
+| W019 | Louvre Abu Dhabi closeout — snag-list stall | High | ↑ | Direct (Deployment Daily Scrum 07-22; Re: IoT Consolidation Platform - Project Deployment Meeting, 08-04) | 2026-10-19 | Escalated from Medium 08-05. |
+| W021 | Federal Reserve (FRBNY) release 3.1.12.13 — held, customer not told | High | ↑ | Direct (Sarah Monteleone quoting Chad Steger, `Re: entroCIM Release – Version 3.1.12.13`, weekly evidence 2026-08-24 to 08-31) | 2026-10-19 | Escalated back to Active 2026-09-01 on a direct signal — held Passive since 08-27 on the reasoning that engineering already owned the fix, but this week's evidence shows the stall continuing rather than closing. |
+| W022 | IDP/ADM production integration — approved but unstaffed | High | ↑ | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-10-19 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
 | W008 | Ford entroCIM (UDAC) renewal and platform-trust gap | Medium | ↑ | Direct (`Wesco & Ford - entroCIM Platform - Re-Alignment & Action Item Call`, 08-26; RE: SLA Verbiage email thread, weekly evidence 2026-09-02 to 09-09) | 2026-10-05 | Ford and Wesco aligned on 08-26 to renew UDAC support and let EDC support expire, using an SLA for unplanned support and SOW/SME hours for planned scope (Darryl: "Hours buy Capacity, SLA buys commitment" — `Products/entroCIM/entroCIM.md`). |
 | W027 | Quest/Azure decommission -- secure data-removal validation T&M approval unresolved | Medium | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Secure data-removal validation on the Quest exit requires approval of a $245/hour T&M consultation; |
-| W020 | CrowdStrike: Azure VM overly permissive ingress rule | Medium-High | ↑ | Direct (Discuss CrowdStrike Vulnerability Risk, 07-28; Teams chat with Venkateswara Devathi, 08-27) | 2026-08-27 | Escalated back to Active 2026-08-27 on a direct signal, per the Passive-tier return condition set 08-19. |
 | W002 | Dell account staffing — second dedicated entroCIM/EMS FTE requested | Medium-High | New | Direct (RE: Dell EMS Program FTE New Hire Discussion, weekly evidence 2026-10-05) | 2026-10-16 | Dell asked for a second dedicated FTE within three to five months. |
 
 ## Passive Watch
@@ -43,6 +41,8 @@ Logged for completeness. No action required; does not count toward risk load. Es
 
 | ID | Watch Item | Former severity | Evidence Basis | Last Update | Notes |
 |---|---|---|---|---|---|
+| W023 | Managed-services staffing readiness for day-two entroCIM monitoring | Medium | Direct (entroCIM Backlog Deep Dive, 2026-09-08, verbatim transcript) | 2026-10-19 | Leadership (Brad Stevens, Nathan Kehr) expects commercial growth in managed monitoring/analytics but has not settled operating location, required building-domain skills, NOC placement, training path, or headcount. |
+| W020 | CrowdStrike: Azure VM overly permissive ingress rule | Medium-High | Direct (Discuss CrowdStrike Vulnerability Risk, 07-28; Teams chat with Venkateswara Devathi, 08-27) | 2026-10-19 | Escalated back to Active 2026-08-27 on a direct signal, per the Passive-tier return condition set 08-19. |
 | W042 | Complex-build asset attributes (WMX/VAS/GPO path post-ACT) | High | Direct (VAS Roadmap 07-14; M365 evidence 07-15; Darryl 07-17; WAM/ADM complex builds evidence 08-27) | 2026-10-15 | Demoted from Active 2026-08-27 (was High, trend →), on the objective test — no decision is needed from Darryl today. |
 | W029 | Returnable asset tracking: build direction set before the cost basis exists | Medium | Direct (returnable asset tracking discussion transcript 2026-09-16; entroCIM Sensolus connector documentation 2026-09-16) | 2026-10-05 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | W030 | Sales orders missing from EUDM/DDP data lake | High | Direct (FW: WAM - Records are created in Core ERP but not available in eudm table, 07-27; INC5456198) | 2026-09-17 | Demoted from Active 2026-09-17 (was High, trend ↑) on the objective silence test — no referencing evidence since 07-28, 51 days, and superseded in substance by the current WAM/ADM data integrity row above, which tracks the same truncated-part-number root caus… |

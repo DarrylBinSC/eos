@@ -1,5 +1,15 @@
 # Wesco Asset Management (WAM)
-As of: 2026-10-15 (cross-SBU data-capture session notes filed; prior: 2026-10-14 ADM constraints slide and capacity reset inputs; 2026-10-13 ADM license tracking scorecard; 2026-10-07; earlier: 2026-08-17 FY27 P&L section added; base 2026-08-05) — merged: 30-day baseline + daily evidence + context library v1 (files 20/22) + WAM actuals deck (07-15) + WAM Backlog Deep Dive deck (08-05). Companions: `WAM_Data_Architecture.md`, `Part_Classification.md`, `WAM_Roadmap.md` (**rewritten 08-05 from the Backlog Deep Dive deck; the July track-based slide is preserved inside it as the prior version**).
+As of: 2026-10-19 (weekly evidence: DDPTRK-6346 complete, WACT recorded, IDP parked; prior: 2026-10-15 cross-SBU data-capture session notes filed; prior: 2026-10-14 ADM constraints slide and capacity reset inputs; 2026-10-13 ADM license tracking scorecard; 2026-10-07; earlier: 2026-08-17 FY27 P&L section added; base 2026-08-05) — merged: 30-day baseline + daily evidence + context library v1 (files 20/22) + WAM actuals deck (07-15) + WAM Backlog Deep Dive deck (08-05). Companions: `WAM_Data_Architecture.md`, `Part_Classification.md`, `WAM_Roadmap.md` (**rewritten 08-05 from the Backlog Deep Dive deck; the July track-based slide is preserved inside it as the prior version**).
+
+
+## Weekly evidence, 2026-10-12 to 2026-10-19 (added 2026-10-19)
+
+Source: weekly M365 evidence 2026-10-12 to 2026-10-19 (`Evidence/M365_Evidence_Weekly_2026-10-19.md`). Primary source: Digital Products Portfolio Status Update.pptx (WAM and portfolio sections, opened via targeted find); 2026-10-15 working-session invite/chat (not transcribed at source).
+
+- **DDPTRK-6346 is complete (Durable, stated outright in the portfolio status).** Global warranty, license, delivery and software attributes, delivered through MDM Governance, Product MDM and the Data Lake. This is the attribute ticket tracked since 07-16 (`03` D076, `05` B12, both now potentially closed). **It does not close the data-quality problem:** the same deck keeps part-number matching (truncated manufacturer part numbers, `05` A29) and supplier-attribute coverage open.
+- **WACT formally recorded as not pursued in the portfolio status (Durable).** Feasibility analysis complete, coverage insufficient. Consistent with Darryl's 2026-09-14 position above; the portfolio document now matches the record, so the reporting consequence noted on 09-14 is resolved.
+- **Complex-build system of record still open (Durable as a state, not a decision).** The comparison is now explicitly WMX vs VAS vs Strev/ADM, with Daniel Totino and Akansh Gangil named as Product/GPO owners in the portfolio file (named, not quoted). The 2026-10-15 session material warns that VAS, WMX, ADM/ALM and possibly Strev can each capture serial numbers and MAC addresses, which is the duplicate-capture risk. Serial and MAC capture remains a requirement (Darryl, 09-10). `05` A67.
+- **IDP-to-WAM integration "remains parked"** (portfolio status): IDP capacity committed to higher-priority work, no resource, no date. Same position as 09-02/09-11 (`04` W022, trend now worsening), now stated in a portfolio-level document.
 
 ## Cross-SBU data-capture working session, 2026-10-15 (added 2026-10-15)
 
