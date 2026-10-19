@@ -8,7 +8,7 @@
 
 | Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|
-| Dell | 0 | At risk | no prior week | 12 | 2 | 2 | 1 |
+| Dell | 0 | At risk | no prior week | 13 | 2 | 2 | 1 |
 | Federal Reserve | 75 | Strained | no prior week | 0 | 0 | 0 | 5 |
 | Wesco Warehouse | 84 | Healthy | no prior week | 2 | 0 | 0 | 0 |
 | Ford | 85 | Healthy | no prior week | 0 | 0 | 0 | 3 |
@@ -29,6 +29,8 @@ No signals in the window: BAE, UWM.
 - **P023** Penang 2: down points not triggering the expected faults or notifications (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P027** Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P028** Site-meter information missing at several Dell sites (Chile named), blocking rollup views (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P030** PAS01 Grid Board pod not loaded after the pod update, blocking validation of completed fixes (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P034** ADM renewal identification is manual and unreliable; renewal metrics cannot be sustained this way (no account; ADM connect with Natalie). Test: Darryl named or asked for a decision, resource or escalation.
 - **P016** Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P024** Standardized UPS/device point list for integration and alarm rules still unavailable (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P029** Prospective data-center customer substation request cannot be scoped (equipment, model and IP readiness unknown) (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -49,13 +51,13 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Akansh Gangil | 0 | 4 | 13 | 0 | WAM Product Backlog Refinement, WAM Sprint Review |
+| Akansh Gangil | 2 | 4 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Syed Jamshed Zaidi | 7 | 3 | 1 | 0 | 2026 Deployment Daily Scrum |
-| Chad Steger | 0 | 3 | 6 | 0 | 2026 Deployment Daily Scrum |
+| Chad Steger | 0 | 4 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Scott Dunn | 3 | 8 | 2 | 0 | 2026 Deployment Daily Scrum |
+| Ron Snyder | 2 | 0 | 3 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Babu Papanna | 1 | 0 | 4 | 0 | entroCIM Daily Stand Up |
-| Natalie Marquardt | 0 | 0 | 5 | 0 |  |
-| Ron Snyder | 1 | 0 | 3 | 0 | 2026 Deployment Daily Scrum |
+| Natalie Marquardt | 0 | 2 | 5 | 0 | ADM connect with Natalie |
 | Nathan Kehr | 0 | 0 | 4 | 0 |  |
 | Adam Lazare | 0 | 0 | 3 | 0 |  |
 | Amy Aguirre | 0 | 0 | 3 | 0 |  |
@@ -94,12 +96,15 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P008 De
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 2, new this week 2, stuck 0, quiet 0. Last sighting: 2026-10-15. Last evidence: 2026-10-16.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 5, new this week 5, stuck 0, quiet 0. Last sighting: 2026-10-15. Last evidence: 2026-10-16.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
+| P030 | PAS01 Grid Board pod not loaded after the pod update, blocking validation of completed fixes |  | Ron Snyder | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible, candidate: boundary |
+| P032 | Dell Showcase: virtual-point function failing, apparently around a faulty tag | Dell | Jason Ganiatsas | Medium | 2026-10-14 | 2026-10-14 | 1 | customer-visible |
 | P010 | entroCIM tenant redesign and boot-mode routing: no acceptance criteria, rollout sequence or release date yet |  | Michael Pieschel | Medium | 2026-10-14 | 2026-10-15 | 2 |  |
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-10-15 | 2 |  |
+| P031 | SkySpark connectors (Energy Direct and several others) returning no data |  | Abhishek Savanur | Medium | 2026-10-14 | 2026-10-15 | 2 |  |
 
 ## entroCIM Backlog Deep Dive
 
@@ -163,9 +168,12 @@ No issues in the Pulse yet.
 
 ## ADM connect with Natalie
 
-Governance: Product execution. Owner: Akansh Gangil. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-09-09 (none in the window).
+Governance: Product execution. Owner: Akansh Gangil. Live 2, new this week 2, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-19.
 
-No issues in the Pulse yet.
+| ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
+|---|---|---|---|---|---|---|---|---|
+| P034 | ADM renewal identification is manual and unreliable; renewal metrics cannot be sustained this way |  | Akansh Gangil | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible, candidate: asked |
+| P033 | ADM removed/cancelled-orders page missing the removal-date column and export |  | Akansh Gangil | Low | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 
 ## Product Team / Platform Team connect
 
