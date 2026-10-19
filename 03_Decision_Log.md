@@ -808,7 +808,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-19 16:31 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-19 16:37 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
 
@@ -1019,6 +1019,8 @@
 - Forum: ADM connect with Natalie.
 - Options: continue manual attribution vs. automate via future DDP linkage.
 - Risk of waiting: manual effort accumulates; low near-term risk.
+
+2026-10-19 (Claude, session): Raised again by its owner, now as a request to Darryl. ADM connect with Natalie, 2026-10-13, Akansh Gangil: "We definitely have to do something about this renewal, automatic renewal marking because... It's not humanly possible... to keep doing this manually. We have to figure out a way with Dan. I'll talk to Darryl." Renewal metrics reported to sales management depend on it. Pulse P034. Source: `Evidence/M365_Evidence_PulseP2_2026-10-19.md` (transcript).
 
 ## Decision Backlog
 
