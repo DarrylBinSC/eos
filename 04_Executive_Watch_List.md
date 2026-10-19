@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 20 (ceiling 20) · Passive 53 · Retired 25.
+**Counts at generation:** Active 21 (ceiling 20) · Passive 53 · Retired 25.
 
 ## Active
 
@@ -31,6 +31,7 @@
 | W019 | Louvre Abu Dhabi closeout — snag-list stall | High | ↑ | Direct (Deployment Daily Scrum 07-22; Re: IoT Consolidation Platform - Project Deployment Meeting, 08-04) | 2026-10-19 | Escalated from Medium 08-05. |
 | W021 | Federal Reserve (FRBNY) release 3.1.12.13 — held, customer not told | High | ↑ | Direct (Sarah Monteleone quoting Chad Steger, `Re: entroCIM Release – Version 3.1.12.13`, weekly evidence 2026-08-24 to 08-31) | 2026-10-19 | Escalated back to Active 2026-09-01 on a direct signal — held Passive since 08-27 on the reasoning that engineering already owned the fix, but this week's evidence shows the stall continuing rather than closing. |
 | W022 | IDP/ADM production integration — approved but unstaffed | High | ↑ | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-10-19 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
+| W099 | PC1/JCI large-scale point faults and intermittent site access | High | New | Escalated from Pulse P007 (2026 Deployment Daily Scrum) | 2026-10-19 | 2026-10-19 (Darryl, web): Escalated from Pulse P007 (2026 Deployment Daily Scrum). |
 | W008 | Ford entroCIM (UDAC) renewal and platform-trust gap | Medium | ↑ | Direct (`Wesco & Ford - entroCIM Platform - Re-Alignment & Action Item Call`, 08-26; RE: SLA Verbiage email thread, weekly evidence 2026-09-02 to 09-09) | 2026-10-05 | Ford and Wesco aligned on 08-26 to renew UDAC support and let EDC support expire, using an SLA for unplanned support and SOW/SME hours for planned scope (Darryl: "Hours buy Capacity, SLA buys commitment" — `Products/entroCIM/entroCIM.md`). |
 | W027 | Quest/Azure decommission -- secure data-removal validation T&M approval unresolved | Medium | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Secure data-removal validation on the Quest exit requires approval of a $245/hour T&M consultation; |
 | W002 | Dell account staffing — second dedicated entroCIM/EMS FTE requested | Medium-High | New | Direct (RE: Dell EMS Program FTE New Hire Discussion, weekly evidence 2026-10-05) | 2026-10-16 | Dell asked for a second dedicated FTE within three to five months. |
