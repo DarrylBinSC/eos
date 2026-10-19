@@ -121,7 +121,7 @@
    "aliases": [],
    "confirmed": true,
    "track": "development",
-   "last_evidence": "2026-09-14"
+   "last_evidence": "2026-10-13"
   },
   {
    "key": "wam-sprint-review",
@@ -135,7 +135,7 @@
    "aliases": [],
    "confirmed": true,
    "track": "development",
-   "last_evidence": "2026-08-25"
+   "last_evidence": "2026-10-13"
   },
   {
    "key": "wam-india-dev",
