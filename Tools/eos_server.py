@@ -49,6 +49,47 @@ CLOSED_STATUSES = {"closed", "dropped", "aged_out"}
 PULSE_DONE = {"resolved", "dropped"}
 
 
+# ----------------------------------------------------------------------------- briefs (added 2026-10-19)
+
+BRIEFS_DIR = R.ROOT / "Briefings"
+BRIEF_NAME = r"\d{4}-\d{2}-\d{2}_[A-Za-z0-9_-]+\.md"   # dated briefs only; also blocks path traversal
+BRIEF_VIEWS = R.ROOT / "Dashboard" / "brief_views.jsonl"   # gitignored; the usage test for the tab
+
+
+def list_briefs() -> list[dict]:
+    out = []
+    for f in BRIEFS_DIR.glob("*.md"):
+        if not re.fullmatch(BRIEF_NAME, f.name):
+            continue
+        stem = f.stem
+        date, _, rest = stem.partition("_")
+        low = rest.lower()
+        kind = ("Weekly" if "weekly" in low else "Daily" if "daily" in low else "Baseline" if "baseline" in low
+                else rest.replace("_", " ")[:24])
+        title = ""
+        try:
+            for line in f.read_text(encoding="utf-8").splitlines():
+                if line.startswith("# "):
+                    title = line[2:].strip()
+                    break
+        except Exception:
+            pass
+        out.append({"name": f.name, "date": date, "kind": kind, "title": title,
+                    "docx": f.with_suffix(".docx").exists(), "bytes": f.stat().st_size})
+    out.sort(key=lambda b: (b["date"], b["kind"] == "Weekly"), reverse=True)
+    return out
+
+
+def log_brief_view(name: str, source: str) -> None:
+    try:
+        BRIEF_VIEWS.parent.mkdir(exist_ok=True)
+        with BRIEF_VIEWS.open("a", encoding="utf-8") as fh:
+            fh.write(json.dumps({"at": dt.datetime.now().isoformat(timespec="seconds"), "brief": name,
+                                 "from": source[:20]}) + "\n")
+    except Exception:
+        pass
+
+
 # ----------------------------------------------------------------------------- git
 
 def git(*args) -> tuple[int, str]:
@@ -253,6 +294,24 @@ class H(BaseHTTPRequestHandler):
             return self._json(200, {"markdown": txt})
         if u.path == "/api/log":
             return self._json(200, {"log": recent_log(int(q.get("n", ["30"])[0]))})
+        # Briefs tab (added 2026-10-19): read-only view of Briefings/*.md, plus the Word copy when it exists.
+        if u.path == "/api/briefs":
+            return self._json(200, {"briefs": list_briefs(), "today": R.today()})
+        m = re.fullmatch(r"/api/briefs/(" + BRIEF_NAME + r")", u.path)
+        if m:
+            f = BRIEFS_DIR / m.group(1)
+            if not f.exists():
+                return self._json(404, {"error": "not found"})
+            log_brief_view(m.group(1), q.get("from", [""])[0])
+            return self._json(200, {"name": f.name, "markdown": f.read_text(encoding="utf-8"),
+                                    "docx": f.with_suffix(".docx").exists()})
+        m = re.fullmatch(r"/briefs/(" + BRIEF_NAME[:-4] + r")\.docx", u.path)
+        if m:
+            f = BRIEFS_DIR / (m.group(1) + ".docx")
+            if not f.exists():
+                return self._json(404, {"error": "not found"})
+            return self._send(200, f.read_bytes(),
+                              "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
         return self._json(404, {"error": "no route"})
 
     def do_PATCH(self):
@@ -711,6 +770,25 @@ button.pv-pp{min-height:40px;align-items:center}
  .pintro,.chips{margin-left:16px;margin-right:16px}.hgrid{padding:0 16px}
  .toast{white-space:normal;max-width:calc(100% - 32px)}
 }
+.bv{display:grid;grid-template-columns:300px minmax(0,1fr);gap:0;min-height:calc(100vh - 140px)}
+.bl{border-right:1px solid var(--line);padding:8px 0}.bl .ghead{padding:12px 16px 6px}
+.bi{display:block;width:100%;text-align:left;border:0;background:none;padding:9px 16px;color:var(--ink);font-size:14px;cursor:pointer;border-left:3px solid transparent}
+.bi:hover{background:var(--sel)}.bi.on{background:var(--sel);border-left-color:var(--acc)}
+.bi .bd{font-weight:600;font-variant-numeric:tabular-nums}.bi .bk{font-size:12px;color:var(--muted);margin-left:6px}
+.bi .bk.w{color:var(--acc);font-weight:600}.bi .bt{display:block;font-size:12.5px;color:var(--muted);margin-top:1px}
+.br{padding:20px 32px 60px;max-width:900px}.br .bh{display:flex;flex-wrap:wrap;align-items:center;gap:12px;font-size:13px;color:var(--muted);margin-bottom:12px}
+.br .bh a{color:var(--acc)}.md.brief h1{font-size:22px;margin:0 0 14px}.md.brief h2{font-size:13px;margin:26px 0 8px}.md.brief h3{font-size:15px;margin:16px 0 6px}
+.md.brief p,.md.brief li{font-size:15px;line-height:23px}.md.brief table{font-size:13.5px;width:100%}
+.md a.iid{font:600 12.5px ui-monospace,Menlo,monospace;color:var(--acc);text-decoration:none;border-bottom:1px dotted var(--acc)}
+.co{border-radius:8px;padding:10px 14px;margin:12px 0;background:var(--sunk)}.co p{margin:4px 0}
+.co.risk{border-left:4px solid var(--red)}.co.dec{border:1px solid var(--acc);background:var(--sel)}
+.co.src{background:none;padding:2px 0;font-size:12.5px;color:var(--muted)}.co.src p{font-size:12.5px;line-height:18px;color:var(--muted)}
+.co.bl1{border-top:2px solid var(--ink);border-bottom:2px solid var(--ink);border-radius:0;background:none}
+.co.cap{background:none;padding:0;font-style:italic}.co.cap p{font-size:13px;color:var(--muted)}
+.chart{border:1px dashed var(--line);border-radius:8px;padding:12px 14px;color:var(--muted);font-size:13.5px;margin:12px 0}
+.tab .nd{width:7px;height:7px;border-radius:50%;background:var(--acc);display:inline-block}
+.bback{display:none}.br{min-width:0;overflow-wrap:anywhere}.bl{min-width:0}
+@media (max-width:820px){.bv{grid-template-columns:1fr}.bl{border-right:0}.bv.reading .bl{display:none}.bv:not(.reading) .br{display:none}.br{padding:12px 16px 60px}.bback{display:inline-block}.br .bh .bp{display:none}.md.brief table{display:block;overflow-x:auto}.md.brief h1{font-size:19px}}
 </style></head><body>
 <header>
  <div class="hbar">
@@ -731,16 +809,16 @@ button.pv-pp{min-height:40px;align-items:center}
 
 <script>
 const $=s=>document.querySelector(s);
-let ITEMS=[],TODAY='',VIEW='triage',Q='',SEL=null,MOREW=false,DRAWER=null,PULSE=null,PF={},PALL=false;
+let BRIEFS=[],BRIEF=null,BREAD=false,ITEMS=[],TODAY='',VIEW='triage',Q='',SEL=null,MOREW=false,DRAWER=null,PULSE=null,PF={},PALL=false;
 const BASE={},SESSION=[],SAVED={};
 const CLOSED=new Set(['closed','dropped','aged_out']);
 const isOpen=i=>!CLOSED.has(i.status)&&i.tier!=='retired';
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const plain=s=>String(s??'').replace(/\*\*([^*]+)\*\*/g,'$1').replace(/`([^`]+)`/g,'$1').replace(/~~([^~]+)~~/g,'$1');
 let toastT;function toast(t){const e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toastT);toastT=setTimeout(()=>e.style.display='none',2200)}
-async function load(){const [j,p]=await Promise.all([fetch('/api/items').then(r=>r.json()),fetch('/api/pulse').then(r=>r.ok?r.json():null).catch(()=>null)]);ITEMS=j.items;TODAY=j.today;PULSE=p;render();const o=new URLSearchParams(location.search).get('open');if(o&&!DRAWER)openDrawer(o)}
+async function load(){const [j,p]=await Promise.all([fetch('/api/items').then(r=>r.json()),fetch('/api/pulse').then(r=>r.ok?r.json():null).catch(()=>null),loadBriefs()]);ITEMS=j.items;TODAY=j.today;PULSE=p;render();const o=new URLSearchParams(location.search).get('open');if(o&&!DRAWER)openDrawer(o)}
 
-const VIEWS=[['triage','Focus'],['pulse','Pulse'],['A','Mine'],['other','Other-owned'],['watch','Watch'],['decision','Decisions'],['needs','Needs triage'],['closed','Disposed']];
+const VIEWS=[['triage','Focus'],['pulse','Pulse'],['briefs','Briefs'],['A','Mine'],['other','Other-owned'],['watch','Watch'],['decision','Decisions'],['needs','Needs triage'],['closed','Disposed']];
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],WD=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const dn=s=>{const[y,m,d]=s.split('-').map(Number);return Date.UTC(y,m-1,d)};
 const days=s=>Math.round((dn(s)-dn(TODAY))/864e5);
@@ -859,11 +937,12 @@ function rowHtml(i){
 function render(){
   const a=filtered();const open=ITEMS.filter(isOpen);
   const A=open.filter(i=>i.kind==='action'&&i.register==='A').length,W=open.filter(i=>i.kind==='watch'&&i.tier==='active').length,D=open.filter(i=>i.kind==='decision'&&i.tier==='radar').length,N=ITEMS.filter(i=>i.needs_triage).length;
-  $('#views').innerHTML=VIEWS.map(([v,l])=>`<button class="tab${v===VIEW?' on':''}" data-v="${v}"${v===VIEW?' aria-current="page"':''}>${l}<span class="n">${ITEMS.filter(i=>inView(i,v)).length}</span></button>`).join('');
+  $('#views').innerHTML=VIEWS.map(([v,l])=>`<button class="tab${v===VIEW?' on':''}" data-v="${v}"${v===VIEW?' aria-current="page"':''}>${l}${v==='briefs'?(BRIEFS.some(b=>b.date===TODAY)?'<span class="nd" title="Today\u2019s brief is in"></span>':''):`<span class="n">${ITEMS.filter(i=>inView(i,v)).length}</span>`}</button>`).join('');
   const m=(l,s,n,c)=>`<div class="cap${n>c?' over':''}"><span class="l">${l}</span><span class="s">${s}</span><span class="bar"><i style="width:${Math.min(100,n/c*100)}%"></i></span><b>${n}/${c}</b></div>`;
   const dt=new Date(dn(TODAY));
-  $('#meta').innerHTML=m('Register A','A',A,15)+m('Watch active','Watch',W,20)+m('Radar','Radar',D,20)+pulseCaps()+`<div class="cap"><span class="dot"></span><span class="l">Needs triage</span><span class="s">Triage</span><b>${N}</b></div><span class="today">${a.length} shown · ${['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][dt.getUTCDay()]}, ${fmt(TODAY)}</span>`;
+  $('#meta').innerHTML=m('Register A','A',A,15)+m('Watch active','Watch',W,20)+m('Radar','Radar',D,20)+pulseCaps()+`<div class="cap"><span class="dot"></span><span class="l">Needs triage</span><span class="s">Triage</span><b>${N}</b></div><span class="today">${VIEW==='briefs'?BRIEFS.length+' briefs':a.length+' shown'} · ${['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][dt.getUTCDay()]}, ${fmt(TODAY)}</span>`;
   $('#logBtn').innerHTML='Changes'+(SESSION.length?`<span class="badge">${SESSION.length}</span>`:'');
+  if(VIEW==='briefs'){$('#list').innerHTML=briefsHtml();return}
   if(VIEW==='pulse'){$('#list').innerHTML=pulseHtml();const hd=document.querySelector('header');if(hd)document.documentElement.style.setProperty('--hdrH',hd.offsetHeight+'px');return}
   const gs=groups(a);
   $('#list').innerHTML=sortBar(VIEW,a.length)+(gs.map(g=>{let rows=g.rows,more='';
@@ -881,6 +960,9 @@ document.addEventListener('click',e=>{
   const mo=e.target.closest('[data-mopen]');if(mo){closeMeet();openDrawer(mo.dataset.mopen);return}
   if(e.target.closest('[data-pplall]')){PPLALL=!PPLALL;render();return}
   const s=e.target.closest('.seg button');if(s){e.stopPropagation();const i=ITEMS.find(x=>x.id===s.dataset.id);if(i&&i[s.dataset.k]!==s.dataset.val)patch(s.dataset.id,{[s.dataset.k]:s.dataset.val},'');return}
+  const bi=e.target.closest('[data-brief]');if(bi){openBrief(bi.dataset.brief,'list');return}
+  if(e.target.closest('[data-bback]')){BREAD=false;render();scrollTo(0,0);return}
+  const cb=e.target.closest('.tab[data-v]');if(cb&&cb.dataset.v==='briefs'){VIEW='briefs';loadBriefs().then(()=>{if(!BRIEF&&BRIEFS.length)openBrief(BRIEFS[0].name,'tab');else render()});scrollTo(0,0);return}
   const c=e.target.closest('.tab[data-v]');if(c){VIEW=c.dataset.v;MOREW=false;for(const k in BASE)delete BASE[k];render();scrollTo(0,0);return}
   if(e.target.closest('[data-more]')){MOREW=!MOREW;render();return}
   const es=e.target.closest('[data-esc]');if(es){e.stopPropagation();escalateP(es.dataset.id,es.dataset.esc);return}
@@ -1345,6 +1427,43 @@ function md(src){const inl=t=>esc(t).replace(/`([^`]+)`/g,'<code>$1</code>').rep
     if((m=l.match(/^\d+\. (.*)/))){if(list!=='ol'){flush();list='ol';out.push('<ol>')}out.push(`<li>${inl(m[1])}</li>`);continue}
     flush();out.push(`<p>${inl(l)}</p>`)}
   flush();return out.join('')}
+/* ---------- Briefs tab (2026-10-19): the daily and weekly briefs, in sight, with item IDs that open the item ---------- */
+async function loadBriefs(){try{const j=await (await fetch('/api/briefs')).json();BRIEFS=j.briefs||[]}catch(e){BRIEFS=[]}}
+async function openBrief(name,from){try{const j=await (await fetch('/api/briefs/'+encodeURIComponent(name)+'?from='+encodeURIComponent(from||''))).json();BRIEF=j;BREAD=true}catch(e){toast('Could not open '+name)}render();if(from==='list')scrollTo(0,0)}
+function wkStart(s){const d=new Date(dn(s));const w=(d.getUTCDay()+6)%7;return dn(s)-w*864e5}
+function briefsHtml(){
+  if(!BRIEFS.length)return '<div class="empty">No briefs in the Briefings folder yet.</div>';
+  const thisWk=wkStart(TODAY),lastWk=thisWk-7*864e5,g={a:[],b:[],c:[]};
+  for(const b of BRIEFS){const w=wkStart(b.date);(w>=thisWk?g.a:w>=lastWk?g.b:g.c).push(b)}
+  const row=b=>`<button type="button" class="bi${BRIEF&&BRIEF.name===b.name?' on':''}" data-brief="${esc(b.name)}"><span class="bd">${WD[new Date(dn(b.date)).getUTCDay()]} ${fmt(b.date)}</span><span class="bk${b.kind==='Weekly'?' w':''}">${esc(b.kind)}</span>${b.date===TODAY?'<span class="bk w">Today</span>':''}</button>`;
+  const sec=(l,a)=>a.length?`<h2 class="ghead">${l}<span class="n">${a.length}</span></h2>${a.map(row).join('')}`:'';
+  const list=`<nav class="bl" aria-label="Briefs">${sec('This week',g.a)}${sec('Last week',g.b)}${sec('Earlier',g.c)}</nav>`;
+  let rd='<div class="br"><div class="empty">Select a brief.</div></div>';
+  if(BRIEF){const b=BRIEFS.find(x=>x.name===BRIEF.name)||{};
+    rd=`<article class="br"><div class="bh"><button type="button" class="btn bback" data-bback>All briefs</button><span class="bp">Briefings/${esc(BRIEF.name)}</span>${BRIEF.docx?`<a href="/briefs/${esc(BRIEF.name.replace(/\.md$/,''))}.docx">Word version</a>`:'<span>No Word version yet</span>'}<span>Item IDs open the item</span></div><div class="md brief">${briefMd(BRIEF.markdown)}</div></article>`}
+  return `<div class="bv${BREAD?' reading':''}">${list}${rd}</div>`}
+const IDRE=/\b(C-i3-\d+b?|[ABCDWPKTX]\d{1,3})\b/g;
+function linkIds(h){return h.split(/(<code>[\s\S]*?<\/code>|<[^>]+>)/).map((s,k)=>k%2?s:s.replace(IDRE,m=>ITEMS.some(i=>i.id===m)?`<a href="#" class="iid" data-open="${m}">${m}</a>`:m)).join('')}
+function briefMd(src){
+  const inl=t=>linkIds(esc(t).replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/(^|[^*])\*([^*\s][^*]*)\*/g,'$1<i>$2</i>'));
+  const CO={'Risk':'risk','Decision Required':'dec','Source Note':'src','Bottom Line':'bl1','Image Caption':'cap'};
+  const out=[];let list=null,tbl=null,fence=null,fbuf=[],co=null,para=[];
+  const fp=()=>{if(para.length){out.push(`<p>${inl(para.join(' '))}</p>`);para=[]}};
+  const flush=()=>{fp();if(list){out.push(`</${list}>`);list=null}if(tbl){out.push('</table>');tbl=null}};
+  for(const raw of src.split('\n')){const l=raw.trimEnd();let m;
+    if(fence!==null){if(/^```/.test(l)){out.push(fence==='mermaid'?`<div class="chart">Chart (${/xychart/.test(fbuf.join(' '))?'items taken vs disposed':'diagram'}): it renders in the Word version${BRIEF&&BRIEF.docx?'':' once the converter has run'}.</div>`:`<pre class="md-pre"><code>${esc(fbuf.join('\n'))}</code></pre>`);fence=null;fbuf=[]}else fbuf.push(raw);continue}
+    if((m=l.match(/^```\s*(\w*)/))){flush();fence=m[1]||'';continue}
+    if((m=l.match(/^:::\s*\{custom-style="([^"]+)"\}/))){flush();co=CO[m[1]]||'src';out.push(`<div class="co ${co}">`);continue}
+    if(/^:::\s*$/.test(l)&&co){flush();out.push('</div>');co=null;continue}
+    if(!l.trim()){flush();continue}
+    if((m=l.match(/^(#{1,3}) (.*)/))){flush();out.push(`<h${m[1].length}>${inl(m[2])}</h${m[1].length}>`);continue}
+    if((m=l.match(/^\|(.+)\|$/))){fp();if(/^\|[\s|:-]+\|$/.test(l))continue;const cells=m[1].split('|').map(c=>c.trim());if(!tbl){flush();tbl=1;out.push('<table>');out.push('<tr>'+cells.map(c=>`<th>${inl(c)}</th>`).join('')+'</tr>')}else out.push('<tr>'+cells.map(c=>`<td>${inl(c)}</td>`).join('')+'</tr>');continue}
+    if((m=l.match(/^\s*- (.*)/))){fp();if(list!=='ul'){flush();list='ul';out.push('<ul>')}out.push(`<li>${inl(m[1])}</li>`);continue}
+    if((m=l.match(/^\d+\. (.*)/))){fp();if(list!=='ol'){flush();list='ol';out.push('<ol>')}out.push(`<li>${inl(m[1])}</li>`);continue}
+    if(list&&/^\s{2,}\S/.test(raw)){out[out.length-1]=out[out.length-1].replace(/<\/li>$/,' '+inl(l.trim())+'</li>');continue}
+    if(list||tbl)flush();
+    para.push(l)}
+  flush();if(co)out.push('</div>');return out.join('')}
 $('#helpBtn').onclick=async()=>{const j=await (await fetch('/api/guide')).json();SEL=null;
   $('#panel').innerHTML=`<div class="p-top">${head('','Help')}</div><div class="p-sec md">${md(j.markdown)}</div>`;
   showDrawer('help');$('#drawer').scrollTop=0;render()};
