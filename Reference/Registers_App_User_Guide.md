@@ -17,6 +17,7 @@ Everything you change in the app is written to that item's file, the summary fil
 | Tab | Shows |
 |---|---|
 | **Pulse** | What your team-governed forums are carrying, in a rolling 14-day window: what needs your call, your pinned account, how many forums you heard from, account health, live issues, your weekly governance, knowledge risks, and the people carrying the most. See Pulse, below |
+| **Briefs** (added 2026-10-19) | Every daily and weekly brief, newest first, grouped This week / Last week / Earlier. A dot on the tab means today's brief is in. The brief opens formatted, with the Risk and Decision Required boxes; every item ID in it (A61, W021, C72) opens that item so you can close, re-date or note it without leaving the brief. The Word version is one tap away. Charts show in the Word version only |
 | **Focus** (renamed from Triage 2026-10-19) | What needs your attention: your own actions, Critical other-owned actions, Active risks, and Radar decisions, in bands by urgency (needs triage, overdue, due this week, later, no date, watch) |
 | **Mine** | Register A: actions only you can move. Ceiling 15 |
 | **Other-owned** | Actions you delegated (Delegated) or are waiting on from someone else (Awaited) |
