@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 80 (Critical 17) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 79 (Critical 17) · Needs triage 0.
 
 ---
 
@@ -53,7 +53,6 @@ Four registers. The delineation is the point.
 | # | Item | Owner | Type | Gate / Due | Critical? | Last evidence | Note |
 |---|---|---|---|---|---|---|---|
 | C8 | JCI technical data for the WAB submission | Jeff McCorvey | Awaited | 2026-07-30 NEED BY | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: JCI technical preparation rather than contract or customer exposure. |
-| B64 | Issue legal termination notice for Jeff Verdon's contractor engagement | Chris Gazdic | Delegated | 2026-08-31 to preserve a September end date — passed | -- | 2026-10-19 | Gated on Darryl confirming the decision with Babu and giving Chris the answer (see A-candidate note below). |
 | B74 | Investigate IDP engineering capacity via John, Sathish, and the Bangalore AI team | Ankit Chadha | Delegated | 2026-09-02 Within one to two weeks of | -- | 2026-10-05 | New 09-09. |
 | B82 | Send a follow-up email on the outstanding Azure listener dependency if unresolved after one more day | Babu Papanna | Delegated | 2026-09-17 | -- | 2026-10-19 | New 09-16. |
 | C50 | Strev pricing for the Virtual Site Survey: professional services development price, and a per-site run rate | Sunny Sharma and Christina (Revnue), chased by Amy Aguirre | Awaited | 2026-09-17 Requested on or before ; not dated | -- | 2026-09-17 | New 2026-09-17. |
@@ -145,6 +144,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-10-19 | **B64 — Issue legal termination notice for Jeff Verdon's contractor engagement** | Darryl, EOS web app, 2026-10-19 | Gated on Darryl confirming the decision with Babu and giving Chris the answer (see A-candidate note below). |
 | 2026-10-16 | **C11 — Confirmation or correction of the controller-capacity diagnosis** | Darryl, EOS web app, 2026-10-16 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a confirmation of a diagnosis; |
 | 2026-10-16 | **C-i3-3b — i3's answers to six pre-signature diligence questions** | Darryl, EOS web app, 2026-10-16 | Listed in the memo. |
 | 2026-10-16 | **B95 — Work with Natalia Shtern to revise entroCIM brochure terminology ("DCIM" to "Data Center" / "IT Asset")** | Darryl, EOS web app, 2026-10-16 | New 2026-10-05. |
