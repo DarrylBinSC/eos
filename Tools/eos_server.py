@@ -1204,7 +1204,7 @@ document.addEventListener('click',e=>{
   if(e.target.closest('[data-kopen]')){KOPEN=!KOPEN;render();return}
   if(e.target.closest('[data-popen]')){POPEN=!POPEN;render();return}
   const tko=e.target.closest('[data-trk]');if(tko){TRKOPEN[tko.dataset.trk]=!TRKOPEN[tko.dataset.trk];render();return}
-  if(e.target.closest('[data-guide]')){$('#helpBtn').click();return}
+  const gd=e.target.closest('[data-guide]');if(gd){openHelp(gd.dataset.guide||'Pulse');return}
   if(e.target.closest('[data-kall]')){KALL=!KALL;render();return}
   if(e.target.closest('[data-pv]')){VIEW='pulse';PF={};render();scrollTo(0,0);return}
   const pf=e.target.closest('[data-pf]');if(pf){const k=pf.dataset.pf,v=pf.dataset.val;const fromCap=!!pf.closest('#meta');PF=(!fromCap&&PF[k]===v)?{}:{[k]:v};VIEW='pulse';render();if(fromCap)scrollTo(0,0);if(PF[k]){const c=document.getElementById('pv-issues');if(c){c.scrollIntoView({block:'start'});scrollBy(0,-110)}}return}
@@ -1372,7 +1372,7 @@ function accountsSec(P,fk,fv){
   const q=(P.quiet_accounts||[]).length?`No signals this window: ${esc(P.quiet_accounts.join(', '))}. `:'';
   const ua=(P.unattributed||[]).length?`<div>Not scored because it names more than one account: ${P.unattributed.map(u=>`<a href="#" data-open="${esc(u.id)}">${esc(u.id)}</a> (${esc(u.accounts.join(', '))})`).join('; ')}. Set its account to count it once.</div>`:'';
   return `<section class="group pv-ah"><h2 class="ghead">Account health${ph?'':'<span class="sub">7-day trend in the load of open issues teams raised · load also counts your register items · select a row to filter · pin one account to the top</span>'}</h2>${hd}${rows}
-    <div class="pv-afoot"><div>${q}The line is the daily team-raised load since forum-by-forum capture began; the 7-day trend starts ${P.health&&P.health[0]&&P.health[0].trend_from?fmt(P.health[0].trend_from):'after a week of history'}. Worsening or Improving means a move of at least 5 points and 15%. Friction from evidence, not customer sentiment.</div>${ua}</div></section>`}
+    <div class="pv-afoot"><div>${q}The line is the daily team-raised load since forum-by-forum capture began; the 7-day trend starts ${P.health&&P.health[0]&&P.health[0].trend_from?fmt(P.health[0].trend_from):'after a week of history'}. Worsening or Improving means a move of at least 5 points and 15%. Friction from evidence, not customer sentiment. <button type="button" class="pv-lk" data-guide="How load and trend are calculated">How issues are weighted</button></div>${ua}</div></section>`}
 function govSec(P,fk,fv){const ph=PHONE();
   const tr=(P.tracks||[]).map(t=>{const fs=t.forums.map(k=>P.forums.find(f=>f.key===k)).filter(Boolean).sort((a,b)=>({raised:0,nothing_raised:1,not_heard:2}[a.ev_state]-{raised:0,nothing_raised:1,not_heard:2}[b.ev_state]));
     const cnt=[t.live+' live',t.new7+' new',t.stuck+' stuck',t.candidates+' call'+(t.candidates===1?'':'s'),t.knowledge?t.knowledge+' knowledge risk'+(t.knowledge>1?'s':''):''].filter(Boolean).join(' · ');
@@ -1739,9 +1739,11 @@ function copyPrompt(id){const all=[...CPR.fixed.map(o=>({k:o.id,label:o.label,te
   const done=()=>toast(`${o.label} copied. Paste it into a new Copilot chat.`);
   const fall=()=>{const ta=document.getElementById('cpt'+id);if(!ta)return toast('Copy blocked: open the text and copy it');ta.closest('details').open=true;ta.focus();ta.select();try{document.execCommand('copy')?done():toast('Text selected: press Cmd-C to copy '+o.label)}catch(e){toast('Text selected: press Cmd-C to copy '+o.label)}};
   if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(o.text).then(done,fall);else fall()}
-$('#helpBtn').onclick=async()=>{const j=await (await fetch('/api/guide')).json();SEL=null;
+async function openHelp(sec){const j=await (await fetch('/api/guide')).json();SEL=null;
   $('#panel').innerHTML=`<div class="p-top">${head('','Help')}</div><div class="p-sec md">${md(j.markdown)}</div>`;
-  showDrawer('help');$('#drawer').scrollTop=0;render()};
+  showDrawer('help');$('#drawer').scrollTop=0;render();
+  if(sec){const hs=[...document.querySelectorAll('#panel h2, #panel h3')];const h=hs.find(x=>x.textContent.trim().startsWith(sec));if(h)setTimeout(()=>h.scrollIntoView({block:'start'}),30)}}
+$('#helpBtn').onclick=()=>openHelp('');
 load();
 /* ?theme=light|dark forces a scheme (useful for screenshots); ?open=ID opens an item after load. */
 (()=>{const t=new URLSearchParams(location.search).get('theme');if(t)document.documentElement.dataset.theme=t})();
