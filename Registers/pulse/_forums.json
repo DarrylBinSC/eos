@@ -165,7 +165,8 @@
    "aliases": [],
    "confirmed": true,
    "track": "development",
-   "last_evidence": "2026-09-09"
+   "last_evidence": "2026-09-09",
+   "notes": "2026-10-19 (Darryl): a different meeting from WAM - Product Backlog Refinement; do not merge. Not found under this name in the 10-19 sweep; current calendar title to be confirmed."
   },
   {
    "key": "adm-connect",

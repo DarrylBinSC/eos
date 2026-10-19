@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-19 16:42 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-19 16:45 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-05 to 2026-10-19. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Baseline | n/a | 104 | n/a | 13 | 2 | 2 | 1 |
+| Dell | Baseline | n/a | 129 | n/a | 16 | 2 | 2 | 1 |
 | Federal Reserve | Baseline | n/a | 25 | n/a | 0 | 0 | 0 | 5 |
 | Wesco Warehouse | Baseline | n/a | 16 | n/a | 2 | 0 | 0 | 0 |
 | Ford | Baseline | n/a | 15 | n/a | 0 | 0 | 0 | 3 |
@@ -26,8 +26,8 @@ No signals in the window: BAE, UWM.
 - **P014** Dell non-DC server unavailable since the prior week, blocking meter verification (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P020** WAM historical upload mishandles one customer ID with different names; duplicate ETL error records (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P022** Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion (no account; WAM Sprint Review). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
-- **P023** Penang 2: down points not triggering the expected faults or notifications (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
-- **P027** Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
+- **P023** Penang 2: down points not triggering the expected faults or notifications (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
+- **P027** Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P028** Site-meter information missing at several Dell sites (Chile named), blocking rollup views (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P030** PAS01 Grid Board pod not loaded after the pod update, blocking validation of completed fixes (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P034** ADM renewal identification is manual and unreliable; renewal metrics cannot be sustained this way (no account; ADM connect with Natalie). Test: Darryl named or asked for a decision, resource or escalation.
@@ -79,14 +79,14 @@ Governance: Project management. Owner: Chad Steger. Live 19, new this week 17, s
 | P005 | Commissioned Panama devices not producing expected alarms ahead of environment decommissioning | Wesco Warehouse | Syed Jamshed Zaidi | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible |
 | P011 | Commissioned El Dorado devices not producing expected alarms ahead of environment decommissioning | Dell | Syed Jamshed Zaidi | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible |
 | P017 | North America lighting-site UPS alarms visible in PME/NMC but not reaching entroCIM |  | Leanne | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible |
-| P023 | Penang 2: down points not triggering the expected faults or notifications |  |  | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible, candidate: gap |
+| P023 | Penang 2: down points not triggering the expected faults or notifications | Dell |  | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible, candidate: gap |
 | P001 | PC1 Grid Board site-selection defect blocking the KWH report and dashboard | Dell |  | High | 2026-10-13 | 2026-10-15 | 2 | customer-visible |
 | P002 | Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches | Dell | Syed Jamshed Zaidi | High | 2026-10-13 | 2026-10-15 | 3 | customer-visible |
-| P027 | Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara |  |  | High | 2026-10-15 | 2026-10-15 | 1 | customer-visible, candidate: gap |
+| P027 | Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara | Dell |  | High | 2026-10-15 | 2026-10-15 | 1 | customer-visible, candidate: gap |
 | P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-15 | 2 | customer-visible, candidate: boundary |
 | P016 | Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation | Dell | Matthew Heid | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible, candidate: boundary |
 | P025 | Dell "three-creatures" requirements undefined; related work waits on a Dell workshop | Dell | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
-| P026 | New York: two meters in commissioning, two with connection issues |  | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
+| P026 | New York: two meters in commissioning, two with connection issues | Dell | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 | P024 | Standardized UPS/device point list for integration and alarm rules still unavailable | Dell |  | Medium | 2026-10-14 | 2026-10-14 | 1 | customer-visible, candidate: boundary |
 | P003 | Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation | Dell | Syed Jamshed Zaidi | Medium | 2026-10-15 | 2026-10-15 | 1 |  |
 | P004 | Dell visualization scope unsettled: point pages only, or basic graphics and floor plans (El Dorado) | Dell |  | Medium | 2026-10-15 | 2026-10-15 | 1 | customer-visible |
