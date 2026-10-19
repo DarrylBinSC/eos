@@ -8,8 +8,8 @@
 
 | Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|
-| Federal Reserve | 75 | Strained | no prior week | 0 | 0 | 0 | 5 |
 | Dell | 45 | At risk | no prior week | 6 | 1 | 3 | 2 |
+| Federal Reserve | 75 | Strained | no prior week | 0 | 0 | 0 | 5 |
 | Ford | 85 | Healthy | no prior week | 0 | 0 | 0 | 3 |
 | Wesco Warehouse | 92 | Healthy | no prior week | 1 | 0 | 0 | 0 |
 | Coca-Cola (TCCC) | 94 | Healthy | no prior week | 0 | 0 | 1 | 1 |
