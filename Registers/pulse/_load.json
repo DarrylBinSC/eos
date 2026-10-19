@@ -1,0 +1,49 @@
+{
+ "2026-10-19": {
+  "BAE": {
+   "delta7": null,
+   "load": 0,
+   "teams": 0
+  },
+  "Coca-Cola (TCCC)": {
+   "delta7": null,
+   "load": 6,
+   "teams": 1
+  },
+  "Dell": {
+   "delta7": null,
+   "load": 104,
+   "teams": 99
+  },
+  "Federal Reserve": {
+   "delta7": null,
+   "load": 25,
+   "teams": 0
+  },
+  "Ford": {
+   "delta7": null,
+   "load": 15,
+   "teams": 0
+  },
+  "Louvre Abu Dhabi": {
+   "delta7": null,
+   "load": 5,
+   "teams": 0
+  },
+  "Stanford": {
+   "delta7": null,
+   "load": 5,
+   "teams": 0
+  },
+  "UWM": {
+   "delta7": null,
+   "load": 0,
+   "teams": 0
+  },
+  "Wesco Warehouse": {
+   "delta7": null,
+   "load": 16,
+   "teams": 16
+  }
+ }
+}
