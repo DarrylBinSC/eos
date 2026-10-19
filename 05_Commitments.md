@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-19 13:51 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-19 13:52 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 79 (Critical 17) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 78 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -91,7 +91,6 @@ Four registers. The delineation is the point.
 | B42 | Check/complete AD group access mapping for Claude Code rollout | Darryl Benson | Delegated | — | -- | 2026-10-19 | Superseded 08-17 — promoted to Register A28. |
 | B49 | Check legacy-system manufacturer part numbers and contact the UDM team (source of DDP/eUDM truncation) | Priyambada Dash | Delegated | Not dated | -- | 2026-10-15 | New 08-19, RE: Anixter P360 CORE Parts Character limitation for MANUFACTURER PART # in DDP (eUDM). |
 | B53 | Follow up the truncated manufacturer part number issue, summarise the need, and copy Darryl | Akansh Gangil | Delegated | Immediately, per 08-25 | **Critical** | 2026-10-15 | Akansh Gangil: "I will drop an e-mail and copy you also." Feeds A29 — if this produces no owner, A29 fires. |
-| B55 | Draft a one-page Dell response stating SOC 2 does not apply to a customer-hosted, customer-operated deployment | Syed Jamshed Zaidi | Delegated | After B44 clarifies | **Critical** | 2026-10-15 | Darryl: "To me for review before it goes out." Darryl reviews before send |
 | B58 | Provide the entroCIM AI one-pager details: business value, costs, benefits, incremental revenue | Ron Snyder | Delegated | Not stated | -- | 2026-10-15 | Gates the AI Tech Review submission. |
 | B60 | Export and audit the Freshdesk user-access report for Ford | Chad Steger | Delegated | Not dated | -- | 2026-10-15 | New 08-27. |
 | B61 | Contact UDAC POC Atif Iqbal to confirm receipt of pod updates and offer remote assistance | Chad Steger | Delegated | Not dated | -- | 2026-10-15 | New 08-27. |
@@ -145,6 +144,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
 | 2026-10-19 | **B64 — Issue legal termination notice for Jeff Verdon's contractor engagement** | Darryl, EOS web app, 2026-10-19 | Gated on Darryl confirming the decision with Babu and giving Chris the answer (see A-candidate note below). |
+| 2026-10-19 | **B55 — Draft a one-page Dell response stating SOC 2 does not apply to a customer-hosted, customer-operated deployment** | Darryl, EOS web app, 2026-10-19 | Darryl: "To me for review before it goes out." Darryl reviews before send |
 | 2026-10-16 | **C11 — Confirmation or correction of the controller-capacity diagnosis** | Darryl, EOS web app, 2026-10-16 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a confirmation of a diagnosis; |
 | 2026-10-16 | **C-i3-3b — i3's answers to six pre-signature diligence questions** | Darryl, EOS web app, 2026-10-16 | Listed in the memo. |
 | 2026-10-16 | **B95 — Work with Natalia Shtern to revise entroCIM brochure terminology ("DCIM" to "Data Center" / "IT Asset")** | Darryl, EOS web app, 2026-10-16 | New 2026-10-05. |

@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-19 13:51 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-19 13:52 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-05 to 2026-10-19. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,7 +8,7 @@
 
 | Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|
-| Dell | 45 | At risk | no prior week | 6 | 1 | 3 | 2 |
+| Dell | 50 | At risk | no prior week | 6 | 1 | 3 | 1 |
 | Federal Reserve | 75 | Strained | no prior week | 0 | 0 | 0 | 5 |
 | Ford | 85 | Healthy | no prior week | 0 | 0 | 0 | 3 |
 | Wesco Warehouse | 92 | Healthy | no prior week | 1 | 0 | 0 | 0 |
@@ -40,8 +40,8 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
 | Akansh Gangil | 0 | 0 | 13 | 0 |  |
-| Syed Jamshed Zaidi | 4 | 0 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Chad Steger | 0 | 2 | 6 | 0 | 2026 Deployment Daily Scrum |
+| Syed Jamshed Zaidi | 4 | 0 | 1 | 0 | 2026 Deployment Daily Scrum |
 | Natalie Marquardt | 0 | 0 | 5 | 0 |  |
 | Ron Snyder | 1 | 0 | 3 | 0 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 0 | 0 | 4 | 0 |  |
