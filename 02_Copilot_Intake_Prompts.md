@@ -295,7 +295,7 @@ EXCLUSION ACCOUNTING — applies to both exclusion tables, so the counts stay co
 - **Search noise is not an exclusion.** Unrelated tenant documents returned by a broad file search, price lists, invoices, receipts, personal files, and site assets were never candidate signals and must not be counted. If a search returned mostly noise, say so in the Retrieval and Source-Status Statement rather than inflating an exclusion count.
 
 
-GOVERNED-FORUM LABEL (added 2026-10-16). These forums run on their own team governance: 2026 Deployment - Daily Scrum, Daily Stand Up (entroCIM), entroCIM Backlog Deep Dive, DCOE & entroCIM Weekly, Quest Migration Weekly Check-In, Showcase recurring, Deployment Team Knowledge Share, WAM Product Backlog Refinement, WAM Sprint Review, WAM India Dev Team weekly, WAM Product discussion, ADM connect with Natalie, Product Team / Platform Team connect. Keep extracting from them exactly as before; do not drop or summarize their rows. In every table row whose source is one of these forums, begin the Source cell with "[Governed] ". For risks and blockers from these forums, state the named owner and how many prior sessions in the window raised the same issue, if visible.
+GOVERNED-FORUM LABEL (added 2026-10-16). These forums run on their own team governance: 2026 Deployment - Daily Scrum, Daily Stand Up (entroCIM), entroCIM Backlog Deep Dive, DCOE & entroCIM Weekly, Quest Migration Weekly Check-In, Showcase recurring, Deployment Team Knowledge Share, WAM Product Backlog Refinement, WAM Sprint Review, WAM India Dev Team weekly, WAM Product discussion, ADM connect with Natalie, Product Team / Platform Team connect. Keep extracting from them exactly as before; do not drop or summarize their rows. In every table row whose source is one of these forums, begin the Source cell with "[Governed] ". For risks and blockers from these forums, state the named owner and how many prior sessions in the window raised the same issue, if visible. COVERAGE FOR THE TWO DAILY FORUMS (added 2026-10-19): search 2026 Deployment - Daily Scrum and Daily Stand Up (entroCIM) separately, one at a time, and before section 1 add a two-row table: Forum | Occurrences found (dates) | Transcribed? | Artifacts opened (transcript / Loop / recap / chat) | Status: raised issues / met, nothing raised / not found / throttled. Every row is required even when nothing was found.
 
 REPORT HEADER — the first lines of the report, before section 1:
 
@@ -446,7 +446,7 @@ RETRIEVAL RULES — apply while gathering, before writing anything:
 - **Distinguish "not transcribed" from "could not retrieve," and never file the first as a coverage gap.** If a meeting reports `isMeetingTranscribed:false`, no transcript exists and nothing was lost in retrieval. Do not list it as a coverage gap, which implies a failure on your side and hides the real cause. List those meetings in a separate short block titled **"Not transcribed at source"**, naming each meeting and its date. **Meetings only.** An email, a document, or a Teams thread cannot be untranscribed and must never appear in this block; if it could not be read, that is a Coverage Gap. Do not list a source here and also cite it elsewhere as a source you read. That block is an operating signal, not a retrieval problem: it tells me which of my own recurring forums have transcription switched off, which is something I can change.
 - **Probe these two explicitly every run, because both have come back indeterminate before.** Attempt a Microsoft Planner and To Do task query, and attempt a Sent Items query bounded to the reporting window. Report the outcome of each attempt plainly: succeeded and what was found, or failed and the error or empty result. Do not skip the attempt and report the capability as unknown.
 
-GOVERNED-FORUM LABEL (added 2026-10-16). These forums run on their own team governance: 2026 Deployment - Daily Scrum, Daily Stand Up (entroCIM), entroCIM Backlog Deep Dive, DCOE & entroCIM Weekly, Quest Migration Weekly Check-In, Showcase recurring, Deployment Team Knowledge Share, WAM Product Backlog Refinement, WAM Sprint Review, WAM India Dev Team weekly, WAM Product discussion, ADM connect with Natalie, Product Team / Platform Team connect. Keep extracting from them exactly as before; do not drop or summarize their rows. In every table row whose source is one of these forums, begin the Source cell with "[Governed] ". For risks and blockers from these forums, state the named owner and how many prior sessions in the window raised the same issue, if visible.
+GOVERNED-FORUM SCOPE (changed 2026-10-19). These forums are swept separately, forum by forum, by Pulse Prompt 1 (delivery track) and Pulse Prompt 2 (development track): 2026 Deployment - Daily Scrum, Daily Stand Up (entroCIM), entroCIM Backlog Deep Dive, DCOE & entroCIM Weekly, Quest Migration Weekly Check-In, Showcase recurring, Deployment Team Knowledge Share, WAM Product Backlog Refinement, WAM Sprint Review, WAM India Dev Team weekly, WAM Product discussion, ADM connect with Natalie, Product Team / Platform Team connect. Do not spend searches on these meetings in this prompt. If an issue from one of them reaches you through email, chat or a different meeting, include it and begin its Source cell with "[Governed] ".
 
 REPORT HEADER — the first lines of the report, before section 1:
 
@@ -572,6 +572,88 @@ After completing the report, create a downloadable Markdown file named JCI_MSP_E
 When pasted back, Claude will: build a JCI MSP status picture (likely a new `Products/` or initiative file), route decisions/commitments/risks into 03–06, and propose the restart plan with owners and dates.
 
 ---
+
+## 5. Pulse Sweep Prompts 1 and 2: team-governed forums (added 2026-10-19, generated since the same day)
+
+**Use the web app, not this text.** Pulse tab, "Copilot prompts" button. It generates **Prompt 1 (Delivery track)** and **Prompt 2 (Development track)** with today's window, only the forums not heard within their cadence, and the current list of tracked issues, and says at the top whether to run Prompt 1, Prompt 2, or both. Each prompt opens with "PROMPT n OF 2" and asks Copilot to start its answer with the same line, so a pasted result always identifies itself. Run each in its own new Copilot chat.
+
+**Why two prompts.** The first catch-up run (2026-10-19) asked for all 13 forums at once: five searches were throttled and only four forums returned content. One prompt per governance track halves the load and matches how Darryl runs the two weekly governance meetings. The weekly prompt (section 3) no longer searches these forums; the daily prompt (section 2) still covers the two daily forums, with a coverage row each.
+
+**When a forum needs a sweep (the app's rule).** Daily forums: no evidence dated today. Weekly: none in 7 days. Bi-weekly: none in 14. Other or unknown cadence: none in 30, or never heard.
+
+**Manual fallback.** If the app is down, the text below is the original combined version (first run 2026-10-19). Replace the window and the tracked-issue list before using it; the list below is as of 2026-10-19.
+
+```
+ROLE
+You are extracting operational evidence from Microsoft 365 for a senior technology leader. Be literal and complete. Do not summarize away detail, and do not invent anything. If you cannot find or open something, say so in the coverage table.
+
+WINDOW
+2026-10-12 through 2026-10-19 inclusive. (Change both dates for a different window.)
+
+FORUMS (search for each one separately, by name and alias, one at a time)
+1. 2026 Deployment - Daily Scrum (aliases: Deployment Daily Scrum, Daily Scrum)
+2. Daily Stand Up (entroCIM) (aliases: entroCIM Daily Stand Up, Daily Standup)
+3. entroCIM Backlog Deep Dive
+4. DCOE & entroCIM Weekly
+5. Quest Migration Weekly Check-In
+6. Showcase recurring
+7. Deployment Team Knowledge Share
+8. WAM Product Backlog Refinement
+9. WAM Sprint Review
+10. WAM India Dev Team weekly
+11. WAM Product discussion
+12. ADM connect with Natalie
+13. Product Team / Platform Team connect
+
+For each forum: find every occurrence in the window (calendar, meeting recap, transcript, Loop or meeting notes, meeting chat). Open each transcript and Loop component and read it to the end; continue if it is truncated. Check whether each meeting was transcribed. Do not stop after the first forum that returns results.
+
+ISSUES ALREADY BEING TRACKED (report new mentions of these as sightings, not as new issues)
+P001 PC1 Grid Board site-selection defect blocking the KWH report and dashboard (Dell)
+P002 Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches
+P003 Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation
+P004 Dell visualization scope: point pages only, or basic graphics and floor plans (El Dorado)
+P005 Commissioned Panama devices not producing expected alarms before environment decommissioning (Wesco Warehouse)
+P006 Dell alarm-database corruption: intermittent alarming failures, no root cause
+P007 PC1/JCI large-scale point faults and intermittent site access (Dell)
+P008 Dell cluster session loss: fleet-wide configuration review
+P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration (Coca-Cola)
+P010 entroCIM tenant redesign and boot-mode routing: acceptance criteria, rollout sequence, release date
+P011 Commissioned El Dorado devices not producing expected alarms before decommissioning (Dell)
+P012 Dell FTE Franklin tracker: categorizing items for Scott Dunn review
+P013 Quest exit inventory: what must be retained and transferred to Wesco
+K001 Knowledge held mainly by one person: entroCIM tenant behavior and access model (Jason Ganiatsas)
+K005 Knowledge held mainly by one person: Dell FTE Franklin/Apex/Hortolandia assessment (Chethan GR, departed 2026-10-08)
+
+OUTPUT, in this order
+
+A. Coverage, one row per forum (all 13 rows, even when nothing was found)
+| Forum | Occurrences found (dates) | Transcribed? (yes/no per date) | Artifacts opened (transcript / Loop / recap / chat) | Status: raised issues / met, nothing raised / not found |
+
+B. Sightings of tracked issues
+| Issue ID | Date | Forum | What was said (quote the words, and name the speaker as shown) | Named owner, if any | Stated status: worse / same / better / resolved (resolved only if someone says it outright) |
+
+C. New issues (anything raised that is not on the tracked list)
+| Date | Forum | Issue in one line | Account or site, only if named (do not guess the customer) | Product | Severity: High / Medium / Low | Customer-visible? yes/no | Named owner (blank if none named) | People with a statement, commitment or stated role on it (not attendees) | Quote | Sessions in the window that raised it |
+
+D. Calls for the leader (rows from B or C only)
+Flag a row if: the leader was named or asked for a decision, resource or escalation; it involves contract or money, a customer executive, what to tell a customer, or a team outside the forum; it has been raised in 10 or more business days without resolution; or no owner is named, or the customer appears unaware of a material problem. Give the row reference and which test it meets. Severity alone is not a test.
+
+E. Knowledge concentration
+Only where the evidence says someone is the go-to or only person on something, work is waiting on one person, or an absence or departure opens a gap. Being busy does not count.
+| Person | Area | Evidence (quote) | Backup named? | Absence or departure date, if stated |
+
+F. Specific question: Strev SOW 3, Milestone 3
+In any of the WAM forums above, or in a meeting titled with Strev, Revnue, Connect or SOW 3 in the window (including the 2026-10-15 SOW 3 review call): is there evidence that Module Visibility Control and Confidential Data Masking were completed, tested or accepted? Quote what was said, who said it and the date. If the only mentions say they are open, quote those. If nothing is found, say "No evidence found" and list what you searched.
+
+RULES
+- Attendance is not ownership. Never name someone as owner unless the words assign it.
+- Quote, do not paraphrase, for anything in B, C, E and F.
+- Sprint task updates (ticket moved, story points, individual task progress) are excluded unless they block a customer, a release, or another team. State how many you excluded per forum.
+- If a meeting was not transcribed, say so and use only its chat, recap or notes.
+- Absence of a result means the search did not find it, not that it did not happen. Say which.
+```
+
+**After pasting into Claude.** Claude routes B as sightings on the existing Pulse issues, C as new `P###` issues, E as knowledge entries, D as calls for Darryl in the web app, sets `last_evidence` for every forum in A that was found, and files F against `05` B102. The raw output is saved to `Evidence/` as `M365_Evidence_PulseCatchup_<end date>.md`.
 
 ## After Pasting into Claude
 

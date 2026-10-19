@@ -4,6 +4,8 @@ As of: 2026-10-19 (weekly evidence: DDPTRK-6346 complete, WACT recorded, IDP par
 
 ## Weekly evidence, 2026-10-12 to 2026-10-19 (added 2026-10-19)
 
+**Team-forum evidence, 2026-10-13 (Pulse catch-up package, WAM Product Backlog Refinement and WAM Sprint Review; filed 2026-10-19).** Durable: EUDM truncates manufacturer part numbers longer than **15 characters**, which is the specific cause of ADM data loss behind `05` A29; the UDM team is analyzing with no enhancement date (Pulse P021). Also raised, team-level and now in the Pulse: missing EUDM shipping dates and country-code mapping block Data Enrichment, approach undecided (P022, threatens the 2026-10-30 date); cancelled orders appearing in the production export and expiry-chip criteria (P019); historical upload mishandling a reused customer ID with a new name, already producing duplicate ETL error records (P020).
+
 Source: weekly M365 evidence 2026-10-12 to 2026-10-19 (`Evidence/M365_Evidence_Weekly_2026-10-19.md`). Primary source: Digital Products Portfolio Status Update.pptx (WAM and portfolio sections, opened via targeted find); 2026-10-15 working-session invite/chat (not transcribed at source).
 
 - **DDPTRK-6346 is complete (Durable, stated outright in the portfolio status).** Global warranty, license, delivery and software attributes, delivered through MDM Governance, Product MDM and the Data Lake. This is the attribute ticket tracked since 07-16 (`03` D076, `05` B12, both now potentially closed). **It does not close the data-quality problem:** the same deck keeps part-number matching (truncated manufacturer part numbers, `05` A29) and supplier-attribute coverage open.

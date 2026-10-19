@@ -49,6 +49,128 @@ CLOSED_STATUSES = {"closed", "dropped", "aged_out"}
 PULSE_DONE = {"resolved", "dropped"}
 
 
+# ----------------------------------------------------------------------------- Copilot Pulse prompts (added 2026-10-19)
+# Two prompts, one per governance track, so a run never asks Copilot for all 13 forums at once (the 10-19 catch-up run
+# was throttled on five of them). Each prompt names itself ("PROMPT 1 OF 2, DELIVERY TRACK") in the text and asks
+# Copilot to repeat that header in its answer, so a pasted result always says which prompt produced it.
+
+PROMPT_TRACKS = [(1, "delivery", "Delivery track"), (2, "development", "Development track")]
+CADENCE_DAYS = {"daily": 0, "weekly": 7, "bi-weekly": 14, "biweekly": 14}
+
+
+def _forum_due(f: dict, today: dt.date) -> tuple[bool, str]:
+    """A forum needs a sweep when its newest evidence is older than its cadence allows. Daily forums need today's."""
+    last = f.get("last_evidence") or ""
+    cad = (f.get("cadence") or "").strip().lower()
+    if not last:
+        return True, "never heard"
+    try:
+        d = dt.date.fromisoformat(last[:10])
+    except ValueError:
+        return True, "never heard"
+    allow = CADENCE_DAYS.get(cad, 30)
+    age = (today - d).days
+    if cad == "daily":
+        return (age >= 1, f"last heard {last}")
+    return (age > allow, f"last heard {last}")
+
+
+def copilot_prompts(today: dt.date | None = None) -> dict:
+    today = today or dt.date.today()
+    forums = P.load_forums()
+    issues = [m for m, _b, _p in R.load_items("pulse")]
+    out = []
+    for n, track, label in PROMPT_TRACKS:
+        tf = [f for f in forums if f.get("track") == track]
+        rows = []
+        for f in tf:
+            due, why = _forum_due(f, today)
+            rows.append({"key": f.get("key"), "name": f.get("name"), "aliases": f.get("aliases") or [],
+                         "cadence": f.get("cadence") or "", "due": due, "why": why})
+        due_rows = [r for r in rows if r["due"]]
+        starts = []
+        for r in due_rows:
+            last = next((f.get("last_evidence") or "" for f in tf if f.get("key") == r["key"]), "")
+            starts.append(dt.date.fromisoformat(last[:10]) if last else today - dt.timedelta(days=8))
+        start = max(today - dt.timedelta(days=8), min(starts)) if starts else today - dt.timedelta(days=7)
+        keys = {f.get("key") for f in tf}
+        tracked = []
+        for m in issues:
+            st = P.state(m, today)
+            if st not in ("live", "quiet"):
+                continue
+            if P.is_knowledge(m):
+                if (m.get("track") or "") != track:
+                    continue
+                tracked.append(f'{m["id"]} Knowledge held mainly by one person: {m.get("title","")} ({m.get("holder","")})')
+            elif m.get("forum") in keys:
+                acct = f' ({m.get("account")})' if m.get("account") else ""
+                tracked.append(f'{m["id"]} {m.get("title","")}{acct}')
+        text = _prompt_text(n, label, due_rows or rows, start, today, tracked)
+        out.append({"n": n, "track": track, "label": label, "needed": bool(due_rows), "forums": rows,
+                    "window": [start.isoformat(), today.isoformat()], "tracked": len(tracked), "text": text})
+    need = [o for o in out if o["needed"]]
+    if len(need) == 2:
+        advice = "Run both: Prompt 1 and Prompt 2, each in its own new Copilot chat."
+    elif len(need) == 1:
+        o = need[0]
+        other = [x for x in out if not x["needed"]][0]
+        advice = f'Run Prompt {o["n"]} only ({o["label"]}). Prompt {other["n"]} is not needed: every {other["track"]} forum has been heard within its cadence.'
+    else:
+        advice = "Nothing needed: every forum has been heard within its cadence. Either prompt can still be copied."
+    return {"today": today.isoformat(), "advice": advice, "prompts": out}
+
+
+def _prompt_text(n, label, rows, start, end, tracked) -> str:
+    head = f"PROMPT {n} OF 2: PULSE SWEEP, {label.upper()}"
+    fl = "\n".join(f'{i}. {r["name"]}' + (f' (aliases: {", ".join(r["aliases"])})' if r["aliases"] else "")
+                   + (f' [{r["cadence"]}]' if r["cadence"] else "") for i, r in enumerate(rows, 1))
+    tl = "\n".join(tracked) if tracked else "(none currently tracked for this track)"
+    return f"""{head}
+
+Begin your answer with this exact line: "{head}, window {start.isoformat()} to {end.isoformat()}".
+
+ROLE
+You are extracting operational evidence from Microsoft 365 for a senior technology leader. Be literal and complete. Do not summarize away detail, and do not invent anything. If you cannot find or open something, say so in the coverage table.
+
+WINDOW
+{start.isoformat()} through {end.isoformat()} inclusive.
+
+FORUMS (search for each one separately, by name and alias, one at a time, in this order)
+{fl}
+
+For each forum: find every occurrence in the window (calendar, meeting recap, transcript, Loop or meeting notes, meeting chat). Open each transcript and Loop component and read it to the end; continue if it is truncated. Check whether each meeting was transcribed. Do not stop after the first forum that returns results. If a search is throttled, wait and retry once; if it fails again, mark that forum "throttled" in the coverage table and move on.
+
+ISSUES ALREADY BEING TRACKED (report new mentions of these as sightings, not as new issues)
+{tl}
+
+OUTPUT, in this order
+
+A. Coverage, one row per forum listed above (every row, even when nothing was found)
+| Forum | Occurrences found (dates) | Transcribed? (yes/no per date) | Artifacts opened (transcript / Loop / recap / chat / invite only) | Status: raised issues / met, nothing raised / not found / throttled |
+
+B. Sightings of tracked issues
+| Issue ID | Date | Forum | Source type (transcript / Loop / recap / chat) | What was said (quote, and name the speaker as shown) | Named owner, if any | Stated status: worse / same / better / resolved (resolved only if someone says it outright) |
+
+C. New issues (anything raised that is not on the tracked list)
+| Date | Forum | Source type | Issue in one line | Account or site, only if named (do not guess the customer) | Product | Severity: High / Medium / Low | Customer-visible? yes/no, and the customer if named | Named owner (blank if none named) | People with a statement, commitment or stated role on it (not attendees) | Quote | Sessions in the window that raised it |
+
+D. Calls for the leader (rows from B or C only)
+Flag a row only if: the leader was named or asked for a decision, resource or escalation; it involves contract or money, a customer executive, what to tell a customer, or a team outside the forum; it has been raised for 10 or more business days without resolution; or no owner is named, or the customer appears unaware of a material problem. Give the row reference and which test it meets. Severity alone is not a test.
+
+E. Knowledge concentration
+Only where the evidence says someone is the go-to or only person on something, work is waiting on one person, or an absence or departure opens a gap. Being busy does not count.
+| Person | Area | Evidence (quote) | Backup named? | Absence or departure date, if stated |
+
+RULES
+- Attendance is not ownership. Never name someone as owner unless the words assign it.
+- Quote, do not paraphrase, for anything in B, C and E, and label each quote's source type.
+- Sprint task updates (ticket moved, story points, individual task progress, code migration progress) are excluded unless they block a customer, a release, or another team. State how many you excluded per forum.
+- If a meeting was not transcribed, say so and use only its chat, recap or notes.
+- Absence of a result means the search did not find it, not that it did not happen. Say which.
+"""
+
+
 # ----------------------------------------------------------------------------- briefs (added 2026-10-19)
 
 BRIEFS_DIR = R.ROOT / "Briefings"
@@ -285,6 +407,9 @@ class H(BaseHTTPRequestHandler):
             if not f:
                 return self._json(404, {"error": "not found"})
             return self._json(200, item_json(*f))
+        if u.path == "/api/pulse/prompts":
+            with LOCK:
+                return self._json(200, copilot_prompts())
         if u.path == "/api/pulse":
             with LOCK:
                 return self._json(200, P.summary())
@@ -817,6 +942,13 @@ button.pv-pp{min-height:40px;align-items:center}
 @media (max-width:1280px){.bv{grid-template-columns:240px minmax(0,1fr)}.btoc{display:none}.bsel{display:inline-block}}
 @media (max-width:820px){.bv{grid-template-columns:1fr}.bl{border-right:0}.bv.reading .bl{display:none}.bv:not(.reading) .br{display:none}.br{padding:14px 16px 60px}.bback{display:inline-block}.br .bh .bp{display:none}
  .md.brief{font-size:16px}.md.brief h1{font-size:21px;line-height:27px}.pcard dl,.md.brief li.kv{grid-template-columns:1fr;gap:2px}.pcard dd{margin-bottom:8px}}
+.cp{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0 0 14px;background:var(--card)}.cp.need{border-color:var(--acc)}
+.cp-h{display:flex;align-items:center;gap:10px;margin-bottom:4px}.cp-n{font:700 12px ui-monospace,Menlo,monospace;background:var(--acc);color:var(--accInk);border-radius:5px;padding:2px 7px}
+.cp:not(.need) .cp-n{background:var(--sunk);color:var(--ink2)}.cp-b{margin-left:auto;font-size:12px;font-weight:650}.cp-b.y{color:var(--acc)}.cp-b.n{color:var(--muted)}
+.cp-m{font-size:12.5px;color:var(--muted);margin-bottom:8px}.cp-f{list-style:none;margin:0 0 10px;padding:0;font-size:13px}
+.cp-f li{display:flex;justify-content:space-between;gap:10px;padding:3px 0;border-bottom:1px solid var(--line2);color:var(--muted)}.cp-f li.d{color:var(--ink)}.cp-f li span:last-child{font-size:12px;color:var(--muted);white-space:nowrap}
+.cp-adv{font-size:15px;font-weight:650;line-height:22px}.cp-how{font-size:13px;color:var(--muted);line-height:19px;margin:6px 0 0}
+.cp-t{margin-top:8px}.cp-t textarea{width:100%;height:220px;font:12px ui-monospace,Menlo,monospace;border:1px solid var(--line);border-radius:8px;background:var(--sunk);color:var(--ink);padding:8px}
 </style></head><body>
 <header>
  <div class="hbar">
@@ -988,6 +1120,8 @@ document.addEventListener('click',e=>{
   const mo=e.target.closest('[data-mopen]');if(mo){closeMeet();openDrawer(mo.dataset.mopen);return}
   if(e.target.closest('[data-pplall]')){PPLALL=!PPLALL;render();return}
   const s=e.target.closest('.seg button');if(s){e.stopPropagation();const i=ITEMS.find(x=>x.id===s.dataset.id);if(i&&i[s.dataset.k]!==s.dataset.val)patch(s.dataset.id,{[s.dataset.k]:s.dataset.val},'');return}
+  if(e.target.closest('[data-cprompts]')){openPrompts();return}
+  const cpy=e.target.closest('[data-cpy]');if(cpy){copyPrompt(+cpy.dataset.cpy);return}
   const tc=e.target.closest('[data-toc]');if(tc){e.preventDefault();jumpSec(tc.dataset.toc);return}
   const bi=e.target.closest('[data-brief]');if(bi){openBrief(bi.dataset.brief,'list');return}
   if(e.target.closest('[data-bback]')){BREAD=false;render();scrollTo(0,0);return}
@@ -1193,7 +1327,7 @@ function pulseHtml(){
   /* attention: state, stuck, severity, customer-visible, most recent (C14 head states this order) */
   if(pso.k!=='pulse')a.sort(cmpBy(pso.k,pso.dir));else a.sort((x,y)=>(st[x._state]-st[y._state])||((y._stuck?1:0)-(x._stuck?1:0))||(svk(x)-svk(y))||((y.customer_visible?1:0)-(x.customer_visible?1:0))||String(y.last_seen||'').localeCompare(String(x.last_seen||''))||cmpId(x,y));
   const cs=P.candidates.filter(c=>{const i=ITEMS.find(z=>z.id===c.id);if(!i)return false;if(i.category==='knowledge')return !fk||fk==='new'||(fk==='track'&&i.track===fv)||(fk==='person'&&i.holder===fv)||(fk==='account'&&i.account===fv);return match(i)});
-  let h=`<div class="pv"><div class="pv-title"><h2>Pulse</h2><p>Rolling ${P.window.days} days, ${fmt(P.window.start)} to ${fmt(P.window.end)}. What your team-governed forums are carrying. The teams own the work; escalate only what needs you.</p><button type="button" class="pv-lk" data-guide>How to read this page</button></div>`;
+  let h=`<div class="pv"><div class="pv-title"><h2>Pulse</h2><p>Rolling ${P.window.days} days, ${fmt(P.window.start)} to ${fmt(P.window.end)}. What your team-governed forums are carrying. The teams own the work; escalate only what needs you.</p><button type="button" class="btn" data-cprompts>Copilot prompts</button><button type="button" class="pv-lk" data-guide>How to read this page</button></div>`;
   h+=`<div class="pv-today">${callsCard(P,cs)}${pinnedCard(P)}${evidenceCard(P)}</div>`;
   h+=accountsSec(P,fk,fv);
   /* C15: the filter chip is sticky under the header strip */
@@ -1510,6 +1644,22 @@ function briefMd(src){
   flush();if(co)out.push('</div>');if(insec)out.push('</div></details>');return {html:out.join(''),toc}}
 function jumpSec(id){const d=document.getElementById(id);if(!d)return;d.open=true;d.scrollIntoView({block:'start'})}
 document.addEventListener('change',e=>{const s=e.target.closest('[data-tocsel]');if(s&&s.value){jumpSec(s.value);s.value=''}});
+/* ---------- Copilot prompts (2026-10-19): Prompt 1 = Delivery track, Prompt 2 = Development track ---------- */
+let CPR=null;
+async function openPrompts(){try{CPR=await (await fetch('/api/pulse/prompts')).json()}catch(e){toast('Could not build the prompts');return}
+  SEL=null;const ph=o=>`<section class="cp${o.needed?' need':''}"><div class="cp-h"><span class="cp-n">Prompt ${o.n}</span><b>${esc(o.label)}</b><span class="cp-b ${o.needed?'y':'n'}">${o.needed?'Needed':'Not needed'}</span></div>
+    <div class="cp-m">Window ${fmt(o.window[0])} to ${fmt(o.window[1])} · ${o.forums.filter(f=>f.due).length||o.forums.length} forum${(o.forums.filter(f=>f.due).length||o.forums.length)===1?'':'s'} to search · ${o.tracked} tracked issue${o.tracked===1?'':'s'} listed</div>
+    <ul class="cp-f">${o.forums.map(f=>`<li class="${f.due?'d':''}"><span>${esc(f.name)}</span><span>${f.due?'search':'heard'} · ${esc(f.why)}</span></li>`).join('')}</ul>
+    <button type="button" class="btn${o.needed?' primary':''}" data-cpy="${o.n}">Copy Prompt ${o.n} · ${esc(o.label)}${o.needed?'':' (anyway)'}</button>
+    <details class="cp-t"><summary>Show Prompt ${o.n} text</summary><textarea readonly id="cpt${o.n}">${esc(o.text)}</textarea></details></section>`;
+  $('#panel').innerHTML=`<div class="p-top">${head('','Copilot prompts')}<h2 class="p-title">Pulse sweep prompts</h2></div>
+   <div class="p-sec"><div class="cp-adv">${esc(CPR.advice)}</div><p class="cp-how">Prompt 1 searches the delivery forums, Prompt 2 the development forums. Paste each into its own new Copilot chat; each answer starts with its prompt number, so you can paste both results here in any order. Only forums not heard within their cadence are searched.</p></div>
+   <div class="p-sec">${CPR.prompts.map(ph).join('')}</div>`;
+  showDrawer('prompts');$('#drawer').scrollTop=0;render()}
+function copyPrompt(n){const o=CPR&&CPR.prompts.find(x=>x.n===n);if(!o)return;
+  const done=()=>toast(`Prompt ${n} copied (${o.label}). Paste it into a new Copilot chat.`);
+  const fall=()=>{const ta=document.getElementById('cpt'+n);if(!ta)return toast('Copy blocked: open "Show Prompt '+n+' text" and copy it');ta.closest('details').open=true;ta.focus();ta.select();try{document.execCommand('copy')?done():toast('Text selected: press Cmd-C to copy Prompt '+n)}catch(e){toast('Text selected: press Cmd-C to copy Prompt '+n)}};
+  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(o.text).then(done,fall);else fall()}
 $('#helpBtn').onclick=async()=>{const j=await (await fetch('/api/guide')).json();SEL=null;
   $('#panel').innerHTML=`<div class="p-top">${head('','Help')}</div><div class="p-sec md">${md(j.markdown)}</div>`;
   showDrawer('help');$('#drawer').scrollTop=0;render()};
