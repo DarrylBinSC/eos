@@ -1,5 +1,7 @@
 {
  "note": "Team-governed forums: run on the team's own governance (project process or sprint cycle). Their issues live in the Pulse, not the registers. All classifications confirmed by Darryl 2026-10-16: he attends some of these forums and is invited to all of them on purpose, to keep his finger on the pulse; attendance is awareness, not ownership. Each forum belongs to one of Darryl's two weekly governance tracks. Source: 07_Operating_Cadence.md.",
+ "capture_start": "2026-10-13",
+ "capture_start_note": "Set 2026-10-19: the first forum-by-forum sweeps (Pulse catch-up and Prompts 1 and 2) covered meetings from 2026-10-13. The load trend is rebuilt only from this date; the 7-day trend is available from 2026-10-20.",
  "forums": [
   {
    "key": "deployment-scrum",

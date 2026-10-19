@@ -30,7 +30,8 @@ import eos_registers as R
 PULSE_DIR = R.REG_DIR / "pulse"
 FORUMS_FILE = PULSE_DIR / "_forums.json"
 ACCOUNTS_FILE = PULSE_DIR / "_accounts.json"
-HEALTH_FILE = PULSE_DIR / "_health.json"
+HEALTH_FILE = PULSE_DIR / "_health.json"   # 0-100 scores, 2026-10-16 to 2026-10-19; frozen
+LOAD_FILE = PULSE_DIR / "_load.json"       # daily load snapshots since the 2026-10-19 trend change
 VIEW_FILE = R.ROOT / "11_Operational_Pulse.md"
 
 WINDOW_DAYS = 14   # an issue not raised for 14 days goes quiet (drops out of the live window)
@@ -268,6 +269,90 @@ def attribute_register_items(regs, roster: dict) -> tuple[dict, list]:
     return by, unattributed
 
 
+# ----------------------------------------------------------------------------- trend (replaces the 0-100 score, 2026-10-19)
+# Darryl, 2026-10-19: the 100-minus-points score floored at 0 for Dell once the team-forum backlog was captured, so it
+# could no longer show change. He chose a trend instead. "Load" is the same weighted points as before (now counted up,
+# not subtracted from 100); the headline is how the team-raised load moved over 7 days, reconstructed from the dates
+# meetings actually raised each issue (sighting stamps), so evidence captured late lands on the day it happened.
+TREND_DAYS = 7
+SERIES_DAYS = 14
+TREND_MIN = 5          # a change smaller than this many points is "steady"
+TREND_PCT = 0.15       # ...or smaller than 15% of the load a week ago
+_STAMP = re.compile(r"^(\d{4}-\d{2}-\d{2}) \(([^)]*)\)", re.M)
+
+
+def sighting_dates(meta: dict, body: str) -> list:
+    ds = sorted({_d(m.group(1)) for m in _STAMP.finditer(body or "")
+                 if "claude" not in m.group(2).lower() and "darryl" not in m.group(2).lower()} - {None})
+    for k in ("first_seen", "last_seen"):
+        d = _d(meta.get(k))
+        if d and d not in ds:
+            ds.append(d)
+    return sorted(ds)
+
+
+def meta_as_of(meta: dict, body: str, day) -> dict | None:
+    """The item as it stood at the end of `day`, or None if it had not been raised yet."""
+    ds = [d for d in sighting_dates(meta, body) if d <= day]
+    if not ds:
+        return None
+    m = dict(meta)
+    cd = _d(meta.get("closed_date"))
+    if (meta.get("status") or "").lower() in ("resolved", "dropped") and (not cd or cd > day):
+        m["status"] = "live"
+    m["first_seen"], m["last_seen"] = ds[0].isoformat(), ds[-1].isoformat()
+    return m
+
+
+def team_points(items, day) -> tuple[int, dict]:
+    """Weighted team-raised load on `day` for one account's Pulse items [(meta, body)]."""
+    c = {k: 0 for k in HEALTH_WEIGHTS}
+    for meta, body in items:
+        m = meta_as_of(meta, body, day)
+        if not m:
+            continue
+        st = state(m, day)
+        if is_knowledge(m):
+            if candidate_reason(m, day):
+                c["candidate"] += 1
+            continue
+        if st == "live":
+            sev = (m.get("severity") or "Medium").capitalize()
+            if sev == "High":
+                c["live_high_visible" if m.get("customer_visible") else "live_high"] += 1
+            elif sev == "Low":
+                c["live_low"] += 1
+            else:
+                c["live_medium"] += 1
+            if is_stuck(m, day):
+                c["stuck"] += 1
+            if candidate_reason(m, day):
+                c["candidate"] += 1
+        elif st == "quiet":
+            c["quiet"] += 1
+    return sum(c[k] * w for k, w in HEALTH_WEIGHTS.items() if k != "at_your_level"), c
+
+
+def capture_start():
+    """First day the team forums were swept forum by forum (`capture_start` in _forums.json). Before it the Pulse
+    holds only what the broad packages happened to catch, so a load series reaching back past it would show the
+    capture starting, not the account changing."""
+    return _d(_forums_doc().get("capture_start"))
+
+
+def trend_of(series: list[int]) -> tuple[int | None, str, str]:
+    if len(series) <= TREND_DAYS:
+        return None, "neutral", "Baseline"
+    now, before = series[-1], series[-1 - TREND_DAYS]
+    delta = now - before
+    gate = max(TREND_MIN, round(TREND_PCT * before))
+    if delta >= gate:
+        return delta, "red", "Worsening"
+    if delta <= -gate:
+        return delta, "green", "Improving"
+    return delta, "neutral", "Steady"
+
+
 def account_health(pulse, regs, today=None, know=None) -> tuple[list[dict], list]:
     today = _d(today) or _dt.date.today()
     roster = {r["name"]: r for r in load_accounts()}
@@ -286,54 +371,38 @@ def account_health(pulse, regs, today=None, know=None) -> tuple[list[dict], list
     pinned_name = next((n for n, r in roster.items() if r.get("pinned")), None) or (DEFAULT_PINNED if DEFAULT_PINNED in roster else None)
     if pinned_name:
         accts.setdefault(pinned_name, [])
-    snaps = _load_snapshots()
     out = []
+    bodies = {}
+    for m, b, _p in list(pulse) + list(know or []):
+        bodies[m.get("id")] = b
     for a, ms in accts.items():
-        c = {k: 0 for k in HEALTH_WEIGHTS}
-        for m in ms:
-            st = state(m, today)
-            if is_knowledge(m):
-                if candidate_reason(m, today):
-                    c["candidate"] += 1
-                continue
-            if st == "live":
-                sev = (m.get("severity") or "Medium").capitalize()
-                if sev == "High":
-                    c["live_high_visible" if m.get("customer_visible") else "live_high"] += 1
-                elif sev == "Low":
-                    c["live_low"] += 1
-                else:
-                    c["live_medium"] += 1
-                if is_stuck(m, today):
-                    c["stuck"] += 1
-                if candidate_reason(m, today):
-                    c["candidate"] += 1
-            elif st == "quiet":
-                c["quiet"] += 1
+        items = [(m, bodies.get(m.get("id"), "")) for m in ms]
+        teams_now, c = team_points(items, today)
+        cs = capture_start()
+        days = [today - _dt.timedelta(days=i) for i in range(SERIES_DAYS - 1, -1, -1)]
+        series = [team_points(items, d)[0] for d in days if not cs or d >= cs]
         escalated = {m.get("escalated_to") for m in ms if m.get("escalated_to")}
         regitems = [r for r in reg_by.get(a, []) if r["id"] not in escalated]
         c["at_your_level"] = sum(1 for r in regitems if r.get("counted", True))
-        penalty = sum(c[k] * w for k, w in HEALTH_WEIGHTS.items())
-        score = max(0, 100 - penalty)
-        band, label = _band(score)
-        prior = _prior_score(snaps, a, today)
         reg_pts = c["at_your_level"] * HEALTH_WEIGHTS["at_your_level"]
+        delta, band, label = trend_of(series)
         out.append({
-            "account": a, "score": score, "band": band, "label": label,
-            "pinned": a == pinned_name, "components": c, "penalty": penalty,
-            # Redesign 2026-10-16 (C3, C8): one blended score, with its two sources shown beside it.
-            "registers_points": reg_pts, "teams_points": penalty - reg_pts,
+            "account": a, "load": teams_now + reg_pts, "score": teams_now + reg_pts, "band": band, "label": label,
+            "delta": delta, "series": series, "series_start": (today - _dt.timedelta(days=len(series) - 1)).isoformat(),
+            "trend_from": ((capture_start() + _dt.timedelta(days=TREND_DAYS)).isoformat() if capture_start() else None), "load_7": series[-1 - TREND_DAYS] if len(series) > TREND_DAYS else None,
+            "pinned": a == pinned_name, "components": c, "penalty": teams_now + reg_pts,
+            "registers_points": reg_pts, "teams_points": teams_now,
             "quiet": sum(1 for m in ms if not is_knowledge(m) and state(m, today) == "quiet"),
             "calls": c["candidate"], "open_project": (roster.get(a) or {}).get("open_project"),
             "type": (roster.get(a) or {}).get("type", "customer"),
             "signals": bool(ms) or bool(regitems),
             "live": sum(1 for m in ms if not is_knowledge(m) and state(m, today) == "live"),
             "register_items": regitems,
-            "prior": prior, "delta": (score - prior["score"]) if prior else None,
         })
-    if not pinned_name and out:  # pinned account left the roster and there is no Dell: lowest score leads
-        min(out, key=lambda h: (h["score"], h["account"]))["pinned"] = True
-    out.sort(key=lambda h: (not h["pinned"], h["score"], h["account"]))
+    if not pinned_name and out:
+        max(out, key=lambda h: (h["load"], h["account"]))["pinned"] = True
+    order = {"red": 0, "neutral": 1, "green": 2}
+    out.sort(key=lambda h: (not h["pinned"], order.get(h["band"], 1), -h["load"], h["account"]))
     return out, unattributed
 
 
@@ -399,12 +468,14 @@ def _prior_score(snaps: dict, account: str, today) -> dict | None:
 
 def snapshot_health(health: list[dict], today=None) -> None:
     today = _d(today) or _dt.date.today()
-    snaps = _load_snapshots()
-    snaps[today.isoformat()] = {h["account"]: h["score"] for h in health}
-    keep = sorted(snaps)[-180:]
-    snaps = {k: snaps[k] for k in keep}
+    try:
+        snaps = json.loads(LOAD_FILE.read_text(encoding="utf-8")) if LOAD_FILE.exists() else {}
+    except (OSError, ValueError):
+        snaps = {}
+    snaps[today.isoformat()] = {h["account"]: {"load": h["load"], "teams": h["teams_points"], "delta7": h["delta"]} for h in health}
+    snaps = {k: snaps[k] for k in sorted(snaps)[-180:]}
     PULSE_DIR.mkdir(parents=True, exist_ok=True)
-    HEALTH_FILE.write_text(json.dumps(snaps, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    LOAD_FILE.write_text(json.dumps(snaps, indent=1, sort_keys=True) + "\n", encoding="utf-8")
 
 
 # ----------------------------------------------------------------------------- people
@@ -603,15 +674,17 @@ def generate_view(s: dict | None = None) -> str:
     L.append("")
     L.append("## Account health")
     L.append("")
-    L.append("| Account | Score | Band | 7-day change | Live | Stuck | Quiet | At your level |")
-    L.append("|---|---|---|---|---|---|---|---|")
+    L.append("| Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |")
+    L.append("|---|---|---|---|---|---|---|---|---|")
     for h in s["health"]:
         c = h["components"]
-        d = "" if h["delta"] is None else f"{h['delta']:+d}"
-        L.append(f"| {h['account']} | {h['score']} | {h['label']} | {d or 'no prior week'} | {h['live']} | {c['stuck']} | {c['quiet']} | {c['at_your_level']} |")
+        d = "n/a" if h["delta"] is None else f"{h['delta']:+d}"
+        L.append(f"| {h['account']} | {h['label']} | {d} | {h['load']} | {h['load_7'] if h['load_7'] is not None else 'n/a'} | {h['live']} | {c['stuck']} | {c['quiet']} | {c['at_your_level']} |")
     L.append("")
-    L.append("Score = 100 minus: " + ", ".join(f"{k.replace('_', ' ')} x{v}" for k, v in s["weights"].items()) + ". "
-             "Bands: 80+ healthy, 60 to 79 strained, below 60 at risk. Friction index from evidence, not customer sentiment.")
+    L.append("Load = " + ", ".join(f"{k.replace('_', ' ')} x{v}" for k, v in s["weights"].items()) + ". "
+             "Trend = change in the team-raised load over 7 days, rebuilt from the dates meetings raised each issue; "
+             "Worsening or Improving when it moves by at least 5 points and 15% of last week's load, otherwise Steady. "
+             "Your register items are in the load but not the trend (no dated history). Friction from evidence, not customer sentiment.")
     if s.get("quiet_accounts"):
         L.append("")
         L.append("No signals in the window: " + ", ".join(s["quiet_accounts"]) + ".")

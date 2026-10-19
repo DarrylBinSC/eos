@@ -1010,6 +1010,8 @@ button.pv-pp{min-height:40px;align-items:center}
 .csteps{margin:0;padding:0;list-style:none}.cs{display:flex;gap:10px;align-items:flex-start;padding:5px 0;font-size:14.5px;line-height:21px}
 .cs .ck{flex:none;width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;background:var(--acc);color:var(--accInk)}
 .cs.done .ck{background:var(--grn)}.cs.done span:last-child{color:var(--muted)}.cs.skip .ck{background:var(--sunk);color:var(--muted)}
+.b-neutral{color:var(--ink2)}.pv-arow.ph .spk{margin:4px 0 6px}.spk{display:block;overflow:visible}.spk.b-neutral{color:var(--muted)}
+.pv-spk{display:flex;flex-direction:column;gap:4px;margin:6px 0 4px}.pv-spkn{font-size:12.5px;color:var(--muted)}
 </style></head><body>
 <header>
  <div class="hbar">
@@ -1228,11 +1230,17 @@ async function patch(id,p,note){
   return j;
 }
 /* ---------- pulse (2026-10-16) ---------- */
-const BANDCLS={green:'b-green',amber:'b-amber',red:'b-red'};
+const BANDCLS={green:'b-green',amber:'b-amber',red:'b-red',neutral:'b-neutral'};
+/* Trend (2026-10-19): the headline is how the team-raised load moved in 7 days, not a score out of 100. */
+function th(x){if(x.delta==null)return {big:String(x.load),unit:'load',word:x.label||'Baseline',note:x.trend_from?'7-day trend from '+fmt(x.trend_from):''};
+  return {big:(x.delta>0?'↑ +'+x.delta:x.delta<0?'↓ −'+Math.abs(x.delta):'→ 0'),unit:'in 7 days',word:x.label,note:'load '+x.load+(x.load_7!=null?', was '+x.load_7:'')}}
+function spark(x,w,h){const s=x.series||[];w=w||120;h=h||26;if(s.length<2)return '';const mx=Math.max(...s,20),st=w/(s.length-1);
+  const pts=s.map((v,i)=>`${(i*st).toFixed(1)},${(h-2-(v/mx)*(h-4)).toFixed(1)}`).join(' ');
+  return `<svg class="spk ${BANDCLS[x.band]||''}" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="Team-raised load, ${s.length} days from ${fmt(x.series_start)}: ${s.join(', ')}"><polyline points="${pts}" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="${((s.length-1)*st).toFixed(1)}" cy="${(h-2-(s[s.length-1]/mx)*(h-4)).toFixed(1)}" r="2.6" fill="currentColor"/></svg>`}
 const fname=k=>((PULSE&&PULSE.forums)||[]).find(f=>f.key===k)?.name||k||'Unassigned forum';
 function pulseCaps(){if(!PULSE)return '';const d=(PULSE.health||[]).find(h=>h.pinned);const c=(PULSE.candidates||[]).length;
   /* C10: the pinned account (a setting, Dell by default), with score and band word, on every tab */
-  return (d?`<div class="cap" data-pf="account" data-val="${esc(d.account)}" title="Pinned account">${PIN_SVG(1)}<span>${esc(d.account)}</span><b class="hs ${BANDCLS[d.band]}">${d.score}/100</b><b class="hs ${BANDCLS[d.band]}">· ${esc(d.label)}</b></div>`:'')+
+  return (d?`<div class="cap" data-pf="account" data-val="${esc(d.account)}" title="Pinned account">${PIN_SVG(1)}<span>${esc(d.account)}</span><b class="hs ${BANDCLS[d.band]}">${esc(th(d).big)}${d.delta==null?' load':''}</b><b class="hs ${BANDCLS[d.band]}">· ${esc(d.label)}</b></div>`:'')+
    `<div class="cap" data-pv="1"><span class="l">Pulse calls</span><span class="s">Calls</span><b${c?' class="hs b-amber"':''}>${c}</b></div>`}
 function ptags(i){let t='';
   if(i.severity)t+=`<span class="t-sev ${esc(String(i.severity).toLowerCase())}">${esc(i.severity)}</span>`;
@@ -1310,7 +1318,7 @@ function verdict(t){if(t.heard>=t.total)return '';if(t.heard<=t.total/2)return '
 function drivers(c){return [c.live_high_visible?c.live_high_visible+' High customer-visible':'',c.live_high?c.live_high+' High internal':'',c.live_medium?c.live_medium+' Medium':'',c.live_low?c.live_low+' Low':'',c.stuck?c.stuck+' stuck':'',c.quiet?c.quiet+' quiet':'',c.candidate?c.candidate+' open call'+(c.candidate>1?'s':''):'',c.at_your_level?c.at_your_level+' register item'+(c.at_your_level>1?'s':''):''].filter(Boolean).join(' · ')}
 function ptsBar(x,h){const w=v=>Math.min(100,v/60*100);const t=w(x.teams_points),r=Math.min(100-t,w(x.registers_points));
   return `<div class="pv-bar" style="height:${h||10}px" role="img" aria-label="Points lost: teams raised ${x.teams_points}, your registers ${x.registers_points}"><i class="t" style="width:${t}%"></i><i class="r" style="width:${r}%"></i></div>`}
-function teamsCell(x,P){if(x.teams_points>0)return {v:'−'+x.teams_points,n:[x.live?x.live+' live':'',x.quiet?x.quiet+' quiet':'',x.calls?x.calls+' call'+(x.calls>1?'s':''):''].filter(Boolean).join(' · ')};
+function teamsCell(x,P){if(x.teams_points>0)return {v:x.teams_points+(x.teams_points===1?' pt':' pts'),n:[x.live?x.live+' live':'',x.quiet?x.quiet+' quiet':'',x.calls?x.calls+' call'+(x.calls>1?'s':''):''].filter(Boolean).join(' · ')};
   const sc=(P.forums||[]).find(f=>f.key==='deployment-scrum');
   if(x.open_project===false)return {v:'No open project',n:''};
   if(x.open_project==null)return {v:'None raised',n:'Project status not set'};
@@ -1328,11 +1336,11 @@ function callsCard(P,cs){
   return `<section class="pv-card acc pv-calls" aria-label="Needs your call"><h2 class="pv-h acc">Needs your call <span class="pv-badge">${cs.length}</span></h2>${rows||'<p class="pv-empty">Nothing needs your call.</p>'}${more}${foot}</section>`}
 function pinnedCard(P){const x=(P.health||[]).find(h=>h.pinned);if(!x)return '';
   const bc=BANDCLS[x.band];
-  return `<button type="button" class="pv-card pv-pin" data-pf="account" data-val="${esc(x.account)}" aria-label="${esc(x.account)}, pinned account, health score ${x.score} out of 100, ${esc(x.label)}. Select to see its items.">
+  return `<button type="button" class="pv-card pv-pin" data-pf="account" data-val="${esc(x.account)}" aria-label="${esc(x.account)}, pinned account, ${esc(th(x).big)} ${esc(th(x).unit)}, ${esc(x.label)}. Select to see its items.">
    <span class="l1"><span class="nm">${esc(x.account)}</span><span class="pt">${PIN_SVG(1)} Pinned · ${esc(TYPEW[x.type]||'Customer')}</span><span class="vi">View items ›</span></span>
-   <span class="l2"><span class="sc ${bc}">${x.score}</span><span class="of">/100 health score</span><span class="bw ${bc}">${esc(x.label)}</span></span>
-   ${ptsBar(x,10)}
-   <span class="pv-leg"><span><i class="pv-sw t"></i>Teams raised <b>${x.teams_points?'−'+x.teams_points:'none'}</b></span><span><i class="pv-sw r"></i>Your registers <b>${x.registers_points?'−'+x.registers_points:'none'}</b></span></span>
+   <span class="l2"><span class="sc ${bc}">${esc(th(x).big)}</span><span class="of">${esc(th(x).unit)}</span><span class="bw ${bc}">${esc(x.label)}</span></span>
+   <span class="pv-spk">${spark(x,260,40)}<span class="pv-spkn">${esc(th(x).note)}${x.series_start?' · since '+fmt(x.series_start):''}</span></span>
+   <span class="pv-leg"><span>Teams raised <b>${x.teams_points?x.teams_points+' pts':'none'}</b></span><span>Your registers <b>${x.registers_points?x.registers_points+' pts':'none'}</b></span></span>
    <span class="pv-drv">${esc(drivers(x.components)||'No signals')}</span>
    ${PHONE()?'':'<span class="pv-foot">Pin a different account from Account health below.</span>'}</button>`}
 function evidenceCard(P){const e=P.evidence;if(!e)return '';
@@ -1349,22 +1357,22 @@ function accountsSec(P,fk,fv){
   const ph=PHONE();
   const pinBtn=x=>`<button type="button" class="pinbtn${x.pinned?' on':''}" data-pin="${esc(x.account)}" aria-pressed="${x.pinned}" aria-label="${x.pinned?esc(x.account)+' is pinned to the top':'Pin '+esc(x.account)+' to the top'}">${PIN_SVG(x.pinned)}<span>${x.pinned?'Pinned':'Pin'}</span></button>`;
   const rows=P.health.map(x=>{const bc=BANDCLS[x.band],tc=teamsCell(x,P),on=fk==='account'&&fv===x.account;
-    const rg=x.registers_points?{v:'−'+x.registers_points,n:x.components.at_your_level+' item'+(x.components.at_your_level>1?'s':'')}:{v:'None',n:''};
-    if(ph){const l3=`${x.teams_points?'Teams −'+x.teams_points:tc.v==='No open project'?'Teams: no open project':tc.v==='Not heard'?'Teams: not heard':'Teams: none raised'} · ${x.registers_points?'Your registers −'+x.registers_points:'Your registers: none'}`;
-      return `<div class="pv-arow ph${x.pinned?' pinned':''}${on?' sel':''}"><button type="button" class="af" data-pf="account" data-val="${esc(x.account)}"><span class="a1"><span class="an">${esc(x.account)}</span><b class="as ${bc}">${x.score}</b><span class="of">/100</span><b class="ab ${bc}">${esc(x.label)}</b></span>${ptsBar(x,8)}<span class="a3">${esc(l3)}</span></button>${pinBtn(x)}</div>`}
+    const rg=x.registers_points?{v:x.registers_points+' pts',n:x.components.at_your_level+' item'+(x.components.at_your_level>1?'s':'')}:{v:'None',n:''};
+    if(ph){const l3=`${x.teams_points?'Teams '+x.teams_points+(x.teams_points===1?' pt':' pts'):tc.v==='No open project'?'Teams: no open project':tc.v==='Not heard'?'Teams: not heard':'Teams: none raised'} · ${x.registers_points?'Your registers '+x.registers_points+' pts':'Your registers: none'}`;
+      return `<div class="pv-arow ph${x.pinned?' pinned':''}${on?' sel':''}"><button type="button" class="af" data-pf="account" data-val="${esc(x.account)}"><span class="a1"><span class="an">${esc(x.account)}</span><b class="as ${bc}">${esc(th(x).big)}</b><span class="of">${esc(th(x).unit)}</span><b class="ab ${bc}">${esc(x.label)}</b></span>${spark(x,200,22)}<span class="a3">${esc(l3)}</span></button>${pinBtn(x)}</div>`}
     return `<div class="pv-arow${x.pinned?' pinned':''}${on?' sel':''}"><button type="button" class="af" data-pf="account" data-val="${esc(x.account)}">
       <span class="c-ac"><span class="an">${esc(x.account)}</span> <span class="at">${esc(TYPEW[x.type]||'Customer')}</span></span>
-      <span class="c-sc"><b class="as ${bc}">${x.score}</b><span class="of">/100</span> <b class="ab ${bc}">${esc(x.label)}</b></span>
-      <span class="c-bar">${ptsBar(x,10)}</span>
+      <span class="c-sc"><b class="as ${bc}">${esc(th(x).big)}</b><span class="of"> ${esc(th(x).unit)}</span> <b class="ab ${bc}">${esc(x.label)}</b></span>
+      <span class="c-bar">${spark(x,170,26)}</span>
       <span class="c-n"><b${tc.nh?' class="nhv"':''}>${tc.nh?mk('not_heard'):''}${esc(tc.v)}</b><small>${esc(tc.n)}</small></span>
       <span class="c-n"><b>${esc(rg.v)}</b><small>${esc(rg.n)}</small></span>
       <span class="c-drv">${esc(drivers(Object.assign({},x.components,{at_your_level:0}))||(x.registers_points?'Register items only':''))}</span>
       <span class="c-ch" aria-hidden="true">›</span></button>${pinBtn(x)}</div>`}).join('');
-  const hd=ph?'':`<div class="pv-arow hd" aria-hidden="true"><span class="af"><span>Account</span><span>Health score</span><span>Points lost</span><span>Teams raised</span><span>Your registers</span><span class="c-drv">What drives it</span><span></span></span><span class="c-pinh">Pin to top</span></div>`;
+  const hd=ph?'':`<div class="pv-arow hd" aria-hidden="true"><span class="af"><span>Account</span><span>7-day trend</span><span>Team load, daily</span><span>Teams raised</span><span>Your registers</span><span class="c-drv">What drives it</span><span></span></span><span class="c-pinh">Pin to top</span></div>`;
   const q=(P.quiet_accounts||[]).length?`No signals this window: ${esc(P.quiet_accounts.join(', '))}. `:'';
   const ua=(P.unattributed||[]).length?`<div>Not scored because it names more than one account: ${P.unattributed.map(u=>`<a href="#" data-open="${esc(u.id)}">${esc(u.id)}</a> (${esc(u.accounts.join(', '))})`).join('; ')}. Set its account to count it once.</div>`:'';
-  return `<section class="group pv-ah"><h2 class="ghead">Account health${ph?'':'<span class="sub">Score out of 100 · points lost to what teams raised and to your own registers · select a row to filter · pin one account to the top</span>'}</h2>${hd}${rows}
-    <div class="pv-afoot"><div>${q}Trend appears after a week of history.</div><div class="pv-leg"><span><i class="pv-sw t"></i>Teams raised</span><span><i class="pv-sw r"></i>Your registers</span></div>${ua}</div></section>`}
+  return `<section class="group pv-ah"><h2 class="ghead">Account health${ph?'':'<span class="sub">7-day trend in the load of open issues teams raised · load also counts your register items · select a row to filter · pin one account to the top</span>'}</h2>${hd}${rows}
+    <div class="pv-afoot"><div>${q}The line is the daily team-raised load since forum-by-forum capture began; the 7-day trend starts ${P.health&&P.health[0]&&P.health[0].trend_from?fmt(P.health[0].trend_from):'after a week of history'}. Worsening or Improving means a move of at least 5 points and 15%. Friction from evidence, not customer sentiment.</div>${ua}</div></section>`}
 function govSec(P,fk,fv){const ph=PHONE();
   const tr=(P.tracks||[]).map(t=>{const fs=t.forums.map(k=>P.forums.find(f=>f.key===k)).filter(Boolean).sort((a,b)=>({raised:0,nothing_raised:1,not_heard:2}[a.ev_state]-{raised:0,nothing_raised:1,not_heard:2}[b.ev_state]));
     const cnt=[t.live+' live',t.new7+' new',t.stuck+' stuck',t.candidates+' call'+(t.candidates===1?'':'s'),t.knowledge?t.knowledge+' knowledge risk'+(t.knowledge>1?'s':''):''].filter(Boolean).join(' · ');

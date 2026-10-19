@@ -1,0 +1,24 @@
+{
+ "2026-10-16": {
+  "BAE": 100,
+  "Coca-Cola (TCCC)": 94,
+  "Dell": 46,
+  "Federal Reserve": 75,
+  "Ford": 85,
+  "Louvre Abu Dhabi": 95,
+  "Stanford": 95,
+  "UWM": 100,
+  "Wesco Warehouse": 92
+ },
+ "2026-10-19": {
+  "BAE": 100,
+  "Coca-Cola (TCCC)": 94,
+  "Dell": 0,
+  "Federal Reserve": 75,
+  "Ford": 85,
+  "Louvre Abu Dhabi": 95,
+  "Stanford": 95,
+  "UWM": 100,
+  "Wesco Warehouse": 84
+ }
+}
