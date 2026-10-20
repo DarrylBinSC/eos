@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-20 09:59 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-20 11:10 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-06 to 2026-10-20. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -22,7 +22,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P020** WAM historical upload mishandles one customer ID with different names; duplicate ETL error records (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P022** Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion (no account; WAM Sprint Review). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P030** PAS01 Grid Board pod not loaded after the pod update, blocking validation of completed fixes (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P034** ADM renewal identification is manual and unreliable; renewal metrics cannot be sustained this way (no account; ADM connect with Natalie). Test: Darryl named or asked for a decision, resource or escalation.
@@ -44,7 +43,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Akansh Gangil | 2 | 4 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Akansh Gangil | 3 | 3 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Syed Jamshed Zaidi | 7 | 3 | 1 | 0 | 2026 Deployment Daily Scrum |
 | Chad Steger | 0 | 4 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Scott Dunn | 3 | 8 | 2 | 0 | 2026 Deployment Daily Scrum |
@@ -136,7 +135,7 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 2, stuck 0, quie
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P019 | WAM production: cancelled orders appear in export; expiry-chip criteria need validation |  | Bhupathi | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
-| P020 | WAM historical upload mishandles one customer ID with different names; duplicate ETL error records |  |  | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible, candidate: gap |
+| P020 | WAM historical upload mishandles one customer ID with different names; duplicate ETL error records |  | Akansh Gangil | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 
 ## WAM Sprint Review
 
