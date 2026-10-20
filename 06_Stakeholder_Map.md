@@ -585,3 +585,17 @@ Source: M365 daily evidence package, reporting window 2026-10-13 to 2026-10-14. 
 
 ### Stephen Karpinski
 - Participant in Alan Martin's 10-15 cross-SBU data-capture session. Alan directed the EES and UBS requirements question to him; he answered that EES and UBS likely collect some of the relevant elements but not every CSS field applies, and that each business area should be compared against the list. Reads as an EES/UBS process or operations voice; role, SBU and reporting line unconfirmed. Not the "Stephen (SOX team)" entry above; treat as distinct until confirmed. See `05` C70.
+
+## Updates 2026-10-20 (daily evidence, three packages)
+
+- **Austin** (surname not in evidence) — Stanford LBRE; the requester of the SkySpark-only roll-back. Stated reason via Sarah Monteleone: LBRE reorganization and a reduced budget. First appearance in the record; see `03` D096.
+- **Mike Reed** (existing entry) — 10-19: supplied the Stanford license history (Altura/Alper origin, 2023 entroCIM add-on at no upfront cost, three other SkySpark-only accounts) and the renewal price lines; owns the Stanford meeting (Leanne Gordon asked him to keep transcription on). Owes C74.
+- **Sarah Monteleone** (existing entry) — 10-19: relayed Austin's reason; asked Darryl to get Keith's and Mike's answers and to schedule the internal meeting; leads the Thursday 10-22 Stanford call.
+- **Leanne Gordon** (existing entry) — 10-19: asked for Wesco's actual SkyFoundry maintenance cost on the Stanford licenses and whether the legacy contracts were fully absorbed at acquisition; aligned to the no-standalone position before it moved.
+- **Brandon Thompson** (existing entry) — 10-19: routed the Stanford IP question to Nikos Minas ("This advice really should come from Nikos"); in Pittsburgh for a Wesco conference until Friday 10-23.
+- **Nikos Minas** (existing entry) — now the named legal adviser on the Stanford IP question (C76), in addition to the i3 review.
+- **Michele Mann** — on the Dell EMS FTE thread; asked Darryl for a second call this week or next including Chris, and raised moving an Ascent person into the role (billing model to be understood). Role and organization not stated in evidence.
+- **Nitin Pandey** (existing entry) — 10-19: relayed that "Chris" indicated the WAM team may be reduced to seven effective January 2027; Darryl asked him to schedule the group discussion.
+- **Jeffrey McCorvey** (existing entry) — 10-19: waiting on confirmation of the corrected Friday 10-23 time and Wesco Legal's participation for the JCI MSI discussion (`04` W017).
+- **Thomas (Tom) Boss** (existing entry) — 10-19: reported "$26M of the nearly $30M in sales is tied to the hardware"; the software/pull-through split is unanswered. Nathan Kehr suggested asking him to break it out.
+- **Babu Papanna** — PTO 2026-10-20 to 10-27, back 10-28 (relevant to `04` W021).

@@ -477,6 +477,11 @@ class H(BaseHTTPRequestHandler):
             return self._json(200, {"markdown": txt})
         if u.path == "/api/log":
             return self._json(200, {"log": recent_log(int(q.get("n", ["30"])[0]))})
+        # Live refresh (added 2026-10-20): a cheap fingerprint of the item files and briefs. The page
+        # polls it and re-fetches only when it changes, so a tab left open picks up edits made by
+        # Claude sessions or by hand within about 30 seconds, and immediately when the tab regains focus.
+        if u.path == "/api/version":
+            return self._json(200, {"version": data_version()})
         # Briefs tab (added 2026-10-19): read-only view of Briefings/*.md, plus the Word copy when it exists.
         if u.path == "/api/briefs":
             return self._json(200, {"briefs": list_briefs(), "today": R.today()})
@@ -1745,10 +1750,34 @@ async function openHelp(sec){const j=await (await fetch('/api/guide')).json();SE
   if(sec){const hs=[...document.querySelectorAll('#panel h2, #panel h3')];const h=hs.find(x=>x.textContent.trim().startsWith(sec));if(h)setTimeout(()=>h.scrollIntoView({block:'start'}),30)}}
 $('#helpBtn').onclick=()=>openHelp('');
 load();
+/* ---------- Live refresh (2026-10-20): re-fetch when the files change, never while you are editing ---------- */
+let VER=null;
+function busy(){const ae=document.activeElement;const typing=ae&&(ae.tagName==='INPUT'||ae.tagName==='TEXTAREA');return !!(DRAWER||SHEET||typing)}
+async function checkVersion(){try{const j=await (await fetch('/api/version',{cache:'no-store'})).json();
+  if(VER===null){VER=j.version;return}
+  if(j.version!==VER){if(busy())return;VER=j.version;await load();if(VIEW==='briefs')render();toast('Updated from the files')}}catch(e){}}
+setInterval(checkVersion,30000);
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')checkVersion()});
+window.addEventListener('focus',checkVersion);
 /* ?theme=light|dark forces a scheme (useful for screenshots); ?open=ID opens an item after load. */
 (()=>{const t=new URLSearchParams(location.search).get('theme');if(t)document.documentElement.dataset.theme=t})();
 </script></body></html>
 """
+
+
+def data_version() -> str:
+    """Fingerprint of Registers/**/*.md and Briefings/*.md mtimes (added 2026-10-20, live refresh)."""
+    import hashlib
+    h = hashlib.sha1()
+    for k in sorted(_snapshot().items()):
+        h.update(f"{k[0]}:{k[1]}".encode())
+    if BRIEFS_DIR.exists():
+        for f in sorted(BRIEFS_DIR.glob("*.md")):
+            try:
+                h.update(f"{f.name}:{f.stat().st_mtime}".encode())
+            except FileNotFoundError:
+                pass
+    return h.hexdigest()[:16]
 
 
 # ----------------------------------------------------------------------------- watcher for edits made outside the app

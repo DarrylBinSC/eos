@@ -76,6 +76,8 @@
 >
 > **This revision does not fix the variance.** No wording can. The variance is addressed by an acceptance gate outside the prompt, recorded in `10_Pilot_Feedback_Log.md`, and by the transcript register in `Reference/Transcript_Register.md`, which converts Copilot's unfalsifiable access claims into checkable ones.
 
+> **Revised 2026-10-19: Daily prompt v2, extraction only** (`Deliverables/EOS_Meta/2026-10-19_Daily_Prompt_Yield_Review.md`). The four retained daily packages (08-27, 09-30, 10-01, 10-16) each ran 23 to 41 KB and 55 to 88 table rows from 4 to 8 substantive sources; each source was restated in 5 to 10 of the 14 sections, and the restatements were Copilot's assessments (severity, urgency, why it matters, recommended follow-up) of the same few statements. The 10-16 package carried about four underlying signals in 55 rows. Copilot's output ceiling was being spent on commentary Claude redoes under `CLAUDE.md`. The Daily prompt now asks for literal extraction in nine non-overlapping sections with no assessment columns; everything else is unchanged. v1 is retained in section 2a until the side-by-side acceptance run passes. The Weekly prompt is not changed in this revision.
+
 Three repeatable prompts for Microsoft Copilot. Run the appropriate one, then paste the output into the Executive Operating System session. Claude interprets the evidence per `CLAUDE.md` and updates the living documents (03–06) and `Products/`.
 
 - **Baseline** — run once (or after long absences) to seed the system. 30-day lookback.
@@ -232,27 +234,28 @@ Do not summarize or shorten the report when creating the file.
 
 ## 2. Daily Prompt (24 hours)
 
-```
-Review my Microsoft 365 activity from the last 24 hours, including: email, sent email, Teams chats, Teams channels, calendar, meeting recaps, meeting transcripts, facilitator notes, Loop components, task assignments, recently modified OneDrive and SharePoint documents, action items from meetings, and commitments made in conversations.
+> **v2, 2026-10-19: extraction only.** One change from v1, made alone so the next package is attributable to it. Copilot now extracts statements (quote, speaker, source) in nine non-overlapping sections and carries no assessment columns; the judgment v1 asked Copilot for (why it matters, severity, urgency, risk of waiting, recommended follow-up, suggested leadership action, communication needs, review priority, Durable/Transient, Explicit/Implied/Inferred confidence) moves to Claude, which was redoing it anyway under `CLAUDE.md`. Basis: `Deliverables/EOS_Meta/2026-10-19_Daily_Prompt_Yield_Review.md`. Retrieval rules, portfolio scope, exclusion accounting, governed-forum label, header, validation and file output are carried over unchanged in substance. v1 is kept in section 2a for the side-by-side run; the web app serves whatever is in this section's first code block.
+>
+> **Accepted 2026-10-20.** Side-by-side on the 10-19 to 10-20 window (three packages in `Evidence/`: `..._v1.md`, `..._v2_run1.md`, `..._v2_run2.md`). v2 run2 opened 14 sources against v1's 9, found the Teams chats v1 missed, and returned about 50 distinct quoted statements against v1's five signals restated across eleven sections; it carried every material item v1 had except one quoted commitment (Nitin Pandey's) from an email both runs opened in full, which is logged as an extraction miss to watch, not a prompt change. The other two v1-only items were retrieval variance (sources v2 never returned), consistent with the 09-14 finding. v1 removed from this file; the full text is in the Evidence packages' history and in git. Decision: `03_Decision_Log.md`, 2026-10-20.
 
-Do not provide a generic summary of my activity. Create a structured operational evidence package that I can provide to my executive advisor.
+```
+Review my Microsoft 365 activity from the last 24 hours, including: email, sent email, Teams chats, Teams channels, calendar, meeting recaps, meeting transcripts, facilitator notes, Loop components, task assignments, and recently modified OneDrive and SharePoint documents.
+
+ROLE. You are extracting operational evidence for a senior technology leader. Your job is retrieval and literal extraction, not analysis. Do not assess importance, severity, urgency, risk, or what should be done about anything; my advisor does that. Do not summarize my day. Quote what was said or written, name who said it as the artifact shows it, and name the source. If you cannot find or open something, say so.
 
 RETRIEVAL RULES — apply while gathering, before writing anything:
 
 - **Transcripts and meeting notes: say what you have.** State up front whether you can access meeting transcripts and meeting notes for this window. If you cannot reach one you can see exists, try to resolve it before giving up, and say what you tried.
-- **A search result is not a retrieval attempt, and a snippet limit is not a truncated source.** Search returns a ranked excerpt of an artifact, not the artifact. An excerpt that stops mid-sentence is a limit of the search layer and must never be reported as a truncated transcript, document, or thread. Before you describe any source as truncated, incomplete, or unavailable, open the item itself and attempt continuation on the opened item. Then say which you did, in these words: "opened and continued," "opened, no continuation needed," or "search snippet only." A statement that content was "truncated in search results" describes the search layer, not the artifact, and is not admissible as a Coverage Gap.
-- **Check the transcription flag before you use the word transcript.** Read `isMeetingTranscribed` for the meeting before describing its transcript in any way. If it is false, no transcript exists, nothing about it can be truncated, and nothing may be quoted from one. Reporting a transcript that does not exist as truncated is a worse error than reporting a gap, because it manufactures a source.
-- **Truncation: continue immediately, in the same pass.** If a transcript, document, or thread comes back incomplete or cut off, resume retrieval from the point it stopped and get the remainder **before you move on to the next source**. Do not finish the sweep and come back to it, and do not defer it to a later message. A transcript handle does not survive the retrieval session: once you have moved past it, the range can no longer be requested, and the content is lost for this run even though the artifact still exists. Request successive ranges (for example lines 400 to 574, then 574 onward) until you reach the stated total, then continue the sweep.
-- **Report the arithmetic.** When a source reports a total length, state the range retrieved against that total, for example "retrieved lines 0 to 574 of 574, complete" or "retrieved 0 to 435 of 574, two continuation attempts failed." A percentage recovered is more useful than the word "partial."
+- **A search result is not a retrieval attempt, and a snippet limit is not a truncated source.** Search returns a ranked excerpt of an artifact, not the artifact. Before you describe any source as truncated, incomplete, or unavailable, open the item itself and attempt continuation on the opened item. Then say which you did, in these words: "opened and continued", "opened, no continuation needed", or "search snippet only".
+- **Check the transcription flag before you use the word transcript.** Read `isMeetingTranscribed` for the meeting before describing its transcript in any way. If it is false, no transcript exists, nothing about it can be truncated, and nothing may be quoted from one.
+- **Truncation: continue immediately, in the same pass.** If a transcript, document, or thread comes back incomplete, resume retrieval from the point it stopped and get the remainder before you move on to the next source. A transcript handle does not survive the retrieval session; once you have moved past it, the content is lost for this run.
+- **Report the arithmetic.** When a source reports a total length, state the range retrieved against that total, for example "retrieved lines 0 to 574 of 574, complete" or "retrieved 0 to 435 of 574, two continuation attempts failed."
 - Only after continuation genuinely fails does it become a Coverage Gap, and then say how many attempts were made and what happened.
-- **Notes are not transcripts.** Where only meeting notes or a recap are available and no verbatim transcript, treat that as a retrieval limitation and record it in Coverage Gaps. It constrains attribution confidence and the report should show that it did.
-- **Say whether content came from a transcript, from meeting chat, or from notes.** A meeting's chat messages and files are often retrievable when its transcript is not, and the two carry different attribution confidence. When you cite a meeting as a source, mark it `(transcript)`, `(meeting chat)`, or `(AI notes)`. Never cite a meeting as a source in a way that implies a transcript you did not read. If a meeting reports `isMeetingTranscribed:false` and you are drawing on its chat, say so explicitly on every row that uses it.
-- **A meeting that did not happen is not a gap either.** A recording or calendar artifact can exist for an occurrence that was cancelled or that nobody attended; it returns media metadata and no usable transcript because nothing was said. Before listing any recording as unretrievable, check the calendar for whether that occurrence actually took place, and if it did not, say so and leave it out of Coverage Gaps entirely.
-- **Distinguish "not transcribed" from "could not retrieve," and never file the first as a coverage gap.** If a meeting reports `isMeetingTranscribed:false`, no transcript exists and nothing was lost in retrieval. Do not list it as a coverage gap, which implies a failure on your side and hides the real cause. List those meetings in a separate short block titled **"Not transcribed at source"**, naming each meeting and its date. **Meetings only.** An email, a document, or a Teams thread cannot be untranscribed and must never appear in this block; if it could not be read, that is a Coverage Gap. Do not list a source here and also cite it elsewhere as a source you read. That block is an operating signal, not a retrieval problem: it tells me which of my own recurring forums have transcription switched off, which is something I can change.
-- **Probe these two explicitly every run, because both have come back indeterminate before.** Attempt a Microsoft Planner and To Do task query, and attempt a Sent Items query bounded to the reporting window. Report the outcome of each attempt plainly: succeeded and what was found, or failed and the error or empty result. Do not skip the attempt and report the capability as unknown.
-
-
-Focus on evidence that may affect: executive decision-making, product direction, portfolio health, customer satisfaction, delivery risk, commercial execution, Managed Services, AI strategy, cross-functional dependencies, team health, benefits realization, leadership follow-up. Avoid optimizing for inbox cleanup or task completion.
+- **Say whether content came from a transcript, from meeting chat, from Loop or AI notes, from email, from a Teams chat or channel, or from a file.** Mark every source cell with one of: (transcript), (meeting chat), (AI notes), (Loop), (email), (Teams chat), (Teams channel), (file), (calendar). Never cite a meeting in a way that implies a transcript you did not read.
+- **A meeting that did not happen is not a gap.** Before listing any recording as unretrievable, check the calendar for whether that occurrence took place; if it did not, leave it out of Coverage Gaps.
+- **Distinguish "not transcribed" from "could not retrieve."** Meetings with `isMeetingTranscribed:false` go in the block titled **"Not transcribed at source"**, meetings only, never in Coverage Gaps.
+- **Probe these two explicitly every run.** Attempt a Microsoft Planner and To Do task query, and attempt a Sent Items query bounded to the reporting window. Report the outcome of each plainly: succeeded and what was found, or failed and the error or empty result.
+- **Search the two daily forums separately, one at a time:** 2026 Deployment - Daily Scrum, then Daily Stand Up (entroCIM). If a search is throttled, wait and retry once; if it fails again, mark that forum "throttled" and move on.
 
 PORTFOLIO SCOPE — apply to every section; this is a relevance filter, not a topic list:
 
@@ -267,9 +270,9 @@ Also in scope: my own organisation (team, staffing, capacity, AI strategy for my
 **Out of scope. These are other people's products, and I am frequently an optional attendee in forums where they are discussed:**
 QPM, Assortment, AutoBOM, ConstructTech Integrator, Digital FTTx, Intelligent Document Processing, Insight by Anixter, Monday.com, Prokeep, Proton.ai, Pull Logic, RecommEngine, Retrofit, VAS Configurator, WMI and eStock, and general DDP/storefront/order-management functionality such as credit-card processing, refunds, checkout, and backlog or tracker administration.
 
-**Attending a forum does not make its contents relevant.** This is the same principle as the attribution rule below: attendance is not ownership, and attendance is also not relevance. I am an optional invitee to several forums — the DDP Backlog Entrance Call and Digital Products Portfolio Review among them — that spend most of their time on products I have no responsibility for. Do not report an item merely because I could have heard it.
+**Attending a forum does not make its contents relevant.** I am an optional invitee to several forums (the DDP Backlog Entrance Call and Digital Products Portfolio Review among them) that spend most of their time on products I have no responsibility for. Do not report an item merely because I could have heard it.
 
-**The connection test. Include an item about an out-of-scope product only if it changes something in the four products above.** Apply this test explicitly, do not guess:
+**The connection test. Include an item about an out-of-scope product only if it changes something in the four products above.**
 
 | Include | Because |
 |---|---|
@@ -286,96 +289,83 @@ QPM, Assortment, AutoBOM, ConstructTech Integrator, Digital FTTx, Intelligent Do
 | AccuTech tagging, DDP tracker fields, backlog hygiene and administration | Not my product, and administrative |
 | Assortment, Pull Logic, Proton.ai, Prokeep, and the rest of the out-of-scope list, on their own terms | Not my products |
 
-**Never drop silently, and break the count down by source.** At the end of the report, state the out-of-scope exclusions as a short table with one row per source: Source | Items excluded | What they were about. An aggregate count across many sources hides whether the filter took eighteen items from one forum or spread them thinly, and only the per-source view shows whether something in scope was cut by mistake. If none, say so. If an item is genuinely ambiguous, include it and mark it "Scope: uncertain" with one line saying which of my four products it might touch — I would rather judge a borderline item than lose it.
+If an item is genuinely ambiguous, include it and mark it "Scope: uncertain".
 
-EXCLUSION ACCOUNTING — applies to both exclusion tables, so the counts stay comparable run to run:
+EXCLUSION ACCOUNTING — two exclusion tables at the end of the report, counts comparable run to run:
 
-- **Counting unit.** One excluded item means: email, one unique message; chat or channel, one unique message or reply; meeting, one distinct candidate signal, never one utterance; file, one distinct candidate signal or task row; Planner or private task, one task object. Apply the unit consistently, and name it where a source is ambiguous.
-- **The two filters are separate and their tables must not overlap.** Portfolio-scope exclusions are candidate signals that failed the connection test. Sprint-task exclusions are in-scope signals removed for sitting below the level this package serves. No item is counted in both. Where a source appears in both tables, the two counts must refer to different items.
-- **Search noise is not an exclusion.** Unrelated tenant documents returned by a broad file search, price lists, invoices, receipts, personal files, and site assets were never candidate signals and must not be counted. If a search returned mostly noise, say so in the Retrieval and Source-Status Statement rather than inflating an exclusion count.
+- **Counting unit.** Email, one unique message; chat or channel, one unique message or reply; meeting, one distinct candidate statement, never one utterance; file, one distinct candidate statement or task row; Planner or private task, one task object.
+- **Portfolio-scope exclusions** are candidate statements that failed the connection test. **Sprint-task exclusions** are in-scope statements removed under the sprint-task rule below. No item is counted in both tables.
+- **Search noise is not an exclusion.** Unrelated tenant documents returned by a broad file search, price lists, invoices, receipts, personal files, and site assets were never candidate statements and must not be counted. If a search returned mostly noise, say so in the Retrieval and Source-Status Statement.
 
+SPRINT-TASK RULE. Exclude individual developer or delivery-team task statements lifted from stand-up notes, Loop task rows, or sprint boards: code fixes, test scenarios, UI tweaks, build and deploy chores, point mapping, individual connectivity or access chores. **Four exceptions, include the statement if it meets one:** it blocks a customer commitment or a customer-visible date; it blocks a release gate or production promotion; it carries a dated external deadline that is regulatory, contractual, or customer-set; or the words name a person outside the team, a customer, a contract, or money. State "Excluded under the sprint-task rule: N items from [source]" one line per source, even when N is zero.
 
-GOVERNED-FORUM LABEL (added 2026-10-16). These forums run on their own team governance: 2026 Deployment - Daily Scrum, Daily Stand Up (entroCIM), entroCIM Backlog Deep Dive, DCOE & entroCIM Weekly, Quest Migration Weekly Check-In, Showcase recurring, Deployment Team Knowledge Share, WAM Product Backlog Refinement, WAM Sprint Review, WAM India Dev Team weekly, WAM Product discussion, ADM connect with Natalie, Product Team / Platform Team connect. Keep extracting from them exactly as before; do not drop or summarize their rows. In every table row whose source is one of these forums, begin the Source cell with "[Governed] ". For risks and blockers from these forums, state the named owner and how many prior sessions in the window raised the same issue, if visible. COVERAGE FOR THE TWO DAILY FORUMS (added 2026-10-19): search 2026 Deployment - Daily Scrum and Daily Stand Up (entroCIM) separately, one at a time, and before section 1 add a two-row table: Forum | Occurrences found (dates) | Transcribed? | Artifacts opened (transcript / Loop / recap / chat) | Status: raised issues / met, nothing raised / not found / throttled. Every row is required even when nothing was found.
+GOVERNED-FORUM LABEL. These forums run on their own team governance: 2026 Deployment - Daily Scrum, Daily Stand Up (entroCIM), entroCIM Backlog Deep Dive, DCOE & entroCIM Weekly, Quest Migration Weekly Check-In, Showcase recurring, Deployment Team Knowledge Share, WAM Product Backlog Refinement, WAM Sprint Review, WAM India Dev Team weekly, WAM Product discussion, ADM connect with Natalie, Product Team / Platform Team connect. Extract from them exactly as from any other source. In every table row whose source is one of these forums, begin the Source cell with "[Governed] ".
 
 REPORT HEADER — the first lines of the report, before section 1:
 
-1. **Reporting window in ISO format**, calculated from today's date and stated as an inclusive range covering this prompt's lookback. For a weekly 8-day run on 2026-09-14 the window is 2026-09-07 through 2026-09-14.
-2. **Retrieval and Source-Status Statement.** One line per material source: source name, artifact type (transcript / meeting chat / AI notes / email / Teams channel / file / task query), what was actually done (opened and continued / opened, no continuation needed / search snippet only), and the range retrieved against the source's total where the interface supplies one. State the outcome of the Sent Items probe and the Planner/To Do probe here as well.
+1. **Reporting window in ISO format**, an inclusive 24-hour range calculated from now.
+2. **Retrieval and Source-Status Statement.** One line per material source: source name, artifact type, what was done (opened and continued / opened, no continuation needed / search snippet only), range retrieved against total where a total is reported, and `isMeetingTranscribed` value for meetings. Include the outcome of the Planner/To Do probe and the Sent Items probe. Every source cited anywhere in the report must appear here.
+3. **Daily forum coverage**, two rows, both required even when nothing was found: Forum | Occurrences found (dates) | Transcribed? | Artifacts opened (transcript / Loop / recap / chat) | Status: raised issues / met, nothing raised / not found / throttled.
 
-This block reports what was retrieved. It carries no Pass or Fail, it is not Coverage Gaps, and it is not the Validation block. Coverage Gaps remains a list of genuine failures; this statement is the inventory that makes the recall of the whole run visible, including the sources that came back complete.
+OUTPUT SECTIONS. Every row is one statement: a quote or a near-verbatim rendering of what the words actually say, with the speaker or author as the artifact shows them and the source. **Each statement appears exactly once in the whole report**, in the first section below whose definition its words meet. Do not restate a statement in a second section, and do not add rows that describe, assess, or interpret a statement already captured.
 
+1. **Commitments and requests.** Someone says they will do something, or asks a named person or team to do something. Every one, regardless of who owns it; do not filter to mine. Columns: Date | Source (type) | Speaker or author, as shown | Quote | Named owner (the person the words assign; blank if the words assign nobody; never me unless my own words or an explicit acceptance say so) | Asked by or owed to | Due, if stated.
 
-Use concise Markdown with these sections:
+2. **Completions and closures.** Someone states that something finished, shipped, was approved, was resolved, was cancelled, or was accepted. Columns: Date | Source (type) | Speaker or author | Quote | What it refers to (item, release, ticket, customer, as named in the words) | Stated outright or implied.
 
-1. Important Changes Since Yesterday — change, source, why it may matter, people involved. Only items that could affect leadership attention, decisions, risk, delivery, customer satisfaction, commercial execution, or strategic progress.
+3. **Decisions stated or deferred.** Words that decide something, record a decision made elsewhere, or explicitly defer or escalate a decision. Columns: Date | Source (type) | Speaker or author | Quote | Decided / Deferred / Escalated to (name, if given).
 
-2. Meetings Requiring Leadership Follow-Up — meeting, date/time, why it matters, decisions discussed or implied, follow-up needed, people involved, source. Ignore purely informational meetings unless they created a decision, risk, or commitment.
+4. **Problems, blockers, and dependencies stated.** Someone states a defect, an outage, a data problem, a blocker, a customer concern or complaint, a missed date, a dependency on another team or vendor, or a resource constraint. Columns: Date | Source (type) | Speaker or author | Quote | Product, account, or site, only as named in the words | Named owner, if the words name one | Earlier sessions in the window that raised the same problem (count, if visible).
 
-3. Action Items and Commitments — every action item, commitment, or deliverable that surfaced, REGARDLESS OF WHO OWNS IT. Do not assume an item is mine because I attended the meeting or was on the thread. Table columns: Action | Owner (the specific named person who will do it) | Owed to | Attribution Evidence (quote the actual words that assign it, and name who said them) | Confidence | Due date if stated | Source.
-   - Confidence values, use exactly these: **Explicit** (the owner stated they would do it, in their own words), **Implied** (someone else assigned it to them and they did not decline), **Inferred** (you deduced the owner from context).
-   - If the owner is genuinely unclear, write "Owner unclear." Do not default to me.
-   - Include items owned by other people in the same table. I need the complete picture, not a filtered one.
-   - Do not merge several actions into one row, and do not split one action across rows.
-   - **Attribution Evidence must be an actual quote, not a description of one.** "Meeting task assigned in notes" or similar paraphrases are not acceptable and are not evidence. If you cannot find and quote the actual words, you may not mark Confidence as Explicit or Implied — mark it Inferred and write the basis in one short phrase instead (e.g., "named as owner in the recap summary, no verbatim assignment quoted").
-   - **Exclude routine sprint-level engineering tasks (added 2026-08-25).** Individual developer or delivery-team task assignments lifted from stand-up notes, Loop task rows, or sprint boards — code fixes, test scenarios, UI tweaks, build and deploy chores, ticket creation, documentation tasks, local testing — are the delivery team's work, tracked in their own systems, and below the level this package serves. Leave them out.
-   - **Four exceptions. Include such a task only if it meets one of these:** it blocks a customer commitment or a customer-visible date; it blocks a release gate or production promotion; it carries a dated external deadline that is regulatory, contractual, or customer-imposed; or it is the named next step on an item already escalated to leadership.
-   - **Never drop them silently, and break the count down by source.** At the end of this section write one line per source: "Excluded under the sprint-task rule: N items from [source]," so the filter can be checked source by source rather than in aggregate. If the count is zero, write "Excluded under the sprint-task rule: none." This keeps the filter inspectable, and the exclusion is reviewed against that count.
+5. **Product and initiative facts stated.** Statements of fact about a product or initiative in scope: a capability, an architecture or hosting position, scope, a price, a date, a process, a customer or partner position, a contract term. Columns: Product or initiative | Statement (quote or near-verbatim) | Speaker or author | Date | Source (type).
 
-4. Completion and Closure Signals — evidence that something finished, shipped, was approved, was resolved, or was cancelled. For each: item, what the evidence shows, who confirmed it, source, and whether the closure is stated outright or only implied. Include partial completions. This section exists because open items have previously been carried as overdue for days after they were actually resolved — surfacing closure evidence is as important as surfacing new work.
+6. **Statements about people.** Words that name a person as the go-to or only person on something, describe someone's workload or availability, announce a role, reporting-line, or staffing change, or record a new working relationship or a stated sentiment. Being busy is not a signal; the words must say something. Columns: Person | Quote | Speaker or author | Date | Source (type).
 
-5. Product / Initiative State Signals — Facts about a specific product or initiative (WAM, entroCIM, JCI, Connected Safety, Connected Device Assurance, Navigator, SkyFoundry, or others that surface) that belong in a standing knowledge file, not a follow-up list: a capability change, a roadmap/timeline date, a commercial-position fact, a dependency forming or clearing, a benefits-realization signal. Mark **Durable** only if this is a fact about something Wesco builds, ships, or sells, and a standing product file would actually be updated with it. Mark **Transient** for a one-off status update, and also for internal tooling, AI-licensing, or governance threads (developer tool access, platform administration) that recur but aren't products — those belong in a risk or decision entry, not a product file; don't mark them Durable just because they keep coming up. Do not duplicate an item already fully captured in section 1 — if a change belongs here because it is durable knowledge about a product, put it here instead. Columns: Product/Initiative | What Changed or Was Confirmed | Evidence | Durable or Transient | Source.
+7. **Addressed to me.** Messages, mentions, or spoken requests where I am named or asked something directly, including questions left unanswered in the window. Columns: From | Quote | Date | Source (type) | Answered in the window? (yes, with the source of the reply / no / not determinable).
 
-6. People Waiting on Me — person, what they need, source, urgency, business context, suggested follow-up. Prioritize by business impact, not message volume. Only include items where the evidence shows the person is actually waiting on me specifically, not on my team or organization generally; if it is my organization rather than me, say so and name the person in my org.
+8. **Documents created or modified in the window** that concern an in-scope product or my organisation. Columns: Document name | Location | Author or last modifier | What changed, if visible | Related product or initiative.
 
-7. Team and Stakeholder Signals — Broader than who is waiting on me: workload concentration or overload on a specific person, single-person dependencies, morale or sentiment cues, a capability gap, a new stakeholder relationship forming, a reporting-line or role change. This is relationship and capacity signal for a standing team picture, not something requiring my action today. **Precedence rule: if a person's workload, dependency, or overload is already going to be written up as a Team or Staffing Risk in section 10, it goes there, not here — write "see section 10" and the person's name here instead of restating the same fact in both sections.** Use this section only for signal that is not already a stated risk (a new relationship, a capability gap, a sentiment cue, a role change). Columns: Person | Signal | Evidence | Why It Matters | Source.
+9. **Coverage Gaps.** Content you could not retrieve after attempting continuation (expired, inaccessible, truncated), naming each item or thread, what was attempted, and which sections it would have fed. A generic statement is not acceptable.
 
-8. Decisions Needed or Emerging — decision, owner if known, context, options mentioned, information still needed, risk of waiting, source. Include decisions implied by repeated discussion, unresolved threads, or stalled work.
+   **Not transcribed at source.** Meetings in the window with `isMeetingTranscribed:false`, name and date, meetings only.
 
-9. Customer or Delivery Risks — risk, customer/initiative affected, severity (High/Medium/Low), evidence, potential impact, recommended follow-up, source.
+Then the two exclusion tables:
 
-10. Team or Staffing Risks — risk, people/team affected, evidence, potential impact, suggested leadership action, source. Include overload, unclear ownership, recurring confusion, single-person dependency.
-
-11. Cross-Functional Dependencies — dependency, what is blocked or affected, owning person/team if known, current status, risk trend, recommended next step, source.
-
-12. Recently Modified Documents That May Matter — document name, location, why it may matter, related initiative, people involved, review priority (High/Medium/Low). Only documents that may affect decisions, risks, executive communication, product direction, commercial execution, or delivery.
-
-13. Potential Executive Communication Needs — audience, topic, why communication may be needed, suggested message intent, urgency, source.
-
-14. Coverage Gaps — content you could not retrieve (expired, inaccessible, truncated) that may affect completeness. **Name the specific items or threads affected and which section(s) they would have shown up in.** A generic statement like "multiple emails and files were expired or truncated" is not sufficient on its own — say which emails, files, or meetings, to the extent you can identify them, even if the content itself is unavailable.
+- **Portfolio-scope exclusions:** Source | Items excluded | What they were about. If none, say so.
+- **Sprint-task exclusions:** one line per source, as defined above.
 
 OUTPUT CONTRACT — follow exactly for repeatability:
-- Use the section numbers and headings above, in order, every time. If a section has no items, write "None found" — do not omit it.
-- Use Markdown tables with exactly the fields specified per section.
-- Name sources by their real names (meeting title, email subject, document filename) — no citation tokens.
-- Use ISO dates (YYYY-MM-DD). Be concise. Prioritize business impact over volume.
-- Exclude private or irrelevant personal content. No productivity advice. Do not simply summarize my day.
-- State facts only; mark anything inferred as "Inferred:".
-- **Attribution rule, applies throughout:** never assign an action, commitment, or decision to me solely because I was present, copied, or organizing. Attendance is not ownership. Where the record names someone else, name them. Where it names nobody, say so.
-- **Deduplicate across sources.** Where one underlying signal appears in an email, a meeting recap, a transcript, and a chat, report one substantive row and name the strongest primary source first. Add a second source to that row only where it adds attribution, timing, or state-change evidence. Do not report the same signal as separate rows, and do not count its duplicates as separate actions or separate exclusions.
-- If the same person appears with a full name in one section and a first name only in another, use the full name in both once you've matched them within this report.
-
+- Use the section numbers and headings above, in order, every time. If a section has no items, write "None found"; do not omit it.
+- Use Markdown tables with exactly the columns specified per section. No additional columns, in particular no importance, severity, urgency, impact, risk, priority, recommendation, or "why it matters" column anywhere.
+- Quotes are the words as retrieved. Where a transcript is garbled, keep the garbled words and add [sic]; do not repair names or product names.
+- Name sources by their real names (meeting title, email subject, document filename); no citation tokens.
+- Use ISO dates (YYYY-MM-DD). Exclude private or personal content.
+- **Attribution rule, applies throughout:** never assign an action, commitment, or decision to me solely because I was present, copied, or organizing. Where the record names someone else, name them. Where it names nobody, leave the owner blank.
+- Where one underlying statement appears in several artifacts (email, recap, transcript, chat), one row, strongest primary source first (transcript over notes, notes over recap), and the second source named in the same cell only where it adds a speaker or a date the first lacks.
+- Use a person's full name throughout once you have matched a first name to it within this report.
 
 VALIDATION — run these checks before giving me anything, and report the result:
 
-1. **Sections complete.** Every section present, in the specified order, with "None found" where empty. None omitted.
-2. **Columns conform.** Every table carries exactly the columns specified for that section, no more and no fewer.
-3. **Attribution integrity.** Every row marked Explicit or Implied carries an actual quote. Any row without a quote is marked Inferred. No paraphrase stands in for a quote.
-4. **Portfolio scope.** Every row passes the connection test above, and the out-of-scope exclusion count is stated.
-5. **Sprint-task rule.** The exclusion count is stated, even if zero.
-6. **Coverage gaps are specific**, and contain only genuine retrieval failures. Named items and threads, with what was attempted on each. Meetings that were never transcribed are in the "Not transcribed at source" block instead.
-6a. **The two probes ran.** Planner/To Do and Sent Items were both attempted, with the outcome of each stated.
-7. **Retrieval.** Every truncated source was opened and continued in the same pass until complete or genuinely exhausted, with the range retrieved stated against the source's total. No source is reported as truncated or unavailable on the basis of a search snippet, and no meeting reporting `isMeetingTranscribed:false` is described as having a truncated transcript or quoted as one.
-8. **Report header.** The ISO reporting window and the Retrieval and Source-Status Statement are both present before section 1, and every material source cited in the report appears in the statement.
-9. **Exclusion accounting.** Both exclusion tables use the defined counting unit, no item is counted in both, and search noise is not counted as an exclusion.
+1. **Sections complete.** Sections 1 through 9 present, in order, "None found" where empty, both exclusion tables present.
+2. **Columns conform.** Every table carries exactly the specified columns; no assessment column appears anywhere.
+3. **Quotes present.** Every row in sections 1 to 7 carries a quote or near-verbatim statement with a named speaker or author; no row paraphrases without saying so.
+4. **No duplication.** No statement appears in more than one section.
+5. **Portfolio scope.** Every row passes the connection test; the per-source exclusion table is stated.
+6. **Sprint-task rule.** The per-source exclusion count is stated, including zeros.
+7. **Coverage gaps are specific**, contain only genuine retrieval failures, and never-transcribed meetings are in the separate block.
+7a. **The two probes ran.** Planner/To Do and Sent Items were both attempted and their outcomes stated.
+8. **Retrieval.** Every truncated source was opened and continued in the same pass, range stated against total; no source is called truncated on the basis of a search snippet; no meeting with `isMeetingTranscribed:false` is quoted as a transcript.
+9. **Report header.** The ISO window, the Retrieval and Source-Status Statement, and the two-row daily forum coverage table are present before section 1, and every source cited in the report appears in the statement.
+10. **Exclusion accounting.** Both tables use the counting unit, no item is in both, and search noise is not counted.
 
-Report these as a short block titled "Validation" at the end of the report, one line per check, each reading Pass or Fail with a brief note. **If any check fails, fix it and re-run the check before delivering. Do not hand me a package with a failed check.** If something cannot be fixed, say so plainly and explain why rather than marking it Pass.
+Report these as a short block titled "Validation" at the end, one line per check, Pass or Fail with a brief note. **If any check fails, fix it and re-run the check before delivering.**
 
 FILE OUTPUT — final step, do not skip, and verify it before handing it over:
 
-1. Create a downloadable Markdown file named M365_Evidence_Daily_YYYY-MM-DD.md (using today's date) containing the complete report.
-2. **Re-open the file you just created and read it back.** Confirm: every section is present through the last one; the final table's final row is intact; no section is truncated or empty that should have content; and the file content matches what you displayed to me. A file that was generated is not the same as a file that was generated correctly.
+1. Create a downloadable Markdown file named M365_Evidence_Daily_YYYY-MM-DD.md (today's date) containing the complete report.
+2. **Re-open the file you just created and read it back.** Confirm every section is present through the exclusion tables and the Validation block, the final table's final row is intact, and the file matches what you displayed.
 3. State the verification result in one line: filename, number of sections found, and confirmation that the file is complete.
-4. **If the file is incomplete, malformed, or does not match what you displayed, regenerate it and verify again before giving it to me.** Do not hand over a file you have not read back. If file creation fails twice, output the entire report inside ONE markdown code block instead so I can copy it losslessly, and say that is what you are doing and why.
+4. **If the file is incomplete, malformed, or does not match what you displayed, regenerate it and verify again before giving it to me.** If file creation fails twice, output the entire report inside one Markdown code block instead.
 
 Do not summarize or shorten the report when creating the file.
 ```
