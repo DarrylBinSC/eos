@@ -1518,15 +1518,27 @@ function agendaMd(k){const m=agendaModel(k);const L=[`# ${m.title}: ${m.kicker.t
   if(m.escalated.length)L.push('','## Escalated to you','',...m.escalated.map(e=>'- '+e));
   return L.join('\n')}
 let MEET=null;
-/* Copy as text. navigator.clipboard needs a secure context (https or localhost); the app is served over plain http on the LAN,
-   so on every other device it fails. Fall back to selecting the hidden textarea and execCommand('copy'), which works over http
-   inside a click; if that fails too, open the text block already selected so Cmd-C / Copy finishes the job. Same pattern as copyPrompt (10-19). */
-function copyAgenda(){if(!MEET)return;const txt=agendaMd(MEET);const ta=document.getElementById('meet-ta');if(ta)ta.value=txt;
-  const done=()=>toast('Agenda copied as text');
+/* Copy as text: formatted (text/html) plus plain text on the clipboard together, so Teams, Outlook and Word paste headings,
+   bold and bullets while a plain editor gets the Markdown. navigator.clipboard.write needs a secure context (https or localhost);
+   the app is served over plain http on the LAN, so elsewhere we select the hidden textarea and run execCommand('copy') with a
+   one-shot copy handler that sets both formats (works over http inside a click). If that fails too, the text block opens already
+   selected so Cmd-C / Copy finishes the job. Same pattern as copyPrompt (10-19); formatted copy added 10-20 at Darryl's request. */
+function agendaHtml(k){const m=agendaModel(k),h=esc;const L=[`<h2>${h(m.title)}: ${h(m.kicker.toLowerCase())}</h2>`,`<p>${h(m.sub)}</p>`];
+  if(m.banner)L.push(`<p><b>${h(m.banner.h)}.</b> ${h(m.banner.t)}</p>`);
+  m.sections.forEach((s,n)=>{L.push(`<h3>${n+1}. ${h(s.t)}</h3>`);L.push('<ul>'+(s.items.length?s.items.map(x=>`<li><b>${h(x.id)} ${h(plain(x.title))}.</b> ${h(x.meta)}.${x.next?' <i>'+h(x.next)+'</i>':''}</li>`).join(''):'<li>None.</li>')+'</ul>')});
+  L.push('<h3>This track</h3>',`<p>${h(m.counts)}</p>`,'<ul>'+m.forums.map(f=>`<li>${h(f.name)}: ${h(evLine(f))}</li>`).join('')+'</ul>');
+  if(m.escalated.length)L.push('<h3>Escalated to you</h3>','<ul>'+m.escalated.map(e=>'<li>'+h(e)+'</li>').join('')+'</ul>');
+  return L.join('\n')}
+function copyAgenda(){if(!MEET)return;const txt=agendaMd(MEET),html=agendaHtml(MEET);const ta=document.getElementById('meet-ta');if(ta)ta.value=txt;
+  const done=()=>toast('Agenda copied, with formatting');
   const fall=()=>{if(!ta)return toast('Copy is not available here');const d=ta.closest('details');ta.focus();ta.select();ta.setSelectionRange(0,ta.value.length);
-    let ok=false;try{ok=document.execCommand('copy')}catch(e){ok=false}
+    const onCopy=e=>{e.preventDefault();e.clipboardData.setData('text/html',html);e.clipboardData.setData('text/plain',txt)};
+    document.addEventListener('copy',onCopy,{once:true});let ok=false;try{ok=document.execCommand('copy')}catch(e){ok=false}
+    document.removeEventListener('copy',onCopy);
     if(ok){done();ta.blur()}else{d.open=true;d.scrollIntoView({block:'nearest'});ta.focus();ta.select();toast('Text selected: press Cmd-C (or Copy) to copy it')}};
-  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(done,fall);else fall()}
+  if(navigator.clipboard&&window.isSecureContext&&window.ClipboardItem&&navigator.clipboard.write){
+    try{navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),'text/plain':new Blob([txt],{type:'text/plain'})})]).then(done,fall)}catch(e){fall()}}
+  else if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(done,fall);else fall()}
 function openAgenda(k){MEET=k;const m=agendaModel(k);
   let el=$('#pv-meet');if(!el){el=document.createElement('div');el.id='pv-meet';el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');document.body.appendChild(el)}
   const bd=b=>b?ibadges(b):'';
