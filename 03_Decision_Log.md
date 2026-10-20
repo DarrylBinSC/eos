@@ -22,6 +22,21 @@
 
 ## Decisions Made
 
+### 2026-10-20 — Daily Copilot prompt v2 (extraction only): adopted after the side-by-side run
+- Status: Made (2026-10-20, Darryl)
+- Owner: Darryl
+- Context: Yield review of the four retained daily packages found each 23 to 41 KB package carried 4 to 8 sources restated across 5 to 10 of 14 sections, with the restatements being Copilot's own assessments that Claude redoes under `CLAUDE.md`. Copilot's output budget was going to commentary rather than retrieval. `Deliverables/EOS_Meta/2026-10-19_Daily_Prompt_Yield_Review.md`.
+- Options considered: split the Daily prompt into two passes (doubles runs, keeps the duplication); drop low-yield sections 12 and 13 (marginal); remove the assessment layer from Copilot and keep judgment on the Claude side (chosen, one variable).
+- Decision / Recommended path: Adopted. Side-by-side on the 10-19 to 10-20 window: v2 opened 14 sources to v1's 9, captured the Teams chats v1 missed (including Darryl's shift to supporting the Stanford roll-back), and carried every material v1 item but one quoted commitment (extraction miss, watch next run). v1 retired from `02`; Weekly prompt unchanged until after 10-26. Original path: v2 is live in `02_Copilot_Intake_Prompts.md` section 2 and served by the web app; v1 kept in 2a. Run v1 and v2 on the same window in separate Copilot chats, save both to `Evidence/`, and compare. Adopt v2 and retire 2a if it loses no source or distinct statement; otherwise revert section 2 to v1. Weekly prompt unchanged until this result is in.
+- Risk of waiting (if open): n/a.
+- Forum where this should be decided: decided in the 2026-10-20 briefing session.
+- Follow-up: separate decision on a code-side package check in the EOS server (acceptance gate outside the prompt, per the 09-14 revision).
+
+
+<!-- GENERATED 2026-10-19 16:46 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
+
 ### 2026-10-16 — Operational Pulse: team-governed forums leave the registers (lane model)
 - Status: Made
 - Owner: Darryl Benson
@@ -808,7 +823,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-19 16:46 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-20 08:36 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
 
