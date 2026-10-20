@@ -107,6 +107,7 @@ Lists what you changed this session and the recent git commits. Every save is a 
 ## When something looks wrong
 
 - An item shows old text after you saved: reload the page; the server regenerates within seconds.
+- Items Claude filed during a session do not appear: wait up to 30 seconds, or switch away from the tab and back. Since 2026-10-20 the page checks for file changes every 30 seconds and whenever the tab regains focus, and re-reads the files when they have changed (you will see "Updated from the files"). It never refreshes while you have an item open or are typing, so finish or close what you are doing and it catches up on the next check.
 - The page will not load from your phone: the server is not running on the Mac. Double-click `Tools/eos-server.command`.
 - A name or fact is wrong in several places: fix the item and add a note; Claude propagates it. You do not need to find every copy.
 

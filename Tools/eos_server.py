@@ -1619,7 +1619,11 @@ function openDrawer(id){
   render();
   $('#nf2').onsubmit=async ev=>{ev.preventDefault();const n=$('#note').value;if(!n.trim()){$('#note').focus();return}$('#note').value='';await patch(id,{},n)};
   $('#f').onsubmit=async ev=>{ev.preventDefault();const fd=new FormData(ev.target);const p={};
-    for(const [k,v] of fd.entries())p[k]=(k==='critical'||k==='needs_triage'||k==='customer_visible')?(v==='true'):v;
+    /* 2026-10-20: send only the fields you changed, so a form opened before a session edit cannot write stale values back over it (C72). */
+    const cur=ITEMS.find(x=>x.id===id)||{};
+    for(const [k,v] of fd.entries()){const nv=(k==='critical'||k==='needs_triage'||k==='customer_visible')?(v==='true'):v;
+      if(String(nv)!==String(cur[k]??''))p[k]=nv}
+    if(!Object.keys(p).length){toast('No changes');return}
     await patch(id,p,'')};
 }
 $('#panel').addEventListener('click',e=>{if(e.target.closest('[data-close]'))closeDrawer()});
