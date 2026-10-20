@@ -33,7 +33,6 @@ Where one person holds knowledge a customer, a release or a migration depends on
 | ID | Knowledge area | Held by | Backup | Coverage | Exposure | Mitigation | Last evidence |
 |---|---|---|---|---|---|---|---|
 | K006 | Dell Limerick alarm-handler RCA and release/build context for affected pod updates | Keith Bishop | none named | partial | customer, release | Ron Snyder mentioned as someone to ask; not named as backup (and away this week and next) | 2026-10-14 |
-| K001 | entroCIM tenant behavior and access model | Jason Ganiatsas | none named | partial | release | Michael Pieschel documenting in Confluence; Maggie Becker building enablement material | 2026-10-15 |
 
 Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS energy points and KPIs, global metering due diligence (Elias Brewer).
 
