@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-20 14:57 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-20 15:00 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-06 to 2026-10-20. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -9,9 +9,9 @@
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
 | Dell | Worsening | +61 | 133 | 67 | 19 | 2 | 2 | 1 |
-| Marygrove | Worsening | +22 | 22 | 0 | 2 | 0 | 0 | 0 |
 | Wesco Warehouse | Worsening | +14 | 22 | 8 | 3 | 0 | 0 | 0 |
 | Coca-Cola (TCCC) | Worsening | +6 | 12 | 1 | 1 | 0 | 1 | 1 |
+| Marygrove | Worsening | +11 | 11 | 0 | 1 | 0 | 0 | 0 |
 | Federal Reserve | Steady | +0 | 25 | 0 | 0 | 0 | 0 | 5 |
 | Stanford | Steady | +0 | 20 | 0 | 0 | 0 | 0 | 4 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
@@ -29,7 +29,6 @@ No signals in the window: BAE, UWM.
 - **P036** Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P041** Showcase stopped running and recorded no data from Thursday night into Friday morning (10-16 to 10-17) (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P043** Schneider OPC UA protocol decision and proof of concept pending; constrains further Dell GMS completion (Dell; entroCIM Backlog Deep Dive). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
-- **P046** Marygrove: three open tickets; JACE down and customer IT cannot be reached (Marygrove; entroCIM Backlog Deep Dive). Test: No owner, or the customer is unaware of a material problem.
 - **P046** Marygrove: three open tickets; JACE down and customer IT cannot be reached (Marygrove; entroCIM Backlog Deep Dive). Test: No owner, or the customer is unaware of a material problem.
 - **P035** Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed (Coca-Cola (TCCC); 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P037** Panama: additional control drawings needed; second-floor NetBotz and watchdog devices not yet procured or installed (Wesco Warehouse; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
@@ -53,7 +52,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 |---|---|---|---|---|---|
 | Akansh Gangil | 3 | 3 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Syed Jamshed Zaidi | 8 | 9 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
-| Chad Steger | 3 | 8 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
+| Chad Steger | 3 | 7 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
 | Scott Dunn | 3 | 10 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Ron Snyder | 2 | 0 | 3 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Babu Papanna | 1 | 0 | 4 | 0 | entroCIM Daily Stand Up |
@@ -116,12 +115,11 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 9, new this week 9, stuck 0
 
 ## entroCIM Backlog Deep Dive
 
-Governance: Sprint / backlog. Owner: David Blondel. Live 5, new this week 5, stuck 0, quiet 0. Last sighting: 2026-10-20. Last evidence: 2026-10-20.
+Governance: Sprint / backlog. Owner: David Blondel. Live 4, new this week 4, stuck 0, quiet 0. Last sighting: 2026-10-20. Last evidence: 2026-10-20.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P043 | Schneider OPC UA protocol decision and proof of concept pending; constrains further Dell GMS completion | Dell |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible, candidate: boundary |
-| P046 | Marygrove: three open tickets; JACE down and customer IT cannot be reached | Marygrove |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible, candidate: gap |
 | P046 | Marygrove: three open tickets; JACE down and customer IT cannot be reached | Marygrove |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible, candidate: gap |
 | P044 | About $10,000 of completed delivery work may not yet be invoiced |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
 | P045 | Automated weekly sales project updates paused: Rovo disabled pending AI approval |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
