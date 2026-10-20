@@ -64,7 +64,7 @@ Forums marked **By exception** that run on a team's own governance (a project pr
 | Darryl – Ron 1:1 | Weekly | Darryl | entroCIM delivery, backlog, release | Own |
 | Darryl – Chad 1:1 | Weekly | Darryl | Deployment, operating execution | Own |
 | Weekly Sync (Amy Aguirre) | Weekly | Darryl | IAM strategy, value proposition | Own |
-| Digital Products / Agile Staff Meeting | Weekly | Chris Gazdic | Portfolio/leadership context | Attend |
+| Digital Products / Agile Staff Meeting | Weekly | Chris Gazdic | Portfolio/leadership context. **Standing expectation from Sean (10-20, transcript): keep the team updated on Launch Studio as it progresses**; Register D, no completion state. Transcripts have been retrievable (09-08, 09-15, 09-29, 10-20); not a Pulse forum | Attend |
 | Product Team – Platform Team connect | Weekly | Keyur Patel | Product/platform coordination | By exception |
 
 ## Commercial, Finance, Customer, External

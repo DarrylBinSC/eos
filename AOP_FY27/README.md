@@ -72,3 +72,7 @@ The collation workbooks. They are the live artifacts of a submission due in two 
 ## 6. Rule going forward
 
 FY28 and any subsequent cycle gets its own `AOP_FY<nn>/` folder created at the start of the cycle, not partway through. Product-specific source material stays in `Products/`; anything cross-product, any change log, and any submission artifact belongs here from the first day.
+
+## Status note, 2026-10-20 (Sean McCloskey, Agile Staff Meeting transcript)
+
+"We're in the tail side of AOP, which means I think we understand the budgets that we're getting." Later the same day Sean expected to have "shown how we've maintained both headcount and cost from last year." Reported, not confirmed by Darryl; no product-level figures in the words. Source: `Evidence/M365_Evidence_Daily_2026-10-20_AgileStaff.md` (transcript, 732 of 732 lines).
