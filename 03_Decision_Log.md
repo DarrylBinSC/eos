@@ -22,6 +22,14 @@
 
 ## Decisions Made
 
+### 2026-10-20 — Registers app: live refresh by polling a file fingerprint, not server push
+- Status: Made (Darryl, 2026-10-20)
+- Owner: Darryl
+- Context: Items Claude filed during the 10-20 briefing session did not appear in an open tab until Darryl reloaded. The page fetched once on open and after its own writes; the server watcher saw outside edits within seconds but had no way to tell the browser.
+- Options considered: refresh on tab focus only; poll a cheap fingerprint and re-fetch on change; server-sent events from the watcher.
+- Decision / Recommended path: both of the first two. New `/api/version` returns a fingerprint of Registers/**/*.md and Briefings/*.md modification times; the page checks it every 30 seconds and on tab focus, re-fetches only when it changes, and never while a drawer, sheet or text field is active. Server-sent events declined: the single-process `http.server` makes long-lived connections more code and more failure modes than the problem warrants. Previous server archived at `Archive/2026-10-20_pre_live_refresh/`.
+- Follow-up: guide updated (`Reference/Registers_App_User_Guide.md`, "When something looks wrong"). Darryl to confirm the "Updated from the files" toast appears on the next session edit.
+
 ### 2026-10-20 — Daily Copilot prompt v2 (extraction only): adopted after the side-by-side run
 - Status: Made (2026-10-20, Darryl)
 - Owner: Darryl
@@ -823,7 +831,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-20 09:08 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-20 09:22 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
