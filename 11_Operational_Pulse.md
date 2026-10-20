@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +42 | 123 | 76 | 16 | 2 | 2 | 1 |
+| Dell | Worsening | +42 | 120 | 73 | 16 | 2 | 2 | 1 |
 | Wesco Warehouse | Worsening | +8 | 16 | 8 | 2 | 0 | 0 | 0 |
 | Federal Reserve | Steady | +0 | 25 | 0 | 0 | 0 | 0 | 5 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
@@ -26,7 +26,6 @@ No signals in the window: BAE, UWM.
 - **P020** WAM historical upload mishandles one customer ID with different names; duplicate ETL error records (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P022** Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion (no account; WAM Sprint Review). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P023** Penang 2: down points not triggering the expected faults or notifications (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
-- **P028** Site-meter information missing at several Dell sites (Chile named), blocking rollup views (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P030** PAS01 Grid Board pod not loaded after the pod update, blocking validation of completed fixes (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P034** ADM renewal identification is manual and unreliable; renewal metrics cannot be sustained this way (no account; ADM connect with Natalie). Test: Darryl named or asked for a decision, resource or escalation.
 - **P016** Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -81,7 +80,7 @@ Governance: Project management. Owner: Chad Steger. Live 19, new this week 17, s
 | P001 | PC1 Grid Board site-selection defect blocking the KWH report and dashboard | Dell |  | High | 2026-10-13 | 2026-10-15 | 2 | customer-visible |
 | P002 | Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches | Dell | Syed Jamshed Zaidi | High | 2026-10-13 | 2026-10-15 | 3 | customer-visible |
 | P027 | Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara | Dell |  | High | 2026-10-15 | 2026-10-15 | 1 | customer-visible |
-| P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-15 | 2 | customer-visible, candidate: boundary |
+| P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-15 | 2 | customer-visible |
 | P016 | Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation | Dell | Matthew Heid | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible, candidate: boundary |
 | P025 | Dell "three-creatures" requirements undefined; related work waits on a Dell workshop | Dell | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 | P026 | New York: two meters in commissioning, two with connection issues | Dell | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
