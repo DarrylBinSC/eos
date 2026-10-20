@@ -832,7 +832,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-20 16:30 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-20 16:55 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -849,6 +849,7 @@
 - Information still needed: C73 (Keith: Cx pod dependency, commissioning-report fix date), C74 (Mike: 2022/2023 POs and terms, Phase 2 in writing), C76 (Nikos/Brandon: carve-out, 18.5, PO term versions). Stanford's current PO terms, Article 18.2, give Stanford exclusive ownership of Work Product; 18.4 excludes pre-existing IP; 18.5 limits reuse; the 2022 and 2023 versions may differ (Darryl, Teams; near-verbatim).
 - Risk of waiting: Thursday's call happens without an agreed structure, or a statement about the Commissioning App is made that the PO terms contradict. W005 (commissioning report fix) is the other half: Darryl, email: if it is still open Thursday "we have no standing to talk about the value of the app."
 - **Update 2026-10-20 (Darryl, direct):** legal meeting moved from Friday 10-23 to Monday 2026-10-26, 08:30 ET, so that Nikos Minas can attend (A68 closed, C76 re-dated). The sequence is now customer call first, legal view second. Thursday's line on the Commissioning App and the scripts stays: the original agreements are under review and Wesco will respond in writing. Any statement on ownership waits for 10-26.
+2026-10-20 (Darryl, session): Pre-existing IP evidence added for the 10-26 legal meeting. Darryl: the commissioning app was first launched at CODA in 2021, the IP predates the Stanford PO, and it was applied at Stanford. Keith Bishop forwarded Jeremy Houck's (Hepta Systems) 2021-10-25 notice to proceed with the Commissioning App at CODA Tech Square, scope dated 2021-10-20; the Stanford quote's source file was created 2021-10-12. Both predate PO 62783761 (2022-01-31). Still needed before 10-26: the CODA scope document, evidence of delivery at CODA before 2022-01-31, CODA's purchase terms, the Hepta/Warez/entroCIM/Wesco entity chain, and what the 2022 build added. Full record and legal prep: Products/entroCIM/entroCIM.md (Stanford section) and Deliverables/entroCIM/2026-10-20_Stanford_Commissioning_IP_Legal_Prep.md.
 
 ### 2026-10-07 — WAM/ADM reduced-capacity reset: what runs, completes, stops or defers
 - ID: D001
