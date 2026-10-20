@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-20 17:09 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-20 17:18 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 79 (Critical 17) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 80 (Critical 17) · Needs triage 0.
 
 ---
 
@@ -124,6 +124,7 @@ Four registers. The delineation is the point.
 | C53 | Wade Bursch's business case and PowerPoint for the Virtual Site Survey | Wade Bursch (TS; reports to Matt Powers) | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C57 | Provide Dell budgetary server pricing for FRB Cash Services through the lowest-cost procurement avenue (Rahi banner constraint) | Todd Hicks / Natalie Marquardt | Awaited | Not dated | **Critical** | 2026-10-16 | New 2026-09-18. |
 | C58 | Identify the current Cisco-side owner of the Cisco Connected Real Estate opportunity (NetBotz replacement, MDF power visibility) and tell Dave McCain that CDA is in development | Bob Caprise | Awaited | Not dated | -- | 2026-09-18 | New 2026-09-18. |
+| C59 | Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment | Bob Caprise | Awaited | On Darryl's email | -- | 2026-10-20 | New 2026-09-18. |
 | C62 | Dell's request for a second dedicated entroCIM/EMS FTE within three to five months -- assess and recommend whether Wesco commits to the hire | Chad Steger (assessment); decision owner not yet named | Awaited |  | **Critical** -- customer-driven staffing ask with a real lead time; silence has a cost if recruiting needs to start | 2026-10-20 | New 2026-10-05. |
 | C64 | More information on Aris (scope, product, team, timing of the move to Sean) | Sean McCloskey / Prassada | Awaited | Not dated; Darryl pausing the investigation until he hears more | -- | 2026-10-06 | New 2026-10-06. |
 | C67 | Replies from Amy Aguirre, Senthil Govindaswamy and Natalie Marquardt naming any workflows currently dependent on ADM to Strev sync | Amy Aguirre, Senthil Govindaswamy, Natalie Marquardt | Awaited | Not dated | -- | 2026-10-07 | New 2026-10-07. |
@@ -146,7 +147,6 @@ Removed from the commitment system. No completion state, so counting them perman
 |---|---|---|---|
 | 2026-10-20 | **C73 — Stanford: does the Cx pod depend on other entroCIM pods to run, plus current status and a committed date for the commissioning-report fix** | Darryl, EOS web app, 2026-10-20 | New 2026-10-20. |
 | 2026-10-20 | **A68 — Re-time the Stanford IP legal call so Nikos Minas can attend, and tell Brandon Thompson** | Darryl | Legal meeting moved to Monday 2026-10-26, 08:30 ET, with Nikos Minas attending |
-| 2026-10-19 | **C59 — Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment** | Darryl, EOS web app, 2026-10-19 | New 2026-09-18. |
 | 2026-10-19 | **B64 — Issue legal termination notice for Jeff Verdon's contractor engagement** | Darryl, EOS web app, 2026-10-19 | Gated on Darryl confirming the decision with Babu and giving Chris the answer (see A-candidate note below). |
 | 2026-10-19 | **B55 — Draft a one-page Dell response stating SOC 2 does not apply to a customer-hosted, customer-operated deployment** | Darryl, EOS web app, 2026-10-19 | Darryl: "To me for review before it goes out." Darryl reviews before send |
 | 2026-10-16 | **C11 — Confirmation or correction of the controller-capacity diagnosis** | Darryl, EOS web app, 2026-10-16 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a confirmation of a diagnosis; |
