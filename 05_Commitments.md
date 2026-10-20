@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-20 09:22 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-20 09:26 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 80 (Critical 19) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 80 (Critical 18) · Needs triage 0.
 
 ---
 
@@ -73,7 +73,7 @@ Four registers. The delineation is the point.
 | C74 | Stanford: 2022 and 2023 purchase orders and attached terms; where Phase 1/Phase 2 re-testing scope was agreed and whether Phase 2 is in writing | Mike Reed | Awaited | 2026-10-20 before the Tuesday internal alignment | **Critical** -- the IP and obligations position rests on these documents | 2026-10-20 | New 2026-10-20. |
 | B102 | Validate remaining Strev SOW 3 deliverables (completed and outstanding), open bugs, and the notification mechanism | Akansh Gangil | Delegated | 2026-10-21 (review call) | **Critical** -- gates a dated vendor/commercial closure | 2026-10-20 | New 2026-10-14. |
 | B100 | Confirm the MuleSoft/current integration architecture and prepare a WAM-limitations slide for Darryl, ahead of the Sean McCloskey capacity discussion | Akansh Gangil | Delegated | 2026-10-23 Before Darryl's Sean McCloskey discussion; exact date not stated | **Critical** -- feeds `05` A61 and the `03` WAM/ADM reduced-capacity reset Radar item directly | 2026-10-19 | New 2026-10-13 (weekly evidence, WAM Leadership Sync transcript, 2026-10-05). |
-| C72 | Ascent Navigator production WAB evidence pack, complete for the 2026-10-23 review | DJ Vaughn | Awaited | 2026-10-23 Ascent Navigator - PROD WAB | **Critical** -- Gates something on a date: the 2026-10-23 production WAB review | 2026-10-20 | 2026-10-19 (Claude, weekly brief): New. |
+| C72 | Ascent Navigator production WAB evidence pack, complete for the 2026-10-23 review | DJ Vaughn | Awaited | 2026-10-23 Ascent Navigator - PROD WAB | -- | 2026-10-20 | 2026-10-19 (Claude, weekly brief): New. |
 | C76 | Stanford / entroCIM IP: whether the Commissioning toolset falls under the pre-existing-software carve-out or is Stanford work product; whether 18.5 creates exposure; 2022 and 2023 versions of Stanford's PO terms | Nikos Minas (advice), Brandon Thompson (routing) | Awaited | 2026-10-26 Monday 08:30 ET legal meeting with Nikos Minas and Brandon Thompson (moved from Friday 10-23 by Darryl) | **Critical** -- customer call 2026-10-22 precedes the legal meeting 2026-10-23 | 2026-10-20 | New 2026-10-20. |
 | B99 | Check whether reciprocal Wesco/manufacturer part-number completion can fit the current WAM Data Enrichment iteration | Akansh Gangil | Delegated | 2026-10-30 Before the enrichment target, if feasible | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
