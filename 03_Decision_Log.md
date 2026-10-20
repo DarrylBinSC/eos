@@ -823,7 +823,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-20 08:55 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-20 09:05 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -831,7 +831,7 @@
 - ID: D096
 - Status: Approaching -- position moved, structure undecided
 - Owner: Darryl Benson (Wesco position); Sarah Monteleone (customer call); Nikos Minas with Brandon Thompson (legal view)
-- Forum: Internal alignment Tuesday 2026-10-20 (Keith Bishop, Mike Reed, Chad Steger, Sarah Monteleone, Nathan Kehr); Stanford call Thursday 2026-10-22 (Sarah leads); Legal call Friday 2026-10-23 (to be re-timed for Nikos Minas) (2026-10-20)
+- Forum: Internal alignment Tuesday 2026-10-20 (Keith Bishop, Mike Reed, Chad Steger, Sarah Monteleone, Nathan Kehr); Stanford call Thursday 2026-10-22 (Sarah leads); Legal meeting Monday 2026-10-26 08:30 ET (Nikos Minas, Brandon Thompson) (2026-10-20)
 - Next action: Tuesday alignment: agree how the roll-back is done, pending Keith's pod-dependency answer and Mike's PO terms
 - Context: Austin (Stanford LBRE) asked to roll three licenses back to SkySpark-only. Reason, relayed by Sarah Monteleone from Austin (Teams, 2026-10-19): "There has been reorganization within LBRE, and we've had our budget reduced, so we need to save in certain areas, such as licenses." Term expired 2026-08-31; renewal unsigned.
 - Facts stated 2026-10-19 (Mike Reed, email): the three licenses began as SkySpark-only; two came from Altura, which bought them from Alper/BASSG; entroCIM licensing was added in 2023 at no upfront cost with maintenance charged at entroCIM pricing since; Wesco carries SkySpark-only maintenance on UNC Chapel Hill, Piedmont (CMS) and RTI. Renewal price lines (Mike Reed): Site SLA list $32,500, 18% maintenance $5,850; COOLER/Commissioning list $29,900, $5,382; Main Access Point list $29,800, $5,364. Darryl (Teams): "Stanford owns these SkySpark licenses and bought them before we were involved, and we already carry SkySpark-only maintenance on three other accounts."
@@ -839,6 +839,7 @@
 - Options mentioned: support the roll-back and work the structure (point counts, dev instance, term); hold entroCIM-linked licensing pending contract and OEM review. The .pod delivery line in the 2022 scope (Keith Bishop) describes delivery, not ownership; nobody tells Stanford they lose the Commissioning App until the pod-dependency and PO-terms questions are answered (Darryl, email).
 - Information still needed: C73 (Keith: Cx pod dependency, commissioning-report fix date), C74 (Mike: 2022/2023 POs and terms, Phase 2 in writing), C76 (Nikos/Brandon: carve-out, 18.5, PO term versions). Stanford's current PO terms, Article 18.2, give Stanford exclusive ownership of Work Product; 18.4 excludes pre-existing IP; 18.5 limits reuse; the 2022 and 2023 versions may differ (Darryl, Teams; near-verbatim).
 - Risk of waiting: Thursday's call happens without an agreed structure, or a statement about the Commissioning App is made that the PO terms contradict. W005 (commissioning report fix) is the other half: Darryl, email: if it is still open Thursday "we have no standing to talk about the value of the app."
+- **Update 2026-10-20 (Darryl, direct):** legal meeting moved from Friday 10-23 to Monday 2026-10-26, 08:30 ET, so that Nikos Minas can attend (A68 closed, C76 re-dated). The sequence is now customer call first, legal view second. Thursday's line on the Commissioning App and the scripts stays: the original agreements are under review and Wesco will respond in writing. Any statement on ownership waits for 10-26.
 
 ### 2026-10-07 — WAM/ADM reduced-capacity reset: what runs, completes, stops or defers
 - ID: D001
