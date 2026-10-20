@@ -897,6 +897,8 @@ button.pv-pp{min-height:40px;align-items:center}
 #pv-meet .mban b{font-size:19px;font-weight:650}#pv-meet .mban p{margin:4px 0 0;font-size:16px;line-height:24px;color:var(--ink2)}
 #pv-meet .mg{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:48px;align-items:start;margin-top:24px}
 #pv-meet .ms{margin-bottom:28px}
+#pv-meet .mtxt{margin-top:32px;border-top:1px solid var(--line,#ddd);padding-top:12px}#pv-meet .mtxt summary{cursor:pointer;font-size:14px;color:var(--ink2)}#pv-meet .mtxt textarea{display:block;width:100%;min-height:260px;margin-top:10px;font:13px/18px ui-monospace,Menlo,monospace;padding:10px;border:1px solid var(--line,#ddd);border-radius:6px;background:var(--card);color:var(--ink)}
+#pv-meet .mtxt:not([open]) textarea{position:absolute;left:-9999px;top:0;height:1px;width:1px;min-height:0;display:block;opacity:0}
 #pv-meet .ms h3{display:flex;align-items:baseline;gap:10px;font-size:15px;letter-spacing:.05em;text-transform:uppercase;font-weight:650;margin:0;padding-bottom:10px;border-bottom:1px solid var(--line)}
 #pv-meet .ms h3 .nm{font-size:28px;color:var(--muted);letter-spacing:0}
 #pv-meet .mi{display:grid;grid-template-columns:72px minmax(0,1fr);gap:0;padding:14px 0;border-bottom:1px solid var(--line2)}
@@ -1184,7 +1186,7 @@ document.addEventListener('click',e=>{
   if(e.target.closest('[data-sfull]')){const id=SHEET;closeSheet();openDrawer(id);return}
   const so=e.target.closest('[data-sopen]');if(so){e.preventDefault();closeSheet();closeMeet();openDrawer(so.dataset.sopen);return}
   if(e.target.closest('[data-mclose]')){closeMeet();return}
-  if(e.target.closest('[data-mcopy]')){const txt=agendaMd(MEET);(navigator.clipboard?navigator.clipboard.writeText(txt):Promise.reject()).then(()=>toast('Copied'),()=>toast('Copy is blocked here; select the text instead'));return}
+  if(e.target.closest('[data-mcopy]')){copyAgenda();return}
   if(e.target.closest('[data-mfs]')){const el=$('#pv-meet');if(document.fullscreenElement)document.exitFullscreen();else if(el&&el.requestFullscreen)el.requestFullscreen().catch(()=>toast('Full screen is not available here'));else toast('Full screen is not available here');return}
   const mo=e.target.closest('[data-mopen]');if(mo){closeMeet();openDrawer(mo.dataset.mopen);return}
   if(e.target.closest('[data-pplall]')){PPLALL=!PPLALL;render();return}
@@ -1516,6 +1518,15 @@ function agendaMd(k){const m=agendaModel(k);const L=[`# ${m.title}: ${m.kicker.t
   if(m.escalated.length)L.push('','## Escalated to you','',...m.escalated.map(e=>'- '+e));
   return L.join('\n')}
 let MEET=null;
+/* Copy as text. navigator.clipboard needs a secure context (https or localhost); the app is served over plain http on the LAN,
+   so on every other device it fails. Fall back to selecting the hidden textarea and execCommand('copy'), which works over http
+   inside a click; if that fails too, open the text block already selected so Cmd-C / Copy finishes the job. Same pattern as copyPrompt (10-19). */
+function copyAgenda(){if(!MEET)return;const txt=agendaMd(MEET);const ta=document.getElementById('meet-ta');if(ta)ta.value=txt;
+  const done=()=>toast('Agenda copied as text');
+  const fall=()=>{if(!ta)return toast('Copy is not available here');const d=ta.closest('details');ta.focus();ta.select();ta.setSelectionRange(0,ta.value.length);
+    let ok=false;try{ok=document.execCommand('copy')}catch(e){ok=false}
+    if(ok){done();ta.blur()}else{d.open=true;d.scrollIntoView({block:'nearest'});ta.focus();ta.select();toast('Text selected: press Cmd-C (or Copy) to copy it')}};
+  if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(txt).then(done,fall);else fall()}
 function openAgenda(k){MEET=k;const m=agendaModel(k);
   let el=$('#pv-meet');if(!el){el=document.createElement('div');el.id='pv-meet';el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');document.body.appendChild(el)}
   const bd=b=>b?ibadges(b):'';
@@ -1524,7 +1535,8 @@ function openAgenda(k){MEET=k;const m=agendaModel(k);
   el.innerHTML=`<div class="mw"><div class="mh"><div><div class="kk">${esc(m.kicker)}</div><h2>${esc(m.title)}</h2><div class="sb">${esc(m.sub)}</div></div>
    <div class="mb"><button type="button" class="btn primary" data-mcopy>Copy as text</button><button type="button" class="btn" data-mfs>${document.fullscreenElement?'Exit full screen':'Present full screen'}</button><button type="button" class="btn" data-mclose>Close</button></div></div>
    ${m.banner?`<div class="mban"><span class="hx" aria-hidden="true"></span><div><b>${esc(m.banner.h)}</b><p>${esc(m.banner.t)}</p></div></div>`:''}
-   <div class="mg"><div class="msecs">${secs}</div>${rail}</div></div>`;
+   <div class="mg"><div class="msecs">${secs}</div>${rail}</div>
+   <details class="mtxt" id="meet-txt"><summary>Agenda as text</summary><textarea id="meet-ta" readonly spellcheck="false">${esc(agendaMd(k))}</textarea></details></div>`;
   document.body.classList.add('locked');el.scrollTop=0;el.focus&&el.setAttribute('tabindex','-1');el.focus()}
 function closeMeet(){MEET=null;if(document.fullscreenElement)document.exitFullscreen().catch(()=>{});const el=$('#pv-meet');if(el)el.remove();if(!DRAWER&&!SHEET)document.body.classList.remove('locked')}
 document.addEventListener('fullscreenchange',()=>{const b=document.querySelector('[data-mfs]');if(b)b.textContent=document.fullscreenElement?'Exit full screen':'Present full screen'});

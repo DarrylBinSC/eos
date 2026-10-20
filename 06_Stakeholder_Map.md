@@ -599,3 +599,9 @@ Source: M365 daily evidence package, reporting window 2026-10-13 to 2026-10-14. 
 - **Jeffrey McCorvey** (existing entry) — 10-19: waiting on confirmation of the corrected Friday 10-23 time and Wesco Legal's participation for the JCI MSI discussion (`04` W017).
 - **Thomas (Tom) Boss** (existing entry) — 10-19: reported "$26M of the nearly $30M in sales is tied to the hardware"; the software/pull-through split is unanswered. Nathan Kehr suggested asking him to break it out.
 - **Babu Papanna** — PTO 2026-10-20 to 10-27, back 10-28 (relevant to `04` W021).
+
+### Turner Construction (FRBNY BP43 Smart Building bid; added 2026-10-20)
+
+- **Dayana Sayritupac** (Sayritupac Delgado) — Procurement Agent, Turner Construction, New Jersey Business Unit (dsayritupac@tcco.com). Answered Wesco's six bid questions on 2026-10-20; the procurement counterpart for BP #43. Cites RFI numbers and Bid Supplement 01 line items precisely; answer in the same form.
+- **Justin Barbely, Michael Erickson, Keith Shuda** — Turner NJ, copied on the bid question thread; roles unconfirmed.
+- **Sarah Monteleone** (existing entry) — runs the Turner question-and-answer exchange for this bid as Enterprise Account Manager, Wesco | entroCIM Team, IoT & Platform Sales Group. Routes Turner's answers to Leanne Gordon and Valli Poornakumar for the pricing response (due 2026-10-21). Not confirmed as bid owner; see `W026`.

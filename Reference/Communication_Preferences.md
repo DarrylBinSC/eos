@@ -149,6 +149,19 @@ Learned while updating the entroCIM and WAM update slides in the Engel deep-dive
 - Drop bullets that describe ordinary delivery work (a data-enrichment release, an order-coverage change); the CEO reads them as noise.
 - Constraints are stated as one plain sentence of dependency, not a list of gaps and owners; the detail sits on a backup slide.
 
+### CEO pre-read slides, prospectus register (Darryl and Sean McCloskey, 2026-10-20)
+
+Sean's feedback on the 2026-10-19 Engel deep-dive slides: the deck is a standalone pre-read for the CEO and CIO and should read like a prospectus. This supersedes the presented-deck rules directly above whenever a deck will be read without a presenter.
+
+- There is no talk track. Anything moved off the slide is invisible, and any claim that needed a verbal caveat is stated unqualified. Confirm it or cut it.
+- A prospectus describes an asset to someone deciding whether to keep funding it: what it is, who buys it, what it has produced, where it is going. Open with one positioning line. State outcomes and position, not activity.
+- Bullets are outcome-led (what the customer or the business now has), not verb-led team activity.
+- No internal governance names, version numbers, tool names or rollout mechanics (DCOE, C2P, AI Council, release numbers, day counts). Translate the business point: "meets Wesco's IT security standards," "approved through Wesco's AI governance."
+- Commercial Update carries customers, sales figures with an as-of date, and the revenue model. Operating changes (capacity, support model) appear only as the plan they produce.
+- Sales figures only, no plan attainment: Sales presents the plan separately through the business sponsor, and there is no upside in the product team presenting it too.
+- Named customers are fine on an internal pre-read; omit any account in an open reduction or dispute (Stanford, 2026-10-20).
+- Four bullets per section, five at most, one to one and a half lines each.
+
 ## 5. Benefit Notes Format
 
 Preferred notes structure:

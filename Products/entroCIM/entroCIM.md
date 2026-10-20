@@ -226,7 +226,7 @@ Darryl pulled into stand-ups/execution; release scope untied to commercial value
 
 Editorial basis for the cut: v10 makes several arguments three times, which is what drove the 50-slide count. Product-strong-system-missing appeared on slides 5, 8 and 17; the distribution-versus-software-motion argument on 18, 19 and 29; commerce adjacency on 4, 9 and 28. One instance of each was kept. Darryl's calls on the borderline slides: the incubation contract (v10 s32) restored to the main flow because without it the ask requests patience without stating what leadership gets back; the governed AI ladder (v10 s27) held out of the main flow but retained in the appendix.
 
-**Status:** internal draft. Circulation still gated on Mike Wassil per the 07-24 position; confirm this still holds before the deck moves.
+**Status (corrected 2026-10-20, Darryl direct):** the commercialization deck was emailed to executives; it is not an unsent draft gated on Mike Wassil. Its positioning language (infrastructure lifecycle intelligence, vendor-neutral, no rip-and-replace) is usable in executive material and was used on the 2026-10-20 Engel deep-dive slide. The 07-24 AOP-text exclusion was a register choice for AOP forms, not a circulation hold.
 
 **Framing-consistency exposure (carried, still live):** the deck's "no new capital / no new headcount" ask sits against the entroCIM FY27 AOP sustaining request, and the deck's Path B growth language sits against the AOP audience rule that entroCIM reads as sustaining. This was latent while the deck was unsent. It becomes live the moment the deck circulates before 08-21. See the 2027 AOP section below.
 
@@ -440,6 +440,19 @@ Source: weekly M365 evidence 2026-10-12 to 2026-10-19 (`Evidence/M365_Evidence_W
 - **Release communication went out as one package:** release documentation, sales guide, knowledge-base material and deployment/sales communication prepared together. This is the first release since the 07-28 finding on the product-to-deployment/sales handoff (`04` Passive W046) where the handoff is evidenced as done at release rather than after it. A customer and sales walkthrough is planned for the week of 2026-10-26.
 - **Not established:** customer delivery dates by account under the +1/+2/+5 day sequence, and whether the Federal Reserve receives 3.1.12.14 in place of the held 3.1.12.13 (`04` W021). Do not describe any customer as upgraded until evidence says so.
 - Register: `05` B72 (sales messaging) marked potentially closed, awaiting Darryl's confirmation.
+
+## FRBNY BP43 Smart Building bid: Turner answers and durable positions (added 2026-10-20)
+
+Source: Turner Construction reply of 2026-10-20 to Wesco's six bid questions (`Evidence/Email_FRB_BP43_Turner_Bid_Answers_2026-10-20.pdf`; review in `Deliverables/entroCIM/2026-10-20_FRB_BP43_Turner_Bid_Answers_Review.md`). Bid status lives in `W026`, not here.
+
+Durable, restated by Wesco in the bid exchange and accepted by Turner:
+
+- **entroCIM On-Premises is not available as a perpetual license.** It is licensed on an initial start-up cost plus an annual maintenance fee. In a form that asks for a perpetual one-time fee, enter 0 and show the start-up cost and the subscription separately. Call it "entroCIM licensing" in anything that leaves the team.
+- **entroCIM does not create, develop, or maintain 3D BIM models.** It ingests standard CAD drawings to build floor-plan models in the platform. Wesco's standing deviation (spec 25 00 00, 2.03 D): 3D functionality depends on the supplied BIM/COBie model, LOD, file size, update process and approved implementation; material model remediation is excluded.
+
+**Not supported (Darryl direct, 2026-10-20): COBie ingestion and 3D model navigation** (FRB spec 25 00 00, 2.03 G and H). entroCIM does not support 3D models; it can present a static image of a 3D space, and floor-plan navigation built from CAD. Any response to a 3D-navigation requirement is a deviation or a partner viewer, never an included capability. **COBie, what it actually is (researched 2026-10-20, NIBS NBIMS-US V3 COBie standard, nibs.org/cobie):** a "data format and process standard," a non-graphic subset of BIM structured as a relational schema of 19 tables (Facility, Level, Space, Zone, Type, Component, System, Attribute, Document, Job, Coordinate, among others). Three approved delivery formats: SpreadsheetML (Excel), JSON (for machine-to-machine exchange), and IFC. Geometry is limited to the Coordinate table ("simple geometric orientation"); there is no 3D model in a COBie deliverable. There is no COBie API; it is a file exchange, and the standard says custom fields are not permitted (extra data goes in the Attribute table). Implication for entroCIM: ingesting COBie is a data-mapping import (Facility/Level/Space/Zone to site/floor/space/zone, Type/Component to equip with manufacturer, model, serial and warranty tags, Attribute to custom tags, Document to document links, Job to maintenance schedules) that can be done by project configuration or a loader script through entroCIM's documented API, without product change. **Darryl, 2026-10-20: COBie ingestion would require a purpose-built connector from Ron Snyder's team; it is development effort, not configuration. Bid responses carry it as a priced placeholder, never as an existing capability.** The 3D navigation requirement is separate from COBie and remains unsupported.
+
+Still open from 08-19 and now priced as an alternate (H2) in this bid: whether the IBM TRIRIGA work-order path is a productized connector or project-configured integration.
 
 ## Stanford renewal: roll-back of three licenses to SkySpark-only; Wesco position moved to supporting it (added 2026-10-20)
 

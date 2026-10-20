@@ -1,4 +1,47 @@
-# John Engel deep dive: entroCIM and WAM update slides (final text, 2026-10-19)
+# John Engel deep dive: entroCIM and WAM update slides
+
+Revised 2026-10-20 after Sean McCloskey's feedback: the deck is a standalone pre-read for John Engel (CEO) and Akash Khurana (CIO) and the bullets should read like a prospectus. The 2026-10-19 version below assumed a presented deck with a talk track; it is superseded. Slide owner's template unchanged: title, Business Sponsor / Product Executive line, Product Update and Commercial Update sections.
+
+Rules applied (filed in Reference/Communication_Preferences.md, "CEO pre-read slides, prospectus register"): outcome-led bullets, no internal governance names or version numbers, no claim that depends on a speaker, figures carry an as-of date, sales figures only (plan attainment is presented by Sales through Dirk Naylor; Darryl, 2026-10-20).
+
+## entroCIM Update (final, 2026-10-20)
+
+Business Sponsor: Dirk Naylor. Product Executive: Darryl Benson.
+
+Product Update
+- entroCIM delivers infrastructure lifecycle intelligence for facilities and data centers: vendor-neutral integration of a customer's existing building and IT systems into one platform for monitoring, analytics and action, with no rip-and-replace.
+- The current release is rolling out to all hosted and on-premises customers on a published schedule, delivering platform security improvements and new self-service visualization and bulk-control tools.
+- entroCIM 4 arrives in Q1 2027: a next-generation platform with a modern deployment model that meets Wesco's IT security standards and a redesigned data center experience.
+- entroCIM AI launches with entroCIM 4, bringing natural-language analytics and administration to the platform; approved through Wesco's AI governance and in development now.
+
+Commercial Update
+- Installed base includes Federal Reserve, Ford, Dell and Disney, across hosted, on-premises and air-gapped deployments.
+- 2026 through September: $2.0M software sales and $0.2M product pull-through.
+- Services revenue formalized: a priced training catalog (first course available, three more in Q4) and a standard software support agreement replacing hourly arrangements.
+- 2027 plan, within the reduced development capacity in the FY27 AOP: two major and two maintenance releases, with entroCIM 4 and entroCIM AI the headline deliveries.
+
+Decisions behind the text (Darryl, 2026-10-20): positioning line taken from the commercialization report (the deck was emailed to executives; not a new claim); sales figures only, no plan comparison; Stanford omitted from the customer line while its license roll-back is open; AI pricing not decided, launch information only; "meets Wesco's IT security standards" is the confirmed DCOE-alignment fact in plain language. Figures from the finance workbook "Copy of entroCIM and ALM update for IT" (software $2,035,463; pull-through $208,270; January to September 2026).
+
+## Wesco Asset Management Update (final, 2026-10-20)
+
+Business Sponsor: Brad Stevens. Product Executive: Darryl Benson.
+
+Product Update
+- Wesco Asset Management gives Wesco and its customers one view of what is installed: hardware assets, software licenses, warranties, lifecycle status and renewal timing, built from Wesco's own order data.
+- License renewal tracking is live for Sales: 35 suppliers and 6,900 license parts tracked, with 1,337 renewal notifications delivered to 238 North American sales reps as of October.
+- Asset records for Managed Services customers, with warranty, coverage and serial numbers from their Wesco orders, are planned for Q1 2027.
+- Scaling to the full installed base depends on serial, MAC-address and supplier data that Wesco systems do not capture today; capture points and ownership are being set with the data owners across the business.
+
+Commercial Update
+- Sales through Wesco's asset programs: $29.8M January to September 2026, of which $26M is hardware supplied through those programs.
+- WAM is now sold as the Asset Management element of Wesco's managed services offering, alongside Facility Optimization on entroCIM.
+- 2027 plan, within the reduced development capacity in the FY27 AOP: production stability first, with the roadmap concentrated on the license and asset capabilities that have a business consumer today.
+
+Decisions behind the text (Darryl, 2026-10-20): hardware split stated (finance: "$26M of the nearly $30M in sales is tied to the hardware"; workbook total $29,782,741, January to September); Q1 2027 for asset functionality because the roadmap reconciliation has not settled the January and February phases; managed services line confirmed (Brad Stevens external positioning, 2026-09-17); scorecard figures from the Sales Operations October deck, $697K license-sales figure kept off; ADM, DDP, GPOs and Strev not named.
+
+---
+
+# Superseded: 2026-10-19 version (presented-deck assumption)
 
 Slide owner's template: title, Business Sponsor / Product Executive line, Product Update and Commercial Update sections. Text below replaces the body of each slide. Talk-track items are what was deliberately moved off the slide.
 
