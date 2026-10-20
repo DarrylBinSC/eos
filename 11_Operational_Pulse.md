@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +39 | 117 | 73 | 16 | 2 | 2 | 1 |
+| Dell | Worsening | +39 | 114 | 70 | 16 | 2 | 2 | 1 |
 | Wesco Warehouse | Worsening | +8 | 16 | 8 | 2 | 0 | 0 | 0 |
 | Federal Reserve | Steady | +0 | 25 | 0 | 0 | 0 | 0 | 5 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
@@ -22,7 +22,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P014** Dell non-DC server unavailable since the prior week, blocking meter verification (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P020** WAM historical upload mishandles one customer ID with different names; duplicate ETL error records (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P022** Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion (no account; WAM Sprint Review). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P030** PAS01 Grid Board pod not loaded after the pod update, blocking validation of completed fixes (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -70,7 +69,7 @@ Governance: Project management. Owner: Chad Steger. Live 19, new this week 17, s
 |---|---|---|---|---|---|---|---|---|
 | P006 | Dell alarm-database corruption: intermittent alarming failures, no root cause | Dell | Ron Snyder; Keith Bishop | High | 2026-08-25 | 2026-10-14 | 5 | stuck, customer-visible, escalated to W009 |
 | P007 | PC1/JCI large-scale point faults and intermittent site access | Dell | Scott Dunn | High | 2026-09-15 | 2026-10-15 | 3 | stuck, customer-visible, escalated to W099 |
-| P014 | Dell non-DC server unavailable since the prior week, blocking meter verification | Dell |  | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible, candidate: gap |
+| P014 | Dell non-DC server unavailable since the prior week, blocking meter verification | Dell |  | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 | P015 | Panama HVAC points increase continuously; BACnet setup failed, Modbus option untested | Wesco Warehouse | Matthew Heid; Scott Dunn | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 | P005 | Commissioned Panama devices not producing expected alarms ahead of environment decommissioning | Wesco Warehouse | Syed Jamshed Zaidi | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible |
 | P011 | Commissioned El Dorado devices not producing expected alarms ahead of environment decommissioning | Dell | Syed Jamshed Zaidi | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible |
