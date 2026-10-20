@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-20 17:03 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-20 17:09 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 80 (Critical 18) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 79 (Critical 17) · Needs triage 0.
 
 ---
 
@@ -69,7 +69,6 @@ Four registers. The delineation is the point.
 | B92 | Share the WAM/ADM data points already known to be required with the cross-SBU VAS/WMX/ADM/Strev working team | Akansh Gangil | Delegated | 2026-10-16 Ahead of the use-case deadline (not individually dated) | -- | 2026-10-15 | New 2026-10-01 (M365 evidence, 09-30 to 10-01). |
 | C63 | Outcome of Sean McCloskey's meeting with Akash Khurana on Digital Products taking over WAM development (the WAM team is still with Merwin's Platforms team) | Sean McCloskey | Awaited | 2026-10-19 After Sean's PTO; Darryl has no time with him before the week of | -- | 2026-10-14 | New 2026-10-06. |
 | B105 | Provide Ron Snyder guidance on tracking Claude Code usage | Naveen Kumar, coordinated by Ankit Chadha | Delegated | 2026-10-20 ~ (approximately one week; no ISO date stated) | -- | 2026-10-14 | New 2026-10-14. |
-| C73 | Stanford: does the Cx pod depend on other entroCIM pods to run, plus current status and a committed date for the commissioning-report fix | Keith Bishop | Awaited | 2026-10-20 before the Tuesday internal alignment | **Critical** -- feeds the Stanford position before Thursday's customer call and the W005 fix date | 2026-10-20 | New 2026-10-20. |
 | C74 | Stanford: 2022 and 2023 purchase orders and attached terms; where Phase 1/Phase 2 re-testing scope was agreed and whether Phase 2 is in writing | Mike Reed | Awaited | 2026-10-20 before the Tuesday internal alignment | **Critical** -- the IP and obligations position rests on these documents | 2026-10-20 | New 2026-10-20. |
 | B102 | Validate remaining Strev SOW 3 deliverables (completed and outstanding), open bugs, and the notification mechanism | Akansh Gangil | Delegated | 2026-10-21 (review call) | **Critical** -- gates a dated vendor/commercial closure | 2026-10-20 | New 2026-10-14. |
 | B100 | Confirm the MuleSoft/current integration architecture and prepare a WAM-limitations slide for Darryl, ahead of the Sean McCloskey capacity discussion | Akansh Gangil | Delegated | 2026-10-23 Before Darryl's Sean McCloskey discussion; exact date not stated | **Critical** -- feeds `05` A61 and the `03` WAM/ADM reduced-capacity reset Radar item directly | 2026-10-19 | New 2026-10-13 (weekly evidence, WAM Leadership Sync transcript, 2026-10-05). |
@@ -145,6 +144,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-10-20 | **C73 — Stanford: does the Cx pod depend on other entroCIM pods to run, plus current status and a committed date for the commissioning-report fix** | Darryl, EOS web app, 2026-10-20 | New 2026-10-20. |
 | 2026-10-20 | **A68 — Re-time the Stanford IP legal call so Nikos Minas can attend, and tell Brandon Thompson** | Darryl | Legal meeting moved to Monday 2026-10-26, 08:30 ET, with Nikos Minas attending |
 | 2026-10-19 | **C59 — Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment** | Darryl, EOS web app, 2026-10-19 | New 2026-09-18. |
 | 2026-10-19 | **B64 — Issue legal termination notice for Jeff Verdon's contractor engagement** | Darryl, EOS web app, 2026-10-19 | Gated on Darryl confirming the decision with Babu and giving Chris the answer (see A-candidate note below). |
