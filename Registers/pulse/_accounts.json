@@ -11,9 +11,10 @@
     "Penang",
     "Penang 2",
     "Singapore",
-    "New York"
+    "New York",
+    "Apex"
    ],
-   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16); Penang (incl. Penang 2), Singapore and New York are Dell sites (Darryl, 2026-10-19)",
+   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16); Penang (incl. Penang 2), Singapore and New York are Dell sites (Darryl, 2026-10-19); Apex added 2026-10-20 from the Prompt 1 label and K005, confirm",
    "pinned": true
   },
   {
@@ -48,7 +49,8 @@
    "aliases": [
     "TCCC",
     "Coca-Cola",
-    "AOC"
+    "AOC",
+    "Coke"
    ]
   },
   {
@@ -74,6 +76,12 @@
    "name": "UWM",
    "type": "customer",
    "aliases": []
+  },
+  {
+   "name": "Marygrove",
+   "type": "customer",
+   "aliases": [],
+   "note": "Hosted entroCIM customer; added 2026-10-20 from the Backlog Deep Dive (P047), confirm"
   }
  ]
 }

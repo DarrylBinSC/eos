@@ -20,7 +20,7 @@
    ],
    "confirmed": true,
    "track": "delivery",
-   "last_evidence": "2026-10-16"
+   "last_evidence": "2026-10-20"
   },
   {
    "key": "entrocim-standup",
@@ -38,7 +38,7 @@
    ],
    "confirmed": true,
    "track": "development",
-   "last_evidence": "2026-10-16"
+   "last_evidence": "2026-10-20"
   },
   {
    "key": "entrocim-backlog",
@@ -53,7 +53,7 @@
    "confirmed": true,
    "notes": "07 lists Darryl as Attend; confirm it is team-governed",
    "track": "development",
-   "last_evidence": "2026-09-14"
+   "last_evidence": "2026-10-20"
   },
   {
    "key": "dcoe-entrocim",
@@ -81,7 +81,8 @@
    "aliases": [],
    "confirmed": true,
    "track": "delivery",
-   "last_evidence": "2026-09-14"
+   "last_evidence": "2026-09-14",
+   "notes": "2026-10-20 sweep: 10-13 occurrence met but no transcript, Loop, recap or chat was accessible; 10-20 occurrence (3:00 PM) had not happened at sweep time. last_evidence not advanced."
   },
   {
    "key": "showcase",
@@ -109,7 +110,8 @@
    "aliases": [],
    "confirmed": true,
    "track": "delivery",
-   "last_evidence": ""
+   "last_evidence": "",
+   "notes": "Not found by exact name in the 2026-10-12 to 10-20 sweep; calendar title to be confirmed."
   },
   {
    "key": "wam-backlog-refinement",
