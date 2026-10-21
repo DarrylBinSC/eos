@@ -14,7 +14,7 @@
 | Marygrove | Worsening | +11 | 11 | 0 | 1 | 0 | 0 | 0 |
 | Federal Reserve | Steady | +0 | 25 | 0 | 0 | 0 | 0 | 5 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
-| Stanford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
+| Stanford | Steady | +0 | 10 | 0 | 0 | 0 | 0 | 2 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 
 Load = live high visible x8, live high x6, live medium x3, live low x1, stuck x4, quiet x1, candidate x3, at your level x5. Trend = change in the team-raised load over 7 days, rebuilt from the dates meetings raised each issue; Worsening or Improving when it moves by at least 5 points and 15% of last week's load, otherwise Steady. Your register items are in the load but not the trend (no dated history). Friction from evidence, not customer sentiment.
