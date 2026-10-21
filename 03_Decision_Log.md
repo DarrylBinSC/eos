@@ -832,7 +832,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-21 08:42 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-21 08:43 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
 
@@ -1053,7 +1053,7 @@
 
 ### 2026-10-20 — Stanford renewal: three licenses back to SkySpark-only, how Wesco supports the roll-back and what happens to the Commissioning App
 - ID: D096
-- Status: Approaching -- position moved, structure undecided
+- Status: Complete -- position moved, structure undecided
 - Owner: Darryl Benson (Wesco position); Sarah Monteleone (customer call); Nikos Minas with Brandon Thompson (legal view)
 - Forum: Internal alignment Tuesday 2026-10-20 (Keith Bishop, Mike Reed, Chad Steger, Sarah Monteleone, Nathan Kehr); Stanford call Thursday 2026-10-22 (Sarah leads); Legal meeting Monday 2026-10-26 08:30 ET (Nikos Minas, Brandon Thompson) (2026-10-20)
 - Next action: Tuesday alignment: agree how the roll-back is done, pending Keith's pod-dependency answer and Mike's PO terms
