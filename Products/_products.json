@@ -1,25 +1,139 @@
 {
   "_note": "Product roster for the web app's Products tab (added 2026-10-21). live: true means the product always gets a card, whatever its activity; live: false hides it and lists its name in the tab footer. Darryl flips live in the tab. aliases match register item titles when the item's product field is blank.",
   "products": [
-    {"name": "entroCIM", "file": "Products/entroCIM/entroCIM.md", "live": true,
-     "aliases": ["entroCIM", "Stanford", "Dell", "SkySpark", "Woolly", "FRBNY", "FRB", "commissioning", "Quest", "Ford", "Shorenstein", "TCCC", "Coca-Cola", "Texas Power", "Louvre", "Limerick", "El Dorado"]},
-    {"name": "WAM", "file": "Products/WAM/WAM.md", "live": true,
-     "aliases": ["WAM", "Strev", "ADM", "asset management", "WMX", "DDP", "supplier attribute", "DDPTRK"]},
-    {"name": "Navigator", "file": "Products/Navigator/Navigator.md", "live": true,
-     "aliases": ["Navigator", "Ascent"]},
-    {"name": "CDA", "file": "Products/CDA/CDA.md", "live": true,
-     "aliases": ["CDA", "Device Assurance", "Connected Device", "TSS", "Matt Powers", "Emily Munk"]},
-    {"name": "Launch Studio", "file": "Products/Vibe_Code_Productization/Vibe_Code_Productization.md", "live": true,
-     "aliases": ["Launch Studio", "vibe", "productization", "Mike Wassil"]},
-    {"name": "CAT", "file": "Products/CAT/CAT.md", "live": true,
-     "aliases": ["CAT", "returnable", "Sensolus", "asset tracking"]},
-    {"name": "i3 Alliance", "file": "Products/i3_Alliance.md", "live": true,
-     "aliases": ["i3", "Chuck Knight"]},
-    {"name": "JCI / Airwall", "file": "Products/JCI_Partnership.md", "live": true,
-     "aliases": ["JCI", "Airwall", "Tempered"]},
-    {"name": "CMP", "file": "Products/CMP.md", "live": false, "aliases": ["CMP"]},
-    {"name": "Spanr", "file": "Products/Spanr.md", "live": false, "aliases": ["Spanr"]},
-    {"name": "Connected Safety", "file": "Products/Connected_Safety.md", "live": false, "aliases": ["Connected Safety"]},
-    {"name": "Unified Platform", "file": "Products/Unified_Platform/Unified_Platform.md", "live": false, "aliases": ["Unified Platform"]}
+    {
+      "name": "entroCIM",
+      "file": "Products/entroCIM/entroCIM.md",
+      "live": true,
+      "aliases": [
+        "entroCIM",
+        "Stanford",
+        "Dell",
+        "SkySpark",
+        "Woolly",
+        "FRBNY",
+        "FRB",
+        "commissioning",
+        "Quest",
+        "Ford",
+        "Shorenstein",
+        "TCCC",
+        "Coca-Cola",
+        "Texas Power",
+        "Louvre",
+        "Limerick",
+        "El Dorado"
+      ]
+    },
+    {
+      "name": "WAM",
+      "file": "Products/WAM/WAM.md",
+      "live": true,
+      "aliases": [
+        "WAM",
+        "Strev",
+        "ADM",
+        "asset management",
+        "WMX",
+        "DDP",
+        "supplier attribute",
+        "DDPTRK"
+      ]
+    },
+    {
+      "name": "Navigator",
+      "file": "Products/Navigator/Navigator.md",
+      "live": true,
+      "aliases": [
+        "Navigator",
+        "Ascent"
+      ]
+    },
+    {
+      "name": "CDA",
+      "file": "Products/CDA/CDA.md",
+      "live": true,
+      "aliases": [
+        "CDA",
+        "Device Assurance",
+        "Connected Device",
+        "TSS",
+        "Matt Powers",
+        "Emily Munk"
+      ]
+    },
+    {
+      "name": "Launch Studio",
+      "file": "Products/Vibe_Code_Productization/Vibe_Code_Productization.md",
+      "live": true,
+      "aliases": [
+        "Launch Studio",
+        "vibe",
+        "productization",
+        "Mike Wassil"
+      ]
+    },
+    {
+      "name": "CAT",
+      "file": "Products/CAT/CAT.md",
+      "live": false,
+      "aliases": [
+        "CAT",
+        "returnable",
+        "Sensolus",
+        "asset tracking"
+      ]
+    },
+    {
+      "name": "i3 Alliance",
+      "file": "Products/i3_Alliance.md",
+      "live": true,
+      "aliases": [
+        "i3",
+        "Chuck Knight"
+      ]
+    },
+    {
+      "name": "JCI / Airwall",
+      "file": "Products/JCI_Partnership.md",
+      "live": true,
+      "aliases": [
+        "JCI",
+        "Airwall",
+        "Tempered"
+      ]
+    },
+    {
+      "name": "CMP",
+      "file": "Products/CMP.md",
+      "live": false,
+      "aliases": [
+        "CMP"
+      ]
+    },
+    {
+      "name": "Spanr",
+      "file": "Products/Spanr.md",
+      "live": false,
+      "aliases": [
+        "Spanr"
+      ]
+    },
+    {
+      "name": "Connected Safety",
+      "file": "Products/Connected_Safety.md",
+      "live": false,
+      "aliases": [
+        "Connected Safety"
+      ]
+    },
+    {
+      "name": "Unified Platform",
+      "file": "Products/Unified_Platform/Unified_Platform.md",
+      "live": false,
+      "aliases": [
+        "Unified Platform"
+      ]
+    }
   ]
 }
