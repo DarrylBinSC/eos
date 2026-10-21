@@ -1,15 +1,15 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-20 17:19 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-21 08:24 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-> Rolling window 2026-10-06 to 2026-10-20. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
+> Rolling window 2026-10-07 to 2026-10-21. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
 ## Account health
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +61 | 133 | 67 | 19 | 2 | 2 | 1 |
-| Wesco Warehouse | Worsening | +14 | 22 | 8 | 3 | 0 | 0 | 0 |
+| Dell | Worsening | +39 | 133 | 89 | 19 | 2 | 2 | 1 |
+| Wesco Warehouse | Worsening | +6 | 22 | 16 | 3 | 0 | 0 | 0 |
 | Coca-Cola (TCCC) | Worsening | +6 | 12 | 1 | 1 | 0 | 1 | 1 |
 | Marygrove | Worsening | +11 | 11 | 0 | 1 | 0 | 0 | 0 |
 | Federal Reserve | Steady | +0 | 25 | 0 | 0 | 0 | 0 | 5 |
@@ -67,7 +67,7 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 23, new this week 21, stuck 2, quiet 3. Last sighting: 2026-10-20. Last evidence: 2026-10-20.
+Governance: Project management. Owner: Chad Steger. Live 23, new this week 13, stuck 2, quiet 3. Last sighting: 2026-10-20. Last evidence: 2026-10-20.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -99,7 +99,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P008 De
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 9, new this week 9, stuck 0, quiet 0. Last sighting: 2026-10-20. Last evidence: 2026-10-20.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 9, new this week 7, stuck 0, quiet 0. Last sighting: 2026-10-20. Last evidence: 2026-10-20.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -150,7 +150,7 @@ No issues in the Pulse yet.
 
 ## WAM Product Backlog Refinement
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 2, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-13.
+Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-13.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -159,7 +159,7 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 2, stuck 0, quie
 
 ## WAM Sprint Review
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 2, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-13.
+Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-13.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -180,7 +180,7 @@ No issues in the Pulse yet.
 
 ## ADM connect with Natalie
 
-Governance: Product execution. Owner: Akansh Gangil. Live 2, new this week 2, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-19.
+Governance: Product execution. Owner: Akansh Gangil. Live 2, new this week 0, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-19.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
