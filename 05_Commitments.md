@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 79 (Critical 15) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 79 (Critical 15) · Needs triage 0.
 
 ---
 
@@ -38,6 +38,7 @@ Four registers. The delineation is the point.
 | A67 | **Complex-build capture ownership: get the authoritative-system decision onto a dated forum (successor to A1)** | Ask Alan Martin for the owner and date of the EES/UBS validation against the CSS spreadsheet, and when the group will decide system of entry and system of record per data element; confirm whether the 10-16 consolidated use-case deadline still stands. | Alan Martin / Akansh Gangil / Daniel Totino | 2026-10-23 Proposed by Claude at creation; confirm or re-date | Created at Darryl's request (web note on A1, 2026-10-15: close A1 and create new tasks from the meeting output); next action proposed by Claude, not yet confirmed by Darryl | Working Session VAS-WMX-ADM-ALM, 2026-10-15 (Copilot-derived notes, partial transcript) |
 | A64 | **Reconcile the 2027 core entroCIM roadmap with building CDA in 2027, with Ron Snyder and David Blondel** | entroCIM roadmap is absorbing CDA after the 2026-10-06 AOP outcome (`03`). | Ron Snyder; David Blondel | 2026-10-31 (end of month) | Explicit. Darryl, chat 2026-10-14: "Ron, David, and I are reconciling the 2027 roadmap for the core entroCIM product with our desire to do CDA in 2027. That will be completed by the end of the month." | Darryl, chat 2026-10-14 |
 | A29 | **Escalate the truncated manufacturer part number dependency if Akansh Gangil's follow-up does not produce a named owner. DDP/EUDM selects truncated part numbers; WAM/ADM holds full ones, so exact matching fails and orders are missed** | Converted 2026-10-05 (Darryl, chat): the unfired trigger is replaced. | Akansh Gangil; Sakshi Mathur (WAM Sprint Review) |  | Darryl, chat, 2026-10-05: "Akansh has this going in sprints; check the WAM sprint review meeting for details." | Explicit (disposition). Original escalation basis: Darryl, own words 08-25. 2026-10-14: Akansh's ADM constraints slide still frames the fix as a question ("Upstream EUDM enhancement possible?"), mitigation "investigating drop logic with EUDM/AMS teams"; no committed owner. Candidate for one consolidated upstream request with the null-shipping-data and renewal-flag asks (`Products/WAM/WAM.md`, 2026-10-14). |
+| A69 | **Identify who in core IT can resolve the WESCO Asset Management single sign-on issue (possibly Volkan)** | Darryl's own words, 2026-10-20: "There's a problem with the single sign on for that. And I'm trying to remember who in the core IT world is the person to talk to." |  |  | Explicit. Darryl, own words, 2026-10-20 | Quest Migration Weekly Check-In transcript, 2026-10-20; `Evidence/M365_Evidence_PulseP1_2026-10-21.md` |
 
 ### Triggered
 

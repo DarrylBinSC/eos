@@ -38,7 +38,7 @@
    ],
    "confirmed": true,
    "track": "development",
-   "last_evidence": "2026-10-20"
+   "last_evidence": "2026-10-21"
   },
   {
    "key": "entrocim-backlog",
@@ -81,8 +81,8 @@
    "aliases": [],
    "confirmed": true,
    "track": "delivery",
-   "last_evidence": "2026-09-14",
-   "notes": "2026-10-20 sweep: 10-13 occurrence met but no transcript, Loop, recap or chat was accessible; 10-20 occurrence (3:00 PM) had not happened at sweep time. last_evidence not advanced."
+   "last_evidence": "2026-10-21",
+   "notes": "2026-10-20 occurrence (3:00 PM): full transcript and Loop opened in the 2026-10-21 sweep (window 2026-10-13 to 2026-10-21); seven new issues raised (P047-P052, plus A69 for Darryl's own SSO commitment) and P013 updated."
   },
   {
    "key": "showcase",
