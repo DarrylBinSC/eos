@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-21 08:59 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-21 09:02 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-07 to 2026-10-21. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -12,7 +12,7 @@
 | Wesco Warehouse | Worsening | +6 | 22 | 16 | 3 | 0 | 0 | 0 |
 | Coca-Cola (TCCC) | Worsening | +6 | 12 | 1 | 1 | 0 | 1 | 1 |
 | Marygrove | Worsening | +11 | 11 | 0 | 1 | 0 | 0 | 0 |
-| Federal Reserve | Steady | +0 | 25 | 0 | 0 | 0 | 0 | 5 |
+| Federal Reserve | Steady | +0 | 20 | 0 | 0 | 0 | 0 | 4 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
 | Stanford | Steady | +0 | 10 | 0 | 0 | 0 | 0 | 2 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
@@ -56,8 +56,8 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Scott Dunn | 3 | 10 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Ron Snyder | 2 | 0 | 3 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Babu Papanna | 1 | 0 | 4 | 0 | entroCIM Daily Stand Up |
-| Natalie Marquardt | 0 | 2 | 5 | 0 | ADM connect with Natalie |
 | Matthew Heid | 4 | 7 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Natalie Marquardt | 0 | 2 | 4 | 0 | ADM connect with Natalie |
 | Nathan Kehr | 0 | 0 | 4 | 0 |  |
 | Adam Lazare | 0 | 0 | 3 | 0 |  |
 | Amy Aguirre | 0 | 0 | 3 | 0 |  |
