@@ -1,0 +1,1759 @@
+{
+ "today": "2026-10-20",
+ "window": 14,
+ "products": [
+  {
+   "product": "entroCIM",
+   "file": "Products/entroCIM/entroCIM.md",
+   "last_entry": "2026-10-20",
+   "recent": [
+    {
+     "date": "2026-10-20",
+     "heading": "FRBNY BP43 Smart Building bid: Turner answers and durable positions",
+     "bullets": [
+      "Durable, restated by Wesco in the bid exchange and accepted by Turner:",
+      "entroCIM On-Premises is not available as a perpetual license. It is licensed on an initial start-up cost plus an annual maintenance fee. In a form that asks for a perpetual one-time fee, enter 0 and show the start-up cost and the subscription separately. Call \u2026",
+      "entroCIM does not create, develop, or maintain 3D BIM models. It ingests standard CAD drawings to build floor-plan models in the platform. Wesco's standing deviation (spec 25 00 00, 2.03 D): 3D functionality depends on the supplied BIM/COBie model, LOD, file s\u2026",
+      "Not supported (Darryl direct, 2026-10-20): COBie ingestion and 3D model navigation (FRB spec 25 00 00, 2.03 G and H). entroCIM does not support 3D models; it can present a static image of a 3D space, and floor-plan navigation built from CAD. Any response to a \u2026"
+     ],
+     "ids": [
+      "W026"
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "heading": "Stanford renewal: roll-back of three licenses to SkySpark-only; Wesco position moved to supporting it",
+     "bullets": [
+      "The request (Durable). Austin (Stanford LBRE) asked to roll three licenses back to SkySpark-only. Reason, relayed by Sarah Monteleone: \"There has been reorganization within LBRE, and we've had our budget reduced, so we need to save in certain areas, such as li\u2026",
+      "License history (Durable, Mike Reed). The three licenses began as SkySpark-only; two were bought from Altura, which bought them from Alper/BASSG. entroCIM licensing was added in 2023 at no upfront cost, with annual maintenance charged at entroCIM pricing since\u2026",
+      "Position (Durable, and it changed within the day). Email, 10-19: \"Until that review is complete, I do not recommend offering a SkySpark-only renewal option.\" Teams, later 10-19, after Mike's facts: \"Stanford owns these SkySpark licenses and bought them before \u2026",
+      "IP and ownership (open). Stanford's current PO terms (page last updated 2026-07-29): Article 18.2, Stanford exclusively owns Work Product, Technology and related IP created in performing Services; 18.4 excludes pre-existing or independently developed IP with a\u2026"
+     ],
+     "ids": [
+      "A68",
+      "C73",
+      "C74",
+      "C76",
+      "D096",
+      "W005"
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "heading": "Dell EMS second FTE: Ascent-transfer option raised; second call requested",
+     "bullets": [
+      "Also 2026-10-19: Jason Ganiatsas posted \"entroCIM version 3.1.12.14 is now available\" to the entroCIM Sales Showcase Environment channel with the release summary (Global Search beta, Tiles-Gridboard, Graphics Builder, Batch Point Writer, security and platform \u2026"
+     ],
+     "ids": [
+      "C62",
+      "W002"
+     ]
+    },
+    {
+     "date": "2026-10-19",
+     "heading": "Release 3.1.12.14 generally available",
+     "bullets": [
+      "3.1.12.14 is available (Durable, stated outright by David Blondel, 2026-10-16). Shipped: Global Search (Beta), Tiles/Gridboard, Kiosk Mode, Graphics Builder, Batch Point Writer, security and platform modernization, performance, usability and defect fixes. This\u2026",
+      "Release communication went out as one package: release documentation, sales guide, knowledge-base material and deployment/sales communication prepared together. This is the first release since the 07-28 finding on the product-to-deployment/sales handoff (`04` \u2026",
+      "Not established: customer delivery dates by account under the +1/+2/+5 day sequence, and whether the Federal Reserve receives 3.1.12.14 in place of the held 3.1.12.13 (`04` W021). Do not describe any customer as upgraded until evidence says so.",
+      "Register: `05` B72 (sales messaging) marked potentially closed, awaiting Darryl's confirmation."
+     ],
+     "ids": [
+      "B72",
+      "W021",
+      "W046"
+     ]
+    },
+    {
+     "date": "2026-10-16",
+     "heading": "Tenant redesign ~75% complete; Ascent now expects a standard onboarding process",
+     "bullets": [
+      "Tenant redesign (access-boundary rework) is roughly three-quarters complete (Michael Pieschel's own estimate): tenant creation, asset assignment/removal, and user-to-tenant access boundaries. New boot-mode routing supports a user-specific dev URL and dev view;\u2026",
+      "Ascent/Airwall: durable shift in partner expectation. Chris Askew asked Chad Steger directly for Wesco's \"standard\" onboarding checklist/process rather than continuing the ad hoc path used to get the Ascent HQ Airwall running. Airwall itself is installed, onli\u2026"
+     ],
+     "ids": [
+      "B4",
+      "C69"
+     ]
+    },
+    {
+     "date": "2026-10-15",
+     "heading": "SSL certificate outage \u2014 resolved, ownership gap remains",
+     "bullets": [
+      "Outage resolved: a production outage caused by an expired SSL certificate was fixed by installing a GoDaddy-issued certificate. Durable dependency fact: entroCIM's hosted environment has no formalized certificate monitoring, renewal, or ownership process -- th\u2026"
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-14",
+     "heading": "Session update, 2026-10-14 (Darryl direct)",
+     "bullets": [
+      "Release 3.1.12.14 released by DCOE (Darryl, 2026-10-14); rolling out per the sequence (customer communication +1, hosted +2, on-premises +5). Closes the DCOE-approval wait in `04`'s release-communication row.",
+      "Woolly AI: AI Council has approved; Ron Snyder has started C2P. Launch target Q1 2027 with entroCIM 4 (`03` 2026-10-14).",
+      "Data center app (DC UI redesign) targeted for Q1 2027 with entroCIM 4. HQ UI redesign timing to be reconciled with David Blondel and Ron Snyder.",
+      "Capacity wording for material leaving the team: \"Development capacity reduced from 2026 to 2027\" (AOP outcome), for entroCIM and WAM alike."
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-13",
+     "heading": "Release 3.1.12.14 packaged, entered DCOE governance; customer training priced; Ford interim support model set",
+     "bullets": [
+      "entroCIM 3.1.12.14 completed product packaging and entered DCOE release governance. Release content: platform/security improvements, Graphics Builder grouping, Tiles Gridboard text, Batch Point Writer updates, beta search. Planned sequence after approval: cust\u2026",
+      "All listed entroCIM environments completed migration from Quest to Wesco Azure; Quest shutdown and final hosting billing are being worked. Confirms and extends the 2026-10-06 Impact Ledger entry; no new action required, billing closure in progress.",
+      "entroCIM customer training priced: named-course pricing at $250 per learner, 5-learner minimum, 20-learner maximum (Maggie Becker; see `03` Decisions Made, 2026-10-06). Operational rollout meeting scheduled 2026-10-16.",
+      "Ford account: baseline renewal moved to procurement, Rouge scope budgeted for January. Interim model: continue interim support through year-end, transition to the defined SLA scope in Q1 2027, defer upgrade recommendations until the October system audit (`03` \u2026"
+     ],
+     "ids": [
+      "B62",
+      "B94",
+      "B96",
+      "B97"
+     ]
+    },
+    {
+     "date": "2026-10-12",
+     "heading": "Deployment model position: Wesco-hosted Azure is preferred (Darryl, 2026-10-12)",
+     "bullets": [
+      "Security evidence path (Darryl, 2026-10-12): the Wesco Trust Portal (https://trust.wesco.com) is an internal tool Sales uses to obtain compliance documentation; it is not shared with clients. Client-facing wording (from Darryl's Copilot summary of the portal):\u2026",
+      "Support model change (Darryl, 2026-10-12): SME hours are being removed from entroCIM support and replaced with a software service agreement with no SME hours. The SME Support Services SLA described above is being superseded; do not describe support as SME-hour\u2026",
+      "Outbound naming rule (Darryl, 2026-10-12): do not reference prospects (e.g. Texas Power) in outbound material or in material for other teams; only customers.",
+      "Europe deployment-strategy document review (2026-10-12): Darryl returned a tracked-changes markup of the Europe team's v0.1 document positioning Wesco-Hosted as standard, separating hosted platform operations (entroCIM team), product support (software service \u2026"
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-07",
+     "heading": "Daily evidence, 2026-10-04 to 2026-10-07",
+     "bullets": [
+      "Quest-to-Azure migration complete; Quest shutdown underway (Durable, completion signal). Chad Steger, Ron Snyder, Babu Papanna: all environments described as fully migrated. Removes the hosting-transition risk tracked since 09-09/09-15 and should end Quest env\u2026",
+      "Release 3.1.12.14 build package complete, in DCOE governance (Durable). Pods sent to DCOE; release notes and documentation in final proofreading/draft publication. Adds customer-facing text widget, grid-board, batch point writer, search-beta. DCOE has no commi\u2026",
+      "Training commercial model set (Durable). Maggie Becker: standard course pricing $250 per learner, five-learner minimum, 20-learner maximum; named courses replace \"training hours.\"",
+      "Three customer projects closed: UWM VAV reintegration, Federal Reserve 11th-floor buildout, Coca-Cola buildout (Chad Steger)."
+     ],
+     "ids": [
+      "B15",
+      "B37"
+     ]
+    },
+    {
+     "date": "2026-10-06",
+     "heading": "FY27 AOP outcome and the viability question",
+     "bullets": [
+      "CDA folds in. CDA was not approved as a standalone investment; its functionality is built by the entroCIM team and carried on the entroCIM roadmap (`03` 2026-10-06). CDA stays a separate product and keeps its own positioning; see `Products/CDA/CDA.md`. Roadmap\u2026",
+      "Team cuts in their final stage. Darryl and Ron Snyder are balancing headcount and looking for projects for everyone; headcount without a product may be let go. Darryl's version of the headcount, given to Sean and Chris Gazdic: `Products/CSS_Platform_Team.xlsx`\u2026",
+      "Viability is now an explicit leadership question. Sean and Darryl discussed whether entroCIM has legs to go another year like this without sales at least breaking even, through the large cuts to the team, and whether Sales can move the ball (how Nathan Kehr ca\u2026",
+      "Data center value proposition, owed to Sean, week of 2026-10-19 (`05` A58). Sean's scope: entroCIM's actual ability to move the needle in data centers, what the competition is doing, services enablement, and a challenge to the team's thinking. Format: PowerPoi\u2026"
+     ],
+     "ids": [
+      "A58"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "A58",
+     "kind": "action",
+     "title": "Build the entroCIM data center value proposition and positioning briefing for Sean",
+     "status": "open",
+     "tier": "",
+     "register": "A",
+     "due": "2026-10-23",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "A64",
+     "kind": "action",
+     "title": "Reconcile the 2027 core entroCIM roadmap with building CDA in 2027, with Ron Snyder and David Blondel",
+     "status": "open",
+     "tier": "",
+     "register": "A",
+     "due": "2026-10-31",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "B101",
+     "kind": "action",
+     "title": "Revise the client-facing entroCIM deployment discussion framework per Darryl's comments and schedule a review call",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-12",
+     "severity": "",
+     "owner": "Valli Poornakumar",
+     "forum_date": "",
+     "last_touched": "2026-10-13"
+    },
+    {
+     "id": "B24",
+     "kind": "action",
+     "title": "FRBNY QA-1 non-VPN test and map-defect root cause",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Ron Snyder / Babu Papanna / Adam Slingerland",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "B25",
+     "kind": "action",
+     "title": "Confirm FRB SASTEC customer PO references the correct (Lab) environment",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Sarah Monteleone / Lindsay Cotten",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "B58",
+     "kind": "action",
+     "title": "Provide the entroCIM AI one-pager details: business value, costs, benefits, incremental revenue",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Ron Snyder",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "B62",
+     "kind": "action",
+     "title": "Coordinate an over-the-shoulder audit of UDAC entroCIM environments (versions, licensing, integrations, data quality, system health) and document recommendations",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Chad Steger / Tim Scott",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "B72",
+     "kind": "action",
+     "title": "Share the entroCIM 3.1.12.14 release deck and build sales messaging with Valli Poornakumar and Leanne Gordon",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-05",
+     "severity": "",
+     "owner": "David Blondel",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "B73",
+     "kind": "action",
+     "title": "Identify managed-services resources and headcount for day-two entroCIM monitoring",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Brad Stevens and Nathan Kehr",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "B89",
+     "kind": "action",
+     "title": "Prepare Dell executive-summit value/benefit content with named platform leads",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Adam Lazare, with named platform leads",
+     "forum_date": "",
+     "last_touched": "2026-09-28"
+    },
+    {
+     "id": "B91",
+     "kind": "action",
+     "title": "Update the commercialization deck with product-owner input (support ownership, service levels, onboarding, scale readiness) for WAM, entroCIM, Navigator and CDA",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-09-29",
+     "severity": "",
+     "owner": "Sridhar Loke and product owners",
+     "forum_date": "",
+     "last_touched": "2026-10-06"
+    },
+    {
+     "id": "C30",
+     "kind": "action",
+     "title": "Share the blank AI intake template and shepherd the entroCIM AI use case through review",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Sourav Pradhan",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "C31",
+     "kind": "action",
+     "title": "Check whether the entroCIM AI initiative has a SOX impact",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Sourav Pradhan",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "C36",
+     "kind": "action",
+     "title": "Sponsor approval for the entroCIM AI (Woolly) initiative",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Sean McCloskey",
+     "forum_date": "",
+     "last_touched": "2026-08-25"
+    },
+    {
+     "id": "C40",
+     "kind": "action",
+     "title": "Send the FRB SASTEC agreement to Nathan Kehr for signature",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Owner unclear (sender not named in evidence)",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "C41",
+     "kind": "action",
+     "title": "Sign the FRB SASTEC agreement once received",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Nathan Kehr",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "C57",
+     "kind": "action",
+     "title": "Provide Dell budgetary server pricing for FRB Cash Services through the lowest-cost procurement avenue (Rahi banner constraint)",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Todd Hicks / Natalie Marquardt",
+     "forum_date": "",
+     "last_touched": "2026-10-16"
+    },
+    {
+     "id": "C62",
+     "kind": "action",
+     "title": "Dell's request for a second dedicated entroCIM/EMS FTE within three to five months -- assess and recommend whether Wesco commits to the hire",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Chad Steger (assessment); decision owner not yet named",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "C74",
+     "kind": "action",
+     "title": "Stanford: 2022 and 2023 purchase orders and attached terms; where Phase 1/Phase 2 re-testing scope was agreed and whether Phase 2 is in writing",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-20",
+     "severity": "",
+     "owner": "Mike Reed",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "C76",
+     "kind": "action",
+     "title": "Stanford / entroCIM IP: whether the Commissioning toolset falls under the pre-existing-software carve-out or is Stanford work product; whether 18.5 creates exposure; 2022 and 2023 versions of Stanford's PO terms",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-26",
+     "severity": "",
+     "owner": "Nikos Minas (advice), Brandon Thompson (routing)",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "W002",
+     "kind": "watch",
+     "title": "Dell account staffing \u2014 second dedicated entroCIM/EMS FTE requested",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "Medium-High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "W003",
+     "kind": "watch",
+     "title": "entroCIM 2027 development capacity reduction \u2014 managed roadmap reset",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-06"
+    },
+    {
+     "id": "W005",
+     "kind": "watch",
+     "title": "Stanford commissioning-report remediation \u2014 escalated to a retention risk, no accountable owner",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "W007",
+     "kind": "watch",
+     "title": "Integrated Navigator / entroCIM / WAM value proposition pitched ahead of the build",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-09-03"
+    },
+    {
+     "id": "W008",
+     "kind": "watch",
+     "title": "Ford entroCIM (UDAC) renewal and platform-trust gap",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "Medium",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-05"
+    },
+    {
+     "id": "W009",
+     "kind": "watch",
+     "title": "Dell alarm reliability \u2014 alarm-database corruption stops alarming",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "W010",
+     "kind": "watch",
+     "title": "i3 Alliance Agreement \u2014 Section 8 puts entroCIM downstream of i3's data model",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-05"
+    },
+    {
+     "id": "W011",
+     "kind": "watch",
+     "title": "i3 Alliance Agreement \u2014 IP chain creates perpetual, uncapped exposure on entroCIM's modeling layer",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-05"
+    },
+    {
+     "id": "W018",
+     "kind": "watch",
+     "title": "entroCIM commercial performance vs. 2026 objectives; viability of another year below sales break-even",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-06"
+    },
+    {
+     "id": "W021",
+     "kind": "watch",
+     "title": "Federal Reserve (FRBNY) release 3.1.12.13 \u2014 held, customer not told",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "W025",
+     "kind": "watch",
+     "title": "entroCIM SSL certificate ownership undefined",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "W026",
+     "kind": "watch",
+     "title": "FRBNY Smart Building bid -- pricing deadline 2026-10-21",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "W099",
+     "kind": "watch",
+     "title": "PC1/JCI large-scale point faults and intermittent site access",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "D008",
+     "kind": "decision",
+     "title": "NavWork facility-data scope: does Q2 2028 duplicate entroCIM",
+     "status": "Approaching",
+     "tier": "radar",
+     "register": "",
+     "due": "",
+     "severity": "",
+     "owner": "Darryl Benson to raise; DJ Vaughn to answer",
+     "forum_date": "",
+     "last_touched": "2026-09-28"
+    },
+    {
+     "id": "D010",
+     "kind": "decision",
+     "title": "entroCIM AI (Woolly): approval path now named and owned (updated 2026-08-25)",
+     "status": "Approaching \u2014 architecture direction set for the evaluation phase; formal Tech and Tech Review approval not yet sought",
+     "tier": "radar",
+     "register": "",
+     "due": "",
+     "severity": "",
+     "owner": "Darryl, with Ron Snyder (technical/vendor) and Sourav Pradhan (process coordination); sponsor approval owed by an unconfirmed \"Shawn\"",
+     "forum_date": "",
+     "last_touched": "2026-08-25"
+    },
+    {
+     "id": "D014",
+     "kind": "decision",
+     "title": "entroCIM FY27: plan is negative across the full authorised revenue range (new)",
+     "status": "Form updated and submitted on the range; the value-path contradiction is carried deliberately",
+     "tier": "radar",
+     "register": "",
+     "due": "",
+     "severity": "",
+     "owner": "Darryl, with Tom Boss (Finance) and Chris Gazdic; commercial cost-to-serve sits with CSS Sales",
+     "forum_date": "",
+     "last_touched": "2026-10-06"
+    },
+    {
+     "id": "D096",
+     "kind": "decision",
+     "title": "Stanford renewal: three licenses back to SkySpark-only, how Wesco supports the roll-back and what happens to the Commissioning App",
+     "status": "Approaching -- position moved, structure undecided",
+     "tier": "radar",
+     "register": "",
+     "due": "",
+     "severity": "",
+     "owner": "Darryl Benson (Wesco position); Sarah Monteleone (customer call); Nikos Minas with Brandon Thompson (legal view)",
+     "forum_date": "2026-10-20",
+     "last_touched": "2026-10-20"
+    }
+   ]
+  },
+  {
+   "product": "WAM",
+   "file": "Products/WAM/WAM.md",
+   "last_entry": "2026-10-20",
+   "recent": [
+    {
+     "date": "2026-10-20",
+     "heading": "Strev Milestone 3 invoice held pending acceptance evidence; WAM team cut to seven signaled; ADM data-path position stated; WAM sales are mostly hardware",
+     "bullets": [
+      "Strev invoice INV-2610-00030, Milestone 3, $14,226 (Transient; decision pending). Natalie Marquardt: Sean McCloskey is the approver; \"submitted to the IT team for internal approval.\" Darryl, 10-19: Milestone 3 (Module Visibility Control and Confidential Data M\u2026",
+      "Capacity: WAM team may fall to seven in January 2027 (Durable if confirmed). Nitin Pandey, quoting Chris (not identified in the words): \"Chris has indicated the WAM team size may be reduced to seven resources effective January 2027,\" with likely impact on deli\u2026",
+      "ADM data-path position, on record (Durable). Darryl to Alan Martin, 10-19: \"WMX synchronizes the collected attributes to EUDM, and ADM consumes serial number, MAC address and asset tag from EUDM to build and maintain the asset record. ADM does not capture and \u2026",
+      "WAM reported sales are mostly hardware (Transient, feeds `09`). Thomas Boss, 10-19: \"$26M of the nearly $30M in sales is tied to the hardware.\" Nathan Kehr, Teams 10-20: \"Ask him to break out WAM software and pull through.\" No reply to Tom in the window. The p\u2026"
+     ],
+     "ids": [
+      "A61",
+      "A67",
+      "B102",
+      "D001",
+      "W016"
+     ]
+    },
+    {
+     "date": "2026-10-19",
+     "heading": "Weekly evidence, 2026-10-12 to 2026-10-19",
+     "bullets": [
+      "Team-forum evidence, 2026-10-13 (Pulse catch-up package, WAM Product Backlog Refinement and WAM Sprint Review; filed 2026-10-19). Durable: EUDM truncates manufacturer part numbers longer than 15 characters, which is the specific cause of ADM data loss behind `\u2026",
+      "DDPTRK-6346 is complete (Durable, stated outright in the portfolio status). Global warranty, license, delivery and software attributes, delivered through MDM Governance, Product MDM and the Data Lake. This is the attribute ticket tracked since 07-16 (`03` D076\u2026",
+      "WACT formally recorded as not pursued in the portfolio status (Durable). Feasibility analysis complete, coverage insufficient. Consistent with Darryl's 2026-09-14 position above; the portfolio document now matches the record, so the reporting consequence noted\u2026",
+      "Complex-build system of record still open (Durable as a state, not a decision). The comparison is now explicitly WMX vs VAS vs Strev/ADM, with Daniel Totino and Akansh Gangil named as Product/GPO owners in the portfolio file (named, not quoted). The 2026-10-15\u2026"
+     ],
+     "ids": [
+      "A29",
+      "A67",
+      "B12",
+      "D076",
+      "P019",
+      "P020",
+      "P021",
+      "P022",
+      "W022"
+     ]
+    },
+    {
+     "date": "2026-10-15",
+     "heading": "Cross-SBU data-capture working session, 2026-10-15",
+     "bullets": [
+      "Problem as framed in the invitation (Durable): VAS, WMX, ADM, ALM and possibly Strev can each capture overlapping data before shipment (serial numbers, MAC addresses). Goal: the right data captured by the right digital product at the right time; risk: duplicat\u2026",
+      "CSS requirements now exist in writing (Durable): Cordelia McMillan prepared a spreadsheet of required data elements and use cases. She stated it represents the CSS perspective only and could not speak to EES or UBS. Not available in the retrieved content (`05`\u2026",
+      "EES and UBS not validated (Durable, open): Alan Martin put the question to Stephen Karpinski and the group. Stephen: EES and UBS likely collect some of the relevant elements, but not every CSS field will apply; compare each business area against the list rathe\u2026",
+      "Legacy UBS captures serial numbers at receipt, on the Anixter side (John Bartolotti, Durable). A capture point outside the CSS requirements and upstream of shipment."
+     ],
+     "ids": [
+      "A1",
+      "A67",
+      "C70",
+      "C71",
+      "D004",
+      "W042"
+     ]
+    },
+    {
+     "date": "2026-10-14",
+     "heading": "Asset functionality for Managed Services: phased delivery plan (Nitin Pandey, added 2026-10-14; corrected from the full thread 2026-10-14)",
+     "bullets": [
+      "09-04 (Akansh): WAM Data Enrichment introduced as new functionality requested by Senthil and the Managed Services team to improve their turnaround uploading data to Strev (Jira WS-8166, stories from sprint 6). Plan then: orders beyond configured supplier ID 11\u2026",
+      "10-06 (Akansh): asks the team to confirm Asset Grid 12-10, Data Enrichment 10-30, orders beyond supplier ID 11-10; needs it for the business and portfolio leadership deck.",
+      "10-08 (Nitin): Data Enrichment 10-30 and orders beyond configured supplier ID 11-10 on track. Asset Grid needs re-estimation (priorities realigned to accelerate Data Enrichment; UAT regression, stage readiness and an urgent notification enhancement consumed ca\u2026",
+      "10-14 (Nitin): phased delivery: first production release 2027-01-04 to 01-08 with all core capabilities and foundational features; final release 2027-02-10 to 02-12 with the remaining scope and enhancements. Feature breakdown in the attached `Estimation for WA\u2026"
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-14",
+     "heading": "Roadmap reconciled with the constraints",
+     "bullets": [
+      "Every roadmap item past what is live today depends on at least one of Akansh's six constraints, and none is resolved by the WAM team. Mapping, exposure of the January Asset Grid release (durations, WMX serial numbers), the missing ask on durations, and the rec\u2026"
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-14",
+     "heading": "Sean update review pass, 2026-10-14 (Darryl direct)",
+     "bullets": [
+      "Strev production API outage resolved (Darryl, 2026-10-14). No dependent workflow for Amy Aguirre's team; the ADM team needs the Strev integration running to deliver value. Not a Sean-level item. `04` row retired.",
+      "Capacity wording for Sean (Darryl, 2026-10-14): \"Development capacity reduced from 2026 to 2027,\" from the AOP results communicated to Darryl. Do not use \"India team cut in half\" in outbound material.",
+      "Staffing numbers held back from Sean until Akansh's stream figures reconcile (stream Run 6 vs run team 8; run team plus all Complete would be 16 vs 15 today). Sean material carries resource types only: Azure Databricks data engineers (EUDM), APIM integration (\u2026",
+      "WAM roadmap reconciliation next week (Darryl, Akansh Gangil, David Blondel): keep the team on features that are scalable and valuable; produce one staffing basis per option and the ordered Complete list."
+     ],
+     "ids": [
+      "C63"
+     ]
+    },
+    {
+     "date": "2026-10-14",
+     "heading": "WAM/ADM capacity reset inputs, Akansh Gangil (Teams, week of 2026-10-07; filed 2026-10-14)",
+     "bullets": [
+      "Team composition today (Durable, Akansh's approximate count): 15 members: 6 backend, 2 data engineers, 2 front end, 5 QA. AOP draft basis was 19.",
+      "Minimum run team (Durable): 8, keeping license sync, notifications and production support working: 2 data engineers (must have), 3 backend, 1 UI, 2 QA. Matches the 10-07 record.",
+      "Run and Complete by stream (Akansh):",
+      "| Stream | Run | Complete |"
+     ],
+     "ids": [
+      "A61",
+      "B100"
+     ]
+    },
+    {
+     "date": "2026-10-14",
+     "heading": "ADM constraints and required asks, Akansh Gangil, October 2026",
+     "bullets": [
+      "| # | Constraint (as stated) | Active mitigation (as stated) | Required ask (as stated) | Existing record | Where the ask sits |",
+      "|---|---|---|---|---|---|",
+      "| 1 | Trimmed part numbers in EUDM | Investigating drop logic with EUDM/AMS teams | \"Upstream EUDM enhancement possible?\" (in red, phrased as a question) | `04` WAM/ADM row since 2026-08-25; `05` A29, B53, B20, B49; INC5657882 (Smitha Sheshadri path, 10-05) | \u2026",
+      "| 2 | Null WAM enrichment shipping data | Evaluating \"max ship date\" as a temporary fallback | UDM/EUDM root cause resolution | New as a named constraint. Bears on the shipping/pricing enrichment feature estimated for production 2026-10-30 | UDM/EUDM. No owner\u2026"
+     ],
+     "ids": [
+      "A1",
+      "A29",
+      "A61",
+      "B1",
+      "B100",
+      "B20",
+      "B49",
+      "B53",
+      "B90",
+      "B92",
+      "C1",
+      "C44"
+     ]
+    },
+    {
+     "date": "2026-10-13",
+     "heading": "ADM license tracking scorecard, October 2026",
+     "bullets": [
+      "What the deck reports (Durable as a baseline; figures are Transient and will move monthly).",
+      "| Measure | Figure | Note |",
+      "|---|---|---|",
+      "| Suppliers set up for license tracking in ADM | 35 (18 Security, 17 IoT and Other) | Slide 2 says \"added,\" slide 3 says \"completed\"; treat as configured and live |"
+     ],
+     "ids": [
+      "A61",
+      "B20"
+     ]
+    },
+    {
+     "date": "2026-10-13",
+     "heading": "WAM Data Enrichment demo; ADM-to-Strev sync outage; MuleSoft/limitations slide owed",
+     "bullets": [
+      "WAM Data Enrichment demonstrated for shipping and pricing data, targeted 2026-10-30. Design starts from sales order, Wesco part number, and manufacturer part number. ADM is being positioned as the central data layer, curated before being passed to Strev (Senth\u2026",
+      "Production ADM-to-Strev integration has failed continuously since 2026-09-25 (SSO/token-generation outage; see `04` Strev production API outage row, updated 2026-10-13). Amy Aguirre and Natalie Marquardt confirmed no dependent workflows are currently affected,\u2026",
+      "Akansh Gangil owes Darryl a confirmed MuleSoft/current-integration-architecture read and a WAM-limitations slide, ahead of Darryl's capacity conversation with Sean McCloskey (`05` B100, feeds `05` A61 and `03`'s WAM/ADM reduced-capacity-reset Radar entry direc\u2026",
+      "Zapier decision (2026-10-05, recorded above) confirmed as the governing record. This week's fresh evidence independently lists \"decide whether Wesco should own a Zapier capability\" as still open, sourced to the WAM Leadership Sync transcript, same day as the Z\u2026"
+     ],
+     "ids": [
+      "A55",
+      "A61",
+      "B100",
+      "B98",
+      "B99"
+     ]
+    },
+    {
+     "date": "2026-10-07",
+     "heading": "Daily evidence, 2026-10-04 to 2026-10-07",
+     "bullets": [
+      "Reduced-capacity minimum run model quantified (Durable). Akansh Gangil estimated an eight-person minimum run team against 15 current resources and the 19-FTE AOP draft: two data engineers, three backend engineers, one UI engineer, two QA. He stated timelines w\u2026",
+      "Platform choices confirmed (Durable): ADM-to-EUDM integration uses Azure Databricks; ADM-to-Strev integration uses APIM, not MuleSoft. Three ADB resources are needed to expedite DDP work against the current two-person concentration already tracked in `04`.",
+      "Structural data boundary confirmed (Durable): ADM cannot automate asset-to-Strev synchronization unless the source data already exists in Wesco's enterprise systems. Manual supplier files remain a structural dependency; the Zapier/import path continues to carr\u2026",
+      "Strev production API outage (SSO and token generation), open and unresolved. Akansh Gangil, Teams chat, 2026-10-07: 279 failed transactions identified [UNRECONCILED 2026-10-07, Darryl: this count does not match the API CoE's figure; source is a Copilot summary\u2026"
+     ],
+     "ids": [
+      "A55",
+      "A61",
+      "A62",
+      "C66",
+      "C67"
+     ]
+    },
+    {
+     "date": "2026-10-06",
+     "heading": "FY27 AOP update: development ownership still open",
+     "bullets": [
+      "Sean McCloskey, 2026-10-06: the WAM development team is still with Merwin's Platforms team. Sean is meeting Akash Khurana to work on Digital Products taking over WAM (`05` C63); no outcome known, and Darryl has no time with Sean before the week of 2026-10-19. \u2026"
+     ],
+     "ids": [
+      "C63"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "A29",
+     "kind": "action",
+     "title": "Escalate the truncated manufacturer part number dependency if Akansh Gangil's follow-up does not produce a named owner. DDP/EUDM selects truncated part numbers; WAM/ADM holds full ones, so exact matching fails and orders are missed",
+     "status": "open",
+     "tier": "",
+     "register": "A",
+     "due": "",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "A61",
+     "kind": "action",
+     "title": "Finalize the WAM/ADM reduced-capacity reset plan (run/complete/stop/defer) with Akansh Gangil and David Blondel, then bring it to Sean McCloskey",
+     "status": "open",
+     "tier": "",
+     "register": "A",
+     "due": "2026-10-23",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "A64",
+     "kind": "action",
+     "title": "Reconcile the 2027 core entroCIM roadmap with building CDA in 2027, with Ron Snyder and David Blondel",
+     "status": "open",
+     "tier": "",
+     "register": "A",
+     "due": "2026-10-31",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "A67",
+     "kind": "action",
+     "title": "Complex-build capture ownership: get the authoritative-system decision onto a dated forum (successor to A1)",
+     "status": "open",
+     "tier": "",
+     "register": "A",
+     "due": "2026-10-23",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "B100",
+     "kind": "action",
+     "title": "Confirm the MuleSoft/current integration architecture and prepare a WAM-limitations slide for Darryl, ahead of the Sean McCloskey capacity discussion",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-23",
+     "severity": "",
+     "owner": "Akansh Gangil",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "B102",
+     "kind": "action",
+     "title": "Validate remaining Strev SOW 3 deliverables (completed and outstanding), open bugs, and the notification mechanism",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-21",
+     "severity": "",
+     "owner": "Akansh Gangil",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "B106",
+     "kind": "action",
+     "title": "Complete WAM global-attributes analysis and set up a review call",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Natalie Marquardt",
+     "forum_date": "",
+     "last_touched": "2026-10-14"
+    },
+    {
+     "id": "B88",
+     "kind": "action",
+     "title": "Finalize the WAM/ADM resource needs and skill sets required by the new Wesco-owned-data strategy",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Akansh Gangil",
+     "forum_date": "",
+     "last_touched": "2026-09-28"
+    },
+    {
+     "id": "B90",
+     "kind": "action",
+     "title": "Schedule a requirements-definition call with Alan, Daniel and Ramesh on the WAM/ADM complex-build capture path",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-09-30",
+     "severity": "",
+     "owner": "Akansh Gangil",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "B91",
+     "kind": "action",
+     "title": "Update the commercialization deck with product-owner input (support ownership, service levels, onboarding, scale readiness) for WAM, entroCIM, Navigator and CDA",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-09-29",
+     "severity": "",
+     "owner": "Sridhar Loke and product owners",
+     "forum_date": "",
+     "last_touched": "2026-10-06"
+    },
+    {
+     "id": "B92",
+     "kind": "action",
+     "title": "Share the WAM/ADM data points already known to be required with the cross-SBU VAS/WMX/ADM/Strev working team",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-16",
+     "severity": "",
+     "owner": "Akansh Gangil",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "B98",
+     "kind": "action",
+     "title": "Provide the larger WAM/MSAV data set to Akansh Gangil",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-08",
+     "severity": "",
+     "owner": "Violet Moyer",
+     "forum_date": "",
+     "last_touched": "2026-10-13"
+    },
+    {
+     "id": "B99",
+     "kind": "action",
+     "title": "Check whether reciprocal Wesco/manufacturer part-number completion can fit the current WAM Data Enrichment iteration",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-30",
+     "severity": "",
+     "owner": "Akansh Gangil",
+     "forum_date": "",
+     "last_touched": "2026-10-13"
+    },
+    {
+     "id": "C32",
+     "kind": "action",
+     "title": "Return the software/licence catalogue leaf nodes needed to identify licence products for ADM onboarding",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Jen Turnage",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "C50",
+     "kind": "action",
+     "title": "Strev pricing for the Virtual Site Survey: professional services development price, and a per-site run rate",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-09-17",
+     "severity": "",
+     "owner": "Sunny Sharma and Christina (Revnue), chased by Amy Aguirre",
+     "forum_date": "",
+     "last_touched": "2026-09-17"
+    },
+    {
+     "id": "C52",
+     "kind": "action",
+     "title": "Amy's UiPath intake filing for the Strev AI use cases, and the demo requested in front of \"Kehr\"",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Amy Aguirre",
+     "forum_date": "",
+     "last_touched": "2026-09-17"
+    },
+    {
+     "id": "C63",
+     "kind": "action",
+     "title": "Outcome of Sean McCloskey's meeting with Akash Khurana on Digital Products taking over WAM development (the WAM team is still with Merwin's Platforms team)",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-19",
+     "severity": "",
+     "owner": "Sean McCloskey",
+     "forum_date": "",
+     "last_touched": "2026-10-14"
+    },
+    {
+     "id": "C67",
+     "kind": "action",
+     "title": "Replies from Amy Aguirre, Senthil Govindaswamy and Natalie Marquardt naming any workflows currently dependent on ADM to Strev sync",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Amy Aguirre, Senthil Govindaswamy, Natalie Marquardt",
+     "forum_date": "",
+     "last_touched": "2026-10-07"
+    },
+    {
+     "id": "C68",
+     "kind": "action",
+     "title": "A direct-cost quote or explanation for the $36,000 Strev QA hosting charge, with the Meta BIR updated accordingly",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Amy Aguirre, via Robert Cooke / Finance",
+     "forum_date": "",
+     "last_touched": "2026-10-13"
+    },
+    {
+     "id": "C71",
+     "kind": "action",
+     "title": "Cordelia McMillan's CSS data-element and use-case spreadsheet, for the WAM/ADM record",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Cordelia McMillan",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "W003",
+     "kind": "watch",
+     "title": "entroCIM 2027 development capacity reduction \u2014 managed roadmap reset",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-06"
+    },
+    {
+     "id": "W006",
+     "kind": "watch",
+     "title": "Strev AI Feature Pack: unpriced consumption commitment with no budget home",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-09-17"
+    },
+    {
+     "id": "W007",
+     "kind": "watch",
+     "title": "Integrated Navigator / entroCIM / WAM value proposition pitched ahead of the build",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-09-03"
+    },
+    {
+     "id": "W016",
+     "kind": "watch",
+     "title": "WAM/ADM data integrity + scalability (operational hardening)",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "W022",
+     "kind": "watch",
+     "title": "IDP/ADM production integration \u2014 approved but unstaffed",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "D001",
+     "kind": "decision",
+     "title": "WAM/ADM reduced-capacity reset: what runs, completes, stops or defers",
+     "status": "Approaching -- needs decision output",
+     "tier": "radar",
+     "register": "",
+     "due": "",
+     "severity": "",
+     "owner": "Sean McCloskey (final call), with Darryl Benson, Akansh Gangil, David Blondel preparing the plan",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "D004",
+     "kind": "decision",
+     "title": "WAM complex-build final data model: serial-number anchor, parent/room relationship, VAS/WMX handoff",
+     "status": "Approaching",
+     "tier": "radar",
+     "register": "",
+     "due": "",
+     "severity": "",
+     "owner": "Daniel Totino and Akansh Gangil",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "D009",
+     "kind": "decision",
+     "title": "WAM integration into NavWork is unscheduled",
+     "status": "Approaching",
+     "tier": "radar",
+     "register": "",
+     "due": "",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-08-28"
+    },
+    {
+     "id": "D016",
+     "kind": "decision",
+     "title": "WAM: align the license roadmap with where the business is actually being sold (new)",
+     "status": "Approaching \u2014 question surfaced, no decision taken",
+     "tier": "radar",
+     "register": "",
+     "due": "",
+     "severity": "",
+     "owner": "Darryl, with Brad Stevens (WAM business sponsor) and Amy Aguirre (commercialization). Sales Operations stake: Debbie Hunter",
+     "forum_date": "",
+     "last_touched": "2026-08-05"
+    },
+    {
+     "id": "D024",
+     "kind": "decision",
+     "title": "WAM data challenge remediation approach",
+     "status": "problem-definition sessions active; no remediation decision yet. Update 07-23 (M365 evidence, WAM Data Challenges 07-23 08:00): first forward motion \u2014 session moved from problem definition toward AI/data-filtering POCs, AI Council review, and asset-data ROI focus. Darryl committed to review the AI pilot with Shawn and present it to the AI Council; Nitin Pandey's team to run small POCs on automated part identification; Neil asked for a direct benefits/ROI report on WAM. Darryl also owes: sharing the automated-part-ID output with the team, and discussing a needed license with Shawn and Merwan.",
+     "tier": "radar",
+     "register": "",
+     "due": "",
+     "severity": "",
+     "owner": "WAM leadership group (Darryl chairs the forum)",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    }
+   ]
+  },
+  {
+   "product": "Navigator",
+   "file": "Products/Navigator/Navigator.md",
+   "last_entry": "2026-10-14",
+   "recent": [
+    {
+     "date": "2026-10-14",
+     "heading": "Ascent office deployment and positioning",
+     "bullets": [
+      "Airwall is on site at Ascent's office and running. The team is gathering PDU, camera, BMS and metering device information as available, then deploying graphics, KPIs, alarming and FDD in entroCIM to show the value to the Ascent team. Goal: Ascent positions ent\u2026"
+     ],
+     "ids": []
+    }
+   ],
+   "items": [
+    {
+     "id": "B4",
+     "kind": "action",
+     "title": "Ascent POC \u2014 get it running",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Chad Steger (technical POC), Chris Askew (JACE access)",
+     "forum_date": "",
+     "last_touched": "2026-10-16"
+    },
+    {
+     "id": "B91",
+     "kind": "action",
+     "title": "Update the commercialization deck with product-owner input (support ownership, service levels, onboarding, scale readiness) for WAM, entroCIM, Navigator and CDA",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-09-29",
+     "severity": "",
+     "owner": "Sridhar Loke and product owners",
+     "forum_date": "",
+     "last_touched": "2026-10-06"
+    },
+    {
+     "id": "C69",
+     "kind": "action",
+     "title": "JACE IP address and available credentials for Ascent Airwall onboarding",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Chris Askew / Ascent team",
+     "forum_date": "",
+     "last_touched": "2026-10-13"
+    },
+    {
+     "id": "C72",
+     "kind": "action",
+     "title": "Ascent Navigator production WAB evidence pack, complete for the 2026-10-23 review",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-23",
+     "severity": "",
+     "owner": "DJ Vaughn",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "W007",
+     "kind": "watch",
+     "title": "Integrated Navigator / entroCIM / WAM value proposition pitched ahead of the build",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-09-03"
+    }
+   ]
+  },
+  {
+   "product": "CDA",
+   "file": "Products/CDA/CDA.md",
+   "last_entry": "2026-10-14",
+   "recent": [
+    {
+     "date": "2026-10-14",
+     "heading": "Matt Powers meeting: TS aligned",
+     "bullets": [
+      "Matt's position (Durable, his words in substance): \"I love this ... a great way to get into accounts. It solves a problem that is needed and it has a lot of pull through\" (ALM, WAM). Customers don't know devices are down, warranty status or location; vendor an\u2026",
+      "Delivery model, aligned (Durable): Matt asked whether CDA could be a NOC-delivered managed service, with partners or TS deploying the hardware. Darryl: an operations center play (a building operations center, not network ops), a few people in North America, a \u2026",
+      "Open process question, needs a follow-up (Matt): the maintenance cycle for a failed device: warranty check, replacement, and dispatch to the integrator tied to that account and contract, automated where possible (DDP). Darryl: viable, not fully automated at fi\u2026",
+      "Matt's strategy, context for positioning CDA into TS: moving Wesco up the stack toward a WWT-style model; new AI solution consultant and AI solution architect roles targeting Bill Muczko's business as outcome and use-case problem solvers; physical AI and conve\u2026"
+     ],
+     "ids": [
+      "A66"
+     ]
+    },
+    {
+     "date": "2026-10-14",
+     "heading": "TSS route: Emily Munk met, Matt Powers next",
+     "bullets": [
+      "Darryl met Emily Munk; she is supportive and suggested he meet Matt Powers (Technical Services leadership; Wade Bursch reports to him). Darryl and Matt Powers meet 2026-10-14 at 12:30. `05` C65 updated. The TSS delivery and support owner is still not named; re\u2026"
+     ],
+     "ids": [
+      "A64",
+      "C65"
+     ]
+    },
+    {
+     "date": "2026-10-14",
+     "heading": "Re-engaging Chris Mooney's team",
+     "bullets": [
+      "Darryl is having difficulty getting time on Chris Mooney's team's calendar to review the CDA deck, as he did earlier with Bill Muczko's team. A refresh email to Chris, copying Bob Caprise and Bill Muczko, was drafted 2026-10-14 (`Deliverables/CDA/2026-10-14_CD\u2026"
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-07",
+     "heading": "Daily evidence, 2026-10-04 to 2026-10-07",
+     "bullets": [
+      "CDA commercial positioning restated as the outreach frame (Durable). Site-based annual managed service, on a Wesco-owned, vendor-neutral platform, requiring a defined TSS delivery/support model.",
+      "TSS delivery-ownership outreach sent to Emily Munk, 2026-10-07. Darryl asked her to identify the owning TSS organization, positioning and approach to bring to Greg O'Brien (SVP/GM, TSS). No verbatim acceptance in evidence (Inferred); treated as Awaited, not a \u2026"
+     ],
+     "ids": [
+      "C65"
+     ]
+    },
+    {
+     "date": "2026-10-06",
+     "heading": "FY27 AOP outcome: not approved as a standalone investment; built from the entroCIM team",
+     "bullets": [
+      "Status: not dead. Folded into the entroCIM roadmap, kept as its own product. Sean McCloskey's FY27 AOP update, 2026-10-06: CDA did not get approved; CDA functionality is built from the entroCIM team and development can continue. Fundamentally the product is no\u2026",
+      "Funding and headcount. CDA's FY27 numbers drop to zero. The CDA development pod (6.25 India + 0.25 NA FTE in the AOP basis, $246,787) is lost or redeployed; Darryl and Ron Snyder are balancing headcount across entroCIM, and headcount still without a product ma\u2026",
+      "Positioning is unchanged. Darryl: \"How CDA is positioned in the market is separate from how it'll be built.\" The customer-facing rule stands: CDA stands alone and must not read as an entroCIM add-on. Internally, the wedge framing (CDA opens the door for entroC\u2026",
+      "What still holds: Bill Muczko as business sponsor, the one-annual-fee-per-site commercial model, the open enterprise pricing and willingness-to-pay work, the anchor accounts. The pro forma (v4.6) and deck remain the business case of record; the $246,787 develo\u2026"
+     ],
+     "ids": [
+      "A59",
+      "C65"
+     ]
+    }
+   ],
+   "items": [
+    {
+     "id": "A59",
+     "kind": "action",
+     "title": "Walk Sean through a CDA summary after his PTO",
+     "status": "open",
+     "tier": "",
+     "register": "A",
+     "due": "2026-10-23",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "A64",
+     "kind": "action",
+     "title": "Reconcile the 2027 core entroCIM roadmap with building CDA in 2027, with Ron Snyder and David Blondel",
+     "status": "open",
+     "tier": "",
+     "register": "A",
+     "due": "2026-10-31",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "B91",
+     "kind": "action",
+     "title": "Update the commercialization deck with product-owner input (support ownership, service levels, onboarding, scale readiness) for WAM, entroCIM, Navigator and CDA",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-09-29",
+     "severity": "",
+     "owner": "Sridhar Loke and product owners",
+     "forum_date": "",
+     "last_touched": "2026-10-06"
+    },
+    {
+     "id": "C42",
+     "kind": "action",
+     "title": "Help identify CDA pilot accounts and route engagement through sales leadership",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Chris Mooney and Bill Muczko",
+     "forum_date": "",
+     "last_touched": "2026-09-18"
+    },
+    {
+     "id": "C58",
+     "kind": "action",
+     "title": "Identify the current Cisco-side owner of the Cisco Connected Real Estate opportunity (NetBotz replacement, MDF power visibility) and tell Dave McCain that CDA is in development",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Bob Caprise",
+     "forum_date": "",
+     "last_touched": "2026-09-18"
+    },
+    {
+     "id": "C59",
+     "kind": "action",
+     "title": "Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-29",
+     "severity": "",
+     "owner": "Bob Caprise",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "C61",
+     "kind": "action",
+     "title": "Walmart conversation for CDA, refrigeration and produce systems as the entry point through Wesco's MRO relationship",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-02",
+     "severity": "",
+     "owner": "David Fisher",
+     "forum_date": "",
+     "last_touched": "2026-10-02"
+    },
+    {
+     "id": "C65",
+     "kind": "action",
+     "title": "Emily Munk's reply and a 30-minute walkthrough of CDA: TSS delivery and support ownership, positioning for TSS, route to Greg O'Brien",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-10-07",
+     "severity": "",
+     "owner": "Emily Munk",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "W001",
+     "kind": "watch",
+     "title": "CDA commercial viability \u2014 enterprise pricing, willingness to pay and TSS delivery capacity unproven",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "product": "Launch Studio",
+   "file": "Products/Vibe_Code_Productization/Vibe_Code_Productization.md",
+   "last_entry": "2026-10-14",
+   "recent": [
+    {
+     "date": "2026-10-14",
+     "heading": "Onboarding review: a new body, with existing approvals unchanged (Darryl, direct, 2026-10-14; corrects \"no new approval body\")",
+     "bullets": [
+      "The 10-13 executive overview and Mike's package said \"three lanes and no new approval body.\" Darryl, 2026-10-14: that contradicts the model. A new body reviews submissions from builders that come with their business's endorsement and offer payback and value to\u2026",
+      "Who sits on it (Darryl): people from the Launch Studio team as part of their work (David Blondel as product owner, Mike Wassil for the Guild, an architect from Ron Snyder's team, Darryl and Ron at the commit step), with executive decision-makers such as Sean M\u2026",
+      "What it vets: business endorsement and payback; can it become a product (data, systems, build route, cost to run). Four outcomes with a reason: take it in, fold into an existing product, defer, return to the sandbox.",
+      "What stays with existing bodies: AI Council and intake, Security and WAB, Finance, the business sponsor approve as today."
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-14",
+     "heading": "Sean portfolio deck, 2026-10-14: two awareness slides (Darryl direct)",
+     "bullets": [
+      "Launch Studio is in the same 30-minute portfolio meeting with Sean (week of 2026-10-19), as awareness that the team is making progress on his idea, not as the decision session. Darryl: assigned to him and his team with Mike as partner; reporting back with a fr\u2026"
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-13",
+     "heading": "Funding model (Darryl, direct, 2026-10-13; future decision, shape agreed)",
+     "bullets": [
+      "Mechanism is a future decision with Finance. Shape: IT funds the standing team; the business funds a project that reimburses the IT budget for productization, then for upkeep. Reimbursement can take a few forms, so present a menu to make the business decision \u2026",
+      "Working menu (Claude's draft from Mike's three funding options, Darryl's route and the risk tiers): Sandbox (no charge, no production data); Pilot (bounded project reimburses a limited pilot, 90-day decision); Sponsored product (project reimbursement for produ\u2026",
+      "Principle that holds regardless of mechanism: no sponsor, no production.",
+      "Open before the Sean paper: whether the team's base funding is Sean's digital products budget or corporate IT."
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-08",
+     "heading": "Two zones and one gate (brainstorm 2026-10-08; Darryl agreed to explore the gate and to route existing prototypes through it)",
+     "bullets": [
+      "Prototype zone, owned by the business: sandbox, no production data, registered so it is visible. IT does nothing here.",
+      "Product zone, owned by IT: rebuilt to standard, hosted, secured, supported, retired at end of life. Funded by a build charge plus an annual run charge through the existing IT chargeback.",
+      "The gate (working design, Claude's proposal, not decided): *Screen* (Mike and David: named sponsor, clear problem, overlap with an existing product, data class); *Assess* (David plus an architect from Ron's team: read-only review of the prototype, ownership es\u2026",
+      "Existing prototypes (Darryl, 2026-10-08: yes): go through the same gate; anything not accepted comes off production data. IT does not absorb them by default."
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-07",
+     "heading": "Problem definition (Darryl, direct, brainstorm 2026-10-07)",
+     "bullets": [
+      "Of five candidate problem framings, Darryl chose the capacity vehicle as the best fit: a business-funded home for CSS team capacity.",
+      "Scalability and security concerns roll up into one statement of the problem: the business has the expertise and ability to define problems; Darryl's team has the ability to launch them professionally and maintain them for the business.",
+      "\"At scale\" means production-grade quality for whatever segment or segments need it. A product may serve one business (CSS, ESS, UBS) or span them.",
+      "No concrete candidate ideas are known yet; the first look is expected from the Mike Wassil meeting, postponed from 2026-10-08 to Mon 2026-10-12."
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-07",
+     "heading": "Service model (brainstorm 2026-10-07, working positions, not decisions)",
+     "bullets": [
+      "Seven options were generated. Darryl's reactions:",
+      "| # | Option | Darryl's view |",
+      "|--|------|------|",
+      "| 1 | Product studio: select a few, build, run | Keep. May be the umbrella for the whole model rather than a stand-alone option |"
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-07",
+     "heading": "External evidence (kept to justify the team's work; Darryl, 2026-10-07)",
+     "bullets": [
+      "Gartner, \"Govern Vibe Coding for Citizen Developers With Self-Service Platforms\" (Nitish Tyagi, 2026-06-29): by 2028, 60% of vibe-coded applications will be retired because they fail to deliver predictable business value, and 30% of software engineering teams \u2026",
+      "Cloud Security Alliance research note, \"The Vibe Coding Governance Gap\" (2026-06-02). CORRECTION 2026-10-13 (Claude, verified against the page; first caught in Mike Wassil's change log): the \"none of 5,600 production vibe-coded apps had CSRF protection, securi\u2026",
+      "Gartner figures: treat as a labeled forecast from a secondary source until the licensed original is read (2026-10-13). They appeared on the 10-12 deck as statistics with a source line; the caveat was in the speaker notes only.",
+      "How this supports the case (interpretation, not source): the industry problem is not too few prototypes; it is too many that never deliver value and then land on engineering to secure and maintain. A team that selects, launches professionally and runs a small \u2026"
+     ],
+     "ids": []
+    },
+    {
+     "date": "2026-10-06",
+     "heading": "The concept as stated (Darryl, direct, 2026-10-06)",
+     "bullets": [
+      "A company-wide team that productizes vibe-coded ideas:",
+      "1. Review the ideas coming from the business units.",
+      "2. Select two or three.",
+      "3. Productize them at scale."
+     ],
+     "ids": []
+    }
+   ],
+   "items": [
+    {
+     "id": "A60",
+     "kind": "action",
+     "title": "Stand up the vibe coding productization concept",
+     "status": "open",
+     "tier": "",
+     "register": "A",
+     "due": "2026-10-23",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "A65",
+     "kind": "action",
+     "title": "Prepare a condensed Launch Studio update for Sean McCloskey",
+     "status": "open",
+     "tier": "",
+     "register": "A",
+     "due": "2026-10-23",
+     "severity": "",
+     "owner": "Darryl Benson",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    }
+   ]
+  },
+  {
+   "product": "CAT",
+   "file": "Products/CAT/CAT.md",
+   "last_entry": "2026-09-28",
+   "recent": [],
+   "items": []
+  },
+  {
+   "product": "i3 Alliance",
+   "file": "Products/i3_Alliance.md",
+   "last_entry": "2026-09-17",
+   "recent": [],
+   "items": [
+    {
+     "id": "C45",
+     "kind": "action",
+     "title": "i3 Alliance Agreement \u2014 Wesco signature",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Lee Osterman",
+     "forum_date": "",
+     "last_touched": "2026-09-17"
+    },
+    {
+     "id": "W010",
+     "kind": "watch",
+     "title": "i3 Alliance Agreement \u2014 Section 8 puts entroCIM downstream of i3's data model",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-05"
+    },
+    {
+     "id": "W011",
+     "kind": "watch",
+     "title": "i3 Alliance Agreement \u2014 IP chain creates perpetual, uncapped exposure on entroCIM's modeling layer",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-05"
+    }
+   ]
+  },
+  {
+   "product": "JCI / Airwall",
+   "file": "Products/JCI_Partnership.md",
+   "last_entry": "2026-09-17",
+   "recent": [],
+   "items": [
+    {
+     "id": "C10",
+     "kind": "action",
+     "title": "JCI open contract items (8)",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "JCI / Brian Miller / Wesco Legal",
+     "forum_date": "",
+     "last_touched": "2026-10-15"
+    },
+    {
+     "id": "C14",
+     "kind": "action",
+     "title": "Confirm JCI Airwall Conductor API access requirements",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Babu Papanna / Shawn Clark",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "C69",
+     "kind": "action",
+     "title": "JACE IP address and available credentials for Ascent Airwall onboarding",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "",
+     "severity": "",
+     "owner": "Chris Askew / Ascent team",
+     "forum_date": "",
+     "last_touched": "2026-10-13"
+    },
+    {
+     "id": "C8",
+     "kind": "action",
+     "title": "JCI technical data for the WAB submission",
+     "status": "open",
+     "tier": "",
+     "register": "other",
+     "due": "2026-07-30",
+     "severity": "",
+     "owner": "Jeff McCorvey",
+     "forum_date": "",
+     "last_touched": "2026-08-25"
+    },
+    {
+     "id": "W017",
+     "kind": "watch",
+     "title": "JCI (Johnson Controls) MSP agreement stall",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-20"
+    },
+    {
+     "id": "W099",
+     "kind": "watch",
+     "title": "PC1/JCI large-scale point faults and intermittent site access",
+     "status": "open",
+     "tier": "active",
+     "register": "",
+     "due": "",
+     "severity": "High",
+     "owner": "",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    },
+    {
+     "id": "D019",
+     "kind": "decision",
+     "title": "JCI (Johnson Controls) MSP agreement \u2014 drive to signature",
+     "status": "Approaching \u2014 stalled on the agreement, momentum restored at account level. MSP model decided (not reseller) 2026-05-26; final markups blocked on unresolved technical/commercial questions. 07-17: 07-15 meeting transcript received and ingested \u2014 it was a JCI-initiated FY26 review / FY27 growth partner meeting, not a negotiation: none of the 5 blockers or contractual terms were discussed; no contract commitments made. New evidence from it: (a) JCI's account team described the MSP metering model assuming Wesco continues running/provisioning its own Conductor, with only a read-only license-usage agent added \u2014 verbally supportive of the self-host position, not contractual; (b) MSP billing = monthly in arrears on provisioned licenses (vs 12-month prepay today); (c) Wesco's Conductor/relay Azure migration is already in flight (2 Conductors, HA) \u2014 execution is running ahead of contract, sharpening urgency to paper hosting rights; (d) 443-only connectivity available now, removing the top deployment friction. Full outcomes: `Products/JCI_Partnership.md`. 07-17 PM corrections (Darryl): Wesco is hosting the Conductor as of today; the internal prerequisite is now specific \u2014 Wesco Architecture Review Board (WAB) approval of the JCI API connection (metering agent) from the Conductor, not a hosting-model review. Babu Papanna has no JCI/Conductor actions. HA failover is Wesco IT responsibility inside Wesco's Azure IoT subscription (resolved 07-17 PM) \u2014 JCI L3 is optional support, not a required engagement. Brian Miller refresh email SENT 07-17; meeting committed week of 07-20 (agenda: hosting redline, 5 open items, new terms, customer flow-down, markup schedule). Framing correction from Darryl's sent email: legal review ongoing since early June, Darryl owed Brian a response \u2014 the quiet period was partly Wesco-side. Hosting responsibility settled operationally (07-17 PM): Wesco is the hosting authority \u2014 environment owned by Wesco, application owned by Darryl's team; patching/backup/DR/SLA/security addressed. Sole open matrix element: JCI's support obligations to Wesco (L3/escalation/SLA), still owed by JCI. Value-thesis correction (Darryl, 07-17 PM): the deal's value is the whole MSP licensing flip (consumption billing), with hosting as the enabling change \u2014 signature condition now two-part: express hosting rights AND licensing mechanics codified in durable agreement text (not unilaterally changeable Program Materials).**",
+     "tier": "radar",
+     "register": "",
+     "due": "",
+     "severity": "",
+     "owner": "Darryl (driving). JCI: Jonathan Gutierrez (sales/account lead, per evidence), Jeffrey McCorvey (account manager, per evidence), Priya Agarwal (MSP program, per evidence) \u2014 roles unconfirmed beyond evidence. Wesco Legal: Brian Miller.",
+     "forum_date": "",
+     "last_touched": "2026-10-19"
+    }
+   ]
+  }
+ ]
+}

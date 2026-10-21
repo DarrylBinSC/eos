@@ -30,6 +30,7 @@ from urllib.parse import urlparse, parse_qs
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import eos_registers as R  # noqa: E402
 import eos_pulse as P  # noqa: E402  (Operational Pulse, added 2026-10-16)
+import eos_products as PR  # noqa: E402  (Products tab, added 2026-10-21)
 
 PORT = int(os.environ.get("EOS_PORT", "8765"))
 BIND = os.environ.get("EOS_BIND", "0.0.0.0")
@@ -471,6 +472,18 @@ class H(BaseHTTPRequestHandler):
         if u.path == "/api/pulse":
             with LOCK:
                 return self._json(200, P.summary())
+        # Products tab (added 2026-10-21): one card per live product in Products/_products.json.
+        if u.path == "/api/products":
+            try:
+                w = int(q.get("window", ["14"])[0])
+            except ValueError:
+                w = 14
+            w = w if w in (7, 14, 30) else 14
+            src = q.get("from", [""])[0]
+            if src:
+                PR.log_view(src, w)
+            with LOCK:
+                return self._json(200, PR.summary(w))
         if u.path == "/api/guide":
             g = R.ROOT / "Reference" / "Registers_App_User_Guide.md"
             txt = g.read_text(encoding="utf-8") if g.exists() else "# Guide not found\n\nExpected at Reference/Registers_App_User_Guide.md."
@@ -554,6 +567,19 @@ class H(BaseHTTPRequestHandler):
                     return self._json(200, P.summary())
             except KeyError:
                 return self._json(404, {"error": "unknown account"})
+        if u.path == "/api/products/live":
+            try:
+                with LOCK:
+                    import time as _t; SELF_WRITE_UNTIL[0] = _t.time() + 12
+                    p = PR.set_live((d.get("product") or "").strip(), bool(d.get("live")))
+                    git_commit_all(f"web: product {p['name']} -> {'live' if p['live'] else 'not live'}")
+                    try:
+                        w = int(d.get("window") or 14)
+                    except ValueError:
+                        w = 14
+                    return self._json(200, PR.summary(w if w in (7, 14, 30) else 14))
+            except KeyError:
+                return self._json(404, {"error": "unknown product"})
         if u.path == "/api/regenerate":
             with LOCK:
                 counts = R.regenerate_all()
@@ -1019,6 +1045,24 @@ button.pv-pp{min-height:40px;align-items:center}
 .cs.done .ck{background:var(--grn)}.cs.done span:last-child{color:var(--muted)}.cs.skip .ck{background:var(--sunk);color:var(--muted)}
 .b-neutral{color:var(--ink2)}.pv-arow.ph .spk{margin:4px 0 6px}.spk{display:block;overflow:visible}.spk.b-neutral{color:var(--muted)}
 .pv-spk{display:flex;flex-direction:column;gap:4px;margin:6px 0 4px}.pv-spkn{font-size:12.5px;color:var(--muted)}
+/* Products tab (2026-10-21) */
+.pr-top{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:12px 16px 4px}.pr-sub{color:var(--muted);font-size:14px}
+.pr-win{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;flex:none}.pr-win button{border:0;background:var(--card);padding:6px 10px;font-size:13px;color:var(--muted);font:inherit}.pr-win button.on{background:var(--acc);color:var(--accInk)}
+.pr-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(360px,100%),1fr));gap:14px;padding:8px 16px 16px}
+.pr-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:10px;min-width:0;overflow-wrap:anywhere;box-shadow:var(--shadow)}.pr-card.quiet{opacity:.9}
+.pr-h{display:flex;justify-content:space-between;align-items:center;gap:8px}.pr-h h2{font-size:17px;margin:0;font-weight:650}
+.pr-age{font-size:12px;padding:2px 8px;border-radius:999px;background:#e6f4ec;color:var(--grn);white-space:nowrap}.pr-age.a{background:#fbf1dc;color:var(--amb)}.pr-age.q{background:var(--sunk);color:var(--muted)}
+.pr-counts{display:flex;gap:6px;flex-wrap:wrap;font-size:12px;color:var(--muted)}.pr-counts span{background:var(--sunk);padding:2px 8px;border-radius:999px}.pr-counts b{color:var(--ink)}
+.pr-e{border-top:1px solid var(--line2);padding-top:8px}.pr-d{font-size:12px;color:var(--muted)}.pr-eh{font-weight:600;font-size:14px;margin:2px 0 4px}
+.pr-e ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--ink2)}.pr-e li{margin:2px 0}
+.pr-ids{display:flex;gap:4px;flex-wrap:wrap;margin-top:6px}.pr-id{font:12px/1 ui-monospace,Menlo,monospace;background:var(--sel);color:var(--acc);padding:3px 6px;border-radius:5px;border:1px solid #dbe4f0;text-decoration:none}
+.pr-none{font-size:13px;color:var(--muted);border-top:1px solid var(--line2);padding-top:8px}
+.pr-more{border:0;background:transparent;color:var(--acc);font:inherit;font-size:13px;padding:0;text-align:left;cursor:pointer}
+.pr-items{border-top:1px solid var(--line2);padding-top:6px}.pr-items summary{cursor:pointer;font-size:13px;color:var(--muted)}
+.pr-i{display:grid;grid-template-columns:52px 1fr auto;gap:8px;font-size:13px;padding:6px 0;border-bottom:1px dashed var(--line2);align-items:start;color:inherit;text-decoration:none}.pr-i .k{font:12px/1.3 ui-monospace,Menlo,monospace;color:var(--acc)}.pr-i .m{color:var(--muted);white-space:nowrap;font-size:12px}
+.pr-foot{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto;font-size:12px;color:var(--hatch)}.pr-live{border:0;background:transparent;color:var(--muted);font:inherit;font-size:12px;cursor:pointer;text-decoration:underline}
+.pr-hidden{margin:0 16px 24px;padding:10px 16px;background:var(--card);border:1px solid var(--line);border-radius:12px;font-size:13px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;align-items:center}.pr-hl{display:flex;gap:8px;flex-wrap:wrap;width:100%}
+@media (max-width:640px){.pr-grid{grid-template-columns:1fr;padding:8px 12px 12px}.pr-i{grid-template-columns:48px 1fr}.pr-i .m{grid-column:2;white-space:normal}}
 </style></head><body>
 <header>
  <div class="hbar">
@@ -1049,7 +1093,7 @@ const plain=s=>String(s??'').replace(/\*\*([^*]+)\*\*/g,'$1').replace(/`([^`]+)`
 let toastT;function toast(t){const e=$('#toast');e.textContent=t;e.style.display='block';clearTimeout(toastT);toastT=setTimeout(()=>e.style.display='none',2200)}
 async function load(){const [j,p]=await Promise.all([fetch('/api/items').then(r=>r.json()),fetch('/api/pulse').then(r=>r.ok?r.json():null).catch(()=>null),loadBriefs()]);ITEMS=j.items;TODAY=j.today;PULSE=p;render();const o=new URLSearchParams(location.search).get('open');if(o&&!DRAWER)openDrawer(o)}
 
-const VIEWS=[['triage','Focus'],['pulse','Pulse'],['briefs','Briefs'],['A','Mine'],['other','Other-owned'],['watch','Watch'],['decision','Decisions'],['needs','Needs triage'],['closed','Disposed']];
+const VIEWS=[['triage','Focus'],['pulse','Pulse'],['briefs','Briefs'],['products','Products'],['A','Mine'],['other','Other-owned'],['watch','Watch'],['decision','Decisions'],['needs','Needs triage'],['closed','Disposed']];
 const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],WD=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 const dn=s=>{const[y,m,d]=s.split('-').map(Number);return Date.UTC(y,m-1,d)};
 const days=s=>Math.round((dn(s)-dn(TODAY))/864e5);
@@ -1168,13 +1212,14 @@ function rowHtml(i){
 function render(){
   const a=filtered();const open=ITEMS.filter(isOpen);
   const A=open.filter(i=>i.kind==='action'&&i.register==='A').length,W=open.filter(i=>i.kind==='watch'&&i.tier==='active').length,D=open.filter(i=>i.kind==='decision'&&i.tier==='radar').length,N=ITEMS.filter(i=>i.needs_triage).length;
-  $('#views').innerHTML=VIEWS.map(([v,l])=>`<button class="tab${v===VIEW?' on':''}" data-v="${v}"${v===VIEW?' aria-current="page"':''}>${l}${v==='briefs'?(BRIEFS.some(b=>b.date===TODAY)?'<span class="nd" title="Today\u2019s brief is in"></span>':''):`<span class="n">${ITEMS.filter(i=>inView(i,v)).length}</span>`}</button>`).join('');
+  $('#views').innerHTML=VIEWS.map(([v,l])=>`<button class="tab${v===VIEW?' on':''}" data-v="${v}"${v===VIEW?' aria-current="page"':''}>${l}${v==='briefs'?(BRIEFS.some(b=>b.date===TODAY)?'<span class="nd" title="Today\u2019s brief is in"></span>':''):v==='products'?(PRODS?`<span class="n">${PRODS.products.length}</span>`:''):`<span class="n">${ITEMS.filter(i=>inView(i,v)).length}</span>`}</button>`).join('');
   const m=(l,s,n,c)=>`<div class="cap${n>c?' over':''}"><span class="l">${l}</span><span class="s">${s}</span><span class="bar"><i style="width:${Math.min(100,n/c*100)}%"></i></span><b>${n}/${c}</b></div>`;
   const dt=new Date(dn(TODAY));
   $('#meta').innerHTML=m('Register A','A',A,15)+m('Watch active','Watch',W,20)+m('Radar','Radar',D,20)+pulseCaps()+`<div class="cap"><span class="dot"></span><span class="l">Needs triage</span><span class="s">Triage</span><b>${N}</b></div><span class="today">${VIEW==='briefs'?BRIEFS.length+' briefs':a.length+' shown'} · ${['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][dt.getUTCDay()]}, ${fmt(TODAY)}</span>`;
   $('#logBtn').innerHTML='Changes'+(SESSION.length?`<span class="badge">${SESSION.length}</span>`:'');
   if(VIEW==='briefs'){$('#list').innerHTML=briefsHtml();const hd=document.querySelector('header');if(hd)document.documentElement.style.setProperty('--hdrH',hd.offsetHeight+'px');return}
   if(VIEW==='pulse'){$('#list').innerHTML=pulseHtml();const hd=document.querySelector('header');if(hd)document.documentElement.style.setProperty('--hdrH',hd.offsetHeight+'px');return}
+  if(VIEW==='products'){$('#list').innerHTML=productsHtml();const hd=document.querySelector('header');if(hd)document.documentElement.style.setProperty('--hdrH',hd.offsetHeight+'px');return}
   const gs=groups(a);
   $('#list').innerHTML=sortBar(VIEW,a.length)+(gs.map(g=>{let rows=g.rows,more='';
     if(g.k==='watch'&&rows.length>3){more=`<button class="more" data-more>${MOREW?'Show fewer':'Show '+(rows.length-3)+' more risks'}</button>`;if(!MOREW)rows=rows.slice(0,3)}
@@ -1196,6 +1241,11 @@ document.addEventListener('click',e=>{
   const tc=e.target.closest('[data-toc]');if(tc){e.preventDefault();jumpSec(tc.dataset.toc);return}
   const bi=e.target.closest('[data-brief]');if(bi){openBrief(bi.dataset.brief,'list');return}
   if(e.target.closest('[data-bback]')){BREAD=false;render();scrollTo(0,0);return}
+  const pw=e.target.closest('[data-pwin]');if(pw){PWIN=+pw.dataset.pwin;try{localStorage.setItem('eos.products.win',String(PWIN))}catch(x){}loadProducts('window').then(render);return}
+  const pl=e.target.closest('[data-plive]');if(pl){setLive(pl.dataset.plive,pl.dataset.to==='1');return}
+  const pm=e.target.closest('[data-pmore]');if(pm){PMORE[pm.dataset.pmore]=!PMORE[pm.dataset.pmore];render();return}
+  if(e.target.closest('[data-phidden]')){PHID=!PHID;render();return}
+  const pt=e.target.closest('.tab[data-v]');if(pt&&pt.dataset.v==='products'){VIEW='products';loadProducts('tab').then(render);scrollTo(0,0);return}
   const cb=e.target.closest('.tab[data-v]');if(cb&&cb.dataset.v==='briefs'){VIEW='briefs';loadBriefs().then(()=>{if(!BRIEF&&BRIEFS.length)openBrief(BRIEFS[0].name,'tab');else render()});scrollTo(0,0);return}
   const c=e.target.closest('.tab[data-v]');if(c){VIEW=c.dataset.v;MOREW=false;for(const k in BASE)delete BASE[k];render();scrollTo(0,0);return}
   if(e.target.closest('[data-more]')){MOREW=!MOREW;render();return}
@@ -1693,6 +1743,26 @@ function md(src){const inl=t=>esc(t).replace(/`([^`]+)`/g,'<code>$1</code>').rep
     if((m=l.match(/^\d+\. (.*)/))){if(list!=='ol'){flush();list='ol';out.push('<ol>')}out.push(`<li>${inl(m[1])}</li>`);continue}
     flush();out.push(`<p>${inl(l)}</p>`)}
   flush();return out.join('')}
+/* ---------- Products tab (2026-10-21): one card per live product; what changed in its file, and the open items that touch it ---------- */
+let PRODS=null,PMORE={},PHID=false,PWIN=14;try{PWIN=+(localStorage.getItem('eos.products.win')||14)||14}catch(e){PWIN=14}
+async function loadProducts(from){try{PRODS=await (await fetch('/api/products?window='+PWIN+'&from='+encodeURIComponent(from||''))).json()}catch(e){PRODS=null;toast('Could not load the products')}}
+async function setLive(name,to){try{const r=await fetch('/api/products/live',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({product:name,live:to,window:PWIN})});if(!r.ok)throw 0;PRODS=await r.json();toast((to?'Showing ':'Hiding ')+name);render()}catch(e){toast('Could not change '+name)}}
+function pAge(c){if(c.age_days==null)return ['q','no dated entries'];if(c.age_days===0)return ['','updated today'];if(c.age_days<=7)return ['','updated '+c.age_days+'d ago'];if(c.age_days<=14)return ['a','updated '+c.age_days+'d ago'];return ['q','quiet since '+fmt(c.last_entry)]}
+function pLabel(i){if(i.kind==='action')return i.register==='A'?'Mine'+(i.due?' · due '+fmt(i.due):''):'Other-owned'+(i.critical?' · critical':'')+(i.due?' · '+fmt(i.due):'');if(i.kind==='watch')return 'Watch · '+esc(i.severity||'');return 'Radar'+(i.forum_date?' · '+fmt(i.forum_date):'')}
+function productsHtml(){
+  if(!PRODS)return '<div class="empty">Loading the products…</div>';
+  const ps=PRODS.products;const live=ps.filter(p=>p.recent.length),quiet=ps.filter(p=>!p.recent.length);
+  const win=`<div class="pr-win">${[7,14,30].map(w=>`<button type="button" class="${w===PWIN?'on':''}" data-pwin="${w}">${w} days</button>`).join('')}</div>`;
+  const head=`<div class="pr-top"><div><div class="pr-sub">What changed in each product file in the last ${PWIN} days, and the open register items that touch it. ${live.length} with new entries, ${quiet.length} quiet.</div></div>${win}</div>`;
+  const card=p=>{const [cls,ft]=pAge(p);const c=p.counts;const all=PMORE[p.name];const show=all?p.recent:p.recent.slice(0,3);
+    return `<section class="pr-card${p.recent.length?'':' quiet'}"><div class="pr-h"><h2>${esc(p.name)}</h2><span class="pr-age ${cls}">${ft}</span></div>
+    <div class="pr-counts"><span><b>${p.recent.length}</b> new entr${p.recent.length===1?'y':'ies'}</span><span><b>${c.mine}</b> mine</span><span><b>${c.other}</b> other-owned</span><span><b>${c.watch}</b> watch</span><span><b>${c.radar}</b> radar</span></div>
+    ${show.map(r=>`<div class="pr-e"><div class="pr-d">${fmt(r.date)}</div><div class="pr-eh">${esc(r.heading)}</div>${r.lead.length?`<ul>${r.lead.map(b=>`<li>${esc(b)}</li>`).join('')}</ul>`:''}${r.ids.length?`<div class="pr-ids">${r.ids.map(i=>`<a href="#" class="pr-id" data-sopen="${esc(i)}">${esc(i)}</a>`).join('')}</div>`:''}</div>`).join('')||`<div class="pr-none">Nothing new in this window. Last entry ${p.last_entry?fmt(p.last_entry):'none'}.</div>`}
+    ${p.recent.length>3?`<button type="button" class="pr-more" data-pmore="${esc(p.name)}">${all?'Show fewer':(p.recent.length-3)+' more entr'+(p.recent.length-3===1?'y':'ies')+' in this window'}</button>`:''}
+    <details class="pr-items"><summary>Open register items (${p.items.length})</summary>${p.items.map(i=>`<a href="#" class="pr-i" data-sopen="${esc(i.id)}"><span class="k">${esc(i.id)}</span><span class="t">${esc(i.title)}</span><span class="m">${pLabel(i)}</span></a>`).join('')||'<div class="pr-none">None matched. Set the product field on items at intake.</div>'}</details>
+    <div class="pr-foot"><span>${esc(p.file)}</span><button type="button" class="pr-live" data-plive="${esc(p.name)}" data-to="0" title="Hide this product from the tab">Hide</button></div></section>`};
+  const hidden=PRODS.hidden.length?`<div class="pr-hidden"><span>Not shown: ${PRODS.hidden.map(esc).join(', ')}.</span><button type="button" class="pr-more" data-phidden>${PHID?'Done':'Change'}</button>${PHID?`<div class="pr-hl">${PRODS.hidden.map(h=>`<button type="button" class="btn" data-plive="${esc(h)}" data-to="1">Show ${esc(h)}</button>`).join('')}</div>`:''}</div>`:'';
+  return head+`<div class="pr-grid">${ps.map(card).join('')}</div>`+hidden}
 /* ---------- Briefs tab (2026-10-19): the daily and weekly briefs, in sight, with item IDs that open the item ---------- */
 async function loadBriefs(){try{const j=await (await fetch('/api/briefs')).json();BRIEFS=j.briefs||[]}catch(e){BRIEFS=[]}}
 async function openBrief(name,from){try{const j=await (await fetch('/api/briefs/'+encodeURIComponent(name)+'?from='+encodeURIComponent(from||''))).json();BRIEF=j;BREAD=true}catch(e){toast('Could not open '+name)}render();if(from==='list')scrollTo(0,0)}
@@ -1783,7 +1853,7 @@ let VER=null;
 function busy(){const ae=document.activeElement;const typing=ae&&(ae.tagName==='INPUT'||ae.tagName==='TEXTAREA');return !!(DRAWER||SHEET||typing)}
 async function checkVersion(){try{const j=await (await fetch('/api/version',{cache:'no-store'})).json();
   if(VER===null){VER=j.version;return}
-  if(j.version!==VER){if(busy())return;VER=j.version;await load();if(VIEW==='briefs')render();toast('Updated from the files')}}catch(e){}}
+  if(j.version!==VER){if(busy())return;VER=j.version;await load();if(VIEW==='products'){await loadProducts('');render()}if(VIEW==='briefs')render();toast('Updated from the files')}}catch(e){}}
 setInterval(checkVersion,30000);
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')checkVersion()});
 window.addEventListener('focus',checkVersion);
@@ -1805,6 +1875,14 @@ def data_version() -> str:
                 h.update(f"{f.name}:{f.stat().st_mtime}".encode())
             except FileNotFoundError:
                 pass
+    # Products tab (2026-10-21): product files and the roster count too, so an open tab picks up filing.
+    pd = R.ROOT / "Products"
+    if pd.exists():
+        for f in sorted(list(pd.rglob("*.md")) + [pd / "_products.json"]):
+            try:
+                h.update(f"{f}:{f.stat().st_mtime}".encode())
+            except FileNotFoundError:
+                pass
     return h.hexdigest()[:16]
 
 
@@ -1824,7 +1902,7 @@ def _snapshot() -> dict:
     return out
 
 
-TOOLS = [Path(__file__).resolve().parent / n for n in ("eos_server.py", "eos_registers.py", "eos_pulse.py")]
+TOOLS = [Path(__file__).resolve().parent / n for n in ("eos_server.py", "eos_registers.py", "eos_pulse.py", "eos_products.py")]
 
 
 def _tools_mtime() -> tuple:
