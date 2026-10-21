@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-21 09:18 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-21 09:22 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -56,7 +56,7 @@ Four registers. The delineation is the point.
 | C8 | JCI technical data for the WAB submission | Jeff McCorvey | Awaited | 2026-07-30 NEED BY | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: JCI technical preparation rather than contract or customer exposure. |
 | B74 | Investigate IDP engineering capacity via John, Sathish, and the Bangalore AI team | Ankit Chadha | Delegated | 2026-09-02 Within one to two weeks of | -- | 2026-10-05 | New 09-09. |
 | B82 | Send a follow-up email on the outstanding Azure listener dependency if unresolved after one more day | Babu Papanna | Delegated | 2026-09-17 | -- | 2026-10-19 | New 09-16. |
-| C50 | Strev pricing for the Virtual Site Survey: professional services development price, and a per-site run rate | Sunny Sharma and Christina (Revnue), chased by Amy Aguirre | Awaited | 2026-09-17 Requested on or before ; not dated | -- | 2026-09-17 | New 2026-09-17. |
+| C50 | Strev pricing for the Virtual Site Survey: professional services development price, and a per-site run rate | Sunny Sharma and Christina (Revnue), chased by Amy Aguirre | Awaited | 2026-09-17 Requested on or before ; not dated | -- | 2026-10-21 | New 2026-09-17. |
 | C43 | Define Ford pricing-model language | Leanne Gordon | Awaited | 2026-09-19 confirm or close | -- | 2026-10-19 | New 09-09. |
 | B91 | Update the commercialization deck with product-owner input (support ownership, service levels, onboarding, scale readiness) for WAM, entroCIM, Navigator and CDA | Sridhar Loke and product owners | Delegated | 2026-09-29 Within one week of (exact date not stated) | -- | 2026-10-06 | New 2026-10-01; |
 | B90 | Schedule a requirements-definition call with Alan, Daniel and Ramesh on the WAM/ADM complex-build capture path | Akansh Gangil | Delegated | 2026-09-30 Stated as "next week" (as of ); not yet scheduled — confirm date | -- | 2026-10-15 | New 2026-10-01 (M365 evidence, 2026-09-28 to 2026-09-30). |
