@@ -22,8 +22,7 @@
    "aliases": [
     "Panama"
    ],
-   "note": "Internal program deploying entroCIM at Wesco; Panama is a Wesco site (Darryl, 2026-10-16)",
-   "pinned": true
+   "note": "Internal program deploying entroCIM at Wesco; Panama is a Wesco site (Darryl, 2026-10-16)"
   },
   {
    "name": "Ford",
@@ -51,7 +50,8 @@
     "Coca-Cola",
     "AOC",
     "Coke"
-   ]
+   ],
+   "pinned": true
   },
   {
    "name": "BAE",
