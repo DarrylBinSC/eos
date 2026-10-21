@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-21 08:58 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-21 08:59 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 79 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 80 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -105,6 +105,7 @@ Four registers. The delineation is the point.
 | B93 | Confirm Mosquitto/FOSS approval status for production MQTT with Hansraj's team and report by email | Babu Papanna | Delegated | Not dated | -- | 2026-10-05 | New 2026-10-01. |
 | B96 | Coordinate Ford audit resources once the customer schedules the system audit | Chad Steger | Delegated | Gated on Tim Scott scheduling the audit; no date yet | -- | 2026-10-07 | New 2026-10-07 (daily evidence, folded into this week's reconciliation). |
 | B97 | Send Ford account credentials and establish a shared SharePoint exchange area for the working team | Jacob Nicosia | Delegated | Not stated | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
+| C1 | JCI final legal markup sent to JCI |  |  |  | -- | 2026-10-21 | ## Closure Date closed (as recorded): 2026-09-01 Done. |
 | C10 | JCI open contract items (8) | JCI / Brian Miller / Wesco Legal | Awaited | Gate: C1 markup | **Critical** | 2026-10-15 | Eight rows consolidated. |
 | C14 | Confirm JCI Airwall Conductor API access requirements | Babu Papanna / Shawn Clark | Awaited | Not dated | -- | 2026-10-19 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: JCI technical preparation; |
 | C30 | Share the blank AI intake template and shepherd the entroCIM AI use case through review | Sourav Pradhan | Awaited | Immediately after the 08-19 session | -- | 2026-10-15 | Sourav Pradhan: "I will share a default blank template with you immediately after this meeting." New governance relationship |
@@ -202,7 +203,6 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-09-03 | **A36 — Deliver the Navigator/entroCIM four-part slide draft to Lisa Orton and DJ Vaughn** | Darryl, direct (chat, 2026-09-03) | Done, on its 09-03 due date. |
 | 2026-09-03 | **A30 — Take the product pitches and soft metrics deck to DJ Vaughn for Navigator input** | Darryl, direct (chat, 2026-09-03) | Done, completed the weekend of 08-29/08-30, ahead of its 09-02 date. |
 | 2026-09-01 | **C6 — Quest Migration production-readiness validation (TCCC)** | Weekly evidence, 2026-08-24 to 08-31 | Done. |
-| 2026-09-01 | **C1 — JCI final legal markup sent to JCI** | Darryl, direct (chat, 2026-09-01) | Done. |
 | 2026-09-01 | **B51 — Send the TCCC maintenance-window communication to the customer** | Weekly evidence, 2026-08-24 to 08-31 | Done, with C6. |
 | 2026-09-01 | **B50 — Test TCCC PaaS-03W and PaaS-04W after migration** | Weekly evidence, 2026-08-24 to 08-31 | Done, with C6. |
 | 2026-09-01 | **A35 — Regroup with Chad Steger on travel and SkyPosium, then respond to Sarah Monteleone** | Darryl, direct (chat, 2026-09-01) | Done. |
