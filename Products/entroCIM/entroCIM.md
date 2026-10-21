@@ -454,6 +454,9 @@ Durable, restated by Wesco in the bid exchange and accepted by Turner:
 
 Still open from 08-19 and now priced as an alternate (H2) in this bid: whether the IBM TRIRIGA work-order path is a productized connector or project-configured integration.
 
+**Update, 2026-10-20 (daily evidence, FRB Cash Services Review Teams chat).** Durable bid positions confirmed in the live exchange: Wesco does not install gateways (a third-party contractor does, Darryl direct); H5 post-occupancy BIM updates are not offered; C1.1 (COBie ingestion, 3D navigation) is answered by strengthening the existing 2.03 D deviation, a placeholder price for a COBie connector, and no commitment on 3D. Sarah Monteleone consolidated the resulting questions and submitted them back to Turner around lunch on 2026-10-20. Gateway and four-laptop pricing is now Leanne Gordon's to build; laptop configuration requirements are not yet known. Separately, FRB's "training" ask at project kickoff reads as MSI-style workshops, not platform training (Leanne Gordon); the Foundations course is the recommended starting point for FRB end users once platform training is actually scoped (Maggie Becker). Bid status and the 2026-10-21 pricing deadline live in `W026`.
+
+
 ## Stanford renewal: roll-back of three licenses to SkySpark-only; Wesco position moved to supporting it (added 2026-10-20)
 
 Source: daily evidence 2026-10-20 (three packages; Fw: License renewals for 8/31/26-8/31/27 email thread, complete; Reed, Mike in chat (Teams), opened with date-bounded continuation; Stanford / entroCIM IP thread with Brandon Thompson, sent email, complete). The 2026-10-19 working session that reviewed the 2022 and 2023 Stanford quotes was not filed; its Thursday-call brief rests on the earlier position below and should be read with the change.
@@ -504,3 +507,13 @@ What the position does and does not change: it is the right argument for ownersh
 Source: RE: Dell EMS Program FTE New Hire Discussion (email, 2026-10-19, complete). Adam Lazare, quoted: Dell "is looking for us to add a 2nd dedicated FTE to support the entroCIM platform/program called Dell (EMS) Enterprise Management System." Michele Mann: "There is also an option to move an Ascent person into the position but we'd like to better understand how that would work from a billing perspective," and she asked Darryl for "a 2nd quick call to review the Dell hire later this week or next to include Chris." No decision owner named; `05` C62, `04` W002 updated. Transient until the hire or transfer is decided.
 
 Also 2026-10-19: Jason Ganiatsas posted "entroCIM version 3.1.12.14 is now available" to the entroCIM Sales Showcase Environment channel with the release summary (Global Search beta, Tiles-Gridboard, Graphics Builder, Batch Point Writer, security and platform modernization). Echo of the 10-16 general availability recorded above; no new fact.
+
+
+## entroCIM 4.0 and Search: sprint runway and a Dev01 feature nearing showcase (added 2026-10-21)
+
+Source: entroCIM Backlog Deep Dive transcript, 2026-10-20 (daily M365 evidence, `Evidence/M365_Evidence_Daily_2026-10-21.md`).
+
+- **entroCIM 4.0 release runway (Durable, David Blondel):** "we really only have 6 sprints, 6 development sprints left... that target release date, January 11th." Six development sprints remain against a 2027-01-11 target; read alongside the 2027 development-capacity and roadmap-reconciliation work in `05` A64 and `03` D001/W016 (same capacity pool).
+- **entroCIM Search (Durable, Mike Reed):** live on Dev01; rolling out to the PAS01 showcase project this week. First customer-visible checkpoint for a feature not previously dated in this file.
+- **FRB hosting (Durable, Leanne Gordon):** "Per C58, RFI 0344, FRBNY will provide permanent virtual servers and operating systems." Bears on `05` C57 (Dell budgetary server pricing for FRB Cash Services); flagged there as potentially unnecessary, pending Darryl's confirmation, not closed on evidence alone.
+- **entroCIM on-premises deployments use local DNS in the browser** (Darryl, direct, FRB chat) -- a technical note surfaced answering an FRB question, filed for reference.

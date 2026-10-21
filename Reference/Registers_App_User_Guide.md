@@ -161,3 +161,8 @@ Worked example, Dell on 2026-10-19: 9 High customer-visible issues (72) + 7 Medi
 
 **Where it comes from.** Claude infers Pulse issues from transcripts and evidence at each brief, adds a dated sighting to an existing issue when the forum raises it again, and proposes calls. Your escalations and notes are your word and are read first at the next brief. The header strip always shows Dell health and the number of open calls, on every tab.
 
+## Products tab (added 2026-10-21)
+
+One card per product you have marked live. Each card shows how fresh the product file is, how many entries were added in the window (7, 14 or 30 days; the choice is remembered on this device), the open register items by kind, and the newest entries with the item IDs they cite. Tap an ID to open the item. "Open register items" lists everything open that touches the product. A live product with nothing new still shows, and says so.
+
+Hide (bottom of a card) removes the product from the tab; the footer lists hidden products and Change lets you show one again. Both write to `Products/_products.json` and commit. Nothing is deleted.

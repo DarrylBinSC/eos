@@ -20,7 +20,7 @@
    ],
    "confirmed": true,
    "track": "delivery",
-   "last_evidence": "2026-10-20"
+   "last_evidence": "2026-10-21"
   },
   {
    "key": "entrocim-standup",
@@ -53,7 +53,7 @@
    "confirmed": true,
    "notes": "07 lists Darryl as Attend; confirm it is team-governed",
    "track": "development",
-   "last_evidence": "2026-10-20"
+   "last_evidence": "2026-10-21"
   },
   {
    "key": "dcoe-entrocim",

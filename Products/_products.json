@@ -87,7 +87,7 @@
     {
       "name": "i3 Alliance",
       "file": "Products/i3_Alliance.md",
-      "live": true,
+      "live": false,
       "aliases": [
         "i3",
         "Chuck Knight"
