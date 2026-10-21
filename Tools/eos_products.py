@@ -2,7 +2,7 @@
 """
 eos_products.py — the Products tab (added 2026-10-21).
 
-One card per live product in Products/_products.json: what changed in the product file in the
+One card per live product in Products/_products.json (a product may list several files, e.g. a supplier file under the product it supports): what changed in the product file in the
 last N days (dated `## ` sections), the register item IDs those entries cite, and the open register
 items that touch the product. Products with live: false are hidden and named in the tab footer.
 Darryl flips `live` in the tab. Standard library only; read by eos_server.py.
@@ -118,7 +118,13 @@ def summary(window: int = 14, today: str | None = None) -> dict:
         if not p.get("live"):
             hidden.append(p["name"])
             continue
-        secs = _sections(R.ROOT / p["file"])
+        files = p.get("files") or [p["file"]]
+        secs = []
+        for f in files:
+            for sec in _sections(R.ROOT / f):
+                sec["file"] = f
+                secs.append(sec)
+        secs.sort(key=lambda s: s["date"], reverse=True)
         recent = [s for s in secs if (today_d - dt.date.fromisoformat(s["date"])).days <= window]
         pats = _alias_res(p.get("aliases", []))
         linked = []
@@ -130,7 +136,7 @@ def summary(window: int = 14, today: str | None = None) -> dict:
         last = secs[0]["date"] if secs else ""
         age = (today_d - dt.date.fromisoformat(last)).days if last else None
         cards.append({
-            "name": p["name"], "file": p["file"], "live": True,
+            "name": p["name"], "file": ", ".join(files), "live": True,
             "last_entry": last, "age_days": age,
             "recent": recent, "entries_total": len(secs),
             "items": linked,

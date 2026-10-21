@@ -1,9 +1,8 @@
 {
-  "_note": "Product roster for the web app's Products tab (added 2026-10-21). live: true means the product always gets a card, whatever its activity; live: false hides it and lists its name in the tab footer. Darryl flips live in the tab. aliases match register item titles when the item's product field is blank.",
+  "_note": "Product roster for the web app's Products tab (added 2026-10-21). live: true means the product always gets a card, whatever its activity; live: false hides it and lists its name in the tab footer. Darryl flips live in the tab. aliases match register item titles when the item's product field is blank. A product may list `files` (several) instead of `file`; supplier and partner files sit under the product they support.",
   "products": [
     {
       "name": "entroCIM",
-      "file": "Products/entroCIM/entroCIM.md",
       "live": true,
       "aliases": [
         "entroCIM",
@@ -22,8 +21,17 @@
         "Texas Power",
         "Louvre",
         "Limerick",
-        "El Dorado"
-      ]
+        "El Dorado",
+        "JCI",
+        "Airwall",
+        "Tempered"
+      ],
+      "files": [
+        "Products/entroCIM/entroCIM.md",
+        "Products/JCI_Partnership.md",
+        "Products/JCI_Airwall_Competitive_Landscape.md"
+      ],
+      "_note": "JCI / Airwall folded in 2026-10-21 (Darryl): a supplier whose products support entroCIM deployments, not a product. Its files feed this card."
     },
     {
       "name": "WAM",
@@ -91,16 +99,6 @@
       "aliases": [
         "i3",
         "Chuck Knight"
-      ]
-    },
-    {
-      "name": "JCI / Airwall",
-      "file": "Products/JCI_Partnership.md",
-      "live": true,
-      "aliases": [
-        "JCI",
-        "Airwall",
-        "Tempered"
       ]
     },
     {
