@@ -76,7 +76,7 @@
     {
       "name": "CAT",
       "file": "Products/CAT/CAT.md",
-      "live": false,
+      "live": true,
       "aliases": [
         "CAT",
         "returnable",
