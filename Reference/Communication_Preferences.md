@@ -97,6 +97,10 @@ Titles that try to be descriptive read as AI-written. "Where the model came from
 
 The rule, tighter than the 08-28 version: **one or two words wherever the page allows it, a date qualifier where the sequence matters, and nothing that reads as a description of the page.** "Pricing model", "Funding path" and "What is needed" were cited as correct length and tone. The headline beneath the title carries the sentence; the title only names the page.
 
+### Document names and titles follow the same rule (added 2026-10-21, from Darryl)
+
+Darryl: "Our rule for slide names should extend to document names and titles as well." A document title (and the file name, which the footer and the email attachment both show) is a plain noun phrase that names the document, with a date where the sequence matters; it never describes the contents. "Strev Amendment No. 2 (AI Features): What Changed and What It Costs" was rejected as reading AI-generated; "Strev Amendment No. 2 Comparison" replaced it. The key takeaway or opening line carries the sentence.
+
 ## 3a. Financial and Metric Data (added 2026-07-14, from Darryl)
 
 Never present multiple financial metrics inline in prose — hard to read and comprehend. Use a compact labeled table or KPI chip strip (label above, bold value below), ordered so the layout tells the story (e.g., funnel order: pipeline → created → won → booked → billed), with one takeaway sentence beneath. Match existing deck visual language (e.g., value chips) where applicable.

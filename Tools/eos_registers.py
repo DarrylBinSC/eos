@@ -166,7 +166,7 @@ def next_id(prefix: str) -> str:
             m = re.fullmatch(rf"{prefix}(\d+)", p.stem)
             if m:
                 best = max(best, int(m.group(1)))
-    width = 3 if prefix in ("W", "D", "P") else 0
+    width = 3 if prefix in ("W", "D", "P", "K") else 0
     n = best + 1
     return f"{prefix}{n:0{width}d}" if width else f"{prefix}{n}"
 
