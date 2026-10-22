@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-22 09:39 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-22 10:04 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-08 to 2026-10-22. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -143,12 +143,6 @@ Governance: Sprint / backlog. Owner: David Blondel. Live 4, new this week 4, stu
 | P044 | About $10,000 of completed delivery work may not yet be invoiced |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
 | P045 | Automated weekly sales project updates paused: Rovo disabled pending AI approval |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
 
-## DCOE & entroCIM Weekly
-
-Governance: Release governance (DCOE). Owner: Balachandar Murali. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-10-05 (none in the window).
-
-No issues in the Pulse yet.
-
 ## Quest Migration Weekly Check-In
 
 Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stuck 1, quiet 0. Last sighting: 2026-10-20. Last evidence: 2026-10-21.
@@ -183,7 +177,7 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 0, quie
 
 ## WAM Product discussion
 
-Governance: Product execution. Owner: Akansh Gangil. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-09-09 (none in the window).
+Governance: Product execution. Owner: Akansh Gangil. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-10-22.
 
 No issues in the Pulse yet.
 
