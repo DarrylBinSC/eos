@@ -23,7 +23,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P013** Quest exit inventory: what must be retained and transferred to Wesco (no account; Quest Migration Weekly Check-In). Test: Still being raised 10+ business days after it was first raised.
 - **P035** Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed (Coca-Cola (TCCC); 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P037** Panama: additional control drawings needed; second-floor NetBotz and watchdog devices not yet procured or installed (Wesco Warehouse; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P044** About $10,000 of completed delivery work may not yet be invoiced (no account; entroCIM Backlog Deep Dive). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -144,7 +143,7 @@ Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stu
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
-| P013 | Quest exit inventory: what must be retained and transferred to Wesco |  | Babu Papanna; Shawn Clark | Medium | 2026-09-16 | 2026-10-20 | 2 | stuck, candidate: stuck |
+| P013 | Quest exit inventory: what must be retained and transferred to Wesco |  | Babu Papanna; Shawn Clark | Medium | 2026-09-16 | 2026-10-20 | 2 | stuck |
 | P047 | Azure BLOB Storage accessible via browser but not through the required Linux command-line transfer path |  | Shawn Clark | High | 2026-10-20 | 2026-10-20 | 1 |  |
 | P048 | MQTT cutover blocked pending DNS records and ports 1883/8883 |  | Chad Steger | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P049 | Azure conductor still set up for high availability; primary-role turnover not yet switched |  | Shawn Clark | High | 2026-10-20 | 2026-10-20 | 1 |  |
