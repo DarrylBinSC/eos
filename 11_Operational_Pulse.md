@@ -9,10 +9,10 @@
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
 | Dell | Worsening | +25 | 136 | 106 | 19 | 2 | 2 | 1 |
+| Federal Reserve | Worsening | +9 | 29 | 0 | 1 | 0 | 0 | 4 |
 | Wesco Warehouse | Worsening | +6 | 22 | 16 | 3 | 0 | 0 | 0 |
 | Coca-Cola (TCCC) | Worsening | +6 | 12 | 1 | 1 | 0 | 1 | 1 |
 | Marygrove | Worsening | +11 | 11 | 0 | 1 | 0 | 0 | 0 |
-| Federal Reserve | Steady | +3 | 23 | 0 | 0 | 0 | 0 | 4 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
 | Stanford | Steady | +0 | 10 | 0 | 0 | 0 | 0 | 2 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
@@ -43,6 +43,10 @@ No signals in the window: BAE, UWM.
 - **P044** About $10,000 of completed delivery work may not yet be invoiced (no account; entroCIM Backlog Deep Dive). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P045** Automated weekly sales project updates paused: Rovo disabled pending AI approval (no account; entroCIM Backlog Deep Dive). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P052** Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P057** Watchdog and UPS devices integration status unclear for Latin America sites; original-scope ownership not established (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
+- **P058** EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
+- **P060** Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up (no account; ADM connect with Natalie). Test: No owner, or the customer is unaware of a material problem.
+- **P062** FRB feedback: revised Graphics Builder documentation needs validation against their reported problem (Federal Reserve; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 
 ## Knowledge concentration
 
@@ -60,15 +64,15 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Akansh Gangil | 3 | 3 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
-| Chad Steger | 5 | 9 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Syed Jamshed Zaidi | 8 | 9 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
+| Akansh Gangil | 3 | 4 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Chad Steger | 5 | 11 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Syed Jamshed Zaidi | 8 | 12 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
 | Babu Papanna | 2 | 1 | 4 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Shawn Clark | 4 | 5 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Scott Dunn | 3 | 10 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Ron Snyder | 2 | 0 | 3 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
-| Matthew Heid | 4 | 7 | 0 | 0 | 2026 Deployment Daily Scrum |
-| Natalie Marquardt | 0 | 2 | 4 | 0 | ADM connect with Natalie |
+| Matthew Heid | 4 | 8 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Natalie Marquardt | 0 | 3 | 4 | 0 | ADM connect with Natalie |
 | Nathan Kehr | 0 | 0 | 4 | 0 |  |
 | Adam Lazare | 0 | 0 | 3 | 0 |  |
 | Amy Aguirre | 0 | 0 | 3 | 0 |  |
@@ -77,7 +81,7 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 23, new this week 8, stuck 2, quiet 3. Last sighting: 2026-10-21. Last evidence: 2026-10-21.
+Governance: Project management. Owner: Chad Steger. Live 26, new this week 11, stuck 2, quiet 3. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -104,12 +108,15 @@ Governance: Project management. Owner: Chad Steger. Live 23, new this week 8, st
 | P038 | Apex: four meter connectors ready but connectivity cannot be established; waiting on information from Robbie | Dell | Matthew Heid | Medium | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P024 | Standardized UPS/device point list for integration and alarm rules still unavailable | Dell |  | Medium | 2026-10-14 | 2026-10-21 | 2 | customer-visible |
 | P035 | Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed | Coca-Cola (TCCC) | Syed Jamshed Zaidi | Medium | 2026-10-20 | 2026-10-21 | 2 | customer-visible, candidate: boundary |
+| P057 | Watchdog and UPS devices integration status unclear for Latin America sites; original-scope ownership not established |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
+| P058 | EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
+| P059 | Newly added meter needs database cleanup; site name ambiguous (Annapolis or New York) |  | Babu C. Dinesh | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review.
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 13, new this week 6, stuck 0, quiet 0. Last sighting: 2026-10-21. Last evidence: 2026-10-21.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 15, new this week 8, stuck 0, quiet 0. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -124,6 +131,8 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 13, new this week 6, stuck 
 | P042 | entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19) |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P055 | Commissioning verification can run both immediately and on its normal cadence; some runs miss an estimated verification time |  | Keith Bishop | Medium | 2026-10-20 | 2026-10-20 | 1 |  |
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-10-21 | 3 |  |
+| P061 | HIS Express virtual-point UI stored constants as Y variables instead of literal values (hotfixed on demo one) |  | Michael Pieschel | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
+| P062 | FRB feedback: revised Graphics Builder documentation needs validation against their reported problem | Federal Reserve |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: boundary |
 | P054 | Tiles Grid Board text widget: additional issues found in testing, follow-up needed |  | Nisha More | Low | 2026-10-14 | 2026-10-14 | 1 |  |
 | P056 | Freshdesk gives limited feedback visibility; no notification or digest for article ratings |  | Mike Reed | Low | 2026-10-20 | 2026-10-20 | 1 |  |
 
@@ -202,15 +211,16 @@ No issues in the Pulse yet.
 
 ## ADM connect with Natalie
 
-Governance: Product execution. Owner: Akansh Gangil. Live 2, new this week 0, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-19.
+Governance: Product execution. Owner: Akansh Gangil. Live 3, new this week 1, stuck 0, quiet 0. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P034 | ADM renewal identification is manual and unreliable; renewal metrics cannot be sustained this way |  | Akansh Gangil | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible, candidate: asked |
+| P060 | Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
 | P033 | ADM removed/cancelled-orders page missing the removal-date column and export |  | Akansh Gangil | Low | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 
 ## Product Team / Platform Team connect
 
-Governance: Team practice. Owner: Keyur Patel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: none received (none in the window).
+Governance: Team practice. Owner: Keyur Patel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-10-21.
 
 No issues in the Pulse yet.
