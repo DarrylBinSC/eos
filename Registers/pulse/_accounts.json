@@ -14,8 +14,7 @@
     "New York",
     "Apex"
    ],
-   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16); Penang (incl. Penang 2), Singapore and New York are Dell sites (Darryl, 2026-10-19); Apex added 2026-10-20 from the Prompt 1 label and K005, confirm",
-   "pinned": true
+   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16); Penang (incl. Penang 2), Singapore and New York are Dell sites (Darryl, 2026-10-19); Apex added 2026-10-20 from the Prompt 1 label and K005, confirm"
   },
   {
    "name": "Wesco Warehouse",
@@ -70,7 +69,8 @@
    "type": "customer",
    "aliases": [
     "Louvre"
-   ]
+   ],
+   "pinned": true
   },
   {
    "name": "UWM",
