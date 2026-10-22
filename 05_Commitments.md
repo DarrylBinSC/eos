@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-22 08:49 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-22 08:53 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -115,7 +115,7 @@ Four registers. The delineation is the point.
 | C33 | Review supplier data for missing SLCs and dates and return it for correction | Natalie Marquardt | Awaited | Not stated | -- | 2026-10-15 | Natalie Marquardt: "I'll have a relook at that one." Business-quality gate for ADM supplier data |
 | C35 | Provide the Ford support scope document covering priorities and escalation process | Adam Lazare | Awaited | Not stated | **Critical** | 2026-10-01 | Adam Lazare: "There will be a forthcoming scope document provided laying out the new process including Priorities, Escalations, etc." UDAC coverage extended to 2026-10-01 meanwhile. |
 | C36 | Sponsor approval for the entroCIM AI (Woolly) initiative | Sean McCloskey | Awaited | After Ron Snyder's one-pager (B58) reaches AI Tech Review | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: a real gate, but nothing is waiting on Sean until Ron Snyder's one-pager (B58) exists. |
-| C37 | Confirm Ford renewal PO structure — one consolidated PO or separate POs | Tim Scott / Jeffrey Pizzo, Ford finance | Awaited | Not dated | -- | 2026-10-15 | New 08-27. |
+| C37 | Confirm Ford renewal PO structure — one consolidated PO or separate POs | Tim Scott / Jeffrey Pizzo, Ford finance | Awaited | Not dated | -- | 2026-10-22 | New 08-27. |
 | C38 | Determine Ford's approved secure remote-access method and provide requirements to Wesco | Tim Scott / Adam Lazare | Awaited | Not dated | -- | 2026-10-15 | New 08-27. |
 | C39 | Confirm current and future-state IDP document-volume assumptions (10 vs. 50 documents/day cited) | Owner unconfirmed — WAM/ADM/IDP team | Awaited | Not dated | -- | 2026-10-15 | Owed to Moe Aminlari. |
 | C40 | Send the FRB SASTEC agreement to Nathan Kehr for signature | Owner unclear (sender not named in evidence) | Awaited | Not dated | -- | 2026-10-19 | New 08-27. |
