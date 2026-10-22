@@ -23,7 +23,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P045** Automated weekly sales project updates paused: Rovo disabled pending AI approval (no account; entroCIM Backlog Deep Dive). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P052** Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P057** Watchdog and UPS devices integration status unclear for Latin America sites; original-scope ownership not established (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P058** EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
@@ -132,7 +131,7 @@ Governance: Sprint / backlog. Owner: David Blondel. Live 4, new this week 4, stu
 | P043 | Schneider OPC UA protocol decision and proof of concept pending; constrains further Dell GMS completion | Dell |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P046 | Marygrove: three open tickets; JACE down and customer IT cannot be reached | Marygrove |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P044 | About $10,000 of completed delivery work may not yet be invoiced |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 |  |
-| P045 | Automated weekly sales project updates paused: Rovo disabled pending AI approval |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
+| P045 | Automated weekly sales project updates paused: Rovo disabled pending AI approval |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 |  |
 
 ## Quest Migration Weekly Check-In
 
