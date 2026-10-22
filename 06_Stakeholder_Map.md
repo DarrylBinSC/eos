@@ -617,3 +617,7 @@ Source: M365 daily evidence package, reporting window 2026-10-13 to 2026-10-14. 
 - **Dayana Sayritupac** (Sayritupac Delgado) — Procurement Agent, Turner Construction, New Jersey Business Unit (dsayritupac@tcco.com). Answered Wesco's six bid questions on 2026-10-20; the procurement counterpart for BP #43. Cites RFI numbers and Bid Supplement 01 line items precisely; answer in the same form.
 - **Justin Barbely, Michael Erickson, Keith Shuda** — Turner NJ, copied on the bid question thread; roles unconfirmed.
 - **Sarah Monteleone** (existing entry) — runs the Turner question-and-answer exchange for this bid as Enterprise Account Manager, Wesco | entroCIM Team, IoT & Platform Sales Group. Routes Turner's answers to Leanne Gordon and Valli Poornakumar for the pricing response (due 2026-10-21). Not confirmed as bid owner; see `W026`.
+
+## Updates 2026-10-22 (daily evidence)
+
+- **Jeffrey (J.) Pizzo** (new) — Ford, finance/decision-making role. Approved Ford's 2027 plan pending one further step, "it's gotta go through the buyer"; agreed to a monthly Wesco/Ford touchpoint cadence ("I agree with we we should be good with a monthly"). First appearance in the record; role and title not otherwise stated in evidence. See `07` (new monthly forum) and `Products/entroCIM/entroCIM.md`.

@@ -75,6 +75,7 @@ Forums marked **By exception** that run on a team's own governance (a project pr
 | WAM / External BIR: 2517699 Actuals | Monthly | John Erickson | WAM actuals/reporting | Attend |
 | Wesco / SkyFoundry | Monthly | Darryl | Ecosystem coordination (Xeto) | Own |
 | BAE/Wesco Weekly | Weekly | Kevin Cochran | External customer cadence | Attend |
+| Wesco & Ford - entroCIM Platform/Program Touchpoint Call (new 2026-10-21) | Monthly | Adam Lazare | Cross-functional Ford/Wesco alignment; Jeffrey Pizzo (Ford) agreed to the monthly cadence 2026-10-21 | Attend |
 | Smart Buildings Issues Log Catch-Up | Bi-weekly | Raj Ramroop | External issue-log forum | By exception |
 | Weekly Time Report Reminder | Weekly | John Erickson | Admin | Ignore (admin) |
 

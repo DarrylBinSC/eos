@@ -532,6 +532,8 @@ def summary(today=None, write_snapshot: bool = False) -> dict:
     win_start = (today - _dt.timedelta(days=WINDOW_DAYS)).isoformat()
     frows = []
     for f in forums:
+        if not f.get("active", True):
+            continue
         ms = [m for m, _b, _p in pulse if m.get("forum") == f.get("key")]
         live = [m for m in ms if state(m, today) == "live"]
         frows.append({

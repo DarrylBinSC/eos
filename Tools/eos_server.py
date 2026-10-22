@@ -82,7 +82,7 @@ def copilot_prompts(today: dt.date | None = None) -> dict:
     issues = [m for m, _b, _p in R.load_items("pulse")]
     out = []
     for n, track, label in PROMPT_TRACKS:
-        tf = [f for f in forums if f.get("track") == track]
+        tf = [f for f in forums if f.get("track") == track and f.get("active", True)]
         rows = []
         for f in tf:
             due, why = _forum_due(f, today)
