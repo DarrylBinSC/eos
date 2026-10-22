@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-22 09:28 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-22 13:28 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-08 to 2026-10-22. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -163,18 +163,6 @@ Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stu
 | P051 | Quest requesting additional $245/hour T&M on top of about $6,600/month; renewal and cancellation date unconfirmed |  |  | High | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
 | P052 | Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
 
-## Showcase recurring
-
-Governance: Project management. Owner: David Blondel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: none received (none in the window).
-
-No issues in the Pulse yet.
-
-## Deployment Team Knowledge Share
-
-Governance: Team practice. Owner: TBC. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: none received (none in the window).
-
-No issues in the Pulse yet.
-
 ## WAM Product Backlog Refinement
 
 Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-13.
@@ -192,12 +180,6 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 0, quie
 |---|---|---|---|---|---|---|---|---|
 | P021 | EUDM truncates manufacturer part numbers over 15 characters, causing ADM data loss |  |  | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible, escalated to W016 |
 | P022 | Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion |  |  | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
-
-## WAM India Dev Team weekly
-
-Governance: Sprint. Owner: TBC. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: none received (none in the window).
-
-No issues in the Pulse yet.
 
 ## WAM Product discussion
 
