@@ -23,7 +23,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P052** Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P057** Watchdog and UPS devices integration status unclear for Latin America sites; original-scope ownership not established (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P058** EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P060** Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up (no account; ADM connect with Natalie). Test: No owner, or the customer is unaware of a material problem.
@@ -145,7 +144,7 @@ Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stu
 | P049 | Azure conductor still set up for high availability; primary-role turnover not yet switched |  | Shawn Clark | High | 2026-10-20 | 2026-10-20 | 1 |  |
 | P050 | Libro may fail through the new conductor pending an outbound-IP or relay configuration change |  | Shawn Clark | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P051 | Quest requesting additional $245/hour T&M on top of about $6,600/month; renewal and cancellation date unconfirmed |  |  | High | 2026-10-20 | 2026-10-20 | 1 |  |
-| P052 | Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
+| P052 | Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 |  |
 
 ## WAM Product Backlog Refinement
 
