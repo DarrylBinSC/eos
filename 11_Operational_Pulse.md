@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-22 10:13 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-22 10:15 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-08 to 2026-10-22. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -31,6 +31,10 @@ No signals in the window: BAE, UWM.
 - **P049** Azure conductor still set up for high availability; primary-role turnover not yet switched (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P050** Libro may fail through the new conductor pending an outbound-IP or relay configuration change (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P051** Quest requesting additional $245/hour T&M on top of about $6,600/month; renewal and cancellation date unconfirmed (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P063** Chennai: all entroCIM connectors down, BACnet IDs do not match the spreadsheet (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P064** Israel: all alarm points unbound (discrepancy 1273), needs Scott Dunn or Elias Brewer (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P066** Argentina: watchdog connectors flapping connected/disconnected within a minute, source unidentified (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P067** Customer alarm-audit request: scope undefined, could run ~400 hours or consume the SME allocation (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P003** Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P013** Quest exit inventory: what must be retained and transferred to Wesco (no account; Quest Migration Weekly Check-In). Test: Still being raised 10+ business days after it was first raised.
 - **P035** Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed (Coca-Cola (TCCC); 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -42,6 +46,7 @@ No signals in the window: BAE, UWM.
 - **P058** EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P060** Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up (no account; ADM connect with Natalie). Test: No owner, or the customer is unaware of a material problem.
 - **P062** FRB feedback: revised Graphics Builder documentation needs validation against their reported problem (Federal Reserve; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P065** No formal integration QA/QC checklist for closeout (alarm, fault-management, graphics, database, point-addition) (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 
 ## Knowledge concentration
 
@@ -60,13 +65,13 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
 | Akansh Gangil | 3 | 4 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
-| Chad Steger | 5 | 11 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Syed Jamshed Zaidi | 8 | 12 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
+| Chad Steger | 6 | 12 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Syed Jamshed Zaidi | 8 | 17 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
 | Babu Papanna | 2 | 1 | 4 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Matthew Heid | 5 | 9 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Shawn Clark | 4 | 5 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Scott Dunn | 3 | 10 | 2 | 0 | 2026 Deployment Daily Scrum |
+| Scott Dunn | 3 | 11 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Ron Snyder | 2 | 0 | 3 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
-| Matthew Heid | 4 | 8 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Natalie Marquardt | 0 | 3 | 4 | 0 | ADM connect with Natalie |
 | Nathan Kehr | 0 | 0 | 4 | 0 |  |
 | Adam Lazare | 0 | 0 | 3 | 0 |  |
@@ -76,7 +81,7 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 26, new this week 11, stuck 2, quiet 3. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
+Governance: Project management. Owner: Chad Steger. Live 31, new this week 16, stuck 2, quiet 3. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -93,6 +98,10 @@ Governance: Project management. Owner: Chad Steger. Live 26, new this week 11, s
 | P002 | Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches | Dell | Syed Jamshed Zaidi | High | 2026-10-13 | 2026-10-20 | 4 | customer-visible |
 | P036 | Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site | Dell | Matthew Heid | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible, candidate: boundary |
 | P001 | PC1 Grid Board site-selection defect blocking the KWH report and dashboard | Dell |  | High | 2026-10-13 | 2026-10-22 | 4 | customer-visible |
+| P063 | Chennai: all entroCIM connectors down, BACnet IDs do not match the spreadsheet |  |  | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: boundary |
+| P064 | Israel: all alarm points unbound (discrepancy 1273), needs Scott Dunn or Elias Brewer |  |  | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: boundary |
+| P066 | Argentina: watchdog connectors flapping connected/disconnected within a minute, source unidentified |  | Matthew Heid | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: boundary |
+| P067 | Customer alarm-audit request: scope undefined, could run ~400 hours or consume the SME allocation |  | Chad Steger | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: boundary |
 | P016 | Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation | Dell | Matthew Heid | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 | P025 | Dell "three-creatures" requirements undefined; related work waits on a Dell workshop | Dell | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 | P026 | New York: two meters in commissioning, two with connection issues | Dell | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
@@ -106,6 +115,7 @@ Governance: Project management. Owner: Chad Steger. Live 26, new this week 11, s
 | P057 | Watchdog and UPS devices integration status unclear for Latin America sites; original-scope ownership not established |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
 | P058 | EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
 | P059 | Newly added meter needs database cleanup; site name ambiguous (Annapolis or New York) |  | Babu C. Dinesh | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
+| P065 | No formal integration QA/QC checklist for closeout (alarm, fault-management, graphics, database, point-addition) |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review.
 

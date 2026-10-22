@@ -20,7 +20,7 @@
       ],
       "confirmed": true,
       "track": "delivery",
-      "last_evidence": "2026-10-21",
+      "last_evidence": "2026-10-22",
       "active": true
     },
     {
@@ -39,7 +39,7 @@
       ],
       "confirmed": true,
       "track": "development",
-      "last_evidence": "2026-10-21",
+      "last_evidence": "2026-10-22",
       "active": true
     },
     {
