@@ -11,10 +11,10 @@
 | Dell | Worsening | +19 | 127 | 103 | 19 | 2 | 2 | 1 |
 | Federal Reserve | Worsening | +6 | 26 | 0 | 1 | 0 | 0 | 4 |
 | Wesco Warehouse | Worsening | +6 | 22 | 16 | 3 | 0 | 0 | 0 |
-| Coca-Cola (TCCC) | Worsening | +6 | 12 | 1 | 1 | 0 | 1 | 1 |
 | Marygrove | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
 | Stanford | Steady | +0 | 10 | 0 | 0 | 0 | 0 | 2 |
+| Coca-Cola (TCCC) | Steady | +3 | 9 | 1 | 1 | 0 | 1 | 1 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 
 Load = live high visible x8, live high x6, live medium x3, live low x1, stuck x4, quiet x1, candidate x3, at your level x5. Trend = change in the team-raised load over 7 days, rebuilt from the dates meetings raised each issue; Worsening or Improving when it moves by at least 5 points and 15% of last week's load, otherwise Steady. Your register items are in the load but not the trend (no dated history). Friction from evidence, not customer sentiment.
@@ -23,7 +23,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P035** Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed (Coca-Cola (TCCC); 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P037** Panama: additional control drawings needed; second-floor NetBotz and watchdog devices not yet procured or installed (Wesco Warehouse; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P044** About $10,000 of completed delivery work may not yet be invoiced (no account; entroCIM Backlog Deep Dive). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P045** Automated weekly sales project updates paused: Rovo disabled pending AI approval (no account; entroCIM Backlog Deep Dive). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -97,7 +96,7 @@ Governance: Project management. Owner: Chad Steger. Live 31, new this week 16, s
 | P037 | Panama: additional control drawings needed; second-floor NetBotz and watchdog devices not yet procured or installed | Wesco Warehouse |  | Medium | 2026-10-20 | 2026-10-20 | 1 | customer-visible, candidate: gap |
 | P038 | Apex: four meter connectors ready but connectivity cannot be established; waiting on information from Robbie | Dell | Matthew Heid | Medium | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P024 | Standardized UPS/device point list for integration and alarm rules still unavailable | Dell |  | Medium | 2026-10-14 | 2026-10-21 | 2 | customer-visible |
-| P035 | Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed | Coca-Cola (TCCC) | Syed Jamshed Zaidi | Medium | 2026-10-20 | 2026-10-21 | 2 | customer-visible, candidate: boundary |
+| P035 | Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed | Coca-Cola (TCCC) | Syed Jamshed Zaidi | Medium | 2026-10-20 | 2026-10-21 | 2 | customer-visible |
 | P057 | Watchdog and UPS devices integration status unclear for Latin America sites; original-scope ownership not established |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
 | P058 | EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
 | P059 | Newly added meter needs database cleanup; site name ambiguous (Annapolis or New York) |  | Babu C. Dinesh | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
