@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +22 | 133 | 106 | 19 | 2 | 2 | 1 |
+| Dell | Worsening | +19 | 130 | 106 | 19 | 2 | 2 | 1 |
 | Federal Reserve | Worsening | +6 | 26 | 0 | 1 | 0 | 0 | 4 |
 | Wesco Warehouse | Worsening | +6 | 22 | 16 | 3 | 0 | 0 | 0 |
 | Coca-Cola (TCCC) | Worsening | +6 | 12 | 1 | 1 | 0 | 1 | 1 |
@@ -23,7 +23,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P036** Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P003** Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P013** Quest exit inventory: what must be retained and transferred to Wesco (no account; Quest Migration Weekly Check-In). Test: Still being raised 10+ business days after it was first raised.
 - **P035** Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed (Coca-Cola (TCCC); 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -85,7 +84,7 @@ Governance: Project management. Owner: Chad Steger. Live 31, new this week 16, s
 | P027 | Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara | Dell |  | High | 2026-10-15 | 2026-10-15 | 1 | customer-visible |
 | P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-15 | 4 | customer-visible |
 | P002 | Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches | Dell | Syed Jamshed Zaidi | High | 2026-10-13 | 2026-10-20 | 4 | customer-visible |
-| P036 | Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site | Dell | Matthew Heid | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible, candidate: boundary |
+| P036 | Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site | Dell | Matthew Heid | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P001 | PC1 Grid Board site-selection defect blocking the KWH report and dashboard | Dell |  | High | 2026-10-13 | 2026-10-22 | 4 | customer-visible |
 | P063 | Chennai: all entroCIM connectors down, BACnet IDs do not match the spreadsheet |  |  | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
 | P064 | Israel: all alarm points unbound (discrepancy 1273), needs Scott Dunn or Elias Brewer |  |  | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
