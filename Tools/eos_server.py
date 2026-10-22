@@ -87,7 +87,8 @@ def copilot_prompts(today: dt.date | None = None) -> dict:
         for f in tf:
             due, why = _forum_due(f, today)
             rows.append({"key": f.get("key"), "name": f.get("name"), "aliases": f.get("aliases") or [],
-                         "cadence": f.get("cadence") or "", "due": due, "why": why})
+                         "cadence": f.get("cadence") or "", "due": due, "why": why,
+                         "last_evidence": f.get("last_evidence") or ""})
         due_rows = [r for r in rows if r["due"]]
         starts = []
         for r in due_rows:
@@ -170,8 +171,15 @@ def copilot_all(today: dt.date | None = None) -> dict:
         steps.append(("skip", "Weekend: no Daily or Weekly prompt today"))
     need = [o for o in pulse["prompts"] if o["needed"]]
     if need:
-        steps.append(("todo", " and ".join(f'Pulse Prompt {o["n"]} ({o["label"]})' for o in need)
-                      + (", each in its own new Copilot chat" if len(need) == 2 else "")))
+        today_s = today.isoformat()
+        touched_today = any(r["last_evidence"] == today_s for o in need for r in o["forums"])
+        still_due = sum(1 for o in need for r in o["forums"] if r["due"])
+        base = (" and ".join(f'Pulse Prompt {o["n"]} ({o["label"]})' for o in need)
+                + (", each in its own new Copilot chat" if len(need) == 2 else ""))
+        if touched_today:
+            steps.append(("partial", base + f", partial: ran today, {still_due} forum(s) still not heard within cadence"))
+        else:
+            steps.append(("todo", base))
     else:
         steps.append(("done", "Pulse prompts: nothing needed, every forum heard within its cadence"))
     return {"today": today.isoformat(), "weekday": today.strftime("%A"), "steps": steps, "fixed": fixed, "pulse": pulse}
@@ -1821,7 +1829,7 @@ document.addEventListener('change',e=>{const s=e.target.closest('[data-tocsel]')
 let CPR=null;
 async function openPrompts(){try{CPR=await (await fetch('/api/copilot')).json()}catch(e){toast('Could not build the prompts');return}
   SEL=null;const P=CPR.pulse;
-  const stp=CPR.steps.map((s,i)=>`<li class="cs ${s[0]}"><span class="ck">${s[0]==='done'?'✓':s[0]==='skip'?'–':i+1}</span><span>${esc(s[1])}</span></li>`).join('');
+  const stp=CPR.steps.map((s,i)=>`<li class="cs ${s[0]}"><span class="ck">${s[0]==='done'?'✓':s[0]==='skip'||s[0]==='partial'?'–':i+1}</span><span>${esc(s[1])}</span></li>`).join('');
   const fx=o=>`<section class="cp${o.today&&!o.done?' need':''}"><div class="cp-h"><b>${esc(o.label)}</b><span class="cp-b ${o.today&&!o.done?'y':'n'}">${o.today?(o.done?'Done today':'Today'):'Not today'}</span></div>
     <div class="cp-m">${esc(o.sub)} Last package saved: ${o.last?fmt(o.last):'none'}.</div>
     <button type="button" class="btn${o.today&&!o.done?' primary':''}" data-cpy="${o.id}">Copy ${esc(o.label)}</button>
