@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +25 | 136 | 106 | 19 | 2 | 2 | 1 |
+| Dell | Worsening | +22 | 133 | 106 | 19 | 2 | 2 | 1 |
 | Federal Reserve | Worsening | +6 | 26 | 0 | 1 | 0 | 0 | 4 |
 | Wesco Warehouse | Worsening | +6 | 22 | 16 | 3 | 0 | 0 | 0 |
 | Coca-Cola (TCCC) | Worsening | +6 | 12 | 1 | 1 | 0 | 1 | 1 |
@@ -24,7 +24,6 @@ No signals in the window: BAE, UWM.
 ## Needs your call
 
 - **P036** Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
-- **P043** Schneider OPC UA protocol decision and proof of concept pending; constrains further Dell GMS completion (Dell; entroCIM Backlog Deep Dive). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P049** Azure conductor still set up for high availability; primary-role turnover not yet switched (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P050** Libro may fail through the new conductor pending an outbound-IP or relay configuration change (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P051** Quest requesting additional $245/hour T&M on top of about $6,600/month; renewal and cancellation date unconfirmed (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -143,7 +142,7 @@ Governance: Sprint / backlog. Owner: David Blondel. Live 4, new this week 4, stu
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
-| P043 | Schneider OPC UA protocol decision and proof of concept pending; constrains further Dell GMS completion | Dell |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible, candidate: boundary |
+| P043 | Schneider OPC UA protocol decision and proof of concept pending; constrains further Dell GMS completion | Dell |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P046 | Marygrove: three open tickets; JACE down and customer IT cannot be reached | Marygrove |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P044 | About $10,000 of completed delivery work may not yet be invoiced |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
 | P045 | Automated weekly sales project updates paused: Rovo disabled pending AI approval |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
