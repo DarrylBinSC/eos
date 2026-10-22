@@ -8,12 +8,12 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Stanford | Steady | +0 | 10 | 0 | 0 | 0 | 0 | 2 |
+| Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
 | Dell | Worsening | +19 | 127 | 103 | 19 | 2 | 2 | 1 |
 | Federal Reserve | Worsening | +6 | 26 | 0 | 1 | 0 | 0 | 4 |
 | Marygrove | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
 | Wesco Warehouse | Steady | +3 | 19 | 16 | 3 | 0 | 0 | 0 |
-| Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
+| Stanford | Steady | +0 | 10 | 0 | 0 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Steady | +3 | 9 | 1 | 1 | 0 | 1 | 1 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 

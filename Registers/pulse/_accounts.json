@@ -30,7 +30,8 @@
    "aliases": [
     "UDAC",
     "Rouge"
-   ]
+   ],
+   "pinned": true
   },
   {
    "name": "Federal Reserve",
@@ -62,8 +63,7 @@
   {
    "name": "Stanford",
    "type": "customer",
-   "aliases": [],
-   "pinned": true
+   "aliases": []
   },
   {
    "name": "Louvre Abu Dhabi",
