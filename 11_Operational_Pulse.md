@@ -12,7 +12,7 @@
 | Federal Reserve | Worsening | +6 | 26 | 0 | 1 | 0 | 0 | 4 |
 | Wesco Warehouse | Worsening | +6 | 22 | 16 | 3 | 0 | 0 | 0 |
 | Coca-Cola (TCCC) | Worsening | +6 | 12 | 1 | 1 | 0 | 1 | 1 |
-| Marygrove | Worsening | +11 | 11 | 0 | 1 | 0 | 0 | 0 |
+| Marygrove | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
 | Stanford | Steady | +0 | 10 | 0 | 0 | 0 | 0 | 2 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
@@ -25,7 +25,6 @@ No signals in the window: BAE, UWM.
 
 - **P036** Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P043** Schneider OPC UA protocol decision and proof of concept pending; constrains further Dell GMS completion (Dell; entroCIM Backlog Deep Dive). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
-- **P046** Marygrove: three open tickets; JACE down and customer IT cannot be reached (Marygrove; entroCIM Backlog Deep Dive). Test: No owner, or the customer is unaware of a material problem.
 - **P047** Azure BLOB Storage accessible via browser but not through the required Linux command-line transfer path (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P048** MQTT cutover blocked pending DNS records and ports 1883/8883 (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P049** Azure conductor still set up for high availability; primary-role turnover not yet switched (no account; Quest Migration Weekly Check-In). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -147,7 +146,7 @@ Governance: Sprint / backlog. Owner: David Blondel. Live 4, new this week 4, stu
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P043 | Schneider OPC UA protocol decision and proof of concept pending; constrains further Dell GMS completion | Dell |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible, candidate: boundary |
-| P046 | Marygrove: three open tickets; JACE down and customer IT cannot be reached | Marygrove |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible, candidate: gap |
+| P046 | Marygrove: three open tickets; JACE down and customer IT cannot be reached | Marygrove |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P044 | About $10,000 of completed delivery work may not yet be invoiced |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
 | P045 | Automated weekly sales project updates paused: Rovo disabled pending AI approval |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | candidate: boundary |
 
