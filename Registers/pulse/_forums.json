@@ -71,7 +71,10 @@
       "confirmed": true,
       "track": "development",
       "last_evidence": "2026-10-05",
-      "active": true
+      "active": false,
+      "retired_date": "2026-10-22",
+      "retired_by": "Darryl, chat, 2026-10-22",
+      "retired_note": "Last heard 2026-10-05, 17 days stale with no replacement name found. Darryl confirmed 'DCOE & entroCIM Weekly' is one combined meeting, not two; retiring the whole forum. Reenable if it surfaces again."
     },
     {
       "key": "quest-migration",
@@ -186,8 +189,8 @@
       "aliases": [],
       "confirmed": true,
       "track": "development",
-      "last_evidence": "2026-09-09",
-      "notes": "2026-10-19 (Darryl): a different meeting from WAM - Product Backlog Refinement; do not merge. Not found under this name in the 10-19 sweep; current calendar title to be confirmed.",
+      "last_evidence": "2026-10-22",
+      "notes": "2026-10-19 (Darryl): a different meeting from WAM - Product Backlog Refinement; do not merge. Not found under this name in the 10-19 sweep; current calendar title to be confirmed. 2026-10-22 (Darryl, chat): the WAM Product discussion meeting happened this morning. No content reviewed yet; last_evidence set from his word alone. A sweep or pasted evidence is still needed to capture anything actually raised.",
       "active": true
     },
     {
