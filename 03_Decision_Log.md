@@ -22,6 +22,27 @@
 
 ## Decisions Made
 
+### 2026-10-22 — Strev SOW 3: no SOW4 commitment; team stays focused on closing SOW 3
+- Status: Made (Darryl, 2026-10-22)
+- Owner: Darryl Benson
+- Context: Raised in the Hold - Problem Definition & Brainstorming: WAM Data Challenges session while SOW 3 closure is still unresolved (invoice held, `05` B102, two days overdue as of 2026-10-23).
+- Options considered: open SOW4 scoping in parallel; hold all new scope until SOW3 closes.
+- Decision / Recommended path: "They need to focus on SOW3." No SOW4 commitment while SOW3 deliverables, bugs and the notification mechanism remain unvalidated.
+- Risk of waiting (if open): n/a, decided.
+- Forum where this should be decided: decided in session, 2026-10-22.
+- Follow-up: tracked through B102's closure; re-raise SOW4 only after B102 closes.
+
+### 2026-10-22 — entroCIM training: commercial packaging can flex, delivery model stays course-based
+- Status: Made (Darryl, 2026-10-22)
+- Owner: Darryl Benson
+- Context: entroCIM Training Course Pricing Framework Overview & Next Steps session, operationalizing the rate card set 2026-10-06 ($250/learner, 5-minimum, 20-maximum).
+- Options considered: n/a — confirming the already-set framework's rollout, not a new design choice.
+- Decision / Recommended path: "You can blend it into your overall pricing, but this is how we're going to deliver." Deal-level commercial packaging may vary; the underlying delivery model (named courses, per-learner pricing) does not.
+- Risk of waiting (if open): n/a, decided.
+- Forum where this should be decided: decided in session, 2026-10-22.
+- Follow-up: Leanne Gordon to receive a cost from the product team (Darryl: "get your cost"); operational, no further decision needed.
+
+
 ### 2026-10-20 — Registers app: live refresh by polling a file fingerprint, not server push
 - Status: Made (Darryl, 2026-10-20)
 - Owner: Darryl
@@ -832,7 +853,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-23 10:24 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-23 10:29 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
 

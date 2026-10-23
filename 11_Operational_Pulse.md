@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-23 10:24 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-23 10:29 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-09 to 2026-10-23. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -28,6 +28,8 @@ No signals in the window: BAE, UWM.
 - **P060** Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up (no account; ADM connect with Natalie). Test: No owner, or the customer is unaware of a material problem.
 - **P062** FRB feedback: revised Graphics Builder documentation needs validation against their reported problem (Federal Reserve; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P065** No formal integration QA/QC checklist for closeout (alarm, fault-management, graphics, database, point-addition) (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
+- **P068** WAM renewal recommendation feature: quality rejected, rework from start (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
+- **P070** Commissioning app test-tracking coverage incomplete: tracks fields, not everything; no formal owner (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 
 ## Knowledge concentration
 
@@ -45,7 +47,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Akansh Gangil | 3 | 4 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Akansh Gangil | 3 | 5 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Chad Steger | 6 | 12 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Syed Jamshed Zaidi | 8 | 17 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
 | Babu Papanna | 2 | 1 | 4 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
@@ -62,7 +64,7 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 31, new this week 12, stuck 2, quiet 3. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
+Governance: Project management. Owner: Chad Steger. Live 31, new this week 12, stuck 2, quiet 3. Last sighting: 2026-10-22. Last evidence: 2026-10-23.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -102,7 +104,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P008 De
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 14, new this week 6, stuck 0, quiet 0. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 16, new this week 8, stuck 0, quiet 0. Last sighting: 2026-10-22. Last evidence: 2026-10-23.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -118,6 +120,8 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 14, new this week 6, stuck 
 | P031 | SkySpark connectors failing in test: Energy Direct and others returning no data; 403 environment APIs returning HTTP 410 |  | Abhishek Savanur | Medium | 2026-10-13 | 2026-10-22 | 5 |  |
 | P061 | HIS Express virtual-point UI stored constants as Y variables instead of literal values (hotfixed on demo one) |  | Michael Pieschel | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
 | P062 | FRB feedback: revised Graphics Builder documentation needs validation against their reported problem | Federal Reserve |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: boundary |
+| P069 | Another sensorless-connector defect found in testing; pod created, deployment pending |  | Abhishek Savanur | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
+| P070 | Commissioning app test-tracking coverage incomplete: tracks fields, not everything; no formal owner |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
 | P056 | Freshdesk gives limited feedback visibility; no notification or digest for article ratings |  | Mike Reed | Low | 2026-10-20 | 2026-10-20 | 1 |  |
 | P054 | Tiles Grid Board text widget: additional issues found in testing, follow-up needed |  | Nisha More | Low | 2026-10-14 | 2026-10-21 | 2 |  |
 
@@ -148,12 +152,13 @@ Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stu
 
 ## WAM Product Backlog Refinement
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-13.
+Governance: Sprint. Owner: Sakshi Mathur. Live 3, new this week 1, stuck 0, quiet 0. Last sighting: 2026-10-23. Last evidence: 2026-10-23.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P019 | WAM production: cancelled orders appear in export; expiry-chip criteria need validation |  | Bhupathi | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 | P020 | WAM historical upload mishandles one customer ID with different names; duplicate ETL error records |  | Akansh Gangil | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
+| P068 | WAM renewal recommendation feature: quality rejected, rework from start |  |  | Medium | 2026-10-23 | 2026-10-23 | 1 | candidate: gap |
 
 ## WAM Sprint Review
 
