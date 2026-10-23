@@ -1,8 +1,8 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-22 11:18 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-23 10:24 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-> Rolling window 2026-10-08 to 2026-10-22. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
+> Rolling window 2026-10-09 to 2026-10-23. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
 ## Account health
 
@@ -62,7 +62,7 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 31, new this week 16, stuck 2, quiet 3. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
+Governance: Project management. Owner: Chad Steger. Live 31, new this week 12, stuck 2, quiet 3. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -102,7 +102,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P008 De
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 14, new this week 7, stuck 0, quiet 0. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 14, new this week 6, stuck 0, quiet 0. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -157,12 +157,12 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 0, quie
 
 ## WAM Sprint Review
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 0, quiet 0. Last sighting: 2026-10-13. Last evidence: 2026-10-13.
+Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 0, quiet 0. Last sighting: 2026-10-23. Last evidence: 2026-10-23.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
-| P021 | EUDM truncates manufacturer part numbers over 15 characters, causing ADM data loss |  |  | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible, escalated to W016 |
-| P022 | Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion |  |  | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
+| P022 | Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion |  |  | High | 2026-10-13 | 2026-10-22 | 2 | customer-visible |
+| P021 | EUDM truncates manufacturer part numbers over 15 characters, causing ADM data loss |  |  | High | 2026-10-13 | 2026-10-23 | 2 | customer-visible, escalated to W016 |
 
 ## WAM Product discussion
 
