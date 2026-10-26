@@ -1072,7 +1072,20 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 79.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 80.*
+
+### 2026-10-26 — Woolly becomes a paid SkyFoundry add-on from 2027-05-01: pass-through, absorb, or bundle in entroCIM AI pricing
+- ID: D097
+- Status: Approaching, unforumed
+- Owner: Darryl (pricing posture); Ron Snyder (SkyFoundry price and terms); David Blondel (entroCIM AI pricing model)
+- Forum: Monthly Wesco/SkyFoundry coordination forum for the price; Digital Products Portfolio Review for the pricing posture (neither dated)
+- Next action: Get the server pro add-on price and licensing unit from SkyFoundry (per server, per instance, per customer); check whether Keith Bishop or Chad Steger heard a number at SkyPosium
+- Context: SkyFoundry 4.0.7 release notes (2026-10-23): "We are offering Woolly at no charge until 1-May-2027, after which a 'server pro' add-on will be required." The 4.0.6 notes (07-21) said Woolly and Ion Creator would be priced separately from SkySpark with detail at SkyPosium; this is the first dated statement, and it names the mechanism (a per-server add-on) but not the price.
+- Why it is Darryl's: the Woolly launch is targeted for Q1 2027 with entroCIM 4 (`03` 2026-10-14), inside the free window. Every customer instance running Woolly after 2027-05-01 carries a SkyFoundry cost that the stated entroCIM AI commercial model (customer supplies LLM API keys, Wesco charges for the AI layer) does not account for. The FY27 entroCIM P&L carries no line for it.
+- Options: pass the add-on through to the customer as a SkyFoundry license line; absorb it inside entroCIM AI pricing; bundle it into the entroCIM licensing tier that includes AI; or launch without Woolly enabled on customer instances until the price is known.
+- Risk of waiting: entroCIM AI is priced or quoted (FRBNY BP43, Dell, Stanford renewal structure) before the add-on cost is known, and the Q1 2027 launch creates installed instances that become billable on 2027-05-01 with no commercial cover.
+- Information still needed: the add-on price and unit; whether partner or OEM terms apply to Wesco; whether the add-on is required for AiRoutines and API-only skill calls as well as the chat view; what SkyPosium attendees heard.
+- Backlog, not Radar: no forum date yet. Route at the next monthly SkyFoundry forum once its date is in `07`.
 
 ### 2026-10-20 — Stanford renewal: three licenses back to SkySpark-only, how Wesco supports the roll-back and what happens to the Commissioning App
 - ID: D096
