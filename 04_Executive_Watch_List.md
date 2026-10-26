@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-10-26 09:33 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-26 09:49 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 20 (ceiling 20) · Passive 53 · Retired 26.
+**Counts at generation:** Active 21 (ceiling 20) · Passive 52 · Retired 26.
 
 ## Active
 
@@ -33,6 +33,7 @@
 | W006 | Strev AI Feature Pack: unpriced consumption commitment with no budget home | High | ↑ | Direct (Revnue v2.5 entitlement document, May 2026; Lisa Orton email 2026-09-15; Wesco WAM cost model; Amy Aguirre call transcript 2026-09-17; Revnue draft Amendment No. 2, received 2026-10-21) | 2026-10-26 | Two Strev AI use cases entered UiPath intake on 2026-09-15. |
 | W015 | AI adoption governance + team assignment | High | → | Direct (All Hands 07-13; Agile Staff 07-14; Portfolio Review 07-20; SkyFoundry 07-21; IDP/WAM + Agile Staff 07-22; WAM Data Challenges 07-22/23; weekly evidence 07-27; WAM Data Challenges 07-30; entroCIM Backlog Deep Dive + Claude Code Enablement 08-12; AI Council \| Ice Breaker \| Discussion on entroCIM AI, 08-19; Darryl session 08-25) | 2026-10-26 | 08-19: the Woolly/entroCIM AI evaluation thread advanced with a formal governance path. |
 | W008 | Ford entroCIM (UDAC) renewal and platform-trust gap | Medium | ↑ | Direct (`Wesco & Ford - entroCIM Platform - Re-Alignment & Action Item Call`, 08-26; RE: SLA Verbiage email thread, weekly evidence 2026-09-02 to 09-09) | 2026-10-22 | Ford and Wesco aligned on 08-26 to renew UDAC support and let EDC support expire, using an SLA for unplanned support and SOW/SME hours for planned scope (Darryl: "Hours buy Capacity, SLA buys commitment" — `Products/entroCIM/entroCIM.md`). |
+| W029 | Returnable asset tracking: build direction set before the cost basis exists | Medium | Reopened | Direct (returnable asset tracking discussion transcript 2026-09-16; entroCIM Sensolus connector documentation 2026-09-16) | 2026-10-26 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | W002 | Dell account staffing — second dedicated entroCIM/EMS FTE requested | Medium-High | New | Direct (RE: Dell EMS Program FTE New Hire Discussion, weekly evidence 2026-10-05) | 2026-10-20 | Dell asked for a second dedicated FTE within three to five months. |
 
 ## Passive Watch
@@ -44,7 +45,6 @@ Logged for completeness. No action required; does not count toward risk load. Es
 | W023 | Managed-services staffing readiness for day-two entroCIM monitoring | Medium | Direct (entroCIM Backlog Deep Dive, 2026-09-08, verbatim transcript) | 2026-10-19 | Leadership (Brad Stevens, Nathan Kehr) expects commercial growth in managed monitoring/analytics but has not settled operating location, required building-domain skills, NOC placement, training path, or headcount. |
 | W020 | CrowdStrike: Azure VM overly permissive ingress rule | Medium-High | Direct (Discuss CrowdStrike Vulnerability Risk, 07-28; Teams chat with Venkateswara Devathi, 08-27) | 2026-10-19 | Escalated back to Active 2026-08-27 on a direct signal, per the Passive-tier return condition set 08-19. |
 | W042 | Complex-build asset attributes (WMX/VAS/GPO path post-ACT) | High | Direct (VAS Roadmap 07-14; M365 evidence 07-15; Darryl 07-17; WAM/ADM complex builds evidence 08-27) | 2026-10-15 | Demoted from Active 2026-08-27 (was High, trend →), on the objective test — no decision is needed from Darryl today. |
-| W029 | Returnable asset tracking: build direction set before the cost basis exists | Medium | Direct (returnable asset tracking discussion transcript 2026-09-16; entroCIM Sensolus connector documentation 2026-09-16) | 2026-10-05 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | W030 | Sales orders missing from EUDM/DDP data lake | High | Direct (FW: WAM - Records are created in Core ERP but not available in eudm table, 07-27; INC5456198) | 2026-09-17 | Demoted from Active 2026-09-17 (was High, trend ↑) on the objective silence test — no referencing evidence since 07-28, 51 days, and superseded in substance by the current WAM/ADM data integrity row above, which tracks the same truncated-part-number root caus… |
 | W033 | QPM 3.4.3 nested finished-good capability — Charlotte go-live dependency | High | Direct (Digital Products Portfolio Review 07-20; Digital Products / Agile Staff 07-21) | 2026-09-15 | Demoted from Active 2026-09-15 (was High, trend ↑) on the objective silence test — no referencing evidence since 07-27, 50 days. |
 | W032 | WAM financial narrative / resource allocation (cash-flow P&L, development carve-back) | High | Direct (Sync: Dirk & Akash meeting, 07-28) | 2026-09-15 | Demoted from Active 2026-09-15 (was High, trend New) on the objective silence test — no referencing evidence since 07-29, 48 days. |

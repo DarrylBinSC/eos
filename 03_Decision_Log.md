@@ -874,7 +874,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-26 09:33 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-26 09:49 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
 
@@ -1313,6 +1313,8 @@
 - The material point for when it is taken: the build thesis is being tested against application cost, and the application is the cheapest layer. The five layer frame (`Products/CAT/03_Architecture/CAT_Five_Layer_Model_2026-09-16.md`) separates device, connectivity, positioning and device services, data plane, and application. Wesco already owns the data plane and most of the application, evidenced by the completed entroCIM Sensolus connector, and owns none of the three layers that carry the recurring cost and the operating burden. **Correction 2026-09-18 (Darryl):** the connector pulls data in only; the operations interface needs new PODs and a retained team (CDA-scale, ~$323K/yr) for any option beyond Option 0. On the 09-21 model (`Deliverables/CAT/2026-09-21_CAT_Financial_Model.xlsx`), with POD development all India and half the team retained, five-year fully costed totals at the inferred fleet are Option 0 $2.49M, Option 1 $2.70M, Option 3 $4.67M. Option 0 is lowest, and the decision now turns on G2: below about $3.07 per tracker per month for data-only access, Option 1 wins.
 - Risk of waiting: the asset baseline does not exist, so no option can be costed. Risk of deciding too fast: a build commitment made on an application estimate, with the device services and field operating burden discovered afterwards.
 - **Update 2026-09-18 (Darryl):** the request originates with EES and may extend to UBS as it matures. Sponsor name confirmed as Hemant Porwal. Taken to Sean McCloskey as a discussion point on 2026-09-18, with the question of how to bring the cost findings back to Heman.
+
+2026-10-26 (Claude, session): Ramesh Konidala sent Darryl a follow-up action on Sensolus. Darryl is asking Ramesh, Tom Mitchell and the project leaders for written Sensolus Connect pricing (G2) plus the scope points listed in `Products/CAT/CAT.md`, and for the asset baseline (G1). Still unforumed; stays in Backlog until a price and a fleet count exist.
 
 ### 2026-09-15 — i3 Alliance: cross-BU ownership and executive sponsorship after signature
 - ID: D057
