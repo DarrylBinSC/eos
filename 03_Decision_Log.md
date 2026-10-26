@@ -876,7 +876,22 @@
 
 <!-- GENERATED 2026-10-26 16:14 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
+
+### 2026-10-26 — Woolly becomes a paid SkyFoundry add-on from 2027-05-01: pass-through, absorb, or bundle in entroCIM AI pricing
+- ID: D097
+- Status: Approaching, unforumed
+- Owner: Darryl (pricing posture); Ron Snyder (SkyFoundry price and terms); David Blondel (entroCIM AI pricing model)
+- Forum: Monthly Wesco/SkyFoundry coordination forum for the price; Digital Products Portfolio Review for the pricing posture (neither dated)
+- Next action: Get Server Pro and User Pro prices and units from SkyFoundry at the next monthly forum; the combined SkyPosium notes from Chad Steger and Keith Bishop carry the tiers but no numbers.
+- Context: SkyFoundry 4.0.7 release notes (2026-10-23): "We are offering Woolly at no charge until 1-May-2027, after which a 'server pro' add-on will be required." The 4.0.6 notes (07-21) said Woolly and Ion Creator would be priced separately from SkySpark with detail at SkyPosium; this is the first dated statement, and it names the mechanism (a per-server add-on) but not the price.
+- Why it is Darryl's: the Woolly launch is targeted for Q1 2027 with entroCIM 4 (`03` 2026-10-14), inside the free window. Every customer instance running Woolly after 2027-05-01 carries a SkyFoundry cost that the stated entroCIM AI commercial model (customer supplies LLM API keys, Wesco charges for the AI layer) does not account for. The FY27 entroCIM P&L carries no line for it.
+- Options: pass the add-on through to the customer as a SkyFoundry license line; absorb it inside entroCIM AI pricing; bundle it into the entroCIM licensing tier that includes AI; or launch without Woolly enabled on customer instances until the price is known.
+- Risk of waiting: entroCIM AI is priced or quoted (FRBNY BP43, Dell, Stanford renewal structure) before the add-on cost is known, and the Q1 2027 launch creates installed instances that become billable on 2027-05-01 with no commercial cover.
+- Information still needed: the add-on price and unit; whether partner or OEM terms apply to Wesco; whether the add-on is required for AiRoutines and API-only skill calls as well as the chat view; what SkyPosium attendees heard.
+- Backlog, not Radar: no forum date yet. Route at the next monthly SkyFoundry forum once its date is in `07`.
+
+2026-10-26 (Claude, session): Chad Steger and Keith Bishop's combined SkyPosium notes (`Evidence/SkyPosium_Notes_Chad_Steger_2026-10-26.pdf`) add a second tier the release notes did not name: "Server Pro" (per server; unlocks hx.ai and autonomous routines) and "User Pro" (per user; unlocks AI views and power-user tools), both early and subject to change, bring-your-own API key supported. No prices. The per-user tier adds a seat dimension the entroCIM AI commercial model does not have; the options above should be evaluated against both tiers.
 
 ### 2026-10-07 — WAM/ADM reduced-capacity reset: what runs, completes, stops or defers
 - ID: D001
@@ -1093,22 +1108,7 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 80.*
-
-### 2026-10-26 — Woolly becomes a paid SkyFoundry add-on from 2027-05-01: pass-through, absorb, or bundle in entroCIM AI pricing
-- ID: D097
-- Status: Approaching, unforumed
-- Owner: Darryl (pricing posture); Ron Snyder (SkyFoundry price and terms); David Blondel (entroCIM AI pricing model)
-- Forum: Monthly Wesco/SkyFoundry coordination forum for the price; Digital Products Portfolio Review for the pricing posture (neither dated)
-- Next action: Get Server Pro and User Pro prices and units from SkyFoundry at the next monthly forum; the combined SkyPosium notes from Chad Steger and Keith Bishop carry the tiers but no numbers.
-- Context: SkyFoundry 4.0.7 release notes (2026-10-23): "We are offering Woolly at no charge until 1-May-2027, after which a 'server pro' add-on will be required." The 4.0.6 notes (07-21) said Woolly and Ion Creator would be priced separately from SkySpark with detail at SkyPosium; this is the first dated statement, and it names the mechanism (a per-server add-on) but not the price.
-- Why it is Darryl's: the Woolly launch is targeted for Q1 2027 with entroCIM 4 (`03` 2026-10-14), inside the free window. Every customer instance running Woolly after 2027-05-01 carries a SkyFoundry cost that the stated entroCIM AI commercial model (customer supplies LLM API keys, Wesco charges for the AI layer) does not account for. The FY27 entroCIM P&L carries no line for it.
-- Options: pass the add-on through to the customer as a SkyFoundry license line; absorb it inside entroCIM AI pricing; bundle it into the entroCIM licensing tier that includes AI; or launch without Woolly enabled on customer instances until the price is known.
-- Risk of waiting: entroCIM AI is priced or quoted (FRBNY BP43, Dell, Stanford renewal structure) before the add-on cost is known, and the Q1 2027 launch creates installed instances that become billable on 2027-05-01 with no commercial cover.
-- Information still needed: the add-on price and unit; whether partner or OEM terms apply to Wesco; whether the add-on is required for AiRoutines and API-only skill calls as well as the chat view; what SkyPosium attendees heard.
-- Backlog, not Radar: no forum date yet. Route at the next monthly SkyFoundry forum once its date is in `07`.
-
-2026-10-26 (Claude, session): Chad Steger and Keith Bishop's combined SkyPosium notes (`Evidence/SkyPosium_Notes_Chad_Steger_2026-10-26.pdf`) add a second tier the release notes did not name: "Server Pro" (per server; unlocks hx.ai and autonomous routines) and "User Pro" (per user; unlocks AI views and power-user tools), both early and subject to change, bring-your-own API key supported. No prices. The per-user tier adds a seat dimension the entroCIM AI commercial model does not have; the options above should be evaluated against both tiers.
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 79.*
 
 ### 2026-10-20 — Stanford renewal: three licenses back to SkySpark-only, how Wesco supports the roll-back and what happens to the Commissioning App
 - ID: D096
