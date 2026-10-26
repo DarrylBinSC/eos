@@ -853,7 +853,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-23 10:29 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-26 09:12 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
 
@@ -931,6 +931,8 @@
 - Risk of waiting: low this cycle — the evaluation is explicitly scoped away from production/customer environments. Risk rises if the one-pager and sponsor approval stall, since C2P/cybersecurity review and any production path depend on this package clearing first.
 - Forum: AI Tech and Tech Review process (not yet scheduled); cross-reference the standing AI adoption governance row in `04` rather than tracking this as a separate initiative.
 - Follow-up: confirm with Darryl whether he is taking the revenue-estimate and sponsor-approval actions before either is written to Register A.
+
+2026-10-26 (Claude, session): SkySpark 4.0.7 (released 2026-10-23, circulated by Ron Snyder) changes two inputs to this decision. Plan mode now exists (plan / confirm / auto, gated by a `sideEffects` tag), so the "no guardrails" concern carried since 07-21 is closed at the platform level; the open item becomes which mode Wesco defaults to in customer deployments and whether entroCIM's own functions carry the tag. Custom providers (any OpenAI-protocol endpoint: gateways, local LLMs) give a stated route to a non-Anthropic endpoint for the first time. The 08-25 finding "Woolly does not support Azure AI Foundry" was true of 4.0.6 and needs re-testing on 4.0.7 before it is repeated in any RFP or budget conversation. Pricing: free until 2027-05-01, then a "server pro" add-on (price not stated), raised as D097. Record: Products/entroCIM/entroCIM.md, 2026-10-26 section; Products/SkyFoundry.md.
 
 ### 2026-08-17 — entroCIM FY27: plan is negative across the full authorised revenue range (new)
 - ID: D014
