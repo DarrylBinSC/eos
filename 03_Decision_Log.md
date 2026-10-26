@@ -874,7 +874,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-26 13:07 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-26 13:20 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
 
@@ -1093,20 +1093,7 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 81.*
-
-### 2026-10-26 — O-Insights (CTS): carry as a distributed product alongside entroCIM, partner for the Milestone/video segment, or decline
-- ID: D098
-- Status: Approaching, unforumed
-- Owner: Darryl (entroCIM position and portfolio overlap); Jarrod Booth, Supplier Relations (distribution question)
-- Forum: Supplier Relations conversation with Jarrod Booth (undated); portfolio read to Sean McCloskey only if it goes further
-- Next action: Send the comparison draft to Ron Snyder, David Blondel, Chad Steger and Keith Bishop for the nine Validate cells; then draft the note to Jarrod with the position and the information requests (pricing, protocol release status, references, Milestone connector spec, security docs)
-- Context: Jarrod Booth (Supplier Relations) asked Darryl to consider O-Insights Core because it is reported to be much less expensive than SkyFoundry and has a connector to Milestone. The vendor's comparison is against SkySpark, not entroCIM, and rates SkySpark "Not Verified" on 11 of 20 rows.
-- Why it is Darryl's: O-Insights overlaps entroCIM's core (dashboards, alarms, FDD, reporting, hosted delivery). Carrying it would put a lower-priced overlapping product in the same channel. The entroCIM position on overlap and on what the product adds (3D, playback, video with Milestone, visual rule builder) is his to state.
-- Not a platform decision: O-Insights cannot replace SkySpark under entroCIM without a rebuild; that question is closed by architecture and 2027 capacity.
-- Options: decline; carry as a distributed product for a segment entroCIM does not serve (small operators, security-video customers wanting building data beside video); take the Milestone connector idea onto the entroCIM roadmap instead; evaluate further only after pricing, references and protocol release status arrive.
-- Information still needed: price list and model; BACnet, OPC UA, SNMP, Modbus release status; install base and references; Milestone/XProtect connector specification; product-scoped security attestation; company profile for CTS; white-label or distribution terms; the team's answers on the nine Validate cells.
-- Backlog, not Radar: no forum date. Darryl said the note to Jarrod comes later.
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 80.*
 
 ### 2026-10-26 — Woolly becomes a paid SkyFoundry add-on from 2027-05-01: pass-through, absorb, or bundle in entroCIM AI pricing
 - ID: D097
@@ -2021,6 +2008,7 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 
 ### Resolved while on the Radar or Backlog (retained for the disposed-item check)
 
+- D098 — O-Insights (CTS): carry as a distributed product alongside entroCIM, partner for the Milestone/video segment, or decline — resolved 2026-10-26: Withdrawn same day.
 - D002 — CLM (Contract Lifecycle Management): build and development to Darryl's team, final decision at corporate AOP meetings — resolved 2026-10-01: Marked RESOLVED in the heading at migration (2026-10-01).
 - D050 — Miller Electric PO: process as-is, enforce the 50,000-point minimum, reprice, or pause (new, urgent) — resolved 2026-09-25: Marked RESOLVED in the heading at migration (2026-09-25).
 - D003 — Ford support/SLA commercial model: SME-hours treatment, pricing language, guardrails — resolved 2026-09-25: Marked RESOLVED in the heading at migration (2026-09-25).
