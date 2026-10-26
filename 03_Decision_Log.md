@@ -853,7 +853,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-26 09:23 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-26 09:24 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
 
@@ -1104,6 +1104,8 @@
 2026-10-20 (Darryl, session): CODA scope document reviewed (Hepta Systems to Portman Holdings, 2021-10-20). Its Scope of Work, Interface and Deliverable sections are the same text as the Stanford 2022 quote, word for word apart from one phrase; the Commissioning App is treated as a licensed entroCIM application whose addition adjusts the maintenance fee. The Stanford quote's 'custom development' wording is CODA template language. Unsigned copy, price blank. Gap 1 closed; gaps 2 to 5 remain (CODA delivery evidence and executed order, CODA purchase terms, Hepta/Warez/entroCIM/Wesco chain, what the 2022 build added). Record: Products/entroCIM/entroCIM.md, Stanford section.
 
 2026-10-21 (Darryl, web): Agreement during a meeting on 2026-10-20 with sales, Mike R, Keith, and Chad
+
+2026-10-26 (Claude, weekly brief): Same date conflict as `05` C76 -- this item's own forum field names "Legal meeting Monday 2026-10-26 08:30 ET," but C76's due field was moved to 2026-10-27 by Darryl's web edit on 2026-10-21 and never reconciled. Needs Darryl's confirmation of what actually happened and when, since this gates the Commissioning App ownership position Stanford is waiting on.
 
 ### 2026-10-15 — Quest/Azure decommission: approve $245/hour T&M for secure data-removal validation (new, Decision Backlog)
 - ID: D037
