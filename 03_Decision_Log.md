@@ -22,6 +22,27 @@
 
 ## Decisions Made
 
+### 2026-10-23 — entroCIM training: cost locked at $150/learner, margin drives price, line-level discount added
+- Status: Made (Darryl, 2026-10-23, Training Course Margin Discussion)
+- Owner: Darryl Benson; built by Maggie Becker
+- Context: Operationalizes the 2026-10-06 rate card ($250/learner reference price) and the 2026-10-22 packaging decision (commercial packaging may flex, delivery model stays course-based).
+- Options considered: set price directly vs. calculate price from a fixed cost and an adjustable margin.
+- Decision / Recommended path: cost fixed at $150/learner; margin is the adjustable input; price is calculated, not set directly. Line-level discount/multiplier added so a course can be discounted, surcharged, or included at no charge without changing the underlying cost or scope.
+- Risk of waiting: n/a, decided.
+- Forum where this should be decided: decided in session, 2026-10-23 (Training Course Margin Discussion).
+- Follow-up: matrix sent to Leanne Gordon and Valli Poornakumar, Nate Boyle copied (done). See `Products/entroCIM/entroCIM.md`, 2026-10-26.
+
+### 2026-10-23 — Continue paying for Quest service through November; migration will not complete by month-end
+- Status: Made (Darryl, 2026-10-23, Quest Migration Weekly Check-In)
+- Owner: Darryl Benson
+- Context: BLOB CLI access, MQTT/DNS, conductor cutover and data-removal terms remain unresolved as of this week; 2026-10-31 completion is not achievable.
+- Options considered: force a 10-31 cutover vs. accept a further month of dual cost.
+- Decision / Recommended path: Darryl, direct: "We're not going to get this done. We're going to have to pay November. There's just no way." Quest's monthly fee continues; exit work continues in parallel (tracked in the Pulse, not here -- see `Registers/pulse/P013` and linked issues).
+- Risk of waiting: n/a, decided; residual risk is schedule slip repeating into December if the open Pulse items (CLI access, MQTT/DNS, conductor, Libro, contract T&M) are not cleared.
+- Forum where this should be decided: decided in session, 2026-10-23 (Quest Migration Weekly Check-In).
+- Follow-up: see `Registers/pulse/` P013, P047-P051 for the operational detail; no register action needed at Darryl's level beyond this record.
+
+
 ### 2026-10-22 — Strev SOW 3: no SOW4 commitment; team stays focused on closing SOW 3
 - Status: Made (Darryl, 2026-10-22)
 - Owner: Darryl Benson
@@ -853,7 +874,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-26 09:24 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-26 09:33 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
 
