@@ -8,8 +8,8 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Federal Reserve | Steady | +0 | 26 | 6 | 1 | 0 | 0 | 4 |
 | Dell | Worsening | +44 | 174 | 125 | 24 | 3 | 2 | 1 |
+| Federal Reserve | Steady | +0 | 26 | 6 | 1 | 0 | 0 | 4 |
 | Wesco Warehouse | Steady | +4 | 23 | 19 | 3 | 1 | 0 | 0 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
 | Stanford | Steady | +0 | 10 | 0 | 0 | 0 | 0 | 2 |
