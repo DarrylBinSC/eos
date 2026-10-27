@@ -23,7 +23,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P058** EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P060** Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up (no account; ADM connect with Natalie). Test: No owner, or the customer is unaware of a material problem.
 - **P062** FRB feedback: revised Graphics Builder documentation needs validation against their reported problem (Federal Reserve; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P065** No formal integration QA/QC checklist for closeout (alarm, fault-management, graphics, database, point-addition) (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
@@ -109,7 +108,7 @@ Governance: Project management. Owner: Chad Steger. Live 38, new this week 19, s
 | P059 | Newly added meter needs database cleanup; site name ambiguous (Annapolis or New York) |  | Babu C. Dinesh | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
 | P065 | No formal integration QA/QC checklist for closeout (alarm, fault-management, graphics, database, point-addition) |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
 | P004 | Dell visualization scope unsettled: point pages only, or basic graphics and floor plans (El Dorado) | Dell |  | Medium | 2026-10-15 | 2026-10-27 | 2 | customer-visible |
-| P058 | EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out |  |  | Medium | 2026-10-22 | 2026-10-27 | 2 | customer-visible, candidate: boundary |
+| P058 | EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out |  |  | Medium | 2026-10-22 | 2026-10-27 | 2 | customer-visible |
 | P071 | Heating-stage and Boolean-point sequencing for reheat boxes remains unclear |  | Chad Steger | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P072 | Three to four recently created GMS weather stations missing from validation tests |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
 | P073 | Commissioning spreadsheet will not accept commissioning dates (Dell sites) | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
