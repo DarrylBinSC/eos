@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-27 10:44 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-27 10:50 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-13 to 2026-10-27. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -62,13 +62,13 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
 | Akansh Gangil | 3 | 5 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
-| Chad Steger | 7 | 12 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Syed Jamshed Zaidi | 8 | 17 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
-| Ron Snyder | 3 | 0 | 3 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
+| Chad Steger | 7 | 14 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Syed Jamshed Zaidi | 8 | 22 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
+| Ron Snyder | 3 | 3 | 3 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Babu Papanna | 2 | 1 | 4 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Matthew Heid | 5 | 9 | 0 | 0 | 2026 Deployment Daily Scrum |
-| Shawn Clark | 4 | 5 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Scott Dunn | 3 | 11 | 2 | 0 | 2026 Deployment Daily Scrum |
+| Shawn Clark | 4 | 6 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Scott Dunn | 3 | 16 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Natalie Marquardt | 0 | 3 | 4 | 0 | ADM connect with Natalie |
 | Nathan Kehr | 0 | 0 | 4 | 0 |  |
 | Adam Lazare | 0 | 0 | 3 | 0 |  |
