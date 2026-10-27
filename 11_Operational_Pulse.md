@@ -10,7 +10,7 @@
 |---|---|---|---|---|---|---|---|---|
 | Federal Reserve | Steady | +0 | 26 | 6 | 1 | 0 | 0 | 4 |
 | Dell | Worsening | +44 | 174 | 125 | 24 | 3 | 2 | 1 |
-| Wesco Warehouse | Worsening | +7 | 26 | 19 | 3 | 1 | 0 | 0 |
+| Wesco Warehouse | Steady | +4 | 23 | 19 | 3 | 1 | 0 | 0 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
 | Stanford | Steady | +0 | 10 | 0 | 0 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Steady | +0 | 9 | 4 | 1 | 0 | 1 | 1 |
@@ -24,7 +24,6 @@ No signals in the window: BAE, UWM.
 ## Needs your call
 
 - **K007** Americas/LATAM watchdog, temperature-sensor and power-failure alarm audit; point-level alarm configuration (knowledge concentration). Test: An absence or departure is near, or has passed, and the handover is not confirmed.
-- **P015** Panama HVAC points increase continuously; BACnet setup failed, Modbus option untested (Wesco Warehouse; 2026 Deployment Daily Scrum). Test: Still being raised 10+ business days after it was first raised.
 - **P057** Watchdog and UPS devices integration status unclear for Latin America sites; original-scope ownership not established (Dell; 2026 Deployment Daily Scrum). Test: gap, boundary.
 - **P074** India PM8000 meter integration may depend on an unconfirmed India PME environment (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P058** EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -84,7 +83,7 @@ Governance: Project management. Owner: Chad Steger. Live 38, new this week 19, s
 |---|---|---|---|---|---|---|---|---|
 | P007 | PC1/JCI large-scale point faults and intermittent site access | Dell | Scott Dunn | High | 2026-09-15 | 2026-10-15 | 3 | stuck, customer-visible, escalated to W099 |
 | P006 | Dell alarm-database corruption: intermittent alarming failures, no root cause | Dell | Ron Snyder; Keith Bishop | High | 2026-08-25 | 2026-10-21 | 7 | stuck, customer-visible, escalated to W009 |
-| P015 | Panama HVAC points increase continuously; BACnet setup failed, Modbus option untested | Wesco Warehouse | Matthew Heid; Scott Dunn | High | 2026-10-13 | 2026-10-27 | 2 | stuck, customer-visible, candidate: stuck |
+| P015 | Panama HVAC points increase continuously; BACnet setup failed, Modbus option untested | Wesco Warehouse | Matthew Heid; Scott Dunn | High | 2026-10-13 | 2026-10-27 | 2 | stuck, customer-visible |
 | P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-27 | 5 | stuck, customer-visible |
 | P014 | Dell non-DC server unavailable since the prior week, blocking meter verification | Dell |  | High | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 | P005 | Commissioned Panama devices not producing expected alarms ahead of environment decommissioning | Wesco Warehouse | Syed Jamshed Zaidi | High | 2026-10-14 | 2026-10-14 | 1 | customer-visible |
