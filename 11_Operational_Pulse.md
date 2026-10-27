@@ -9,7 +9,7 @@
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
 | Dell | Worsening | +38 | 165 | 122 | 24 | 3 | 2 | 1 |
-| Federal Reserve | Steady | +0 | 26 | 6 | 1 | 0 | 0 | 4 |
+| Federal Reserve | Steady | +0 | 23 | 3 | 1 | 0 | 0 | 4 |
 | Wesco Warehouse | Steady | +4 | 23 | 19 | 3 | 1 | 0 | 0 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
 | Stanford | Steady | +0 | 10 | 0 | 0 | 0 | 0 | 2 |
@@ -23,7 +23,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P062** FRB feedback: revised Graphics Builder documentation needs validation against their reported problem (Federal Reserve; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P065** No formal integration QA/QC checklist for closeout (alarm, fault-management, graphics, database, point-addition) (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P068** WAM renewal recommendation feature: quality rejected, rework from start (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P070** Commissioning app test-tracking coverage incomplete: tracks fields, not everything; no formal owner (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
@@ -132,7 +131,7 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 22, new this week 14, stuck
 | P042 | entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19) |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P031 | SkySpark connectors failing in test: Energy Direct and others returning no data; 403 environment APIs returning HTTP 410 |  | Abhishek Savanur | Medium | 2026-10-13 | 2026-10-22 | 5 |  |
 | P061 | HIS Express virtual-point UI stored constants as Y variables instead of literal values (hotfixed on demo one) |  | Michael Pieschel | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
-| P062 | FRB feedback: revised Graphics Builder documentation needs validation against their reported problem | Federal Reserve |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: boundary |
+| P062 | FRB feedback: revised Graphics Builder documentation needs validation against their reported problem | Federal Reserve |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
 | P069 | Another sensorless-connector defect found in testing; pod created, deployment pending |  | Abhishek Savanur | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
 | P070 | Commissioning app test-tracking coverage incomplete: tracks fields, not everything; no formal owner |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 | candidate: gap |
 | P010 | entroCIM tenant redesign and boot-mode routing: no acceptance criteria, rollout sequence or release date yet |  | Michael Pieschel | Medium | 2026-10-14 | 2026-10-27 | 3 |  |
