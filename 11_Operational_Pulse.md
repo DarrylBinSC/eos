@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +41 | 168 | 122 | 24 | 3 | 2 | 1 |
+| Dell | Worsening | +38 | 165 | 122 | 24 | 3 | 2 | 1 |
 | Federal Reserve | Steady | +0 | 26 | 6 | 1 | 0 | 0 | 4 |
 | Wesco Warehouse | Steady | +4 | 23 | 19 | 3 | 1 | 0 | 0 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
@@ -23,7 +23,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P074** India PM8000 meter integration may depend on an unconfirmed India PME environment (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P058** EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P060** Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up (no account; ADM connect with Natalie). Test: No owner, or the customer is unaware of a material problem.
 - **P062** FRB feedback: revised Graphics Builder documentation needs validation against their reported problem (Federal Reserve; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -97,7 +96,7 @@ Governance: Project management. Owner: Chad Steger. Live 38, new this week 19, s
 | P067 | Customer alarm-audit request: scope undefined, could run ~400 hours or consume the SME allocation |  | Chad Steger | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
 | P011 | Commissioned El Dorado devices not producing expected alarms ahead of environment decommissioning | Dell | Syed Jamshed Zaidi | High | 2026-10-14 | 2026-10-27 | 2 | customer-visible |
 | P057 | Watchdog and UPS devices integration status unclear for Latin America sites; original-scope ownership not established | Dell |  | High | 2026-10-22 | 2026-10-27 | 2 | customer-visible |
-| P074 | India PM8000 meter integration may depend on an unconfirmed India PME environment | Dell |  | High | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: boundary |
+| P074 | India PM8000 meter integration may depend on an unconfirmed India PME environment | Dell |  | High | 2026-10-27 | 2026-10-27 | 1 | customer-visible |
 | P016 | Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation | Dell | Matthew Heid | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 | P025 | Dell "three-creatures" requirements undefined; related work waits on a Dell workshop | Dell | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
 | P026 | New York: two meters in commissioning, two with connection issues | Dell | Syed Jamshed Zaidi | Medium | 2026-10-13 | 2026-10-13 | 1 | customer-visible |
