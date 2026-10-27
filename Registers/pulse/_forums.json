@@ -221,6 +221,44 @@
       "track": "development",
       "last_evidence": "2026-10-21",
       "active": true
+    },
+    {
+      "key": "review-delivery",
+      "name": "Weekly Pulse Review (Delivery)",
+      "governance": "Weekly review workbook",
+      "owner": "Darryl Benson",
+      "facilitator": "",
+      "cadence": "Weekly",
+      "products": [
+        "entroCIM"
+      ],
+      "aliases": [],
+      "confirmed": true,
+      "track": "delivery",
+      "last_evidence": "",
+      "active": false,
+      "review": true,
+      "note": "Added 2026-10-27. Not a meeting: the forum of record for issues raised on the New issues tab of the weekly review workbook (Tools/eos_review.py). active:false keeps it out of the Copilot prompts and the heard-from counts."
+    },
+    {
+      "key": "review-development",
+      "name": "Weekly Pulse Review (Development)",
+      "governance": "Weekly review workbook",
+      "owner": "Darryl Benson",
+      "facilitator": "",
+      "cadence": "Weekly",
+      "products": [
+        "entroCIM",
+        "WAM",
+        "CDA"
+      ],
+      "aliases": [],
+      "confirmed": true,
+      "track": "development",
+      "last_evidence": "",
+      "active": false,
+      "review": true,
+      "note": "Added 2026-10-27. Not a meeting: the forum of record for issues raised on the New issues tab of the weekly review workbook (Tools/eos_review.py). active:false keeps it out of the Copilot prompts and the heard-from counts."
     }
   ],
   "tracks": [

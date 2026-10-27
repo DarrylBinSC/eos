@@ -98,3 +98,8 @@ Current status lives in the living documents; this file does not duplicate regis
 ## EES requirements gathering assigned (added 2026-09-28)
 
 Source: 2027 entroCIM Roadmap Discussion transcript, 2026-09-16. Darryl, direct, to David Blondel: "you're going to have to interview... the EES team on what are their requirements... [and] document all those use cases," before asset-tracking development begins. Tracked as `05` B87, owed to Darryl/product leadership. This is the requirements-gathering step the central partner/hybrid/standalone decision needs and does not yet have. Sensolus connector initial development is reconfirmed complete this window (independent testing and Showcase integration still remain, per the existing record above).
+
+
+## Ramesh follow-up reopens the Sensolus pricing thread (added 2026-10-26)
+
+Ramesh Konidala sent Darryl a follow-up action on Sensolus (2026-10-26); the first movement on this area since the 09-21 Sensolus Connect offer. Darryl is sending Ramesh, Tom Mitchell and the other project leaders a note asking for written Sensolus Connect pricing with the scope points that make the number usable (hardware, connectivity and replacement inclusion; which device services survive the API boundary; API limits; term and lapse behavior; same per-tracker-per-month basis as the $5 full stack). No evidence package since 09-28 mentions this area; G1 (asset baseline) and G2 (data-only price) remain the two numbers the decision turns on. B87 (EES requirements interviews) was dropped by Darryl in the web app on 2026-10-16, so no requirements-gathering step is currently tracked.

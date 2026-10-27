@@ -13,6 +13,17 @@
 
 ## Entries
 
+### 2026-10-23 — entroCIM customer training: commercial model fully operationalized (catalog, pricing, margin mechanics)
+- Named courses with standard learning objectives, $250/learner reference price (5-learner minimum, 20-learner maximum), $150/learner locked internal cost, margin-driven pricing, and a line-level discount/multiplier mechanism were all built and delivered this week (Maggie Becker, with Darryl and David Blondel). Matrix sent to Sales (Leanne Gordon, Valli Poornakumar, Nate Boyle).
+- Impact: training moves from an undefined "hours" offering to a repeatable, margin-controlled commercial product Sales can propose and Finance can model. Closes a loop open since 08-12 (training-catalogue commitment).
+- Source: entroCIM Training Course Pricing Framework Overview & Next Steps and Training Course Margin Discussion transcripts, M365 weekly evidence 2026-10-26. Communicated: not yet.
+
+### 2026-10-23 — SkySpark 4.0.7 closes the Woolly "no guardrails" governance gap
+- Plan/confirm/auto execution modes, gated by a `sideEffects` tag, ship in SkyFoundry's 4.0.7 release — the platform-level control that `D010` and `W015` have carried as an open governance concern since 08-19.
+- Impact: removes one of the open items ahead of AI Tech Review/C2P for the Woolly evaluation; also reopens (favorably) the walled-off-customer question via custom LLM-provider support, pending a dev-server test. Pricing exposure (`D097`) is a new open item from the same release, not yet resolved.
+- Source: SkyFoundry Build 4.0.7 release notes, 2026-10-23 (circulated by Ron Snyder). Communicated: not yet.
+
+
 ### 2026-10-19 — entroCIM 3.1.12.14 generally available, with release communication done at release
 - 3.1.12.14 (Global Search beta, Tiles/Gridboard, Kiosk Mode, Graphics Builder, Batch Point Writer, security and platform modernization) made available 2026-10-16, with documentation, sales guide, knowledge base and deployment communication issued together (David Blondel).
 - Impact: first release where the product-to-sales/deployment handoff is evidenced as complete at release rather than after it (the gap logged 07-28, `04` W046). Customer-delivery dates by account not yet evidenced; do not claim customers are upgraded.
@@ -411,3 +422,8 @@
 - Darryl escalated the QA/API blockage directly to Sunny Sharma, who is personally working the issue in the field.
 - Impact: top execution risk moved from stalled to actively owned at the right level. Outcome (fix date) pending; upgrade this entry when the date lands.
 - Source: 07-14 session. Communicated: not yet.
+
+### 2026-10-26 — SkyPosium 2026 attendance returned a usable product debrief
+- Chad Steger and Keith Bishop delivered a combined, structured debrief (compiled by Chad) covering the SkySpark 4 roadmap, Xeto, Woolly (including a per-user pricing tier not in the release notes), Ion, Haystack 5, security and the rule engine, with an entroCIM assessment and team follow-ups.
+- Impact: the direct-access value argued in the 08-26 attendance case is now on the record as output, which is the evidence the 2027 SkyPosium sizing conversation needs ("two in 2026 was a conflict, not a right-sizing").
+- Source: `Evidence/SkyPosium_Notes_Chad_Steger_2026-10-26.pdf`. Communicated: not yet.

@@ -527,3 +527,51 @@ Draft Amendment No. 2 to the White Label agreement arrived 2026-10-21 (`Products
 Lead: Akansh Gangil's 2026-10-22 roadmap slide dates three near-term ADM/EUDM deliverables and pushes the asset-data timeline from 15 December to the second week of January.
 
 Source: ADM connect with Natalie (transcript, 2026-10-21) and `WAM Roadmap Update - 22 oct 2026.pptx` (Akansh Gangil, OneDrive, 2026-10-22). WAM Roadmap (Durable): "Shipping & price enrichment from EUDM" dated 30 Oct; "Additional ERP data through EUDM" and "Unconfigured suppliers using configured part numbers" both dated 10 Nov; "Core asset-data MVP: ship date, standard metadata" dated 27 Jan; "Enhanced asset capabilities in WAM" dated Feb (no day given). Gangil, Akansh, on the asset-data timeline: "there is a shift in the timelines... we were earlier hoping to get completed by 15th December... latest timeline... second week of Jan... will not have entire functionality of editing and... audits" (editing and audit capabilities follow in two more sprints after that). Separately, Gangil: "on 10th November release, we are good... to have the cards belonging to the suppliers that we are not putting in ADM," and "by next Wednesday [2026-10-28] we'll be able to pull everything inside our ADM, including the milestone September data." Marquardt, Natalie, on using 2025 data for now: "I think 2025 is good for now." Akansh also confirmed consolidation is done on one thread ("Milestone and exact data, we have consolidated everything") while a separate thread (missing sales orders, Gina not responding) is still open -- tracked as `Registers/pulse/P060.md`, linked to A29/W016/P021. The UDM-to-EUDM full-part-number fix is still "the team working on it," with Akansh still chasing a timeline -- no change to the A29/W016/P021 status.
+
+## ADM repositioned as part of DDP, the home for asset data (added 2026-10-22)
+
+Lead: Darryl is repositioning ADM as part of DDP, the enterprise home for asset data (licensing, warranty and related domains), and the WAM deep-dive slide is being rewritten around ADM with the commercial section removed.
+
+Source: Darryl, session 2026-10-22 (direct). Builds on the 10-19 and 10-21 positioning statements in this file (ADM as the DDP consumer and system of record for warehouse-collected data, WMX to DDP to ADM). Durable.
+
+- The deep-dive slide (CEO/CIO pre-read) now names ADM and DDP; the 10-20 decision not to name them is superseded for this slide. Draft in `Deliverables/Exec_Briefs/2026-10-19_Engel_Deep_Dive_Slide_Updates.md`, top section.
+- Darryl believes Akansh Gangil supplied a list of the asset-data domains ADM will hold; not located in the EOS record as of 10-22. Domains used in the meantime: license, warranty, service coverage, ship date and standard metadata, serial number, MAC address, asset tag, lifecycle status.
+- Open: whether the DDP positioning changes the Business Sponsor line (currently Brad Stevens) and the slide title (drafted as "Asset Data Manager (ADM) Update").
+
+Asset capture fields (Darryl, 2026-10-22, "some of the fields we need to capture for asset data"; partial list, names as given): GREDL NAME, ASSET TAG, FIRMWARE VERSION, UNIQUE ROOM ID, Device Serial, COMPUTER SERIAL, BRACKET SERIAL, MAC ID, SERIAL. Read as the warehouse build-time capture set for complex builds (unit and component serials, MAC, asset tag, firmware) plus customer placement identifiers (GREDL name, unique room ID; likely customer-specific naming and location scheme, unconfirmed). This is the capture-field list, distinct from the asset-data domains list (license, warranty, coverage) still attributed to Akansh and not yet located. Slide language uses categories, never these names.
+
+Q1 2027 asset scope for external material (Darryl, 2026-10-22): state only what Akansh's 10-22 roadmap dates (ship date and standard metadata, 27 Jan). Serial numbers (C4) and warranty/coverage (C3) are not to be stated as Q1 deliveries; Nitin's 10-14 phase 1 estimate included them but both rest on unresolved constraints.
+Sean deck v18 (2026-10-22) applies the same narrowing: slide 6 January line now reads product, order and ship-date detail; a new line, warranty, coverage and serial numbers follow as upstream data arrives (constraints 3 and 4); footnote dates from the ADM roadmap of 22 October; the Q4 asset-upload-by-template line was dropped as ordinary delivery work. Slide 14 rows re-labelled after January. v17 superseded. `Deliverables/Exec_Briefs/2026-10-14_Sean_Portfolio_Deck_v18.pptx`.
+
+Naming for reporting (Darryl, 2026-10-22): "WAM / ADM" as the product name in headings and portfolio cards; ADM takes precedence in reporting going forward. First use: `Deliverables/Exec_Briefs/2026-10-22_CSS_Platforms_Portfolio_v3.pptx` (CSS Platforms portfolio slide, one card per live product, built by `build_scripts/build_css_platforms_portfolio_2026-10-22.py`).
+
+## Supplier epic: development complete, regression starting; delivery roster named (added 2026-10-23)
+
+Source: WAM - Product Backlog Refinement, 2026-10-23 (transcript); WAM - Product Team, Teams chat, 2026-10-22.
+
+- **Supplier epic for the 2026-11-10 release (Durable).** Gangil, Akansh: "Development wise I think we are almost done... development wise also we are done and should be able to start the regression on this." Advances the 10-22 status ("we are good... to have the cards belonging to the suppliers") to development complete, regression next; no change to the 11-10 date.
+- **WAM delivery roster, as given (Durable).** Gangil, Akansh, in the WAM - Product Team Teams chat: Backend, Praveen and Chandana; Front end, Shiva; Databricks, Krishna and Lavanya (both contractor); QA, Amarnath (contractor). A further backend resource, Subhashree (contractor), was requested. Relevant to the `05` A61 capacity-reset plan (eight-person minimum run model against 15 current resources).
+
+## Native slide version of the DDP data-collection markup sent to Alan Martin (added 2026-10-23)
+
+Lead: Alan Martin asked for an editable version of Darryl's 2026-10-19 markup of his DDP | Internal Data Collection slide; a native PowerPoint rebuild was produced 2026-10-23.
+
+Source: Darryl, session 2026-10-23 (direct). Durable as a record of what Alan now holds.
+
+- `Deliverables/WAM/2026-10-23_DDP_Internal_Data_Collection_ADM.pptx` (build script alongside). Wesco template, every box, lane and connector a separate shape.
+- Content is the 10-19 markup unchanged: proposed CONSUME column (WMX to EUDM to ADM; ADM captures nothing directly from WMX or VAS), decision 8 (ADM consumes from the DL), decision 9 (timing unknown), and the added design decision on which attributes must be stored in WMX rather than only on a document. Proposed elements are in red so Alan can accept or remove them.
+- Source image: `Deliverables/WAM/2026-10-19_DDP_Internal_Data_Collection_ADM_markup.png`.
+
+## Strev Amendment No. 2: Legal review held; AI Council and VMO AI addendum added to the path (added 2026-10-27)
+
+Lead: the amendment now needs four things before it can go back to Revnue: Brian Miller's markup, Wesco's AI-usage addendum, Revnue's description of each of the ten features with a basis for the two fees, and AI Council clearance.
+
+Source: review call, Darryl Benson and Brian Miller, 2026-10-27 13:30 ET (Teams transcript, `Evidence/`); email thread "Revnue/Strev Contract," Darryl, Paula Fenton, Brian Miller, Amy Aguirre, 2026-10-27 (`Evidence/Re: Revnue:Strev Contract.pdf`).
+
+- Positions Darryl took on the call (Durable): the (a)-(j) list must be described feature by feature and treated as a floor on functionality, not a cap; the $80,000 platform license is the connector to an external model ("the harness"), the $84,000 pack is the skills; consumption is Wesco's own API key under a separate BIR; the amendment must not create a parallel per-feature payment framework; price is too high for the business it supports. Brian agreed on the framework point and prefers replacing the fee schedule.
+- Negotiation ownership stated in writing (Durable): CSS (Amy Aguirre and Brad Stevens) negotiates price directly with Strev. Darryl owns the contract structure, technical terms (§2.12) and the pricing gut check. Brad Stevens signed Amendment No. 1; Sean McCloskey was involved in the original agreement.
+- IT VMO (Durable): Paula Fenton, Sr. Director IT VMO, is the benchmark source for vendor AI pricing and the owner of Wesco's AI addendum language. She requires AI Council review for this amendment. Contacts: Paula.Fenton@wescodist.com.
+- Environments (Reported): Darryl told Paula the agreement covers one production white-label environment and one QA/Test environment. Under the draft's Environment definition both would carry the AI Fees; the §2.2(c) point stands.
+- Business size, Darryl's own figures on the call (Reported, internal): about $26 million pull-through and about $3 million services, roughly $29 million, mostly hardware resale against the installed base.
+- Gap (Reported): Darryl has no visibility into development fees already paid to Revnue on Amy's side or what they scoped; his team's development spend is the Wesco API back end only.
+- Register: A49 (re-dated 2026-11-03), C77 (Brian's markup), C78 (Paula's benchmark), C79 (AI Council owner, Amy), W006 (updated).

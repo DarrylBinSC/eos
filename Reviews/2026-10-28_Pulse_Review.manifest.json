@@ -1,0 +1,593 @@
+{
+ "date": "2026-10-28",
+ "rows": {
+  "P001": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Name a recovery owner and date; validate the fix in the target environment before telling Dell it is fixed.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P002": {
+   "owner": "Syed Jamshed Zaidi",
+   "sev": "High",
+   "nxt": "Site-by-site data-quality log with the source-system owner and a resolution date (Syed tracking).",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P005": {
+   "owner": "Syed Jamshed Zaidi",
+   "sev": "High",
+   "nxt": "Dated recovery plan; validate alarms before decommissioning proceeds.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P006": {
+   "owner": "Ron Snyder; Keith Bishop",
+   "sev": "High",
+   "nxt": "Written RCA from Keith Bishop or Ron Snyder; formal assurance response to Dell.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P007": {
+   "owner": "Scott Dunn",
+   "sev": "High",
+   "nxt": "JCI-side screenshots, consolidated equipment inventory, a named root-cause owner.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P009": {
+   "owner": "Scott Dunn",
+   "sev": "High",
+   "nxt": "Alternate sourcing and a committed delivery date.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P011": {
+   "owner": "Syed Jamshed Zaidi",
+   "sev": "High",
+   "nxt": "Dated recovery plan; validate alarms before decommissioning proceeds.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P014": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Name an owner for restoring access and a date; confirm who on the Dell or Wesco side holds the Brazil support contact.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P015": {
+   "owner": "Matthew Heid; Scott Dunn",
+   "sev": "High",
+   "nxt": "Test the Modbus option and confirm correct HVAC values before the Panama environment is decommissioned.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P017": {
+   "owner": "Leanne",
+   "sev": "High",
+   "nxt": "Leanne to trace the PME/NMC to entroCIM alarm path; confirm which customer the lighting sites belong to.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P023": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Name an owner to correct the fault-rule behaviour; confirm which points are down.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P027": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Name a remediation owner; confirm whether the customer knows the meters are offline.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P028": {
+   "owner": "Scott Dunn",
+   "sev": "High",
+   "nxt": "Dunn to send Dell the list of sites missing site-meter information, with a date for the reply.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P036": {
+   "owner": "Matthew Heid",
+   "sev": "High",
+   "nxt": "Heid to update the Jira item and get guidance from Elias Brewer or Keith Bishop; development track (Ron Snyder, David Blondel) to say whether point-level alarm push is a product change and when.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P047": {
+   "owner": "Shawn Clark",
+   "sev": "High",
+   "nxt": "Escalate the command-line access ticket; follow up with Babu Papanna's contact before his 10-27 PTO return if the ticket is not resolved sooner.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P048": {
+   "owner": "Chad Steger",
+   "sev": "High",
+   "nxt": "Steger to confirm the DNS/port request is submitted and get a completion date so Quest can be retired.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P049": {
+   "owner": "Shawn Clark",
+   "sev": "High",
+   "nxt": "Clark to complete the after-hours primary-role switch and confirm; get a dated rollback plan.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P050": {
+   "owner": "Shawn Clark",
+   "sev": "High",
+   "nxt": "Clark to test the outbound IP; Steger to notify Libro once the dependency is confirmed.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P051": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Obtain the Quest contract terms, renewal date, cancellation notice and support entitlement before approving additional T&M.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P057": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Zaidi to determine the original integration scope and name an owner before any backfill work begins.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P063": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Confirm with Delta whether the spreadsheet BACnet IDs are correct or changed; restore connectors once confirmed.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P064": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Get Scott Dunn or Elias Brewer to confirm the required alarm-point decision for Israel; Zaidi to schedule the review.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P066": {
+   "owner": "Matthew Heid",
+   "sev": "High",
+   "nxt": "Heid to capture connection history; decide whether to escalate to Danny, the local team, or IT.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P067": {
+   "owner": "Chad Steger",
+   "sev": "High",
+   "nxt": "Get a defined customer requirement before committing resources; Steger to regroup with Ron and Deb on a non-manual path.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P074": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Scott Dunn to ask IT today whether an India PME environment exists and secure access.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P003": {
+   "owner": "Syed Jamshed Zaidi",
+   "sev": "Medium",
+   "nxt": "Book the review with Robbie and Dell IT; get an ETA from each Dell-side owner.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P004": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Written scope confirmation from Dell (Robbie, Danny) before graphics work is added.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P008": {
+   "owner": "Syed Jamshed Zaidi; Elias Brewer",
+   "sev": "Medium",
+   "nxt": "Confirm whether the bidirectional-URI misconfiguration exists on other Dell cluster nodes.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P013": {
+   "owner": "Babu Papanna; Shawn Clark",
+   "sev": "Medium",
+   "nxt": "Inventory complete and the retained-data transfer method (network copy vs. Azure Data Box) chosen on measured volume.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P016": {
+   "owner": "Matthew Heid",
+   "sev": "Medium",
+   "nxt": "Matthew Heid to scope and estimate; decide with the account lead whether Dell is quoted or the work is absorbed.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P024": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Get a date for the standardized point list from Robbie (Dell).",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P025": {
+   "owner": "Syed Jamshed Zaidi",
+   "sev": "Medium",
+   "nxt": "Hold the Dell requirements workshop (Zaidi) and confirm its date.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P026": {
+   "owner": "Syed Jamshed Zaidi",
+   "sev": "Medium",
+   "nxt": "Zaidi to reconcile status of the four New York meters.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P029": {
+   "owner": "Syed Jamshed Zaidi",
+   "sev": "Medium",
+   "nxt": "Discovery call with the prospect before any scope or price is given.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P035": {
+   "owner": "Syed Jamshed Zaidi",
+   "sev": "Medium",
+   "nxt": "Zaidi to obtain the background and confirm PO and construction status before work starts; contract-or-money test until the PO is confirmed.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P037": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Name the procurement owner for the second-floor NetBotz and watchdog devices; Zaidi updating tasks and references.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P038": {
+   "owner": "Matthew Heid",
+   "sev": "Medium",
+   "nxt": "Heid waiting on connection details from Robbie (Dell); chase if not received this week.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P052": {
+   "owner": "Chad Steger",
+   "sev": "Medium",
+   "nxt": "Select the supported remote-access pattern (e.g. Azure Bastion); confirm whether additional licensing or infrastructure is authorized.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P058": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Babu C. Dinesh to take a first pass; confirm scope and whether this is distinct from the Limerick alarm-handler defect (K006/P006).",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P059": {
+   "owner": "Babu C. Dinesh",
+   "sev": "Medium",
+   "nxt": "Confirm the correct site name and complete the database cleanup; Zaidi to clarify the attribution.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P065": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Zaidi to bring the formalized checklist proposal to Steger; assign an owner and a delivery date.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P071": {
+   "owner": "Chad Steger",
+   "sev": "Medium",
+   "nxt": "Chad Steger to send an e-mail with sequencing questions on the reheat-box heating stages.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P072": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Add the missing weather stations to the validation test set.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P073": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Zaidi to check with Robbie on the commissioning-spreadsheet date-entry field.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P075": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Zaidi to coordinate with the Durham onsite team; Steger to explore a simulator for OPC UA point behavior.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P076": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Name an owner and a closure path for the Cree Church alarm configuration.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P077": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Determine whether the Vamil/Wimmel graphics request sits inside the quoted non-DC scope and decide what to tell Dell before delivery proceeds.",
+   "team": "delivery",
+   "product": "entroCIM"
+  },
+  "P019": {
+   "owner": "Bhupathi",
+   "sev": "High",
+   "nxt": "Fix the export filter for cancelled orders; validate the expiry-chip criteria.",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P020": {
+   "owner": "Akansh Gangil",
+   "sev": "High",
+   "nxt": "Name an owner; define how the upload handles a reused customer ID with a new name.",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P021": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "UDM team analysis and an enhancement date; tracked at Darryl's level as A29 and W016.",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P022": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Decide the approach with the source-data team; confirm whether the 2026-10-30 Data Enrichment date still holds.",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P030": {
+   "owner": "Ron Snyder",
+   "sev": "High",
+   "nxt": "Confirm the Grid Board pod is loaded and the fixes validated; Ron is on PTO 10-14 to 10-23, so confirm who holds it.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P034": {
+   "owner": "Akansh Gangil",
+   "sev": "High",
+   "nxt": "Akansh to bring the renewal-marking options to Darryl (with Dan Totino); decide under D023.",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P041": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Name an owner to restore or reconstruct the missing input-point histories and validate rollups and downstream curve retrieval; confirm whether anyone external saw the gap and whether Showcase has uptime monitoring.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P043": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Name who on the Wesco side owns the push on Schneider (vendor relationship, likely Darryl or Sean McCloskey); get a date for the proof of concept.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P046": {
+   "owner": "",
+   "sev": "High",
+   "nxt": "Name an owner for the Marygrove tickets and a route to the customer's IT team; some hosted tickets depend on the Q3 release rollout (Mike).",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P010": {
+   "owner": "Michael Pieschel",
+   "sev": "Medium",
+   "nxt": "Acceptance criteria, migration plan, security review and a release date before rollout.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P018": {
+   "owner": "Babu Papanna",
+   "sev": "Medium",
+   "nxt": "Babu Papanna with the network team: decide whether VPN access can be enabled on the test server.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P031": {
+   "owner": "Abhishek Savanur",
+   "sev": "Medium",
+   "nxt": "Savanur to confirm which connectors are affected and the cause.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P032": {
+   "owner": "Jason Ganiatsas",
+   "sev": "Medium",
+   "nxt": "Ganiatsas to find the cause before the Dell demo.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P039": {
+   "owner": "Priyatosh Patra",
+   "sev": "Medium",
+   "nxt": "Patra to retest against a current build and confirm the fixes.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P040": {
+   "owner": "Harsha E",
+   "sev": "Medium",
+   "nxt": "Joseph Kusnir to document the inconsistencies; Harsha E to set the unified component standard, per David Blondel.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P042": {
+   "owner": "Chad Steger",
+   "sev": "Medium",
+   "nxt": "Chad to send the external customer correspondence on 10-20 and coordinate PAS01 to PAS06 updates with Shawn Clark; Darryl named on the copy list.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P044": {
+   "owner": "Chad Steger",
+   "sev": "Medium",
+   "nxt": "Chad to verify with Lindsay Cotten whether the invoices were issued and raise them if not.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P045": {
+   "owner": "Chad Steger",
+   "sev": "Medium",
+   "nxt": "Identify who at Wesco owns the Rovo AI approval; Chad to decide on an alternative route if it is not re-enabled.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P053": {
+   "owner": "Nisha More",
+   "sev": "Medium",
+   "nxt": "More to fix the workspace migration and confirm the route works.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P060": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Natalie to re-chase Gina on the missing sales orders; separately, her Monday 2026-10-26 call with the renewal team should cover PO-linking detail for Milestone.",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P061": {
+   "owner": "Michael Pieschel",
+   "sev": "Medium",
+   "nxt": "Confirm the hotfix is validated beyond demo one; confirm whether this is the same underlying defect as P032 (Dell Showcase virtual-point failure) or genuinely separate.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P062": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Confirm with FRB that the revised documentation now answers their reported problem.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P068": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Akansh Gangil to confirm who rejected the recommendation quality and what rework scope and date follow.",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P069": {
+   "owner": "Abhishek Savanur",
+   "sev": "Medium",
+   "nxt": "Savanur to deploy the pod to the 406 platform dev 03 environment and test.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P070": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Establish explicit ownership and determine whether comprehensive test tracking is required before further development or release use.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P080": {
+   "owner": "Narendra Singh",
+   "sev": "Medium",
+   "nxt": "Narendra Singh to determine how GPO files/libraries are packaged in the containerized release builder.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P081": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Patra and Snyder to resolve, in their scheduled follow-up, what the admin-app migration does when source data is missing.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P082": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Determine who owns completing the cross-application integration of the migrated SkySpark APIs/types.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P084": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Lavanya Neelam to fix the record-merge defect affecting perpetual-parts rows in the WAM historical upload.",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P085": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Determine whether the WAM upload pipeline can be made to process more than one resource at a time.",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P086": {
+   "owner": "",
+   "sev": "Medium",
+   "nxt": "Sarkar to continue resolving the Spring Boot runtime API issues; Krishnanunni to confirm the DD-team dependency ahead of production release.",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P033": {
+   "owner": "Akansh Gangil",
+   "sev": "Low",
+   "nxt": "Add the removal date and export to the page (enhancement).",
+   "team": "development",
+   "product": "WAM"
+  },
+  "P054": {
+   "owner": "Nisha More",
+   "sev": "Low",
+   "nxt": "More to document and resolve the text-widget issues found in testing.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P056": {
+   "owner": "Mike Reed",
+   "sev": "Low",
+   "nxt": "Reed to investigate notification options (real-time, weekly or monthly digest) for article ratings.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P078": {
+   "owner": "",
+   "sev": "Low",
+   "nxt": "Confirm paas-dev-03w stayed stable after the reported recovery; no formal resolution statement in evidence.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P079": {
+   "owner": "Shreyans Saklecha",
+   "sev": "Low",
+   "nxt": "Track the IT ticket for Zephyr Scale access; Snyder asked to be kept posted.",
+   "team": "development",
+   "product": "entroCIM"
+  },
+  "P083": {
+   "owner": "Ron Snyder",
+   "sev": "Low",
+   "nxt": "Snyder to compile the list of remaining monorepo migration actions and build-script work.",
+   "team": "development",
+   "product": "entroCIM"
+  }
+ }
+}

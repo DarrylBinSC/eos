@@ -31,6 +31,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import eos_registers as R  # noqa: E402
 import eos_pulse as P  # noqa: E402  (Operational Pulse, added 2026-10-16)
 import eos_products as PR  # noqa: E402  (Products tab, added 2026-10-21)
+import eos_review as V  # noqa: E402  (Weekly review workbook, added 2026-10-27)
 
 PORT = int(os.environ.get("EOS_PORT", "8765"))
 BIND = os.environ.get("EOS_BIND", "0.0.0.0")
@@ -1910,7 +1911,7 @@ def _snapshot() -> dict:
     return out
 
 
-TOOLS = [Path(__file__).resolve().parent / n for n in ("eos_server.py", "eos_registers.py", "eos_pulse.py", "eos_products.py")]
+TOOLS = [Path(__file__).resolve().parent / n for n in ("eos_server.py", "eos_registers.py", "eos_pulse.py", "eos_products.py", "eos_review.py")]
 
 
 def _tools_mtime() -> tuple:

@@ -165,6 +165,8 @@ Sean's feedback on the 2026-10-19 Engel deep-dive slides: the deck is a standalo
 - Sales figures only, no plan attainment: Sales presents the plan separately through the business sponsor, and there is no upside in the product team presenting it too.
 - Named customers are fine on an internal pre-read; omit any account in an open reduction or dispute (Stanford, 2026-10-20).
 - Four bullets per section, five at most, one to one and a half lines each.
+- Do not define Wesco's own platforms or programs for this audience (DDP, for example); the CEO and CIO know them. Glossing reads as written for an outsider (Darryl, 2026-10-22).
+- Name the asset-management product "WAM / ADM" in headings and card titles; ADM is not a subline under WAM. ADM takes precedence in reporting going forward (Darryl, 2026-10-22).
 
 ## 5. Benefit Notes Format
 

@@ -1,5 +1,30 @@
 # John Engel deep dive: entroCIM and WAM update slides
 
+## Wesco Asset Management slide, ADM-focused revision (draft, 2026-10-22)
+
+Darryl's direction, 2026-10-22: refocus the WAM deep-dive slide on ADM, rewrite the Objective, omit the Commercial Update, and make every bullet ADM-focused. Context: ADM is being repositioned as part of DDP, the home for asset data (licensing, warranty and related domains). This reverses the 10-20 decision not to name ADM or DDP on the slide; the repositioning is now the point of the slide. Still written to the prospectus register (standalone pre-read, outcome-led, figures carry an as-of date, no speaker-dependent claims). Strev, GPOs and internal ticket names still not named.
+
+Title: Wesco Asset Management Update (owner's template title kept per the 10-19 rule; the Objective carries the ADM repositioning. Darryl to confirm.)
+
+Business Sponsor: Brad Stevens (confirm whether the DDP positioning changes the sponsor line). Product Executive: Darryl Benson.
+
+Objective
+- ADM is the asset-data home within DDP: one governed record for every asset Wesco supplies, carrying license, warranty, coverage, identification and lifecycle information, used by Sales, Managed Services and customers.
+
+Product Update
+- ADM builds and maintains the asset record from order, product and warehouse data held in DDP, so Sales, Managed Services and customers work from one governed source.
+- License records are live today: 35 suppliers and 6,900 license parts built from Wesco order data, with 1,337 renewal notifications delivered to 238 North American sales reps as of October.
+- Asset records for Managed Services customers arrive in Q1 2027, built from Wesco orders with product, order and ship-date detail; warranty, coverage and serial numbers are added as supplier and warehouse data become available.
+- Full coverage depends on identifiers Wesco systems do not capture today (unit and component serial numbers, MAC addresses, asset tags, firmware versions and customer location references); capture points and ownership are being set with the data owners across the business.
+
+Rule check 2026-10-22 (against Reference/Communication_Preferences.md, "CEO pre-read slides, prospectus register," 2026-10-20): earlier same-day draft failed four rules (an unconfirmed "will be captured" claim resting on a chat caveat; an activity-led first bullet with a not-X-but-Y tail; a 55-word verb-led Objective; a "component level" capability claim). Corrected above. Earlier drafts not retained. Darryl, same day: do not gloss DDP for this audience; the CEO and CIO know it. Bullet 3 narrowed to Akansh's 2026-10-22 roadmap line (core asset-data MVP: ship date, standard metadata, 27 Jan): serial numbers (C4, in analysis) and warranty/coverage (C3, durations, no committed supplier) are no longer stated for Q1; Darryl: no maybes in the deep-dive deck.
+
+Commercial Update: omitted at Darryl's direction.
+
+Basis: ADM positioning statement (Darryl to Alan Martin 10-19 and the ADM & DDP thread 10-21); DDPTRK-6346 global attributes (warranty, license, delivery, software) complete per the 10-19 portfolio status; Akansh Gangil roadmap slide 2026-10-22 (enrichment 30 Oct, ERP data and unconfigured suppliers 10 Nov, core asset-data MVP 27 Jan, enhanced asset capabilities Feb; Q1 2027 kept on the slide per the 10-20 decision); scorecard figures from the Sales Operations October deck. Akansh's list of asset-data domains not located in the record as of 10-22; bullets use the domains on record.
+
+---
+
 Revised 2026-10-20 after Sean McCloskey's feedback: the deck is a standalone pre-read for John Engel (CEO) and Akash Khurana (CIO) and the bullets should read like a prospectus. The 2026-10-19 version below assumed a presented deck with a talk track; it is superseded. Slide owner's template unchanged: title, Business Sponsor / Product Executive line, Product Update and Commercial Update sections.
 
 Rules applied (filed in Reference/Communication_Preferences.md, "CEO pre-read slides, prospectus register"): outcome-led bullets, no internal governance names or version numbers, no claim that depends on a speaker, figures carry an as-of date, sales figures only (plan attainment is presented by Sales through Dirk Naylor; Darryl, 2026-10-20).
