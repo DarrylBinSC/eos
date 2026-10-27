@@ -1130,6 +1130,8 @@
 
 2026-10-26 (Claude, weekly brief): Same date conflict as `05` C76 -- this item's own forum field names "Legal meeting Monday 2026-10-26 08:30 ET," but C76's due field was moved to 2026-10-27 by Darryl's web edit on 2026-10-21 and never reconciled. Needs Darryl's confirmation of what actually happened and when, since this gates the Commissioning App ownership position Stanford is waiting on.
 
+2026-10-27 (Claude, daily brief): Same calendar finding as `05` C76 -- a "Stanford / entroCIM: IP question on customer-funded development" occurrence was in progress at this morning's evidence-window close (2026-10-27, ~08:49 ET), with no transcript available. Consistent with, but not confirming, the legal session having moved to Tuesday 10-27. Needs Darryl's confirmation of what happened and when, and what Nikos Minas and Brandon Thompson said on the carve-out, Work Product and 18.5 questions -- this gates the Commissioning App ownership position Stanford is waiting on.
+
 ### 2026-10-15 — Quest/Azure decommission: approve $245/hour T&M for secure data-removal validation (new, Decision Backlog)
 - ID: D037
 - Status: Approaching, unforumed

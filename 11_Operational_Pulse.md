@@ -165,7 +165,7 @@ Governance: Sprint / backlog. Owner: David Blondel. Live 4, new this week 4, stu
 
 ## Quest Migration Weekly Check-In
 
-Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stuck 1, quiet 0. Last sighting: 2026-10-23. Last evidence: 2026-10-23.
+Governance: Project management. Owner: Chad Steger. Live 7, new this week 6, stuck 1, quiet 0. Last sighting: 2026-10-23. Last evidence: 2026-10-26.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|

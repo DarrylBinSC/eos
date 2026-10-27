@@ -20,7 +20,7 @@
       ],
       "confirmed": true,
       "track": "delivery",
-      "last_evidence": "2026-10-23",
+      "last_evidence": "2026-10-27",
       "active": true
     },
     {
@@ -39,7 +39,7 @@
       ],
       "confirmed": true,
       "track": "development",
-      "last_evidence": "2026-10-23",
+      "last_evidence": "2026-10-27",
       "active": true
     },
     {
@@ -88,7 +88,7 @@
       "aliases": [],
       "confirmed": true,
       "track": "delivery",
-      "last_evidence": "2026-10-23",
+      "last_evidence": "2026-10-26",
       "notes": "2026-10-20 occurrence (3:00 PM): full transcript and Loop opened in the 2026-10-21 sweep (window 2026-10-13 to 2026-10-21); seven new issues raised (P047-P052, plus A69 for Darryl's own SSO commitment) and P013 updated.",
       "active": true
     },
@@ -141,7 +141,7 @@
       "aliases": [],
       "confirmed": true,
       "track": "development",
-      "last_evidence": "2026-10-23",
+      "last_evidence": "2026-10-27",
       "active": true
     },
     {
