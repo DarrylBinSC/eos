@@ -277,6 +277,27 @@ def log_brief_view(name: str, source: str) -> None:
         pass
 
 
+# ----------------------------------------------------------------------------- weekly review (2026-10-27)
+
+REVIEW_PREVIEWS: dict = {}
+
+def review_status() -> dict:
+    """What the Weekly review panel needs: this week's workbook, the last return, the reviewer roster."""
+    log = V._log()
+    mf = V.latest_manifest()
+    wb = None
+    if mf:
+        x = mf.with_name(mf.name.replace(".manifest.json", ".xlsx"))
+        if x.exists():
+            m = json.loads(mf.read_text())
+            wb = {"date": m.get("date"), "file": x.name, "rows": len(m.get("rows", {}))}
+    today = dt.date.fromisoformat(R.today())
+    wed = today + dt.timedelta(days=(2 - today.weekday()) % 7)
+    return {"today": R.today(), "weekday": today.strftime("%A"), "next_send": wed.isoformat(),
+            "workbook": wb, "sent": log.get("sent", [])[-6:], "returned": log.get("returned", [])[-6:],
+            "reviewers": V.REVIEWERS, "verdicts": V.VERDICTS}
+
+
 # ----------------------------------------------------------------------------- git
 
 def git(*args) -> tuple[int, str]:
@@ -475,6 +496,23 @@ class H(BaseHTTPRequestHandler):
         if u.path == "/api/copilot":
             with LOCK:
                 return self._json(200, copilot_all())
+        # Weekly Pulse review workbook (added 2026-10-27): generate, hand out, read back.
+        if u.path == "/api/review":
+            with LOCK:
+                return self._json(200, review_status())
+        if u.path == "/api/review/workbook":
+            date = q.get("date", [R.today()])[0]
+            with LOCK:
+                import time as _t; SELF_WRITE_UNTIL[0] = _t.time() + 12
+                out, teams, _np = V.build(today=date)
+                V.note_sent(date)
+                git_commit_all(f"review: workbook {date} generated")
+            data = out.read_bytes()
+            self.send_response(200)
+            self.send_header("Content-Type", "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+            self.send_header("Content-Disposition", f'attachment; filename="{out.name}"')
+            self.send_header("Content-Length", str(len(data))); self.send_header("Cache-Control", "no-store")
+            self.end_headers(); self.wfile.write(data); return
         if u.path == "/api/pulse/prompts":
             with LOCK:
                 return self._json(200, copilot_prompts())
@@ -545,7 +583,43 @@ class H(BaseHTTPRequestHandler):
         if not self._gate():
             return
         u = urlparse(self.path)
+        if u.path == "/api/review/upload":
+            q = parse_qs(u.query)
+            name = re.sub(r"[^A-Za-z0-9_.-]", "_", (q.get("name", ["returned.xlsx"])[0] or "returned.xlsx"))
+            if not name.lower().endswith(".xlsx"):
+                return self._json(400, {"error": "upload the returned .xlsx"})
+            n = int(self.headers.get("Content-Length", "0") or 0)
+            raw = self.rfile.read(n) if n else b""
+            if not raw:
+                return self._json(400, {"error": "empty upload"})
+            stamp = dt.datetime.now().strftime("%Y-%m-%d_%H%M")
+            V.RETURNED.mkdir(parents=True, exist_ok=True)
+            dest = V.RETURNED / f"{stamp}_{name}"
+            dest.write_bytes(raw)
+            try:
+                with LOCK:
+                    pv = V.read_back(dest)
+            except Exception as e:
+                return self._json(400, {"error": f"could not read the workbook: {e}"})
+            if pv.get("error"):
+                return self._json(400, pv)
+            pv["saved_as"] = dest.name
+            REVIEW_PREVIEWS[dest.name] = pv
+            return self._json(200, pv)
         d = self._body()
+        if u.path == "/api/review/apply":
+            pv = REVIEW_PREVIEWS.get(d.get("saved_as") or "")
+            if not pv:
+                return self._json(400, {"error": "preview expired; upload the workbook again"})
+            with LOCK:
+                import time as _t; SELF_WRITE_UNTIL[0] = _t.time() + 12
+                out = V.apply(pv, d.get("accept") or [])
+                R.regenerate_all()
+                who = ", ".join(sorted({a["reviewer"] for a in out["applied"]} | {c["reviewer"] for c in out["created"]}))
+                msg = git_commit_all(f"review: {pv.get('manifest_date')} workbook read back, {len(out['applied'])} changes, {len(out['created'])} new ({who})")
+            REVIEW_PREVIEWS.pop(d.get("saved_as"), None)
+            out["git"] = msg
+            return self._json(200, out)
         if u.path == "/api/items":
             if not (d.get("title") or "").strip():
                 return self._json(400, {"error": "title required"})
@@ -1045,6 +1119,8 @@ button.pv-pp{min-height:40px;align-items:center}
 .cp{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0 0 14px;background:var(--card)}.cp.need{border-color:var(--acc)}
 .cp-h{display:flex;align-items:center;gap:10px;margin-bottom:4px}.cp-n{font:700 12px ui-monospace,Menlo,monospace;background:var(--acc);color:var(--accInk);border-radius:5px;padding:2px 7px}
 .cp:not(.need) .cp-n{background:var(--sunk);color:var(--ink2)}.cp-b{margin-left:auto;font-size:12px;font-weight:650}.cp-b.y{color:var(--acc)}.cp-b.n{color:var(--muted)}
+.rv-list{list-style:none;margin:10px 0;padding:0}.rv-row{border:1px solid var(--line);border-radius:8px;padding:8px 10px;margin:0 0 8px;font-size:13px}.rv-row.warn{border-color:#E8842A}
+.rv-h{font-weight:600;margin-bottom:4px}.rv-h .ttl{background:none;border:0;padding:0;color:var(--acc);font:inherit;font-weight:700;cursor:pointer}.rv-d{color:var(--ink)}.rv-d s{color:var(--muted)}.rv-w span{display:inline-block;font-size:12px;color:#E8842A;margin:4px 8px 0 0}.rv-a{margin-top:6px;font-size:12.5px;color:var(--muted)}.rv-a select{font-size:12.5px}
 .cp-m{font-size:12.5px;color:var(--muted);margin-bottom:8px}.cp-f{list-style:none;margin:0 0 10px;padding:0;font-size:13px}
 .cp-f li{display:flex;justify-content:space-between;gap:10px;padding:3px 0;border-bottom:1px solid var(--line2);color:var(--muted)}.cp-f li.d{color:var(--ink)}.cp-f li span:last-child{font-size:12px;color:var(--muted);white-space:nowrap}
 .cp-adv{font-size:15px;font-weight:650;line-height:22px}.cp-how{font-size:13px;color:var(--muted);line-height:19px;margin:6px 0 0}
@@ -1246,6 +1322,9 @@ document.addEventListener('click',e=>{
   if(e.target.closest('[data-pplall]')){PPLALL=!PPLALL;render();return}
   const s=e.target.closest('.seg button');if(s){e.stopPropagation();const i=ITEMS.find(x=>x.id===s.dataset.id);if(i&&i[s.dataset.k]!==s.dataset.val)patch(s.dataset.id,{[s.dataset.k]:s.dataset.val},'');return}
   if(e.target.closest('[data-cprompts]')){openPrompts();return}
+  if(e.target.closest('[data-review]')){openReview();return}
+  if(e.target.closest('[data-rvup]')){uploadReview();return}
+  if(e.target.closest('[data-rvapply]')){applyReview();return}
   const cpy=e.target.closest('[data-cpy]');if(cpy){copyPrompt(cpy.dataset.cpy);return}
   const tc=e.target.closest('[data-toc]');if(tc){e.preventDefault();jumpSec(tc.dataset.toc);return}
   const bi=e.target.closest('[data-brief]');if(bi){openBrief(bi.dataset.brief,'list');return}
@@ -1463,7 +1542,7 @@ function pulseHtml(){
   /* attention: state, stuck, severity, customer-visible, most recent (C14 head states this order) */
   if(pso.k!=='pulse')a.sort(cmpBy(pso.k,pso.dir));else a.sort((x,y)=>(st[x._state]-st[y._state])||((y._stuck?1:0)-(x._stuck?1:0))||(svk(x)-svk(y))||((y.customer_visible?1:0)-(x.customer_visible?1:0))||String(y.last_seen||'').localeCompare(String(x.last_seen||''))||cmpId(x,y));
   const cs=P.candidates.filter(c=>{const i=ITEMS.find(z=>z.id===c.id);if(!i)return false;if(i.category==='knowledge')return !fk||fk==='new'||(fk==='track'&&i.track===fv)||(fk==='person'&&i.holder===fv)||(fk==='account'&&i.account===fv);return match(i)});
-  let h=`<div class="pv"><div class="pv-title"><h2>Pulse</h2><p>Rolling ${P.window.days} days, ${fmt(P.window.start)} to ${fmt(P.window.end)}. What your team-governed forums are carrying. The teams own the work; escalate only what needs you.</p><button type="button" class="btn" data-cprompts>Copilot prompts</button><button type="button" class="pv-lk" data-guide>How to read this page</button></div>`;
+  let h=`<div class="pv"><div class="pv-title"><h2>Pulse</h2><p>Rolling ${P.window.days} days, ${fmt(P.window.start)} to ${fmt(P.window.end)}. What your team-governed forums are carrying. The teams own the work; escalate only what needs you.</p><button type="button" class="btn" data-cprompts>Copilot prompts</button><button type="button" class="btn" data-review>Weekly review</button><button type="button" class="pv-lk" data-guide>How to read this page</button></div>`;
   h+=`<div class="pv-today">${callsCard(P,cs)}${pinnedCard(P)}${evidenceCard(P)}</div>`;
   h+=accountsSec(P,fk,fv);
   /* C15: the filter chip is sticky under the header strip */
@@ -1851,6 +1930,40 @@ function copyPrompt(id){const all=[...CPR.fixed.map(o=>({k:o.id,label:o.label,te
   const done=()=>toast(`${o.label} copied. Paste it into a new Copilot chat.`);
   const fall=()=>{const ta=document.getElementById('cpt'+id);if(!ta)return toast('Copy blocked: open the text and copy it');ta.closest('details').open=true;ta.focus();ta.select();try{document.execCommand('copy')?done():toast('Text selected: press Cmd-C to copy '+o.label)}catch(e){toast('Text selected: press Cmd-C to copy '+o.label)}};
   if(navigator.clipboard&&window.isSecureContext)navigator.clipboard.writeText(o.text).then(done,fall);else fall()}
+/* ---------- Weekly review workbook (2026-10-27): generate for the team, read the returned copy back ---------- */
+let RV=null,RVP=null;
+async function openReview(){try{RV=await (await fetch('/api/review')).json()}catch(e){toast('Could not load the review status');return}
+  SEL=null;RVP=null;renderReview();showDrawer('review');$('#drawer').scrollTop=0;render()}
+function renderReview(){const wb=RV.workbook;const sent=RV.sent.slice().reverse();const ret=RV.returned.slice().reverse();
+  const hist=[...sent.map(s=>`<li><span>Sent ${fmt(s.date)}</span><span>workbook generated</span></li>`),...ret.map(r=>`<li><span>Read back ${fmt(r.date)}</span><span>${r.applied} change${r.applied===1?'':'s'}, ${r.created} new · ${esc(Object.entries(r.by_reviewer||{}).map(([k,v])=>k+' '+v).join(', '))}</span></li>`)].join('')||'<li><span>Nothing yet</span><span></span></li>';
+  const pv=RVP?renderPreview(RVP):'';
+  $('#panel').innerHTML=`<div class="p-top">${head('','Weekly review')}<h2 class="p-title">Weekly Pulse review · ${esc(RV.weekday)}</h2></div>
+   <div class="p-sec"><h3 class="p-label">1 · Send (Wednesday)</h3><div class="cp"><div class="cp-m">Generates this week's workbook from the live Pulse: one row per issue, pre-filled; only Owner, Sev, Next action, Verdict, Comment and Reviewed by are unlocked. Put it in the shared team space and post the link; never email the file.${wb?` Current: <b>${esc(wb.file)}</b>, ${wb.rows} rows.`:''}</div>
+     <a class="btn primary" href="/api/review/workbook?date=${RV.today}" download>Download this week's workbook</a></div></div>
+   <div class="p-sec"><h3 class="p-label">2 · Read back (Monday)</h3><div class="cp"><div class="cp-m">Download the returned copy from the team space and drop it here. You see every changed row before anything is filed; nothing is written until you apply.</div>
+     <input type="file" id="rvfile" accept=".xlsx" style="font-size:13px"> <button type="button" class="btn" data-rvup>Preview changes</button></div>${pv}</div>
+   <div class="p-sec"><h3 class="p-label">History</h3><ul class="cp-f">${hist}</ul></div>`}
+function renderPreview(p){const rvs=[...new Set(Object.values(RV.reviewers.development).flat().concat(Object.values(RV.reviewers.delivery).flat()))].sort();
+  const sel=(v,k)=>`<select data-rvwho="${k}">${['<option value="">(skip)</option>',...rvs.map(r=>`<option${r===v?' selected':''}>${esc(r)}</option>`)].join('')}</select>`;
+  const row=c=>{const d=c.diff;const bits=Object.entries(d).map(([f,[a,b]])=>f==='comment'?`<div><b>comment:</b> ${esc(b)}</div>`:f==='verdict'?`<div><b>${esc(b)}</b></div>`:`<div><b>${esc(f.replace('_',' '))}:</b> <s>${esc(a||'none')}</s> → ${esc(b||'none')}</div>`).join('');
+    const bad=c.warnings.some(w=>/not on the reviewer list|not a reviewer for|no reviewer name/.test(w));
+    return `<li class="rv-row${c.warnings.length?' warn':''}"><div class="rv-h"><button type="button" class="ttl" data-open="${esc(c.id)}">${esc(c.id)}</button> ${esc(c.title)}</div><div class="rv-d">${bits}</div><div class="rv-w">${c.warnings.map(w=>`<span>${esc(w)}</span>`).join('')}</div><div class="rv-a">Reviewer ${sel(bad?'':c.reviewer,c.id)}</div></li>`};
+  const nrow=(n,i)=>`<li class="rv-row${n.warnings.length?' warn':''}"><div class="rv-h">NEW · ${esc(n.title)}</div><div class="rv-d"><div>${esc(n.team||'team not set')} · owner ${esc(n.owner||'none')} · ${esc(n.sev)}</div></div><div class="rv-w">${n.warnings.map(w=>`<span>${esc(w)}</span>`).join('')}</div><div class="rv-a">Raised by ${sel(n.warnings.length?'':n.by,'new'+i)}</div></li>`;
+  const miss=p.missing_rows.length?`<div class="cp-m">${p.missing_rows.length} row${p.missing_rows.length===1?'':'s'} from the sent workbook not found in the returned copy (deleted or filtered out when saved): ${esc(p.missing_rows.join(', '))}.</div>`:'';
+  const rej=p.rejected.length?`<div class="cp-m">Ignored: ${esc(p.rejected.map(r=>r.id+' ('+r.reason+')').join('; '))}.</div>`:'';
+  return `<div class="cp need"><div class="cp-h"><b>${esc(p.file)}</b><span class="cp-b y">${p.changes.length} changed row${p.changes.length===1?'':'s'}, ${p.new.length} new</span></div>
+    <div class="cp-m">Sent ${fmt(p.manifest_date)} with ${p.rows_sent} rows; ${p.rows_seen} came back. By reviewer: ${esc(Object.entries(p.by_reviewer).map(([k,v])=>k+' '+v).join(', ')||'none')}.</div>${miss}${rej}
+    ${p.changes.length+p.new.length?`<ul class="rv-list">${p.changes.map(row).join('')}${p.new.map(nrow).join('')}</ul><button type="button" class="btn primary" data-rvapply>Apply selected and commit</button> <span class="hint">Each accepted row gets a dated line in the reviewer's name; rows set to (skip) are left as they are.</span>`:'<div class="cp-m">Nothing changed in this copy.</div>'}</div>`}
+async function uploadReview(){const f=$('#rvfile').files[0];if(!f){toast('Choose the returned .xlsx first');return}
+  const r=await fetch('/api/review/upload?name='+encodeURIComponent(f.name),{method:'POST',headers:{'Content-Type':'application/octet-stream'},body:await f.arrayBuffer()});const j=await r.json();
+  if(!r.ok){toast(j.error||'Could not read the workbook');return}RVP=j;renderReview();render()}
+async function applyReview(){if(!RVP)return;const accept=[];
+  document.querySelectorAll('[data-rvwho]').forEach(s=>{const k=s.dataset.rvwho;if(!s.value)return;accept.push(k.startsWith('new')?{new:+k.slice(3),reviewer:s.value}:{id:k,reviewer:s.value})});
+  if(!accept.length){toast('No rows selected');return}
+  const r=await fetch('/api/review/apply',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({saved_as:RVP.saved_as,accept})});const j=await r.json();
+  if(!r.ok){toast(j.error||'Apply failed');return}
+  toast(`Filed ${j.applied.length} change${j.applied.length===1?'':'s'}, ${j.created.length} new · ${j.git}`);await openReview();await load()}
+
 async function openHelp(sec){const j=await (await fetch('/api/guide')).json();SEL=null;
   $('#panel').innerHTML=`<div class="p-top">${head('','Help')}</div><div class="p-sec md">${md(j.markdown)}</div>`;
   showDrawer('help');$('#drawer').scrollTop=0;render();
