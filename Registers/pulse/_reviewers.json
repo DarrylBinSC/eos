@@ -1,0 +1,17 @@
+{
+  "note": "Pulse review workbook reviewers (Darryl, 2026-10-27). Reviewed-by dropdown and the Monday read-back accept only these names. Development reviewers are per product.",
+  "development": {
+    "entroCIM": ["Ron Snyder", "David Blondel"],
+    "WAM": ["Akansh Gangil", "David Blondel"],
+    "CDA": ["Ron Snyder", "David Blondel"]
+  },
+  "delivery": {
+    "*": ["Chad Steger", "Syed Jamshed Zaidi"]
+  },
+  "people_fixes": {
+    "Chethan GR / Scott Dunn": ["Chethan GR", "Scott Dunn"],
+    "Dinish Babu": "Babu C. Dinesh",
+    "Babu Pappana": "Babu Papanna",
+    "Syed Zahadi": "Syed Jamshed Zaidi"
+  }
+}
