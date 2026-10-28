@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-28 10:29 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 13:34 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 54 (Critical 13) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 53 (Critical 12) · Needs triage 0.
 
 ---
 
@@ -93,7 +93,6 @@ Four registers. The delineation is the point.
 | C40 | Send the FRB SASTEC agreement to Nathan Kehr for signature | Owner unclear (sender not named in evidence) | Awaited | Not dated | -- | 2026-10-19 | New 08-27. |
 | C41 | Sign the FRB SASTEC agreement once received | Nathan Kehr | Awaited | Not dated | -- | 2026-10-19 | New 08-27. |
 | C42 | Help identify CDA pilot accounts and route engagement through sales leadership | Chris Mooney and Bill Muczko | Awaited | Not dated | -- | 2026-09-18 | Darryl: "I am asking for your view on whether it is worth building and for your help finding two or three pilot accounts." Companion to A37; |
-| C45 | i3 Alliance Agreement — Wesco signature | Lee Osterman | Awaited | Gated on A41 (Section 12 redline must go back to Brandon Thompson first) | **Critical** | 2026-09-17 | Lee Osterman, explicit: "I will sign once it comes back." Legal confirmed a VP may sign without Finance input since the agreement itself doesn't generate sales directly. |
 | C52 | Amy's UiPath intake filing for the Strev AI use cases, and the demo requested in front of "Kehr" | Amy Aguirre | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C53 | Wade Bursch's business case and PowerPoint for the Virtual Site Survey | Wade Bursch (TS; reports to Matt Powers) | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C58 | Identify the current Cisco-side owner of the Cisco Connected Real Estate opportunity (NetBotz replacement, MDF power visibility) and tell Dave McCain that CDA is in development | Bob Caprise | Awaited | Not dated | -- | 2026-09-18 | New 2026-09-18. |
@@ -120,6 +119,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-10-28 | **C45 — i3 Alliance Agreement — Wesco signature** | Darryl, EOS web app, 2026-10-28 | Lee Osterman, explicit: "I will sign once it comes back." Legal confirmed a VP may sign without Finance input since the agreement itself doesn't generate sales directly. |
 | 2026-10-28 | **B82 — Send a follow-up email on the outstanding Azure listener dependency if unresolved after one more day** | Darryl, EOS web app, 2026-10-28 | New 09-16. |
 | 2026-10-28 | **B72 — Share the entroCIM 3.1.12.14 release deck and build sales messaging with Valli Poornakumar and Leanne Gordon** | Darryl, EOS web app, 2026-10-28 | New 09-09. |
 | 2026-10-28 | **B49 — Check legacy-system manufacturer part numbers and contact the UDM team (source of DDP/eUDM truncation)** | Darryl, EOS web app, 2026-10-28 | New 08-19, RE: Anixter P360 CORE Parts Character limitation for MANUFACTURER PART # in DDP (eUDM). |
