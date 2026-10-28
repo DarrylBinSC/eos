@@ -22,6 +22,17 @@
 
 ## Decisions Made
 
+### 2026-10-28 — Stanford Commissioning App IP: pre-existing-software carve-out confirmed; Wesco in the clear
+- Status: Made (Darryl, 2026-10-27/28, legal meeting with Nikos Minas and Brandon Thompson)
+- Owner: Darryl Benson
+- Context: Closes `05` C76 and the IP sub-question gating `03` D096 (Stanford license roll-back and Commissioning App ownership). Legal review of the carve-out, 18.5 reuse limits, and the 2022/2023 PO term versions, following Darryl's pre-existing-IP evidence (CODA 2021 predates the Stanford PO).
+- Options considered: n/a -- legal's own assessment, not a choice among paths.
+- Decision / Recommended path: Darryl, own words: "Met with legal, and they were pleased that I brought this to their attention. With the background information provided by the team (Keith and Mike) we are in the clear since the code was started in 2021 (screenshot from Keith). Going forward, we'll work with sales and legal to ensure we don't miss the click through terms."
+- Risk of waiting: n/a, decided.
+- Forum where this should be decided: decided outside session, legal meeting; recorded via web-app note 2026-10-27 15:19 ET.
+- Follow-up: process fix going forward is Sales and Legal jointly screening click-through terms before similar engagements. `03` D096's broader roll-back-structure question (point counts, dev instance, term) is still open; needs Darryl's word on whether the Stanford-facing conversation happened.
+
+
 ### 2026-10-23 — entroCIM training: cost locked at $150/learner, margin drives price, line-level discount added
 - Status: Made (Darryl, 2026-10-23, Training Course Margin Discussion)
 - Owner: Darryl Benson; built by Maggie Becker
@@ -874,7 +885,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-28 08:58 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 09:12 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
