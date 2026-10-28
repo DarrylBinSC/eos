@@ -874,7 +874,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-28 08:57 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 08:58 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -1115,7 +1115,7 @@
 - Status: Complete -- position moved, structure undecided
 - Owner: Darryl Benson (Wesco position); Sarah Monteleone (customer call); Nikos Minas with Brandon Thompson (legal view)
 - Forum: Internal alignment Tuesday 2026-10-20 (Keith Bishop, Mike Reed, Chad Steger, Sarah Monteleone, Nathan Kehr); Stanford call Thursday 2026-10-22 (Sarah leads); Legal meeting Monday 2026-10-26 08:30 ET (Nikos Minas, Brandon Thompson) (2026-10-20)
-- Next action: Tuesday alignment: agree how the roll-back is done, pending Keith's pod-dependency answer and Mike's PO terms
+- Next action: Confirm with Darryl whether the Stanford roll-back structure call happened and what was agreed; all three information gaps (C73, C74, C76) are now closed.
 - Context: Austin (Stanford LBRE) asked to roll three licenses back to SkySpark-only. Reason, relayed by Sarah Monteleone from Austin (Teams, 2026-10-19): "There has been reorganization within LBRE, and we've had our budget reduced, so we need to save in certain areas, such as licenses." Term expired 2026-08-31; renewal unsigned.
 - Facts stated 2026-10-19 (Mike Reed, email): the three licenses began as SkySpark-only; two came from Altura, which bought them from Alper/BASSG; entroCIM licensing was added in 2023 at no upfront cost with maintenance charged at entroCIM pricing since; Wesco carries SkySpark-only maintenance on UNC Chapel Hill, Piedmont (CMS) and RTI. Renewal price lines (Mike Reed): Site SLA list $32,500, 18% maintenance $5,850; COOLER/Commissioning list $29,900, $5,382; Main Access Point list $29,800, $5,364. Darryl (Teams): "Stanford owns these SkySpark licenses and bought them before we were involved, and we already carry SkySpark-only maintenance on three other accounts."
 - **Position moved during 2026-10-19.** Email, morning: "Until that review is complete, I do not recommend offering a SkySpark-only renewal option." Teams, later, after Mike's facts: "On that basis, I am open to supporting the roll-back, and Tuesday should be about how we do it." Also: "We don't know whether Stanford sees it differently. Let's hear their view before we state ours." The 2026-10-19 working-session brief for Thursday was written on the earlier position and should be read with this change.
@@ -1131,6 +1131,8 @@
 2026-10-26 (Claude, weekly brief): Same date conflict as `05` C76 -- this item's own forum field names "Legal meeting Monday 2026-10-26 08:30 ET," but C76's due field was moved to 2026-10-27 by Darryl's web edit on 2026-10-21 and never reconciled. Needs Darryl's confirmation of what actually happened and when, since this gates the Commissioning App ownership position Stanford is waiting on.
 
 2026-10-27 (Claude, daily brief): Same calendar finding as `05` C76 -- a "Stanford / entroCIM: IP question on customer-funded development" occurrence was in progress at this morning's evidence-window close (2026-10-27, ~08:49 ET), with no transcript available. Consistent with, but not confirming, the legal session having moved to Tuesday 10-27. Needs Darryl's confirmation of what happened and when, and what Nikos Minas and Brandon Thompson said on the carve-out, Work Product and 18.5 questions -- this gates the Commissioning App ownership position Stanford is waiting on.
+
+2026-10-28 (Claude, daily brief): All three information gaps this decision was waiting on are now closed: C73 (Keith, pod dependency) closed 2026-10-20, C74 (Mike, PO terms) closed 2026-10-21, and C76 (Nikos/Brandon, carve-out/18.5) closed 2026-10-27. Darryl's own words on C76: "Met with legal, and they were pleased that I brought this to their attention... With the background information provided by the team (Keith and Mike) we are in the clear since the code was started in 2021 (screenshot from Keith)... going forward, we'll work with sales and legal to ensure we don't miss the click through terms." This clears the IP/ownership blocker on telling Stanford about the Commissioning App. The roll-back structure itself (point counts, dev instance, term, SkySpark-only renewal pricing) is not yet recorded as decided or discussed with Stanford in any evidence reviewed. Needs Darryl's word: did the Thursday Stanford call happen, and if so what was the roll-back structure agreed, if anything.
 
 ### 2026-10-15 — Quest/Azure decommission: approve $245/hour T&M for secure data-removal validation (new, Decision Backlog)
 - ID: D037

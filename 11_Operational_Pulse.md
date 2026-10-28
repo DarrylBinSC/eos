@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-28 08:57 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 08:58 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-14 to 2026-10-28. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,11 +8,11 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Steady | +17 | 152 | 130 | 20 | 3 | 6 | 1 |
+| Dell | Worsening | +23 | 158 | 130 | 21 | 3 | 6 | 1 |
+| Coca-Cola (TCCC) | Worsening | +18 | 27 | 4 | 4 | 0 | 1 | 1 |
 | Federal Reserve | Steady | +0 | 23 | 3 | 1 | 0 | 0 | 4 |
 | Wesco Warehouse | Steady | +4 | 23 | 19 | 3 | 1 | 0 | 0 |
 | Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
-| Coca-Cola (TCCC) | Steady | +0 | 9 | 4 | 1 | 0 | 1 | 1 |
 | Marygrove | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 | Stanford | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
@@ -24,6 +24,7 @@ No signals in the window: BAE, UWM.
 ## Needs your call
 
 - **P022** Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion (no account; WAM Sprint Review). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P094** WAM critical security vulnerabilities remain open past the team's intended close date (no account; WAM Sprint Review). Test: No owner, or the customer is unaware of a material problem.
 - **P068** WAM renewal recommendation feature: quality rejected, rework from start (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P070** Commissioning app test-tracking coverage incomplete: tracks fields, not everything; no formal owner (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P072** Three to four recently created GMS weather stations missing from validation tests (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
@@ -36,6 +37,12 @@ No signals in the window: BAE, UWM.
 - **P084** WAM historical upload: record-merge defect affecting perpetual-parts rows (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P085** WAM upload pipeline processes one resource at a time, causing multi-day stalls (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P086** WAM Spring Boot upgrade has unresolved runtime API issues; production release carries an unscoped DD-team dependency (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
+- **P087** entroCIM refresh hanging for some time while Babu C. Dinesh was away (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
+- **P088** ~800-900 additional points pending across four IRCs at the Limerick (Dell) closeout site (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P089** TCCC ECR connector (TEC 7th floor) timing out; connection info needs verification (Coca-Cola (TCCC); 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P090** Two new TCCC NAT IP gateways need internal confirmation before checking the customer network side (Coca-Cola (TCCC); 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P091** Repeated timeout and HTTP 504 errors on TCCC devices that had not shown them before; no nginx timeout standard (Coca-Cola (TCCC); 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
+- **P093** WAM: supplier filter returns unrelated sales orders, purchase orders and column-filter values (no account; WAM Sprint Review). Test: No owner, or the customer is unaware of a material problem.
 - **P078** paas-dev-03w returned HTTP 502 on 10-23; reported back up, not formally confirmed resolved (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 
 ## Knowledge concentration
@@ -54,15 +61,15 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
+| Akansh Gangil | 1 | 4 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Chad Steger | 7 | 12 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Akansh Gangil | 0 | 4 | 13 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
-| Syed Jamshed Zaidi | 6 | 22 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
+| Syed Jamshed Zaidi | 6 | 24 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
+| Scott Dunn | 5 | 14 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 2 | 1 | 4 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Shawn Clark | 4 | 6 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Scott Dunn | 3 | 12 | 2 | 0 | 2026 Deployment Daily Scrum |
+| Shawn Clark | 4 | 8 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Ron Snyder | 2 | 3 | 3 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Matthew Heid | 4 | 9 | 0 | 0 | 2026 Deployment Daily Scrum |
-| Natalie Marquardt | 0 | 1 | 4 | 0 | ADM connect with Natalie |
+| Natalie Marquardt | 0 | 2 | 4 | 0 | ADM connect with Natalie, WAM Sprint Review |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Nathan Kehr | 0 | 0 | 4 | 0 |  |
 | Adam Lazare | 0 | 0 | 3 | 0 |  |
@@ -71,7 +78,7 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 34, new this week 15, stuck 4, quiet 7. Last sighting: 2026-10-28. Last evidence: 2026-10-28.
+Governance: Project management. Owner: Chad Steger. Live 39, new this week 20, stuck 4, quiet 7. Last sighting: 2026-10-28. Last evidence: 2026-10-28.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -108,13 +115,18 @@ Governance: Project management. Owner: Chad Steger. Live 34, new this week 15, s
 | P075 | Durham OPC UA onboarding: limited prior experience with how points will appear | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: gap |
 | P076 | Cree Church alarm configuration pending with no owner, outstanding for some time |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
 | P077 | Vamil/Wimmel floor-plan graphics may be outside the quoted non-DC scope | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: boundary |
+| P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
+| P088 | ~800-900 additional points pending across four IRCs at the Limerick (Dell) closeout site | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: boundary |
 | P073 | Commissioning spreadsheet will not accept commissioning dates (Dell sites) | Dell |  | Medium | 2026-10-27 | 2026-10-28 | 2 | candidate: gap |
+| P089 | TCCC ECR connector (TEC 7th floor) timing out; connection info needs verification | Coca-Cola (TCCC) | Scott Dunn | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: boundary |
+| P090 | Two new TCCC NAT IP gateways need internal confirmation before checking the customer network side | Coca-Cola (TCCC) | Scott Dunn | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: boundary |
+| P091 | Repeated timeout and HTTP 504 errors on TCCC devices that had not shown them before; no nginx timeout standard | Coca-Cola (TCCC) |  | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: gap |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review; P014 Dell non-DC server unavailable since the prior week, blocking meter verification; P016 Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation; P025 Dell "three-creatures" requirements undefined; related work waits on a Dell workshop; P026 New York: two meters in commissioning, two with connection issues.
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 21, new this week 10, stuck 0, quiet 1. Last sighting: 2026-10-27. Last evidence: 2026-10-27.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 21, new this week 10, stuck 0, quiet 1. Last sighting: 2026-10-27. Last evidence: 2026-10-28.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -182,12 +194,15 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P019 WA
 
 ## WAM Sprint Review
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 2, quiet 0. Last sighting: 2026-10-27. Last evidence: 2026-10-27.
+Governance: Sprint. Owner: Sakshi Mathur. Live 5, new this week 3, stuck 2, quiet 0. Last sighting: 2026-10-27. Last evidence: 2026-10-28.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P021 | EUDM truncates manufacturer part numbers over 15 characters, causing ADM data loss |  |  | High | 2026-10-13 | 2026-10-27 | 3 | stuck, customer-visible, escalated to W016 |
 | P022 | Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion |  |  | High | 2026-10-13 | 2026-10-27 | 3 | stuck, customer-visible, candidate: boundary |
+| P094 | WAM critical security vulnerabilities remain open past the team's intended close date |  |  | High | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
+| P092 | WAM: selected supplier disappears from License and Orders after navigating away and back |  | Akansh Gangil | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible |
+| P093 | WAM: supplier filter returns unrelated sales orders, purchase orders and column-filter values |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: gap |
 
 ## WAM Product discussion
 

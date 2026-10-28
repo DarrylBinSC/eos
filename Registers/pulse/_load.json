@@ -365,14 +365,14 @@
    "teams": 0
   },
   "Coca-Cola (TCCC)": {
-   "delta7": 0,
-   "load": 9,
-   "teams": 4
+   "delta7": 18,
+   "load": 27,
+   "teams": 22
   },
   "Dell": {
-   "delta7": 17,
-   "load": 152,
-   "teams": 147
+   "delta7": 23,
+   "load": 158,
+   "teams": 153
   },
   "Federal Reserve": {
    "delta7": 0,

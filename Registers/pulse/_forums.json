@@ -20,7 +20,7 @@
       ],
       "confirmed": true,
       "track": "delivery",
-      "last_evidence": "2026-10-27",
+      "last_evidence": "2026-10-28",
       "active": true
     },
     {
@@ -39,7 +39,7 @@
       ],
       "confirmed": true,
       "track": "development",
-      "last_evidence": "2026-10-27",
+      "last_evidence": "2026-10-28",
       "active": true
     },
     {
@@ -156,7 +156,7 @@
       "aliases": [],
       "confirmed": true,
       "track": "development",
-      "last_evidence": "2026-10-13",
+      "last_evidence": "2026-10-28",
       "active": true
     },
     {
