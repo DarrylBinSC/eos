@@ -64,9 +64,9 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Akansh Gangil | 1 | 4 | 10 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Syed Jamshed Zaidi | 6 | 24 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
 | Scott Dunn | 5 | 14 | 2 | 0 | 2026 Deployment Daily Scrum |
-| Babu Papanna | 2 | 1 | 4 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Shawn Clark | 4 | 8 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Ron Snyder | 2 | 3 | 3 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
+| Babu Papanna | 2 | 1 | 3 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Matthew Heid | 4 | 9 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Nathan Kehr | 0 | 0 | 4 | 0 |  |
