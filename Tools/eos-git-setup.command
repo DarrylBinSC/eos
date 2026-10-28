@@ -25,7 +25,7 @@
 set -u
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 EOS_ROOT="$(cd "$SCRIPT_DIR/.." && pwd)"
-GIT_HOME="$HOME/.eos-git"
+GIT_HOME="$EOS_ROOT/.git.nosync"   # was ~/.eos-git on first run; relocated 2026-10-28 so Claude's shell can read it
 cd "$EOS_ROOT" || exit 1
 
 if lsof -nP -iTCP:"${EOS_PORT:-8765}" -sTCP:LISTEN >/dev/null 2>&1; then
@@ -44,7 +44,7 @@ if [ -d "$EOS_ROOT/.git" ]; then
     exit 1
   fi
   mv "$EOS_ROOT/.git" "$GIT_HOME" || exit 1
-  printf 'gitdir: %s\n' "$GIT_HOME" > "$EOS_ROOT/.git"
+  printf 'gitdir: .git.nosync\n' > "$EOS_ROOT/.git"
   echo "Moved to $GIT_HOME; .git in the EOS folder is now a pointer file."
 elif [ -f "$EOS_ROOT/.git" ]; then
   echo "Already a pointer file: $(cat "$EOS_ROOT/.git")"
