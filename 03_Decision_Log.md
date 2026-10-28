@@ -885,7 +885,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-28 14:01 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 14:07 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -1081,9 +1081,7 @@
 - Note: distinct WAB approval track from the JCI API-connection WAB item above — do not conflate the two Architecture Review Board items.
 - **Update 2026-08-25 (Darryl, session).** Two things this thread was missing now exist. **Access path is settled at policy level:** Wesco AI Council and IT practices require API keys rather than individual accounts (logged under Decisions Made, 2026-08-25), which forecloses seat-based plans. **A cost basis now exists:** roughly $195 per developer per month on a Sonnet-primary model mix, $290 with contingency, method and rates in `Reference/AI_Development_Tooling_Cost_Model.md`. Neither changes the WAB approval question itself, but both remove reasons a reviewer could send the package back. **Corrected later the same session:** the API-key-path question is not open. **Woolly does not support Azure AI Foundry at this point**, so direct Anthropic keys are technically required for the harness; Claude Code separately does run on Foundry, which is why the `entroCIM_Ops` enablement and Darryl's direction are both true. **What remains unrouted is narrower and still unowned:** which budget carries the Anthropic spend, given it cannot ride the Azure envelope; and whether anyone sets model policy for the automated Woolly test suite, which on the corrected model is 56% of interaction volume and the only line with no human deciding each call. Recommend both at the Digital Products Portfolio Review alongside the WAB item rather than as separate threads. Note the cost figure in the sentence above was superseded within the session: it priced developer coding assistance, not harness runtime. Corrected Anthropic API budget line is $6,050 for six months; see `Deliverables/entroCIM/2026-08-25_Woolly_Dev_Test_API_Cost_Estimate.md`.
 
-2026-10-28 (Darryl, web): - Chad is working with them to get devices and a 'scope' to execute against.
-
-2026-10-28 (Darryl, web): - Wrong note below about Chad:
+2026-10-28 (Claude, session): Two web notes about Chad, devices and scope were entered here by mistake and moved to B4 at Darryl's instruction.
 
 ### 2026-07-16 — JCI (Johnson Controls) MSP agreement — drive to signature
 - ID: D019
