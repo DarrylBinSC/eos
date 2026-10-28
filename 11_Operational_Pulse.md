@@ -61,7 +61,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
 | Chad Steger | 7 | 12 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Akansh Gangil | 1 | 4 | 11 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Akansh Gangil | 1 | 4 | 10 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Syed Jamshed Zaidi | 6 | 24 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
 | Scott Dunn | 5 | 14 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 2 | 1 | 4 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |

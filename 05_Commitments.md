@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 76 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 75 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -77,7 +77,6 @@ Four registers. The delineation is the point.
 | B99 | Check whether reciprocal Wesco/manufacturer part-number completion can fit the current WAM Data Enrichment iteration | Akansh Gangil | Delegated | 2026-10-30 Before the enrichment target, if feasible | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | C1 | JCI final legal markup sent to JCI |  |  | 2026-10-30 | -- | 2026-10-21 | ## Closure Date closed (as recorded): 2026-09-01 Done. |
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
-| B10 | MDM attribute progress follow-up | Akansh Gangil | Delegated | IDP/WAM process review | -- | 2026-10-19 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm (aging sweep found resolution evidence, so this goes to Closed on Darryl's yes, not to Aged Out): DDPTRK-6346 marked complete via MDM Governance in the Digi… |
 | B18 | TCCC/AOC connectivity — five-step diagnostic sequence | Scott Dunn | Delegated | Before Wednesday customer discussion; Syed Zaidi tracking | **Critical** | 2026-10-15 | No evidence any of the five landed as of 08-03 |
 | B2 | Vendor attribute data collection ahead of CSS-DDP integration | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
 | B21 | TCCC/AOC Managed Services follow-through (KMC tie-in, alarm-management meeting, recurring Dan Fife/Jesse Dougherty meeting) | Nathan Kehr / Sarah Monteleone / Scott Dunn | Delegated | Sequence after B18 holds | -- | 2026-10-15 | Do not let this get ahead of B18 |
@@ -147,6 +146,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-28 | **B12 — DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian** | Darryl, EOS web app, 2026-10-28 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm. |
 | 2026-10-28 | **B107 — Discuss the full-manufacturer-part-number enhancement with engineering and determine next steps** | Darryl, EOS web app, 2026-10-28 | New 2026-10-14. |
 | 2026-10-28 | **B106 — Complete WAM global-attributes analysis and set up a review call** | Darryl, EOS web app, 2026-10-28 | New 2026-10-14. |
+| 2026-10-28 | **B10 — MDM attribute progress follow-up** | Darryl, EOS web app, 2026-10-28 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm (aging sweep found resolution evidence, so this goes to Closed on Darryl's yes, not to Aged Out): DDPTRK-6346 marked complete via MDM Governance in the Digi… |
 | 2026-10-27 | **C76 — Stanford / entroCIM IP: whether the Commissioning toolset falls under the pre-existing-software carve-out or is Stanford work product; whether 18.5 creates exposure; 2022 and 2023 versions of Stanford's PO terms** | Darryl, EOS web app, 2026-10-27 | New 2026-10-20. |
 | 2026-10-22 | **A69 — Identify who in core IT can resolve the WESCO Asset Management single sign-on issue (possibly Volkan)** | Darryl, EOS web app, 2026-10-22 | ## Next step Darryl's own words, Quest Migration Weekly Check-In, 2026-10-20: "There's a problem with the single sign on for that. |
 | 2026-10-21 | **C74 — Stanford: 2022 and 2023 purchase orders and attached terms; where Phase 1/Phase 2 re-testing scope was agreed and whether Phase 2 is in writing** | Darryl, EOS web app, 2026-10-21 | New 2026-10-20. |
