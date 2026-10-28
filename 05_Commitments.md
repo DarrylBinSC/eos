@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-28 10:10 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 10:11 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 75 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 74 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -86,7 +86,6 @@ Four registers. The delineation is the point.
 | B31 | LAD task assignments from the 08-04 deployment meeting | Syed Zaidi | Delegated | Dated closeout plan by owner and blocker | **Critical** | 2026-10-15 | Escalated LAD row in `04` |
 | B32 | Identify missing AQI and people-counting sensor data; integrate once fixed | Marjan Fathima / Valli Poornakumar; Adam Slingerland / Pradyumna Umarji | Delegated | LAD snag-list review | -- | 2026-10-15 | Route identified 08-04, integration not complete |
 | B4 | Ascent POC — get it running | Chad Steger (technical POC), Chris Askew (JACE access) | Delegated | Gate passed 08-15; superseded by direct evidence | -- | 2026-10-16 | Advanced, 09-15 to 09-28 evidence. |
-| B42 | Check/complete AD group access mapping for Claude Code rollout | Darryl Benson | Delegated | — | -- | 2026-10-19 | Superseded 08-17 — promoted to Register A28. |
 | B53 | Follow up the truncated manufacturer part number issue, summarise the need, and copy Darryl | Akansh Gangil | Delegated | Immediately, per 08-25 | **Critical** | 2026-10-15 | Akansh Gangil: "I will drop an e-mail and copy you also." Feeds A29 — if this produces no owner, A29 fires. |
 | B58 | Provide the entroCIM AI one-pager details: business value, costs, benefits, incremental revenue | Ron Snyder | Delegated | Not stated | -- | 2026-10-15 | Gates the AI Tech Review submission. |
 | B60 | Export and audit the Freshdesk user-access report for Ford | Chad Steger | Delegated | Not dated | -- | 2026-10-15 | New 08-27. |
@@ -142,6 +141,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
 | 2026-10-28 | **B49 — Check legacy-system manufacturer part numbers and contact the UDM team (source of DDP/eUDM truncation)** | Darryl, EOS web app, 2026-10-28 | New 08-19, RE: Anixter P360 CORE Parts Character limitation for MANUFACTURER PART # in DDP (eUDM). |
+| 2026-10-28 | **B42 — Check/complete AD group access mapping for Claude Code rollout** | Darryl, EOS web app, 2026-10-28 | Superseded 08-17 — promoted to Register A28. |
 | 2026-10-28 | **B20 — Confirm why EUDM/DDP vendor part numbers are truncated; resend corrected Milestone Q2 data** | Darryl, EOS web app, 2026-10-28 | 08-12: reconfirmed and escalated — same 15-character vendor part-number limitation, still unresolved a cycle later; |
 | 2026-10-28 | **B12 — DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian** | Darryl, EOS web app, 2026-10-28 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm. |
 | 2026-10-28 | **B107 — Discuss the full-manufacturer-part-number enhancement with engineering and determine next steps** | Darryl, EOS web app, 2026-10-28 | New 2026-10-14. |
