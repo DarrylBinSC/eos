@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-28 10:03 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 10:04 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-14 to 2026-10-28. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -70,8 +70,8 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Matthew Heid | 4 | 9 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Nathan Kehr | 0 | 0 | 4 | 0 |  |
-| Natalie Marquardt | 0 | 2 | 3 | 0 | ADM connect with Natalie, WAM Sprint Review |
 | Adam Lazare | 0 | 0 | 3 | 0 |  |
+| Ankit Chadha | 0 | 0 | 3 | 0 |  |
 
 Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own. Sole holder: knowledge areas they hold without a confirmed backup.
 
