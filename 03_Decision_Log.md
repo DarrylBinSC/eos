@@ -885,9 +885,9 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-28 13:37 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 13:38 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
 ### 2026-10-26 — Woolly becomes a paid SkyFoundry add-on from 2027-05-01: pass-through, absorb, or bundle in entroCIM AI pricing
 - ID: D097
@@ -1071,6 +1071,16 @@
 - Risk of waiting: AOP 2027 cycle timing; concept needs research validation (competitive scan, firmware redistribution rights, Airwall commercial terms) before a funding conversation.
 - Follow-up: phased joint workplan agreed 07-23 (`Deliverables/2026-07-23_ChatGPT_Addendum_and_Joint_Workplan.md`) — Phase 1 diverge (ChatGPT run + Claude merge → shortlist), Phase 2 deep dives + Claude competitive research → concept freeze, Phase 3 funding package → Sean 1:1, Phase 4 AOP submission. Checkpoint outcomes logged here. Make-or-break gate to start immediately: manufacturer firmware redistribution rights (informal supplier-relations/legal question, don't wait for Phase 2).
 
+### 2026-07-20 — WAB approval for Claude code — AI-enabled assortment/QPM tooling
+- ID: D028
+- Owner: Prasada / Maddy (per Loop notes)
+- Forum: Digital Products Portfolio Review.
+- Added: 2026-07-20 (M365 evidence — Digital Products Portfolio Review)
+- Context: Portfolio review flagged a task to take Claude code through Wesco Architecture Review Board approval "this Friday or next Friday" to enable assortment-tool and QPM usage, with possible board showcase.
+- Risk of waiting: AI-enabled assortment/QPM development slips if approval isn't sequenced against the named Friday target.
+- Note: distinct WAB approval track from the JCI API-connection WAB item above — do not conflate the two Architecture Review Board items.
+- **Update 2026-08-25 (Darryl, session).** Two things this thread was missing now exist. **Access path is settled at policy level:** Wesco AI Council and IT practices require API keys rather than individual accounts (logged under Decisions Made, 2026-08-25), which forecloses seat-based plans. **A cost basis now exists:** roughly $195 per developer per month on a Sonnet-primary model mix, $290 with contingency, method and rates in `Reference/AI_Development_Tooling_Cost_Model.md`. Neither changes the WAB approval question itself, but both remove reasons a reviewer could send the package back. **Corrected later the same session:** the API-key-path question is not open. **Woolly does not support Azure AI Foundry at this point**, so direct Anthropic keys are technically required for the harness; Claude Code separately does run on Foundry, which is why the `entroCIM_Ops` enablement and Darryl's direction are both true. **What remains unrouted is narrower and still unowned:** which budget carries the Anthropic spend, given it cannot ride the Azure envelope; and whether anyone sets model policy for the automated Woolly test suite, which on the corrected model is 56% of interaction volume and the only line with no human deciding each call. Recommend both at the Digital Products Portfolio Review alongside the WAB item rather than as separate threads. Note the cost figure in the sentence above was superseded within the session: it priced developer coding assistance, not harness runtime. Corrected Anthropic API budget line is $6,050 for six months; see `Deliverables/entroCIM/2026-08-25_Woolly_Dev_Test_API_Cost_Estimate.md`.
+
 ### 2026-07-16 — JCI (Johnson Controls) MSP agreement — drive to signature
 - ID: D019
 - Status: Approaching — stalled on the agreement, momentum restored at account level. MSP model decided (not reseller) 2026-05-26; final markups blocked on unresolved technical/commercial questions. 07-17: 07-15 meeting transcript received and ingested — it was a JCI-initiated FY26 review / FY27 growth partner meeting, not a negotiation: none of the 5 blockers or contractual terms were discussed; no contract commitments made. New evidence from it: (a) JCI's account team described the MSP metering model assuming Wesco continues running/provisioning its own Conductor, with only a read-only license-usage agent added — verbally supportive of the self-host position, not contractual; (b) MSP billing = monthly in arrears on provisioned licenses (vs 12-month prepay today); (c) Wesco's Conductor/relay Azure migration is already in flight (2 Conductors, HA) — execution is running ahead of contract, sharpening urgency to paper hosting rights; (d) 443-only connectivity available now, removing the top deployment friction. Full outcomes: `Products/JCI_Partnership.md`. 07-17 PM corrections (Darryl): Wesco is hosting the Conductor as of today; the internal prerequisite is now specific — Wesco Architecture Review Board (WAB) approval of the JCI API connection (metering agent) from the Conductor, not a hosting-model review. Babu Papanna has no JCI/Conductor actions. HA failover is Wesco IT responsibility inside Wesco's Azure IoT subscription (resolved 07-17 PM) — JCI L3 is optional support, not a required engagement. Brian Miller refresh email SENT 07-17; meeting committed week of 07-20 (agenda: hosting redline, 5 open items, new terms, customer flow-down, markup schedule). Framing correction from Darryl's sent email: legal review ongoing since early June, Darryl owed Brian a response — the quiet period was partly Wesco-side. Hosting responsibility settled operationally (07-17 PM): Wesco is the hosting authority — environment owned by Wesco, application owned by Darryl's team; patching/backup/DR/SLA/security addressed. Sole open matrix element: JCI's support obligations to Wesco (L3/escalation/SLA), still owed by JCI. Value-thesis correction (Darryl, 07-17 PM): the deal's value is the whole MSP licensing flip (consumption billing), with hosting as the enabling change — signature condition now two-part: express hosting rights AND licensing mechanics codified in durable agreement text (not unilaterally changeable Program Materials).**
@@ -1109,7 +1119,7 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 80.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 79.*
 
 ### 2026-10-20 — Stanford renewal: three licenses back to SkySpark-only, how Wesco supports the roll-back and what happens to the Commissioning App
 - ID: D096
@@ -1887,16 +1897,6 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Risk of waiting: if Fanny moves before placement is discussed, the tool's home gets decided by default rather than by portfolio logic.
 
 2026-10-19 (Claude, weekly brief): Moved from Decision Radar to Backlog at the register cap (Radar 25 against 20). Reason: fails the Radar entry test, no named forum with a live date; not touched since July and no forward date on record. Content unchanged. Returns to the Radar the moment a forum and date exist.
-
-### 2026-07-20 — WAB approval for Claude code — AI-enabled assortment/QPM tooling
-- ID: D028
-- Owner: Prasada / Maddy (per Loop notes)
-- Forum: Digital Products Portfolio Review.
-- Added: 2026-07-20 (M365 evidence — Digital Products Portfolio Review)
-- Context: Portfolio review flagged a task to take Claude code through Wesco Architecture Review Board approval "this Friday or next Friday" to enable assortment-tool and QPM usage, with possible board showcase.
-- Risk of waiting: AI-enabled assortment/QPM development slips if approval isn't sequenced against the named Friday target.
-- Note: distinct WAB approval track from the JCI API-connection WAB item above — do not conflate the two Architecture Review Board items.
-- **Update 2026-08-25 (Darryl, session).** Two things this thread was missing now exist. **Access path is settled at policy level:** Wesco AI Council and IT practices require API keys rather than individual accounts (logged under Decisions Made, 2026-08-25), which forecloses seat-based plans. **A cost basis now exists:** roughly $195 per developer per month on a Sonnet-primary model mix, $290 with contingency, method and rates in `Reference/AI_Development_Tooling_Cost_Model.md`. Neither changes the WAB approval question itself, but both remove reasons a reviewer could send the package back. **Corrected later the same session:** the API-key-path question is not open. **Woolly does not support Azure AI Foundry at this point**, so direct Anthropic keys are technically required for the harness; Claude Code separately does run on Foundry, which is why the `entroCIM_Ops` enablement and Darryl's direction are both true. **What remains unrouted is narrower and still unowned:** which budget carries the Anthropic spend, given it cannot ride the Azure envelope; and whether anyone sets model policy for the automated Woolly test suite, which on the corrected model is 56% of interaction volume and the only line with no human deciding each call. Recommend both at the Digital Products Portfolio Review alongside the WAB item rather than as separate threads. Note the cost figure in the sentence above was superseded within the session: it priced developer coding assistance, not harness runtime. Corrected Anthropic API budget line is $6,050 for six months; see `Deliverables/entroCIM/2026-08-25_Woolly_Dev_Test_API_Cost_Estimate.md`.
 
 ### 2026-07-20 — WAM/ADM operational hardening plan — sequencing and gate scoping
 - ID: D027
