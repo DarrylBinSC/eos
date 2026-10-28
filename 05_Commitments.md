@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-28 10:04 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 10:10 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 77 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 76 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -78,7 +78,6 @@ Four registers. The delineation is the point.
 | C1 | JCI final legal markup sent to JCI |  |  | 2026-10-30 | -- | 2026-10-21 | ## Closure Date closed (as recorded): 2026-09-01 Done. |
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
 | B10 | MDM attribute progress follow-up | Akansh Gangil | Delegated | IDP/WAM process review | -- | 2026-10-19 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm (aging sweep found resolution evidence, so this goes to Closed on Darryl's yes, not to Aged Out): DDPTRK-6346 marked complete via MDM Governance in the Digi… |
-| B12 | DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian | Akansh Gangil (reassigned 07-27) | Delegated | DDP Entrance Call (weekly) | -- | 2026-10-19 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm. |
 | B18 | TCCC/AOC connectivity — five-step diagnostic sequence | Scott Dunn | Delegated | Before Wednesday customer discussion; Syed Zaidi tracking | **Critical** | 2026-10-15 | No evidence any of the five landed as of 08-03 |
 | B2 | Vendor attribute data collection ahead of CSS-DDP integration | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
 | B21 | TCCC/AOC Managed Services follow-through (KMC tie-in, alarm-management meeting, recurring Dan Fife/Jesse Dougherty meeting) | Nathan Kehr / Sarah Monteleone / Scott Dunn | Delegated | Sequence after B18 holds | -- | 2026-10-15 | Do not let this get ahead of B18 |
@@ -145,6 +144,7 @@ Removed from the commitment system. No completion state, so counting them perman
 |---|---|---|---|
 | 2026-10-28 | **B49 — Check legacy-system manufacturer part numbers and contact the UDM team (source of DDP/eUDM truncation)** | Darryl, EOS web app, 2026-10-28 | New 08-19, RE: Anixter P360 CORE Parts Character limitation for MANUFACTURER PART # in DDP (eUDM). |
 | 2026-10-28 | **B20 — Confirm why EUDM/DDP vendor part numbers are truncated; resend corrected Milestone Q2 data** | Darryl, EOS web app, 2026-10-28 | 08-12: reconfirmed and escalated — same 15-character vendor part-number limitation, still unresolved a cycle later; |
+| 2026-10-28 | **B12 — DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian** | Darryl, EOS web app, 2026-10-28 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm. |
 | 2026-10-28 | **B107 — Discuss the full-manufacturer-part-number enhancement with engineering and determine next steps** | Darryl, EOS web app, 2026-10-28 | New 2026-10-14. |
 | 2026-10-28 | **B106 — Complete WAM global-attributes analysis and set up a review call** | Darryl, EOS web app, 2026-10-28 | New 2026-10-14. |
 | 2026-10-27 | **C76 — Stanford / entroCIM IP: whether the Commissioning toolset falls under the pre-existing-software carve-out or is Stanford work product; whether 18.5 creates exposure; 2022 and 2023 versions of Stanford's PO terms** | Darryl, EOS web app, 2026-10-27 | New 2026-10-20. |
