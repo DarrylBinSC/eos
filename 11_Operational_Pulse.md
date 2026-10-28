@@ -11,7 +11,7 @@
 | Dell | Worsening | +23 | 159 | 131 | 21 | 3 | 7 | 1 |
 | Coca-Cola (TCCC) | Worsening | +18 | 22 | 4 | 4 | 0 | 1 | 0 |
 | Wesco Warehouse | Steady | +4 | 23 | 19 | 3 | 1 | 0 | 0 |
-| Federal Reserve | Steady | +0 | 18 | 3 | 1 | 0 | 0 | 3 |
+| Federal Reserve | Steady | +0 | 13 | 3 | 1 | 0 | 0 | 2 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
 | Marygrove | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |

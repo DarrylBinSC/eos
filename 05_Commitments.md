@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 52 (Critical 11) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 51 (Critical 10) · Needs triage 0.
 
 ---
 
@@ -69,7 +69,6 @@ Four registers. The delineation is the point.
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
 | B2 | Vendor attribute data collection ahead of CSS-DDP integration | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
 | B21 | TCCC/AOC Managed Services follow-through (KMC tie-in, alarm-management meeting, recurring Dan Fife/Jesse Dougherty meeting) | Nathan Kehr / Sarah Monteleone / Scott Dunn | Delegated | Sequence after B18 holds | -- | 2026-10-15 | Do not let this get ahead of B18 |
-| B25 | Confirm FRB SASTEC customer PO references the correct (Lab) environment | Sarah Monteleone / Lindsay Cotten | Delegated | FRB SASTEC pilot follow-up | **Critical** | 2026-10-15 | PO/provisioning mismatch risk |
 | B3 | New attributes into P360 with Rochelle and Darren Taylor's team | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
 | B32 | Identify missing AQI and people-counting sensor data; integrate once fixed | Marjan Fathima / Valli Poornakumar; Adam Slingerland / Pradyumna Umarji | Delegated | LAD snag-list review | -- | 2026-10-15 | Route identified 08-04, integration not complete |
 | B4 | Ascent POC — get it running | Chad Steger (technical POC), Chris Askew (JACE access) | Delegated | Gate passed 08-15; superseded by direct evidence | -- | 2026-10-16 | Advanced, 09-15 to 09-28 evidence. |
@@ -123,6 +122,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-28 | **B72 — Share the entroCIM 3.1.12.14 release deck and build sales messaging with Valli Poornakumar and Leanne Gordon** | Darryl, EOS web app, 2026-10-28 | New 09-09. |
 | 2026-10-28 | **B49 — Check legacy-system manufacturer part numbers and contact the UDM team (source of DDP/eUDM truncation)** | Darryl, EOS web app, 2026-10-28 | New 08-19, RE: Anixter P360 CORE Parts Character limitation for MANUFACTURER PART # in DDP (eUDM). |
 | 2026-10-28 | **B42 — Check/complete AD group access mapping for Claude Code rollout** | Darryl, EOS web app, 2026-10-28 | Superseded 08-17 — promoted to Register A28. |
+| 2026-10-28 | **B25 — Confirm FRB SASTEC customer PO references the correct (Lab) environment** | Darryl, EOS web app, 2026-10-28 | PO/provisioning mismatch risk |
 | 2026-10-28 | **B20 — Confirm why EUDM/DDP vendor part numbers are truncated; resend corrected Milestone Q2 data** | Darryl, EOS web app, 2026-10-28 | 08-12: reconfirmed and escalated — same 15-character vendor part-number limitation, still unresolved a cycle later; |
 | 2026-10-28 | **B18 — TCCC/AOC connectivity — five-step diagnostic sequence** | Darryl, EOS web app, 2026-10-28 | No evidence any of the five landed as of 08-03 |
 | 2026-10-28 | **B12 — DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian** | Darryl, EOS web app, 2026-10-28 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm. |
