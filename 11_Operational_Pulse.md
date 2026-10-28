@@ -9,7 +9,7 @@
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
 | Dell | Worsening | +23 | 159 | 131 | 21 | 3 | 7 | 1 |
-| Coca-Cola (TCCC) | Worsening | +18 | 27 | 4 | 4 | 0 | 1 | 1 |
+| Coca-Cola (TCCC) | Worsening | +18 | 22 | 4 | 4 | 0 | 1 | 0 |
 | Wesco Warehouse | Steady | +4 | 23 | 19 | 3 | 1 | 0 | 0 |
 | Federal Reserve | Steady | +0 | 18 | 3 | 1 | 0 | 0 | 3 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
@@ -61,9 +61,9 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
 | Chad Steger | 7 | 12 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Scott Dunn | 5 | 14 | 2 | 0 | 2026 Deployment Daily Scrum |
 | Akansh Gangil | 1 | 4 | 6 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Syed Jamshed Zaidi | 6 | 24 | 0 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
+| Scott Dunn | 5 | 14 | 1 | 0 | 2026 Deployment Daily Scrum |
 | Shawn Clark | 4 | 8 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Matthew Heid | 4 | 9 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
