@@ -68,19 +68,32 @@ def _lead_lines(body: str, n: int = 2, limit: int = 240) -> list[str]:
     return out
 
 
-def _sections(path: Path) -> list[dict]:
+def _section_date(head: str, today: str) -> str:
+    """The date a section was filed. Fixed 2026-10-28: the heading's max date was used, so a 10-26 entry whose
+    title mentioned a future date ("Woolly is free only until 2027-05-01") dated the whole card at 2027-05-01 and
+    the entroCIM card read "updated -185d ago". Prefer the date inside the "(added|updated|revised ...)" note;
+    otherwise the latest heading date that is not in the future."""
+    note = HEAD_NOTE_RE.search(head)
+    cands = DATE_RE.findall(note.group(0)) if note else []
+    if not cands:
+        cands = [d for d in DATE_RE.findall(head) if d <= today]
+    return max(cands) if cands else ""
+
+
+def _sections(path: Path, today: str | None = None) -> list[dict]:
     """Dated `## ` sections of a product file, newest first."""
     if not path.exists():
         return []
+    today = today or R.today()
     txt = path.read_text(encoding="utf-8")
     out = []
     for chunk in re.split(r"(?m)^## ", txt)[1:]:
         head, _, body = chunk.partition("\n")
-        dates = DATE_RE.findall(head)
-        if not dates:
+        date = _section_date(head, today)
+        if not date:
             continue
         out.append({
-            "date": max(dates),
+            "date": date,
             "heading": HEAD_NOTE_RE.sub("", _clean(head)).strip(),
             "lead": _lead_lines(body),
             "ids": sorted(set(ID_RE.findall(body)), key=lambda i: (i[0], int(i[1:])))[:12],
@@ -121,7 +134,7 @@ def summary(window: int = 14, today: str | None = None) -> dict:
         files = p.get("files") or [p["file"]]
         secs = []
         for f in files:
-            for sec in _sections(R.ROOT / f):
+            for sec in _sections(R.ROOT / f, str(today_d)):
                 sec["file"] = f
                 secs.append(sec)
         secs.sort(key=lambda s: s["date"], reverse=True)
