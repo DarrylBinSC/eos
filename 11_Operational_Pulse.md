@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-28 10:11 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 10:19 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-14 to 2026-10-28. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,11 +8,11 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +23 | 158 | 130 | 21 | 3 | 6 | 1 |
+| Dell | Worsening | +23 | 159 | 131 | 21 | 3 | 7 | 1 |
 | Coca-Cola (TCCC) | Worsening | +18 | 27 | 4 | 4 | 0 | 1 | 1 |
-| Federal Reserve | Steady | +0 | 23 | 3 | 1 | 0 | 0 | 4 |
 | Wesco Warehouse | Steady | +4 | 23 | 19 | 3 | 1 | 0 | 0 |
-| Ford | Steady | +0 | 15 | 0 | 0 | 0 | 0 | 3 |
+| Federal Reserve | Steady | +0 | 18 | 3 | 1 | 0 | 0 | 3 |
+| Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
 | Marygrove | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 | Stanford | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
@@ -60,18 +60,18 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 7 | 12 | 6 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Akansh Gangil | 1 | 4 | 10 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
-| Syed Jamshed Zaidi | 6 | 24 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
+| Chad Steger | 7 | 12 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Scott Dunn | 5 | 14 | 2 | 0 | 2026 Deployment Daily Scrum |
+| Akansh Gangil | 1 | 4 | 6 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Syed Jamshed Zaidi | 6 | 24 | 0 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
 | Shawn Clark | 4 | 8 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Ron Snyder | 2 | 3 | 3 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
-| Babu Papanna | 2 | 1 | 3 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Matthew Heid | 4 | 9 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
-| Nathan Kehr | 0 | 0 | 4 | 0 |  |
-| Adam Lazare | 0 | 0 | 3 | 0 |  |
-| Ankit Chadha | 0 | 0 | 3 | 0 |  |
+| Ron Snyder | 2 | 3 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
+| Babu Papanna | 2 | 1 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Nathan Kehr | 0 | 0 | 3 | 0 |  |
+| Sean McCloskey | 0 | 0 | 3 | 0 |  |
+| Michael Pieschel | 2 | 3 | 0 | 0 | entroCIM Daily Stand Up |
 
 Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own. Sole holder: knowledge areas they hold without a confirmed backup.
 
@@ -166,7 +166,7 @@ Governance: Sprint / backlog. Owner: David Blondel. Live 4, new this week 0, stu
 
 ## Quest Migration Weekly Check-In
 
-Governance: Project management. Owner: Chad Steger. Live 7, new this week 0, stuck 1, quiet 0. Last sighting: 2026-10-23. Last evidence: 2026-10-26.
+Governance: Project management. Owner: Chad Steger. Live 7, new this week 0, stuck 1, quiet 1. Last sighting: 2026-10-23. Last evidence: 2026-10-26.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -177,6 +177,8 @@ Governance: Project management. Owner: Chad Steger. Live 7, new this week 0, stu
 | P050 | Libro may fail through the new conductor pending an outbound-IP or relay configuration change |  | Shawn Clark | High | 2026-10-20 | 2026-10-23 | 2 | customer-visible |
 | P051 | Quest requesting additional $245/hour T&M on top of about $6,600/month; renewal and cancellation date unconfirmed |  |  | High | 2026-10-20 | 2026-10-23 | 2 |  |
 | P052 | Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 |  |
+
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P100 Quest Migration: production MQTT/WAB path for Louvre Abu Dhabi -- Mosquitto FOSS code-change confirmation.
 
 ## WAM Product Backlog Refinement
 

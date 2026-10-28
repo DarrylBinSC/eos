@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-28 10:11 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 10:19 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 72 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 57 (Critical 13) · Needs triage 0.
 
 ---
 
@@ -54,49 +54,34 @@ Four registers. The delineation is the point.
 | # | Item | Owner | Type | Gate / Due | Critical? | Last evidence | Note |
 |---|---|---|---|---|---|---|---|
 | C8 | JCI technical data for the WAB submission | Jeff McCorvey | Awaited | 2026-07-30 NEED BY | -- | 2026-08-25 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: JCI technical preparation rather than contract or customer exposure. |
-| B74 | Investigate IDP engineering capacity via John, Sathish, and the Bangalore AI team | Ankit Chadha | Delegated | 2026-09-02 Within one to two weeks of | -- | 2026-10-05 | New 09-09. |
 | C50 | Strev pricing for the Virtual Site Survey: professional services development price, and a per-site run rate | Sunny Sharma and Christina (Revnue), chased by Amy Aguirre | Awaited | 2026-09-17 Requested on or before ; not dated | -- | 2026-10-21 | New 2026-09-17. |
 | C43 | Define Ford pricing-model language | Leanne Gordon | Awaited | 2026-09-19 confirm or close | -- | 2026-10-19 | New 09-09. |
-| B91 | Update the commercialization deck with product-owner input (support ownership, service levels, onboarding, scale readiness) for WAM, entroCIM, Navigator and CDA | Sridhar Loke and product owners | Delegated | 2026-09-29 Within one week of (exact date not stated) | -- | 2026-10-06 | New 2026-10-01; |
-| B90 | Schedule a requirements-definition call with Alan, Daniel and Ramesh on the WAM/ADM complex-build capture path | Akansh Gangil | Delegated | 2026-09-30 Stated as "next week" (as of ); not yet scheduled — confirm date | -- | 2026-10-15 | New 2026-10-01 (M365 evidence, 2026-09-28 to 2026-09-30). |
 | C61 | Walmart conversation for CDA, refrigeration and produce systems as the entry point through Wesco's MRO relationship | David Fisher | Awaited | 2026-10-02 Longer term (Darryl, ): not before CDA is further into development; revisit when a pilot is running | -- | 2026-10-02 | New 2026-10-02. |
 | C65 | Emily Munk's reply and a 30-minute walkthrough of CDA: TSS delivery and support ownership, positioning for TSS, route to Greg O'Brien | Emily Munk | Awaited | 2026-10-07 Requested within two weeks of (by 2026-10-21) | -- | 2026-10-19 | New 2026-10-07. |
 | B98 | Provide the larger WAM/MSAV data set to Akansh Gangil | Violet Moyer | Delegated | 2026-10-08 (now 5 days overdue) | -- | 2026-10-13 | New 2026-10-13 (weekly evidence, WAM Product discussion transcript, 2026-10-08). |
 | B101 | Revise the client-facing entroCIM deployment discussion framework per Darryl's comments and schedule a review call | Valli Poornakumar | Delegated | 2026-10-12 Late week of or early the following week | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | B103 | Review the Claude Code tickets (starting with Ron Snyder's) and determine whether backend changes or another ticket are required | Ankit Chadha | Delegated | 2026-10-15 /16 | -- | 2026-10-15 | New 2026-10-14. |
 | B104 | Investigate why Claude Code is unavailable from the India office | Ankit Chadha | Delegated | 2026-10-15 /16 | -- | 2026-10-15 | New 2026-10-14. |
-| B92 | Share the WAM/ADM data points already known to be required with the cross-SBU VAS/WMX/ADM/Strev working team | Akansh Gangil | Delegated | 2026-10-16 Ahead of the use-case deadline (not individually dated) | -- | 2026-10-15 | New 2026-10-01 (M365 evidence, 09-30 to 10-01). |
 | C63 | Outcome of Sean McCloskey's meeting with Akash Khurana on Digital Products taking over WAM development (the WAM team is still with Merwin's Platforms team) | Sean McCloskey | Awaited | 2026-10-19 After Sean's PTO; Darryl has no time with him before the week of | -- | 2026-10-14 | New 2026-10-06. |
 | B105 | Provide Ron Snyder guidance on tracking Claude Code usage | Naveen Kumar, coordinated by Ankit Chadha | Delegated | 2026-10-20 ~ (approximately one week; no ISO date stated) | -- | 2026-10-14 | New 2026-10-14. |
 | B102 | Validate remaining Strev SOW 3 deliverables (completed and outstanding), open bugs, and the notification mechanism | Akansh Gangil | Delegated | 2026-10-21 (review call) | **Critical** -- gates a dated vendor/commercial closure | 2026-10-22 | New 2026-10-14. |
 | B100 | Confirm the MuleSoft/current integration architecture and prepare a WAM-limitations slide for Darryl, ahead of the Sean McCloskey capacity discussion | Akansh Gangil | Delegated | 2026-10-23 Before Darryl's Sean McCloskey discussion; exact date not stated | **Critical** -- feeds `05` A61 and the `03` WAM/ADM reduced-capacity reset Radar item directly | 2026-10-19 | New 2026-10-13 (weekly evidence, WAM Leadership Sync transcript, 2026-10-05). |
 | C72 | Ascent Navigator production WAB evidence pack, complete for the 2026-10-23 review | DJ Vaughn | Awaited | 2026-10-23 Ascent Navigator - PROD WAB | -- | 2026-10-21 | 2026-10-19 (Claude, weekly brief): New. |
 | C59 | Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment | Bob Caprise | Awaited | 2026-10-29 On Darryl's email | -- | 2026-10-20 | New 2026-09-18. |
-| B99 | Check whether reciprocal Wesco/manufacturer part-number completion can fit the current WAM Data Enrichment iteration | Akansh Gangil | Delegated | 2026-10-30 Before the enrichment target, if feasible | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | C1 | JCI final legal markup sent to JCI |  |  | 2026-10-30 | -- | 2026-10-21 | ## Closure Date closed (as recorded): 2026-09-01 Done. |
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
 | B18 | TCCC/AOC connectivity — five-step diagnostic sequence | Scott Dunn | Delegated | Before Wednesday customer discussion; Syed Zaidi tracking | **Critical** | 2026-10-15 | No evidence any of the five landed as of 08-03 |
 | B2 | Vendor attribute data collection ahead of CSS-DDP integration | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
 | B21 | TCCC/AOC Managed Services follow-through (KMC tie-in, alarm-management meeting, recurring Dan Fife/Jesse Dougherty meeting) | Nathan Kehr / Sarah Monteleone / Scott Dunn | Delegated | Sequence after B18 holds | -- | 2026-10-15 | Do not let this get ahead of B18 |
-| B24 | FRBNY QA-1 non-VPN test and map-defect root cause | Ron Snyder / Babu Papanna / Adam Slingerland | Delegated | Darryl / Ron weekly 1:1 | **Critical** | 2026-10-15 | Gates further FRB server updates. |
 | B25 | Confirm FRB SASTEC customer PO references the correct (Lab) environment | Sarah Monteleone / Lindsay Cotten | Delegated | FRB SASTEC pilot follow-up | **Critical** | 2026-10-15 | PO/provisioning mismatch risk |
 | B3 | New attributes into P360 with Rochelle and Darren Taylor's team | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
-| B31 | LAD task assignments from the 08-04 deployment meeting | Syed Zaidi | Delegated | Dated closeout plan by owner and blocker | **Critical** | 2026-10-15 | Escalated LAD row in `04` |
 | B32 | Identify missing AQI and people-counting sensor data; integrate once fixed | Marjan Fathima / Valli Poornakumar; Adam Slingerland / Pradyumna Umarji | Delegated | LAD snag-list review | -- | 2026-10-15 | Route identified 08-04, integration not complete |
 | B4 | Ascent POC — get it running | Chad Steger (technical POC), Chris Askew (JACE access) | Delegated | Gate passed 08-15; superseded by direct evidence | -- | 2026-10-16 | Advanced, 09-15 to 09-28 evidence. |
 | B53 | Follow up the truncated manufacturer part number issue, summarise the need, and copy Darryl | Akansh Gangil | Delegated | Immediately, per 08-25 | **Critical** | 2026-10-15 | Akansh Gangil: "I will drop an e-mail and copy you also." Feeds A29 — if this produces no owner, A29 fires. |
-| B58 | Provide the entroCIM AI one-pager details: business value, costs, benefits, incremental revenue | Ron Snyder | Delegated | Not stated | -- | 2026-10-15 | Gates the AI Tech Review submission. |
 | B60 | Export and audit the Freshdesk user-access report for Ford | Chad Steger | Delegated | Not dated | -- | 2026-10-15 | New 08-27. |
 | B61 | Contact UDAC POC Atif Iqbal to confirm receipt of pod updates and offer remote assistance | Chad Steger | Delegated | Not dated | -- | 2026-10-15 | New 08-27. |
-| B62 | Coordinate an over-the-shoulder audit of UDAC entroCIM environments (versions, licensing, integrations, data quality, system health) and document recommendations | Chad Steger / Tim Scott | Delegated | Not dated | **Critical** | 2026-10-15 | New 08-27. |
-| B73 | Identify managed-services resources and headcount for day-two entroCIM monitoring | Brad Stevens and Nathan Kehr | Delegated | Not dated | -- | 2026-10-15 | New 09-09. |
 | B85 | Priya Agarwal to Nathan Kehr introduction + co-sell plan | Nathan Kehr | Delegated | Not dated | -- | 2026-09-18 | Moved from Register A (A7) at the 2026-09-18 disposal sweep, Darryl approved. |
 | B86 | Respond to Cybersecurity GRC on the CrowdStrike Azure VM ingress-rule remediation | Ron Snyder | Delegated | Not dated | -- | 2026-09-18 | Moved from Register A (A32) at the 2026-09-18 disposal sweep, Darryl approved. |
-| B88 | Finalize the WAM/ADM resource needs and skill sets required by the new Wesco-owned-data strategy | Akansh Gangil | Delegated | Not dated | -- | 2026-09-28 | New 2026-09-28. |
-| B89 | Prepare Dell executive-summit value/benefit content with named platform leads | Adam Lazare, with named platform leads | Delegated | End of October 2026 (exact date not stated) | -- | 2026-09-28 | New 2026-09-28. |
-| B93 | Confirm Mosquitto/FOSS approval status for production MQTT with Hansraj's team and report by email | Babu Papanna | Delegated | Not dated | -- | 2026-10-05 | New 2026-10-01. |
-| B96 | Coordinate Ford audit resources once the customer schedules the system audit | Chad Steger | Delegated | Gated on Tim Scott scheduling the audit; no date yet | -- | 2026-10-07 | New 2026-10-07 (daily evidence, folded into this week's reconciliation). |
-| B97 | Send Ford account credentials and establish a shared SharePoint exchange area for the working team | Jacob Nicosia | Delegated | Not stated | -- | 2026-10-13 | New 2026-10-13 (weekly evidence). |
 | C10 | JCI open contract items (8) | JCI / Brian Miller / Wesco Legal | Awaited | Gate: C1 markup | **Critical** | 2026-10-15 | Eight rows consolidated. |
 | C14 | Confirm JCI Airwall Conductor API access requirements | Babu Papanna / Shawn Clark | Awaited | Not dated | -- | 2026-10-19 | Downgraded from Critical 2026-08-25 at the Critical-tag audit: JCI technical preparation; |
 | C30 | Share the blank AI intake template and shepherd the entroCIM AI use case through review | Sourav Pradhan | Awaited | Immediately after the 08-19 session | -- | 2026-10-15 | Sourav Pradhan: "I will share a default blank template with you immediately after this meeting." New governance relationship |
@@ -311,6 +296,21 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Item | Was | Dropped | Reason |
 |---|---|---|---|
+| **Check whether reciprocal Wesco/manufacturer part-number completion can fit the current WAM Data Enrichment iteration** | B99 | 2026-10-28 | Created under the old intake rule, before the lane model (2026-10-16); moved to the Pulse as P102. |
+| **Send Ford account credentials and establish a shared SharePoint exchange area for the working team** | B97 | 2026-10-28 | Created under the old intake rule, before the lane model (2026-10-16); moved to the Pulse as P101. |
+| **Coordinate Ford audit resources once the customer schedules the system audit** | B96 | 2026-10-28 | Same substance already tracked as Decision Backlog D045 (Ford system-audit schedule) -- same named owners, Tim Scott and Chad Steger. |
+| **Confirm Mosquitto/FOSS approval status for production MQTT with Hansraj's team and report by email** | B93 | 2026-10-28 | Created under the old intake rule, before the lane model (2026-10-16); moved to the Pulse as P100. |
+| **Share the WAM/ADM data points already known to be required with the cross-SBU VAS/WMX/ADM/Strev working team** | B92 | 2026-10-28 | Created under the old intake rule, before the lane model (2026-10-16); moved to the Pulse as P099. |
+| **Update the commercialization deck with product-owner input (support ownership, service levels, onboarding, scale readiness) for WAM, entroCIM, Navigator and CDA** | B91 | 2026-10-28 | Created under the old intake rule, before the lane model (2026-10-16); moved to the Pulse as P098. |
+| **Schedule a requirements-definition call with Alan, Daniel and Ramesh on the WAM/ADM complex-build capture path** | B90 | 2026-10-28 | Created under the old intake rule, before the lane model (2026-10-16); moved to the Pulse as P097. |
+| **Prepare Dell executive-summit value/benefit content with named platform leads** | B89 | 2026-10-28 | Created under the old intake rule, before the lane model (2026-10-16); moved to the Pulse as P096. |
+| **Finalize the WAM/ADM resource needs and skill sets required by the new Wesco-owned-data strategy** | B88 | 2026-10-28 | Created under the old intake rule, before the lane model (2026-10-16); moved to the Pulse as P095. |
+| **Investigate IDP engineering capacity via John, Sathish, and the Bangalore AI team** | B74 | 2026-10-28 | Same substance already tracked on Watch as W022 (IDP/ADM production integration -- approved but unstaffed). |
+| **Identify managed-services resources and headcount for day-two entroCIM monitoring** | B73 | 2026-10-28 | Same substance already tracked on Watch as W023 (Managed-services staffing readiness for day-two entroCIM monitoring) -- same named owners, Brad Stevens and Nathan Kehr. |
+| **Coordinate an over-the-shoulder audit of UDAC entroCIM environments (versions, licensing, integrations, data quality, system health) and document recommendations** | B62 | 2026-10-28 | Same substance already tracked as Watch W008 (Ford entroCIM (UDAC) renewal and platform-trust gap) and Decision Backlog D045 (Ford system-audit schedule). |
+| **Provide the entroCIM AI one-pager details: business value, costs, benefits, incremental revenue** | B58 | 2026-10-28 | Same substance already tracked on the Decision Radar as D010 (AI Tech Review -> C2P gate path). |
+| **LAD task assignments from the 08-04 deployment meeting** | B31 | 2026-10-28 | Same substance already tracked on Watch as W019 (Louvre Abu Dhabi closeout -- snag-list stall). |
+| **FRBNY QA-1 non-VPN test and map-defect root cause** | B24 | 2026-10-28 | Same substance already tracked on Watch as W021 (FRBNY release/bid thread); the 3.1.12.13 release-hold detail stays there, not duplicated here. |
 | **Assist with fleet-wide Dell cluster configuration cleanup following the session-loss RCA** | B84 | 2026-10-19 | Returned to team governance; tracked in the Pulse as P008. Reversible: set status to open. |
 | **Complete the Quest exit inventory and identify what must be retained and transferred to Wesco** | B81 | 2026-10-19 | Returned to team governance; tracked in the Pulse as P013. Reversible: set status to open. |
 | **Categorize Dell FTE Franklin tracker items; Scott Dunn review** | B23 | 2026-10-19 | Returned to team governance; tracked in the Pulse as P012. Reversible: set status to open. |
