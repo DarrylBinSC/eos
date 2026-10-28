@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 80 (Critical 16) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 79 (Critical 16) · Needs triage 0.
 
 ---
 
@@ -91,7 +91,6 @@ Four registers. The delineation is the point.
 | B32 | Identify missing AQI and people-counting sensor data; integrate once fixed | Marjan Fathima / Valli Poornakumar; Adam Slingerland / Pradyumna Umarji | Delegated | LAD snag-list review | -- | 2026-10-15 | Route identified 08-04, integration not complete |
 | B4 | Ascent POC — get it running | Chad Steger (technical POC), Chris Askew (JACE access) | Delegated | Gate passed 08-15; superseded by direct evidence | -- | 2026-10-16 | Advanced, 09-15 to 09-28 evidence. |
 | B42 | Check/complete AD group access mapping for Claude Code rollout | Darryl Benson | Delegated | — | -- | 2026-10-19 | Superseded 08-17 — promoted to Register A28. |
-| B49 | Check legacy-system manufacturer part numbers and contact the UDM team (source of DDP/eUDM truncation) | Priyambada Dash | Delegated | Not dated | -- | 2026-10-15 | New 08-19, RE: Anixter P360 CORE Parts Character limitation for MANUFACTURER PART # in DDP (eUDM). |
 | B53 | Follow up the truncated manufacturer part number issue, summarise the need, and copy Darryl | Akansh Gangil | Delegated | Immediately, per 08-25 | **Critical** | 2026-10-15 | Akansh Gangil: "I will drop an e-mail and copy you also." Feeds A29 — if this produces no owner, A29 fires. |
 | B58 | Provide the entroCIM AI one-pager details: business value, costs, benefits, incremental revenue | Ron Snyder | Delegated | Not stated | -- | 2026-10-15 | Gates the AI Tech Review submission. |
 | B60 | Export and audit the Freshdesk user-access report for Ford | Chad Steger | Delegated | Not dated | -- | 2026-10-15 | New 08-27. |
@@ -146,6 +145,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-10-28 | **B49 — Check legacy-system manufacturer part numbers and contact the UDM team (source of DDP/eUDM truncation)** | Darryl, EOS web app, 2026-10-28 | New 08-19, RE: Anixter P360 CORE Parts Character limitation for MANUFACTURER PART # in DDP (eUDM). |
 | 2026-10-28 | **B20 — Confirm why EUDM/DDP vendor part numbers are truncated; resend corrected Milestone Q2 data** | Darryl, EOS web app, 2026-10-28 | 08-12: reconfirmed and escalated — same 15-character vendor part-number limitation, still unresolved a cycle later; |
 | 2026-10-27 | **C76 — Stanford / entroCIM IP: whether the Commissioning toolset falls under the pre-existing-software carve-out or is Stanford work product; whether 18.5 creates exposure; 2022 and 2023 versions of Stanford's PO terms** | Darryl, EOS web app, 2026-10-27 | New 2026-10-20. |
 | 2026-10-22 | **A69 — Identify who in core IT can resolve the WESCO Asset Management single sign-on issue (possibly Volkan)** | Darryl, EOS web app, 2026-10-22 | ## Next step Darryl's own words, Quest Migration Weekly Check-In, 2026-10-20: "There's a problem with the single sign on for that. |
