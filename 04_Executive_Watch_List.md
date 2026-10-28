@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 20 (ceiling 20) · Passive 52 · Retired 27.
+**Counts at generation:** Active 21 (ceiling 20) · Passive 52 · Retired 26.
 
 ## Active
 
@@ -31,6 +31,7 @@
 | W022 | IDP/ADM production integration — approved but unstaffed | High | ↑ | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-10-23 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
 | W006 | Strev AI Feature Pack: unpriced consumption commitment with no budget home | High | ↑ | Direct (Revnue v2.5 entitlement document, May 2026; Lisa Orton email 2026-09-15; Wesco WAM cost model; Amy Aguirre call transcript 2026-09-17; Revnue draft Amendment No. 2, received 2026-10-21) | 2026-10-26 | Two Strev AI use cases entered UiPath intake on 2026-09-15. |
 | W015 | AI adoption governance + team assignment | High | → | Direct (All Hands 07-13; Agile Staff 07-14; Portfolio Review 07-20; SkyFoundry 07-21; IDP/WAM + Agile Staff 07-22; WAM Data Challenges 07-22/23; weekly evidence 07-27; WAM Data Challenges 07-30; entroCIM Backlog Deep Dive + Claude Code Enablement 08-12; AI Council \| Ice Breaker \| Discussion on entroCIM AI, 08-19; Darryl session 08-25) | 2026-10-26 | 08-19: the Woolly/entroCIM AI evaluation thread advanced with a formal governance path. |
+| W016 | WAM/ADM data integrity + scalability (operational hardening) | High | ↑ | Direct (Backlog Refinement 07-20 — transcript/Loop; speaker attributions unconfirmed; WAM Data Challenges 07-30; Requirement Estimation doc, 08-06) | 2026-10-28 | Seven-problem stabilization plan (full dump: `WAM_Product_Backlog_Refinement_Problems_Work_Plan_2026-07-20.md`). |
 | W008 | Ford entroCIM (UDAC) renewal and platform-trust gap | Medium | ↑ | Direct (`Wesco & Ford - entroCIM Platform - Re-Alignment & Action Item Call`, 08-26; RE: SLA Verbiage email thread, weekly evidence 2026-09-02 to 09-09) | 2026-10-22 | Ford and Wesco aligned on 08-26 to renew UDAC support and let EDC support expire, using an SLA for unplanned support and SOW/SME hours for planned scope (Darryl: "Hours buy Capacity, SLA buys commitment" — `Products/entroCIM/entroCIM.md`). |
 | W029 | Returnable asset tracking: build direction set before the cost basis exists | Medium | Reopened | Direct (returnable asset tracking discussion transcript 2026-09-16; entroCIM Sensolus connector documentation 2026-09-16) | 2026-10-26 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
 | W002 | Dell account staffing — second dedicated entroCIM/EMS FTE requested | Medium-High | New | Direct (RE: Dell EMS Program FTE New Hire Discussion, weekly evidence 2026-10-05) | 2026-10-20 | Dell asked for a second dedicated FTE within three to five months. |
@@ -98,7 +99,6 @@ Logged for completeness. No action required; does not count toward risk load. Es
 
 | Retired | ID | Item | Reason |
 |---|---|---|---|
-| 2026-10-28 | W016 | WAM/ADM data integrity + scalability (operational hardening) | Seven-problem stabilization plan (full dump: `WAM_Product_Backlog_Refinement_Problems_Work_Plan_2026-07-20.md`). |
 | 2026-10-16 | W098 | PC1 Grid Board site-selection defect blocking dashboard/KWH report delivery | Returned to team governance; tracked in the Pulse as P001. Reversible: set tier to active. |
 | 2026-10-16 | W066 | Knowledge concentration / engineering quality | Moved to the Pulse knowledge-concentration area (K001-K005). Reversible: set tier to active. |
 | 2026-10-16 | W028 | Dell SOC 2 / security-evidence request — scope and gating unknown | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
