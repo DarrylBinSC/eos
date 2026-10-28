@@ -308,6 +308,36 @@ def git(*args) -> tuple[int, str]:
         return 1, str(e)
 
 
+_PUSH_STATE = {"busy": False, "last_fail": 0.0}
+
+
+def git_push_async() -> None:
+    """Added 2026-10-28: after each commit, push to the backup remote in the background so the history exists
+    off this Mac (set up by Tools/eos-git-setup.command). No remote, or a push failure, never affects the app;
+    a failure is logged at most once a minute and the next commit tries again."""
+    import time
+    if _PUSH_STATE["busy"]:
+        return
+    rc, remotes = git("remote")
+    if rc != 0 or "origin" not in remotes.split():
+        return
+
+    def run():
+        _PUSH_STATE["busy"] = True
+        try:
+            p = subprocess.run(["git", "push", "-q", "origin", "HEAD:main"], cwd=R.ROOT, capture_output=True,
+                               text=True, timeout=120, env={**os.environ, "GIT_TERMINAL_PROMPT": "0"})
+            if p.returncode != 0 and time.time() - _PUSH_STATE["last_fail"] > 60:
+                _PUSH_STATE["last_fail"] = time.time()
+                sys.stderr.write(f"[push] failed: {(p.stdout + p.stderr).strip()[:200]}\n")
+        except Exception as e:
+            sys.stderr.write(f"[push] error: {e}\n")
+        finally:
+            _PUSH_STATE["busy"] = False
+
+    threading.Thread(target=run, daemon=True).start()
+
+
 def git_commit_all(message: str) -> str:
     """Commit every tracked-text change in the EOS folder (code, docs, evidence), within .gitignore.
     Added 2026-10-16: session edits to Tools/ and the numbered files were sitting uncommitted because
@@ -316,6 +346,8 @@ def git_commit_all(message: str) -> str:
         return "no git repo"
     git("add", "-A")
     rc, out = git("commit", "-q", "-m", message)
+    if rc == 0:
+        git_push_async()
     return "committed" if rc == 0 else f"nothing to commit / {out[:120]}"
 
 
@@ -324,6 +356,8 @@ def git_commit(message: str) -> str:
         return "no git repo"
     git("add", "-A", "--", "Registers", "03_Decision_Log.md", "04_Executive_Watch_List.md", "05_Commitments.md", "11_Operational_Pulse.md")
     rc, out = git("commit", "-q", "-m", message)
+    if rc == 0:
+        git_push_async()
     return "committed" if rc == 0 else f"nothing to commit / {out[:120]}"
 
 

@@ -64,7 +64,8 @@ Dashboard/
 Claude outputs/
 EOG
 
-if [ ! -d "$EOS_ROOT/.git" ] || ! git -C "$EOS_ROOT" rev-parse HEAD >/dev/null 2>&1; then
+# -e not -d: since 2026-10-28 .git may be a pointer file to ~/.eos-git (Tools/eos-git-setup.command)
+if [ ! -e "$EOS_ROOT/.git" ] || ! git -C "$EOS_ROOT" rev-parse HEAD >/dev/null 2>&1; then
   echo "Initializing git history for the EOS folder (text files only)..."
   [ -d "$EOS_ROOT/.git" ] || git init -q "$EOS_ROOT"
   rm -f "$EOS_ROOT/.git/index.lock"
