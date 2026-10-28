@@ -1,285 +1,323 @@
 {
-  "note": "Team-governed forums: run on the team's own governance (project process or sprint cycle). Their issues live in the Pulse, not the registers. All classifications confirmed by Darryl 2026-10-16: he attends some of these forums and is invited to all of them on purpose, to keep his finger on the pulse; attendance is awareness, not ownership. Each forum belongs to one of Darryl's two weekly governance tracks. Source: 07_Operating_Cadence.md.",
-  "capture_start": "2026-10-13",
-  "capture_start_note": "Set 2026-10-19: the first forum-by-forum sweeps (Pulse catch-up and Prompts 1 and 2) covered meetings from 2026-10-13. The load trend is rebuilt only from this date; the 7-day trend is available from 2026-10-20.",
-  "forums": [
-    {
-      "key": "deployment-scrum",
-      "name": "2026 Deployment Daily Scrum",
-      "governance": "Project management",
-      "owner": "Chad Steger",
-      "facilitator": "Syed Jamshed Zaidi",
-      "cadence": "Daily",
-      "products": [
-        "entroCIM"
-      ],
-      "aliases": [
-        "2026 Deployment - Daily Scrum",
-        "Deployment Daily Scrum",
-        "Daily Scrum"
-      ],
-      "confirmed": true,
-      "track": "delivery",
-      "last_evidence": "2026-10-28",
-      "active": true
-    },
-    {
-      "key": "entrocim-standup",
-      "name": "entroCIM Daily Stand Up",
-      "governance": "Sprint (2-week)",
-      "owner": "Ron Snyder",
-      "facilitator": "David Blondel (cover)",
-      "cadence": "Daily",
-      "products": [
-        "entroCIM"
-      ],
-      "aliases": [
-        "Daily Stand Up",
-        "Daily Standup"
-      ],
-      "confirmed": true,
-      "track": "development",
-      "last_evidence": "2026-10-28",
-      "active": true
-    },
-    {
-      "key": "entrocim-backlog",
-      "name": "entroCIM Backlog Deep Dive",
-      "governance": "Sprint / backlog",
-      "owner": "David Blondel",
-      "cadence": "Bi-weekly",
-      "products": [
-        "entroCIM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "notes": "07 lists Darryl as Attend; confirm it is team-governed",
-      "track": "development",
-      "last_evidence": "2026-10-21",
-      "active": true
-    },
-    {
-      "key": "dcoe-entrocim",
-      "name": "DCOE & entroCIM Weekly",
-      "governance": "Release governance (DCOE)",
-      "owner": "Balachandar Murali",
-      "cadence": "Weekly",
-      "products": [
-        "entroCIM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "track": "development",
-      "last_evidence": "2026-10-05",
-      "active": false,
-      "retired_date": "2026-10-22",
-      "retired_by": "Darryl, chat, 2026-10-22",
-      "retired_note": "Last heard 2026-10-05, 17 days stale with no replacement name found. Darryl confirmed 'DCOE & entroCIM Weekly' is one combined meeting, not two; retiring the whole forum. Reenable if it surfaces again."
-    },
-    {
-      "key": "quest-migration",
-      "name": "Quest Migration Weekly Check-In",
-      "governance": "Project management",
-      "owner": "Chad Steger",
-      "cadence": "Weekly",
-      "products": [
-        "entroCIM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "track": "delivery",
-      "last_evidence": "2026-10-26",
-      "notes": "2026-10-20 occurrence (3:00 PM): full transcript and Loop opened in the 2026-10-21 sweep (window 2026-10-13 to 2026-10-21); seven new issues raised (P047-P052, plus A69 for Darryl's own SSO commitment) and P013 updated.",
-      "active": true
-    },
-    {
-      "key": "showcase",
-      "name": "Showcase recurring",
-      "governance": "Project management",
-      "owner": "David Blondel",
-      "cadence": "Bi-weekly",
-      "products": [
-        "entroCIM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "track": "development",
-      "last_evidence": "",
-      "active": false,
-      "retired_date": "2026-10-22",
-      "retired_by": "Darryl, chat, 2026-10-22",
-      "retired_note": "Never returned a match in any sweep since forum-by-forum tracking began 2026-10-13. Darryl: retire rather than keep chasing; reenable if it surfaces."
-    },
-    {
-      "key": "deployment-knowledge-share",
-      "name": "Deployment Team Knowledge Share",
-      "governance": "Team practice",
-      "owner": "TBC",
-      "cadence": "Periodic",
-      "products": [
-        "entroCIM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "track": "delivery",
-      "last_evidence": "",
-      "notes": "Not found by exact name in the 2026-10-12 to 10-20 sweep; calendar title to be confirmed.",
-      "active": false,
-      "retired_date": "2026-10-22",
-      "retired_by": "Darryl, chat, 2026-10-22",
-      "retired_note": "Never returned a match in any sweep since forum-by-forum tracking began 2026-10-13. Darryl: retire rather than keep chasing; reenable if it surfaces."
-    },
-    {
-      "key": "wam-backlog-refinement",
-      "name": "WAM Product Backlog Refinement",
-      "governance": "Sprint",
-      "owner": "Sakshi Mathur",
-      "cadence": "Bi-weekly",
-      "products": [
-        "WAM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "track": "development",
-      "last_evidence": "2026-10-27",
-      "active": true
-    },
-    {
-      "key": "wam-sprint-review",
-      "name": "WAM Sprint Review",
-      "governance": "Sprint",
-      "owner": "Sakshi Mathur",
-      "cadence": "Bi-weekly",
-      "products": [
-        "WAM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "track": "development",
-      "last_evidence": "2026-10-28",
-      "active": true
-    },
-    {
-      "key": "wam-india-dev",
-      "name": "WAM India Dev Team weekly",
-      "governance": "Sprint",
-      "owner": "TBC",
-      "cadence": "Weekly",
-      "products": [
-        "WAM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "track": "development",
-      "last_evidence": "",
-      "active": false,
-      "retired_date": "2026-10-22",
-      "retired_by": "Darryl, chat, 2026-10-22",
-      "retired_note": "Never returned a match in any sweep since forum-by-forum tracking began 2026-10-13. Darryl: retire rather than keep chasing; reenable if it surfaces."
-    },
-    {
-      "key": "wam-product-discussion",
-      "name": "WAM Product discussion",
-      "governance": "Product execution",
-      "owner": "Akansh Gangil",
-      "cadence": "Weekly",
-      "products": [
-        "WAM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "track": "development",
-      "last_evidence": "2026-10-22",
-      "notes": "2026-10-19 (Darryl): a different meeting from WAM - Product Backlog Refinement; do not merge. Not found under this name in the 10-19 sweep; current calendar title to be confirmed. 2026-10-22 (Darryl, chat): the WAM Product discussion meeting happened this morning. No content reviewed yet; last_evidence set from his word alone. A sweep or pasted evidence is still needed to capture anything actually raised.",
-      "active": true
-    },
-    {
-      "key": "adm-connect",
-      "name": "ADM connect with Natalie",
-      "governance": "Product execution",
-      "owner": "Akansh Gangil",
-      "cadence": "Weekly",
-      "products": [
-        "WAM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "notes": "07 raises Darryl to Attend while the part-number and leaf-node dependencies are open",
-      "track": "development",
-      "last_evidence": "2026-10-21",
-      "active": true
-    },
-    {
-      "key": "product-platform-connect",
-      "name": "Product Team / Platform Team connect",
-      "governance": "Team practice",
-      "owner": "Keyur Patel",
-      "cadence": "Weekly",
-      "products": [],
-      "aliases": [],
-      "confirmed": true,
-      "track": "development",
-      "last_evidence": "2026-10-21",
-      "active": true
-    },
-    {
-      "key": "review-delivery",
-      "name": "Weekly Pulse Review (Delivery)",
-      "governance": "Weekly review workbook",
-      "owner": "Darryl Benson",
-      "facilitator": "",
-      "cadence": "Weekly",
-      "products": [
-        "entroCIM"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "track": "delivery",
-      "last_evidence": "",
-      "active": false,
-      "review": true,
-      "note": "Added 2026-10-27. Not a meeting: the forum of record for issues raised on the New issues tab of the weekly review workbook (Tools/eos_review.py). active:false keeps it out of the Copilot prompts and the heard-from counts."
-    },
-    {
-      "key": "review-development",
-      "name": "Weekly Pulse Review (Development)",
-      "governance": "Weekly review workbook",
-      "owner": "Darryl Benson",
-      "facilitator": "",
-      "cadence": "Weekly",
-      "products": [
-        "entroCIM",
-        "WAM",
-        "CDA"
-      ],
-      "aliases": [],
-      "confirmed": true,
-      "track": "development",
-      "last_evidence": "",
-      "active": false,
-      "review": true,
-      "note": "Added 2026-10-27. Not a meeting: the forum of record for issues raised on the New issues tab of the weekly review workbook (Tools/eos_review.py). active:false keeps it out of the Copilot prompts and the heard-from counts."
-    }
-  ],
-  "tracks": [
-    {
-      "key": "delivery",
-      "name": "Delivery governance",
-      "leads": [
-        "Chad Steger",
-        "Syed Jamshed Zaidi"
-      ],
-      "scope": "Customer and internal deployments, migration, deployment practice"
-    },
-    {
-      "key": "development",
-      "name": "Development governance",
-      "leads": [
-        "Ron Snyder",
-        "David Blondel"
-      ],
-      "scope": "entroCIM and WAM development, backlog, release governance"
-    }
-  ],
-  "last_evidence_note": "last_evidence: date of the newest saved evidence package (Evidence/) that covered the forum. Backfilled 2026-10-16 by searching Evidence/ for each forum's name and aliases; set at every brief from then on. Blank = no saved package has covered it."
+ "note": "Team-governed forums: run on the team's own governance (project process or sprint cycle). Their issues live in the Pulse, not the registers. All classifications confirmed by Darryl 2026-10-16: he attends some of these forums and is invited to all of them on purpose, to keep his finger on the pulse; attendance is awareness, not ownership. Each forum belongs to one of Darryl's two weekly governance tracks. Source: 07_Operating_Cadence.md.",
+ "capture_start": "2026-10-13",
+ "capture_start_note": "Set 2026-10-19: the first forum-by-forum sweeps (Pulse catch-up and Prompts 1 and 2) covered meetings from 2026-10-13. The load trend is rebuilt only from this date; the 7-day trend is available from 2026-10-20.",
+ "forums": [
+  {
+   "key": "deployment-scrum",
+   "name": "2026 Deployment Daily Scrum",
+   "governance": "Project management",
+   "owner": "Chad Steger",
+   "facilitator": "Syed Jamshed Zaidi",
+   "cadence": "Daily",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [
+    "2026 Deployment - Daily Scrum",
+    "Deployment Daily Scrum",
+    "Daily Scrum"
+   ],
+   "confirmed": true,
+   "track": "delivery",
+   "last_evidence": "2026-10-28",
+   "active": true
+  },
+  {
+   "key": "entrocim-standup",
+   "name": "entroCIM Daily Stand Up",
+   "governance": "Sprint (2-week)",
+   "owner": "Ron Snyder",
+   "facilitator": "David Blondel (cover)",
+   "cadence": "Daily",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [
+    "Daily Stand Up",
+    "Daily Standup"
+   ],
+   "confirmed": true,
+   "track": "development",
+   "last_evidence": "2026-10-28",
+   "active": true
+  },
+  {
+   "key": "entrocim-backlog",
+   "name": "entroCIM Backlog Deep Dive",
+   "governance": "Sprint / backlog",
+   "owner": "David Blondel",
+   "cadence": "Bi-weekly",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "notes": "07 lists Darryl as Attend; confirm it is team-governed",
+   "track": "development",
+   "last_evidence": "2026-10-21",
+   "active": true
+  },
+  {
+   "key": "dcoe-entrocim",
+   "name": "DCOE & entroCIM Weekly",
+   "governance": "Release governance (DCOE)",
+   "owner": "Balachandar Murali",
+   "cadence": "Weekly",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "development",
+   "last_evidence": "2026-10-05",
+   "active": false,
+   "retired_date": "2026-10-22",
+   "retired_by": "Darryl, chat, 2026-10-22",
+   "retired_note": "Last heard 2026-10-05, 17 days stale with no replacement name found. Darryl confirmed 'DCOE & entroCIM Weekly' is one combined meeting, not two; retiring the whole forum. Reenable if it surfaces again."
+  },
+  {
+   "key": "quest-migration",
+   "name": "Quest Migration Weekly Check-In",
+   "governance": "Project management",
+   "owner": "Chad Steger",
+   "cadence": "Weekly",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "delivery",
+   "last_evidence": "2026-10-26",
+   "notes": "2026-10-20 occurrence (3:00 PM): full transcript and Loop opened in the 2026-10-21 sweep (window 2026-10-13 to 2026-10-21); seven new issues raised (P047-P052, plus A69 for Darryl's own SSO commitment) and P013 updated.",
+   "active": true
+  },
+  {
+   "key": "showcase",
+   "name": "Showcase recurring",
+   "governance": "Project management",
+   "owner": "David Blondel",
+   "cadence": "Bi-weekly",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "development",
+   "last_evidence": "",
+   "active": false,
+   "retired_date": "2026-10-22",
+   "retired_by": "Darryl, chat, 2026-10-22",
+   "retired_note": "Never returned a match in any sweep since forum-by-forum tracking began 2026-10-13. Darryl: retire rather than keep chasing; reenable if it surfaces."
+  },
+  {
+   "key": "deployment-knowledge-share",
+   "name": "Deployment Team Knowledge Share",
+   "governance": "Team practice",
+   "owner": "TBC",
+   "cadence": "Periodic",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "delivery",
+   "last_evidence": "",
+   "notes": "Not found by exact name in the 2026-10-12 to 10-20 sweep; calendar title to be confirmed.",
+   "active": false,
+   "retired_date": "2026-10-22",
+   "retired_by": "Darryl, chat, 2026-10-22",
+   "retired_note": "Never returned a match in any sweep since forum-by-forum tracking began 2026-10-13. Darryl: retire rather than keep chasing; reenable if it surfaces."
+  },
+  {
+   "key": "wam-backlog-refinement",
+   "name": "WAM Product Backlog Refinement",
+   "governance": "Sprint",
+   "owner": "Sakshi Mathur",
+   "cadence": "Bi-weekly",
+   "products": [
+    "WAM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "development",
+   "last_evidence": "2026-10-27",
+   "active": true
+  },
+  {
+   "key": "wam-sprint-review",
+   "name": "WAM Sprint Review",
+   "governance": "Sprint",
+   "owner": "Sakshi Mathur",
+   "cadence": "Bi-weekly",
+   "products": [
+    "WAM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "development",
+   "last_evidence": "2026-10-28",
+   "active": true
+  },
+  {
+   "key": "wam-india-dev",
+   "name": "WAM India Dev Team weekly",
+   "governance": "Sprint",
+   "owner": "TBC",
+   "cadence": "Weekly",
+   "products": [
+    "WAM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "development",
+   "last_evidence": "",
+   "active": false,
+   "retired_date": "2026-10-22",
+   "retired_by": "Darryl, chat, 2026-10-22",
+   "retired_note": "Never returned a match in any sweep since forum-by-forum tracking began 2026-10-13. Darryl: retire rather than keep chasing; reenable if it surfaces."
+  },
+  {
+   "key": "wam-product-discussion",
+   "name": "WAM Product discussion",
+   "governance": "Product execution",
+   "owner": "Akansh Gangil",
+   "cadence": "Weekly",
+   "products": [
+    "WAM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "development",
+   "last_evidence": "2026-10-22",
+   "notes": "2026-10-19 (Darryl): a different meeting from WAM - Product Backlog Refinement; do not merge. Not found under this name in the 10-19 sweep; current calendar title to be confirmed. 2026-10-22 (Darryl, chat): the WAM Product discussion meeting happened this morning. No content reviewed yet; last_evidence set from his word alone. A sweep or pasted evidence is still needed to capture anything actually raised.",
+   "active": true
+  },
+  {
+   "key": "adm-connect",
+   "name": "ADM connect with Natalie",
+   "governance": "Product execution",
+   "owner": "Akansh Gangil",
+   "cadence": "Weekly",
+   "products": [
+    "WAM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "notes": "07 raises Darryl to Attend while the part-number and leaf-node dependencies are open",
+   "track": "development",
+   "last_evidence": "2026-10-21",
+   "active": true
+  },
+  {
+   "key": "product-platform-connect",
+   "name": "Product Team / Platform Team connect",
+   "governance": "Team practice",
+   "owner": "Keyur Patel",
+   "cadence": "Weekly",
+   "products": [],
+   "aliases": [],
+   "confirmed": true,
+   "track": "development",
+   "last_evidence": "2026-10-21",
+   "active": true
+  },
+  {
+   "key": "review-delivery",
+   "name": "Weekly Pulse Review (Delivery)",
+   "governance": "Weekly review workbook",
+   "owner": "Darryl Benson",
+   "facilitator": "",
+   "cadence": "Weekly",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "delivery",
+   "last_evidence": "",
+   "active": false,
+   "review": true,
+   "note": "Added 2026-10-27. Not a meeting: the forum of record for issues raised on the New issues tab of the weekly review workbook (Tools/eos_review.py). active:false keeps it out of the Copilot prompts and the heard-from counts."
+  },
+  {
+   "key": "review-development",
+   "name": "Weekly Pulse Review (Development)",
+   "governance": "Weekly review workbook",
+   "owner": "Darryl Benson",
+   "facilitator": "",
+   "cadence": "Weekly",
+   "products": [
+    "entroCIM",
+    "WAM",
+    "CDA"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "development",
+   "last_evidence": "",
+   "active": false,
+   "review": true,
+   "note": "Added 2026-10-27. Not a meeting: the forum of record for issues raised on the New issues tab of the weekly review workbook (Tools/eos_review.py). active:false keeps it out of the Copilot prompts and the heard-from counts."
+  },
+  {
+   "key": "register-delivery",
+   "name": "Moved from the registers (Delivery)",
+   "governance": "Lane reconciliation",
+   "owner": "Darryl Benson",
+   "facilitator": "",
+   "cadence": "",
+   "products": [
+    "entroCIM"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "delivery",
+   "last_evidence": "",
+   "active": false,
+   "review": false,
+   "note": "Added 2026-10-28. Not a meeting: the forum of record for team-level items moved off Register B by the 2026-10-28 lane reconciliation, whose origin was an M365 sweep rather than a named forum. active:false keeps it out of the Copilot prompts and the heard-from counts; it exists so the issue sits in a track and gets a reviewer."
+  },
+  {
+   "key": "register-development",
+   "name": "Moved from the registers (Development)",
+   "governance": "Lane reconciliation",
+   "owner": "Darryl Benson",
+   "facilitator": "",
+   "cadence": "",
+   "products": [
+    "entroCIM",
+    "WAM",
+    "CDA"
+   ],
+   "aliases": [],
+   "confirmed": true,
+   "track": "development",
+   "last_evidence": "",
+   "active": false,
+   "review": false,
+   "note": "Added 2026-10-28. Not a meeting: the forum of record for team-level items moved off Register B by the 2026-10-28 lane reconciliation, whose origin was an M365 sweep rather than a named forum. active:false keeps it out of the Copilot prompts and the heard-from counts; it exists so the issue sits in a track and gets a reviewer."
+  }
+ ],
+ "tracks": [
+  {
+   "key": "delivery",
+   "name": "Delivery governance",
+   "leads": [
+    "Chad Steger",
+    "Syed Jamshed Zaidi"
+   ],
+   "scope": "Customer and internal deployments, migration, deployment practice"
+  },
+  {
+   "key": "development",
+   "name": "Development governance",
+   "leads": [
+    "Ron Snyder",
+    "David Blondel"
+   ],
+   "scope": "entroCIM and WAM development, backlog, release governance"
+  }
+ ],
+ "last_evidence_note": "last_evidence: date of the newest saved evidence package (Evidence/) that covered the forum. Backfilled 2026-10-16 by searching Evidence/ for each forum's name and aliases; set at every brief from then on. Blank = no saved package has covered it."
 }
