@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-28 10:28 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-28 10:29 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 56 (Critical 13) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 55 (Critical 13) · Needs triage 0.
 
 ---
 
@@ -59,7 +59,6 @@ Four registers. The delineation is the point.
 | C61 | Walmart conversation for CDA, refrigeration and produce systems as the entry point through Wesco's MRO relationship | David Fisher | Awaited | 2026-10-02 Longer term (Darryl, ): not before CDA is further into development; revisit when a pilot is running | -- | 2026-10-02 | New 2026-10-02. |
 | C65 | Emily Munk's reply and a 30-minute walkthrough of CDA: TSS delivery and support ownership, positioning for TSS, route to Greg O'Brien | Emily Munk | Awaited | 2026-10-07 Requested within two weeks of (by 2026-10-21) | -- | 2026-10-19 | New 2026-10-07. |
 | B98 | Provide the larger WAM/MSAV data set to Akansh Gangil | Violet Moyer | Delegated | 2026-10-08 (now 5 days overdue) | -- | 2026-10-13 | New 2026-10-13 (weekly evidence, WAM Product discussion transcript, 2026-10-08). |
-| B103 | Review the Claude Code tickets (starting with Ron Snyder's) and determine whether backend changes or another ticket are required | Ankit Chadha | Delegated | 2026-10-15 /16 | -- | 2026-10-15 | New 2026-10-14. |
 | B104 | Investigate why Claude Code is unavailable from the India office | Ankit Chadha | Delegated | 2026-10-15 /16 | -- | 2026-10-15 | New 2026-10-14. |
 | C63 | Outcome of Sean McCloskey's meeting with Akash Khurana on Digital Products taking over WAM development (the WAM team is still with Merwin's Platforms team) | Sean McCloskey | Awaited | 2026-10-19 After Sean's PTO; Darryl has no time with him before the week of | -- | 2026-10-14 | New 2026-10-06. |
 | B105 | Provide Ron Snyder guidance on tracking Claude Code usage | Naveen Kumar, coordinated by Ankit Chadha | Delegated | 2026-10-20 ~ (approximately one week; no ISO date stated) | -- | 2026-10-14 | New 2026-10-14. |
@@ -130,6 +129,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-28 | **B12 — DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian** | Darryl, EOS web app, 2026-10-28 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm. |
 | 2026-10-28 | **B107 — Discuss the full-manufacturer-part-number enhancement with engineering and determine next steps** | Darryl, EOS web app, 2026-10-28 | New 2026-10-14. |
 | 2026-10-28 | **B106 — Complete WAM global-attributes analysis and set up a review call** | Darryl, EOS web app, 2026-10-28 | New 2026-10-14. |
+| 2026-10-28 | **B103 — Review the Claude Code tickets (starting with Ron Snyder's) and determine whether backend changes or another ticket are required** | Darryl, EOS web app, 2026-10-28 | New 2026-10-14. |
 | 2026-10-28 | **B101 — Revise the client-facing entroCIM deployment discussion framework per Darryl's comments and schedule a review call** | Darryl, EOS web app, 2026-10-28 | New 2026-10-13 (weekly evidence). |
 | 2026-10-28 | **B10 — MDM attribute progress follow-up** | Darryl, EOS web app, 2026-10-28 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm (aging sweep found resolution evidence, so this goes to Closed on Darryl's yes, not to Aged Out): DDPTRK-6346 marked complete via MDM Governance in the Digi… |
 | 2026-10-27 | **C76 — Stanford / entroCIM IP: whether the Commissioning toolset falls under the pre-existing-software carve-out or is Stanford work product; whether 18.5 creates exposure; 2022 and 2023 versions of Stanford's PO terms** | Darryl, EOS web app, 2026-10-27 | New 2026-10-20. |
