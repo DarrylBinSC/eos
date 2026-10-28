@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 57 (Critical 13) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 56 (Critical 13) · Needs triage 0.
 
 ---
 
@@ -68,7 +68,6 @@ Four registers. The delineation is the point.
 | C72 | Ascent Navigator production WAB evidence pack, complete for the 2026-10-23 review | DJ Vaughn | Awaited | 2026-10-23 Ascent Navigator - PROD WAB | -- | 2026-10-21 | 2026-10-19 (Claude, weekly brief): New. |
 | C59 | Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment | Bob Caprise | Awaited | 2026-10-29 On Darryl's email | -- | 2026-10-20 | New 2026-09-18. |
 | C1 | JCI final legal markup sent to JCI |  |  | 2026-10-30 | -- | 2026-10-21 | ## Closure Date closed (as recorded): 2026-09-01 Done. |
-| B101 | Revise the client-facing entroCIM deployment discussion framework per Darryl's comments and schedule a review call | Akansh Gangil | Delegated | 2026-11-05 Late week of or early the following week | -- | 2026-10-28 | New 2026-10-13 (weekly evidence). |
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
 | B18 | TCCC/AOC connectivity — five-step diagnostic sequence | Scott Dunn | Delegated | Before Wednesday customer discussion; Syed Zaidi tracking | **Critical** | 2026-10-15 | No evidence any of the five landed as of 08-03 |
 | B2 | Vendor attribute data collection ahead of CSS-DDP integration | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
@@ -131,6 +130,7 @@ Removed from the commitment system. No completion state, so counting them perman
 | 2026-10-28 | **B12 — DDPTRK-6346 progress with Dan Totino / Gandhi Subramanian** | Darryl, EOS web app, 2026-10-28 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm. |
 | 2026-10-28 | **B107 — Discuss the full-manufacturer-part-number enhancement with engineering and determine next steps** | Darryl, EOS web app, 2026-10-28 | New 2026-10-14. |
 | 2026-10-28 | **B106 — Complete WAM global-attributes analysis and set up a review call** | Darryl, EOS web app, 2026-10-28 | New 2026-10-14. |
+| 2026-10-28 | **B101 — Revise the client-facing entroCIM deployment discussion framework per Darryl's comments and schedule a review call** | Darryl, EOS web app, 2026-10-28 | New 2026-10-13 (weekly evidence). |
 | 2026-10-28 | **B10 — MDM attribute progress follow-up** | Darryl, EOS web app, 2026-10-28 | 2026-10-19 (Claude, weekly brief): Potentially closed, confirm (aging sweep found resolution evidence, so this goes to Closed on Darryl's yes, not to Aged Out): DDPTRK-6346 marked complete via MDM Governance in the Digi… |
 | 2026-10-27 | **C76 — Stanford / entroCIM IP: whether the Commissioning toolset falls under the pre-existing-software carve-out or is Stanford work product; whether 18.5 creates exposure; 2022 and 2023 versions of Stanford's PO terms** | Darryl, EOS web app, 2026-10-27 | New 2026-10-20. |
 | 2026-10-22 | **A69 — Identify who in core IT can resolve the WESCO Asset Management single sign-on issue (possibly Volkan)** | Darryl, EOS web app, 2026-10-22 | ## Next step Darryl's own words, Quest Migration Weekly Check-In, 2026-10-20: "There's a problem with the single sign on for that. |
