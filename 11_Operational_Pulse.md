@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-29 08:41 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-29 08:43 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-15 to 2026-10-29. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Steady | +16 | 152 | 131 | 20 | 3 | 8 | 1 |
+| Dell | Steady | +13 | 149 | 131 | 20 | 3 | 8 | 1 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
 | Federal Reserve | Steady | +0 | 13 | 3 | 1 | 0 | 0 | 2 |
@@ -27,7 +27,6 @@ No signals in the window: BAE, UWM.
 - **P068** WAM renewal recommendation feature: quality rejected, rework from start (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P070** Commissioning app test-tracking coverage incomplete: tracks fields, not everything; no formal owner (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P072** Three to four recently created GMS weather stations missing from validation tests (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
-- **P073** Commissioning spreadsheet will not accept commissioning dates (Dell sites) (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P075** Durham OPC UA onboarding: limited prior experience with how points will appear (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P076** Cree Church alarm configuration pending with no owner, outstanding for some time (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P077** Vamil/Wimmel floor-plan graphics may be outside the quoted non-DC scope (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -110,7 +109,7 @@ Governance: Project management. Owner: Chad Steger. Live 36, new this week 20, s
 | P077 | Vamil/Wimmel floor-plan graphics may be outside the quoted non-DC scope | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: boundary |
 | P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
 | P088 | ~800-900 additional points pending across four IRCs at the Limerick (Dell) closeout site | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: boundary |
-| P073 | Commissioning spreadsheet will not accept commissioning dates (Dell sites) | Dell |  | Medium | 2026-10-27 | 2026-10-28 | 2 | candidate: gap |
+| P073 | Commissioning spreadsheet will not accept commissioning dates (Dell sites) | Dell |  | Medium | 2026-10-27 | 2026-10-28 | 2 |  |
 | P089 | TCCC ECR connector (TEC 7th floor) timing out; connection info needs verification | Coca-Cola (TCCC) | Scott Dunn | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible |
 | P090 | Two new TCCC NAT IP gateways need internal confirmation before checking the customer network side | Coca-Cola (TCCC) | Scott Dunn | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible |
 | P091 | Repeated timeout and HTTP 504 errors on TCCC devices that had not shown them before; no nginx timeout standard | Coca-Cola (TCCC) |  | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible |
