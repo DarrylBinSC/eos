@@ -421,15 +421,20 @@
    "load": 13,
    "teams": 13
   },
+  "Cree Church / Premier": {
+   "delta7": 3,
+   "load": 3,
+   "teams": 3
+  },
   "Dell": {
-   "delta7": 10,
-   "load": 146,
-   "teams": 141
+   "delta7": 60,
+   "load": 199,
+   "teams": 194
   },
   "Federal Reserve": {
-   "delta7": 0,
-   "load": 13,
-   "teams": 3
+   "delta7": 8,
+   "load": 21,
+   "teams": 11
   },
   "Ford": {
    "delta7": 0,

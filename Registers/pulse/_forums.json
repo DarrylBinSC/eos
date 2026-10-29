@@ -20,7 +20,7 @@
    ],
    "confirmed": true,
    "track": "delivery",
-   "last_evidence": "2026-10-28",
+   "last_evidence": "2026-10-29",
    "active": true
   },
   {
@@ -39,7 +39,7 @@
    ],
    "confirmed": true,
    "track": "development",
-   "last_evidence": "2026-10-28",
+   "last_evidence": "2026-10-29",
    "active": true
   },
   {
@@ -206,7 +206,7 @@
    "confirmed": true,
    "notes": "07 raises Darryl to Attend while the part-number and leaf-node dependencies are open",
    "track": "development",
-   "last_evidence": "2026-10-21",
+   "last_evidence": "2026-10-29",
    "active": true
   },
   {
