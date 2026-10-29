@@ -9,7 +9,7 @@
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
 | Stanford | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
-| Dell | Worsening | +60 | 199 | 134 | 25 | 3 | 8 | 1 |
+| Dell | Worsening | +60 | 196 | 131 | 25 | 3 | 8 | 1 |
 | Federal Reserve | Worsening | +8 | 21 | 3 | 2 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
@@ -24,7 +24,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P028** Site-meter information missing at several Dell sites (Chile named), blocking rollup views (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P094** WAM critical security vulnerabilities remain open past the team's intended close date (no account; WAM Sprint Review). Test: No owner, or the customer is unaware of a material problem.
 - **P103** North Carolina Modbus meter onboarding blocked by missing MIB file and unavailable meter credentials (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P104** Meter naming cannot be mapped between connector names and the GMS sheet at Chennai, Dell 8, Dell 11 (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -87,7 +86,7 @@ Governance: Project management. Owner: Chad Steger. Live 42, new this week 26, s
 |---|---|---|---|---|---|---|---|---|
 | P007 | PC1/JCI large-scale point faults and intermittent site access | Dell | Scott Dunn | High | 2026-09-15 | 2026-10-15 | 3 | stuck, customer-visible, escalated to W099 |
 | P006 | Dell alarm-database corruption: intermittent alarming failures, no root cause | Dell | Ron Snyder; Keith Bishop | High | 2026-08-25 | 2026-10-21 | 7 | stuck, customer-visible, escalated to W009 |
-| P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-27 | 5 | stuck, customer-visible, candidate: gap |
+| P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-27 | 5 | stuck, customer-visible |
 | P015 | Panama HVAC points increase continuously; BACnet setup failed, Modbus option untested | Wesco Warehouse | Matthew Heid; Scott Dunn | High | 2026-10-13 | 2026-10-28 | 3 | stuck, customer-visible |
 | P027 | Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara | Dell |  | High | 2026-10-15 | 2026-10-15 | 1 | customer-visible |
 | P002 | Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches | Dell | Syed Jamshed Zaidi | High | 2026-10-13 | 2026-10-20 | 4 | customer-visible |
