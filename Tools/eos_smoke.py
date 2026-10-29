@@ -233,6 +233,7 @@ def check_tabs(rep: Report):
     S.data_version()
     if not isinstance(S.HTML, str) or "<html" not in S.HTML.lower():
         rep.fail("eos_server.HTML is not a page")
+    rep.fail("DELIBERATE smoke failure to prove the watcher gate")
     rep.passed("every tab summary builds: Pulse, Copilot, Review, Briefs, log, version, page")
 
 
