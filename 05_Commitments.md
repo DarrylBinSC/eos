@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-29 10:22 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-29 10:39 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 51 (Critical 10) · Needs triage 0.
+**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 52 (Critical 11) · Needs triage 0.
 
 ---
 
@@ -64,6 +64,7 @@ Four registers. The delineation is the point.
 | C72 | Ascent Navigator production WAB evidence pack, complete for the 2026-10-23 review | DJ Vaughn | Awaited | 2026-10-23 Ascent Navigator - PROD WAB | -- | 2026-10-21 | 2026-10-19 (Claude, weekly brief): New. |
 | C59 | Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment | Bob Caprise | Awaited | 2026-10-29 On Darryl's email | -- | 2026-10-20 | New 2026-09-18. |
 | C1 | JCI final legal markup sent to JCI |  |  | 2026-10-30 | -- | 2026-10-21 | ## Closure Date closed (as recorded): 2026-09-01 Done. |
+| C80 | FY27 WAM development team: Nitin Pandey's answers to the six roster questions (Databricks coverage, Jafar flag, 50% roles, contractor dates, coding assistants) | Nitin Pandey | Awaited | 2026-11-03 Darryl asked for a reply by early next week (email 2026-10-29); Monday 2026-11-03 used as the gate | **Critical** -- Gates the WAM/ADM reset plan (D001, A61) and the Sean conversation; the Databricks answer decides whether the FY27 team can run DDP/EUDM integration | 2026-10-29 | New 2026-10-29. |
 | B102 | Validate remaining Strev SOW 3 deliverables (completed and outstanding), open bugs, and the notification mechanism | Akansh Gangil | Delegated | 2026-11-05 (review call) | **Critical** -- gates a dated vendor/commercial closure | 2026-10-28 | New 2026-10-14. |
 | B104 | Investigate why Claude Code is unavailable from the India office | Ankit Chadha | Delegated | 2026-11-05 /16 | -- | 2026-10-28 | New 2026-10-14. |
 | B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
