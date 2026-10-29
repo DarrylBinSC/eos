@@ -17,13 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 51 (Critical 10) · Needs triage 1.
-
-## Needs Triage (added from the web app, not yet classified)
-
-| # | Title | Added | Note |
-|---|---|---|---|
-| T1 | Executive awareness of entroCIM & channel challenges | 2026-10-29 | 2026-10-29 (Darryl, web): - Follow up with Jarrod booth by November 6 |
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 51 (Critical 10) · Needs triage 0.
 
 ---
 
