@@ -62,15 +62,15 @@
   {
    "name": "Stanford",
    "type": "customer",
-   "aliases": []
+   "aliases": [],
+   "pinned": true
   },
   {
    "name": "Louvre Abu Dhabi",
    "type": "customer",
    "aliases": [
     "Louvre"
-   ],
-   "pinned": true
+   ]
   },
   {
    "name": "UWM",
