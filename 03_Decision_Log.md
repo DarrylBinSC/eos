@@ -22,6 +22,16 @@
 
 ## Decisions Made
 
+### 2026-10-29 — Monday.com added to Darryl's product portfolio (Sean McCloskey, verbal)
+- Status: Made (Sean McCloskey, verbal update to Darryl on the products he owns, 2026-10-29; Darryl direct, same day)
+- Owner: Sean McCloskey (decision); Darryl Benson (receiving owner)
+- Context: Wesco's use of Monday.com is listed as a Run product with Chris Gazdic as Product Executive on the August 2026 Digital Product List (`06`, Portfolio roles). Sean told Darryl he would add it to Darryl's portfolio. Nothing in writing yet.
+- Options considered: n/a, Sean's call.
+- Decision / Recommended path: Darryl, own words: Sean "said he'd add Wesco's use of Monday.com to my product portfolio."
+- Risk of waiting: n/a, decided; the open part is scope and timing.
+- Forum where this should be decided: decided verbally; confirmation expected in writing or on the next Digital Product List.
+- Follow-up: effective date, what the ownership covers (platform administration, licensing and renewal, the internal product-executive role, or all three), handover from Chris Gazdic, and FY27 AOP treatment are not stated. `Products/Monday_com/Monday_com.md` created; `01` Portfolio Scope updated.
+
 ### 2026-10-28 — Stanford Commissioning App IP: pre-existing-software carve-out confirmed; Wesco in the clear
 - Status: Made (Darryl, 2026-10-27/28, legal meeting with Nikos Minas and Brandon Thompson)
 - Owner: Darryl Benson
@@ -885,7 +895,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-29 10:41 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-29 16:47 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -1129,7 +1139,21 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 79.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 80.*
+
+### 2026-10-29 — BOM Studio: route through the Launch Studio gate as its first case, pursue the managed-services bundle with TS and Sales, or both
+- ID: D099
+- Status: open
+- Owner: Darryl
+- Forum: Not yet routed; candidates are the next Sean McCloskey 1:1 (Launch Studio thread) and a follow-up with Brad Stevens and Nate Kehr (bundle thread)
+- Next action: Establish what Robert Ehiemua has asked for and whether TS leadership (Vinay Prabhu, Matt Powers) sponsors the tool; then decide the route
+- Context: BOM Studio (Robert Ehiemua, TS) is a working AI data center design and BOM tool and the first concrete Launch Studio candidate. On 2026-10-29 Darryl, Brad Stevens and Nate Kehr discussed packaging it with entroCIM, WAM / ADM and Navigator / Ascent as a managed-services offer.
+- Why it is Darryl's: he owns Launch Studio and its gate, and his platforms are the managed-services layer in the bundle.
+- The two threads are different decisions. Productizing the tool is a Launch Studio question (sponsor, funding, run ownership, security absorption). The bundle is an offer and portfolio question with Sales and TS in it and does not depend on the tool being productized first.
+- Options: (a) run BOM Studio through the gate as the first proof case of the process; (b) take it straight into a CSS Platforms and TS partnership outside the gate; (c) both, with the bundle conversation proceeding on the tool as it stands.
+- Risk of waiting: low this week; the risk is the two threads being argued as one and the gate being bypassed by default.
+- Information still needed: Robert's ask; TS sponsorship; real-project usage; whether an opportunity sits behind the bundle.
+- Record: `Products/Vibe_Code_Productization/Candidates/BOM_Studio.md`.
 
 ### 2026-10-20 — Stanford renewal: three licenses back to SkySpark-only, how Wesco supports the roll-back and what happens to the Commissioning App
 - ID: D096
