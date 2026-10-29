@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-29 08:58 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-29 09:00 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,13 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 51 (Critical 10) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 51 (Critical 10) · Needs triage 1.
+
+## Needs Triage (added from the web app, not yet classified)
+
+| # | Title | Added | Note |
+|---|---|---|---|
+| T1 | Executive awareness of entroCIM & channel challenges | 2026-10-29 | 2026-10-29 (Darryl, web): - Follow up with Jarrod booth by November 6 |
 
 ---
 
