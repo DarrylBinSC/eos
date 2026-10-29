@@ -1133,7 +1133,7 @@ button.pv-pp{min-height:40px;align-items:center}
 .tw{overflow-x:auto;margin:0 0 16px}.md.brief table{font-size:14px;width:100%;border-collapse:collapse}
 /* 2026-10-29: cells wrap at words only (the article's overflow-wrap:anywhere let auto layout squeeze ID and Due to one character); IDs and dates never wrap; tables widen past the 72ch prose measure to the reader's width */
 .md.brief td,.md.brief th{overflow-wrap:normal;word-break:normal}.md.brief td code,.md.brief th code,.md.brief td:first-child,.md.brief th:first-child,.md.brief .dt{white-space:nowrap}
-.md.brief .tw{width:min(104ch,100cqw - 80px);margin-left:50%;transform:translateX(-50%)}
+.md.brief .tw{width:max(100%,min(104ch,100cqw));margin-left:50%;transform:translateX(-50%)}
 .md.brief th{background:var(--sunk);font-weight:600}.md.brief td,.md.brief th{border:0;border-bottom:1px solid var(--line);padding:7px 10px}
 .md.brief tr:nth-child(even) td{background:color-mix(in srgb,var(--sunk) 45%,transparent)}
 .md a.iid{font:600 12.5px ui-monospace,Menlo,monospace;color:var(--acc);text-decoration:none;background:var(--sel);border-radius:4px;padding:0 3px;white-space:nowrap}
