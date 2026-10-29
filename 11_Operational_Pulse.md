@@ -24,7 +24,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P093** WAM: supplier filter returns unrelated sales orders, purchase orders and column-filter values (no account; WAM Sprint Review). Test: No owner, or the customer is unaware of a material problem.
 - **P106** Device-to-floor-plan linking at Dell Site 6 is outside the assigned 3D-render scope, implementer unconfirmed (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P078** paas-dev-03w returned HTTP 502 on 10-23; reported back up, not formally confirmed resolved (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 
@@ -194,7 +193,7 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 5, new this week 3, stuck 2, quie
 | P022 | Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion |  |  | High | 2026-10-13 | 2026-10-27 | 3 | stuck, customer-visible |
 | P094 | WAM critical security vulnerabilities remain open past the team's intended close date |  |  | High | 2026-10-27 | 2026-10-27 | 1 |  |
 | P092 | WAM: selected supplier disappears from License and Orders after navigating away and back |  | Akansh Gangil | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible |
-| P093 | WAM: supplier filter returns unrelated sales orders, purchase orders and column-filter values |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: gap |
+| P093 | WAM: supplier filter returns unrelated sales orders, purchase orders and column-filter values |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible |
 
 ## WAM Product discussion
 
