@@ -44,7 +44,7 @@ Products with a working body of material get a **folder**; everything in that fo
 
 ```
 Products/
-  WAM/          WAM.md, WAM_Roadmap.md, WAM_Data_Architecture.md,
+  WAM/          WAM.md, WAM_Team.md (FY27 dev team roster), WAM_Roadmap.md, WAM_Data_Architecture.md,
                 Part_Classification.md, WAM_Backlog_Deep_Dive_2026-08-05.pdf,
                 FY27 AOP collation template + backup
   entroCIM/     entroCIM.md, entroCIM_Roadmap.md, commercialization decks,

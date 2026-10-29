@@ -35,7 +35,6 @@
     },
     {
       "name": "WAM",
-      "file": "Products/WAM/WAM.md",
       "live": true,
       "aliases": [
         "WAM",
@@ -46,7 +45,12 @@
         "DDP",
         "supplier attribute",
         "DDPTRK"
-      ]
+      ],
+      "files": [
+        "Products/WAM/WAM.md",
+        "Products/WAM/WAM_Team.md"
+      ],
+      "_note": "WAM_Team.md added 2026-10-29: the FY27 development team roster (John Erickson listing); feeds this card."
     },
     {
       "name": "Navigator",

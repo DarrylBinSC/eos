@@ -121,7 +121,17 @@ def forum_name(key: str, forums=None) -> str:
 # ----------------------------------------------------------------------------- per-item state
 
 # Same person, different spellings in evidence. Extend as they surface.
-ALIASES = {"Syed Zaidi": "Syed Jamshed Zaidi", "Syed J Zaidi": "Syed Jamshed Zaidi", "Robby Tefft": "Robert Tefft", "Robbie Tefft": "Robert Tefft"}
+ALIASES = {"Syed Zaidi": "Syed Jamshed Zaidi", "Syed J Zaidi": "Syed Jamshed Zaidi", "Robby Tefft": "Robert Tefft", "Robbie Tefft": "Robert Tefft",
+           # WAM development team, FY27 listing 2026-10-28 (Products/WAM/WAM_Team.md)
+           "Shiva Chuka": "Shivakrishna Chukka", "Shiva": "Shivakrishna Chukka", "Chukka, Shivakrishna": "Shivakrishna Chukka",
+           "Krishna": "Krishanaunni R", "R, Krishanaunni": "Krishanaunni R",
+           "Chandana": "Chandana Buduru", "Buduru, Chandana": "Chandana Buduru",
+           "Lavanya": "Lavanya Neelam", "Neelam, Lavanya": "Lavanya Neelam",
+           "Amarnath": "Amarnath Pullalarevu", "Pullalarevu, Amarnath": "Amarnath Pullalarevu",
+           "Jafar": "Jafar Sadiq", "Sadiq, Jafar": "Jafar Sadiq",
+           "Bala": "Balasubramanian K", "Balasubramanian K": "Balasubramanian K", "K, Balasubramanian": "Balasubramanian K",
+           "Nitin": "Nitin Pandey", "Pandey, Nitin": "Nitin Pandey",
+           "Praveen": "Praveen PS", "Subhashree": "Subhasree Pradhan", "Subhasree": "Subhasree Pradhan"}
 
 _SPLIT = re.compile(r",|;|/|\band\b|\bwith\b|&")
 

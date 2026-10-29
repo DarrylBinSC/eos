@@ -885,7 +885,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-29 09:53 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-29 14:22 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -909,6 +909,7 @@
 - Status: Approaching -- needs decision output
 - Owner: Sean McCloskey (final call), with Darryl Benson, Akansh Gangil, David Blondel preparing the plan
 - Forum: WAM Leadership Sync (weekly, David Blondel, Darryl attends) or WAM Data Challenges (weekly, Darryl-owned) -- next live occurrence to be confirmed; this is also a candidate for the structured-agenda-register treatment already applied to two other forums (`07`).
+- Next action: Reset plan rebuilt on the FY27 team of eight (7.0 FTE); confirm data-engineering coverage with Nitin Pandey before the Sean conversation.
 - Context: Akansh Gangil quantified an eight-person minimum run model (two data engineers, three backend, one UI, two QA) against 15 current resources and the 19-FTE AOP draft, stating timelines would extend "by a great margin" under it. Darryl, own words, WAM Leadership Sync, 2026-10-05: "Let's talk about how we reset as a team over the next few days, then we can bring that to Sean as our plan moving forward and get his input." See `04` WAM/ADM row, `05` A61.
 - Options mentioned: preserve the run team and sequence completion work; pause selected ADM work; extend timelines against the current roadmap.
 - Information still needed: final staffing allocation and priority order (run vs. complete vs. stop vs. defer).
@@ -920,6 +921,8 @@
 - **Update 2026-10-14 (Darryl, review pass on the Sean update):** (1) Akansh's staffing numbers stay out of all Sean material until they reconcile; options carry resource types only, no quantities. (2) **WAM roadmap reconciliation next week** (Darryl, Akansh Gangil, David Blondel) to keep the team on features that are scalable and valuable; staffing per option comes out of it. Joint Teams draft `Deliverables/WAM/2026-10-14_Akansh_David_Staffing_Reconciliation_Teams.md`. (3) Recommendation Run plus DDP is now Darryl's. (4) Decision-rights note: the WAM dev team still sits in Merwan Mereby's Platforms team; the Sean ask is the status of Digital Products taking over WAM development (`05` C63), and agreement in principle on Run plus DDP. (5) Renewal-order flagging starts with Dan Totino (Darryl). (6) Serial/MAC capture: Alan Martin's cross-SBU GPO meeting 2026-10-15.
 - **Update 2026-10-15 (daily evidence, Nitin Pandey): capacity assessment still pending, explicitly timed to Shubhayu's return.** Nitin Pandey, explicit: "Once Shubhayu returns next week, I will discuss this further with him and provide a more comprehensive update." Due week of 2026-10-19, consistent with the re-date above and with `05` A61 (not closed -- plan still not delivered). Same phased managed-services delivery question tracked in Decision Backlog below (2026-10-14 entry) -- see that entry for the 2027-01/02 phased dates. Source: WAM/ADM capacity-risk escalation evidence, M365 weekly package, reporting window 2026-10-14 to 2026-10-15.
 - **New input, 2026-10-20 (daily evidence):** Nitin Pandey, quoted in the thread (Introducing new functionality for managed services - ADM/WAM email, 2026-10-19): "Chris has indicated the WAM team size may be reduced to seven resources effective January 2027" and "If this change is confirmed, it is likely to have an impact on our planned delivery timelines and overall execution capacity." Darryl Benson, reply: "Let's plan some time to discuss as soon as possible. Feel free to schedule the group as the plan comes together on your side." Seven is below Akansh Gangil's eight-person minimum run model. "Chris" is not identified in the words; do not assume. Nitin's fuller update after Shubhayu's return (filed 10-15) is unchanged.
+
+2026-10-29 (Claude, session): FY27 WAM team listing received (John Erickson, 2026-10-28, at Chris Gazdic's request): eight people retained, 7.0 FTE-equivalent (3 BE, 2 FE, 1 QA, architect 50%, engineering manager 50%), effective January 2027. Darryl: these are the reconciled numbers until further notice, so staffing quantities may now go into Sean material. "Chris" is Chris Gazdic (Darryl). Gap: no data engineer or Azure Databricks skill on the list against the two-DE / three-ADB run model; QA five to one. Questions to Nitin drafted in `Products/WAM/WAM_Team.md`.
 
 ### 2026-09-09 — WAM complex-build final data model: serial-number anchor, parent/room relationship, VAS/WMX handoff
 - ID: D004
