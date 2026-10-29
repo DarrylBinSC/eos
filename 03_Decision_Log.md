@@ -885,7 +885,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-29 09:01 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-29 09:04 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -1100,6 +1100,8 @@
 - **Update 07-28 (M365 evidence, "Re: API Detail" thread): the WAB/API technical path sharpened.** Babu Papanna specified concrete requirements for the Airwall Conductor API/metering-agent access: static public IP allow-listing, an Azure NSG/firewall change scoped to a single REST endpoint, and TLS certificate validation. Darryl asked Babu Papanna and Shawn Clark directly to confirm whether this needs Azure Front Door, a static source IP, and what infrastructure/security changes are required — that confirmation has not landed yet (Register C14). Once confirmed internally, the outstanding ask to JCI (static IPs, API origination details, port/NAT/rate scope) still needs to go out — do not treat this as already sent. This is detail on the existing A6/C8 WAB submission path, not a new decision thread.
 
 2026-10-19 (Darryl, web): - Sent Jeff some dates to have a joint meeting with Legal this week on Friday.
+
+2026-10-29 (Darryl, web): - meeting held, JCI Owes a draft in return
 
 ### WAM data challenge remediation approach
 - ID: D024
