@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-29 09:39 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-29 09:40 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-15 to 2026-10-29. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -24,7 +24,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P084** WAM historical upload: record-merge defect affecting perpetual-parts rows (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P085** WAM upload pipeline processes one resource at a time, causing multi-day stalls (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P086** WAM Spring Boot upgrade has unresolved runtime API issues; production release carries an unscoped DD-team dependency (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P087** entroCIM refresh hanging for some time while Babu C. Dinesh was away (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
@@ -183,7 +182,7 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 4, new this week 4, stuck 0, quie
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P068 | WAM renewal recommendation feature: quality rejected, rework from start |  |  | Medium | 2026-10-23 | 2026-10-23 | 1 |  |
-| P084 | WAM historical upload: record-merge defect affecting perpetual-parts rows |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
+| P084 | WAM historical upload: record-merge defect affecting perpetual-parts rows |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P085 | WAM upload pipeline processes one resource at a time, causing multi-day stalls |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
 | P086 | WAM Spring Boot upgrade has unresolved runtime API issues; production release carries an unscoped DD-team dependency |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
 
