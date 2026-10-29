@@ -2067,7 +2067,23 @@ def _snapshot() -> dict:
     return out
 
 
-TOOLS = [Path(__file__).resolve().parent / n for n in ("eos_server.py", "eos_registers.py", "eos_pulse.py", "eos_products.py", "eos_review.py")]
+TOOLS = [Path(__file__).resolve().parent / n for n in ("eos_server.py", "eos_registers.py", "eos_pulse.py", "eos_products.py", "eos_review.py", "eos_smoke.py")]
+SMOKE = Path(__file__).resolve().parent / "eos_smoke.py"
+
+
+def run_smoke(timeout: int = 120) -> tuple[bool, str]:
+    """Added 2026-10-29 (2026-10-28 review, item 3): the smoke test runs in a subprocess so it exercises the code on
+    disk (the new code, not the modules this process already loaded) and so a crash in it cannot take the server down.
+    Returns (passed, last line of its report)."""
+    try:
+        r = subprocess.run([sys.executable, str(SMOKE), "--quiet"], capture_output=True, text=True, timeout=timeout,
+                           cwd=str(R.ROOT), env={**os.environ, "EOS_ROOT": str(R.ROOT)})
+        out = (r.stdout.strip() or r.stderr.strip()).splitlines()
+        return r.returncode == 0, (out[-1] if out else f"exit {r.returncode}, no output")
+    except subprocess.TimeoutExpired:
+        return False, f"smoke test timed out after {timeout}s"
+    except Exception as e:
+        return False, f"smoke test could not run: {e}"
 
 
 def _tools_mtime() -> tuple:
@@ -2082,7 +2098,8 @@ def _tools_mtime() -> tuple:
 
 def _restart_if_code_changed(start: tuple) -> None:
     """Added 2026-10-16: when Claude changes the server or Pulse code, restart in place so the web app shows it
-    without Darryl quitting and relaunching. Waits for the files to settle and to compile before restarting."""
+    without Darryl quitting and relaunching. Waits for the files to settle, to compile, and (since 2026-10-29) to pass
+    Tools/eos_smoke.py before restarting."""
     import py_compile, time
     if _tools_mtime() == start:
         return
@@ -2093,9 +2110,17 @@ def _restart_if_code_changed(start: tuple) -> None:
     except Exception as e:
         sys.stderr.write(f"[watch] code changed but does not compile; not restarting: {e}\n")
         return
+    ok, verdict = run_smoke()
+    if not ok:
+        # Old code keeps running. The change is still committed so the history shows what was tried and why it did
+        # not deploy; the next edit to Tools/ re-runs the gate.
+        with LOCK:
+            msg = git_commit_all(f"code change: SMOKE TEST FAILED, old code still running ({verdict})")
+        sys.stderr.write(f"[watch] code changed but the smoke test failed; NOT restarting: {verdict} ({msg})\n")
+        return
     with LOCK:
-        msg = git_commit_all("code change: restart server with updated Tools/")
-    sys.stderr.write(f"[watch] code changed ({msg}); restarting\n")
+        msg = git_commit_all(f"code change: restart server with updated Tools/ ({verdict})")
+    sys.stderr.write(f"[watch] code changed, {verdict} ({msg}); restarting\n")
     os.execv(sys.executable, [sys.executable] + sys.argv)
 
 
@@ -2138,6 +2163,8 @@ def main():
         print("startup:", git_commit_all("startup: commit changes made while the server was not watching (code, docs, evidence)"))
         R.regenerate_all()
         print("startup:", git_commit("startup: regenerate 03/04/05 from Registers/"))
+    ok, verdict = run_smoke()
+    print("startup:", verdict if ok else f"SMOKE FAILED: {verdict} (server starts anyway; fix before the next code change)")
     threading.Thread(target=watch_registers, daemon=True).start()
     srv = ThreadingHTTPServer((BIND, PORT), H)
     print(f"EOS Registers server on http://{BIND}:{PORT}  (root: {R.ROOT})")
