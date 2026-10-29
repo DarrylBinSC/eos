@@ -69,7 +69,8 @@
    "type": "customer",
    "aliases": [
     "Louvre"
-   ]
+   ],
+   "pinned": true
   },
   {
    "name": "UWM",
@@ -80,8 +81,7 @@
    "name": "Marygrove",
    "type": "customer",
    "aliases": [],
-   "note": "Hosted entroCIM customer; added 2026-10-20 from the Backlog Deep Dive (P047), confirm",
-   "pinned": true
+   "note": "Hosted entroCIM customer; added 2026-10-20 from the Backlog Deep Dive (P047), confirm"
   }
  ]
 }

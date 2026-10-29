@@ -8,13 +8,13 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Marygrove | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
+| Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
 | Dell | Steady | +10 | 146 | 131 | 20 | 3 | 8 | 1 |
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
 | Federal Reserve | Steady | +0 | 13 | 3 | 1 | 0 | 0 | 2 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
-| Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
+| Marygrove | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
 | Stanford | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 
 Load = live high visible x8, live high x6, live medium x3, live low x1, stuck x4, quiet x1, candidate x3, at your level x5. Trend = change in the team-raised load over 7 days, rebuilt from the dates meetings raised each issue; Worsening or Improving when it moves by at least 5 points and 15% of last week's load, otherwise Steady. Your register items are in the load but not the trend (no dated history). Friction from evidence, not customer sentiment.
