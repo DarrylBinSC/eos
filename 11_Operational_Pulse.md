@@ -9,7 +9,7 @@
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
 | Dell | Steady | +16 | 152 | 131 | 20 | 3 | 8 | 1 |
-| Coca-Cola (TCCC) | Worsening | +15 | 19 | 4 | 4 | 0 | 1 | 0 |
+| Coca-Cola (TCCC) | Worsening | +12 | 16 | 4 | 4 | 0 | 1 | 0 |
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
 | Federal Reserve | Steady | +0 | 13 | 3 | 1 | 0 | 0 | 2 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
@@ -38,7 +38,6 @@ No signals in the window: BAE, UWM.
 - **P086** WAM Spring Boot upgrade has unresolved runtime API issues; production release carries an unscoped DD-team dependency (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P087** entroCIM refresh hanging for some time while Babu C. Dinesh was away (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P088** ~800-900 additional points pending across four IRCs at the Limerick (Dell) closeout site (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
-- **P090** Two new TCCC NAT IP gateways need internal confirmation before checking the customer network side (Coca-Cola (TCCC); 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P091** Repeated timeout and HTTP 504 errors on TCCC devices that had not shown them before; no nginx timeout standard (Coca-Cola (TCCC); 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P093** WAM: supplier filter returns unrelated sales orders, purchase orders and column-filter values (no account; WAM Sprint Review). Test: No owner, or the customer is unaware of a material problem.
 - **P078** paas-dev-03w returned HTTP 502 on 10-23; reported back up, not formally confirmed resolved (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
@@ -114,7 +113,7 @@ Governance: Project management. Owner: Chad Steger. Live 36, new this week 20, s
 | P088 | ~800-900 additional points pending across four IRCs at the Limerick (Dell) closeout site | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: boundary |
 | P073 | Commissioning spreadsheet will not accept commissioning dates (Dell sites) | Dell |  | Medium | 2026-10-27 | 2026-10-28 | 2 | candidate: gap |
 | P089 | TCCC ECR connector (TEC 7th floor) timing out; connection info needs verification | Coca-Cola (TCCC) | Scott Dunn | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible |
-| P090 | Two new TCCC NAT IP gateways need internal confirmation before checking the customer network side | Coca-Cola (TCCC) | Scott Dunn | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: boundary |
+| P090 | Two new TCCC NAT IP gateways need internal confirmation before checking the customer network side | Coca-Cola (TCCC) | Scott Dunn | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible |
 | P091 | Repeated timeout and HTTP 504 errors on TCCC devices that had not shown them before; no nginx timeout standard | Coca-Cola (TCCC) |  | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: gap |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P005 Commissioned Panama devices not producing expected alarms ahead of environment decommissioning; P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review; P014 Dell non-DC server unavailable since the prior week, blocking meter verification; P016 Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation; P017 North America lighting-site UPS alarms visible in PME/NMC but not reaching entroCIM; P023 Penang 2: down points not triggering the expected faults or notifications; P025 Dell "three-creatures" requirements undefined; related work waits on a Dell workshop; P026 New York: two meters in commissioning, two with connection issues.
