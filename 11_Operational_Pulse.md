@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-29 09:24 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-29 09:37 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-15 to 2026-10-29. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -24,7 +24,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **K009** WAM ADM renewal-recommendation code: original author departed, no documented backup, team in maintenance mode (knowledge concentration). Test: One person holds knowledge a customer or a release depends on, and no backup is confirmed.
 - **P028** Site-meter information missing at several Dell sites (Chile named), blocking rollup views (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P094** WAM critical security vulnerabilities remain open past the team's intended close date (no account; WAM Sprint Review). Test: No owner, or the customer is unaware of a material problem.
 - **P103** North Carolina Modbus meter onboarding blocked by missing MIB file and unavailable meter credentials (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
