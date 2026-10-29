@@ -796,6 +796,32 @@ def run_smoke(timeout: int = 120) -> tuple[bool, str]:
         return False, f"smoke test could not run: {e}"
 
 
+def _ui_mtime() -> tuple:
+    try:
+        return tuple(sorted((f.name, f.stat().st_mtime) for f in UI_DIR.iterdir() if f.suffix in UI_TYPES))
+    except FileNotFoundError:
+        return ()
+
+
+def _commit_if_ui_changed(state: list) -> None:
+    """Added 2026-10-29: Tools/ui/ is read per request, so a UI edit needs no restart; it only needs committing.
+    Waits for the files to settle (two polls agree) and for the smoke test to pass, then commits as `ui change:`."""
+    import time
+    now = _ui_mtime()
+    if now == state[0]:
+        state[1] = None
+        return
+    if state[1] is None or now != state[1]:
+        state[1] = now
+        return
+    ok, verdict = run_smoke()
+    with LOCK:
+        msg = git_commit_all(("ui change: Tools/ui updated" if ok else "ui change: SMOKE TEST FAILED, check Tools/ui") + f" ({verdict})")
+    sys.stderr.write(f"[watch] UI changed, {verdict} ({msg})\n")
+    state[0] = now
+    state[1] = None
+
+
 def _tools_mtime() -> tuple:
     out = []
     for t in TOOLS:
@@ -840,11 +866,13 @@ def watch_registers(interval: float = 5.0):
     import time
     last = _snapshot()
     code_start = _tools_mtime()
+    ui_state = [_ui_mtime(), None]
     prev = None  # the previous poll's snapshot while a change is settling
     while True:
         time.sleep(interval)
         try:
             _restart_if_code_changed(code_start)
+            _commit_if_ui_changed(ui_state)
             now = _snapshot()
             if now == last:
                 prev = None

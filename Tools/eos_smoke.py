@@ -231,9 +231,24 @@ def check_tabs(rep: Report):
     S.list_briefs()
     S.recent_log(5)
     S.data_version()
-    if not isinstance(S.HTML, str) or "<html" not in S.HTML.lower():
-        rep.fail("eos_server.HTML is not a page")
-    rep.passed("every tab summary builds: Pulse, Copilot, Review, Briefs, log, version, page")
+    html = S.page()
+    if "<html" not in html.lower() or "__V__" in html:
+        rep.fail("eos_server.page() is not a finished page (Tools/ui/index.html)")
+    for name in ("app.css", "app.js"):
+        r = S.ui_file(name)
+        if r is None or len(r[0]) < 1000:
+            rep.fail(f"Tools/ui/{name} missing or empty")
+        if f"/ui/{name}" not in html:
+            rep.fail(f"Tools/ui/index.html does not reference /ui/{name}")
+    import shutil, subprocess
+    node = shutil.which("node")
+    if node:
+        r = subprocess.run([node, "--check", str(S.UI_DIR / "app.js")], capture_output=True, text=True, timeout=60)
+        if r.returncode != 0:
+            rep.fail("Tools/ui/app.js does not parse:\n" + (r.stderr.strip() or r.stdout.strip())[:800])
+    else:
+        rep.warn("node not found; app.js syntax not checked")
+    rep.passed("every tab summary builds: Pulse, Copilot, Review, Briefs, log, version; page served from Tools/ui" + (" (app.js parses)" if node else ""))
 
 
 # ----------------------------------------------------------------------------- runner
