@@ -575,3 +575,13 @@ Source: review call, Darryl Benson and Brian Miller, 2026-10-27 13:30 ET (Teams 
 - Business size, Darryl's own figures on the call (Reported, internal): about $26 million pull-through and about $3 million services, roughly $29 million, mostly hardware resale against the installed base.
 - Gap (Reported): Darryl has no visibility into development fees already paid to Revnue on Amy's side or what they scoped; his team's development spend is the Wesco API back end only.
 - Register: A49 (re-dated 2026-11-03), C77 (Brian's markup), C78 (Paula's benchmark), C79 (AI Council owner, Amy), W006 (updated).
+
+## ADM renewal-notification eligibility and warranty/battery tracking decided (added 2026-10-29)
+
+Lead: two product decisions came out of the 2026-10-28 ADM connect with Natalie session: Exact notifications will be restricted to MAC-identified orders, and UPS/battery warranty coverage will be tracked as separate line items under the same sales order.
+
+Source: ADM connect with Natalie, 2026-10-28 (Loop/AI notes), `Evidence/M365_Evidence_Daily_2026-10-29.md`.
+
+- **Exact notification eligibility (Durable, decided).** Gangil, Akansh: "we would like to have only those exact orders eligible for notifications where the MAC ID is present." Orders without a MAC ID are excluded from notifications; production availability is estimated at about one month (late November). Related to the end-user-identification gap tracked as `Registers/pulse/P114.md` (no path to end-user data except possibly through integrators).
+- **Battery/UPS warranty tracking (Durable, decided).** Gangil, Akansh and Marquardt, Natalie: "track battery coverage separately under the same sales order as the UPS," using a free-text bundle coverage type and duration field. Raised against the APC example: a UPS and its replacement battery carry different warranty clocks and were not separately trackable before this.
+- **Milestone 25/26 data date (Reported, Akansh Gangil).** "The milestone 25/26 data was expected on October 30." This is the Milestone sales-data thread tracked at `Registers/pulse/P060.md` (missing sales orders, Gina not responding), not the WAM Data Enrichment 2026-10-30 milestone tracked via A29/W016/P021/P022 -- the two land on the same date by coincidence. Do not conflate them in reporting.

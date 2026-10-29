@@ -1109,7 +1109,7 @@ button.pv-pp{min-height:40px;align-items:center}
 .bi:hover{background:var(--sel)}.bi.on{background:var(--sel);border-left-color:var(--acc)}
 .bi .bd{font-weight:600;font-variant-numeric:tabular-nums}.bi .bk{font-size:12px;color:var(--muted);margin-left:6px}
 .bi .bk.w{color:var(--acc);font-weight:600}
-.br{padding:24px 40px 80px;min-width:0;overflow-wrap:anywhere}
+.br{padding:24px 40px 80px;min-width:0;overflow-wrap:anywhere;container-type:inline-size}
 .br .bh{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;font-size:13px;color:var(--muted);margin:0 auto 18px;max-width:72ch}
 .br .bh a{color:var(--acc)}.bsel{display:none;font:inherit;font-size:14px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink)}
 .md.brief{max-width:72ch;margin:0 auto;font-size:16px}
@@ -1131,6 +1131,9 @@ button.pv-pp{min-height:40px;align-items:center}
 .md.brief li.kv{list-style:none;margin-left:-22px;display:grid;grid-template-columns:150px minmax(0,1fr);gap:14px}
 .md.brief li.kv .k{font-size:12px;font-weight:650;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);padding-top:3px}.md.brief li.kv.nx .v{font-weight:600}
 .tw{overflow-x:auto;margin:0 0 16px}.md.brief table{font-size:14px;width:100%;border-collapse:collapse}
+/* 2026-10-29: cells wrap at words only (the article's overflow-wrap:anywhere let auto layout squeeze ID and Due to one character); IDs and dates never wrap; tables widen past the 72ch prose measure to the reader's width */
+.md.brief td,.md.brief th{overflow-wrap:normal;word-break:normal}.md.brief td code,.md.brief th code,.md.brief td:first-child,.md.brief th:first-child,.md.brief .dt{white-space:nowrap}
+.md.brief .tw{width:min(104ch,100cqw - 80px);margin-left:50%;transform:translateX(-50%)}
 .md.brief th{background:var(--sunk);font-weight:600}.md.brief td,.md.brief th{border:0;border-bottom:1px solid var(--line);padding:7px 10px}
 .md.brief tr:nth-child(even) td{background:color-mix(in srgb,var(--sunk) 45%,transparent)}
 .md a.iid{font:600 12.5px ui-monospace,Menlo,monospace;color:var(--acc);text-decoration:none;background:var(--sel);border-radius:4px;padding:0 3px;white-space:nowrap}
@@ -1149,7 +1152,12 @@ button.pv-pp{min-height:40px;align-items:center}
 .bback{display:none}
 @media (max-width:1280px){.bv{grid-template-columns:240px minmax(0,1fr)}.btoc{display:none}.bsel{display:inline-block}}
 @media (max-width:820px){.bv{grid-template-columns:1fr}.bl{border-right:0}.bv.reading .bl{display:none}.bv:not(.reading) .br{display:none}.br{padding:14px 16px 60px}.bback{display:inline-block}.br .bh .bp{display:none}
- .md.brief{font-size:16px}.md.brief h1{font-size:21px;line-height:27px}.pcard dl,.md.brief li.kv{grid-template-columns:1fr;gap:2px}.pcard dd{margin-bottom:8px}}
+ .md.brief{font-size:16px}.md.brief h1{font-size:21px;line-height:27px}.pcard dl,.md.brief li.kv{grid-template-columns:1fr;gap:2px}.pcard dd{margin-bottom:8px}
+ .md.brief .tw{width:auto;margin-left:0;transform:none}}
+/* 2026-10-29: on phones each brief table row is a block; the renderer puts the header text in data-th */
+@media (max-width:640px){.md.brief table,.md.brief tbody,.md.brief tr,.md.brief td{display:block}.md.brief tr:first-child{display:none}.md.brief tr{padding:10px 0;border-bottom:1px solid var(--line)}
+ .md.brief td{border:0;padding:2px 0;background:none!important}.md.brief td[data-th]:not([data-th="Item"]):not([data-th="ID"])::before{content:attr(data-th) ": ";font-size:12px;font-weight:650;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+ .md.brief td[data-th="ID"]{display:inline-block;margin-right:8px}.md.brief td[data-th="Due"]{display:inline-block;color:var(--muted)}.md.brief td[data-th="Item"]{font-weight:600;line-height:22px;margin:2px 0}}
 .cp{border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0 0 14px;background:var(--card)}.cp.need{border-color:var(--acc)}
 .cp-h{display:flex;align-items:center;gap:10px;margin-bottom:4px}.cp-n{font:700 12px ui-monospace,Menlo,monospace;background:var(--acc);color:var(--accInk);border-radius:5px;padding:2px 7px}
 .cp:not(.need) .cp-n{background:var(--sunk);color:var(--ink2)}.cp-b{margin-left:auto;font-size:12px;font-weight:650}.cp-b.y{color:var(--acc)}.cp-b.n{color:var(--muted)}
@@ -1909,7 +1917,8 @@ function linkIds(h){return h.split(/(<code>[\s\S]*?<\/code>|<[^>]+>)/).map((s,k)
 const BOPEN=/summary|priorit|risk|my actions|register a|closure|decision required|changes since|this week.s objectives|chief of staff|calibration/i;
 const BLABEL=/(Business impact|Why you personally|Why Darryl personally|Risk if delayed|Next step|Expected outcome|Recommended action):\s*/g;
 function briefMd(src){
-  const inl=t=>linkIds(esc(t).replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/(^|[^*])\*([^*\s][^*]*)\*/g,'$1<i>$2</i>'));
+  const inl=t=>linkIds(esc(t).replace(/`([^`]+)`/g,'<code>$1</code>').replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>').replace(/(^|[^*])\*([^*\s][^*]*)\*/g,'$1<i>$2</i>').replace(/\b(\d{4}-\d{2}-\d{2})\b/g,'<span class="dt">$1</span>'));
+  let thead=[];
   const CO={'Risk':'risk','Decision Required':'dec','Source Note':'src','Bottom Line':'bl1','Image Caption':'cap'};
   /* A paragraph that carries two or more field labels becomes a card, one field per line, Next step highlighted. */
   const fields=t=>{const parts=t.split(BLABEL);if(parts.length<5)return null;
@@ -1930,7 +1939,7 @@ function briefMd(src){
       secOpen=BOPEN.test(title);toc.push({id,t:title.replace(/^\d+[a-z]?\.\s*/,'').replace(/`/g,''),closed:!secOpen});
       out.push(`<details class="bsec" id="${id}"${secOpen?' open':''}><summary><h2>${inl(m[1])}</h2></summary><div class="bsb">`);insec=true;continue}
     if((m=l.match(/^(#{1,3}) (.*)/))){flush();out.push(`<h${m[1].length}>${inl(m[2])}</h${m[1].length}>`);continue}
-    if((m=l.match(/^\|(.+)\|$/))){fp();if(/^\|[\s|:-]+\|$/.test(l))continue;const cells=m[1].split('|').map(c=>c.trim());if(!tbl){flush();tbl=1;out.push('<div class="tw"><table>');out.push('<tr>'+cells.map(c=>`<th>${inl(c)}</th>`).join('')+'</tr>')}else out.push('<tr>'+cells.map(c=>`<td>${inl(c)}</td>`).join('')+'</tr>');continue}
+    if((m=l.match(/^\|(.+)\|$/))){fp();if(/^\|[\s|:-]+\|$/.test(l))continue;const cells=m[1].split('|').map(c=>c.trim());if(!tbl){flush();tbl=1;thead=cells;out.push('<div class="tw"><table>');out.push('<tr>'+cells.map(c=>`<th>${inl(c)}</th>`).join('')+'</tr>')}else out.push('<tr>'+cells.map((c,k)=>`<td data-th="${esc(thead[k]||'')}">${inl(c)}</td>`).join('')+'</tr>');continue}
     if((m=l.match(/^\s*- (.*)/))){fp();if(list!=='ul'){flush();list='ul';out.push('<ul>')}out.push(li(m[1]));continue}
     if((m=l.match(/^\d+\. (.*)/))){fp();if(list!=='ol'){flush();list='ol';out.push('<ol>')}out.push(li(m[1]));continue}
     if(list&&/^\s{2,}\S/.test(raw)){out[out.length-1]=out[out.length-1].replace(/<\/li>$/,' '+inl(l.trim())+'</li>');continue}

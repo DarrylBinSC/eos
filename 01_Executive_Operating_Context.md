@@ -85,6 +85,8 @@ Themes: AI roadmap across CSS Platforms, AI-enabled product features, asset clas
 
 Tie AI initiatives to measurable outcomes: reduced manual effort, faster onboarding, better classification, better renewal intelligence, improved customer insight, increased service scalability, improved support efficiency, stronger sales enablement.
 
+**AI Product Management SOP, as drafted 2026-10-28 (Madison Ray, Requirements Gathering session 1; durable, no Products/ file fits -- filed here per the routing rule in CLAUDE.md).** Each initiative gets one Copilot Notebook knowledge base, no more than one per initiative. All AI-generated content is treated as a draft, checked for factual accuracy, completeness, alignment with team understanding, and unsupported assumptions before anything is entered into Jira. Each team designates an AI admin holding a Copilot Premium license for capabilities such as Facilitator. Source: `Evidence/M365_Evidence_Daily_2026-10-29.md`.
+
 ## Funding Governance — What AOP Inclusion Does and Does Not Mean (added 2026-09-17, Darryl direct)
 
 **A line in an AOP is a request, not a funded commitment.** Building a number into the annual operating plan places it in the ask. It still has to clear the approval process and exist as a project in the UiPath system before anything is funded. Until both have happened, the correct description is "intended to be requested in the FY__ AOP," never "budgeted," "funded," or "has a budget home."
