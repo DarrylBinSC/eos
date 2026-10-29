@@ -24,7 +24,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P081** Admin-app migration: several screens are missing source data needed for migration decisions (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P082** Migrated SkySpark APIs/types still need per-application integration work (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P084** WAM historical upload: record-merge defect affecting perpetual-parts rows (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P085** WAM upload pipeline processes one resource at a time, causing multi-day stalls (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
@@ -139,7 +138,7 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 24, new this week 13, stuck
 | P010 | entroCIM tenant redesign and boot-mode routing: no acceptance criteria, rollout sequence or release date yet |  | Michael Pieschel | Medium | 2026-10-14 | 2026-10-27 | 3 |  |
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-10-27 | 4 |  |
 | P080 | Containerized release packaging question for GPO files/libraries in the entroCIM Release Builder |  | Narendra Singh | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
-| P081 | Admin-app migration: several screens are missing source data needed for migration decisions |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
+| P081 | Admin-app migration: several screens are missing source data needed for migration decisions |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P082 | Migrated SkySpark APIs/types still need per-application integration work |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
 | P110 | Demo 3 environment heavily loaded and difficult to use despite connector cleanup; helpdesk ticket open |  | Ron Snyder | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
 | P112 | Glenview Liberty PDU offline, blocking live data/graphic review for January Showcase planning |  | Keith Bishop | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
