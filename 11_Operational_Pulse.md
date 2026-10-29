@@ -8,10 +8,10 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
+| Federal Reserve | Steady | +0 | 13 | 3 | 1 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
 | Dell | Steady | +10 | 146 | 131 | 20 | 3 | 8 | 1 |
-| Federal Reserve | Steady | +0 | 13 | 3 | 1 | 0 | 0 | 2 |
+| Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
 | Marygrove | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
