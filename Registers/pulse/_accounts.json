@@ -30,8 +30,7 @@
    "aliases": [
     "UDAC",
     "Rouge"
-   ],
-   "pinned": true
+   ]
   },
   {
    "name": "Federal Reserve",
@@ -81,7 +80,8 @@
    "name": "Marygrove",
    "type": "customer",
    "aliases": [],
-   "note": "Hosted entroCIM customer; added 2026-10-20 from the Backlog Deep Dive (P047), confirm"
+   "note": "Hosted entroCIM customer; added 2026-10-20 from the Backlog Deep Dive (P047), confirm",
+   "pinned": true
   }
  ]
 }
