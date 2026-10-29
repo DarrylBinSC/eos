@@ -9,7 +9,7 @@
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
 | Stanford | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
-| Dell | Worsening | +48 | 184 | 131 | 25 | 3 | 8 | 1 |
+| Dell | Worsening | +45 | 181 | 131 | 25 | 3 | 8 | 1 |
 | Federal Reserve | Worsening | +8 | 21 | 3 | 2 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
@@ -24,7 +24,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P077** Vamil/Wimmel floor-plan graphics may be outside the quoted non-DC scope (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P081** Admin-app migration: several screens are missing source data needed for migration decisions (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P082** Migrated SkySpark APIs/types still need per-application integration work (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P084** WAM historical upload: record-merge defect affecting perpetual-parts rows (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
@@ -107,7 +106,7 @@ Governance: Project management. Owner: Chad Steger. Live 42, new this week 26, s
 | P072 | Three to four recently created GMS weather stations missing from validation tests |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P075 | Durham OPC UA onboarding: limited prior experience with how points will appear | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible |
 | P076 | Cree Church alarm configuration pending with no owner, outstanding for some time |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
-| P077 | Vamil/Wimmel floor-plan graphics may be outside the quoted non-DC scope | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: boundary |
+| P077 | Vamil/Wimmel floor-plan graphics may be outside the quoted non-DC scope | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible |
 | P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
 | P088 | ~800-900 additional points pending across four IRCs at the Limerick (Dell) closeout site | Dell |  | Medium | 2026-10-27 | 2026-10-27 | 1 | customer-visible, candidate: boundary |
 | P073 | Commissioning spreadsheet will not accept commissioning dates (Dell sites) | Dell |  | Medium | 2026-10-27 | 2026-10-28 | 2 |  |
