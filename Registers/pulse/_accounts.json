@@ -30,7 +30,8 @@
    "aliases": [
     "UDAC",
     "Rouge"
-   ]
+   ],
+   "pinned": true
   },
   {
    "name": "Federal Reserve",
@@ -40,8 +41,7 @@
     "FRBNY",
     "SASTEC",
     "Federal Reserve Bank"
-   ],
-   "pinned": true
+   ]
   },
   {
    "name": "Coca-Cola (TCCC)",
