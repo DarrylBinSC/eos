@@ -24,7 +24,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P086** WAM Spring Boot upgrade has unresolved runtime API issues; production release carries an unscoped DD-team dependency (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P087** entroCIM refresh hanging for some time while Babu C. Dinesh was away (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P088** ~800-900 additional points pending across four IRCs at the Limerick (Dell) closeout site (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P093** WAM: supplier filter returns unrelated sales orders, purchase orders and column-filter values (no account; WAM Sprint Review). Test: No owner, or the customer is unaware of a material problem.
@@ -183,7 +182,7 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 4, new this week 4, stuck 0, quie
 | P068 | WAM renewal recommendation feature: quality rejected, rework from start |  |  | Medium | 2026-10-23 | 2026-10-23 | 1 |  |
 | P084 | WAM historical upload: record-merge defect affecting perpetual-parts rows |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P085 | WAM upload pipeline processes one resource at a time, causing multi-day stalls |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
-| P086 | WAM Spring Boot upgrade has unresolved runtime API issues; production release carries an unscoped DD-team dependency |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
+| P086 | WAM Spring Boot upgrade has unresolved runtime API issues; production release carries an unscoped DD-team dependency |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P019 WAM production: cancelled orders appear in export; expiry-chip criteria need validation; P020 WAM historical upload mishandles one customer ID with different names; duplicate ETL error records.
 
