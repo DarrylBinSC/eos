@@ -9,7 +9,7 @@
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
 | Stanford | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
-| Dell | Worsening | +57 | 193 | 131 | 25 | 3 | 8 | 1 |
+| Dell | Worsening | +54 | 190 | 131 | 25 | 3 | 8 | 1 |
 | Federal Reserve | Worsening | +8 | 21 | 3 | 2 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
@@ -24,7 +24,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P104** Meter naming cannot be mapped between connector names and the GMS sheet at Chennai, Dell 8, Dell 11 (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P107** Limerick failure-condition alarm validation method undefined before telling Dell the release is approved (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P108** El Dorado end-to-end alarm validation needs customer/site participation; approach not yet defined (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P114** Exact renewals cannot reliably identify end users from current data; no path to obtain it except possibly integrators (no account; ADM connect with Natalie). Test: gap, boundary.
@@ -98,7 +97,7 @@ Governance: Project management. Owner: Chad Steger. Live 42, new this week 26, s
 | P057 | Watchdog and UPS devices integration status unclear for Latin America sites; original-scope ownership not established | Dell |  | High | 2026-10-22 | 2026-10-27 | 2 | customer-visible |
 | P074 | India PM8000 meter integration may depend on an unconfirmed India PME environment | Dell |  | High | 2026-10-27 | 2026-10-27 | 1 | customer-visible |
 | P103 | North Carolina Modbus meter onboarding blocked by missing MIB file and unavailable meter credentials | Dell |  | High | 2026-10-28 | 2026-10-28 | 1 | customer-visible |
-| P104 | Meter naming cannot be mapped between connector names and the GMS sheet at Chennai, Dell 8, Dell 11 | Dell | Syed Jamshed Zaidi | High | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: boundary |
+| P104 | Meter naming cannot be mapped between connector names and the GMS sheet at Chennai, Dell 8, Dell 11 | Dell | Syed Jamshed Zaidi | High | 2026-10-28 | 2026-10-28 | 1 | customer-visible |
 | P107 | Limerick failure-condition alarm validation method undefined before telling Dell the release is approved | Dell |  | High | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: boundary |
 | P108 | El Dorado end-to-end alarm validation needs customer/site participation; approach not yet defined | Dell | Syed Jamshed Zaidi | High | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: boundary |
 | P029 | Prospective data-center customer substation request cannot be scoped (equipment, model and IP readiness unknown) |  | Syed Jamshed Zaidi | Medium | 2026-10-15 | 2026-10-15 | 1 | customer-visible |
