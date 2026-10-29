@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>EOS Registers</title>
+<link rel="stylesheet" href="/ui/app.css?v=__V__">
+</head><body>
+<header>
+ <div class="hbar">
+  <h1 class="brand">EOS Registers</h1>
+  <nav class="tabs" id="views" aria-label="Views"></nav>
+  <input type="search" id="q" placeholder="Search title, owner, ID, notes…" autocomplete="off">
+  <button class="btn" id="searchBtn">Search</button>
+  <button class="btn primary" id="newBtn">Add</button>
+  <button class="btn" id="cpBtn" data-cprompts>Copilot</button>
+  <button class="btn" id="logBtn">Changes</button>
+  <button class="btn" id="helpBtn" aria-label="Help">?</button>
+ </div>
+ <div class="caps" id="meta"></div>
+</header>
+<main id="root"><div id="list"></div></main>
+<div id="scrim"></div>
+<aside id="drawer" aria-label="Item"><div id="panel"></div></aside>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="/ui/app.js?v=__V__"></script></body></html>

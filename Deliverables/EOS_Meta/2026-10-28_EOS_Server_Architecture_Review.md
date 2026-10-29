@@ -12,7 +12,7 @@ One Python process (`Tools/eos_server.py`, standard library plus openpyxl) on Da
 |---|---|---|
 | Git had no remote | Audit trail existed only on the Mac, inside iCloud | Private GitHub backup, server pushes after every commit. Done 2026-10-28 |
 | iCloud syncing `.git` | Collision risk; first hang recorded 2026-10-15 | History moved to `.git.nosync` inside the folder; EOS folder stays in iCloud for the other laptop. Done 2026-10-28 |
-| Deploys gated on compile only | 185d Products bug compiled fine | Add a smoke test the watcher runs before restart. To do |
+| Deploys gated on compile only | 185d Products bug compiled fine | Add a smoke test the watcher runs before restart. **Done 2026-10-29** (`Tools/eos_smoke.py`; proof commits `cb94930` fail, `473cd08` pass) |
 | 2,100-line server with UI inlined | Slows changes, diffs unreadable | Split UI into a static file served by the same process. To do, technique |
 | No login on LAN | Single user at home | Keep as is |
 | Markdown vs JSON for items | JSON gains strict structure, loses the readable narrative body that briefs depend on; config already JSON | Keep markdown with front matter. Add allowed values per field via the smoke test rather than change format |
