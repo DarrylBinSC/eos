@@ -24,7 +24,7 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P078** paas-dev-03w returned HTTP 502 on 10-23; reported back up, not formally confirmed resolved (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
+- None this cycle.
 
 ## Knowledge concentration
 
@@ -136,7 +136,7 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 24, new this week 13, stuck
 | P112 | Glenview Liberty PDU offline, blocking live data/graphic review for January Showcase planning |  | Keith Bishop | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
 | P056 | Freshdesk gives limited feedback visibility; no notification or digest for article ratings |  | Mike Reed | Low | 2026-10-20 | 2026-10-20 | 1 |  |
 | P054 | Tiles Grid Board text widget: additional issues found in testing, follow-up needed |  | Nisha More | Low | 2026-10-14 | 2026-10-21 | 2 |  |
-| P078 | paas-dev-03w returned HTTP 502 on 10-23; reported back up, not formally confirmed resolved |  |  | Low | 2026-10-27 | 2026-10-27 | 1 | candidate: gap |
+| P078 | paas-dev-03w returned HTTP 502 on 10-23; reported back up, not formally confirmed resolved |  |  | Low | 2026-10-27 | 2026-10-27 | 1 |  |
 | P079 | Zephyr Scale test tool inaccessible, blocking testing access; IT ticket raised |  | Shreyans Saklecha | Low | 2026-10-27 | 2026-10-27 | 1 |  |
 | P083 | Monorepo migration still lacks a compiled list of remaining integration/build-script work |  | Ron Snyder | Low | 2026-10-27 | 2026-10-27 | 1 |  |
 
