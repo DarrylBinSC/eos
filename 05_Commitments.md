@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-10-29 08:57 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-29 08:58 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 10 (ceiling 15, by disposal only) · Other-Owned 51 (Critical 10) · Needs triage 0.
+**Counts at generation:** Register A 9 (ceiling 15, by disposal only) · Other-Owned 51 (Critical 10) · Needs triage 0.
 
 ---
 
@@ -38,7 +38,6 @@ Four registers. The delineation is the point.
 | A29 | **Escalate the truncated manufacturer part number dependency if Akansh Gangil's follow-up does not produce a named owner. DDP/EUDM selects truncated part numbers; WAM/ADM holds full ones, so exact matching fails and orders are missed** | Converted 2026-10-05 (Darryl, chat): the unfired trigger is replaced. | Akansh Gangil; Sakshi Mathur (WAM Sprint Review) | 2026-10-30 | Darryl, chat, 2026-10-05: "Akansh has this going in sprints; check the WAM sprint review meeting for details." | Explicit (disposition). Original escalation basis: Darryl, own words 08-25. 2026-10-14: Akansh's ADM constraints slide still frames the fix as a question ("Upstream EUDM enhancement possible?"), mitigation "investigating drop logic with EUDM/AMS teams"; no committed owner. Candidate for one consolidated upstream request with the null-shipping-data and renewal-flag asks (`Products/WAM/WAM.md`, 2026-10-14). |
 | A64 | **Reconcile the 2027 core entroCIM roadmap with building CDA in 2027, with Ron Snyder and David Blondel** | entroCIM roadmap is absorbing CDA after the 2026-10-06 AOP outcome (`03`). | Ron Snyder; David Blondel | 2026-10-31 (end of month) | Explicit. Darryl, chat 2026-10-14: "Ron, David, and I are reconciling the 2027 roadmap for the core entroCIM product with our desire to do CDA in 2027. That will be completed by the end of the month." | Darryl, chat 2026-10-14 |
 | A49 | **Kick off the white-label agreement amendment for the AI feature set and the Virtual Site Survey** | Reconcile Brian Miller's markup (C77) against Darryl's own notes, including technical feedback on new §2.12, before anything goes back to Revnue. Earlier: Darryl's own words, 2026-09-17: "once I get the entitlement, I'll kick off the contract renewal, or not renewal, amendment process, and I'll keep you informed… | Kristina Isagunde / Sunny Sharma (Revnue); Brian Miller (Legal, confirmed on the amendment 2026-10-27); Amy Aguirre (business owner, BIR); Paula Fenton (IT VMO, AI addendum and benchmark) | 2026-11-03 Re-dated 2026-10-27: check date for Brian Miller's markup (C77, undated); the 10-27 review meeting happened | Explicit. Darryl, own words, 2026-09-17 | Amy Aguirre call, 2026-09-17 (transcript); `03` 2026-09-17; legal markup, `Products/WAM/White_Label_Amendment_No_2_AI_Features - 2026-10-21.docx` |
-| A70 | **O-Insights comparison: send to the team for validation, then respond to Supplier Relations (Jarrod Booth)** | Send Jarrod the updated workbook (entroCIM column rebuilt from David's inventory) with the inventory PDF attached; collect the remaining Validate answers (Ron, David, Chad, Keith) and pass corrections on. | Jarrod Booth (Supplier Relations); Ron Snyder, David Blondel, Chad Steger, Keith Bishop (validation) | 2026-11-06 Bounded assumption by Claude: two weeks for the team's nine Validate answers and the note to Jarrod. Re-date if wrong. | Explicit. Darryl, own words, 2026-10-26: 'provide a draft that I can share with the team and respond to the supplier relations team.' | Session 2026-10-26; Products/O-Insights.md; D098 (withdrawn) |
 
 ### Triggered
 
@@ -117,6 +116,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-10-29 | **A70 — O-Insights comparison: send to the team for validation, then respond to Supplier Relations (Jarrod Booth)** | Darryl, EOS web app, 2026-10-29 | 2026-10-26 (Claude, session): Created from Darryl's request. |
 | 2026-10-28 | **C45 — i3 Alliance Agreement — Wesco signature** | Darryl, EOS web app, 2026-10-28 | Lee Osterman, explicit: "I will sign once it comes back." Legal confirmed a VP may sign without Finance input since the agreement itself doesn't generate sales directly. |
 | 2026-10-28 | **B82 — Send a follow-up email on the outstanding Azure listener dependency if unresolved after one more day** | Darryl, EOS web app, 2026-10-28 | New 09-16. |
 | 2026-10-28 | **B72 — Share the entroCIM 3.1.12.14 release deck and build sales messaging with Valli Poornakumar and Leanne Gordon** | Darryl, EOS web app, 2026-10-28 | New 09-09. |
