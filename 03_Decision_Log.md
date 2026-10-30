@@ -22,6 +22,16 @@
 
 ## Decisions Made
 
+### 2026-10-30 — CDA intake and business case refreshed as roadmap record, not a funding submission; Nozomi gets its own intake and BIR
+- Status: Made (Darryl, chat, 2026-10-30)
+- Owner: Darryl Benson
+- Context: The August intake slide and Wesco Business Case predated the sponsor (Bill Muczko), the FY27 AOP outcome (CDA built from the entroCIM team, no standalone line), the per-site fee, the Technology Services delivery model (Matt Powers, 2026-10-14) and the SecuriThings evidence. Both named Brad Stevens as business lead and asked for seed funding.
+- Options considered: (1) a fresh Demand Intake submission seeking funding outside the entroCIM budget; (2) refresh both as the standard record behind a roadmap product, answered truthfully (existing, on the entroCIM roadmap, no incremental budget, no seed funding or BIR), with the business case written to serve the Technology Services and sponsor alignment as well; (3) a sponsor and TS alignment pack only.
+- Decision / Recommended path: Option 2. Darryl: "I don't think we need the full enterprise intake for CDA." The Nozomi piece is separate and will go through Demand Intake with a BIR.
+- Risk of waiting: n/a, decided.
+- Forum where this should be decided: Darryl's call; no forum.
+- Follow-up: `Deliverables/CDA/2026-10-30_CDA_Intake.pptx` and `2026-10-30_CDA_Business_Case.docx` built; August files marked SUPERSEDED. Nozomi scope defined the same day (MSP enablement, 2027 expense on the entroCIM budget, submit by 2026-11-06); intake deck and BIR drafted in `Deliverables/CDA/Nozomi/`. Register A item created.
+
 ### 2026-10-29 — Monday.com added to Darryl's product portfolio (Sean McCloskey, verbal)
 - Status: Made (Sean McCloskey, verbal update to Darryl on the products he owns, 2026-10-29; Darryl direct, same day)
 - Owner: Sean McCloskey (decision); Darryl Benson (receiving owner)
@@ -895,7 +905,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-30 12:55 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-30 13:44 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
