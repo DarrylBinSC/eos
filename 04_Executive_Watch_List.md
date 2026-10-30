@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 21 (ceiling 20) · Passive 52 · Retired 27.
+**Counts at generation:** Active 20 (ceiling 20) · Passive 52 · Retired 28.
 
 ## Active
 
@@ -33,7 +33,6 @@
 | W026 | FRBNY Smart Building bid -- pricing deadline 2026-10-21 | High | ↑ | Direct (daily M365 evidence 2026-10-14 to 2026-10-15; Turner reply email 2026-10-20, Evidence/Email_FRB_BP43_Turner_Bid_Answers_2026-10-20.pdf) | 2026-10-30 | Mandatory scope and quantities due 2026-10-21, six days out. |
 | W008 | Ford entroCIM (UDAC) renewal and platform-trust gap | Medium | ↑ | Direct (`Wesco & Ford - entroCIM Platform - Re-Alignment & Action Item Call`, 08-26; RE: SLA Verbiage email thread, weekly evidence 2026-09-02 to 09-09) | 2026-10-22 | Ford and Wesco aligned on 08-26 to renew UDAC support and let EDC support expire, using an SLA for unplanned support and SOW/SME hours for planned scope (Darryl: "Hours buy Capacity, SLA buys commitment" — `Products/entroCIM/entroCIM.md`). |
 | W029 | Returnable asset tracking: build direction set before the cost basis exists | Medium | Reopened | Direct (returnable asset tracking discussion transcript 2026-09-16; entroCIM Sensolus connector documentation 2026-09-16) | 2026-10-26 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
-| W100 | entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19) | Medium | New | Escalated from Pulse P042 (entroCIM Daily Stand Up) | 2026-10-30 | 2026-10-30 (Darryl, web): Escalated from Pulse P042 (entroCIM Daily Stand Up). |
 | W002 | Dell account staffing — second dedicated entroCIM/EMS FTE requested | Medium-High | New | Direct (RE: Dell EMS Program FTE New Hire Discussion, weekly evidence 2026-10-05) | 2026-10-20 | Dell asked for a second dedicated FTE within three to five months. |
 
 ## Passive Watch
@@ -99,6 +98,7 @@ Logged for completeness. No action required; does not count toward risk load. Es
 
 | Retired | ID | Item | Reason |
 |---|---|---|---|
+| 2026-10-30 | W100 | entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19) | 2026-10-30 (Darryl, web): Escalated from Pulse P042 (entroCIM Daily Stand Up). |
 | 2026-10-28 | W099 | PC1/JCI large-scale point faults and intermittent site access | 2026-10-19 (Darryl, web): Escalated from Pulse P007 (2026 Deployment Daily Scrum). |
 | 2026-10-16 | W098 | PC1 Grid Board site-selection defect blocking dashboard/KWH report delivery | Returned to team governance; tracked in the Pulse as P001. Reversible: set tier to active. |
 | 2026-10-16 | W066 | Knowledge concentration / engineering quality | Moved to the Pulse knowledge-concentration area (K001-K005). Reversible: set tier to active. |
