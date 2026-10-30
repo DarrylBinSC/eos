@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +54 | 193 | 134 | 26 | 4 | 10 | 1 |
+| Dell | Worsening | +51 | 190 | 134 | 26 | 4 | 10 | 1 |
 | Federal Reserve | Worsening | +8 | 21 | 3 | 2 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
 | Microsoft | Steady | +0 | 17 | 17 | 2 | 0 | 0 | 0 |
@@ -27,7 +27,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P116** Palo Alto NetBot found outside the earlier non-DC scope: new integration needed, device credentials unconfirmed (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P118** Microsoft data uploads waiting on Microsoft's review of lower-confidence corrections; no internal owner for obtaining it (Microsoft; WAM Product discussion). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P003** Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P117** Non-DC closeout basis unclear: prior documentation may not identify El Dorado or carry a complete site list (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -92,7 +91,7 @@ Governance: Project management. Owner: Chad Steger. Live 42, new this week 21, s
 | P104 | Meter naming cannot be mapped between connector names and the GMS sheet at Chennai, Dell 8, Dell 11 | Dell | Syed Jamshed Zaidi | High | 2026-10-28 | 2026-10-29 | 2 | customer-visible |
 | P107 | Limerick failure-condition alarm validation method undefined before telling Dell the release is approved | Dell |  | High | 2026-10-28 | 2026-10-29 | 2 | customer-visible |
 | P115 | HQ alarm list drops cleared alarms (longstanding, all sites); fix expected with the new pods, validation pending | Dell |  | High | 2026-10-29 | 2026-10-29 | 1 | customer-visible |
-| P116 | Palo Alto NetBot found outside the earlier non-DC scope: new integration needed, device credentials unconfirmed | Dell |  | High | 2026-10-29 | 2026-10-29 | 1 | customer-visible, candidate: boundary |
+| P116 | Palo Alto NetBot found outside the earlier non-DC scope: new integration needed, device credentials unconfirmed | Dell |  | High | 2026-10-29 | 2026-10-29 | 1 | customer-visible |
 | P037 | Panama: additional control drawings needed; second-floor NetBotz and watchdog devices not yet procured or installed | Wesco Warehouse |  | Medium | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P038 | Apex: four meter connectors ready but connectivity cannot be established; waiting on information from Robbie | Dell | Matthew Heid | Medium | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
 | P024 | Standardized UPS/device point list for integration and alarm rules still unavailable | Dell |  | Medium | 2026-10-14 | 2026-10-21 | 2 | customer-visible |
