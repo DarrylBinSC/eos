@@ -14,8 +14,8 @@
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
 | Microsoft | Steady | +0 | 11 | 11 | 2 | 0 | 0 | 0 |
-| Intel | Steady | +0 | 9 | 9 | 2 | 0 | 0 | 0 |
 | Marygrove | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
+| Intel | Steady | +0 | 6 | 6 | 2 | 0 | 0 | 0 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 | Stanford | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 | Cree Church / Premier | Steady | +3 | 3 | 0 | 1 | 0 | 0 | 0 |
@@ -27,7 +27,7 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P121** Intel components may not be serialized, so barcode-based serial capture may not apply (Intel; WAM Product discussion). Test: No owner, or the customer is unaware of a material problem.
+- None this cycle.
 
 ## Knowledge concentration
 
@@ -206,7 +206,7 @@ Governance: Product execution. Owner: Akansh Gangil. Live 5, new this week 0, st
 | P118 | Microsoft data uploads waiting on Microsoft's review of lower-confidence corrections; no internal owner for obtaining it | Microsoft |  | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
 | P119 | Microsoft post-cleanup operating model undefined: continual imports, dashboard access, internal/external user model | Microsoft |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
 | P120 | Latest Intel BOM arrived without manufacturer part numbers; cause unknown | Intel |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
-| P121 | Intel components may not be serialized, so barcode-based serial capture may not apply | Intel |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: gap |
+| P121 | Intel components may not be serialized, so barcode-based serial capture may not apply | Intel |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
 | P122 | Waymo: Wesco systems may not capture address-level differentiators when several builds share one sales order and PO | Waymo | Akansh Gangil | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
 
 ## ADM connect with Natalie
