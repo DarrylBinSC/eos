@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +51 | 187 | 131 | 26 | 4 | 10 | 1 |
+| Dell | Worsening | +48 | 184 | 131 | 26 | 4 | 10 | 1 |
 | Federal Reserve | Worsening | +8 | 21 | 3 | 2 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
@@ -27,7 +27,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P117** Non-DC closeout basis unclear: prior documentation may not identify El Dorado or carry a complete site list (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P119** Microsoft post-cleanup operating model undefined: continual imports, dashboard access, internal/external user model (Microsoft; WAM Product discussion). Test: No owner, or the customer is unaware of a material problem.
 - **P120** Latest Intel BOM arrived without manufacturer part numbers; cause unknown (Intel; WAM Product discussion). Test: No owner, or the customer is unaware of a material problem.
 - **P121** Intel components may not be serialized, so barcode-based serial capture may not apply (Intel; WAM Product discussion). Test: No owner, or the customer is unaware of a material problem.
@@ -111,7 +110,7 @@ Governance: Project management. Owner: Chad Steger. Live 42, new this week 21, s
 | P088 | ~800-900 additional points pending across four IRCs at the Limerick (Dell) closeout site | Dell |  | Medium | 2026-10-27 | 2026-10-29 | 2 | customer-visible |
 | P089 | TCCC ECR connector (TEC 7th floor) timing out; connection info needs verification | Coca-Cola (TCCC) | Scott Dunn | Medium | 2026-10-28 | 2026-10-29 | 2 | customer-visible |
 | P090 | Two new TCCC NAT IP gateways need internal confirmation before checking the customer network side | Coca-Cola (TCCC) | Scott Dunn | Medium | 2026-10-28 | 2026-10-29 | 2 | customer-visible |
-| P117 | Non-DC closeout basis unclear: prior documentation may not identify El Dorado or carry a complete site list | Dell |  | Medium | 2026-10-29 | 2026-10-29 | 1 | customer-visible, candidate: boundary |
+| P117 | Non-DC closeout basis unclear: prior documentation may not identify El Dorado or carry a complete site list | Dell |  | Medium | 2026-10-29 | 2026-10-29 | 1 | customer-visible |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P005 Commissioned Panama devices not producing expected alarms ahead of environment decommissioning; P007 PC1/JCI large-scale point faults and intermittent site access; P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review; P014 Dell non-DC server unavailable since the prior week, blocking meter verification; P016 Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation; P017 North America lighting-site UPS alarms visible in PME/NMC but not reaching entroCIM; P023 Penang 2: down points not triggering the expected faults or notifications; P025 Dell "three-creatures" requirements undefined; related work waits on a Dell workshop; P026 New York: two meters in commissioning, two with connection issues; P027 Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara; P029 Prospective data-center customer substation request cannot be scoped (equipment, model and IP readiness unknown).
 
