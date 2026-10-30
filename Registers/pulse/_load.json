@@ -466,5 +466,62 @@
    "load": 16,
    "teams": 16
   }
+ },
+ "2026-10-30": {
+  "BAE": {
+   "delta7": 0,
+   "load": 0,
+   "teams": 0
+  },
+  "Coca-Cola (TCCC)": {
+   "delta7": 9,
+   "load": 13,
+   "teams": 13
+  },
+  "Cree Church / Premier": {
+   "delta7": 3,
+   "load": 3,
+   "teams": 3
+  },
+  "Dell": {
+   "delta7": 21,
+   "load": 157,
+   "teams": 152
+  },
+  "Federal Reserve": {
+   "delta7": 8,
+   "load": 21,
+   "teams": 11
+  },
+  "Ford": {
+   "delta7": 0,
+   "load": 11,
+   "teams": 1
+  },
+  "Louvre Abu Dhabi": {
+   "delta7": 0,
+   "load": 5,
+   "teams": 0
+  },
+  "Marygrove": {
+   "delta7": 0,
+   "load": 8,
+   "teams": 8
+  },
+  "Stanford": {
+   "delta7": 0,
+   "load": 5,
+   "teams": 0
+  },
+  "UWM": {
+   "delta7": 0,
+   "load": 0,
+   "teams": 0
+  },
+  "Wesco Warehouse": {
+   "delta7": -3,
+   "load": 16,
+   "teams": 16
+  }
  }
 }
