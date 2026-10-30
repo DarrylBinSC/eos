@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-30 08:46 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-30 08:47 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-16 to 2026-10-30. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -139,15 +139,15 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 24, new this week 9, stuck 
 | P070 | Commissioning app test-tracking coverage incomplete: tracks fields, not everything; no formal owner |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
 | P010 | entroCIM tenant redesign and boot-mode routing: no acceptance criteria, rollout sequence or release date yet |  | Michael Pieschel | Medium | 2026-10-14 | 2026-10-27 | 3 |  |
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-10-27 | 4 |  |
-| P080 | Containerized release packaging question for GPO files/libraries in the entroCIM Release Builder |  | Narendra Singh | Medium | 2026-10-27 | 2026-10-27 | 2 |  |
-| P081 | Admin-app migration: several screens are missing source data needed for migration decisions |  |  | Medium | 2026-10-27 | 2026-10-27 | 2 |  |
-| P082 | Migrated SkySpark APIs/types still need per-application integration work |  |  | Medium | 2026-10-27 | 2026-10-27 | 2 |  |
+| P080 | Containerized release packaging question for GPO files/libraries in the entroCIM Release Builder |  | Narendra Singh | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
+| P081 | Admin-app migration: several screens are missing source data needed for migration decisions |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
+| P082 | Migrated SkySpark APIs/types still need per-application integration work |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P110 | Demo 3 environment heavily loaded and difficult to use despite connector cleanup; helpdesk ticket open |  | Ron Snyder | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
 | P112 | Glenview Liberty PDU offline, blocking live data/graphic review for January Showcase planning |  | Keith Bishop | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
 | P056 | Freshdesk gives limited feedback visibility; no notification or digest for article ratings |  | Mike Reed | Low | 2026-10-20 | 2026-10-20 | 1 |  |
 | P054 | Tiles Grid Board text widget: additional issues found in testing, follow-up needed |  | Nisha More | Low | 2026-10-14 | 2026-10-21 | 2 |  |
-| P083 | Monorepo migration still lacks a compiled list of remaining integration/build-script work |  | Ron Snyder | Low | 2026-10-27 | 2026-10-27 | 2 |  |
-| P079 | Zephyr Scale test tool inaccessible, blocking testing access; IT ticket raised |  | Shreyans Saklecha | Low | 2026-10-27 | 2026-10-28 | 3 |  |
+| P083 | Monorepo migration still lacks a compiled list of remaining integration/build-script work |  | Ron Snyder | Low | 2026-10-27 | 2026-10-27 | 1 |  |
+| P079 | Zephyr Scale test tool inaccessible, blocking testing access; IT ticket raised |  | Shreyans Saklecha | Low | 2026-10-27 | 2026-10-28 | 2 |  |
 | P078 | paas-dev-03w returned HTTP 502 on 10-23; reported back up, not formally confirmed resolved |  |  | Low | 2026-10-27 | 2026-10-29 | 2 |  |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P039 Tiles Grid Board compose chart: precision and date-handling defects cancel comparisons; P053 Grid Board monorepo migration: route broken because workspace components were not migrated correctly.
