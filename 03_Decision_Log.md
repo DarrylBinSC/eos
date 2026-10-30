@@ -895,7 +895,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-10-30 08:47 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-10-30 08:48 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -919,7 +919,7 @@
 - Status: Approaching -- needs decision output
 - Owner: Sean McCloskey (final call), with Darryl Benson, Akansh Gangil, David Blondel preparing the plan
 - Forum: WAM Leadership Sync (weekly, David Blondel, Darryl attends) or WAM Data Challenges (weekly, Darryl-owned) -- next live occurrence to be confirmed; this is also a candidate for the structured-agenda-register treatment already applied to two other forums (`07`).
-- Next action: Reset plan rebuilt on the FY27 team of eight (7.0 FTE); confirm data-engineering coverage with Nitin Pandey before the Sean conversation.
+- Next action: Darryl's call on the Databricks gap (two ADB-capable contractors vs three ADB / two DE in the run model): seat swap ask to Chris Gazdic, or accept and reset the roadmap on the eight; then the Sean McCloskey conversation (A61, 2026-11-06 proposed).
 - Context: Akansh Gangil quantified an eight-person minimum run model (two data engineers, three backend, one UI, two QA) against 15 current resources and the 19-FTE AOP draft, stating timelines would extend "by a great margin" under it. Darryl, own words, WAM Leadership Sync, 2026-10-05: "Let's talk about how we reset as a team over the next few days, then we can bring that to Sean as our plan moving forward and get his input." See `04` WAM/ADM row, `05` A61.
 - Options mentioned: preserve the run team and sequence completion work; pause selected ADM work; extend timelines against the current roadmap.
 - Information still needed: final staffing allocation and priority order (run vs. complete vs. stop vs. defer).
@@ -935,6 +935,8 @@
 2026-10-29 (Claude, session): FY27 WAM team listing received (John Erickson, 2026-10-28, at Chris Gazdic's request): eight people retained, 7.0 FTE-equivalent (3 BE, 2 FE, 1 QA, architect 50%, engineering manager 50%), effective January 2027. Darryl: these are the reconciled numbers until further notice, so staffing quantities may now go into Sean material. "Chris" is Chris Gazdic (Darryl). Gap: no data engineer or Azure Databricks skill on the list against the two-DE / three-ADB run model; QA five to one. Questions to Nitin drafted in `Products/WAM/WAM_Team.md`.
 
 2026-10-29 (Darryl, session): Hold the Sean conversation until Nitin Pandey answers question 3 (Databricks / EUDM-DDP coverage; C80, gate 2026-11-03); set this item's date from his reply rather than re-dating now. If the gap is real, the ask goes to Chris Gazdic as a seat swap within the eight (a data-engineering seat in place of one listed skill), not a request for more people; the listing's own caveat that the Platform Pillar may still change it leaves room for that.
+
+2026-10-30 (Claude, daily brief): C80 answered in substance. Akansh Gangil: "Krishna and Lavanya have Azure Databricks expertise. The three FTCs are Krishna, Lavanya, and Amar." Nitin Pandey: Jafar is FTE; Nitin and Bala 50% WAM / 50% FTTX; team uses GitHub Copilot, no Claude; contractor end dates to be validated with Rajesh. The information-still-needed line now reduces to the contract dates and Darryl's decision on the gap. Source: `Evidence/M365_Evidence_Daily_2026-10-30.md`.
 
 ### 2026-09-09 — WAM complex-build final data model: serial-number anchor, parent/room relationship, VAS/WMX handoff
 - ID: D004
@@ -1146,7 +1148,7 @@
 - Status: open
 - Owner: Darryl
 - Forum: Not yet routed; candidates are the next Sean McCloskey 1:1 (Launch Studio thread) and a follow-up with Brad Stevens and Nate Kehr (bundle thread)
-- Next action: Establish what Robert Ehiemua has asked for and whether TS leadership (Vinay Prabhu, Matt Powers) sponsors the tool; then decide the route
+- Next action: Darryl's Launch Studio conversation today (2026-10-30, his own "Lets talk about this one tomorrow", 2026-10-29); then establish Robert Ehiemua's ask and TS sponsorship (Vinay Prabhu, Matt Powers), and decide the route
 - Context: BOM Studio (Robert Ehiemua, TS) is a working AI data center design and BOM tool and the first concrete Launch Studio candidate. On 2026-10-29 Darryl, Brad Stevens and Nate Kehr discussed packaging it with entroCIM, WAM / ADM and Navigator / Ascent as a managed-services offer.
 - Why it is Darryl's: he owns Launch Studio and its gate, and his platforms are the managed-services layer in the bundle.
 - The two threads are different decisions. Productizing the tool is a Launch Studio question (sponsor, funding, run ownership, security absorption). The bundle is an offer and portfolio question with Sales and TS in it and does not depend on the tool being productized first.
@@ -1154,6 +1156,8 @@
 - Risk of waiting: low this week; the risk is the two threads being argued as one and the gate being bypassed by default.
 - Information still needed: Robert's ask; TS sponsorship; real-project usage; whether an opportunity sits behind the bundle.
 - Record: `Products/Vibe_Code_Productization/Candidates/BOM_Studio.md`.
+
+2026-10-30 (Claude, daily brief): Launch Studio Teams chat, 2026-10-29. Darryl: "A tool called BOM Studio has been developed to build and price data centers across the entire BOM. We're adding managed services (entroCIM, WAM etc.) to it"; "A guy named Robert Ehiemua built this in Matt Powers' organization"; "Right now it's running on his gaming rig on the desk behind him, so to scale this one, we'll need to get going"; "Lets talk about this one tomorrow" (so 2026-10-30). Wassil, Michael: "If you want me to discuss the launch studio, I'd be glad to do so." Darryl: "Go ahead and mention it to him; I already have" (the "him" is not named in the extract). The calendar entry "AI Bom Studio / ALM / Safety / Entrocim" (2026-10-29) was not transcribed. Source: `Evidence/M365_Evidence_Daily_2026-10-30.md`.
 
 ### 2026-10-20 — Stanford renewal: three licenses back to SkySpark-only, how Wesco supports the roll-back and what happens to the Commissioning App
 - ID: D096
