@@ -484,9 +484,9 @@
    "teams": 3
   },
   "Dell": {
-   "delta7": 21,
-   "load": 157,
-   "teams": 152
+   "delta7": 57,
+   "load": 196,
+   "teams": 191
   },
   "Federal Reserve": {
    "delta7": 8,
@@ -498,6 +498,11 @@
    "load": 11,
    "teams": 1
   },
+  "Intel": {
+   "delta7": 0,
+   "load": 12,
+   "teams": 12
+  },
   "Louvre Abu Dhabi": {
    "delta7": 0,
    "load": 5,
@@ -508,6 +513,11 @@
    "load": 8,
    "teams": 8
   },
+  "Microsoft": {
+   "delta7": 0,
+   "load": 17,
+   "teams": 17
+  },
   "Stanford": {
    "delta7": 0,
    "load": 5,
@@ -517,6 +527,11 @@
    "delta7": 0,
    "load": 0,
    "teams": 0
+  },
+  "Waymo": {
+   "delta7": 0,
+   "load": 3,
+   "teams": 3
   },
   "Wesco Warehouse": {
    "delta7": -3,

@@ -91,6 +91,27 @@
     "Premier"
    ],
    "note": "Added 2026-10-29 from a Deployment Daily Scrum network-communication alarm-rule item (P105); confirm with Darryl."
+  },
+  {
+   "name": "Microsoft",
+   "type": "customer",
+   "aliases": [],
+   "note": "Added 2026-10-30: WAM/Strev data-cleanup customer (WAM Product discussion 2026-10-22). Confirm with Darryl.",
+   "pinned": false
+  },
+  {
+   "name": "Intel",
+   "type": "customer",
+   "aliases": [],
+   "note": "Added 2026-10-30: WAM complex-build customer (WAM Product discussion 2026-10-22). Confirm with Darryl.",
+   "pinned": false
+  },
+  {
+   "name": "Waymo",
+   "type": "customer",
+   "aliases": [],
+   "note": "Added 2026-10-30: WAM complex-build customer (WAM Product discussion 2026-10-22). Confirm with Darryl.",
+   "pinned": false
   }
  ]
 }
