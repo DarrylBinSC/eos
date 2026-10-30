@@ -11,8 +11,8 @@
 | Dell | Worsening | +51 | 190 | 134 | 26 | 4 | 10 | 1 |
 | Federal Reserve | Worsening | +8 | 21 | 3 | 2 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
-| Microsoft | Steady | +0 | 17 | 17 | 2 | 0 | 0 | 0 |
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
+| Microsoft | Steady | +0 | 14 | 14 | 2 | 0 | 0 | 0 |
 | Intel | Steady | +0 | 12 | 12 | 2 | 0 | 0 | 0 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
 | Marygrove | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
@@ -27,7 +27,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P118** Microsoft data uploads waiting on Microsoft's review of lower-confidence corrections; no internal owner for obtaining it (Microsoft; WAM Product discussion). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P003** Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P117** Non-DC closeout basis unclear: prior documentation may not identify El Dorado or carry a complete site list (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P119** Microsoft post-cleanup operating model undefined: continual imports, dashboard access, internal/external user model (Microsoft; WAM Product discussion). Test: No owner, or the customer is unaware of a material problem.
@@ -208,7 +207,7 @@ Governance: Product execution. Owner: Akansh Gangil. Live 5, new this week 0, st
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
-| P118 | Microsoft data uploads waiting on Microsoft's review of lower-confidence corrections; no internal owner for obtaining it | Microsoft |  | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: boundary |
+| P118 | Microsoft data uploads waiting on Microsoft's review of lower-confidence corrections; no internal owner for obtaining it | Microsoft |  | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
 | P119 | Microsoft post-cleanup operating model undefined: continual imports, dashboard access, internal/external user model | Microsoft |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: gap |
 | P120 | Latest Intel BOM arrived without manufacturer part numbers; cause unknown | Intel |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: gap |
 | P121 | Intel components may not be serialized, so barcode-based serial capture may not apply | Intel |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible, candidate: gap |
