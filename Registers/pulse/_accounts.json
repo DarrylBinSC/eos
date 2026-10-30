@@ -15,8 +15,7 @@
     "Apex",
     "Palo Alto"
    ],
-   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16); Penang (incl. Penang 2), Singapore and New York are Dell sites (Darryl, 2026-10-19); Apex added 2026-10-20 from the Prompt 1 label and K005, confirm; Palo Alto is a Dell site (Darryl, 2026-10-30)",
-   "pinned": true
+   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16); Penang (incl. Penang 2), Singapore and New York are Dell sites (Darryl, 2026-10-19); Apex added 2026-10-20 from the Prompt 1 label and K005, confirm; Palo Alto is a Dell site (Darryl, 2026-10-30)"
   },
   {
    "name": "Wesco Warehouse",
@@ -42,7 +41,8 @@
     "FRBNY",
     "SASTEC",
     "Federal Reserve Bank"
-   ]
+   ],
+   "pinned": true
   },
   {
    "name": "Coca-Cola (TCCC)",
@@ -97,22 +97,19 @@
    "name": "Microsoft",
    "type": "customer",
    "aliases": [],
-   "note": "Added 2026-10-30: WAM/Strev data-cleanup customer (WAM Product discussion 2026-10-22). Confirmed by Darryl 2026-10-30.",
-   "pinned": false
+   "note": "Added 2026-10-30: WAM/Strev data-cleanup customer (WAM Product discussion 2026-10-22). Confirmed by Darryl 2026-10-30."
   },
   {
    "name": "Intel",
    "type": "customer",
    "aliases": [],
-   "note": "Added 2026-10-30: WAM complex-build customer (WAM Product discussion 2026-10-22). Confirmed by Darryl 2026-10-30.",
-   "pinned": false
+   "note": "Added 2026-10-30: WAM complex-build customer (WAM Product discussion 2026-10-22). Confirmed by Darryl 2026-10-30."
   },
   {
    "name": "Waymo",
    "type": "customer",
    "aliases": [],
-   "note": "Added 2026-10-30: WAM complex-build customer (WAM Product discussion 2026-10-22). Confirmed by Darryl 2026-10-30.",
-   "pinned": false
+   "note": "Added 2026-10-30: WAM complex-build customer (WAM Product discussion 2026-10-22). Confirmed by Darryl 2026-10-30."
   }
  ]
 }
