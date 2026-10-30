@@ -8,9 +8,9 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Federal Reserve | Worsening | +8 | 21 | 3 | 2 | 0 | 0 | 2 |
-| Dell | Worsening | +48 | 184 | 131 | 26 | 4 | 10 | 1 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
+| Dell | Worsening | +48 | 184 | 131 | 26 | 4 | 10 | 1 |
+| Federal Reserve | Worsening | +8 | 21 | 3 | 2 | 0 | 0 | 2 |
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
 | Microsoft | Steady | +0 | 11 | 11 | 2 | 0 | 0 | 0 |
