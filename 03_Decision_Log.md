@@ -22,6 +22,14 @@
 
 ## Decisions Made
 
+### 2026-11-02 — FRB CSC BIM capability: charge for development and for access as an advanced feature
+- Status: Made
+- Owner: Darryl Benson
+- Context: The Owner (Raj, via Nate) wants the Smart Building Platform to house BIM data and eventually 3D graphics for asset management, and asked for a price and a two-year roadmap. entroCIM has no such capability today; it is being placed on the 2028 roadmap as a BIM data repository (IFC and COBie, element-to-asset links, versioning, API) and later 3D viewing.
+- Options considered: roadmap-funded by Wesco with only services priced (Claude's first recommendation); development charge plus feature license (Darryl).
+- Decision / Recommended path: Charge for development of the capability (per-stage development charges as Add Alternates, with scope and acceptance agreed at each stage start, Stage 3 contingent on Stage 2 acceptance, Wesco retains IP) and charge for access as an advanced entroCIM feature outside the base platform (annual feature license), plus project services to load and configure the Project's data at each release. Not a sole-funded build and not exclusive.
+- Follow-up: Ron Snyder effort estimate; Leanne Gordon and Valli Poornakumar price lines; Brandon on IP wording; Darryl and David Blondel on the feature license price and its place in the entroCIM price list. Draft: `Deliverables/entroCIM/2026-11-02_FRB_CSC_BIM_Response_Draft.md`. Bid tracked in `W026`.
+
 ### 2026-10-30 — Strev AI: no QA enablement, production only; the additional $80K re-pointed to the site-survey tool (Amy's call), amendment being redrafted
 - Status: Made (Weekly Sync, 2026-10-30, transcript). Two decisions in one session, two decision-makers.
 - Owner: Darryl Benson (QA scope); Amy Aguirre (commercial reallocation, Sunny Sharma redrafting)
@@ -915,7 +923,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-11-02 15:00 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-02 15:12 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
