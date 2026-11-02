@@ -1,14 +1,14 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-10-30 13:44 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-02 08:31 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-> Rolling window 2026-10-16 to 2026-10-30. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
+> Rolling window 2026-10-19 to 2026-11-02. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
 ## Account health
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +48 | 184 | 131 | 26 | 4 | 10 | 1 |
+| Dell | Worsening | +51 | 187 | 131 | 26 | 4 | 10 | 1 |
 | Federal Reserve | Worsening | +8 | 21 | 3 | 2 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
 | Wesco Warehouse | Steady | -3 | 16 | 19 | 2 | 1 | 1 | 0 |
@@ -27,7 +27,9 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- None this cycle.
+- **K010** Dell Penang One BMS access and credentials (knowledge concentration). Test: One person holds knowledge a customer or a release depends on, and no backup is confirmed.
+- **P123** SkySpark 4 license migration works with the tested connectors but is not yet compatible with containerization (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
+- **P124** January trade-show Showcase: the 3D render must match the physical booth hardware (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 
 ## Knowledge concentration
 
@@ -35,6 +37,7 @@ Where one person holds knowledge a customer, a release or a migration depends on
 
 | ID | Knowledge area | Held by | Backup | Coverage | Exposure | Mitigation | Last evidence |
 |---|---|---|---|---|---|---|---|
+| K010 | Dell Penang One BMS access and credentials | Scott Dunn | none named | none | customer | Syed Jamshed Zaidi to follow up with IT for credentials; Matthew Heid asked for a wider access conversation ("more people access and not just Scott") | 2026-10-29 |
 | K008 | FRB-restricted file-transfer workflow (BLOB storage moves requiring Federal Reserve handling) | Adam Slingerland | none named | none | customer |  | 2026-10-29 |
 | K009 | WAM ADM renewal-recommendation code: original author departed, no documented backup, team in maintenance mode |  | none named | none | release | Rework the recommendation feature from scratch (see P068); no interim owner for the existing code. |  |
 | K007 | Americas/LATAM watchdog, temperature-sensor and power-failure alarm audit; point-level alarm configuration | Elias Brewer | Keith Bishop | partial | customer | Keith Bishop named as the next technical adviser if Elias cannot assist; Keith also sole holder of the Limerick RCA (K006), so the backup is itself concentrated | 2026-10-22 |
@@ -49,11 +52,11 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Chad Steger | 7 | 18 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Akansh Gangil | 3 | 5 | 6 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Product discussion, WAM Sprint Review |
 | Syed Jamshed Zaidi | 6 | 30 | 0 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
-| Scott Dunn | 4 | 13 | 1 | 0 | 2026 Deployment Daily Scrum |
+| Scott Dunn | 4 | 13 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Shawn Clark | 4 | 8 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Ron Snyder | 4 | 4 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Matthew Heid | 4 | 12 | 0 | 0 | 2026 Deployment Daily Scrum |
-| Keith Bishop | 4 | 5 | 0 | 1 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
+| Keith Bishop | 4 | 6 | 0 | 1 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Babu Papanna | 2 | 1 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
@@ -114,12 +117,12 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P005 Co
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 24, new this week 9, stuck 2, quiet 2. Last sighting: 2026-10-29. Last evidence: 2026-10-29.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 26, new this week 11, stuck 2, quiet 2. Last sighting: 2026-10-29. Last evidence: 2026-10-29.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P030 | PAS01 Grid Board pod not loaded after the pod update, blocking validation of completed fixes |  | Ron Snyder | High | 2026-10-13 | 2026-10-28 | 2 | stuck, customer-visible |
-| P031 | SkySpark connectors failing in test: Energy Direct and others returning no data; 403 environment APIs returning HTTP 410 |  | Abhishek Savanur | Medium | 2026-10-13 | 2026-10-28 | 6 | stuck |
+| P031 | SkySpark connectors failing in test: Energy Direct and others returning no data; 403 environment APIs returning HTTP 410 |  | Abhishek Savanur | Medium | 2026-10-13 | 2026-10-29 | 7 | stuck |
 | P041 | Showcase stopped running and recorded no data from Thursday night into Friday morning (10-15 to 10-16) |  |  | High | 2026-10-20 | 2026-10-21 | 2 | customer-visible |
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-10-28 | 1 | customer-visible |
 | P032 | Dell Showcase: virtual-point function failing, apparently around a faulty tag | Dell | Jason Ganiatsas | Medium | 2026-10-14 | 2026-10-20 | 2 | customer-visible |
@@ -135,8 +138,10 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 24, new this week 9, stuck 
 | P080 | Containerized release packaging question for GPO files/libraries in the entroCIM Release Builder |  | Narendra Singh | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P081 | Admin-app migration: several screens are missing source data needed for migration decisions |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P082 | Migrated SkySpark APIs/types still need per-application integration work |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
-| P110 | Demo 3 environment heavily loaded and difficult to use despite connector cleanup; helpdesk ticket open |  | Ron Snyder | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
 | P112 | Glenview Liberty PDU offline, blocking live data/graphic review for January Showcase planning |  | Keith Bishop | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
+| P123 | SkySpark 4 license migration works with the tested connectors but is not yet compatible with containerization |  |  | Medium | 2026-10-28 | 2026-10-28 | 1 | candidate: gap |
+| P124 | January trade-show Showcase: the 3D render must match the physical booth hardware |  |  | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: gap |
+| P110 | Demo 3 environment heavily loaded and difficult to use despite connector cleanup; helpdesk ticket open |  | Ron Snyder | Medium | 2026-10-28 | 2026-10-29 | 2 |  |
 | P056 | Freshdesk gives limited feedback visibility; no notification or digest for article ratings |  | Mike Reed | Low | 2026-10-20 | 2026-10-20 | 1 |  |
 | P054 | Tiles Grid Board text widget: additional issues found in testing, follow-up needed |  | Nisha More | Low | 2026-10-14 | 2026-10-21 | 2 |  |
 | P083 | Monorepo migration still lacks a compiled list of remaining integration/build-script work |  | Ron Snyder | Low | 2026-10-27 | 2026-10-27 | 1 |  |
@@ -174,7 +179,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P100 Qu
 
 ## WAM Product Backlog Refinement
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 4, new this week 4, stuck 0, quiet 2. Last sighting: 2026-10-27. Last evidence: 2026-10-27.
+Governance: Sprint. Owner: Sakshi Mathur. Live 4, new this week 3, stuck 0, quiet 2. Last sighting: 2026-10-27. Last evidence: 2026-10-27.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
