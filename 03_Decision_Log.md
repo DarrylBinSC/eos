@@ -22,6 +22,16 @@
 
 ## Decisions Made
 
+### 2026-10-30 — Strev AI: no QA enablement, production only; the additional $80K re-pointed to the site-survey tool (Amy's call), amendment being redrafted
+- Status: Made (Weekly Sync, 2026-10-30, transcript). Two decisions in one session, two decision-makers.
+- Owner: Darryl Benson (QA scope); Amy Aguirre (commercial reallocation, Sunny Sharma redrafting)
+- Context: Strev Amendment No. 2 carried the AI enablement charge per environment plus Wesco-funded API/token consumption with no budget home (`04` W006). Brian Miller's Legal markup (C77) was still outstanding; the 2026-10-27 review separated platform AI enablement, the feature-pack capability and token consumption as three commercial components.
+- Options considered: enable Strev AI in both QA and production as the contract assumed; production only; defer AI entirely until the consumption model is funded.
+- Decision / Recommended path: Darryl proposed not enabling Strev AI in the QA environment and focusing the enablement spend on production unless the contract changes; Amy agreed. Separately Amy decided the additional $80K should be applied toward the site-survey tool rather than the AI charge and asked Sunny to redraft the amendment.
+- Risk of waiting: n/a, decided. Residual: AI token/API usage budgeting is still unresolved (AI Council/BIR); the redraft (C81) and Brian's markup (C77) are both still owed, so A49 cannot go back to Revnue yet.
+- Forum where this should be decided: decided in the Weekly Sync; amendment path continues through C77, C81, A49.
+- Follow-up: W006 trend set to stable; C79 re-pointed at Amy's AI Council submission (her commitment, week of 10-30). Source: `Evidence/M365_Evidence_Weekly_2026-11-02.md`.
+
 ### 2026-10-30 — CDA intake and business case refreshed as roadmap record, not a funding submission; Nozomi gets its own intake and BIR
 - Status: Made (Darryl, chat, 2026-10-30)
 - Owner: Darryl Benson
@@ -905,7 +915,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-11-02 08:34 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-02 08:37 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 

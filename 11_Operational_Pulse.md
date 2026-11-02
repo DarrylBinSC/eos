@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-02 08:34 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-02 08:37 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-19 to 2026-11-02. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -50,7 +50,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
 | Chad Steger | 7 | 18 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Akansh Gangil | 3 | 5 | 6 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Product discussion, WAM Sprint Review |
+| Akansh Gangil | 3 | 5 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Product discussion, WAM Sprint Review |
 | Syed Jamshed Zaidi | 6 | 30 | 0 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
 | Scott Dunn | 4 | 13 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Shawn Clark | 4 | 8 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |

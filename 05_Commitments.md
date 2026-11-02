@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-11-02 08:34 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-02 08:37 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 12 (ceiling 15, by disposal only) · Other-Owned 53 (Critical 12) · Needs triage 0.
+**Counts at generation:** Register A 12 (ceiling 15, by disposal only) · Other-Owned 51 (Critical 12) · Needs triage 0.
 
 ---
 
@@ -60,7 +60,6 @@ Four registers. The delineation is the point.
 | C43 | Define Ford pricing-model language | Leanne Gordon | Awaited | 2026-09-19 confirm or close | -- | 2026-10-19 | New 09-09. |
 | C61 | Walmart conversation for CDA, refrigeration and produce systems as the entry point through Wesco's MRO relationship | David Fisher | Awaited | 2026-10-02 Longer term (Darryl, ): not before CDA is further into development; revisit when a pilot is running | -- | 2026-10-02 | New 2026-10-02. |
 | C65 | Emily Munk's reply and a 30-minute walkthrough of CDA: TSS delivery and support ownership, positioning for TSS, route to Greg O'Brien | Emily Munk | Awaited | 2026-10-07 Requested within two weeks of (by 2026-10-21) | -- | 2026-10-19 | New 2026-10-07. |
-| B98 | Provide the larger WAM/MSAV data set to Akansh Gangil | Violet Moyer | Delegated | 2026-10-08 (now 5 days overdue) | -- | 2026-10-13 | New 2026-10-13 (weekly evidence, WAM Product discussion transcript, 2026-10-08). |
 | C63 | Outcome of Sean McCloskey's meeting with Akash Khurana on Digital Products taking over WAM development (the WAM team is still with Merwin's Platforms team) | Sean McCloskey | Awaited | 2026-10-19 After Sean's PTO; Darryl has no time with him before the week of | -- | 2026-10-14 | New 2026-10-06. |
 | C72 | Ascent Navigator production WAB evidence pack, complete for the 2026-10-23 review | DJ Vaughn | Awaited | 2026-10-23 Ascent Navigator - PROD WAB | -- | 2026-10-21 | 2026-10-19 (Claude, weekly brief): New. |
 | C59 | Chime in on Darryl's CDA sponsorship email to Bill Muczko and remind Bill of the advanced-services alignment | Bob Caprise | Awaited | 2026-10-29 On Darryl's email | -- | 2026-10-20 | New 2026-09-18. |
@@ -70,7 +69,6 @@ Four registers. The delineation is the point.
 | B104 | Investigate why Claude Code is unavailable from the India office | Ankit Chadha | Delegated | 2026-11-05 /16 | -- | 2026-10-28 | New 2026-10-14. |
 | C79 | Strev AI Features: confirm who is taking the AI Feature Pack to the AI Council, and its status | Amy Aguirre | Awaited | 2026-11-06 Amy: "this week" (Weekly Sync, 2026-10-30) | **Critical** -- AI Council clearance now a stated VMO condition on the amendment (Paula Fenton, 2026-10-27); gates signature | 2026-11-02 | New 2026-10-27. |
 | B100 | Confirm the MuleSoft/current integration architecture and prepare a WAM-limitations slide for Darryl, ahead of the Sean McCloskey capacity discussion | Akansh Gangil | Delegated | 2026-11-6 Before Darryl's Sean McCloskey discussion; exact date not stated | **Critical** -- feeds `05` A61 and the `03` WAM/ADM reduced-capacity reset Radar item directly | 2026-10-30 | New 2026-10-13 (weekly evidence, WAM Leadership Sync transcript, 2026-10-05). |
-| B1 | Supplier attribute requirements to Jarod Booth's organization | David Blondel (comms), Akansh Gangil (attributes) | Delegated | Escalation only, per 07-15 | -- | 2026-10-14 | 08-17: David pinged Jarod Booth again to follow up (weekly evidence, ADM connect with Natalie) — reconfirms the thread is still active, no new resolution 2026-10-14: restated by Akansh as the required ask for the missin… |
 | B2 | Vendor attribute data collection ahead of CSS-DDP integration | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
 | B21 | TCCC/AOC Managed Services follow-through (KMC tie-in, alarm-management meeting, recurring Dan Fife/Jesse Dougherty meeting) | Nathan Kehr / Sarah Monteleone / Scott Dunn | Delegated | Sequence after B18 holds | -- | 2026-10-15 | Do not let this get ahead of B18 |
 | B3 | New attributes into P360 with Rochelle and Darren Taylor's team | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
@@ -301,6 +299,8 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Item | Was | Dropped | Reason |
 |---|---|---|---|
+| **Provide the larger WAM/MSAV data set to Akansh Gangil** | B98 | 2026-11-02 | Team-forum commitment under the lane model (2026-10-16); moved to the Pulse as P126 at the 2026-10-27 worklist's first read-back. Not a completion. |
+| **Supplier attribute requirements to Jarod Booth's organization** | B1 | 2026-11-02 | Team-forum commitment under the lane model (2026-10-16); moved to the Pulse as P125 at the 2026-10-27 worklist's first read-back. Not a completion. |
 | **Check whether reciprocal Wesco/manufacturer part-number completion can fit the current WAM Data Enrichment iteration** | B99 | 2026-10-28 | Created under the old intake rule, before the lane model (2026-10-16); moved to the Pulse as P102. |
 | **Send Ford account credentials and establish a shared SharePoint exchange area for the working team** | B97 | 2026-10-28 | Created under the old intake rule, before the lane model (2026-10-16); moved to the Pulse as P101. |
 | **Coordinate Ford audit resources once the customer schedules the system audit** | B96 | 2026-10-28 | Same substance already tracked as Decision Backlog D045 (Ford system-audit schedule) -- same named owners, Tim Scott and Chad Steger. |
