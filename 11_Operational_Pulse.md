@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-02 08:37 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-02 08:49 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-19 to 2026-11-02. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -49,14 +49,14 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 7 | 18 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Chad Steger | 7 | 17 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Akansh Gangil | 3 | 5 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Product discussion, WAM Sprint Review |
 | Syed Jamshed Zaidi | 6 | 30 | 0 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive |
 | Scott Dunn | 4 | 13 | 1 | 1 | 2026 Deployment Daily Scrum |
-| Shawn Clark | 4 | 8 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Ron Snyder | 4 | 4 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
+| Shawn Clark | 4 | 7 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Matthew Heid | 4 | 12 | 0 | 0 | 2026 Deployment Daily Scrum |
-| Keith Bishop | 4 | 6 | 0 | 1 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
+| Keith Bishop | 4 | 5 | 0 | 1 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
+| Ron Snyder | 3 | 1 | 1 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Babu Papanna | 2 | 1 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
@@ -117,7 +117,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P005 Co
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 26, new this week 11, stuck 2, quiet 2. Last sighting: 2026-10-29. Last evidence: 2026-10-29.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 19, new this week 6, stuck 2, quiet 1. Last sighting: 2026-10-29. Last evidence: 2026-10-29.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -126,29 +126,22 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 26, new this week 11, stuck
 | P041 | Showcase stopped running and recorded no data from Thursday night into Friday morning (10-15 to 10-16) |  |  | High | 2026-10-20 | 2026-10-21 | 2 | customer-visible |
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-10-28 | 1 | customer-visible |
 | P032 | Dell Showcase: virtual-point function failing, apparently around a faulty tag | Dell | Jason Ganiatsas | Medium | 2026-10-14 | 2026-10-20 | 2 | customer-visible |
-| P040 | Shared UI components lack consistent button and styling standards as apps move into the monorepo |  | Harsha E | Medium | 2026-10-20 | 2026-10-20 | 1 |  |
 | P042 | entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19) |  | Chad Steger | Medium | 2026-10-20 | 2026-10-20 | 1 | customer-visible, escalated to W100 |
 | P109 | HIS Express virtual-point inputs missing history, affecting rollups and downstream curve retrieval |  | Keith Bishop | Medium | 2026-10-21 | 2026-10-21 | 1 |  |
 | P061 | HIS Express virtual-point UI stored constants as Y variables instead of literal values (hotfixed on demo one) |  | Michael Pieschel | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
 | P062 | FRB feedback: revised Graphics Builder documentation needs validation against their reported problem | Federal Reserve |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
 | P069 | Another sensorless-connector defect found in testing; pod created, deployment pending |  | Abhishek Savanur | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
-| P070 | Commissioning app test-tracking coverage incomplete: tracks fields, not everything; no formal owner |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
 | P010 | entroCIM tenant redesign and boot-mode routing: no acceptance criteria, rollout sequence or release date yet |  | Michael Pieschel | Medium | 2026-10-14 | 2026-10-27 | 3 |  |
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-10-27 | 4 |  |
 | P080 | Containerized release packaging question for GPO files/libraries in the entroCIM Release Builder |  | Narendra Singh | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
-| P081 | Admin-app migration: several screens are missing source data needed for migration decisions |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
-| P082 | Migrated SkySpark APIs/types still need per-application integration work |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P112 | Glenview Liberty PDU offline, blocking live data/graphic review for January Showcase planning |  | Keith Bishop | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
 | P123 | SkySpark 4 license migration works with the tested connectors but is not yet compatible with containerization |  |  | Medium | 2026-10-28 | 2026-10-28 | 1 | candidate: gap |
 | P124 | January trade-show Showcase: the 3D render must match the physical booth hardware |  |  | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: gap |
 | P110 | Demo 3 environment heavily loaded and difficult to use despite connector cleanup; helpdesk ticket open |  | Ron Snyder | Medium | 2026-10-28 | 2026-10-29 | 2 |  |
 | P056 | Freshdesk gives limited feedback visibility; no notification or digest for article ratings |  | Mike Reed | Low | 2026-10-20 | 2026-10-20 | 1 |  |
 | P054 | Tiles Grid Board text widget: additional issues found in testing, follow-up needed |  | Nisha More | Low | 2026-10-14 | 2026-10-21 | 2 |  |
-| P083 | Monorepo migration still lacks a compiled list of remaining integration/build-script work |  | Ron Snyder | Low | 2026-10-27 | 2026-10-27 | 1 |  |
-| P079 | Zephyr Scale test tool inaccessible, blocking testing access; IT ticket raised |  | Shreyans Saklecha | Low | 2026-10-27 | 2026-10-28 | 2 |  |
-| P078 | paas-dev-03w returned HTTP 502 on 10-23; reported back up, not formally confirmed resolved |  |  | Low | 2026-10-27 | 2026-10-29 | 2 |  |
 
-Quiet (no sighting in 14+ days; confirm with the team whether resolved): P039 Tiles Grid Board compose chart: precision and date-handling defects cancel comparisons; P053 Grid Board monorepo migration: route broken because workspace components were not migrated correctly.
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P039 Tiles Grid Board compose chart: precision and date-handling defects cancel comparisons.
 
 ## entroCIM Backlog Deep Dive
 
