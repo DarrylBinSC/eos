@@ -905,7 +905,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-11-02 08:31 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-02 08:34 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -1322,6 +1322,8 @@
 - Context: the ADM data-enrichment implementation path is undecided between a Java-based approach and an ADB-based approach. Load, performance, and architecture criteria are unresolved.
 - Risk of waiting: delays the 2026-10-30 enrichment commitment referenced in the ADM 2027 AOP material.
 - Why Backlog and not Radar: no named forum with a live date carries this question today.
+
+2026-11-02 (Claude, weekly brief): The first enrichment path shipped on 2026-10-30 through EDM, returning an Excel output from sales-order and part-number inputs (Akansh Gangil, WAM - Product Team; Weekly Sync). The Java-or-ADB question may be moot for the shipped path; whether it still applies to direct WAM population (later work) is not stated. Potentially closed, confirm. Source: `Evidence/M365_Evidence_Weekly_2026-11-02.md`.
 
 ### 2026-09-18 — CDA business sponsor: Bill Muczko nominated, acceptance pending
 - ID: D053
