@@ -27,7 +27,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P114** Exact renewals cannot reliably identify end users from current data; no path to obtain it except possibly integrators (no account; ADM connect with Natalie). Test: No owner, or the customer is unaware of a material problem.
 - **P123** SkySpark 4 license migration works with the tested connectors but is not yet compatible with containerization (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P124** January trade-show Showcase: the 3D render must match the physical booth hardware (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P128** WMX asset refresh trails Gold EUDM by six hours; order and serial-number data may need two separate jobs (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
@@ -219,7 +218,7 @@ Governance: Product execution. Owner: Akansh Gangil. Live 3, new this week 2, st
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
-| P114 | Exact renewals cannot reliably identify end users from current data; no path to obtain it except possibly integrators |  |  | High | 2026-10-28 | 2026-11-02 | 2 | customer-visible, candidate: gap |
+| P114 | Exact renewals cannot reliably identify end users from current data; no path to obtain it except possibly integrators |  |  | High | 2026-10-28 | 2026-11-02 | 2 | customer-visible |
 | P060 | Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
 | P113 | ADM UI/data-quality feedback batch from Natalie's 10-28 review session (search debounce, filter logic, slowness, sort order) |  | Akansh Gangil | Medium | 2026-10-28 | 2026-11-02 | 2 |  |
 
