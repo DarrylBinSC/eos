@@ -27,7 +27,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P128** WMX asset refresh trails Gold EUDM by six hours; order and serial-number data may need two separate jobs (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P129** ConnectorWise configuration churns repeatedly without an official equipment-and-points document (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 
 ## Knowledge concentration
@@ -182,7 +181,7 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 5, new this week 4, stuck 0, quie
 | P085 | WAM upload pipeline processes one resource at a time, causing multi-day stalls |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P086 | WAM Spring Boot upgrade has unresolved runtime API issues; production release carries an unscoped DD-team dependency |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P068 | WAM renewal recommendation feature: quality rejected, rework from start |  |  | Medium | 2026-10-23 | 2026-11-02 | 2 |  |
-| P128 | WMX asset refresh trails Gold EUDM by six hours; order and serial-number data may need two separate jobs |  |  | Medium | 2026-11-03 |  | 1 | candidate: gap |
+| P128 | WMX asset refresh trails Gold EUDM by six hours; order and serial-number data may need two separate jobs |  |  | Medium | 2026-11-03 |  | 1 |  |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P019 WAM production: cancelled orders appear in export; expiry-chip criteria need validation; P020 WAM historical upload mishandles one customer ID with different names; duplicate ETL error records.
 
