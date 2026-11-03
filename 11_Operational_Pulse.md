@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-03 10:57 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-03 10:58 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-20 to 2026-11-03. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -27,7 +27,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P124** January trade-show Showcase: the 3D render must match the physical booth hardware (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P128** WMX asset refresh trails Gold EUDM by six hours; order and serial-number data may need two separate jobs (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P129** ConnectorWise configuration churns repeatedly without an official equipment-and-points document (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 
@@ -138,7 +137,7 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 20, new this week 7, stuck 
 | P080 | Containerized release packaging question for GPO files/libraries in the entroCIM Release Builder |  | Narendra Singh | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P112 | Glenview Liberty PDU offline, blocking live data/graphic review for January Showcase planning |  | Keith Bishop | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
 | P123 | SkySpark 4 license migration works with the tested connectors but is not yet compatible with containerization |  |  | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
-| P124 | January trade-show Showcase: the 3D render must match the physical booth hardware |  |  | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible, candidate: gap |
+| P124 | January trade-show Showcase: the 3D render must match the physical booth hardware |  |  | Medium | 2026-10-28 | 2026-10-28 | 1 | customer-visible |
 | P110 | Demo 3 environment heavily loaded and difficult to use despite connector cleanup; helpdesk ticket open |  | Ron Snyder | Medium | 2026-10-28 | 2026-10-29 | 2 |  |
 | P127 | SkySpark 4 QA environment (Dev03W) missing Keith Bishop's pods; QA functionality missing for months |  | Keith Bishop | Medium | 2026-11-03 |  | 1 |  |
 | P056 | Freshdesk gives limited feedback visibility; no notification or digest for article ratings |  | Mike Reed | Low | 2026-10-20 | 2026-10-20 | 1 |  |
