@@ -29,6 +29,7 @@
 - Options considered: roadmap-funded by Wesco with only services priced (Claude's first recommendation); development charge plus feature license (Darryl).
 - Decision / Recommended path: Charge for development of the capability (per-stage development charges as Add Alternates, with scope and acceptance agreed at each stage start, Stage 3 contingent on Stage 2 acceptance, Wesco retains IP) and charge for access as an advanced entroCIM feature outside the base platform (annual feature license), plus project services to load and configure the Project's data at each release. Not a sole-funded build and not exclusive.
 - Follow-up: Ron Snyder effort estimate; Leanne Gordon and Valli Poornakumar price lines; Brandon on IP wording; Darryl and David Blondel on the feature license price and its place in the entroCIM price list. Draft: `Deliverables/entroCIM/2026-11-02_FRB_CSC_BIM_Response_Draft.md`. Bid tracked in `W026`.
+- **Update 2026-11-03 (daily brief):** Position restated to Nathan Kehr with an MVP/long-term-roadmap frame; Darryl delegated the surviving-obligations review to Leanne Gordon (substantially done -- documents filed, pricing rebuilt by section effort). Open risk, not yet resolved: Chad Steger flagged that the drafted response wording still reads as supporting BIM models, and the team's own reply agreed "the new wording does nothing to take away the BIM requirements" -- the exclusion language this decision depends on may not hold as drafted. Syed Zaidi's compliance question to Sarah Monteleone ("fully compliant... or partially... is it a deal breaker?") is also still open. Full detail and sourcing in `W026`.
 
 ### 2026-10-30 — Strev AI: no QA enablement, production only; the additional $80K re-pointed to the site-survey tool (Amy's call), amendment being redrafted
 - Status: Made (Weekly Sync, 2026-10-30, transcript). Two decisions in one session, two decision-makers.
@@ -39,6 +40,16 @@
 - Risk of waiting: n/a, decided. Residual: AI token/API usage budgeting is still unresolved (AI Council/BIR); the redraft (C81) and Brian's markup (C77) are both still owed, so A49 cannot go back to Revnue yet.
 - Forum where this should be decided: decided in the Weekly Sync; amendment path continues through C77, C81, A49.
 - Follow-up: W006 trend set to stable; C79 re-pointed at Amy's AI Council submission (her commitment, week of 10-30). Source: `Evidence/M365_Evidence_Weekly_2026-11-02.md`.
+
+### 2026-10-27 — Quest exit costs: LogMeIn not renewed; Dev01 resized to match Prod; contract review to Finance
+- Status: Made (LogMeIn, Dev01 sizing); Approaching (Quest contract/termination terms -- action assigned, not yet resolved)
+- Owner: Darryl Benson
+- Context: Quest Migration Weekly Check-In, 2026-10-27 (transcript). Three small Quest-exit cost/resourcing questions surfaced in one session: LogMeIn renewal (~$2,000/year, due before 2026-12-06) for a remote-access tool being superseded as Quest retires; Dev01 sized below Prod, raised by the team as a performance risk; and Quest's own hosting contract terms (termination/decommissioning, hardware ownership) not in hand by anyone on the call.
+- Options considered: LogMeIn -- renew one more year vs. let it lapse now that Quest/Nextcloud access is being retired. Dev01 -- leave as sized vs. resize to match Prod.
+- Decision / Recommended path: Benson, Darryl: "I think we cancel it" (LogMeIn). Darryl also directed that "for the Dev environment, we should try to match Prod to ensure we get like-for-like performance" (Dev01 resize to 8 CPU/32GB, Clark, Shawn to submit -- `05` B111). On the Quest contract itself: "I'll have finance look at that contract. I don't have that contract. I don't even... know who does" -- action only, terms still unknown (`05` A73).
+- Risk of waiting: LogMeIn and Dev01 are decided and low-stakes. The Quest contract is the one with exposure: Quest has separately asked for additional $245/hour T&M on top of the ~$6,600/month base fee (`04`/Pulse P051), and Wesco does not yet know its own termination or renewal-notice terms while that negotiation is live.
+- Forum where this should be decided: decided in the Quest Migration Weekly Check-In; contract review continues through A73.
+- Follow-up: B111 (Dev01 resize, Clark) and A73 (Quest contract to Finance) created 2026-11-03. Remote-access replacement for LogMeIn tracked at Pulse P052. Source: `Evidence/M365_Evidence_PulseP1_2026-11-03.md`.
 
 ### 2026-10-30 — CDA intake and business case refreshed as roadmap record, not a funding submission; Nozomi gets its own intake and BIR
 - Status: Made (Darryl, chat, 2026-10-30)
@@ -923,7 +934,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-11-03 10:15 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-03 10:17 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
