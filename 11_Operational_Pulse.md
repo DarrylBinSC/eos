@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-03 10:17 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-03 10:56 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-20 to 2026-11-03. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Worsening | +27 | 187 | 155 | 26 | 4 | 10 | 1 |
+| Dell | Worsening | +24 | 184 | 155 | 26 | 4 | 10 | 1 |
 | Federal Reserve | Worsening | +11 | 24 | 3 | 3 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +9 | 13 | 4 | 4 | 0 | 1 | 0 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
@@ -27,7 +27,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **K010** Dell Penang One BMS access and credentials (knowledge concentration). Test: One person holds knowledge a customer or a release depends on, and no backup is confirmed.
 - **P114** Exact renewals cannot reliably identify end users from current data; no path to obtain it except possibly integrators (no account; ADM connect with Natalie). Test: No owner, or the customer is unaware of a material problem.
 - **P123** SkySpark 4 license migration works with the tested connectors but is not yet compatible with containerization (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P124** January trade-show Showcase: the 3D render must match the physical booth hardware (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
