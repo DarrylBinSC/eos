@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-11-04 10:00 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-04 10:05 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -95,7 +95,7 @@ Four registers. The delineation is the point.
 | C39 | Confirm current and future-state IDP document-volume assumptions (10 vs. 50 documents/day cited) | Owner unconfirmed — WAM/ADM/IDP team | Awaited | Not dated | -- | 2026-10-15 | Owed to Moe Aminlari. |
 | C40 | Send the FRB SASTEC agreement to Nathan Kehr for signature | Owner unclear (sender not named in evidence) | Awaited | Not dated | -- | 2026-10-19 | New 08-27. |
 | C41 | Sign the FRB SASTEC agreement once received | Nathan Kehr | Awaited | Not dated | -- | 2026-10-19 | New 08-27. |
-| C42 | Help identify CDA pilot accounts and route engagement through sales leadership | Chris Mooney and Bill Muczko | Awaited | Not dated | -- | 2026-09-18 | Darryl: "I am asking for your view on whether it is worth building and for your help finding two or three pilot accounts." Companion to A37; |
+| C42 | Help identify CDA pilot accounts and route engagement through sales leadership | Chris Mooney and Bill Muczko | Awaited | Not dated | -- | 2026-11-04 | Darryl: "I am asking for your view on whether it is worth building and for your help finding two or three pilot accounts." Companion to A37; |
 | C52 | Amy's UiPath intake filing for the Strev AI use cases, and the demo requested in front of "Kehr" | Amy Aguirre | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C53 | Wade Bursch's business case and PowerPoint for the Virtual Site Survey | Wade Bursch (TS; reports to Matt Powers) | Awaited | Not dated | -- | 2026-09-17 | New 2026-09-17. |
 | C58 | Identify the current Cisco-side owner of the Cisco Connected Real Estate opportunity (NetBotz replacement, MDF power visibility) and tell Dave McCain that CDA is in development | Bob Caprise | Awaited | Not dated | -- | 2026-09-18 | New 2026-09-18. |

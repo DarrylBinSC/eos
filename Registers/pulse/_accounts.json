@@ -110,6 +110,15 @@
    "type": "customer",
    "aliases": [],
    "note": "Added 2026-10-30: WAM complex-build customer (WAM Product discussion 2026-10-22). Confirmed by Darryl 2026-10-30."
+  },
+  {
+   "name": "Merck",
+   "aliases": [
+    "Merck Rahway",
+    "Boston"
+   ],
+   "type": "customer",
+   "pinned": false
   }
  ]
 }
