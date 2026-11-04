@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-04 10:32 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-04 10:33 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-21 to 2026-11-04. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Merck | Worsening | +11 | 11 | 0 | 1 | 0 | 0 | 0 |
+| Merck | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
 | Dell | Steady | +1 | 183 | 177 | 24 | 4 | 14 | 1 |
 | Federal Reserve | Steady | +3 | 24 | 11 | 3 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Steady | +0 | 13 | 13 | 4 | 0 | 1 | 0 |
@@ -28,7 +28,6 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
-- **P131** Merck entroCIM license maintenance substantially overdue; remote access may have lapsed (Merck; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P135** Dell HQ display/alarm issue: new alarms not showing, blocking a Penang production rollout (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P137** Prior Gridboard monorepo migration lost code and broke functionality; migration restarted (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P132** Updated LATAM server returns a system error after yesterday's update (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
@@ -95,7 +94,7 @@ Governance: Project management. Owner: Chad Steger. Live 46, new this week 19, s
 | P115 | HQ alarm list drops cleared alarms (longstanding, all sites); fix expected with the new pods, validation pending | Dell |  | High | 2026-10-29 | 2026-10-29 | 1 | customer-visible |
 | P116 | Palo Alto NetBot found outside the earlier non-DC scope: new integration needed, device credentials unconfirmed | Dell |  | High | 2026-10-29 | 2026-10-29 | 1 | customer-visible |
 | P107 | Limerick failure-condition alarm validation method undefined before telling Dell the release is approved | Dell |  | High | 2026-10-28 | 2026-11-03 | 3 | customer-visible |
-| P131 | Merck entroCIM license maintenance substantially overdue; remote access may have lapsed | Merck |  | High | 2026-11-04 | 2026-11-04 | 1 | customer-visible, candidate: boundary |
+| P131 | Merck entroCIM license maintenance substantially overdue; remote access may have lapsed | Merck |  | High | 2026-11-04 | 2026-11-04 | 1 | customer-visible |
 | P135 | Dell HQ display/alarm issue: new alarms not showing, blocking a Penang production rollout | Dell |  | High | 2026-11-03 | 2026-11-04 | 1 | customer-visible, candidate: gap |
 | P024 | Standardized UPS/device point list for integration and alarm rules still unavailable | Dell |  | Medium | 2026-10-14 | 2026-10-21 | 2 | customer-visible |
 | P035 | Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed | Coca-Cola (TCCC) | Syed Jamshed Zaidi | Medium | 2026-10-20 | 2026-10-21 | 2 | customer-visible |
