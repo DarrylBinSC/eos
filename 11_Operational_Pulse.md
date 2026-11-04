@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-04 12:46 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-04 12:54 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-21 to 2026-11-04. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -233,6 +233,6 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P033 AD
 
 ## Product Team / Platform Team connect
 
-Governance: Team practice. Owner: Keyur Patel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-10-21.
+Governance: Team practice. Owner: Keyur Patel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: none in the Pulse yet. Last evidence: 2026-10-30.
 
 No issues in the Pulse yet.

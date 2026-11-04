@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-11-04 12:46 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-04 12:54 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -107,7 +107,7 @@ Four registers. The delineation is the point.
 | C70 | Validate EES and UBS data-capture requirements against the CSS spreadsheet and produce the system-of-entry / system-of-record matrix per data element | Alan Martin (working lead), with Stephen Karpinski and John Bartolotti | Awaited | Not dated in evidence; the 2026-10-16 consolidated use-case deadline (set 09-30) was not reaffirmed or withdrawn in the accessible 10-15 discussion | -- | 2026-10-15 | New 2026-10-15. |
 | C71 | Cordelia McMillan's CSS data-element and use-case spreadsheet, for the WAM/ADM record | Cordelia McMillan | Awaited | Not dated; not requested in evidence | -- | 2026-10-15 | New 2026-10-15. |
 | C77 | Strev Amendment No. 2: Brian Miller's Legal markup, to Darryl and Amy Aguirre | Brian Miller (Legal) | Awaited | No date given by Brian on the 10-27 call | **Critical** -- contract and money exposed ($164,000/year/Environment); gates the markup going back to Revnue | 2026-11-02 | New 2026-10-27. |
-| C78 | Strev AI pricing benchmark from IT VMO: whether $80,000 + $84,000 per Environment is in line with other vendors' AI feature pricing | Paula Fenton (Sr. Director, IT VMO) | Awaited | Requested 2026-10-27; no date asked for | -- | 2026-10-27 | New 2026-10-27. |
+| C78 | Strev AI pricing benchmark from IT VMO: whether $80,000 + $84,000 per Environment is in line with other vendors' AI feature pricing | Paula Fenton (Sr. Director, IT VMO) | Awaited | Requested 2026-10-27; no date asked for | -- | 2026-11-04 | New 2026-10-27. |
 | C81 | Revised Strev Amendment No. 2 from Sunny Sharma / Kristina Isagunde (redraft applying the additional $80K to the site-survey tool), copied to Darryl | Sunny Sharma (Revnue); Kristina Isagunde | Awaited | Not stated (Weekly Sync, 2026-10-30); ages from last evidence | **Critical** -- Contract and money exposed: the amendment carries the AI enablement and site-survey commercial terms; the white-label amendment (A49) cannot go back to Revnue until this lands | 2026-11-02 | 2026-11-02 (Claude, weekly brief): Created from the Weekly Sync of 2026-10-30. |
 
 ## Register D — Standing Responsibilities
