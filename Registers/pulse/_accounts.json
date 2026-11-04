@@ -15,8 +15,7 @@
     "Apex",
     "Palo Alto"
    ],
-   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16); Penang (incl. Penang 2), Singapore and New York are Dell sites (Darryl, 2026-10-19); Apex added 2026-10-20 from the Prompt 1 label and K005, confirm; Palo Alto is a Dell site (Darryl, 2026-10-30)",
-   "pinned": true
+   "note": "Largest customer. El Dorado is a Dell site (Darryl, 2026-10-16); Penang (incl. Penang 2), Singapore and New York are Dell sites (Darryl, 2026-10-19); Apex added 2026-10-20 from the Prompt 1 label and K005, confirm; Palo Alto is a Dell site (Darryl, 2026-10-30)"
   },
   {
    "name": "Wesco Warehouse",
@@ -24,7 +23,8 @@
    "aliases": [
     "Panama"
    ],
-   "note": "Internal program deploying entroCIM at Wesco; Panama is a Wesco site (Darryl, 2026-10-16)"
+   "note": "Internal program deploying entroCIM at Wesco; Panama is a Wesco site (Darryl, 2026-10-16)",
+   "pinned": true
   },
   {
    "name": "Ford",
