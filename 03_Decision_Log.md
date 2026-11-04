@@ -22,6 +22,17 @@
 
 ## Decisions Made
 
+### 2026-11-03 — Quest exit: Cloud PC approved for Workbench/BACnet Pro tooling, conditioned on no security vulnerability; a separate cleanup fee declined
+- Status: Made
+- Owner: Darryl Benson (Cloud PC conditional approval); Chad Steger (fee decision)
+- Context: Quest Migration Weekly Check-In, 2026-11-03. With LogMeIn lapsing (decided 2026-10-27) and no confirmed shared remote-access model for Workbench/BACnet Pro (`05`/Pulse P052), Steger proposed a cloud PC as the access path.
+- Options considered: shared virtual PC (ruled out 2026-10-27, provider does not support it); a VM in Azure with a cloud-PC access pattern (proposed); continue searching for an alternative.
+- Decision / Recommended path: Steger, Chad: "is everyone okay with using a cloud PC for doing our like workbench and BACnet Pro stuff?" Benson, Darryl: "I'm not opposed to it as long as... we're not creating some security vulnerability." Steger: "we'll move forward with that then." Separately, Steger stated a Quest cleanup/decommissioning fee will not be paid: "we're just not going to pay that fee and we'll just clean them up as good as we can" -- which fee is not stated precisely in evidence, and is distinct from the $245/hour T&M question still open at Pulse P051; flagging for confirmation rather than treating P051 as resolved.
+- Risk of waiting: n/a for the Cloud PC piece, decided. The fee statement needs confirming against Quest's actual invoice before treating P051 as resolved.
+- Forum where this should be decided: decided in the Quest Migration Weekly Check-In.
+- Follow-up: Pulse P052 updated with this decision. Confirm the security review Darryl's condition implies has actually happened before standing up the VM. Source: `Evidence/M365_Evidence_Daily_2026-11-04.md`.
+
+
 ### 2026-11-02 — FRB CSC BIM capability: charge for development and for access as an advanced feature
 - Status: Made
 - Owner: Darryl Benson
@@ -934,7 +945,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-11-04 10:05 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-04 10:32 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
