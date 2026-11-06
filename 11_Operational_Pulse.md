@@ -1,8 +1,8 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-05 10:31 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-06 09:59 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-> Rolling window 2026-10-22 to 2026-11-05. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
+> Rolling window 2026-10-23 to 2026-11-06. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
 ## Account health
 
@@ -10,16 +10,16 @@
 |---|---|---|---|---|---|---|---|---|
 | Wesco Warehouse | Steady | -2 | 14 | 16 | 1 | 1 | 2 | 0 |
 | Merck | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
-| Dell | Steady | -4 | 198 | 197 | 25 | 3 | 16 | 1 |
-| Federal Reserve | Steady | +3 | 24 | 11 | 3 | 0 | 0 | 2 |
+| Dell | Steady | +14 | 198 | 179 | 25 | 4 | 17 | 1 |
+| Federal Reserve | Steady | +1 | 22 | 11 | 2 | 0 | 1 | 2 |
 | Coca-Cola (TCCC) | Steady | -2 | 11 | 13 | 3 | 0 | 2 | 0 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
-| Microsoft | Steady | +0 | 11 | 11 | 2 | 0 | 0 | 0 |
-| Intel | Steady | +0 | 6 | 6 | 2 | 0 | 0 | 0 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 | Stanford | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 | Cree Church / Premier | Steady | +0 | 3 | 3 | 1 | 0 | 0 | 0 |
-| Waymo | Steady | +0 | 3 | 3 | 1 | 0 | 0 | 0 |
+| Intel | Steady | -4 | 2 | 6 | 0 | 0 | 2 | 0 |
+| Waymo | Steady | -2 | 1 | 3 | 0 | 0 | 1 | 0 |
+| Microsoft | Improving | -9 | 2 | 11 | 0 | 0 | 2 | 0 |
 | Marygrove | Improving | -7 | 1 | 8 | 0 | 0 | 1 | 0 |
 
 Load = live high visible x8, live high x6, live medium x3, live low x1, stuck x4, quiet x1, candidate x3, at your level x5. Trend = change in the team-raised load over 7 days, rebuilt from the dates meetings raised each issue; Worsening or Improving when it moves by at least 5 points and 15% of last week's load, otherwise Steady. Your register items are in the load but not the trend (no dated history). Friction from evidence, not customer sentiment.
@@ -28,6 +28,7 @@ No signals in the window: BAE, UWM.
 
 ## Needs your call
 
+- **P066** Argentina: watchdog connectors flapping connected/disconnected within a minute, source unidentified (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P135** Dell HQ display/alarm issue: new alarms not showing, blocking a Penang production rollout (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P137** Prior Gridboard monorepo migration lost code and broke functionality; migration restarted (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P142** Dell questioning redundancy/DR architecture and reuse of existing licenses for DR (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -48,7 +49,9 @@ No signals in the window: BAE, UWM.
 - **P153** WAM historical-file-upload audit trail depends on an old, incomplete implementation of uncertain reusability (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P154** Asset/license table reuse risks license workflows pulling in asset data without filtering (no account; WAM Product Backlog Refinement). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P155** Full QA of the new WAM asset-data pipeline is blocked on mock data; real-data QA deferred two sprints out (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
+- **P157** Stack Hub instances need replacement; license creation after replacement depends on Ron Snyder until a repeatable process exists (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P150** Zscaler would not connect for Keith Bishop, blocking his work (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
+- **P158** Dev03 development systems shut down off-hours by Wesco IT; one restart failed (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 
 ## Knowledge concentration
 
@@ -68,52 +71,46 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 6 | 21 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Akansh Gangil | 3 | 8 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Product discussion, WAM Sprint Review |
-| Syed Jamshed Zaidi | 6 | 29 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Chad Steger | 5 | 21 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Akansh Gangil | 2 | 7 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Syed Jamshed Zaidi | 6 | 24 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Scott Dunn | 5 | 16 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Shawn Clark | 4 | 8 | 2 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Scott Dunn | 4 | 18 | 1 | 1 | 2026 Deployment Daily Scrum |
-| Ron Snyder | 2 | 6 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
+| Ron Snyder | 2 | 7 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
-| Keith Bishop | 3 | 3 | 0 | 1 | entroCIM Daily Stand Up |
+| Keith Bishop | 3 | 2 | 0 | 1 | entroCIM Daily Stand Up |
 | Babu Papanna | 2 | 3 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Natalie Marquardt | 0 | 3 | 3 | 0 | ADM connect with Natalie, WAM Sprint Review |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
 | Sean McCloskey | 0 | 0 | 3 | 0 |  |
-| Matthew Heid | 2 | 13 | 0 | 0 | 2026 Deployment Daily Scrum |
 
 Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own. Sole holder: knowledge areas they hold without a confirmed backup.
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 50, new this week 17, stuck 5, quiet 19. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
+Governance: Project management. Owner: Chad Steger. Live 45, new this week 15, stuck 6, quiet 25. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-27 | 5 | stuck, customer-visible |
 | P002 | Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches | Dell | Syed Jamshed Zaidi | High | 2026-10-13 | 2026-10-29 | 5 | stuck, customer-visible |
 | P015 | Panama HVAC points increase continuously; BACnet setup failed, Modbus option untested | Wesco Warehouse | Matthew Heid; Scott Dunn | High | 2026-10-13 | 2026-11-04 | 4 | stuck, customer-visible |
-| P066 | Argentina: watchdog connectors flapping connected/disconnected within a minute, source unidentified |  | Matthew Heid | High | 2026-10-22 | 2026-11-05 | 2 | stuck, customer-visible |
+| P066 | Argentina: watchdog connectors flapping connected/disconnected within a minute, source unidentified |  | Matthew Heid | High | 2026-10-22 | 2026-11-05 | 2 | stuck, customer-visible, candidate: boundary |
 | P003 | Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation | Dell | Syed Jamshed Zaidi | Medium | 2026-10-15 | 2026-10-29 | 3 | stuck |
-| P001 | PC1 Grid Board site-selection defect blocking the KWH report and dashboard | Dell |  | High | 2026-10-13 | 2026-10-22 | 4 | customer-visible |
-| P063 | Chennai: all entroCIM connectors down, BACnet IDs do not match the spreadsheet |  |  | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
-| P064 | Israel: all alarm points unbound (discrepancy 1273), needs Scott Dunn or Elias Brewer |  |  | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
-| P067 | Customer alarm-audit request: scope undefined, could run ~400 hours or consume the SME allocation |  | Chad Steger | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
+| P004 | Dell visualization scope unsettled: point pages only, or basic graphics and floor plans (El Dorado) | Dell |  | Medium | 2026-10-15 | 2026-11-05 | 3 | stuck, customer-visible |
 | P011 | Commissioned El Dorado devices not producing expected alarms ahead of environment decommissioning | Dell | Syed Jamshed Zaidi | High | 2026-10-14 | 2026-10-27 | 2 | customer-visible |
 | P057 | Watchdog and UPS devices integration status unclear for Latin America sites; original-scope ownership not established | Dell |  | High | 2026-10-22 | 2026-10-27 | 2 | customer-visible |
 | P074 | India PM8000 meter integration may depend on an unconfirmed India PME environment | Dell |  | High | 2026-10-27 | 2026-10-27 | 1 | customer-visible |
 | P103 | North Carolina Modbus meter onboarding blocked by missing MIB file and unavailable meter credentials | Dell |  | High | 2026-10-28 | 2026-10-29 | 2 | customer-visible |
 | P104 | Meter naming cannot be mapped between connector names and the GMS sheet at Chennai, Dell 8, Dell 11 | Dell | Syed Jamshed Zaidi | High | 2026-10-28 | 2026-10-29 | 2 | customer-visible |
 | P115 | HQ alarm list drops cleared alarms (longstanding, all sites); fix expected with the new pods, validation pending | Dell |  | High | 2026-10-29 | 2026-10-29 | 1 | customer-visible |
-| P116 | Palo Alto NetBot found outside the earlier non-DC scope: new integration needed, device credentials unconfirmed | Dell |  | High | 2026-10-29 | 2026-10-29 | 1 | customer-visible |
 | P107 | Limerick failure-condition alarm validation method undefined before telling Dell the release is approved | Dell |  | High | 2026-10-28 | 2026-11-03 | 3 | customer-visible |
 | P108 | El Dorado end-to-end alarm validation needs customer/site participation; approach not yet defined | Dell | Syed Jamshed Zaidi | High | 2026-10-28 | 2026-11-05 | 2 | customer-visible |
+| P116 | Palo Alto NetBot found outside the earlier non-DC scope: new integration needed, device credentials unconfirmed | Dell |  | High | 2026-10-29 | 2026-11-05 | 2 | customer-visible |
 | P131 | Merck entroCIM license maintenance substantially overdue; remote access may have lapsed | Merck |  | High | 2026-11-04 | 2026-11-05 | 2 | customer-visible |
 | P135 | Dell HQ display/alarm issue: new alarms not showing, blocking a Penang production rollout | Dell |  | High | 2026-11-03 | 2026-11-05 | 2 | customer-visible, candidate: gap |
 | P142 | Dell questioning redundancy/DR architecture and reuse of existing licenses for DR | Dell | Syed Jamshed Zaidi | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
 | P145 | Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design | Dell |  | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
-| P059 | Newly added meter needs database cleanup; site name ambiguous (Annapolis or New York) |  | Babu C. Dinesh | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
-| P065 | No formal integration QA/QC checklist for closeout (alarm, fault-management, graphics, database, point-addition) |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
-| P004 | Dell visualization scope unsettled: point pages only, or basic graphics and floor plans (El Dorado) | Dell |  | Medium | 2026-10-15 | 2026-10-27 | 2 | customer-visible |
 | P058 | EMEA (Harsley) alarm/integration discrepancy surfaced while Elias Brewer was out |  |  | Medium | 2026-10-22 | 2026-10-27 | 2 | customer-visible |
 | P071 | Heating-stage and Boolean-point sequencing for reheat boxes remains unclear |  | Chad Steger | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P072 | Three to four recently created GMS weather stations missing from validation tests |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
@@ -137,14 +134,15 @@ Governance: Project management. Owner: Chad Steger. Live 50, new this week 17, s
 | P146 | Cross-site alarm audit has no agreed validation baseline; prior environment decommissioned |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | customer-visible, candidate: gap |
 | P147 | Customer-requested battery-replacement alarms are not an existing entroCIM function |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
 | P148 | North America PME/OPC UA integration has no pilot; first live test planned on Central Texas | Dell |  | Medium | 2026-11-05 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
+| P156 | PC1 PDU connector cannot be opened (times out); SNMP-timeout workaround applicability uncertain | Dell | Scott Dunn | Medium | 2026-11-05 | 2026-11-05 | 1 | customer-visible |
 | P129 | ConnectorWise configuration churns repeatedly without an official equipment-and-points document |  |  | Medium | 2026-11-03 |  | 1 |  |
 | P130 | FRB graphics blocked: only a BACnet point export is available, lighting floor-plan layouts still needed | Federal Reserve | Chad Steger | Medium | 2026-11-03 |  | 1 | customer-visible |
 
-Quiet (no sighting in 14+ days; confirm with the team whether resolved): P005 Commissioned Panama devices not producing expected alarms ahead of environment decommissioning; P006 Dell alarm-database corruption: intermittent alarming failures, no root cause; P007 PC1/JCI large-scale point faults and intermittent site access; P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review; P014 Dell non-DC server unavailable since the prior week, blocking meter verification; P016 Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation; P017 North America lighting-site UPS alarms visible in PME/NMC but not reaching entroCIM; P023 Penang 2: down points not triggering the expected faults or notifications; P024 Standardized UPS/device point list for integration and alarm rules still unavailable; P025 Dell "three-creatures" requirements undefined; related work waits on a Dell workshop; P026 New York: two meters in commissioning, two with connection issues; P027 Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara; P029 Prospective data-center customer substation request cannot be scoped (equipment, model and IP readiness unknown); P035 Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed; P036 Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site; P037 Panama: additional control drawings needed; second-floor NetBotz and watchdog devices not yet procured or installed; P038 Apex: four meter connectors ready but connectivity cannot be established; waiting on information from Robbie.
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P001 PC1 Grid Board site-selection defect blocking the KWH report and dashboard; P005 Commissioned Panama devices not producing expected alarms ahead of environment decommissioning; P006 Dell alarm-database corruption: intermittent alarming failures, no root cause; P007 PC1/JCI large-scale point faults and intermittent site access; P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review; P014 Dell non-DC server unavailable since the prior week, blocking meter verification; P016 Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation; P017 North America lighting-site UPS alarms visible in PME/NMC but not reaching entroCIM; P023 Penang 2: down points not triggering the expected faults or notifications; P024 Standardized UPS/device point list for integration and alarm rules still unavailable; P025 Dell "three-creatures" requirements undefined; related work waits on a Dell workshop; P026 New York: two meters in commissioning, two with connection issues; P027 Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara; P029 Prospective data-center customer substation request cannot be scoped (equipment, model and IP readiness unknown); P035 Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed; P036 Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site; P037 Panama: additional control drawings needed; second-floor NetBotz and watchdog devices not yet procured or installed; P038 Apex: four meter connectors ready but connectivity cannot be established; waiting on information from Robbie; P059 Newly added meter needs database cleanup; site name ambiguous (Annapolis or New York); P063 Chennai: all entroCIM connectors down, BACnet IDs do not match the spreadsheet; P064 Israel: all alarm points unbound (discrepancy 1273), needs Scott Dunn or Elias Brewer; P065 No formal integration QA/QC checklist for closeout (alarm, fault-management, graphics, database, point-addition); P067 Customer alarm-audit request: scope undefined, could run ~400 hours or consume the SME allocation.
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 22, new this week 9, stuck 3, quiet 7. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 21, new this week 9, stuck 3, quiet 10. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -153,9 +151,6 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 22, new this week 9, stuck 
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-11-04 | 5 | stuck |
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-11-04 | 2 | customer-visible |
 | P137 | Prior Gridboard monorepo migration lost code and broke functionality; migration restarted |  | Nisha More | High | 2026-11-04 | 2026-11-04 | 1 | candidate: boundary |
-| P061 | HIS Express virtual-point UI stored constants as Y variables instead of literal values (hotfixed on demo one) |  | Michael Pieschel | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
-| P062 | FRB feedback: revised Graphics Builder documentation needs validation against their reported problem | Federal Reserve |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
-| P069 | Another sensorless-connector defect found in testing; pod created, deployment pending |  | Abhishek Savanur | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
 | P010 | entroCIM tenant redesign and boot-mode routing: no acceptance criteria, rollout sequence or release date yet |  | Michael Pieschel | Medium | 2026-10-14 | 2026-10-27 | 3 |  |
 | P080 | Containerized release packaging question for GPO files/libraries in the entroCIM Release Builder |  | Narendra Singh | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P112 | Glenview Liberty PDU offline, blocking live data/graphic review for January Showcase planning |  | Keith Bishop | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
@@ -168,10 +163,12 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 22, new this week 9, stuck 
 | P139 | SkySpark 4.0.6 connectors fail to install in release-builder testing |  | Narendra Singh; Sai Kiran Vadluri | Medium | 2026-11-04 | 2026-11-05 | 2 |  |
 | P140 | SkySpark 4.0.7: HQ routing returns "not found" after JSON/Xeto changes |  | Nihar Ranjan Sahu | Medium | 2026-11-04 | 2026-11-05 | 2 |  |
 | P152 | SkySpark 4 setup-script Axon for enabling pods may be incompatible with the changed pod setup |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | candidate: gap |
+| P157 | Stack Hub instances need replacement; license creation after replacement depends on Ron Snyder until a repeatable process exists |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | candidate: gap |
 | P127 | SkySpark 4 QA environment (Dev03W) missing Keith Bishop's pods; QA functionality missing for months |  | Keith Bishop | Medium | 2026-11-03 |  | 1 |  |
+| P158 | Dev03 development systems shut down off-hours by Wesco IT; one restart failed |  |  | Low | 2026-10-29 | 2026-10-29 | 1 | candidate: gap |
 | P150 | Zscaler would not connect for Keith Bishop, blocking his work |  |  | Low | 2026-11-03 | 2026-11-03 | 1 | candidate: gap |
 
-Quiet (no sighting in 14+ days; confirm with the team whether resolved): P032 Dell Showcase: virtual-point function failing, apparently around a faulty tag; P039 Tiles Grid Board compose chart: precision and date-handling defects cancel comparisons; P041 Showcase stopped running and recorded no data from Thursday night into Friday morning (10-15 to 10-16); P042 entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19); P054 Tiles Grid Board text widget: additional issues found in testing, follow-up needed; P056 Freshdesk gives limited feedback visibility; no notification or digest for article ratings; P109 HIS Express virtual-point inputs missing history, affecting rollups and downstream curve retrieval.
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P032 Dell Showcase: virtual-point function failing, apparently around a faulty tag; P039 Tiles Grid Board compose chart: precision and date-handling defects cancel comparisons; P041 Showcase stopped running and recorded no data from Thursday night into Friday morning (10-15 to 10-16); P042 entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19); P054 Tiles Grid Board text widget: additional issues found in testing, follow-up needed; P056 Freshdesk gives limited feedback visibility; no notification or digest for article ratings; P061 HIS Express virtual-point UI stored constants as Y variables instead of literal values (hotfixed on demo one); P062 FRB feedback: revised Graphics Builder documentation needs validation against their reported problem; P069 Another sensorless-connector defect found in testing; pod created, deployment pending; P109 HIS Express virtual-point inputs missing history, affecting rollups and downstream curve retrieval.
 
 ## entroCIM Backlog Deep Dive
 
@@ -231,27 +228,20 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 5, new this week 0, stuck 2, quie
 
 ## WAM Product discussion
 
-Governance: Product execution. Owner: Akansh Gangil. Live 5, new this week 0, stuck 0, quiet 0. Last sighting: 2026-10-22. Last evidence: 2026-10-22.
+Governance: Product execution. Owner: Akansh Gangil. Live 0, new this week 0, stuck 0, quiet 5. Last sighting: 2026-10-22. Last evidence: 2026-10-22 (none in the window).
 
-| ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
-|---|---|---|---|---|---|---|---|---|
-| P118 | Microsoft data uploads waiting on Microsoft's review of lower-confidence corrections; no internal owner for obtaining it | Microsoft |  | High | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
-| P119 | Microsoft post-cleanup operating model undefined: continual imports, dashboard access, internal/external user model | Microsoft |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
-| P120 | Latest Intel BOM arrived without manufacturer part numbers; cause unknown | Intel |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
-| P121 | Intel components may not be serialized, so barcode-based serial capture may not apply | Intel |  | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
-| P122 | Waymo: Wesco systems may not capture address-level differentiators when several builds share one sales order and PO | Waymo | Akansh Gangil | Medium | 2026-10-22 | 2026-10-22 | 1 | customer-visible |
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P118 Microsoft data uploads waiting on Microsoft's review of lower-confidence corrections; no internal owner for obtaining it; P119 Microsoft post-cleanup operating model undefined: continual imports, dashboard access, internal/external user model; P120 Latest Intel BOM arrived without manufacturer part numbers; cause unknown; P121 Intel components may not be serialized, so barcode-based serial capture may not apply; P122 Waymo: Wesco systems may not capture address-level differentiators when several builds share one sales order and PO.
 
 ## ADM connect with Natalie
 
-Governance: Product execution. Owner: Akansh Gangil. Live 3, new this week 0, stuck 0, quiet 2. Last sighting: 2026-11-02. Last evidence: 2026-11-02.
+Governance: Product execution. Owner: Akansh Gangil. Live 2, new this week 0, stuck 0, quiet 3. Last sighting: 2026-11-02. Last evidence: 2026-11-02.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P114 | Exact renewals cannot reliably identify end users from current data; no path to obtain it except possibly integrators |  |  | High | 2026-10-28 | 2026-11-02 | 2 | customer-visible |
-| P060 | Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up |  |  | Medium | 2026-10-22 | 2026-10-22 | 1 |  |
 | P113 | ADM UI/data-quality feedback batch from Natalie's 10-28 review session (search debounce, filter logic, slowness, sort order) |  | Akansh Gangil | Medium | 2026-10-28 | 2026-11-02 | 2 |  |
 
-Quiet (no sighting in 14+ days; confirm with the team whether resolved): P033 ADM removed/cancelled-orders page missing the removal-date column and export; P034 ADM renewal identification is manual and unreliable; renewal metrics cannot be sustained this way.
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P033 ADM removed/cancelled-orders page missing the removal-date column and export; P034 ADM renewal identification is manual and unreliable; renewal metrics cannot be sustained this way; P060 Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up.
 
 ## Product Team / Platform Team connect
 
