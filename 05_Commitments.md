@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-11-06 10:38 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-06 12:06 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -76,7 +76,7 @@ Four registers. The delineation is the point.
 | B111 | Resize the Dev01 Azure VM to match Prod sizing (8 CPU / 32 GB) for like-for-like performance | Shawn Clark | Delegated | Not dated in evidence. | -- | 2026-11-03 | 2026-11-03 (Claude, daily brief): Created from the 2026-10-28 Quest Migration chat. |
 | B2 | Vendor attribute data collection ahead of CSS-DDP integration | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
 | B21 | TCCC/AOC Managed Services follow-through (KMC tie-in, alarm-management meeting, recurring Dan Fife/Jesse Dougherty meeting) | Nathan Kehr / Sarah Monteleone / Scott Dunn | Delegated | Sequence after B18 holds | -- | 2026-10-15 | Do not let this get ahead of B18 |
-| B3 | New attributes into P360 with Rochelle and Darren Taylor's team | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
+| B3 | New attributes into P360 with Rochelle and Darren Taylor's team | Akansh Gangil | Delegated | Attribute track review | -- | 2026-11-06 | 2026-11-06 (Claude, session): Darren Taylor has left Wesco (company announcement, 2026-11-06). |
 | B32 | Identify missing AQI and people-counting sensor data; integrate once fixed | Marjan Fathima / Valli Poornakumar; Adam Slingerland / Pradyumna Umarji | Delegated | LAD snag-list review | -- | 2026-10-15 | Route identified 08-04, integration not complete |
 | B4 | Ascent POC — get it running | Chad Steger (technical POC), Chris Askew (JACE access) | Delegated | Gate passed 08-15; superseded by direct evidence | -- | 2026-10-16 | Advanced, 09-15 to 09-28 evidence. |
 | B53 | Follow up the truncated manufacturer part number issue, summarise the need, and copy Darryl | Akansh Gangil | Delegated | Immediately, per 08-25 | **Critical** | 2026-10-15 | Akansh Gangil: "I will drop an e-mail and copy you also." Feeds A29 — if this produces no owner, A29 fires. |

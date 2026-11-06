@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-11-06 10:38 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-06 12:06 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 20 (ceiling 20) · Passive 52 · Retired 28.
+**Counts at generation:** Active 21 (ceiling 20) · Passive 52 · Retired 28.
 
 ## Active
 
@@ -33,6 +33,7 @@
 | W026 | FRBNY Smart Building bid -- pricing deadline 2026-10-21 | High | ↑ | Direct (daily M365 evidence 2026-10-14 to 2026-10-15; Turner reply email 2026-10-20, Evidence/Email_FRB_BP43_Turner_Bid_Answers_2026-10-20.pdf) | 2026-11-03 | Mandatory scope and quantities due 2026-10-21, six days out. |
 | W008 | Ford entroCIM (UDAC) renewal and platform-trust gap | Medium | ↑ | Direct (`Wesco & Ford - entroCIM Platform - Re-Alignment & Action Item Call`, 08-26; RE: SLA Verbiage email thread, weekly evidence 2026-09-02 to 09-09) | 2026-10-22 | Ford and Wesco aligned on 08-26 to renew UDAC support and let EDC support expire, using an SLA for unplanned support and SOW/SME hours for planned scope (Darryl: "Hours buy Capacity, SLA buys commitment" — `Products/entroCIM/entroCIM.md`). |
 | W029 | Returnable asset tracking: build direction set before the cost basis exists | Medium | Reopened | Direct (returnable asset tracking discussion transcript 2026-09-16; entroCIM Sensolus connector documentation 2026-09-16) | 2026-10-26 | Demoted from Active 2026-10-05 (was Medium, trend New) on the objective test — no decision pending this cycle and no new evidence since its last update. |
+| W101 | Sean McCloskey takes on Data Strategy & Governance: attention split and a new data-ownership boundary for the portfolio | Medium | New | Direct (company announcement pasted by Darryl 2026-11-06; author not stated) | 2026-11-06 | 2026-11-06 (Claude, session): Created from the 2026-11-06 announcement (`Evidence/2026-11-06_Announcement_Data_Strategy_Governance_to_Sean.md`). |
 | W002 | Dell account staffing — second dedicated entroCIM/EMS FTE requested | Medium-High | New | Direct (RE: Dell EMS Program FTE New Hire Discussion, weekly evidence 2026-10-05) | 2026-10-20 | Dell asked for a second dedicated FTE within three to five months. |
 
 ## Passive Watch
