@@ -168,6 +168,9 @@ Sean's feedback on the 2026-10-19 Engel deep-dive slides: the deck is a standalo
 - Do not define Wesco's own platforms or programs for this audience (DDP, for example); the CEO and CIO know them. Glossing reads as written for an outsider (Darryl, 2026-10-22).
 - Name the asset-management product "WAM / ADM" in headings and card titles; ADM is not a subline under WAM. ADM takes precedence in reporting going forward (Darryl, 2026-10-22).
 
+- **Section headings in customer and bid documents are plain noun phrases**, not question or "what X is" phrasings. Darryl's edits to the FRB Turner BIM response (2026-11-02): "What entroCIM is and is not" became "entroCIM's Scope"; "What it will take" became "Stages and Effort." Same rule as slide and document titles, applied to headings inside the document.
+- **In customer-facing capability statements, name only the capability that exists at that stage.** Darryl cut "alarms, and faults" from the Stage 3 3D-viewing bullet, leaving "asset data and live points" (2026-11-02): do not enumerate platform features in a roadmap item beyond what the stage itself delivers.
+
 ## 5. Benefit Notes Format
 
 Preferred notes structure:

@@ -17,6 +17,7 @@ The primary operating question: **How does the CSS Platforms portfolio create me
 - Connected Safety
 - Spanr
 - Ascent Navigator
+- Monday.com (Wesco's use of the platform) — **added verbally by Sean McCloskey, 2026-10-29 (Darryl direct)**; previously a Run product with Chris Gazdic as Product Executive (August 2026 Digital Product List). Effective date, scope and handover not yet stated; see `Products/Monday_com/Monday_com.md`
 - Contract Lifecycle Management (CLM) — enterprise, non-CSS; **not adopted in the FY27 AOP, no build in 2027 (Darryl, 2026-10-01)**. Had been intended for Darryl's team to build (Sean McCloskey, 2026-09-28). Whether it returns for FY28, and with whom, is unknown (see `Products/CLM/CLM.md`)
 - CSS AI roadmap and emerging AI-enabled capabilities
 - Managed Services capabilities across facility, asset, safety, remote monitoring, and site operations

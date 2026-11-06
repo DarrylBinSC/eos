@@ -423,6 +423,21 @@
 - Impact: top execution risk moved from stalled to actively owned at the right level. Outcome (fix date) pending; upgrade this entry when the date lands.
 - Source: 07-14 session. Communicated: not yet.
 
+### 2026-10-29 — Merck Rahway entroCIM renewal won; SkySpark license purchase authorized (close-won processing underway)
+- Customer PO, win form and proposal circulated in the "Merck Rahway renewal Win" thread (2026-10-29 to 2026-11-02); David Ochoa authorized purchasing the SkySpark license and told Darren to close it as closed-won in USD ("It should be closed today").
+- Impact: an entroCIM renewal retained at a pharmaceutical site, with the underlying SkySpark license renewed; evidence of the installed base holding through the capacity reset. Final CRM closure was not yet shown in retrieved evidence, so this is a win in process, not a confirmed booking.
+- Source: Merck Rahway renewal Win email thread, `Evidence/M365_Evidence_Weekly_2026-11-02.md`. Communicated: not yet.
+
+### 2026-10-29 — Approved entroCIM deployment strategy guide issued to Sales & Solutions
+- The 2026-10-12 deployment position (Wesco-Hosted standard, on-premise only where client policy or architecture requires it) became an approved client-discussion guide, distributed by Valli Poornakumar on 2026-10-29.
+- Impact: Sales and Solutions now work from one baseline for discovery and solutioning instead of treating on-premise and hosted as co-equal; the commercial and platform-operations consequences flagged in `03` (2026-10-12) now have a document Sales will actually use.
+- Source: "entroCIM Deployment Strategy Guide - Facilitate client discussions" email, `Evidence/M365_Evidence_Weekly_2026-11-02.md`. Communicated: not yet.
+
+### 2026-10-30 — WAM Data Enrichment feature delivered with a user guide, on the committed date
+- Akansh Gangil issued the quick user guide for WAM Data Enrichment (shipping and pricing enrichment of order records by sales order and part number, hourly batch processing, template-driven upload) on 2026-10-30, the date he and Nitin Pandey committed to on 10-06 and 10-08. Requested by Senthil Govindaswamy and the Managed Services team to shorten their Strev upload turnaround.
+- Impact: a business-requested capability delivered on its stated date by a team in the middle of a capacity reset; the guide also states the shipping-date and country-code limits openly rather than leaving users to find them (P022 remains the upstream fix).
+- Source: `Evidence/WAM_Data_Enrichment_User_Guide_Akansh_Gangil_2026-10-30.docx`; `Products/WAM/WAM.md`, 2026-10-30. Production-release confirmation not in evidence yet. Communicated: not yet.
+
 ### 2026-10-26 — SkyPosium 2026 attendance returned a usable product debrief
 - Chad Steger and Keith Bishop delivered a combined, structured debrief (compiled by Chad) covering the SkySpark 4 roadmap, Xeto, Woolly (including a per-user pricing tier not in the release notes), Ion, Haystack 5, security and the rule engine, with an entroCIM assessment and team follow-ups.
 - Impact: the direct-access value argued in the 08-26 attendance case is now on the record as output, which is the evidence the 2027 SkyPosium sizing conversation needs ("two in 2026 was a conflict, not a right-sizing").

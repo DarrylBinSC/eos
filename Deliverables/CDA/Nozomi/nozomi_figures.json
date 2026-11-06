@@ -1,0 +1,85 @@
+{
+ "lines": [
+  {
+   "vendor": "Nozomi Networks / MSP program",
+   "desc": "MSP program enrollment and central management (Vantage or CMC) for Wesco-operated Guardian instances, year one. Placeholder pending Nozomi MSP quote.",
+   "qty": 1,
+   "unit": 25000,
+   "placeholder": true
+  },
+  {
+   "vendor": "Nozomi Networks / development and lab",
+   "desc": "Guardian container licenses for development, test and demonstration instances, year one (5 nodes at the pro forma BOM placeholder of $500 upfront plus $500 annual per node).",
+   "qty": 5,
+   "unit": 1000.0,
+   "placeholder": true
+  },
+  {
+   "vendor": "Nozomi Networks / training",
+   "desc": "Nozomi certification training for CSS Platforms engineers and operations center leads (4 seats). Placeholder pending Nozomi training price list.",
+   "qty": 4,
+   "unit": 3000,
+   "placeholder": true
+  },
+  {
+   "vendor": "Nozomi Networks / services",
+   "desc": "Partner onboarding and integration support: Guardian local API, container deployment on the CDA appliance, multi-tenant setup. Placeholder pending Nozomi scope.",
+   "qty": 1,
+   "unit": 15000,
+   "placeholder": true
+  }
+ ],
+ "total_2027": 57000.0,
+ "outlook": [
+  {
+   "year": 2027,
+   "new_sites": 0,
+   "sites": 0,
+   "upfront": 0.0,
+   "annual": 0.0,
+   "total": 0.0
+  },
+  {
+   "year": 2028,
+   "new_sites": 143,
+   "sites": 143,
+   "upfront": 71500.0,
+   "annual": 71500.0,
+   "total": 143000.0
+  },
+  {
+   "year": 2029,
+   "new_sites": 287,
+   "sites": 430,
+   "upfront": 143500.0,
+   "annual": 215000.0,
+   "total": 358500.0
+  },
+  {
+   "year": 2030,
+   "new_sites": 275,
+   "sites": 705,
+   "upfront": 137500.0,
+   "annual": 352500.0,
+   "total": 490000.0
+  },
+  {
+   "year": 2031,
+   "new_sites": 166,
+   "sites": 871,
+   "upfront": 83000.0,
+   "annual": 435500.0,
+   "total": 518500.0
+  }
+ ],
+ "guardian_upfront": 500.0,
+ "guardian_annual": 500.0,
+ "revenue": {
+  "2027": 0,
+  "2028": 1162550,
+  "2029": 4300250,
+  "2030": 7906250,
+  "2031": 10572000
+ },
+ "gm_pct_weighted": 0.3292867769267014
+}

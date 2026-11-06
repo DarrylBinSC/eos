@@ -19,6 +19,7 @@ Each new bug becomes one more assertion here.
 """
 from __future__ import annotations
 import json
+import re
 import sys
 import traceback
 from pathlib import Path
@@ -125,6 +126,11 @@ def check_actions(rep: Report, items):
             a_open += 1
             if not meta.get("due") and not meta.get("trigger"):
                 rep.fail(f"{iid}: open Register A item with no due date and no trigger (dating rule)")
+        # 2026-11-06: five Register A items carried due "2026-11-6"; as text it sorted after
+        # every November date, so "due today" and "overdue" never matched. Open items must be ISO.
+        due = str(meta.get("due") or "")
+        if st == "open" and due and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", due):
+            rep.fail(f"{iid}: open item due='{due}' is not YYYY-MM-DD")
     if a_open > CAPS["register_a"]:
         rep.warn(f"Register A open = {a_open}, cap {CAPS['register_a']} (disposal sweep due)")
     rep.passed(f"Register A: {a_open} open, all dated or triggered")

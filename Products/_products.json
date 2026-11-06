@@ -136,6 +136,16 @@
       "aliases": [
         "Unified Platform"
       ]
+    },
+    {
+      "name": "Monday.com",
+      "file": "Products/Monday_com/Monday_com.md",
+      "live": true,
+      "aliases": [
+        "Monday.com",
+        "monday.com"
+      ],
+      "_note": "Added 2026-10-29: Sean McCloskey verbally added Wesco's use of Monday.com to Darryl's portfolio. Hide if it should not carry a card yet."
     }
   ]
 }

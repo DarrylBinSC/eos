@@ -2,7 +2,31 @@
 
 > **New session? Read `CDA_Start_Here.md` first** (current files, how to rebuild the deck, working rules, open items).
 
-As of: 2026-10-26 (SecuriThings deck reviewed; prior: 2026-10-14, Mooney refresh email drafted; prior: 2026-10-07; 2026-10-06; front door created 2026-09-01). Created this date to close a routing gap: CDA has substantial evidence and decision history (see `03`, `05`, and this folder's phase files) but, unlike WAM, entroCIM, and Navigator, had no single durable knowledge file at the folder root. This file is that front door; phase files (`00_Charter` through `05_Operating_Record`) hold the working detail and are not duplicated here.
+As of: 2026-10-30 (Nozomi intake and BIR drafted; intake slide and business case refreshed; prior: 2026-10-26, SecuriThings deck reviewed; prior: 2026-10-14, Mooney refresh email drafted; prior: 2026-10-07; 2026-10-06; front door created 2026-09-01). Created this date to close a routing gap: CDA has substantial evidence and decision history (see `03`, `05`, and this folder's phase files) but, unlike WAM, entroCIM, and Navigator, had no single durable knowledge file at the folder root. This file is that front door; phase files (`00_Charter` through `05_Operating_Record`) hold the working detail and are not duplicated here.
+
+## Nozomi Guardian MSP enablement: Demand Intake and BIR drafted (added 2026-10-30)
+
+Nozomi gets its own Demand Intake and BIR, separate from CDA: a 2027 expense request of $57,000 on the entroCIM product budget to enroll Wesco as a Nozomi MSP, license development and lab Guardian instances, train engineers and operations leads, and take onboarding support, so the CDA cyber value proposition can be built and demonstrated in 2027; production Guardian licenses scale with CDA sites from 2028 and are recovered in the site fee.
+
+Source: Darryl, chat, 2026-10-30 (scope answers: MSP; Guardian on each CDA instance; cyber value proposition for CDA and eventually entroCIM deployments; BIR on entroCIM starting 2027, scaling with usage; licensing and training needed to build the product; submit by end of next week). Register A item created (`05`, due 2026-11-06). Template: `Evidence/BIR Workbook 2026 Rev4.xlsx` (Darryl, 2026-10-30).
+
+- **Files:** `Deliverables/CDA/Nozomi/2026-11-06_Nozomi_Guardian_Intake.pptx` (title, Demand Intake form, "Nozomi Guardian inside CDA", "Request and licensing outlook", end) and `2026-11-06_Nozomi_Guardian_BIR.xlsx` (Detail, Explanation, Cost Benefit Analysis). Generators `build_scripts/build_nozomi_bir.py` (writes `Nozomi/nozomi_figures.json`) and `build_nozomi_intake.py`; node counts and the Guardian BOM placeholder come from pro forma v4.6 (Model, BOM).
+- **The 2027 request, all planning figures except the BOM line (yellow on Detail, Darryl to confirm with Nozomi):** MSP program and central management $25,000; development and lab Guardian instances 5 at $1,000 ($500 upfront plus $500 annual, the pro forma BOM placeholder marked "to source"); certification training 4 seats at $3,000; onboarding and integration support $15,000. Total $57,000, expense, not budgeted, New BIR, Information Systems, completion 2027-12-31.
+- **Production outlook (not in the request), from the pro forma site plan at the BOM placeholder:** 2028 $143,000 (143 sites); 2029 $358,500 (430); 2030 $490,000 (705); 2031 $518,500 (871). Upfront on new sites plus annual on sites under contract; to be re-set at Nozomi MSP terms. Volume terms here are the largest lever on the CDA fee (pro forma finding, 2026-09-29).
+- **Cost Benefit Analysis tab carries the CDA pro forma v4.6** (periods 0 to 5 = 2026 to 2031): net sales and COGS from the Model tab (COGS includes per-site capital amortization, so no separate capex or depreciation), salaries = 2027 build plus sustain team, Other SG&A = commission plus marketing, row 18 (2027) = this request. EBITDA ties to the Model's net contribution row to the dollar. Result at the template's 10 percent WACC and 27 percent tax: five-year project cash flow $3.16M, NPV $1.95M, IRR 97 percent, payback period 4; the template flags payback over 3 years. Labelled illustrative and not yet vetted, consistent with the 2026-10-02 sharing rule.
+- **Still to confirm before submission (Darryl):** Detail site number, site name, legal entity and legacy company (left blank, yellow); whether Nozomi Networks exists as a vendor in the AP system; the three placeholder unit costs; Strategy 1 and the Risk primary driver on the form; the finance representative (the intake template lists Rob Cooke for CSS).
+- **Open items carried from Phase 2 and named as risks in the BIR:** Guardian container licensing on a Wesco-owned node, multi-customer terms, Arc attach licensing, API stability.
+
+## Intake slide and business case refreshed as the roadmap record; Nozomi to get its own intake and BIR (added 2026-10-30)
+
+The August intake slide and Wesco Business Case were rebuilt to match the post-AOP position and what Bill Muczko and Matt Powers have been told: existing product on the entroCIM roadmap, no incremental FY27 budget, no seed funding or BIR, Bill Muczko as business sponsor, Technology Services as delivery partner, one per-site fee with one service level, SecuriThings named as the priced competitor.
+
+Source: Darryl, chat, 2026-10-30 (decision in `03` 2026-10-30). Files: `Deliverables/CDA/2026-10-30_CDA_Intake.pptx` (7 slides: title, Demand Intake form, the device problem, the service, the offer and how it is delivered, where it stands, end) and `2026-10-30_CDA_Business_Case.docx` (Wesco Business Case template, every field rewritten; scoring tables untouched). Generators in `Deliverables/CDA/build_scripts/` (`build_cda_intake.py`, `build_cda_business_case.py`); every figure is read from pro forma v4.6 Deck Figures. August files kept as `SUPERSEDED_2026-08-18_CDA_Intake_v2.pptx` and `SUPERSEDED_2026-08-11_CDA_Wesco_Business_Case_v2.docx` (in `Deliverables/CDA/` and renamed in place in the Phase 3 and Phase 4 folders).
+
+- **Darryl's framing:** "I don't think we need the full enterprise intake for CDA." Reading adopted: the intake form is the standard record behind a roadmap product, answered truthfully; the business case is written so it also serves the Technology Services business review and the sponsor.
+- **Story simplified to three sentences** (used in both files and to be reused): devices Wesco sells drift out of support, license and cyber compliance after the sale and nobody is accountable for them; CDA is a multi-vendor, per-site annual managed service that keeps them covered, delivered from a Wesco operations center with integrator-inclusive field remediation; it opens accounts for sellers and pulls through ALM, WAM and refresh. Compliance-framework design, the two tiers, the data-confidence ladder and the five-step chain from August are out of the record (not out of the product).
+- **Claude's calls inside the form, for Darryl to confirm:** Strategic Investment alignment set to Strategy 1 (extend our leading scale and value proposition); Primary Driver set to Financial Benefits with Customer Success second; Estimated Size Medium; Intel is not named in either file (TS relationship, not yet confirmed as an anchor); Nozomi is named in the business case Dependencies only (internal document).
+- **Nozomi is separate (Darryl):** the Nozomi piece will go through Demand Intake with a BIR. Scope, budget owner, amount and timing not yet stated; to be defined before the slide and BIR are drafted.
 
 ## CDA vs. SecuriThings cost comparison, and a deployment-model correction (added 2026-10-26)
 
@@ -457,3 +481,25 @@ Full ideation and phase history retained in this folder: `00_Charter` (thesis, m
 ## Business Sponsor: Bill Muczko (added 2026-10-22, Darryl direct)
 
 Lead: Darryl named Bill Muczko as the CDA Business Sponsor for the CSS Platforms portfolio slide (2026-10-22), closing the "?" the August Digital Product List carried. First use: `Deliverables/Exec_Briefs/2026-10-22_CSS_Platforms_Portfolio_v3.pptx`. Whether Bill has formally accepted the role is not evidenced; stated by Darryl for reporting.
+
+## CDA Requirements Spec v0.1: Phase 1 scope set, Nozomi local-vs-cloud finding, per-site pricing reaffirmed (added 2026-11-03)
+
+First draft of the CDA High-Level Product Requirements circulated 2026-11-02 (`Deliverables/.../2026-11-02_CDA_Requirements_Spec_v0.1.docx`, revised same morning with Darryl's three stated capability goals: a Nozomi analysis component, auto-onboarding, and a service execution rule set). Phase 1 (first site release) scope: cameras plus SNMP/IT devices; explicitly **no device write actions and no point-level Nozomi integration** in this phase. Dates are deliberately not set in the spec -- owned instead by the 2027 roadmap reconciliation (Darryl, Ron Snyder, David Blondel; `05` A64).
+
+**Nozomi Guardian, local vs. cloud (Darryl, verbatim):** "The problem was because of the way the traffic's routed, it strips away... MAC address information. So you can't go through that tunnel fully intact and have the Guardian do all of its magic." On the earlier local deployment: "When we put the Guardian local... We discovered firmware, we discovered all this stuff... When it was in the cloud... we probably lost at least a third of the value proposition." This is a real architecture constraint for the CDA/Nozomi integration path, not yet reflected as a dependency in the Requirements Spec.
+
+**Sizing heuristic stated for point-count scoping:** "For 40 cameras, I said 1000 points was enough. For 100 cameras, I said 2500, and for 200 cameras, I said 5000 was enough."
+
+**Pricing strategy reaffirmed, narrows the open enterprise-pricing question (`03` Decision Backlog D039, `04` W001):** "we want a customer to buy, at least right now, one per site for an annual fee... We're not trying to make this a big tiered product... It's not the strategy right now." Per-site packages stay the model for now; willingness-to-pay evidence and named anchor accounts are still the open items on D039.
+
+Source: CDA - High Level Product requirements (transcript), 2026-11-02; `Evidence/M365_Evidence_Daily_2026-11-03.md`.
+
+
+## Nozomi MNDA fully executed (added 2026-11-04, Darryl direct)
+
+The mutual NDA between Wesco International and Nozomi Networks is fully executed; Darryl filed the signed copy on 2026-11-04. Nozomi commercial detail (MSP program terms, pricing, discounts) can now be exchanged under it, which clears the confidentiality dependency on the MSP enablement intake (`05` A71).
+
+- Source: `Evidence/NOZOMI_EXECUTED_MNDA with Wesco International (6a79d93887) Executed.pdf`.
+- Effective date August 11, 2026; term three years from the Effective Date (to August 2029), terminable by either party on written notice; confidentiality obligations survive three years after termination.
+- Purpose clause covers evaluation of a business relationship including product configuration, discounts and agreement terms.
+- Status before this: the MNDA was not tracked as a register item; it surfaces here as a closed dependency, not a new action.

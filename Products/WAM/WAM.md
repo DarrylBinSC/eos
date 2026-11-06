@@ -1,6 +1,17 @@
 # Wesco Asset Management (WAM)
-As of: 2026-10-29 (FY27 development team listing filed, `WAM_Team.md`; prior: 2026-10-19 weekly evidence: DDPTRK-6346 complete, WACT recorded, IDP parked; prior: 2026-10-15 cross-SBU data-capture session notes filed; prior: 2026-10-14 ADM constraints slide and capacity reset inputs; 2026-10-13 ADM license tracking scorecard; 2026-10-07; earlier: 2026-08-17 FY27 P&L section added; base 2026-08-05) — merged: 30-day baseline + daily evidence + context library v1 (files 20/22) + WAM actuals deck (07-15) + WAM Backlog Deep Dive deck (08-05). Companions: `WAM_Data_Architecture.md`, `Part_Classification.md`, `WAM_Roadmap.md` (**rewritten 08-05 from the Backlog Deep Dive deck; the July track-based slide is preserved inside it as the prior version**).
+As of: 2026-11-06 (daily evidence: portfolio deck 11-06, ADM statistics; prior: 2026-11-02 (weekly evidence: enrichment live by Excel first, 2027 capacity about 16 to 8 stated to Amy Aguirre, Strev $80K re-pointed to the site-survey tool; prior: 2026-10-29 (FY27 development team listing filed, `WAM_Team.md`; prior: 2026-10-19 weekly evidence: DDPTRK-6346 complete, WACT recorded, IDP parked; prior: 2026-10-15 cross-SBU data-capture session notes filed; prior: 2026-10-14 ADM constraints slide and capacity reset inputs; 2026-10-13 ADM license tracking scorecard; 2026-10-07; earlier: 2026-08-17 FY27 P&L section added; base 2026-08-05) — merged: 30-day baseline + daily evidence + context library v1 (files 20/22) + WAM actuals deck (07-15) + WAM Backlog Deep Dive deck (08-05). Companions: `WAM_Data_Architecture.md`, `Part_Classification.md`, `WAM_Roadmap.md` (**rewritten 08-05 from the Backlog Deep Dive deck; the July track-based slide is preserved inside it as the prior version**).
 
+
+## Daily evidence, 2026-11-05 to 2026-11-06 (added 2026-11-06)
+
+The 2026-11-06 Digital Products Portfolio Status Update still lists the complex-build capture path as under evaluation, and names two ADM roadmap lines not previously on file.
+
+Source: Digital Products Portfolio Status Update.pptx, modified 2026-11-06 by Anu Verma (WAM slide visible in retrieval; full deck not paged); ADM Statistics email, 2026-11-05 (`Evidence/M365_Evidence_Daily_2026-11-06.md`). Durable/Transient calls are Claude's.
+
+- **Complex-build capture path (Durable, unchanged):** "Determine complex-build asset capture path and system of record (WMX, VAS, Strev under evaluation; WACT eliminated)." Matches the record (`WAM_Data_Architecture.md` §7; `05` A67). No owner or date on the slide.
+- **Two ADM roadmap lines, as stated on the slide (Durable, new to this file):** "Automating Asset data extraction for Managed Services team through ADM" and "Gold EUDM integration for ADM for extracting license data." The second bears on the Gold EUDM/WMX refresh timing in Pulse `P128`. Scope and dates not visible in retrieval.
+- **DDPTRK-6346 (Transient, already recorded complete 2026-10-19)** still appears on the slide as a line item; no change.
+- **ADM sales-tracking report (Transient):** Natalie Marquardt, 2026-11-05: "I am still having some challenges getting the report that has been built for tracking sales correct we keep asking for little changes." Her monthly ADM statistics update for Darryl's deck is now `05` C83 (early next week); she offered a standing first-week-of-month update if Darryl names the date.
 
 ## Weekly evidence, 2026-10-12 to 2026-10-19 (added 2026-10-19)
 
@@ -598,3 +609,27 @@ Source: John Erickson email, 2026-10-28, CC Chris Gazdic (`2026-10-28_John_Erick
 - **Material gap (Claude's assessment):** the retained list shows no data engineer or Azure Databricks skill, against Akansh's run model of two data engineers must-have and three ADB people to advance DDP. Akansh called Krishna and Lavanya Databricks on 2026-10-23; Nitin calls them Backend and Front end. QA falls from five to one. Questions drafted for Nitin in `WAM_Team.md`.
 - Caveats carried from the source: FY27 AOP not finalized; the Platform Pillar may make further changes. The attached `cross-portfolio_dependencies.xlsx` (all Digital Products) is not filed (Darryl, 2026-10-29: ignore for now).
 - Register: D001, A61 (dated lines added 2026-10-29); W016 noted; C63 (Digital Products takeover of WAM development) unchanged.
+
+## WAM Data Enrichment feature: quick user guide from Akansh Gangil (added 2026-10-30)
+
+The Data Enrichment feature is in the Asset Data Manager platform with a written user guide, on the 2026-10-30 date Akansh and Nitin committed to; the guide itself records the shipping-date and country-code limits that P022 tracks. Source: `Evidence/WAM_Data_Enrichment_User_Guide_Akansh_Gangil_2026-10-30.docx` (author Akansh Gangil, created 2026-10-30; supplied by Darryl, 2026-10-30).
+
+- **What it does.** Enriches order records with Shipping Information, Pricing Information, or both. Reached from the Asset Data Manager left navigation ("WAM Data Enrichment"), WAM sign-in by SSO. Flow: select enrichment, download template, upload file (multiple files allowed), wait for processing, download output.
+- **Input.** Sales Order Number mandatory per row; Wesco Part Number or Manufacturer Part Number required. Sales-order cleaning: values shorter than 8 characters are zero-prefixed; a hyphen and anything after it are removed; the query value is returned as "Cleaned Sales order number."
+- **Processing.** Batch job once every hour; all pending requests processed in turn each cycle; a countdown shows time to the next cycle; upload dates shown in PST. Statuses: Processing, Completed, Failed (for example an unavailable API; retry later).
+- **Output.** Original input columns; cleaned sales order; Shipping (Shipping Date, Must Shipping By Date, address lines 1-4, city, state code, postal code, country code); Pricing (selling price per unit and currency); Shipping Info Status and Pricing Info Status naming missing attributes per row.
+- **Stated limits (the P022 gap in product terms).** "Shipping Date may be unavailable for some orders." "For direct-ship orders, Shipping Date availability is still being improved with the EUDM team." "Shipping Country Code currently identifies United States and Canada. Other countries may appear as Others and should be reviewed using the address details before use."
+- Support contact in the guide: Akansh Gangil.
+- Context: requested 09-04 by Senthil and the Managed Services team to speed uploads to Strev (WS-8166); 10-30 date committed by Akansh 10-06 and Nitin 10-08 (above). Production release status is not stated in the guide; the 10-22 WAM Product discussion named 2026-10-30 as the production release date for the DDP-transaction path (P022).
+
+## Weekly evidence, 2026-10-26 to 2026-11-02: enrichment live by Excel first, 2027 capacity stated to the business, Strev $80K re-pointed (added 2026-11-02)
+
+The first WAM/EDM data-enrichment path is live, returning an Excel output from sales-order and part-number inputs; direct WAM population is later work, and Amy Aguirre has now asked for a seat in the requirements work.
+
+Source: weekly M365 evidence 2026-10-26 to 2026-11-02 (`Evidence/M365_Evidence_Weekly_2026-11-02.md`): Weekly Sync 2026-10-30 (transcript, complete), Strev Amendment No. 2 review 2026-10-27 (transcript, complete), WAM - Product Team Teams thread 2026-10-30.
+
+- **Enrichment delivery path (Durable).** Akansh Gangil confirmed the feature live on 2026-10-30 and emailed to Violet and team. Darryl described the Excel output as the first path before WAM integration. Complements the 2026-10-30 user-guide entry above (shipping-date and country-code limits as shipped).
+- **2027 capacity, Darryl's own words to the business owner (Durable).** WAM/EDM development capacity falls from about 16 people across two sprint teams to 8 for 2027; entroCIM also materially reduced. Stated to Amy Aguirre in the Weekly Sync. Consequence named in the same session: unprioritized feature intake now costs more than it did; requirements have to be gathered once (`05` A72: Amy, Senthil, Violet, Jeff White).
+- **Requirements gap surfaced after the first release.** Amy said she had not been included in the enrichment work and named tracking data as a further need; Jeff White identified as the person doing scoping in front of customers and sales. Darryl committed to invite Amy and to gather requirements from the four of them.
+- **Strev commercial model, three components (Durable).** The 2026-10-27 amendment review separated platform AI enablement, the feature-pack capability, and Wesco-funded API/token consumption. Brian Miller took the detailed markup (`05` C77).
+- **Strev $80K reallocation and no AI in QA (decided 2026-10-30, `03`).** Amy asked Sunny Sharma to redraft the amendment so the additional $80K is applied to the site-survey tool rather than the AI charge (`05` C81, awaited); Amy agreed to Darryl's proposal not to enable Strev AI in QA and to focus the spend on production. AI token/API budgeting still has no home (`04` W006); Amy is taking the feature pack to the AI Council this week (`05` C79).

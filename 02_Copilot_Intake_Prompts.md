@@ -645,6 +645,10 @@ RULES
 
 **After pasting into Claude.** Claude routes B as sightings on the existing Pulse issues, C as new `P###` issues, E as knowledge entries, D as calls for Darryl in the web app, sets `last_evidence` for every forum in A that was found, and files F against `05` B102. The raw output is saved to `Evidence/` as `M365_Evidence_PulseCatchup_<end date>.md`.
 
+## 6. Ad Hoc Deep-Dive: Monday.com at Wesco (added 2026-10-29)
+
+One-time prompt for the Monday.com portfolio addition. Full text in `Products/Monday_com/2026-10-29_Copilot_Monday_com_Deep_Dive_Prompt.md`. Save the result as `Evidence/M365_Evidence_MondayDeepDive_YYYY-MM-DD.md`. Monday.com remains on the out-of-scope list in sections 1 to 3 until Sean McCloskey confirms the ownership; then move it to the in-scope products.
+
 ## After Pasting into Claude
 
 **Save the raw package first (added 2026-08-25).** Drop the Copilot .md file into `Evidence/` before pasting. Until 08-25 no raw package had ever been retained, which is why a thirteen-day question about whether section 6b was being returned could not be answered from the record and needed a live run to settle. Keeping them makes intake defects diagnosable after the fact instead of only in the moment, and lets a prompt change be judged against the package that motivated it.

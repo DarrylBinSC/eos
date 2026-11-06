@@ -1,6 +1,6 @@
 # WAM Development Team
 
-As of: 2026-10-29. Source: John Erickson email to Darryl, 2026-10-28, sent at Chris Gazdic's request (`2026-10-28_John_Erickson_WAM_FY27_Team_Listing.pdf`, this folder). Reference file for the team Darryl works with on WAM/ADM development; roadmap and workload discussions start here. Never a register: capacity decisions live in `Registers/` (D001, A61), evidence in `WAM.md`.
+As of: 2026-10-30. Source: John Erickson email to Darryl, 2026-10-28, sent at Chris Gazdic's request (`2026-10-28_John_Erickson_WAM_FY27_Team_Listing.pdf`, this folder). Reference file for the team Darryl works with on WAM/ADM development; roadmap and workload discussions start here. Never a register: capacity decisions live in `Registers/` (D001, A61), evidence in `WAM.md`.
 
 ## Status of this listing
 
@@ -15,13 +15,13 @@ As of: 2026-10-29. Source: John Erickson email to Darryl, 2026-10-28, sent at Ch
 | Name | Skill | Type | Allocation | Providing organization |
 |---|---|---|---|---|
 | Chandana Buduru | Backend | FTE | 100% | Platform (Mereby) |
-| Jafar Sadiq | Backend | FTC | 100% | Platform (Mereby) |
-| Krishanaunni R ("Krishna") | Backend | FTC | 100% | Platform (Mereby) |
-| Lavanya Neelam | Front end | FTE | 100% | Platform (Mereby) |
+| Jafar Sadiq | Backend | FTE (listing said FTC; Nitin Pandey, 2026-10-30: FTE) | 100% | Platform (Mereby) |
+| Krishanaunni R ("Krishna") | Backend; Azure Databricks (Akansh Gangil, 2026-10-30) | FTC | 100% | Platform (Mereby) |
+| Lavanya Neelam | Front end; Azure Databricks (Akansh Gangil, 2026-10-30) | FTC (listing said FTE; Akansh, 2026-10-30: the three FTCs are Krishna, Lavanya, Amar) | 100% | Platform (Mereby) |
 | Shivakrishna Chukka ("Shiva") | Front end | FTE | 100% | Platform (Mereby) |
 | Amarnath Pullalarevu | QA | FTC | 100% | Platform (Mereby) |
-| Balasubramanian K ("Bala") | Architect | FTE | 50% | Platform (Mereby) |
-| Nitin Pandey | Engineering Manager | FTE | 50% | Platform (Mereby) |
+| Balasubramanian K ("Bala") | Architect | FTE | 50% (other 50%: FTTX, Nitin 2026-10-30) | Platform (Mereby) |
+| Nitin Pandey | Engineering Manager | FTE | 50% (other 50%: FTTX, Nitin 2026-10-30) | Platform (Mereby) |
 
 Skill mix: 3 backend, 2 front end, 1 QA, 0.5 architect, 0.5 engineering manager. Three of the six engineers are contractors (FTC).
 
@@ -39,7 +39,7 @@ Suresh Alagarsamy, Rounak Bhattacharjee (UX designer, Digital Innovation Center 
 4. **Architect and engineering manager at 50%**: the other half of each is not stated.
 5. The retained team (7.0 FTE) is below the eight-person minimum run model and well below the Run plus DDP option (11) Darryl recommended on 2026-10-14. D001 and A61 carry this.
 
-## Questions for Nitin Pandey (sent by Darryl; answers to be filed here)
+## Questions for Nitin Pandey (sent 2026-10-29 10:39, CC Akansh Gangil, David Blondel, Bala; reply asked for by early the week of 2026-11-02; tracked as C80)
 
 1. Jafar Sadiq's name is marked red in your table. What does that signify?
 2. Your own row (Engineering Manager, 50%) is not highlighted in your table but is highlighted on the Platform list. Confirm you are on the FY27 team at 50%.
@@ -48,6 +48,21 @@ Suresh Alagarsamy, Rounak Bhattacharjee (UX designer, Digital Innovation Center 
 5. The three contractors (Jafar, Krishna, Amarnath): contract end dates and renewal status.
 6. Does the team have access to Copilot or Claude for coding assistance, and is it in use?
 
+## 2026-10-30: Nitin Pandey and Akansh Gangil answer the six questions (five of six; contract dates pending)
+
+The FY27 team carries two Azure Databricks-capable engineers (Krishna and Lavanya, both contractors) against the run model's three ADB and two data engineers, and nobody labelled data engineer; the rest of the listing is confirmed with two type corrections. Source: email thread "FY27 WAM development team: a few questions", replies 2026-10-29 (Nitin) and 2026-10-30 (Nitin, Akansh); `Evidence/M365_Evidence_Daily_2026-10-30.md`. Tracked as C80; decision in D001 / A61.
+
+1. Jafar's red marking: Nitin, "Jafar will be part of the FY27 WAM team and is an FTE resource." (The listing typed him FTC; corrected in the table above.)
+2. Nitin's row: "Yes, I will be part of the FY27 WAM team at 50% allocation."
+3. Databricks and EUDM/DDP coverage: Akansh, "Krishna and Lavanya have Azure Databricks expertise. The three FTCs are Krishna, Lavanya, and Amar." Akansh also: "This is the correct skill and type marking." Nitin's listing had Lavanya as FTE; Akansh's statement makes her FTC. Both Databricks-capable people are therefore contractors, which is why question 5 still matters.
+4. The other 50%: Nitin, "Bala and I will both be allocated 50% to WAM and 50% to FTTX."
+5. Contractor end dates: Nitin, "I will validate the exact contract end dates with Rajesh and share the confirmed details separately." Still awaited (C80).
+6. Coding assistants: Nitin, "The team currently has access to and is actively using GitHub Copilot for coding assistance. At present, the team does not have access to Claude."
+
+What this changes in the reconciliation above: point 1 narrows from "no data-engineering skill" to "two ADB-capable contractors, no dedicated data engineer, one short of the three-ADB run model." Whether that is a seat-swap ask to Chris Gazdic or an accepted constraint is Darryl's call (D001).
+
 ## Change history
 
 - 2026-10-29: file created from the 2026-10-28 listing; eight retained, eleven released; reconciliation questions drafted for Nitin.
+- 2026-10-29: questions sent to Nitin by email (CC Akansh, David, Bala); awaited as C80. Darryl: Sean conversation waits on question 3; a confirmed data-engineering gap goes to Chris Gazdic as a seat swap within the eight, not an ask for more people.
+- 2026-10-30: answers from Nitin Pandey and Akansh Gangil filed (five of six); Jafar and Lavanya type corrected in the table; Databricks coverage identified as Krishna and Lavanya.

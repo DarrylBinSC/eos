@@ -1,7 +1,7 @@
 # CDA: Start Here
 
 **Purpose:** the entry point for any new session (Claude or another LLM) continuing the Connected Device Assurance business case. Read this first, then `CDA.md` (newest entries at the top) for history and reasoning.
-**Last updated:** 2026-10-02, after the sponsorship meeting (Bill Muczko accepted).
+**Last updated:** 2026-10-30 (intake slide and business case refreshed as the roadmap record).
 **Owner and decision-maker:** Darryl Benson, Senior Director, CSS Platforms, Wesco.
 
 > **Status 2026-10-06: CDA was not approved as a standalone FY27 investment. It continues on the entroCIM roadmap, built by the entroCIM team, with its own FY27 numbers at zero. Market positioning is unchanged (CDA stands alone to customers).** Read the top section of `CDA.md` and `03` 2026-10-06 before doing any CDA work; the funding ask in the files below is now historical.
@@ -10,6 +10,9 @@
 
 | File | What it is |
 |---|---|
+| `Nozomi/2026-11-06_Nozomi_Guardian_Intake.pptx`, `Nozomi/2026-11-06_Nozomi_Guardian_BIR.xlsx` | Nozomi Guardian MSP enablement: Demand Intake deck and BIR (2026 Rev4 workbook), 2027 request $57,000 with placeholders pending Nozomi's quote. Built by `build_scripts/build_nozomi_bir.py` then `build_nozomi_intake.py`. |
+| `2026-10-30_CDA_Intake.pptx` | The Demand Intake record for CDA as a roadmap product (existing, entroCIM roadmap, no incremental budget, no seed funding or BIR), plus four story slides. Not a funding submission. Built by `build_scripts/build_cda_intake.py` from the August intake deck and pro forma v4.6. |
+| `2026-10-30_CDA_Business_Case.docx` | The Wesco Business Case, rewritten to the current story (sponsor Bill Muczko, TS delivery model, per-site fee, SecuriThings named). Built by `build_scripts/build_cda_business_case.py`. Serves the TS business review and the sponsor as well as the record. |
 | `2026-10-06_CDA_Sean_Exec_Brief.md` / `.docx` | Executive brief for Sean's 2026-10-06 walkthrough (Darryl's framing, 2026-10-05): status after the business case review (agreed to continue; Bob's and Peter's input), Bill Muczko's support, the FY27 funding question (fund CDA as a project, or fold the capability into the entroCIM roadmap), and slides 8 and 10 embedded as exhibits (images in `2026-10-06_CDA_Sean_Exec_Brief_slides/`). Supersedes the 2026-10-05 risk-led draft, kept as `SUPERSEDED_2026-10-05_CDA_Sean_Briefing`. |
 | `2026-10-02_CDA_Pro_Forma_v4.6.xlsx` | The model. Current version. Its **Deck Figures** tab is the single list of every number the deck uses, each with a formula, display format, source cell and slide. |
 | `2026-10-02_CDA_Product_and_Business_Case.pptx` | The 21-slide sales-and-executive deck, Wesco template, built entirely by the script below. |
@@ -29,6 +32,7 @@
 - **Deck order:** 1 Title, 2 After the initial sale, 3 The service, 4 Why Wesco, 5 Three platforms stronger, 6 How it sells, 7 What a seller earns, 8 One site, 9 Anchor accounts, 10 Sites in the plan (Gantt with yearly totals), 11 Plan 2027 to 2031, 12 Staffing, 13 Market, 14 Evidence and estimates, 15 What is needed, 16 Appendix divider, 17 Fee build, 18 Capital and cash, 19 Device coverage, 20 Slides by audience (internal; remove before the deck leaves Wesco), 21 End.
 - **Sharing rule (Darryl, 2026-10-02):** the workbook does not go to Bob Caprise or anyone outside the team until Sean McCloskey has vetted the numbers. Figures may be shown in slide form, as an early pro forma, to foster a business decision (Darryl, 2026-10-02); the workbook itself stays internal.
 - **Sponsor:** Bill Muczko accepted, 2026-10-02. Meeting summary: `Deliverables/CDA/2026-10-02_CDA_Sponsorship_Meeting_Summary.md`.
+- **Nozomi (2026-10-30):** goes through Demand Intake with a BIR, separately from CDA: MSP enablement, $57,000 of 2027 expense on the entroCIM budget (placeholders pending Nozomi quote), submit by 2026-11-06. Drafts in `Deliverables/CDA/Nozomi/`; `CDA.md` 2026-10-30.
 - **Next:** Sean walkthrough of the numbers, Tuesday 2026-10-06 (Sean informed by Teams 2026-10-02); send attendees the deck PDF (without slides 17 and 20); define the product scope so the sales enthusiasm lands on a defined offer; enterprise pricing construct (`03` Backlog 2026-10-02).
 
 ## How to rebuild the deck

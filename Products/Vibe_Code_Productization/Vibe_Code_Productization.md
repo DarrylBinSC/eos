@@ -64,7 +64,7 @@ Launch Studio is in the same 30-minute portfolio meeting with Sean (week of 2026
 - Of five candidate problem framings, Darryl chose the **capacity vehicle** as the best fit: a business-funded home for CSS team capacity.
 - Scalability and security concerns roll up into one statement of the problem: **the business has the expertise and ability to define problems; Darryl's team has the ability to launch them professionally and maintain them for the business.**
 - **"At scale" means production-grade quality** for whatever segment or segments need it. A product may serve one business (CSS, ESS, UBS) or span them.
-- No concrete candidate ideas are known yet; the first look is expected from the Mike Wassil meeting, postponed from 2026-10-08 to Mon 2026-10-12.
+- No concrete candidate ideas were known at this point; the first, BOM Studio, arrived 2026-10-29 (see the section of that date and `Candidates/BOM_Studio.md`).
 - **Terminology (Darryl, 2026-10-07, second pass): "the business" is CSS. Launching and sustaining production-grade software is the job of Darryl's team, which is IT (CSS Platforms).** Do not write "CSS can launch it" meaning Darryl's team; CSS is the customer of this service.
 - **Job to be done (Claude's draft, Darryl accepted):** "When my team has built a prototype that solves a real problem, I want it running reliably, securely and supported for my segment, so I get the business result without building a software organization."
 - **Internal managed service (Claude's framing, Darryl: "spot on").** Caveat from Darryl: the definition of managed service may need adjusting, because Wesco is looking at managed services as a company. Keep the term from colliding with the customer-facing CSS Managed Services model (`Reference/Managed_Services_Operating_Model.md`) until that is settled.
@@ -140,3 +140,36 @@ Claude's notes on "Product Studio" (for Darryl's decision): at Wesco "product" a
 - Register A: `05` A60.
 - Decision of record: `03` 2026-10-06 (threads opened).
 - Source log: `Source_Log.md`.
+
+## First candidate on record: BOM Studio from Technology Support Services (added 2026-10-29)
+
+BOM Studio, a working AI data center design tool built by Robert Ehiemua (Senior Director, Technology Support Services), is the first concrete Launch Studio candidate; Darryl, Brad Stevens and Nate Kehr discussed packaging it with entroCIM, WAM / ADM and Navigator / Ascent as a managed-services offer the same day.
+
+Source: Darryl, direct, 2026-10-29; three screenshots and a 47-tab design export from Robert Ehiemua in `Evidence/`. Full candidate record in `Candidates/BOM_Studio.md`.
+
+- What it does: generates a reference design (3D hall, floor plan, power and cooling, schedules, commercial view) and a complete BOM from a platform selection; the export on file is a GB300, 576-GPU pod with 136 BOM lines, 2,332 cable assemblies, a 460-point BMS map and 129 passing design checks.
+- Why it is a strong first case: working and deep, clear business owner, and a plain IT-absorption argument (public IP over HTTP, pricing data, "saved locally").
+- Two threads, filed separately: productize the tool (Launch Studio gate) and package it with managed services (offer question with Sales). Decision `D099` holds the routing question.
+- Not yet known: usage on real projects, TS sponsorship (Vinay Prabhu, Matt Powers), what Robert has asked for, whether an opportunity sits behind the bundle.
+- Claude's note: whether BOM Studio goes through the Launch Studio gate as its first proof case, or straight into a CSS Platforms and TS conversation, is Darryl's call and is not assumed here.
+
+## BOM Studio: runs on the builder's own desktop; Launch Studio conversation today (added 2026-10-30)
+
+Darryl told the Launch Studio group that BOM Studio "is running on his gaming rig on the desk behind him, so to scale this one, we'll need to get going," and set a conversation for 2026-10-30; Michael Wassil offered to discuss Launch Studio. Detail and quotes in `Candidates/BOM_Studio.md`, 2026-10-30 section. Decision D099. Source: Launch Studio Teams chat, 2026-10-29 (`Evidence/M365_Evidence_Daily_2026-10-30.md`).
+
+## 2026-11-04: first BOM Studio conversation; meeting deck cut to one slide with softened language (added 2026-11-04)
+
+Darryl showed the Launch Studio model to the BOM Studio team for the first time using a single slide, the model overview, with ownership-retention and builder slides hidden and all directive language softened so the business does not read it as IT taking their idea.
+
+- Deck: `Deliverables/Vibe_Code_Productization/2026-11-04_Launch_Studio_BOM_Studio_Meeting_Deck.pptx` (cut from the 10-14 Sean deck; asks-to-Sean, roles, on-ramp, pilot plan and evidence slides removed; nothing names BOM Studio or Robert Ehiemua).
+- Positioning for business-facing first showings (Darryl, 2026-11-04): "Your idea, your product direction"; IT adds hosting, security and support; the builder keeps the idea and the credit; sandbox is a legitimate end state. Retired phrasings for that audience: "If IT touches it, IT owns it", "No halfway tier", "No sponsor, no production", "IT carries", "Full ownership". These remain correct internally and with Sean.
+- Slide 3 ("Ways we can work together": Sandbox / Pilot / Sponsored / Shared, columns "Your team keeps" and "IT adds") and slide 4 ("The builder") are hidden, ready for a second conversation.
+- Outcome of the meeting: not yet recorded.
+
+## BOM Studio meeting outcome: Launch Studio name adopted; demo for Ron Snyder next week (added 2026-11-05)
+
+Source: Digital Products / Agile Staff Meeting, 2026-11-04 (transcript); Launch Studio: BOM Studio, 2026-11-04 (transcript); `Evidence/M365_Evidence_Daily_2026-11-05.md`.
+
+- **Naming decided (Durable, stated outright).** Benson, Darryl: "we're calling it today... the Launch Studio." Resolves the naming question open since the 2026-10-29/30 BOM Studio sessions.
+- **Demo committed for Ron Snyder, next week (Durable, stated outright).** Prabhu, Vinay: "We'll try to carve out some time, Ron, with you so that Robert can showcase this to you as well... we'll work and get you that demo next week." This is the outcome the 2026-11-04 entry left as "not yet recorded."
+- **BOM scope statement (Darryl).** Darryl, same session: "as we build in our existing service model between Smart Building Services, Wesco Asset Management, and other services, they become part of the bill of material as well as part of that original bid" -- frames Launch Studio's BOM output as spanning entroCIM/Smart Building Services and WAM, not just the originating BOM Studio tool.
