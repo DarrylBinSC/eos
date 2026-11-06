@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-06 10:00 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-06 10:38 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-23 to 2026-11-06. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,10 +8,10 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Wesco Warehouse | Steady | -2 | 14 | 16 | 1 | 1 | 2 | 0 |
-| Merck | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
 | Dell | Steady | +14 | 198 | 179 | 25 | 4 | 17 | 1 |
+| Merck | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
 | Federal Reserve | Steady | +1 | 22 | 11 | 2 | 0 | 1 | 2 |
+| Wesco Warehouse | Steady | -2 | 14 | 16 | 1 | 1 | 2 | 0 |
 | Coca-Cola (TCCC) | Steady | -2 | 11 | 13 | 3 | 0 | 2 | 0 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
