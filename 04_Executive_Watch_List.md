@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-11-06 12:06 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-06 14:50 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 21 (ceiling 20) · Passive 52 · Retired 28.
+**Counts at generation:** Active 20 (ceiling 20) · Passive 52 · Retired 29.
 
 ## Active
 
@@ -27,7 +27,6 @@
 | W017 | JCI (Johnson Controls) MSP agreement stall | High | ↓ | Direct (email evidence through 06-08; Darryl field note 07-22) + Repetition (8+ month negotiation, no signature); Direct (Darryl, chat, 2026-09-01) | 2026-10-28 | MSP model decided 05-26 (not reseller); |
 | W016 | WAM/ADM data integrity + scalability (operational hardening) | High | ↑ | Direct (Backlog Refinement 07-20 — transcript/Loop; speaker attributions unconfirmed; WAM Data Challenges 07-30; Requirement Estimation doc, 08-06) | 2026-10-29 | Seven-problem stabilization plan (full dump: `WAM_Product_Backlog_Refinement_Problems_Work_Plan_2026-07-20.md`). |
 | W003 | entroCIM 2027 development capacity reduction — managed roadmap reset | High | New | Direct (2027 entroCIM Roadmap Discussion, verbatim transcript, 2026-09-16) | 2026-11-02 | 10-06: final cuts in progress. |
-| W005 | Stanford commissioning-report remediation — escalated to a retention risk, no accountable owner | High | ↑ | Direct (Fw: License renewals email, 2026-10-19; Stanford Test Project_New email, 2026-09-17) | 2026-11-02 | Reopened from Passive on contradiction, not echo (demoted 08-19 as High/New on the objective silence test; |
 | W006 | Strev AI Feature Pack: unpriced consumption commitment with no budget home | High | → | Direct (Revnue v2.5 entitlement document, May 2026; Lisa Orton email 2026-09-15; Wesco WAM cost model; Amy Aguirre call transcript 2026-09-17; Revnue draft Amendment No. 2, received 2026-10-21) | 2026-11-02 | Two Strev AI use cases entered UiPath intake on 2026-09-15. |
 | W001 | CDA commercial viability — enterprise pricing, willingness to pay and TSS delivery capacity unproven | High | New | Direct (Connected Device Assurance: business case review and sponsorship, 2026-10-02 transcript; CDA Business Case - Site-Based Market.pdf) | 2026-11-03 | 10-06: build home changed, commercial question unchanged. |
 | W026 | FRBNY Smart Building bid -- pricing deadline 2026-10-21 | High | ↑ | Direct (daily M365 evidence 2026-10-14 to 2026-10-15; Turner reply email 2026-10-20, Evidence/Email_FRB_BP43_Turner_Bid_Answers_2026-10-20.pdf) | 2026-11-03 | Mandatory scope and quantities due 2026-10-21, six days out. |
@@ -99,6 +98,7 @@ Logged for completeness. No action required; does not count toward risk load. Es
 
 | Retired | ID | Item | Reason |
 |---|---|---|---|
+| 2026-11-06 | W005 | Stanford commissioning-report remediation — escalated to a retention risk, no accountable owner | Reopened from Passive on contradiction, not echo (demoted 08-19 as High/New on the objective silence test; |
 | 2026-10-30 | W100 | entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19) | 2026-10-30 (Darryl, web): Escalated from Pulse P042 (entroCIM Daily Stand Up). |
 | 2026-10-28 | W099 | PC1/JCI large-scale point faults and intermittent site access | 2026-10-19 (Darryl, web): Escalated from Pulse P007 (2026 Deployment Daily Scrum). |
 | 2026-10-16 | W098 | PC1 Grid Board site-selection defect blocking dashboard/KWH report delivery | Returned to team governance; tracked in the Pulse as P001. Reversible: set tier to active. |
