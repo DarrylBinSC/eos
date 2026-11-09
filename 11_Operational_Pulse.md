@@ -32,6 +32,7 @@ No signals in the window: BAE, Stanford, UWM.
 - **P137** Prior Gridboard monorepo migration lost code and broke functionality; migration restarted (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P142** Dell questioning redundancy/DR architecture and reuse of existing licenses for DR (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P145** Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P159** WAM Exact-supplier renewal notifications are not being sent; blocked on a custom-field enablement (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P132** Updated LATAM server returns a system error after yesterday's update (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P134** Dell 6 lab-meter integrations waiting on single-host-to-multi-host gateway replacement (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P136** Quest VM backups exist but recoverability has not been proven with a restore test (no account; Quest Migration Weekly Check-In). Test: No owner, or the customer is unaware of a material problem.
@@ -51,6 +52,7 @@ No signals in the window: BAE, Stanford, UWM.
 - **P157** Stack Hub instances need replacement; license creation after replacement depends on Ron Snyder until a repeatable process exists (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P150** Zscaler would not connect for Keith Bishop, blocking his work (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P158** Dev03 development systems shut down off-hours by Wesco IT; one restart failed (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
+- **P160** Sales requesting DCIM preview screenshots before the work is fully ready (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 
 ## Knowledge concentration
 
@@ -71,15 +73,15 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
 | Chad Steger | 5 | 20 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Akansh Gangil | 2 | 7 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Akansh Gangil | 3 | 8 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Syed Jamshed Zaidi | 6 | 24 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Scott Dunn | 5 | 16 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Shawn Clark | 4 | 7 | 2 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Ron Snyder | 2 | 7 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
+| Ron Snyder | 2 | 8 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Keith Bishop | 3 | 2 | 0 | 1 | entroCIM Daily Stand Up |
 | Babu Papanna | 2 | 3 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Natalie Marquardt | 0 | 3 | 3 | 0 | ADM connect with Natalie, WAM Sprint Review |
+| Natalie Marquardt | 0 | 4 | 3 | 0 | ADM connect with Natalie, WAM Sprint Review |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
 | Sean McCloskey | 0 | 0 | 3 | 0 |  |
 
@@ -141,7 +143,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P001 PC
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 21, new this week 9, stuck 3, quiet 10. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 22, new this week 10, stuck 3, quiet 10. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -166,6 +168,7 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 21, new this week 9, stuck 
 | P127 | SkySpark 4 QA environment (Dev03W) missing Keith Bishop's pods; QA functionality missing for months |  | Keith Bishop | Medium | 2026-11-03 |  | 1 |  |
 | P158 | Dev03 development systems shut down off-hours by Wesco IT; one restart failed |  |  | Low | 2026-10-29 | 2026-10-29 | 1 | candidate: gap |
 | P150 | Zscaler would not connect for Keith Bishop, blocking his work |  |  | Low | 2026-11-03 | 2026-11-03 | 1 | candidate: gap |
+| P160 | Sales requesting DCIM preview screenshots before the work is fully ready |  |  | Low | 2026-11-04 | 2026-11-04 | 1 | candidate: gap |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P032 Dell Showcase: virtual-point function failing, apparently around a faulty tag; P039 Tiles Grid Board compose chart: precision and date-handling defects cancel comparisons; P041 Showcase stopped running and recorded no data from Thursday night into Friday morning (10-15 to 10-16); P042 entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19); P054 Tiles Grid Board text widget: additional issues found in testing, follow-up needed; P056 Freshdesk gives limited feedback visibility; no notification or digest for article ratings; P061 HIS Express virtual-point UI stored constants as Y variables instead of literal values (hotfixed on demo one); P062 FRB feedback: revised Graphics Builder documentation needs validation against their reported problem; P069 Another sensorless-connector defect found in testing; pod created, deployment pending; P109 HIS Express virtual-point inputs missing history, affecting rollups and downstream curve retrieval.
 
@@ -197,10 +200,11 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P051 Qu
 
 ## WAM Product Backlog Refinement
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 8, new this week 4, stuck 0, quiet 2. Last sighting: 2026-11-04. Last evidence: 2026-11-04.
+Governance: Sprint. Owner: Sakshi Mathur. Live 9, new this week 5, stuck 0, quiet 2. Last sighting: 2026-11-04. Last evidence: 2026-11-04.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
+| P159 | WAM Exact-supplier renewal notifications are not being sent; blocked on a custom-field enablement |  |  | High | 2026-11-02 | 2026-11-02 | 1 | customer-visible, candidate: gap |
 | P084 | WAM historical upload: record-merge defect affecting perpetual-parts rows |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P085 | WAM upload pipeline processes one resource at a time, causing multi-day stalls |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P086 | WAM Spring Boot upgrade has unresolved runtime API issues; production release carries an unscoped DD-team dependency |  |  | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
@@ -232,14 +236,15 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P118 Mi
 
 ## ADM connect with Natalie
 
-Governance: Product execution. Owner: Akansh Gangil. Live 2, new this week 0, stuck 0, quiet 3. Last sighting: 2026-11-02. Last evidence: 2026-11-02.
+Governance: Product execution. Owner: Akansh Gangil. Live 3, new this week 0, stuck 1, quiet 2. Last sighting: 2026-11-04. Last evidence: 2026-11-04.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
+| P033 | ADM removed/cancelled-orders page missing the removal-date column and export |  | Akansh Gangil | Low | 2026-10-13 | 2026-11-04 | 2 | stuck, customer-visible |
 | P114 | Exact renewals cannot reliably identify end users from current data; no path to obtain it except possibly integrators |  |  | High | 2026-10-28 | 2026-11-02 | 2 | customer-visible |
 | P113 | ADM UI/data-quality feedback batch from Natalie's 10-28 review session (search debounce, filter logic, slowness, sort order) |  | Akansh Gangil | Medium | 2026-10-28 | 2026-11-02 | 2 |  |
 
-Quiet (no sighting in 14+ days; confirm with the team whether resolved): P033 ADM removed/cancelled-orders page missing the removal-date column and export; P034 ADM renewal identification is manual and unreliable; renewal metrics cannot be sustained this way; P060 Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up.
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P034 ADM renewal identification is manual and unreliable; renewal metrics cannot be sustained this way; P060 Milestone/Exact missing sales-order data; Gina has not responded to Natalie's follow-up.
 
 ## Product Team / Platform Team connect
 
