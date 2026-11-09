@@ -8,11 +8,11 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Steady | +14 | 198 | 179 | 25 | 4 | 17 | 1 |
+| Dell | Steady | +25 | 209 | 179 | 26 | 5 | 16 | 1 |
 | Merck | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
 | Federal Reserve | Steady | +1 | 22 | 11 | 2 | 0 | 1 | 2 |
+| Coca-Cola (TCCC) | Steady | -2 | 14 | 16 | 3 | 0 | 2 | 0 |
 | Wesco Warehouse | Steady | -2 | 14 | 16 | 1 | 1 | 2 | 0 |
-| Coca-Cola (TCCC) | Steady | -2 | 11 | 13 | 3 | 0 | 2 | 0 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 | Cree Church / Premier | Steady | +0 | 3 | 3 | 1 | 0 | 0 | 0 |
@@ -72,14 +72,14 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 4 | 20 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Chad Steger | 4 | 21 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Akansh Gangil | 3 | 8 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
-| Syed Jamshed Zaidi | 6 | 24 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Syed Jamshed Zaidi | 6 | 25 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Scott Dunn | 5 | 16 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Shawn Clark | 4 | 7 | 2 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Ron Snyder | 2 | 8 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
+| Ron Snyder | 3 | 8 | 2 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
+| Keith Bishop | 4 | 2 | 0 | 1 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
-| Keith Bishop | 3 | 2 | 0 | 1 | entroCIM Daily Stand Up |
 | Babu Papanna | 2 | 3 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Natalie Marquardt | 0 | 4 | 3 | 0 | ADM connect with Natalie, WAM Sprint Review |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
@@ -89,12 +89,13 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 44, new this week 15, stuck 6, quiet 24. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
+Governance: Project management. Owner: Chad Steger. Live 45, new this week 15, stuck 7, quiet 23. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-27 | 5 | stuck, customer-visible |
 | P002 | Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches | Dell | Syed Jamshed Zaidi | High | 2026-10-13 | 2026-10-29 | 5 | stuck, customer-visible |
+| P006 | Dell alarm-database corruption: intermittent alarming failures, no root cause | Dell | Ron Snyder; Keith Bishop | High | 2026-08-25 | 2026-10-30 | 8 | stuck, customer-visible, escalated to W009 |
 | P015 | Panama HVAC points increase continuously; BACnet setup failed, Modbus option untested | Wesco Warehouse | Matthew Heid; Scott Dunn | High | 2026-10-13 | 2026-11-04 | 4 | stuck, customer-visible |
 | P066 | Argentina: watchdog connectors flapping connected/disconnected within a minute, source unidentified |  | Matthew Heid | High | 2026-10-22 | 2026-11-05 | 2 | stuck, customer-visible, candidate: boundary |
 | P003 | Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation | Dell | Syed Jamshed Zaidi | Medium | 2026-10-15 | 2026-10-29 | 3 | stuck |
@@ -138,7 +139,7 @@ Governance: Project management. Owner: Chad Steger. Live 44, new this week 15, s
 | P129 | ConnectorWise configuration churns repeatedly without an official equipment-and-points document |  |  | Medium | 2026-11-03 |  | 1 |  |
 | P130 | FRB graphics blocked: only a BACnet point export is available, lighting floor-plan layouts still needed | Federal Reserve | Chad Steger | Medium | 2026-11-03 |  | 1 | customer-visible |
 
-Quiet (no sighting in 14+ days; confirm with the team whether resolved): P001 PC1 Grid Board site-selection defect blocking the KWH report and dashboard; P005 Commissioned Panama devices not producing expected alarms ahead of environment decommissioning; P006 Dell alarm-database corruption: intermittent alarming failures, no root cause; P007 PC1/JCI large-scale point faults and intermittent site access; P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review; P014 Dell non-DC server unavailable since the prior week, blocking meter verification; P016 Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation; P017 North America lighting-site UPS alarms visible in PME/NMC but not reaching entroCIM; P023 Penang 2: down points not triggering the expected faults or notifications; P024 Standardized UPS/device point list for integration and alarm rules still unavailable; P025 Dell "three-creatures" requirements undefined; related work waits on a Dell workshop; P026 New York: two meters in commissioning, two with connection issues; P027 Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara; P029 Prospective data-center customer substation request cannot be scoped (equipment, model and IP readiness unknown); P035 Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed; P036 Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site; P037 Panama: additional control drawings needed; second-floor NetBotz and watchdog devices not yet procured or installed; P038 Apex: four meter connectors ready but connectivity cannot be established; waiting on information from Robbie; P059 Newly added meter needs database cleanup; site name ambiguous (Annapolis or New York); P063 Chennai: all entroCIM connectors down, BACnet IDs do not match the spreadsheet; P064 Israel: all alarm points unbound (discrepancy 1273), needs Scott Dunn or Elias Brewer; P065 No formal integration QA/QC checklist for closeout (alarm, fault-management, graphics, database, point-addition).
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P001 PC1 Grid Board site-selection defect blocking the KWH report and dashboard; P005 Commissioned Panama devices not producing expected alarms ahead of environment decommissioning; P007 PC1/JCI large-scale point faults and intermittent site access; P008 Dell cluster session loss: fleet-wide configuration review still open; P009 TCCC/AOC Modbus gateway sourcing may delay gas-sensor integration; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review; P014 Dell non-DC server unavailable since the prior week, blocking meter verification; P016 Trane Tracer BMS integration (Dell non-DC) may be outside the original scope and need separate estimation; P017 North America lighting-site UPS alarms visible in PME/NMC but not reaching entroCIM; P023 Penang 2: down points not triggering the expected faults or notifications; P024 Standardized UPS/device point list for integration and alarm rules still unavailable; P025 Dell "three-creatures" requirements undefined; related work waits on a Dell workshop; P026 New York: two meters in commissioning, two with connection issues; P027 Singapore devices in remote fault since about 1 October; about six meters missing from both the deployment database and Niagara; P029 Prospective data-center customer substation request cannot be scoped (equipment, model and IP readiness unknown); P035 Coke 7th Floor: work assigned with no background material; PO and construction completion unconfirmed; P036 Point-level email alarms do not exist (connector-level only); blocks El Dorado closeout and applies to any site; P037 Panama: additional control drawings needed; second-floor NetBotz and watchdog devices not yet procured or installed; P038 Apex: four meter connectors ready but connectivity cannot be established; waiting on information from Robbie; P059 Newly added meter needs database cleanup; site name ambiguous (Annapolis or New York); P063 Chennai: all entroCIM connectors down, BACnet IDs do not match the spreadsheet; P064 Israel: all alarm points unbound (discrepancy 1273), needs Scott Dunn or Elias Brewer; P065 No formal integration QA/QC checklist for closeout (alarm, fault-management, graphics, database, point-addition).
 
 ## entroCIM Daily Stand Up
 
