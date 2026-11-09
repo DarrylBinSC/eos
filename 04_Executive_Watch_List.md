@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-11-09 10:55 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-09 11:01 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -8,7 +8,7 @@
 >
 > **Tiers.** *Active* requires attention or a decision. *Passive* is logged for completeness and needs no action; it does not count toward risk load. *Retired* is closed with a reason. The Active ceiling is 20; overflow goes to Passive tagged with former severity and trend, reversible in one line.
 
-**Counts at generation:** Active 20 (ceiling 20) · Passive 52 · Retired 29.
+**Counts at generation:** Active 19 (ceiling 20) · Passive 52 · Retired 30.
 
 ## Active
 
@@ -19,7 +19,6 @@
 | W011 | i3 Alliance Agreement — IP chain creates perpetual, uncapped exposure on entroCIM's modeling layer | High | ↓ | Direct (clause text: §§6.2, 8.1, 12.4, 15.2, 16.6; Section 12 review 2026-09-10) | 2026-10-05 | Not visible from any single clause, which is why the Section 6 review returned no issues. |
 | W018 | entroCIM commercial performance vs. 2026 objectives; viability of another year below sales break-even | High | ↑ | Direct (Engel deck + MBR 07-14; Darryl, session 08-05) | 2026-10-06 | 10-06 (Darryl, Sean's FY27 AOP update): viability is now an explicit leadership question, and this row carries it (single home; |
 | W025 | entroCIM SSL certificate ownership undefined | High | New | Direct (daily M365 evidence, reporting window 2026-10-14 to 2026-10-15) | 2026-10-15 | Outage resolved (GoDaddy certificate installed), but renewal, monitoring, and ownership of the certificate are not formalized -- repeat outage possible until they are. |
-| W009 | Dell alarm reliability — alarm-database corruption stops alarming | High | ↑ | Direct (`2026 Deployment - Daily Scrum` 08-25, 09-15; Daily Stand Up 09-15) | 2026-10-19 | Intermittent alarming failures traced to alarm-database corruption. |
 | W019 | Louvre Abu Dhabi closeout — snag-list stall | High | ↑ | Direct (Deployment Daily Scrum 07-22; Re: IoT Consolidation Platform - Project Deployment Meeting, 08-04) | 2026-10-19 | Escalated from Medium 08-05. |
 | W021 | Federal Reserve (FRBNY) release 3.1.12.13 — held, customer not told | High | ↑ | Direct (Sarah Monteleone quoting Chad Steger, `Re: entroCIM Release – Version 3.1.12.13`, weekly evidence 2026-08-24 to 08-31) | 2026-10-21 | Escalated back to Active 2026-09-01 on a direct signal — held Passive since 08-27 on the reasoning that engineering already owned the fix, but this week's evidence shows the stall continuing rather than closing. |
 | W022 | IDP/ADM production integration — approved but unstaffed | High | ↑ | Direct (IDP/WAM Use Case Discussion, 2026-09-02, verbatim transcript) | 2026-10-23 | The IDP-to-ADM proof of concept and integration architecture received WAB approval this week, but Ankit Chadha would not commit engineering resources against it, citing an October Oracle deadline and competing high-volume work. |
@@ -98,6 +97,7 @@ Logged for completeness. No action required; does not count toward risk load. Es
 
 | Retired | ID | Item | Reason |
 |---|---|---|---|
+| 2026-11-09 | W009 | Dell alarm reliability — alarm-database corruption stops alarming | Intermittent alarming failures traced to alarm-database corruption. |
 | 2026-11-06 | W005 | Stanford commissioning-report remediation — escalated to a retention risk, no accountable owner | Reopened from Passive on contradiction, not echo (demoted 08-19 as High/New on the objective silence test; |
 | 2026-10-30 | W100 | entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19) | 2026-10-30 (Darryl, web): Escalated from Pulse P042 (entroCIM Daily Stand Up). |
 | 2026-10-28 | W099 | PC1/JCI large-scale point faults and intermittent site access | 2026-10-19 (Darryl, web): Escalated from Pulse P007 (2026 Deployment Daily Scrum). |
