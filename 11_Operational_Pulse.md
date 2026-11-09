@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-09 11:01 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-09 11:02 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-26 to 2026-11-09. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Steady | +25 | 209 | 179 | 26 | 5 | 16 | 1 |
+| Dell | Steady | +13 | 197 | 179 | 25 | 4 | 16 | 1 |
 | Merck | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
 | Federal Reserve | Steady | +1 | 22 | 11 | 2 | 0 | 1 | 2 |
 | Coca-Cola (TCCC) | Steady | -2 | 14 | 16 | 3 | 0 | 2 | 0 |
@@ -72,14 +72,14 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 4 | 21 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Chad Steger | 4 | 20 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Akansh Gangil | 3 | 8 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
-| Syed Jamshed Zaidi | 6 | 25 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Syed Jamshed Zaidi | 6 | 24 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Scott Dunn | 5 | 16 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Shawn Clark | 4 | 7 | 2 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Ron Snyder | 3 | 8 | 2 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
-| Keith Bishop | 4 | 2 | 0 | 1 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up |
+| Ron Snyder | 2 | 8 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
+| Keith Bishop | 3 | 2 | 0 | 1 | entroCIM Daily Stand Up |
 | Babu Papanna | 2 | 3 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Natalie Marquardt | 0 | 4 | 3 | 0 | ADM connect with Natalie, WAM Sprint Review |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
@@ -89,13 +89,12 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 45, new this week 15, stuck 7, quiet 23. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
+Governance: Project management. Owner: Chad Steger. Live 44, new this week 15, stuck 6, quiet 23. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P028 | Site-meter information missing at several Dell sites (Chile named), blocking rollup views | Dell | Scott Dunn | High | 2026-10-13 | 2026-10-27 | 5 | stuck, customer-visible |
 | P002 | Dell meter-data integrity: negative values, missing main meters, unreliable PPS3B data, demand/utilization mismatches | Dell | Syed Jamshed Zaidi | High | 2026-10-13 | 2026-10-29 | 5 | stuck, customer-visible |
-| P006 | Dell alarm-database corruption: intermittent alarming failures, no root cause | Dell | Ron Snyder; Keith Bishop | High | 2026-08-25 | 2026-10-30 | 8 | stuck, customer-visible, escalated to W009 |
 | P015 | Panama HVAC points increase continuously; BACnet setup failed, Modbus option untested | Wesco Warehouse | Matthew Heid; Scott Dunn | High | 2026-10-13 | 2026-11-04 | 4 | stuck, customer-visible |
 | P066 | Argentina: watchdog connectors flapping connected/disconnected within a minute, source unidentified |  | Matthew Heid | High | 2026-10-22 | 2026-11-05 | 2 | stuck, customer-visible, candidate: boundary |
 | P003 | Dell IT access and investigation dependencies: Malaysia login failure, refresh-page issue, Panek BMS validation | Dell | Syed Jamshed Zaidi | Medium | 2026-10-15 | 2026-10-29 | 3 | stuck |

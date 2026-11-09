@@ -931,9 +931,9 @@
    "teams": 3
   },
   "Dell": {
-   "delta7": 25,
-   "load": 209,
-   "teams": 204
+   "delta7": 13,
+   "load": 197,
+   "teams": 192
   },
   "Federal Reserve": {
    "delta7": 1,
