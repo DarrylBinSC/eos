@@ -33,6 +33,39 @@
 - Follow-up: Pulse P052 updated with this decision. Confirm the security review Darryl's condition implies has actually happened before standing up the VM. Source: `Evidence/M365_Evidence_Daily_2026-11-04.md`.
 
 
+### 2026-11-02 — CDA build order: connect to Nozomi Guardian and refine from observed data, rather than finish the design up front
+- Status: Made
+- Owner: Darryl Benson and Ron Snyder
+- Context: CDA requirements session, 2026-11-02, reviewing the v0.1 High-Level Product Requirements. Ron Snyder proposed a tightly scoped Nozomi connector/report prototype rather than continuing to deepen the written requirements before any connection exists.
+- Options considered: finish detailed Phase 1 requirements before building; start with a Guardian connector and reporting prototype and let real data shape the remaining requirements.
+- Decision / Recommended path: start by connecting to Nozomi Guardian, reading and reporting its data, then refine requirements from what is observed. Reduces schedule/scope risk from over-broad up-front requirements.
+- Risk of waiting: n/a, decided.
+- Forum where this should be decided: CDA requirements session (Darryl, Ron Snyder).
+- Follow-up: `Products/CDA/CDA.md`, "CDA build approach, positioning and onboarding model set" updated. Source: CDA - High Level Produt requirements (transcript), 2026-11-02; `Evidence/M365_Evidence_Weekly_2026-11-09.md`.
+
+
+### 2026-11-02 — CDA stays on the entroCIM platform with a point-based model; not RMM, SOC, MDR/threat hunting, or a replacement for customer security tooling
+- Status: Made
+- Owner: Darryl Benson (Ron Snyder agreed)
+- Context: Same CDA requirements session. Prior material (pricing strategy, 2026-11-03 entry) already set per-site, point-based packages over tiering; this decision adds the explicit non-goals, which bear directly on how CDA is positioned and sold.
+- Options considered: position CDA nearer adjacent categories (RMM, SOC/MDR, threat hunting) versus keep it a point-based entroCIM extension with a narrower, stated scope.
+- Decision / Recommended path: keep CDA on the existing entroCIM platform and commercial model; it is not RMM, a standalone SOC, threat hunting, or a replacement for a customer's own security tooling. Use this framing in CDA material going forward.
+- Risk of waiting: n/a, decided.
+- Forum where this should be decided: CDA requirements session (Darryl, Ron Snyder).
+- Follow-up: `Products/CDA/CDA.md` updated. Source: CDA - High Level Produt requirements (transcript), 2026-11-02; `Evidence/M365_Evidence_Weekly_2026-11-09.md`.
+
+
+### 2026-11-02 — CDA onboarding is assisted, not fully unmanned (corrects "auto-onboarding")
+- Status: Made
+- Owner: Darryl Benson and Ron Snyder
+- Context: The 2026-11-03 Requirements Spec entry in `Products/CDA/CDA.md` named "auto-onboarding" as one of Darryl's three stated capability goals for the spec. The same 2026-11-02 session set the actual model: Guardian discovery supplies device data, but operators still make the onboarding selections and supply credentials where needed.
+- Options considered: fully unmanned onboarding from Guardian discovery alone; assisted onboarding with Guardian data plus a conscious operator step.
+- Decision / Recommended path: assisted onboarding. Use this term in CDA material rather than "auto-onboarding," which overstates how unmanned the process is.
+- Risk of waiting: n/a, decided; the risk being managed is describing the capability inaccurately in material that leaves the team.
+- Forum where this should be decided: CDA requirements session (Darryl, Ron Snyder).
+- Follow-up: `Products/CDA/CDA.md` updated with the correction. Source: CDA - High Level Produt requirements (transcript), 2026-11-02; `Evidence/M365_Evidence_Weekly_2026-11-09.md`.
+
+
 ### 2026-11-02 — FRB CSC BIM capability: charge for development and for access as an advanced feature
 - Status: Made
 - Owner: Darryl Benson
@@ -945,7 +978,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-11-09 10:26 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-09 10:28 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
