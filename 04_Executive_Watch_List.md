@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-11-09 11:30 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-09 13:15 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -85,7 +85,7 @@ Logged for completeness. No action required; does not count toward risk load. Es
 | W078 | EOS evidence-recording expiration |  | Direct (SharePoint/Teams notices 07-20) | 2026-07-20 | Recordings/transcripts for SPANR Architecture, Deployment Daily Scrum, and WAM Data Challenges reported expired and deleted; |
 | W076 | Planview time-tracking / CAPEX-OPEX compliance |  | Direct (leadership email 07-16) | 2026-07-17 | Mandatory manual time tracking, compliance escalation, recurring questions and missed training among Digital Products resources. |
 | W065 | Managed Services optimization-services commercialization (hosted entroCIM) | Low | Direct (Darryl field note 07-17) | 2026-07-17 | Demoted from Active 2026-08-19 at the register cap re-rank (was Low-Medium, trend ↓). |
-| W060 | WAM executive-narrative risk (Engel/Hasting impression) | Medium | Direct (Agile Staff 07-14; Darryl 07-17) | 2026-07-17 | Demoted from Active 2026-08-19 at the register cap re-rank (was Medium, trend ↓). |
+| W060 | WAM executive-narrative risk (Engel/Hayston impression) | Medium | Direct (Agile Staff 07-14; Darryl 07-17) | 2026-07-17 | Demoted from Active 2026-08-19 at the register cap re-rank (was Medium, trend ↓). |
 | W077 | WMX Cloud availability |  | Direct (IT comms 07-15) | 2026-07-16 | Unplanned maintenance 07-15. |
 | W052 | FRBNY customer satisfaction (alarms, FDD, CX alignment) | High | Direct (Chad handoff 07-13) | 2026-07-15 | Demoted from Active 2026-08-19 at the register cap re-rank (was High, trend →). |
 | W051 | BAE deployment — network/MQTT validation | High | Direct (Handoff doc 07-14; BAE Quick Sync 07-15) | 2026-07-15 | Demoted from Active 2026-08-19 at the register cap re-rank (was High, trend →). |

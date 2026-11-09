@@ -540,7 +540,7 @@
 - Status: Approaching
 - Owner: Darryl, with David Blondel and Akansh Gangil (drafting); Chris Gazdic and Govindaswamy (review)
 - Context: Digital Products / Agile Staff Meeting, 2026-09-15 (transcript, complete). Sean McCloskey and Darryl agreed the WAM strategy needs to be reset around what the actual vendor, product, and license data can support, with explicit statements of what the solution will and will not accomplish — "limited in, limited value out." This continues the WAM reset thread already running in `03` (09-01, 09-03, 09-10 entries) rather than opening a new one; today's evidence is Sean formally asking for the next step.
-- Why this is a decision and not a status update: it commits the team to narrowing customer-facing claims to what accessible data can actually support, ahead of the benefits-realization and renewal conversations already in flight (Ford, sales-ops renewal notifications). Getting the boundary wrong in either direction — overclaiming or underselling — has already cost credibility once (John Engel/Rob Hasting negative impression, `06`).
+- Why this is a decision and not a status update: it commits the team to narrowing customer-facing claims to what accessible data can actually support, ahead of the benefits-realization and renewal conversations already in flight (Ford, sales-ops renewal notifications). Getting the boundary wrong in either direction — overclaiming or underselling — has already cost credibility once (John Engel/Rob Hayston negative impression, `06`).
 - Options considered: continue current broad positioning; narrow claims to attainable data coverage and measurable renewal impact. Recommended and adopted: narrow.
 - Risk of waiting: none acute this week, but this needs to land before the 2026-09-18 Digital Products portfolio deep dive (the entroCIM financial-metrics slide is already flagged for a 09-17 update for that session, and WAM sits in the same deck).
 - Forum: Digital Products / Agile Staff Meeting (Sean-owned) for review; feeds the 2026-09-18 portfolio deep dive.
@@ -918,7 +918,7 @@
 ### 2026-07-15 — WAM/ALM metrics definition revised to include existing-customer growth
 - Owner: stated on the WAM actuals deck (Finance-led with Brad Stevens as Business Sponsor); decision authorship to confirm.
 - Decision: original ALM target focused on net-new revenue and was read as new-logo acquisition; the metric now includes incremental sales growth from existing customers using the ALM tool. Under the revised definition: YTD ~$16.7M vs $19M objective (87.23% by June).
-- Chief of Staff note: this is the substantive fix to the underreporting problem, but redefinition can read as goalpost-moving at Engel/Hasting level. The narrative must state the rationale explicitly (original metric measured the wrong thing, not performance rescued by re-measurement).
+- Chief of Staff note: this is the substantive fix to the underreporting problem, but redefinition can read as goalpost-moving at Engel/Hayston level. The narrative must state the rationale explicitly (original metric measured the wrong thing, not performance rescued by re-measurement).
 
 ### 2026-07 — Asset/product uploads transition to EUDM-driven processes
 - Owner: Akansh Gangil / ADM team
@@ -952,9 +952,9 @@
 ### WAM/entroCIM executive reset framing
 - Added: 2026-07-14 (Agile Staff). **Status 07-17 (Darryl): framing complete — being presented today to John Engel.** Darryl will report back if the presentation surfaces anything new.
 - Owner: Darryl + **Sean McCloskey** (attribution corrected from Maddy Taylor); Brad Stevens sign-off
-- Context: WAM financial-benefits underreporting left negative impression with John Engel and Rob Hasting. "True reset" requested by Sean; interest/pipeline slide question for Friday's Brad Stevens meeting.
+- Context: WAM financial-benefits underreporting left negative impression with John Engel and Rob Hayston. "True reset" requested by Sean; interest/pipeline slide question for Friday's Brad Stevens meeting.
 - Progress 07-14 PM: pipeline slide approved by Brad Stevens + Nate ($32M, matches Dirk MBR); entroCIM update bullets in Engel deck. **Correction 07-15 (Darryl): that slide covers the entroCIM business only.** WAM financial actuals handled by Finance (YTD ~$16.7M vs $19M objective, 87.23%); Darryl's WAM contribution = completion/summary of the Update slide.
-- Risk of waiting: resolved pending today's Engel presentation outcome — watch for any new reaction/follow-up from Engel or Hasting.
+- Risk of waiting: resolved pending today's Engel presentation outcome — watch for any new reaction/follow-up from Engel or Hayston.
 - Note: apply Benefits_Realization_Standards — the reset must separate realized capability (Jul 3 go-live) from planned benefits; the original impression likely came from exactly that confusion.
 
 ### Strev QA integration path (workaround vs. root-cause fix)
@@ -978,7 +978,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-11-09 11:30 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-09 13:15 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -1129,7 +1129,7 @@
 - Owner: Darryl, with Brad Stevens (WAM business sponsor) and Amy Aguirre (commercialization). Sales Operations stake: Debbie Hunter
 - Forum: WAM Product Leadership Sync (David Blondel) for the product view; Brad Stevens for the sponsor decision; surfaced in the 08-05 Lisa Orton brief as an open question for Dirk Naylor.
 - Context (Darryl, session 08-05): the current external WAM business is focused on supply chain programs, not license management. The license capability originally requested, and the entire arc of the 08-05 Backlog Deep Dive roadmap (license visibility → coverage beyond Wesco part numbers → expiry alerts to the owning rep → complete coverage view), is not what is being sold into those programs today.
-- Why this matters beyond product planning: it breaks the evidentiary link between WAM's 2026 attainment and WAM's product investment. $16.7M YTD at 87% is real, but it is being earned through a different motion than the roadmap serves. Presenting attainment as validation of the license roadmap would repeat, in a new form, exactly the realized-versus-planned confusion that produced the original Engel/Hasting benefits impression.
+- Why this matters beyond product planning: it breaks the evidentiary link between WAM's 2026 attainment and WAM's product investment. $16.7M YTD at 87% is real, but it is being earned through a different motion than the roadmap serves. Presenting attainment as validation of the license roadmap would repeat, in a new form, exactly the realized-versus-planned confusion that produced the original Engel/Hayston benefits impression.
 - Direct consequence for the FY27 submission (A19, due 08-21): the WAM business case cannot rest the license investment on 2026 attainment. A reviewer can reasonably ask what the license capability has produced commercially, and the honest answer today is that the first governed renewal signal reaches Sales Operations this quarter and has not yet been converted. Decide the answer to that question before it is asked.
 - Second consequence: Sales Operations expectations were set at Senior Director level (Debbie Hunter, 07-16) on the license notification capability. If the revenue is in supply chain programs, that audience may not be where the commercial return sits, and the notification launch is being judged by a stakeholder group adjacent to the actual business.
 - Options, as framed: (a) bring the license capability into the supply chain program motion, making it a component of what programs sell; (b) let the roadmap follow the demand and re-weight toward supply chain program needs; (c) run both, which is the current de facto position and the one that most needs to be chosen deliberately rather than by default.
