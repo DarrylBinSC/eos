@@ -1,6 +1,6 @@
 # Executive Watch List
 
-<!-- GENERATED 2026-11-09 11:02 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-09 11:03 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Maintained by Claude during briefings. Trend: ↑ worsening / → stable / ↓ improving. Seeded 2026-07-13; restructured 2026-07-27; capped 2026-08-19 (Active 20); **moved to one item per file 2026-10-15**. This file is a generated view of `Registers/watch/`; the cap-check notes that used to accumulate here now live in git history and `Archive/2026-10-15_pre_registers/04_Executive_Watch_List.md`.
 >
@@ -97,7 +97,7 @@ Logged for completeness. No action required; does not count toward risk load. Es
 
 | Retired | ID | Item | Reason |
 |---|---|---|---|
-| 2026-11-09 | W009 | Dell alarm reliability — alarm-database corruption stops alarming | Intermittent alarming failures traced to alarm-database corruption. |
+| 2026-11-09 | W009 | Dell alarm reliability — alarm-database corruption stops alarming | Closed on Darryl's word after speaking with Chad Steger: RCA sent to Dell 10-30 and accepted, release rollout proceeding. Darryl: watch for further alarm actions rather than keep this open. |
 | 2026-11-06 | W005 | Stanford commissioning-report remediation — escalated to a retention risk, no accountable owner | Reopened from Passive on contradiction, not echo (demoted 08-19 as High/New on the objective silence test; |
 | 2026-10-30 | W100 | entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19) | 2026-10-30 (Darryl, web): Escalated from Pulse P042 (entroCIM Daily Stand Up). |
 | 2026-10-28 | W099 | PC1/JCI large-scale point faults and intermittent site access | 2026-10-19 (Darryl, web): Escalated from Pulse P007 (2026 Deployment Daily Scrum). |
