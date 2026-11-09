@@ -1,8 +1,8 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-06 14:50 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-09 10:26 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-> Rolling window 2026-10-23 to 2026-11-06. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
+> Rolling window 2026-10-26 to 2026-11-09. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
 ## Account health
 
@@ -70,11 +70,11 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 5 | 21 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Chad Steger | 5 | 20 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Akansh Gangil | 2 | 7 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Syed Jamshed Zaidi | 6 | 24 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Scott Dunn | 5 | 16 | 1 | 1 | 2026 Deployment Daily Scrum |
-| Shawn Clark | 4 | 8 | 2 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Shawn Clark | 4 | 7 | 2 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Ron Snyder | 2 | 7 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Keith Bishop | 3 | 2 | 0 | 1 | entroCIM Daily Stand Up |
@@ -181,7 +181,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P043 Sc
 
 ## Quest Migration Weekly Check-In
 
-Governance: Project management. Owner: Chad Steger. Live 8, new this week 1, stuck 6, quiet 1. Last sighting: 2026-11-03. Last evidence: 2026-11-03.
+Governance: Project management. Owner: Chad Steger. Live 7, new this week 1, stuck 6, quiet 2. Last sighting: 2026-11-03. Last evidence: 2026-11-03.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -191,10 +191,9 @@ Governance: Project management. Owner: Chad Steger. Live 8, new this week 1, stu
 | P050 | Libro may fail through the new conductor pending an outbound-IP or relay configuration change |  | Shawn Clark | High | 2026-10-20 | 2026-11-03 | 4 | stuck, customer-visible |
 | P013 | Quest exit inventory: what must be retained and transferred to Wesco |  | Babu Papanna; Shawn Clark | Medium | 2026-09-16 | 2026-10-29 | 5 | stuck |
 | P052 | Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement |  | Chad Steger | Medium | 2026-10-20 | 2026-11-03 | 3 | stuck |
-| P051 | Quest requesting additional $245/hour T&M on top of about $6,600/month; renewal and cancellation date unconfirmed |  |  | High | 2026-10-20 | 2026-10-23 | 2 |  |
 | P136 | Quest VM backups exist but recoverability has not been proven with a restore test |  |  | Medium | 2026-11-03 | 2026-11-03 | 1 | candidate: gap |
 
-Quiet (no sighting in 14+ days; confirm with the team whether resolved): P100 Quest Migration: production MQTT/WAB path for Louvre Abu Dhabi -- Mosquitto FOSS code-change confirmation.
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P051 Quest requesting additional $245/hour T&M on top of about $6,600/month; renewal and cancellation date unconfirmed; P100 Quest Migration: production MQTT/WAB path for Louvre Abu Dhabi -- Mosquitto FOSS code-change confirmation.
 
 ## WAM Product Backlog Refinement
 
