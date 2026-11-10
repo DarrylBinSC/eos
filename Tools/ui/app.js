@@ -241,7 +241,7 @@ function iacts(i){if(i._state!=='live')return '';const s=stOf(i),id=esc(i.id);
   if(s==='esc')return `<a href="#" class="pv-wl" data-open="${esc(i.escalated_to)}">Open Watch ${esc(i.escalated_to)}</a>`;
   if(s==='left')return `<span class="lw">Left with team</span><button type="button" class="btn" data-esc="escalate" data-id="${id}">Escalate</button>`;
   return `<button type="button" class="btn primary" data-esc="escalate" data-id="${id}">Escalate</button><button type="button" class="btn" data-esc="decline" data-id="${id}">Leave with team</button>`}
-function prow(i){const ph=PHONE(),id=esc(i.id),cls=i._state==='live'?'':i._state==='quiet'?' dim':' done';
+function prow(i){const ph=PHONE(),id=esc(i.id),cls=i._state==='live'?'':(i._state==='quiet'||i._state==='unconfirmed')?' dim':' done';
   const own=i.owner?'Owner: '+esc(i.owner):'<b class="no">No owner named</b>';
   const meta=[own,esc(i.account||'No account'),ph?'':esc(fname(i.forum)),(ph?'':'last raised ')+fmt(i.last_seen||i.first_seen)].filter(Boolean).join(' · ');
   const nx=!ph&&i.next_action?`<div class="nx">Next: ${esc(plain(i.next_action))}</div>`:'';
@@ -249,10 +249,10 @@ function prow(i){const ph=PHONE(),id=esc(i.id),cls=i._state==='live'?'':i._state
    <div class="bd"><button type="button" class="ttl" data-pi="${id}">${ph?`<span class="iid">${id}</span>`:''}${esc(i.title)}</button><div class="bdg">${ibadges(i)}</div><div class="ow">${meta}</div>${nx}</div>
    <div class="ac">${iacts(i)}</div></div>`}
 /* C14 footer: a real toggle with the quiet IDs named */
-function allToggle(scope){const q=scope.filter(i=>i._state==='quiet'),r=scope.filter(i=>i._state!=='live'&&i._state!=='quiet');
-  if(!q.length&&!r.length&&!PALL)return '';
-  const what=[q.length?`${q.length} quiet: ${q.map(i=>i.id).join(', ')}`:'',r.length?`${r.length} resolved or dropped`:''].filter(Boolean).join('; ');
-  return `<button type="button" class="pv-chk" role="checkbox" aria-checked="${PALL}" data-pall><span class="bx" aria-hidden="true">${PALL?'✓':''}</span>Include quiet and resolved (${esc(what)})</button>`}
+function allToggle(scope){const q=scope.filter(i=>i._state==='quiet'),u=scope.filter(i=>i._state==='unconfirmed'),r=scope.filter(i=>i._state!=='live'&&i._state!=='quiet'&&i._state!=='unconfirmed');
+  if(!q.length&&!u.length&&!r.length&&!PALL)return '';
+  const what=[u.length?`${u.length} unconfirmed (fewer than 3 sightings)`:'',q.length?`${q.length} quiet: ${q.map(i=>i.id).join(', ')}`:'',r.length?`${r.length} resolved, aged out or dropped`:''].filter(Boolean).join('; ');
+  return `<button type="button" class="pv-chk" role="checkbox" aria-checked="${PALL}" data-pall><span class="bx" aria-hidden="true">${PALL?'✓':''}</span>Include unconfirmed, quiet and closed (${esc(what)})</button>`}
 function sortMini(n){const c=SORTS.pulse,s=sortOf('pulse');
   const lab=s.k==='pulse'?'Sorted by attention: stuck, severity, customer-visible, most recent':`${n} shown · `+(SORTDESC[s.k]||((s.dir>0?'ascending':'descending')+', ties by ID'));
   return `<span class="sub pv-sl">${esc(lab)}</span><span class="pv-srt"><select id="sortSel" aria-label="Sort live issues">${c.opts.map(o=>`<option value="${o[0]}"${o[0]===s.k?' selected':''}>${o[0]==='pulse'?'Attention':o[1]}</option>`).join('')}</select>${s.k==='pulse'||SORTDESC[s.k]?'':`<button type="button" class="btn sm" id="sortDir" aria-label="Reverse the order">${s.dir>0?'↑':'↓'}</button>`}</span>`}

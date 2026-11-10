@@ -752,7 +752,7 @@ def generate_view(s: dict | None = None) -> str:
     L = ["# Operational Pulse", "", R._banner(), ""]
     L.append(f"> Rolling window {s['window']['start']} to {s['window']['end']}. Issues from team-governed forums. "
              "The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. "
-             "Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. "
+             "An issue with no sighting for 10 days (21 for a bi-weekly forum) is closed as presumed resolved by silence and reopens if raised again. A Medium or Low issue counts as live from its third sighting. Escalated issues move to the Watch List. "
              "Design: `CLAUDE.md`, Operational Pulse.")
     L.append("")
     L.append("## Account health")
