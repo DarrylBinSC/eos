@@ -1,16 +1,16 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-09 13:15 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-10 09:32 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-> Rolling window 2026-10-26 to 2026-11-09. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
+> Rolling window 2026-10-27 to 2026-11-10. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. Issues go quiet after 14 days without a sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
 ## Account health
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Steady | +13 | 197 | 179 | 25 | 4 | 16 | 1 |
+| Dell | Steady | +2 | 197 | 190 | 25 | 4 | 16 | 1 |
 | Merck | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
-| Federal Reserve | Steady | +1 | 22 | 11 | 2 | 0 | 1 | 2 |
+| Federal Reserve | Steady | -2 | 22 | 14 | 2 | 0 | 1 | 2 |
 | Coca-Cola (TCCC) | Steady | -2 | 14 | 16 | 3 | 0 | 2 | 0 |
 | Wesco Warehouse | Steady | -2 | 14 | 16 | 1 | 1 | 2 | 0 |
 | Ford | Steady | +0 | 11 | 1 | 0 | 0 | 1 | 2 |
@@ -150,7 +150,7 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 22, new this week 10, stuck
 | P031 | SkySpark connectors failing in test: Energy Direct and others returning no data; 403 environment APIs returning HTTP 410 |  | Abhishek Savanur | Medium | 2026-10-13 | 2026-10-29 | 7 | stuck |
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-11-04 | 5 | stuck |
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-11-04 | 2 | customer-visible |
-| P137 | Prior Gridboard monorepo migration lost code and broke functionality; migration restarted |  | Nisha More | High | 2026-11-04 | 2026-11-04 | 1 | candidate: boundary |
+| P137 | Prior Gridboard monorepo migration lost code and broke functionality; migration restarted |  | Nisha More | High | 2026-11-03 | 2026-11-04 | 2 | candidate: boundary |
 | P010 | entroCIM tenant redesign and boot-mode routing: no acceptance criteria, rollout sequence or release date yet |  | Michael Pieschel | Medium | 2026-10-14 | 2026-10-27 | 3 |  |
 | P080 | Containerized release packaging question for GPO files/libraries in the entroCIM Release Builder |  | Narendra Singh | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P112 | Glenview Liberty PDU offline, blocking live data/graphic review for January Showcase planning |  | Keith Bishop | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
@@ -199,7 +199,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P051 Qu
 
 ## WAM Product Backlog Refinement
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 9, new this week 5, stuck 0, quiet 2. Last sighting: 2026-11-04. Last evidence: 2026-11-04.
+Governance: Sprint. Owner: Sakshi Mathur. Live 9, new this week 2, stuck 0, quiet 2. Last sighting: 2026-11-04. Last evidence: 2026-11-04.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
