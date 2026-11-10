@@ -35,6 +35,10 @@ LOAD_FILE = PULSE_DIR / "_load.json"       # daily load snapshots since the 2026
 VIEW_FILE = R.ROOT / "11_Operational_Pulse.md"
 
 WINDOW_DAYS = 14   # an issue not raised for 14 days goes quiet (drops out of the live window)
+CLOSE_DAYS = 10    # Darryl, 2026-11-10: an issue with no sighting for 10 days is closed as presumed resolved by silence
+CLOSE_DAYS_BIWEEKLY = 21  # a bi-weekly forum cannot re-raise within 10 days; allow one missed meeting plus a week
+CONFIRM_SIGHTINGS = 3     # Darryl, 2026-11-10: a Medium or Low issue counts as live only from its third sighting
+AGED_OUT = "Aged out (silence)"
 STUCK_BDAYS = 10   # an issue still being raised 10+ business days after it was first raised is stuck
 KNOW_QUIET_DAYS = 45   # knowledge-concentration entries persist longer: silence does not remove a single point of failure
 ABSENCE_LOOKAHEAD = 14  # an absence or departure within 14 days (or past, with coverage unconfirmed) needs a call
@@ -153,15 +157,80 @@ def names(s) -> list[str]:
     return out
 
 
+_CAD = [None, {}]
+def _cadence(forum_key: str) -> str:
+    try:
+        mt = FORUMS_FILE.stat().st_mtime
+    except OSError:
+        return ""
+    if _CAD[0] != mt:
+        _CAD[0], _CAD[1] = mt, {f.get("key"): (f.get("cadence") or "") for f in load_forums()}
+    return _CAD[1].get(forum_key, "")
+
+
+def close_days(meta: dict) -> int:
+    return CLOSE_DAYS_BIWEEKLY if _cadence(meta.get("forum")).lower().startswith("bi") else CLOSE_DAYS
+
+
+def held_open(meta: dict) -> bool:
+    """A call waiting on Darryl, or an issue he escalated, never closes or hides on silence or sighting count."""
+    return (meta.get("escalation") or "").lower() in ("candidate", "escalated")
+
+
+def _sightings(meta: dict) -> int:
+    try:
+        return int(meta.get("sightings") or 1)
+    except (TypeError, ValueError):
+        return 1
+
+
 def state(meta: dict, today=None) -> str:
+    """live | unconfirmed | quiet | resolved | dropped.
+    quiet = silent past the close window and about to be closed by age_out() (or, for a held-open
+    issue or a knowledge entry, silent past its own window). unconfirmed = Medium or Low with fewer
+    than CONFIRM_SIGHTINGS sightings: recorded, not counted, not sent to the team."""
     today = _d(today) or _dt.date.today()
     st = (meta.get("status") or "live").lower()
     if st in ("resolved", "dropped"):
         return st
     ls = _d(meta.get("last_seen")) or _d(meta.get("first_seen"))
-    if ls and (today - ls).days > (KNOW_QUIET_DAYS if is_knowledge(meta) else WINDOW_DAYS):
+    silent = (today - ls).days if ls else 0
+    if is_knowledge(meta):
+        return "quiet" if silent > KNOW_QUIET_DAYS else "live"
+    if held_open(meta):
+        return "quiet" if silent > WINDOW_DAYS else "live"
+    if silent > close_days(meta):
         return "quiet"
+    if (meta.get("severity") or "Medium").capitalize() != "High" and _sightings(meta) < CONFIRM_SIGHTINGS:
+        return "unconfirmed"
     return "live"
+
+
+def age_out(today=None) -> dict:
+    """Close issues silent past their close window; reopen an aged-out issue that has been sighted again.
+    Writes item files. Idempotent. Never touches knowledge entries, held-open issues, or closures made by a person."""
+    today = _d(today) or _dt.date.today()
+    closed, reopened = [], []
+    for meta, body, _p in R.load_items("pulse"):
+        if is_knowledge(meta):
+            continue
+        st = (meta.get("status") or "live").lower()
+        ls = _d(meta.get("last_seen")) or _d(meta.get("first_seen"))
+        if not ls:
+            continue
+        silent, lim = (today - ls).days, close_days(meta)
+        if st == "live" and not held_open(meta) and silent > lim:
+            meta["status"] = "resolved"; meta["closed_date"] = today.isoformat(); meta["closed_by"] = AGED_OUT
+            meta["disposition_note"] = f"Presumed resolved by silence, not confirmed: no sighting in {silent} days (rule: {lim}). Reopens on a new sighting."
+            meta["last_touched"] = today.isoformat()
+            body = body.rstrip("\n") + f"\n\n{today.isoformat()} (Claude, aging rule): Closed as presumed resolved by silence; last raised {ls.isoformat()}, {silent} days ago. Not confirmed. Reopens automatically on a new sighting.\n"
+            R.write_item(meta, body); closed.append(meta["id"])
+        elif st == "resolved" and meta.get("closed_by") == AGED_OUT and silent <= lim:
+            meta["status"] = "live"; meta["closed_date"] = ""; meta["closed_by"] = ""; meta["disposition_note"] = ""
+            meta["last_touched"] = today.isoformat()
+            body = body.rstrip("\n") + f"\n\n{today.isoformat()} (Claude, aging rule): Reopened; raised again {ls.isoformat()} after being closed by silence.\n"
+            R.write_item(meta, body); reopened.append(meta["id"])
+    return {"closed": closed, "reopened": reopened}
 
 
 def is_stuck(meta: dict, today=None) -> bool:
@@ -311,6 +380,7 @@ def meta_as_of(meta: dict, body: str, day) -> dict | None:
     if (meta.get("status") or "").lower() in ("resolved", "dropped") and (not cd or cd > day):
         m["status"] = "live"
     m["first_seen"], m["last_seen"] = ds[0].isoformat(), ds[-1].isoformat()
+    m["sightings"] = min(_sightings(meta), len(ds))
     return m
 
 
@@ -617,6 +687,7 @@ def summary(today=None, write_snapshot: bool = False) -> dict:
         "counts": {
             "live": sum(1 for m, _b, _p in pulse if state(m, today) == "live"),
             "quiet": sum(1 for m, _b, _p in pulse if state(m, today) == "quiet"),
+            "unconfirmed": sum(1 for m, _b, _p in pulse if state(m, today) == "unconfirmed"),
             "resolved": sum(1 for m, _b, _p in pulse if state(m, today) in ("resolved", "dropped")),
             "knowledge": sum(1 for m, _b, _p in know if state(m, today) == "live"),
         },
@@ -780,6 +851,7 @@ def generate_view(s: dict | None = None) -> str:
 
 
 def write_view(write_snapshot: bool = True) -> dict:
+    age_out()
     s = summary(write_snapshot=write_snapshot)
     VIEW_FILE.write_text(generate_view(s), encoding="utf-8")
     return s["counts"]
