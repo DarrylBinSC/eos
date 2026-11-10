@@ -28,7 +28,8 @@ def reviewers_for(track, product):
 ALL_REVIEWERS = sorted({n for t in ("development", "delivery") for v in REVIEWERS[t].values() for n in v})
 
 # column spec: (header, width, editable)
-COLS = [("ID", 6, False), ("Issue", 52, False), ("Owner", 20, True), ("Sev", 8, True), ("Next action", 40, True),
+# v3, 2026-11-10 (Darryl): exceptions only, and only Verdict, Comment and the reviewer name are editable.
+COLS = [("ID", 6, False), ("Issue", 52, False), ("Owner", 20, False), ("Sev", 8, False), ("Next action", 40, False),
         ("Verdict", 13, True), ("Comment", 26, True), ("Reviewed by", 18, True),
         ("Team", 7, False), ("Product", 9, False), ("Account", 12, False), ("Heard", 10, False)]
 
@@ -38,7 +39,9 @@ def rows_from_pulse():
     rows, raw = [], set()
     for m in pulse:
         raw.update(p.strip() for p in (m.get("owner", "") or "").replace(";", ",").split(",") if p.strip())
-        if m.get("status") != "live" or P.is_knowledge(m): continue
+        if P.is_knowledge(m) or P.state(m) != "live": continue
+        # exceptions only: stuck, or flagged as a call for Darryl. Everything else ages out or confirms on its own.
+        if not (P.is_stuck(m) or (m.get("escalation") or "").lower() == "candidate"): continue
         f = forums.get(m.get("forum"), {})
         rows.append(dict(id=m["id"], title=m.get("title", ""), owner=m.get("owner", "") or "", sev=m.get("severity", ""),
                          nxt=m.get("next_action", "") or "", team=f.get("track") or "unassigned", product=m.get("product", ""),
@@ -76,7 +79,7 @@ def build(out=None, today=None):
     for r in rows: og.append([r["id"], r["owner"], r["sev"], r["nxt"], "No change"])
     changed = PatternFill("solid", fgColor="FFF2CC")
     ws.conditional_formatting.add(f"A2:{get_column_letter(len(COLS))}{n}",
-        FormulaRule(formula=[f'OR($C2<>Orig!$B2,$D2<>Orig!$C2,$E2<>Orig!$D2,$F2<>Orig!$E2,LEN($G2)>0)'], fill=changed))
+        FormulaRule(formula=[f'OR($F2<>"No change",LEN($G2)>0)'], fill=changed))
     ls = wb.create_sheet("Lists"); ls.sheet_state = "hidden"
     for i, v in enumerate(VERDICTS, 1): ls.cell(i, 1, v)
     for i, v in enumerate(SEVERITIES, 1): ls.cell(i, 2, v)
@@ -98,12 +101,12 @@ def build(out=None, today=None):
 
     hu = wb.create_sheet("How to use", 0); hu.column_dimensions["A"].width = 90
     lines = [f"Pulse Review, week of {today}. Return by Friday.", "",
-        "1. On the Review tab, filter Team (and Product if you want) to your rows. Grey is the record; blue is yours.",
-        "2. If a row is right, do nothing. Every blue cell is already filled with what the record says.",
-        "3. If a row is wrong, change the blue cell that is wrong: Owner, Sev, or Next action. The row turns yellow so you can see what you changed.",
-        "4. Verdict: Resolved (it is done), Not an issue (it should not be tracked), Needs Darryl (say why in Comment). Otherwise leave No change.",
-        "5. Put your name in Reviewed by on every row you changed. Hover the ID to see who reviews that row and where it was raised.",
-        "6. Anything we missed goes on the New issues tab, one line each.", "",
+        "This sheet lists only the issues that have been raised for two weeks or more without closing, or that look like they need Darryl. Everything else is left to your own process.",
+        "1. If a row is right, do nothing.",
+        "2. If it is done, set Verdict to Resolved. If it should not be tracked, set Not an issue. If you need Darryl, set Needs Darryl and say why in Comment.",
+        "3. If the owner, severity or next action is wrong, say so in Comment. One line is enough.",
+        "4. Put your name in Reviewed by on any row you changed.",
+        "5. Anything important we missed goes on the New issues tab, one line each.", "",
         "Ground rules: work in the shared copy only, never a download or an email copy; AutoSave on; do not add columns or tabs, sort, or delete rows; "
         "one owner per row; back by Friday close of business. Changes are filed on Monday against each issue with your name and the date."]
     for i, t in enumerate(lines, 1):
