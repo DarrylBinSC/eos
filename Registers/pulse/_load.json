@@ -999,33 +999,33 @@
   },
   "Coca-Cola (TCCC)": {
    "delta7": -2,
-   "load": 14,
-   "teams": 14
+   "load": 0,
+   "teams": 0
   },
   "Cree Church / Premier": {
    "delta7": 0,
-   "load": 3,
-   "teams": 3
+   "load": 0,
+   "teams": 0
   },
   "Dell": {
-   "delta7": 2,
-   "load": 197,
-   "teams": 192
+   "delta7": -72,
+   "load": 85,
+   "teams": 80
   },
   "Federal Reserve": {
-   "delta7": -2,
-   "load": 22,
-   "teams": 12
+   "delta7": -1,
+   "load": 18,
+   "teams": 8
   },
   "Ford": {
-   "delta7": 0,
-   "load": 11,
-   "teams": 1
+   "delta7": -1,
+   "load": 10,
+   "teams": 0
   },
   "Intel": {
-   "delta7": -4,
-   "load": 2,
-   "teams": 2
+   "delta7": -2,
+   "load": 0,
+   "teams": 0
   },
   "Louvre Abu Dhabi": {
    "delta7": 0,
@@ -1033,9 +1033,9 @@
    "teams": 0
   },
   "Marygrove": {
-   "delta7": -7,
-   "load": 1,
-   "teams": 1
+   "delta7": 0,
+   "load": 8,
+   "teams": 8
   },
   "Merck": {
    "delta7": 8,
@@ -1043,9 +1043,9 @@
    "teams": 8
   },
   "Microsoft": {
-   "delta7": -9,
-   "load": 2,
-   "teams": 2
+   "delta7": -2,
+   "load": 0,
+   "teams": 0
   },
   "Stanford": {
    "delta7": 0,
@@ -1058,14 +1058,14 @@
    "teams": 0
   },
   "Waymo": {
-   "delta7": -2,
-   "load": 1,
-   "teams": 1
+   "delta7": -1,
+   "load": 0,
+   "teams": 0
   },
   "Wesco Warehouse": {
    "delta7": -2,
-   "load": 14,
-   "teams": 14
+   "load": 12,
+   "teams": 12
   }
  }
 }
