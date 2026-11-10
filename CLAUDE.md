@@ -276,7 +276,7 @@ The end-of-day task never closes anything itself; it asks. Closure still require
 
 **Root cause, found 2026-08-19: the task had been created with the in-process cron tools, which do not survive the session that created them.** It was recreated on 2026-08-19 as a durable scheduled task (`eos-end-of-day-check`, weekdays 16:30 America/New_York, trigger `trig_014VM4a5HY23j1QXENuPDfDi`). **Never create EOS scheduled tasks with `CronCreate`; they die silently with the session.** Use the Claude Code Remote trigger tools. If closures ever go quiet for more than a week again, check first whether this task still exists before concluding anything about Darryl's engagement.
 
-*Note: the cron is stored in UTC and set for EDT. At the November DST change it will start firing at 15:30 ET; re-set it to `30 21 * * 1-5` then.*
+*Note (superseded 2026-11-06): the cron now carries its own zone (`CRON_TZ=America/New_York 30 16 * * 1-5`), so the DST re-set the earlier note asked for is no longer needed. Verified in the task list on 2026-11-06, after the 2026-11-01 change.*
 
 ## A Mechanism Is Not "Executed" Until It Has Produced Observable Output (added 2026-08-25)
 

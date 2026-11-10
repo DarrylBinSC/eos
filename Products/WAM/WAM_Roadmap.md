@@ -1,4 +1,42 @@
-# WAM / ADM 2026 Roadmap
+# WAM / ADM Roadmap
+
+> **As of: 2026-10-30** — transcribed from Akansh Gangil's `WAM Roadmap 30 Oct` deck (filed `Products/WAM/2026-10-30_WAM_Roadmap_Akansh_Gangil.pptx`, three slides: Now, Next, Future), supplied by Darryl 2026-11-09. **This supersedes the 2026-08-05 version below as the plan of record.** Dates are the product owner's roadmap dates; delivery-team estimates (Nitin Pandey, 2026-10-14) sit in `WAM.md`. Confirm any TBD before quoting it.
+>
+> Changes against the 22 October roadmap already recorded in `WAM.md`: core asset-data MVP 1 moved from 27 Jan to 15 Jan; MVP 2 fixed at 15 Feb; historical extraction returned as TBD March/April 2027 after being withdrawn 2026-10-14; enrichment V2 (Dec, TBD) and bulk insert/update by file upload (Nov) added; the Future list is new to the record.
+
+## Now
+
+| Date | Item | Persona | Use case |
+|---|---|---|---|
+| 30 Oct (live) | Shipping and price enrichment from EUDM, V1 (single line; fetch by SO and part number; Excel output in ADM) | Managed Services | One output row per SO and part line for order follow-up and Strev data readiness |
+| TBD (Dec 2026) | Enrichment V2 (multi-line; fetch by SO only; Excel output in ADM) | Managed Services | All part numbers with shipping and pricing for a sales order |
+| 10 Nov | Additional ERP data through EUDM (truncated part numbers, ship date, country code) | Sales Ops, Managed Services | Broader transaction context for order, license and asset decisions |
+| 10 Nov | Unconfigured suppliers using configured part numbers | Product-wide | Supplier-agnostic order tracking by vendor part number |
+| Nov 2026 | Bulk insert and update through file upload | Sales Ops | Self-service inserts and updates, less backend work |
+
+## Next
+
+| Date | Item | Persona | Use case |
+|---|---|---|---|
+| Ongoing | Resolve EUDM data-quality issues for part numbers | Product-wide | Part matching and downstream asset and license accuracy |
+| 15 Jan 2027 | Core asset-data MVP 1 | Sales Ops | Foundational asset data for warranty in the UI for configured products |
+| 15 Feb 2027 | Enhanced asset capabilities in WAM, MVP 2 | Sales Ops | Asset record maintenance with edit history and governance |
+| TBD (Mar/Apr 2027) | Historical ADM extraction by customer or supplier | Managed Services, Sales Ops | Customer 360 of historical license and asset orders for Strev |
+
+## Future (all TBD)
+
+- Parent-child relationships for hardware (needs VAS for DDP, WMX for legacy transactions)
+- MAC ID and serial extraction for complex builds (syncable to Strev)
+- Ongoing WAM enrichment enhancements for Managed Services
+- ADM insights across renewals and metrics
+- Automatic renewal tracking (linking renewals to prior orders)
+- Sync license details, and separately asset details, from ADM to Strev
+- Manual hardware-to-software mapping
+
+---
+
+# Prior version (2026-08-05)
+
 
 > **As of: 2026-08-05** — transcribed from the WAM Backlog Deep Dive deck (`Products/WAM/WAM_Backlog_Deep_Dive_2026-08-05.pdf`, 9 slides), presented 2026-08-06. **This supersedes the 2026-07-15 version** of this file, which held Akansh Gangil's track-based backlog slide (Track 1 ADM↔Strev Integration, Track 2 ADM for Sales Enablement). That version is preserved in the Prior Version section at the bottom; it is not deleted, and its track detail is still the finer-grained view of the same work.
 >

@@ -1,6 +1,15 @@
 # Wesco Asset Management (WAM)
-As of: 2026-11-06 (daily evidence: portfolio deck 11-06, ADM statistics; prior: 2026-11-02 (weekly evidence: enrichment live by Excel first, 2027 capacity about 16 to 8 stated to Amy Aguirre, Strev $80K re-pointed to the site-survey tool; prior: 2026-10-29 (FY27 development team listing filed, `WAM_Team.md`; prior: 2026-10-19 weekly evidence: DDPTRK-6346 complete, WACT recorded, IDP parked; prior: 2026-10-15 cross-SBU data-capture session notes filed; prior: 2026-10-14 ADM constraints slide and capacity reset inputs; 2026-10-13 ADM license tracking scorecard; 2026-10-07; earlier: 2026-08-17 FY27 P&L section added; base 2026-08-05) — merged: 30-day baseline + daily evidence + context library v1 (files 20/22) + WAM actuals deck (07-15) + WAM Backlog Deep Dive deck (08-05). Companions: `WAM_Data_Architecture.md`, `Part_Classification.md`, `WAM_Roadmap.md` (**rewritten 08-05 from the Backlog Deep Dive deck; the July track-based slide is preserved inside it as the prior version**).
+As of: 2026-11-09 (Akansh Gangil 30 Oct roadmap filed, `WAM_Roadmap.md` rewritten from it; prior: 2026-11-06 (daily evidence: portfolio deck 11-06, ADM statistics; prior: 2026-11-02 (weekly evidence: enrichment live by Excel first, 2027 capacity about 16 to 8 stated to Amy Aguirre, Strev $80K re-pointed to the site-survey tool; prior: 2026-10-29 (FY27 development team listing filed, `WAM_Team.md`; prior: 2026-10-19 weekly evidence: DDPTRK-6346 complete, WACT recorded, IDP parked; prior: 2026-10-15 cross-SBU data-capture session notes filed; prior: 2026-10-14 ADM constraints slide and capacity reset inputs; 2026-10-13 ADM license tracking scorecard; 2026-10-07; earlier: 2026-08-17 FY27 P&L section added; base 2026-08-05) — merged: 30-day baseline + daily evidence + context library v1 (files 20/22) + WAM actuals deck (07-15) + WAM Backlog Deep Dive deck (08-05). Companions: `WAM_Data_Architecture.md`, `Part_Classification.md`, `WAM_Roadmap.md` (**rewritten 08-05 from the Backlog Deep Dive deck; the July track-based slide is preserved inside it as the prior version**).
 
+
+## MDM and data governance now report to Sean McCloskey (added 2026-11-06)
+
+WAM/ADM's external MDM and data-governance dependency is now inside Sean McCloskey's organization: the Data Strategy & Governance team (MDM, governance, data strategy for product, supplier and customer data) reports to him from 2026-11-06, with MDM deliverables for the early-2027 DDP deployments as the stated priority. Source: company announcement pasted by Darryl 2026-11-06 (`Evidence/2026-11-06_Announcement_Data_Strategy_Governance_to_Sean.md`).
+
+- Darren Taylor has left; the P360 attribute track (`05` B3) needs a named counterpart.
+- Supplier-attribute, part-number and taxonomy items (`W016`, `W058`, DDPTRK-6346 lineage) escalate to Sean directly now.
+- Expect product/supplier data standards and ownership rules to come from Sean's team; WAM's Wesco-owned-data strategy (`03` 2026-09-25) should be checked against those standards once they are stated.
+- Watch item: `W101`.
 
 ## Daily evidence, 2026-11-05 to 2026-11-06 (added 2026-11-06)
 
@@ -633,3 +642,20 @@ Source: weekly M365 evidence 2026-10-26 to 2026-11-02 (`Evidence/M365_Evidence_W
 - **Requirements gap surfaced after the first release.** Amy said she had not been included in the enrichment work and named tracking data as a further need; Jeff White identified as the person doing scoping in front of customers and sales. Darryl committed to invite Amy and to gather requirements from the four of them.
 - **Strev commercial model, three components (Durable).** The 2026-10-27 amendment review separated platform AI enablement, the feature-pack capability, and Wesco-funded API/token consumption. Brian Miller took the detailed markup (`05` C77).
 - **Strev $80K reallocation and no AI in QA (decided 2026-10-30, `03`).** Amy asked Sunny Sharma to redraft the amendment so the additional $80K is applied to the site-survey tool rather than the AI charge (`05` C81, awaited); Amy agreed to Darryl's proposal not to enable Strev AI in QA and to focus the spend on production. AI token/API budgeting still has no home (`04` W006); Amy is taking the feature pack to the AI Council this week (`05` C79).
+
+## WAM is ADM from Digital Products' perspective; ADM reported within the WAM program; Engle deep-dive slides rebuilt (added 2026-11-09, Darryl direct)
+
+From Digital Products' perspective WAM is ADM, a DDP tool (Chris Gazdic and Sean McCloskey to Darryl, 2026-11-09); ADM progress continues to be reported within the Wesco Asset Management program, there is no reporting split; Intelligent Asset Lifecycle Management services is the business offering, owned by Amy Aguirre and reported by the business; it is not built on ADM and uses Strev heavily, while ADM continues to connect Wesco data to customer use cases in both Sales Operations and Managed Services; Darryl's team continues to provide technical support for Strev where needed (Darryl, 2026-11-09). The Engle deep-dive WAM slide states this and carries the AOP adjustment and the FY27 capacity reduction.
+
+- Source: Darryl, session 2026-11-09 (direct), relaying Chris Gazdic and Sean McCloskey. The 2026-10-22 "WAM / ADM" heading convention stands. Two earlier readings the same afternoon ("WAM and ADM reported separately", then "reported as ADM from 2027") were corrected within the hour; the slide and EPMO text carry the corrected wording. Open: whether the Business Sponsor line (Brad Stevens) still fits once the product is reported as a DDP tool.
+- WAM AOP figures stated by Darryl: 2026 $1,213,000; 2027 $330,880 (not yet finalized), a 73% reduction. Both figures are ADM development only (Darryl, 2026-11-09); the slide panel is labeled "ADM development".
+- Slide: `Deliverables/WAM/2026-11-09_WAM_ADM_Update_Engle_Deep_Dive.pptx` (Wesco template). Title kept as "Wesco Asset Management - Update" at Darryl's direction (deck owner's template title). Capacity bullet: nineteen positions to eight for 2027 (Erickson list, 10-28). October scorecard figures retained pending Natalie's updated publication, expected within days.
+- entroCIM companion slide: `Deliverables/entroCIM/2026-11-04_entroCIM_Update_Engle_Deep_Dive.pptx` (2026 AOP $1.9M to 2027 $570K, -70%; ten development positions removed; entroCIM AI and entroCIM 4 Q1 2027; Ascent integration follows Ascent readiness, planned Q4 2027).
+
+## Engle Deep Dive content approved; WAM schedule flipped green; FY27 AOP tentative total $330,880 (added 2026-11-10)
+
+Source: Teams chat with Chris Gazdic / Darryl Benson and Teams chat with John Erickson / Darryl Benson, 2026-11-09; `Evidence/M365_Evidence_Daily_2026-11-10.md`.
+
+- **Engle Deep Dive slide content approved, financials updated (Durable, stated outright).** Benson, Darryl: "Ok - It's good to go. Financials updated as well." Gazdic, Chris: "Content looks good, I just checked with Amy, we are good to change schedule to green on WAM since marketing did their campaign launch."
+- **WAM/ADM to report as separate programs starting January 2027 (Decision).** Logged in `03_Decision_Log.md`, 2026-11-09; see that entry for the open question of how Darryl is meant to deliver the message.
+- **FY27 AOP tentative total: $330,880 (CAPEX $264,704, OPEX $66,176), still draft.** Erickson, John: "CAPEX - $264,704 OPEX - $66,176 Total - $330,880... this is considered draft until AOP is fully finalized by IT/Finance."

@@ -24,7 +24,7 @@ Usage economics: on a subscription plan, model choice governs how much work fits
 | Meeting prep ("prep me for X") | Sonnet | Opus | Forum carries an open decision with exec-leadership audience |
 | Routine drafts (Teams nudges, internal emails, recognition notes) | Sonnet | — | — |
 | Exec deliverables (Sean pre-reads, Engel/Dirk/Akash slides, reset narrative, benefits notes) | Opus | Fable | Narrative-defining artifacts: one-shot credibility events like the WAM reset |
-| Sean update (on-demand, per Sean_Update_Standard) | Sonnet | Opus | Update lands in a charged context (post-Engel/Hasting signal, AOP asks) |
+| Sean update (on-demand, per Sean_Update_Standard) | Sonnet | Opus | Update lands in a charged context (post-Engel/Hayston signal, AOP asks) |
 | Strategy / thought-partner sessions (org design, portfolio strategy, AOP, "challenge me") | Fable | — | — |
 | Decision memos | Opus | Fable | Irreversible or org-structure decisions |
 | Diagrams, spreadsheet builds, Pandoc/format mechanics | Sonnet | — | Content already decided; work is construction |
@@ -33,7 +33,7 @@ Usage economics: on a subscription plan, model choice governs how much work fits
 ## Selection Heuristics
 
 1. **Judgment density, not document length**, drives model choice. A two-line reply to Sean can warrant Opus; a ten-page mechanical conversion needs only Sonnet.
-2. **One-shot audiences get the strongest model.** Anything read by Engel, Hasting, Dirk, Akash, or an at-risk customer is a credibility event, not a document.
+2. **One-shot audiences get the strongest model.** Anything read by Engel, Hayston, Dirk, Akash, or an at-risk customer is a credibility event, not a document.
 3. **Separate thinking from building.** Set strategy/narrative in an Opus or Fable session; execute the deck/doc mechanics in a Sonnet session against the decided content.
 4. **Fable is for being challenged, not for being served.** Its marginal value is highest where Darryl wants assumptions attacked: org structure, portfolio bets, AOP positioning, "what am I missing."
 5. **When mixed work lands in one session,** pick the model for the highest-judgment task in it.

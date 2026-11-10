@@ -13,6 +13,11 @@
 
 ## Entries
 
+### 2026-11-09 — Dell alarm-database issue closed: RCA delivered and accepted (open since 2026-08-25)
+- Intermittent alarming failures from alarm-handler corruption at Dell (Limerick) ran from 08-25 with no root cause and a customer request for an RCA outstanding since 10-14. Chad Steger sent the RCA to Dell on 10-30; Dell accepted it and the release rollout is proceeding. Darryl confirmed with Chad on 11-09 and closed Pulse P006 and Watch W009 (Active since 10-16, escalated home of the issue).
+- Impact: the longest-running customer-visible deployment issue on the largest account is closed with a customer-facing deliverable, not by silence. Dell team-raised load drops accordingly. Any further alarm actions will be caught as new Pulse sightings rather than kept open here.
+- Source: Chad Steger, weekly Pulse review return (filed 2026-11-09); Darryl's confirmation, session 2026-11-09. Communicated: not yet.
+
 ### 2026-10-23 — entroCIM customer training: commercial model fully operationalized (catalog, pricing, margin mechanics)
 - Named courses with standard learning objectives, $250/learner reference price (5-learner minimum, 20-learner maximum), $150/learner locked internal cost, margin-driven pricing, and a line-level discount/multiplier mechanism were all built and delivered this week (Maggie Becker, with Darryl and David Blondel). Matrix sent to Sales (Leanne Gordon, Valli Poornakumar, Nate Boyle).
 - Impact: training moves from an undefined "hours" offering to a repeatable, margin-controlled commercial product Sales can propose and Finance can model. Closes a loop open since 08-12 (training-catalogue commitment).
@@ -330,7 +335,7 @@
 ### 2026-07-15 — WAM Update slide completed for the WAM actuals deck
 - Darryl's contribution to the WAM slides: completion and summary of the Update slide (product: production-ready and sellable, DDP/EUDM complete, MDM/GPO work defined; commercial: selling underway, marketing launch Aug 2026, Managed Services progressing; metrics: ALM target definition revised).
 - Context from the Finance-built metrics slide: WAM YTD ~$16.7M vs $19M objective (87.23% attainment by June), tracking ahead of linear target under the revised metric definition.
-- Impact: WAM executive narrative now pairs a disciplined update with strong attainment numbers — direct input to the Engel/Hasting reset.
+- Impact: WAM executive narrative now pairs a disciplined update with strong attainment numbers — direct input to the Engel/Hayston reset.
 - Source: Darryl 07-15, slides provided. Communicated: WAM actuals deck; not yet in a Sean update.
 
 ### 2026-07-03 — DDP/EUDM connection completed for WAM
@@ -349,7 +354,7 @@
 - Source: handoff email 07-13, filed 07-15. Communicated: referenced in Sean meeting brief; recognition note to Chad drafted.
 
 ### 2026-07-17 — WAM/entroCIM executive reset framing completed, presented to John Engel
-- Reset content finished (pipeline slide, entroCIM update bullets, WAM Update slide) and presented to John Engel today, closing the loop opened 07-14 when Sean McCloskey called for a "true reset" after WAM benefits underreporting soured Engel and Rob Hasting.
+- Reset content finished (pipeline slide, entroCIM update bullets, WAM Update slide) and presented to John Engel today, closing the loop opened 07-14 when Sean McCloskey called for a "true reset" after WAM benefits underreporting soured Engel and Rob Hayston.
 - Impact: direct repair of a named executive-narrative risk; outcome of today's presentation still pending (Darryl to report back if anything new surfaces).
 - Source: Darryl 07-17. Communicated: this is the presentation itself; strong candidate for the next Sean update once Engel's reception is known.
 

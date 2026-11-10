@@ -7,6 +7,7 @@
 ## Executive Leadership
 
 ### Sean McCloskey
+- **11-06: assumes leadership of the Data Strategy & Governance team (Digital IT) in addition to his current responsibilities; still reports to Akash Khurana.** Scope added: MDM, data governance and data strategy across product, supplier and customer data domains; immediate priority is the MDM deliverables for the early-2027 DDP deployments; partners with the Data Office and with Sara Nixon (EPMO). Darren Taylor has left Wesco as part of the change. Implications for Darryl: (1) Sean now owns the MDM/data-governance dependency that WAM/ADM has been waiting on from outside (DDPTRK-6346 lineage, supplier attributes, P360 attribute work, `05` B3), so the escalation path for those items shortens to one level; (2) Sean's attention is further divided, and the announcement names DDP as his immediate priority, consistent with his 10-06 statement that DDP is one of Akash's two priorities; expect Digital Products asks (WAM takeover, Launch Studio, Monday.com) to compete with it; (3) Sean's expanded scope is enterprise data, not Digital Products, so Darryl's team should expect data standards and ownership rules to arrive from Sean's new team rather than be negotiated product by product. Source: company announcement pasted by Darryl 2026-11-06, author not stated (`Evidence/2026-11-06_Announcement_Data_Strategy_Governance_to_Sean.md`). Watch `W101`.
 - **10-29: verbal update on the products Darryl owns: he will add Wesco's use of Monday.com to Darryl's portfolio** (Darryl, direct). Monday.com is a Run product with Chris Gazdic as Product Executive on the August list. Scope, effective date and handover not stated. `03` 2026-10-29; `Products/Monday_com/Monday_com.md`.
 - **10-20: Launch Studio stated to his staff as Darryl's work, with an endorsement** ("I think I really like this"), and a standing ask: "Darryl, please keep the team updated as you go through that." Logged in `07` against the Agile Staff Meeting as a standing expectation, not a Register A item. Same meeting: Sean said requisitions are "sitting in [Akash's] queue" after Akash "did say that ours would go forward"; which requisitions is not in the words. AOP: "We're in the tail side of AOP... we understand the budgets that we're getting"; headcount and cost shown as maintained from last year. Transcript speaker labels are surname-only; attribution as shown. Source: `Evidence/M365_Evidence_Daily_2026-10-20_AgileStaff.md` (transcript, 732 of 732 lines).
 - **Org and scope (Darryl, 2026-10-07):** reports to Akash Khurana (CIO). Responsible for all of the digital products, Darryl's included, through Darryl and his other direct reports. Darryl counts him an ally.
@@ -45,7 +46,7 @@
 - Product Executive for 6 products (Digital Product List 07-15): Assortment, AutoBOM, Digital FTTx, Proton.ai, Pull Logic, RecommEngine — largest PE span in the portfolio; mostly EES/Supply Chain/All-SBU facing.
 - **Attribution note (07-14):** everything logged under her name from the 07-14 Agile Staff loop notes was actually Sean McCloskey (traveling together, Sean using her computer). Her own positions and style: not yet evidenced — treat as unknown. Was traveling with Sean 07-14.
 
-### John Engel / Rob Hasting
+### John Engel / Rob Hayston
 - Top-executive audience (07-14): WAM financial-benefits underreporting left a **negative impression** with both. The WAM reset narrative exists to repair this. Handle all WAM benefits claims with realized-vs-planned discipline.
 
 ### Brad Stevens
@@ -438,6 +439,22 @@ Source: `Products/digital-products-portfolio-aug26.pptx`, provided by Darryl 202
 - **Sunny Sharma / Lisa Orton — a more formal product-governance relationship is forming.** Lisa Orton chat, 2026-10-06 to 2026-10-07: Darryl, "I will strengthen it and reinforce the requirement that I'm his focus for all things product"; Lisa Orton, "Let's partner and decide how we want him to work with us." Direction agreed; no dated deliverable yet, so not entered as a Register A item (fails the Dating Rule as stated). Revisit once a concrete next step is named.
 - **Akansh Gangil — reconfirmed as the central WAM/ADM owner this cycle**, now carrying the reduced-capacity run model (eight-person minimum) and the open Strev production-outage escalation. See `04` WAM/ADM row and the new Strev outage row.
 
+## New / Unconfirmed (added 2026-11-06, Darryl direct: Data Strategy & Governance announcement)
+
+Source: `Evidence/2026-11-06_Announcement_Data_Strategy_Governance_to_Sean.md`. Author of the announcement not stated in the pasted text.
+
+### Data Strategy & Governance team (Digital IT)
+- Reports to Sean McCloskey from 2026-11-06. Remit: master data management (MDM), data governance and data strategy across product, supplier and customer data domains; establishing governance, standards, ownership and data management practices for data quality, consistency and availability. Immediate priority: MDM deliverables for the early-2027 DDP deployments. Partners with the Data Office (a separate body; relationship between the two is not stated beyond "partner closely"). Team composition and the named individuals in it are not stated; likely includes the MDM and Governance contacts already in this file (Inder Gambhir, Priyambada Dash, Gandhi Subramanian, Jen Turnage, Anna Baker, Rochelle), all unconfirmed.
+
+### Sara Nixon
+- Reports to Rob Hayston; keeps her current responsibilities and partners with Sean on executing the master data strategy, "combining EPMO discipline, governance, tooling and support" to scale DDP. Reads as the EPMO owner for the data program rather than a data-domain owner; the split of decision rights between her and Sean is not stated. Role title unconfirmed. New to Darryl's portfolio; relevance is through the DDP program governance that WAM/ADM and CAT depend on.
+
+### Rob Hayston
+- Named as Sara Nixon's manager. Spelling confirmed by Darryl 2026-11-09 as **Hayston**; the earlier "Hasting" spelling in living documents and register items was corrected the same day (archived briefings, evidence and sent deliverables left as written). Delivers the monthly EPMO Portfolio Review deck to John Engel; Darryl supplies the entroCIM and WAM rows (`07`).
+
+### Darren Taylor
+- No longer with Wesco as of 2026-11-06. Previously the lead of the Data Strategy & Governance team (inferred from the announcement's structure, not stated outright). Appears in the record on `05` B3 ("new attributes into P360 with Rochelle and Darren Taylor's team"); that team is now Sean's, and the working contact for B3 is unconfirmed.
+
 ## Customers / External
 
 - **Mike Krall (NYC)** — customer visit planned with sales team, alongside other NYC customers (added 2026-07-13). **07-24 (Darryl): trip is off — Mike unavailable for the dates the sales team slotted.** No reschedule planned.
@@ -657,3 +674,9 @@ Source: M365 daily evidence package, reporting window 2026-10-13 to 2026-10-14. 
 - **Maggie Becker** (cross-reference, existing entry, 10-13) — training cost/margin calculator built and delivered this week: $150/learner cost locked, margin drives price, line-level discount/multiplier added; matrix sent with Nate Boyle copied. Consistent, concrete follow-through across three cycles now (10-06 pricing, 10-13 recognition, 10-23 packaging, 10-26 mechanics). Durable: she is the de facto owner of the entroCIM training commercial operating model. See `Products/entroCIM/entroCIM.md`, 2026-10-26.
 - **People-signal reconfirmations this cycle (weekly evidence, no new facts beyond what's filed in `04`/`05`/Pulse):** **Amy Aguirre** — commercial owner for the Strev AI amendment review ahead of Brian Miller (`05` A49, `04` W006). **Mike Reed** — continuity holder for pre-acquisition Stanford history and licensing; supplied 2022/2023 POs (`05` C74, `04` W005). **Keith Bishop** — technical authority on the Stanford Commissioning App/.pod dependency (`05` C73, `04` W005). **Chad Steger / Shawn Clark** — Quest-exit concentration continues; both carry most of the open Quest Pulse issues (`Registers/pulse/` P013, P047-P051). **Leanne Gordon** — Sales side of training packaging and the Junction renewal. **Sarah Monteleone** — Stanford account owner driving the internal alignment and customer call.
 
+
+## Updates 2026-11-09 (weekly evidence)
+
+- **Ron Snyder** (existing entry, see above) — became the key technical owner for digesting and revising the CDA v0.1 requirements spec and translating the Nozomi concept into entroCIM's development process (CDA requirements session, 2026-11-02). Committed to schedule a revision meeting with Darryl later that week; the 2026-11-03 CDA.md entry shows the spec was in fact revised the same morning, so this appears delivered. He is now the primary bridge between CDA product intent and entroCIM technical execution, on top of the existing engineering-knowledge-concentration pattern already tracked (`Registers/pulse/K002`).
+- **Akansh Gangil** (existing entry, see above) — continues to carry the cross-team escalation for WAM's EUDM full-manufacturer-part-number dependency (`04` W016), now with an explicit, dated ask to the Data Hydration/Cloud Data Office team to expedite. Functioning as the coordination point across UDM, Data Hydration and EUDM stakeholders on this thread.
+- **James Haefele** (new) — Nozomi Networks contact; returned the fully executed Wesco/Nozomi MNDA and confirmed Wesco's Nozomi partner-portal access, unlocking partner resources, training and sandbox paths for CDA technical validation (`05` A71). Darryl is scheduling a short next-steps meeting with him (and Michael Dugent) to update Nozomi on Wesco's planned service-delivery use. Role/relationship otherwise unconfirmed.

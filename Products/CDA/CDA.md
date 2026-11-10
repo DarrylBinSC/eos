@@ -2,7 +2,7 @@
 
 > **New session? Read `CDA_Start_Here.md` first** (current files, how to rebuild the deck, working rules, open items).
 
-As of: 2026-10-30 (Nozomi intake and BIR drafted; intake slide and business case refreshed; prior: 2026-10-26, SecuriThings deck reviewed; prior: 2026-10-14, Mooney refresh email drafted; prior: 2026-10-07; 2026-10-06; front door created 2026-09-01). Created this date to close a routing gap: CDA has substantial evidence and decision history (see `03`, `05`, and this folder's phase files) but, unlike WAM, entroCIM, and Navigator, had no single durable knowledge file at the folder root. This file is that front door; phase files (`00_Charter` through `05_Operating_Record`) hold the working detail and are not duplicated here.
+As of: 2026-11-09 (CDA build approach, positioning and onboarding model set); prior: 2026-10-30 (Nozomi intake and BIR drafted; intake slide and business case refreshed; prior: 2026-10-26, SecuriThings deck reviewed; prior: 2026-10-14, Mooney refresh email drafted; prior: 2026-10-07; 2026-10-06; front door created 2026-09-01). Created this date to close a routing gap: CDA has substantial evidence and decision history (see `03`, `05`, and this folder's phase files) but, unlike WAM, entroCIM, and Navigator, had no single durable knowledge file at the folder root. This file is that front door; phase files (`00_Charter` through `05_Operating_Record`) hold the working detail and are not duplicated here.
 
 ## Nozomi Guardian MSP enablement: Demand Intake and BIR drafted (added 2026-10-30)
 
@@ -503,3 +503,15 @@ The mutual NDA between Wesco International and Nozomi Networks is fully executed
 - Effective date August 11, 2026; term three years from the Effective Date (to August 2029), terminable by either party on written notice; confidentiality obligations survive three years after termination.
 - Purpose clause covers evaluation of a business relationship including product configuration, discounts and agreement terms.
 - Status before this: the MNDA was not tracked as a register item; it surfaces here as a closed dependency, not a new action.
+
+## CDA build approach, positioning and onboarding model set (added 2026-11-09)
+
+Three decisions from the 2026-11-02 CDA requirements session (Darryl Benson and Ron Snyder), filed from this week's evidence review; Ron's first read of the v0.1 spec was already noted above.
+
+- **Build order:** start by connecting to Nozomi Guardian, reading and reporting its data, then refine requirements from what is actually observed rather than finishing the full design up front.
+- **Positioning, narrows product framing:** CDA stays on the existing entroCIM platform and keeps the point-based commercial model (see the pricing strategy above); it is explicitly **not** RMM, a standalone SOC, threat hunting, or a replacement for a customer's own security tooling. State it this way in any CDA material going forward.
+- **Onboarding model, corrects "auto-onboarding":** the 2026-11-03 entry above named auto-onboarding as a stated capability goal; Darryl and Ron's 11-02 session set it as **assisted**, not fully unmanned -- Guardian discovery supplies device data, but operators still make the onboarding selections and supply credentials where needed. Use "assisted onboarding" in CDA material, not "auto-onboarding."
+
+Two items remain open from the same session: the local-versus-cloud Guardian architecture and exact deployment pattern (Darryl/Ron Snyder, with Nozomi input), and whether discovered devices must be fully integrated into entroCIM before firmware-update actions (Ron Snyder/product team). Both gate Phase 1 sizing and node/BOM decisions.
+
+Source: CDA - High Level Produt requirements (transcript), 2026-11-02; `Evidence/M365_Evidence_Weekly_2026-11-09.md`.

@@ -1,5 +1,20 @@
 # entroCIM
-As of: 2026-11-06 (Willow vs. entroCIM positioning line, top section; prior: 2026-11-02 (deployment guide issued, Merck Rahway renewal, section at the end; prior: 2026-10-26 (SkySpark 4.0.7 section at the end; prior: 2026-10-07, 2026-10-06 top section); base merge 2026-07-14 — merged: 30-day baseline + daily evidence + context library v1 (files 30/31). Companion: `entroCIM_Roadmap.md` (quarterly roadmap slide, dated — check its as-of date before citing).
+As of: 2026-11-09 (release naming convention and Q4 scope; Ascent Navigator integration targeted Q4 2027; top sections; prior: 2026-11-06 (Willow vs. entroCIM positioning line; prior: 2026-11-02 (deployment guide issued, Merck Rahway renewal, section at the end; prior: 2026-10-26 (SkySpark 4.0.7 section at the end; prior: 2026-10-07, 2026-10-06 top section); base merge 2026-07-14 — merged: 30-day baseline + daily evidence + context library v1 (files 30/31). Companion: `entroCIM_Roadmap.md` (quarterly roadmap slide, dated — check its as-of date before citing).
+
+## Release naming convention and Q4 2026 release scope (added 2026-11-09, Darryl direct)
+
+A quarterly release is named for the quarter in which it is developed and ships at the end of that quarter, which always lands in the first weeks of the next quarter. The January 11, 2027 date is therefore the Q4 2026 release, not a slip from Q4 to Q1; do not report it as a schedule change.
+
+Source: Darryl, 2026-11-09 session, while updating the EPMO Portfolio Review slide (`Deliverables/Portfolio_Admin/2026-11-09_EPMO_Portfolio_Review_Slide_Update.md`).
+
+- Q4 2026 release scope as stated: entroCIM 4.0 platform update, **entroCIM DC ver. 2** (data center UI, the second version of the DC UI redesign targeted for Q1 2027 in the 10-14 session note above) and entroCIM AI.
+- Reporting rule: on status slides, label it "Q4 release, releasing early January 2027." Schedule health is judged against the quarter convention, not the calendar quarter.
+
+## Ascent Navigator integration: planned in 2027, targeted for the Q4 2027 release (added 2026-11-09, Darryl direct)
+
+The entroCIM and Ascent Navigator integration will be planned during 2027 and sits on the entroCIM roadmap for the Q4 2027 release, with the timing driven by Navigator's own release schedule. On status slides this replaces the earlier "evaluate strategic integration of entroCIM and Ascent" next-step wording.
+
+Source: Darryl, 2026-11-09 session (EPMO Portfolio Review slide update). Supplements the Navigator integration sequence section (2026-08-27) below; the data center value proposition owed to Sean (`A58`) remains a separate internal deliverable and is not reported as a product milestone.
 
 ## Competitive positioning: Willow vs. entroCIM (added 2026-11-06)
 
@@ -145,7 +160,7 @@ Execution-and-delivery mode. **Release 3.1.12.13** targeted Jul 20 (quarterly ca
 ## Commercial Position
 Central business concern is commercial performance and operating ownership, not product readiness.
 
-**2026 financial objectives (Engel deck, 07-14):** $6.6M software sales — YTD ~$1.1M (16.7% to target), current month ~$269K. $3M product pull-thru — YTD ~$28K (0.95%). Both materially behind at mid-year; this is the quantitative substance behind the Engel/Hasting impression and the reset.
+**2026 financial objectives (Engel deck, 07-14):** $6.6M software sales — YTD ~$1.1M (16.7% to target), current month ~$269K. $3M product pull-thru — YTD ~$28K (0.95%). Both materially behind at mid-year; this is the quantitative substance behind the Engel/Hayston impression and the reset.
 
 **June MBR metrics (Nathan Kehr, 07-14):** Total pipeline $32M. June: 11 opportunities created ($915K), 4 new wins, $373K bookings, $182K billings.
 
@@ -700,3 +715,27 @@ Source: 2026 Deployment - Daily Scrum, 2026-11-05 (transcript); `Evidence/M365_E
 - **Wireless decommissioned Dell-wide except Palo Alto (Durable, stated outright).** Zaidi, Syed Jamshed: "they... want us to just only focus on the wired ones because they are going to decommission the wireless ones. And only Palo Alto... will be having the wireless one."
 - **Floor-plan-first navigation decided for Dell HQ (Durable, stated outright).** Zaidi, Syed Jamshed: "the main floor plan as a landing page and then you click in to go into the room. That's going to be the direction we go with it."
 - **Licensing migration off Stack Hub: 58 of 75 instances moved (Durable, stated outright).** Reed, Mike: "looks like about... 17 of them that don't, but that's out of like 75. So the majority have already moved over to the new way." The remaining 17 are the ones gating items like Merck's overdue license maintenance (`Registers/pulse/P131.md`); Steger, Chad committed to find out what moving Merck's instance to 3.1.12+ would take.
+
+## FY27 Value KPIs: production owners set, team slides built, Engle deep-dive measures slide mocked up (added 2026-11-09, Darryl direct)
+
+The four AOP Value KPIs now have production owners and a working deck for the team, and Darryl intends to add a "2027 Value Measures" slide to the Engle deep-dive deck to set non-financial commitments alongside the revenue shortfall.
+
+- Source: Darryl, session 2026-11-09. KPIs as submitted in `COPY_entrocim_build_it-demand-collation-template.xlsx`, sheet `3. BUSINESS CASE` (quarterly; baselines Q1 2027; first report Q2 2027).
+- Owners (Darryl, 2026-11-09): KPI 1 licensed point utilization and KPI 4 installed-base retention and expansion, David Blondel and Mike Reed; KPI 2 platform availability and data continuity, Chad Steger and Babu Papanna; KPI 3 functional adoption depth, David Blondel and Ron Snyder (Claude's proposal, pending Darryl). These replace the August proposals in `Deliverables/Portfolio_Admin/2026-08-26_Soft_Metrics_Backing_Document.md` (Ron Snyder; Nathan Kehr; Tom Boss).
+- Decision: the team works to the four AOP KPIs as submitted, not the August monthly soft-metric set, which reordered them, split KPI 4, dropped KPI 3 and added containerized deployment coverage. Containerization is no longer in the set.
+- KPI 3 production method proposed: count configured objects per core function per site from platform configuration; a site counts at three or more functions with a live object. Feasibility is a question for David Blondel and Ron Snyder.
+- Deck: `Deliverables/entroCIM/2026-11-09_entroCIM_Value_KPIs.pptx` (Wesco template). Slide 1 the four KPIs with source, owner and cadence; slide 2 production steps and owner questions; slide 3 the Engle deep-dive mockup ("entroCIM 2027 Value Measures": measure, what it tells us, target or basis; prospectus register, no owners). Earlier version `_superseded/2026-11-09_entroCIM_Monthly_Metrics.pptx`.
+- Open before the Engle slide is used: whether the 80% utilization target stays on a CEO slide (set in August under 19-person staffing); whether Sean accepts a second entroCIM slide in the one-slide-per-product deck, or a compressed block on the existing slide.
+
+## HQ alarm page redesign: severity labels replace counts; sound-mute tag; retention defaults confirmed (added 2026-11-10)
+
+The entroCIM team worked through a redesign of the HQ alarm page, moving away from a raw count display and toward severity labels, while surfacing several standing pain points that are shaping the design.
+
+Source: entroCIM - HQ - DISC - Alarms, 2026-11-09 (transcript, full 816 lines); `Evidence/M365_Evidence_Daily_2026-11-10.md`.
+
+- **Decided: replace the numeric alarm count with severity labels (Durable, stated outright).** Snyder, Ron: "we're going to get rid of the number and display high, medium, low, or critical, medium, low instead of displaying a number because nobody knows what a number is." Longer-term direction is to remove the count view entirely once the labeled display is in place.
+- **Decided: a per-user tag can mute the alarm sound (Durable, stated outright).** Snyder, Ron: "there's a tag you could put on the user to turn off the sound now."
+- **Alarm retention confirmed: 90 days default, extended to one year for FRV (Durable, stated outright).**
+- **Graphics scope deferred to a separate call, kept out of this discussion (Decided).** Snyder, Ron: "the graphics is kind of out of scope for this discussion, too. We could circle back on how we should handle that on a different call."
+- **Commitment: Snyder to draft requirement documents for the new alarm feature before any coding starts**, after bringing in Keith Bishop on alarm-engine requirements, and to share the compiled document with the team.
+- **Standing pain points raised, feeding the redesign (not yet actioned as separate issues):** Dell's regional/global server clustering breaks alarm navigation on at least one server (Heid, Matthew: "there's no way of navigating... it also is completely blank"); customer point renames can leave alarms stuck indefinitely with no easy delete path; users cannot currently turn the alarm sound off (addressed by the new tag, above); alarm navigation from a breaker goes to the parent equipment, not the specific sub-equipment.
