@@ -22,6 +22,17 @@
 
 ## Decisions Made
 
+### 2026-11-10 — Pulse: close on 10 days of silence, three sightings to count, weekly review cut to exceptions
+- Status: Made
+- Owner: Darryl Benson
+- Context: The weekly Pulse review workbook reached 150 rows; Darryl was concerned it had become busy work for the team. Review found nothing left the workbook on its own, quiet had no end state, and the first cycle changed 12 of 84 rows.
+- Options considered: keep as is; exceptions-only sheet (29-row or 42-row version); drop the workbook and take verdicts verbally in the governance meetings (held as the fallback).
+- Decision / Recommended path: Darryl, chat: exceptions-only sheet (stuck or a call for him); auto-close after 10 days without a sighting (he shortened Claude's proposed 28); never send quiet or low-sighting items; editable cells cut to Verdict and Comment (plus the reviewer name, kept for attribution); a Medium or Low issue counts from its third sighting (he raised Claude's proposed two). Claude added, for his confirmation: 21 days for bi-weekly forums, and calls waiting on him never close on silence.
+- Risk of waiting: n/a, decided.
+- Forum where this should be decided: decided in session.
+- Follow-up: `CLAUDE.md` updated; first sweep closed 81 issues; workbook regenerated at 22 rows. Check the reopen rate at the 2026-11-16 weekly.
+
+
 ### 2026-11-09 — WAM and ADM to report as separate programs starting January 2027
 - Status: Made
 - Owner: Chris Gazdic (communicated); Darryl Benson (message delivery)
