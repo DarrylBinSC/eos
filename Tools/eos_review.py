@@ -28,8 +28,8 @@ def reviewers_for(track, product):
 ALL_REVIEWERS = sorted({n for t in ("development", "delivery") for v in REVIEWERS[t].values() for n in v})
 
 # column spec: (header, width, editable)
-# v3, 2026-11-10 (Darryl): exceptions only, and only Verdict, Comment and the reviewer name are editable.
-COLS = [("ID", 6, False), ("Issue", 52, False), ("Owner", 20, False), ("Sev", 8, False), ("Next action", 40, False),
+# v3, 2026-11-10 (Darryl): exceptions only, and Owner (reopened the same day at the team's request), Verdict, Comment and the reviewer name are editable.
+COLS = [("ID", 6, False), ("Issue", 52, False), ("Owner", 20, True), ("Sev", 8, False), ("Next action", 40, False),
         ("Verdict", 13, True), ("Comment", 26, True), ("Reviewed by", 18, True),
         ("Team", 7, False), ("Product", 9, False), ("Account", 12, False), ("Heard", 10, False)]
 
@@ -79,7 +79,7 @@ def build(out=None, today=None):
     for r in rows: og.append([r["id"], r["owner"], r["sev"], r["nxt"], "No change"])
     changed = PatternFill("solid", fgColor="FFF2CC")
     ws.conditional_formatting.add(f"A2:{get_column_letter(len(COLS))}{n}",
-        FormulaRule(formula=[f'OR($F2<>"No change",LEN($G2)>0)'], fill=changed))
+        FormulaRule(formula=[f'OR($C2<>Orig!$B2,$F2<>"No change",LEN($G2)>0)'], fill=changed))
     ls = wb.create_sheet("Lists"); ls.sheet_state = "hidden"
     for i, v in enumerate(VERDICTS, 1): ls.cell(i, 1, v)
     for i, v in enumerate(SEVERITIES, 1): ls.cell(i, 2, v)
@@ -104,7 +104,7 @@ def build(out=None, today=None):
         "This sheet lists only the issues that have been raised for two weeks or more without closing, or that look like they need Darryl. Everything else is left to your own process.",
         "1. If a row is right, do nothing.",
         "2. If it is done, set Verdict to Resolved. If it should not be tracked, set Not an issue. If you need Darryl, set Needs Darryl and say why in Comment.",
-        "3. If the owner, severity or next action is wrong, say so in Comment. One line is enough.",
+        "3. Owner is yours to set: pick the name from the list in the Owner cell. If the severity or next action is wrong, say so in Comment. One line is enough.",
         "4. Put your name in Reviewed by on any row you changed.",
         "5. Anything important we missed goes on the New issues tab, one line each.", "",
         "Ground rules: work in the shared copy only, never a download or an email copy; AutoSave on; do not add columns or tabs, sort, or delete rows; "
