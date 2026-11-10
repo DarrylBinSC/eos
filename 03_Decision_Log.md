@@ -22,6 +22,17 @@
 
 ## Decisions Made
 
+### 2026-11-09 — WAM and ADM to report as separate programs starting January 2027
+- Status: Made
+- Owner: Chris Gazdic (communicated); Darryl Benson (message delivery)
+- Context: Teams chat, Gazdic, Chris / Darryl Benson, 2026-11-09. Gazdic: "WAM and ADM are separate, are starting next year we will split the programs and start reporting on ADM going forward starting in January." Same thread, Gazdic on naming: "WAM is ADM from our perspective. Intelligent Asset Lifecycle Management services is Amy's piece from the business."
+- Options considered: none stated; this reads as a leadership decision communicated to Darryl, not one made in the thread.
+- Decision / Recommended path: WAM and ADM move to separate reporting lines beginning January 2027. Gazdic asked Darryl directly to "hit the message tomorrow" (11-10) -- unconfirmed whether this is the investor-day call content (`A74`, also due 11-10) or a separate communication. Flagged in chat 2026-11-10 for Darryl to confirm.
+- Risk of waiting: if this is the investor-day content and goes unconfirmed, Darryl could present without the current reporting-split framing, or duplicate a message Gazdic already expects delivered elsewhere.
+- Forum where this should be decided: already decided by Gazdic/leadership; routing is the open question, not the decision itself.
+- Follow-up: `A74` updated with this evidence. Source: `Evidence/M365_Evidence_Daily_2026-11-10.md`.
+
+
 ### 2026-11-03 — Quest exit: Cloud PC approved for Workbench/BACnet Pro tooling, conditioned on no security vulnerability; a separate cleanup fee declined
 - Status: Made
 - Owner: Darryl Benson (Cloud PC conditional approval); Chad Steger (fee decision)
