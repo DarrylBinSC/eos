@@ -77,7 +77,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Syed Jamshed Zaidi | 6 | 24 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Scott Dunn | 5 | 16 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Shawn Clark | 4 | 7 | 2 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Ron Snyder | 2 | 8 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
+| Ron Snyder | 2 | 7 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Keith Bishop | 3 | 2 | 0 | 1 | entroCIM Daily Stand Up |
 | Babu Papanna | 2 | 3 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
@@ -142,7 +142,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P001 PC
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 22, new this week 10, stuck 3, quiet 10. Last sighting: 2026-11-05. Last evidence: 2026-11-05.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 21, new this week 9, stuck 3, quiet 10. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -161,7 +161,6 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 22, new this week 10, stuck
 | P138 | Dev03 HQ/Axon collective-site meter reading broken or corrupted |  |  | Medium | 2026-11-04 | 2026-11-04 | 1 | candidate: gap |
 | P151 | SkySpark 4 Gridboard QA (Dev03) surfaced broken images tied to recent file-routing changes |  |  | Medium | 2026-11-04 | 2026-11-04 | 1 | candidate: gap |
 | P139 | SkySpark 4.0.6 connectors fail to install in release-builder testing |  | Narendra Singh; Sai Kiran Vadluri | Medium | 2026-11-04 | 2026-11-05 | 2 |  |
-| P140 | SkySpark 4.0.7: HQ routing returns "not found" after JSON/Xeto changes |  | Nihar Ranjan Sahu | Medium | 2026-11-04 | 2026-11-05 | 2 |  |
 | P152 | SkySpark 4 setup-script Axon for enabling pods may be incompatible with the changed pod setup |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | candidate: gap |
 | P157 | Stack Hub instances need replacement; license creation after replacement depends on Ron Snyder until a repeatable process exists |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | candidate: gap |
 | P127 | SkySpark 4 QA environment (Dev03W) missing Keith Bishop's pods; QA functionality missing for months |  | Keith Bishop | Medium | 2026-11-03 |  | 1 |  |
