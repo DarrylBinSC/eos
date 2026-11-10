@@ -33,6 +33,7 @@ No signals in the window: BAE, Stanford, UWM.
 - **P142** Dell questioning redundancy/DR architecture and reuse of existing licenses for DR (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P145** Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P159** WAM Exact-supplier renewal notifications are not being sent; blocked on a custom-field enablement (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
+- **P162** Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P132** Updated LATAM server returns a system error after yesterday's update (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P134** Dell 6 lab-meter integrations waiting on single-host-to-multi-host gateway replacement (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P136** Quest VM backups exist but recoverability has not been proven with a restore test (no account; Quest Migration Weekly Check-In). Test: No owner, or the customer is unaware of a material problem.
@@ -50,6 +51,9 @@ No signals in the window: BAE, Stanford, UWM.
 - **P154** Asset/license table reuse risks license workflows pulling in asset data without filtering (no account; WAM Product Backlog Refinement). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P155** Full QA of the new WAM asset-data pipeline is blocked on mock data; real-data QA deferred two sprints out (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P157** Stack Hub instances need replacement; license creation after replacement depends on Ron Snyder until a repeatable process exists (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
+- **P161** SkySpark 4.0.8 reserves new Axon keywords that can break existing code at compile time (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
+- **P163** PMF work on hold pending clarified requirements (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
+- **P164** Gridboard training recommended to pause a week; UI/resource changes unfinished and could confuse users (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P150** Zscaler would not connect for Keith Bishop, blocking his work (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P158** Dev03 development systems shut down off-hours by Wesco IT; one restart failed (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 - **P160** Sales requesting DCIM preview screenshots before the work is fully ready (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
@@ -77,7 +81,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Syed Jamshed Zaidi | 6 | 24 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Scott Dunn | 5 | 16 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Shawn Clark | 4 | 7 | 2 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Ron Snyder | 2 | 7 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
+| Ron Snyder | 3 | 9 | 2 | 0 | entroCIM Backlog Deep Dive, entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Keith Bishop | 3 | 2 | 0 | 1 | entroCIM Daily Stand Up |
 | Babu Papanna | 2 | 3 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
@@ -142,7 +146,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P001 PC
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 21, new this week 9, stuck 3, quiet 10. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 25, new this week 13, stuck 3, quiet 10. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -151,6 +155,7 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 21, new this week 9, stuck 
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-11-04 | 5 | stuck |
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-11-04 | 2 | customer-visible |
 | P137 | Prior Gridboard monorepo migration lost code and broke functionality; migration restarted |  | Nisha More | High | 2026-11-03 | 2026-11-04 | 2 | candidate: boundary |
+| P162 | Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week |  | Ron Snyder | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible, candidate: boundary |
 | P010 | entroCIM tenant redesign and boot-mode routing: no acceptance criteria, rollout sequence or release date yet |  | Michael Pieschel | Medium | 2026-10-14 | 2026-10-27 | 3 |  |
 | P080 | Containerized release packaging question for GPO files/libraries in the entroCIM Release Builder |  | Narendra Singh | Medium | 2026-10-27 | 2026-10-27 | 1 |  |
 | P112 | Glenview Liberty PDU offline, blocking live data/graphic review for January Showcase planning |  | Keith Bishop | Medium | 2026-10-28 | 2026-10-28 | 1 |  |
@@ -160,9 +165,12 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 21, new this week 9, stuck 
 | P149 | Quest/Nextcloud retirement requires moving file and software-pull dependencies to SharePoint before shutdown |  |  | Medium | 2026-10-29 | 2026-10-29 | 1 | candidate: boundary |
 | P138 | Dev03 HQ/Axon collective-site meter reading broken or corrupted |  |  | Medium | 2026-11-04 | 2026-11-04 | 1 | candidate: gap |
 | P151 | SkySpark 4 Gridboard QA (Dev03) surfaced broken images tied to recent file-routing changes |  |  | Medium | 2026-11-04 | 2026-11-04 | 1 | candidate: gap |
+| P161 | SkySpark 4.0.8 reserves new Axon keywords that can break existing code at compile time |  |  | Medium | 2026-11-04 | 2026-11-04 | 1 | candidate: gap |
 | P139 | SkySpark 4.0.6 connectors fail to install in release-builder testing |  | Narendra Singh; Sai Kiran Vadluri | Medium | 2026-11-04 | 2026-11-05 | 2 |  |
 | P152 | SkySpark 4 setup-script Axon for enabling pods may be incompatible with the changed pod setup |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | candidate: gap |
 | P157 | Stack Hub instances need replacement; license creation after replacement depends on Ron Snyder until a repeatable process exists |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | candidate: gap |
+| P163 | PMF work on hold pending clarified requirements |  |  | Medium | 2026-11-10 | 2026-11-10 | 1 | candidate: gap |
+| P164 | Gridboard training recommended to pause a week; UI/resource changes unfinished and could confuse users |  |  | Medium | 2026-11-10 | 2026-11-10 | 1 | customer-visible, candidate: gap |
 | P127 | SkySpark 4 QA environment (Dev03W) missing Keith Bishop's pods; QA functionality missing for months |  | Keith Bishop | Medium | 2026-11-03 |  | 1 |  |
 | P158 | Dev03 development systems shut down off-hours by Wesco IT; one restart failed |  |  | Low | 2026-10-29 | 2026-10-29 | 1 | candidate: gap |
 | P150 | Zscaler would not connect for Keith Bishop, blocking his work |  |  | Low | 2026-11-03 | 2026-11-03 | 1 | candidate: gap |
