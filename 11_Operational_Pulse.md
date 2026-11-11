@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P159** WAM Exact-supplier renewal notifications are not being sent; blocked on a custom-field enablement (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P162** Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P143** Alarm database/Alarm Manager correctly triggers, but customer email notifications are blocked by an SMTP issue (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P146** Cross-site alarm audit has no agreed validation baseline; prior environment decommissioned (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
@@ -131,7 +130,7 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 3, new this week 0, stuck 0, quie
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
-| P159 | WAM Exact-supplier renewal notifications are not being sent; blocked on a custom-field enablement |  |  | High | 2026-11-02 | 2026-11-02 | 1 | customer-visible, candidate: gap |
+| P159 | WAM Exact-supplier renewal notifications are not being sent; blocked on a custom-field enablement |  |  | High | 2026-11-02 | 2026-11-02 | 1 | customer-visible |
 | P154 | Asset/license table reuse risks license workflows pulling in asset data without filtering |  |  | Medium | 2026-11-02 | 2026-11-02 | 1 | candidate: boundary |
 | P068 | WAM renewal recommendation feature: quality rejected, rework from start |  |  | Medium | 2026-10-23 | 2026-11-04 | 3 |  |
 
