@@ -50,10 +50,10 @@
 - Owner: Chris Gazdic (communicated); Darryl Benson (message delivery)
 - Context: Teams chat, Gazdic, Chris / Darryl Benson, 2026-11-09. Gazdic: "WAM and ADM are separate, are starting next year we will split the programs and start reporting on ADM going forward starting in January." Same thread, Gazdic on naming: "WAM is ADM from our perspective. Intelligent Asset Lifecycle Management services is Amy's piece from the business."
 - Options considered: none stated; this reads as a leadership decision communicated to Darryl, not one made in the thread.
-- Decision / Recommended path: WAM and ADM move to separate reporting lines beginning January 2027. Gazdic asked Darryl directly to "hit the message tomorrow" (11-10) -- unconfirmed whether this is the investor-day call content (`A74`, also due 11-10) or a separate communication. Flagged in chat 2026-11-10 for Darryl to confirm.
-- Risk of waiting: if this is the investor-day content and goes unconfirmed, Darryl could present without the current reporting-split framing, or duplicate a message Gazdic already expects delivered elsewhere.
+- Decision / Recommended path: WAM and ADM move to separate reporting lines beginning January 2027. Gazdic asked Darryl directly to "hit the message tomorrow" (11-10).
+- Risk of waiting: if the message was not delivered anywhere, Darryl's audiences could be working from the old, unsplit reporting framing.
 - Forum where this should be decided: already decided by Gazdic/leadership; routing is the open question, not the decision itself.
-- Follow-up: `A74` updated with this evidence. Source: `Evidence/M365_Evidence_Daily_2026-11-10.md`.
+- Follow-up: **Corrected 2026-11-11.** Originally linked to `A74` ("the investor-day call") as the probable delivery venue. `A74` was an errant entry -- Darryl: "Chris was working on the Investor-Day meeting (as a support team member) and I presented at the EPMO meeting" -- so that link is dropped. Where and whether the WAM/ADM reporting-split message was actually delivered is open; ask Darryl to confirm. Source: `Evidence/M365_Evidence_Daily_2026-11-10.md`.
 
 
 ### 2026-11-03 — Quest exit: Cloud PC approved for Workbench/BACnet Pro tooling, conditioned on no security vulnerability; a separate cleanup fee declined
@@ -1012,7 +1012,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-11-11 10:25 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-11 11:08 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
@@ -1276,6 +1276,8 @@
 - Record: `Products/Vibe_Code_Productization/Candidates/BOM_Studio.md`.
 
 2026-10-30 (Claude, daily brief): Launch Studio Teams chat, 2026-10-29. Darryl: "A tool called BOM Studio has been developed to build and price data centers across the entire BOM. We're adding managed services (entroCIM, WAM etc.) to it"; "A guy named Robert Ehiemua built this in Matt Powers' organization"; "Right now it's running on his gaming rig on the desk behind him, so to scale this one, we'll need to get going"; "Lets talk about this one tomorrow" (so 2026-10-30). Wassil, Michael: "If you want me to discuss the launch studio, I'd be glad to do so." Darryl: "Go ahead and mention it to him; I already have" (the "him" is not named in the extract). The calendar entry "AI Bom Studio / ALM / Safety / Entrocim" (2026-10-29) was not transcribed. Source: `Evidence/M365_Evidence_Daily_2026-10-30.md`.
+
+2026-11-11 (Claude, session): Darryl, direct: "We'll be adding a new product BOM Studio to our team," and hosting it in Azure requires GPU acceleration. Timing, scope and the deciding party not stated. This bears on option (b) versus the gate and on run ownership; route not yet recorded as decided. What the GPU is used for is not yet known and is the first question for Robert Ehiemua. Record: `Products/Vibe_Code_Productization/Candidates/BOM_Studio.md`, section 2026-11-11.
 
 ### 2026-10-20 — Stanford renewal: three licenses back to SkySpark-only, how Wesco supports the roll-back and what happens to the Commissioning App
 - ID: D096
