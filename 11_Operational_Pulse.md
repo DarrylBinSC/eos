@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Improving | -102 | 74 | 171 | 8 | 1 | 2 | 1 |
+| Dell | Improving | -102 | 71 | 168 | 8 | 1 | 2 | 1 |
 | Federal Reserve | Steady | -1 | 18 | 9 | 1 | 0 | 0 | 2 |
 | Wesco Warehouse | Steady | -2 | 12 | 14 | 1 | 1 | 0 | 0 |
 | Ford | Steady | -1 | 10 | 1 | 0 | 0 | 0 | 2 |
@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P142** Dell questioning redundancy/DR architecture and reuse of existing licenses for DR (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P145** Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P159** WAM Exact-supplier renewal notifications are not being sent; blocked on a custom-field enablement (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
 - **P162** Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -85,7 +84,7 @@ Governance: Project management. Owner: Chad Steger. Live 15, new this week 7, st
 | P116 | Palo Alto NetBot found outside the earlier non-DC scope: new integration needed, device credentials unconfirmed | Dell |  | High | 2026-10-29 | 2026-11-05 | 2 | customer-visible |
 | P131 | Merck entroCIM license maintenance substantially overdue; remote access may have lapsed | Merck |  | High | 2026-11-04 | 2026-11-05 | 2 | customer-visible |
 | P135 | Dell HQ display/alarm issue: new alarms not showing, blocking a Penang production rollout | Dell |  | High | 2026-11-03 | 2026-11-05 | 2 | customer-visible |
-| P142 | Dell questioning redundancy/DR architecture and reuse of existing licenses for DR | Dell | Syed Jamshed Zaidi | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
+| P142 | Dell questioning redundancy/DR architecture and reuse of existing licenses for DR | Dell | Syed Jamshed Zaidi | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible |
 | P145 | Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design | Dell |  | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
 | P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-11-03 | 3 |  |
 | P143 | Alarm database/Alarm Manager correctly triggers, but customer email notifications are blocked by an SMTP issue |  |  | Medium | 2026-11-04 | 2026-11-04 | 1 | customer-visible, candidate: boundary |
