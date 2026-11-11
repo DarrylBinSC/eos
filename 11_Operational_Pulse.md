@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P143** Alarm database/Alarm Manager correctly triggers, but customer email notifications are blocked by an SMTP issue (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P146** Cross-site alarm audit has no agreed validation baseline; prior environment decommissioned (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P147** Customer-requested battery-replacement alarms are not an existing entroCIM function (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P148** North America PME/OPC UA integration has no pilot; first live test planned on Central Texas (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -52,7 +51,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 2 | 8 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Chad Steger | 2 | 7 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Shawn Clark | 3 | 3 | 2 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Akansh Gangil | 0 | 5 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
@@ -69,7 +68,7 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 15, new this week 7, stuck 3, quiet 2. Last sighting: 2026-11-05. Last evidence: 2026-11-10.
+Governance: Project management. Owner: Chad Steger. Live 14, new this week 6, stuck 3, quiet 2. Last sighting: 2026-11-05. Last evidence: 2026-11-10.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -84,7 +83,6 @@ Governance: Project management. Owner: Chad Steger. Live 15, new this week 7, st
 | P142 | Dell questioning redundancy/DR architecture and reuse of existing licenses for DR | Dell | Syed Jamshed Zaidi | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible |
 | P145 | Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design | Dell |  | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible |
 | P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-11-03 | 3 |  |
-| P143 | Alarm database/Alarm Manager correctly triggers, but customer email notifications are blocked by an SMTP issue |  |  | Medium | 2026-11-04 | 2026-11-04 | 1 | customer-visible, candidate: boundary |
 | P146 | Cross-site alarm audit has no agreed validation baseline; prior environment decommissioned |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | customer-visible, candidate: gap |
 | P147 | Customer-requested battery-replacement alarms are not an existing entroCIM function |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
 | P148 | North America PME/OPC UA integration has no pilot; first live test planned on Central Texas | Dell |  | Medium | 2026-11-05 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
