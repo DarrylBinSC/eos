@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P149** Quest/Nextcloud retirement requires moving file and software-pull dependencies to SharePoint before shutdown (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P154** Asset/license table reuse risks license workflows pulling in asset data without filtering (no account; WAM Product Backlog Refinement). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 
 ## Knowledge concentration
@@ -48,8 +47,8 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 2 | 6 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Shawn Clark | 3 | 3 | 2 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Chad Steger | 2 | 5 | 4 | 0 | 2026 Deployment Daily Scrum, Quest Migration Weekly Check-In |
+| Shawn Clark | 3 | 2 | 2 | 0 | Quest Migration Weekly Check-In |
 | Akansh Gangil | 0 | 5 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Ron Snyder | 1 | 2 | 2 | 0 | entroCIM Daily Stand Up |
@@ -59,7 +58,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Syed Jamshed Zaidi | 2 | 6 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Matthew Heid | 2 | 4 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Scott Dunn | 1 | 3 | 1 | 1 | 2026 Deployment Daily Scrum |
-| Babu Papanna | 1 | 2 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Babu Papanna | 1 | 1 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 
 Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own. Sole holder: knowledge areas they hold without a confirmed backup.
 
@@ -85,7 +84,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P007 PC
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 5, new this week 1, stuck 1, quiet 1. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 4, new this week 1, stuck 1, quiet 1. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -93,7 +92,6 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 5, new this week 1, stuck 1
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-11-04 | 2 | customer-visible |
 | P137 | Prior Gridboard monorepo migration lost code and broke functionality; migration restarted |  | Nisha More | High | 2026-11-03 | 2026-11-04 | 2 |  |
 | P162 | Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week |  | Ron Snyder | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
-| P149 | Quest/Nextcloud retirement requires moving file and software-pull dependencies to SharePoint before shutdown |  |  | Medium | 2026-10-29 | 2026-10-29 | 1 | candidate: boundary |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P042 entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19).
 
