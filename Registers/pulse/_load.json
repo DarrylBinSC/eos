@@ -1067,5 +1067,82 @@
    "load": 12,
    "teams": 12
   }
+ },
+ "2026-11-11": {
+  "BAE": {
+   "delta7": 0,
+   "load": 0,
+   "teams": 0
+  },
+  "Coca-Cola (TCCC)": {
+   "delta7": -2,
+   "load": 0,
+   "teams": 0
+  },
+  "Cree Church / Premier": {
+   "delta7": 0,
+   "load": 0,
+   "teams": 0
+  },
+  "Dell": {
+   "delta7": -102,
+   "load": 77,
+   "teams": 72
+  },
+  "Federal Reserve": {
+   "delta7": -1,
+   "load": 18,
+   "teams": 8
+  },
+  "Ford": {
+   "delta7": -1,
+   "load": 10,
+   "teams": 0
+  },
+  "Intel": {
+   "delta7": -2,
+   "load": 0,
+   "teams": 0
+  },
+  "Louvre Abu Dhabi": {
+   "delta7": 0,
+   "load": 5,
+   "teams": 0
+  },
+  "Marygrove": {
+   "delta7": -8,
+   "load": 0,
+   "teams": 0
+  },
+  "Merck": {
+   "delta7": 0,
+   "load": 8,
+   "teams": 8
+  },
+  "Microsoft": {
+   "delta7": -2,
+   "load": 0,
+   "teams": 0
+  },
+  "Stanford": {
+   "delta7": 0,
+   "load": 0,
+   "teams": 0
+  },
+  "UWM": {
+   "delta7": 0,
+   "load": 0,
+   "teams": 0
+  },
+  "Waymo": {
+   "delta7": -1,
+   "load": 0,
+   "teams": 0
+  },
+  "Wesco Warehouse": {
+   "delta7": -2,
+   "load": 12,
+   "teams": 12
+  }
  }
 }

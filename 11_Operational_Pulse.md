@@ -1,25 +1,25 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-10 13:52 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-11 08:16 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-> Rolling window 2026-10-27 to 2026-11-10. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. An issue with no sighting for 10 days (21 for a bi-weekly forum) is closed as presumed resolved by silence and reopens if raised again. A Medium or Low issue counts as live from its third sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
+> Rolling window 2026-10-28 to 2026-11-11. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. An issue with no sighting for 10 days (21 for a bi-weekly forum) is closed as presumed resolved by silence and reopens if raised again. A Medium or Low issue counts as live from its third sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
 ## Account health
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Improving | -72 | 85 | 152 | 9 | 1 | 2 | 1 |
-| Merck | Worsening | +8 | 8 | 0 | 1 | 0 | 0 | 0 |
+| Dell | Improving | -102 | 77 | 174 | 8 | 1 | 2 | 1 |
 | Federal Reserve | Steady | -1 | 18 | 9 | 1 | 0 | 0 | 2 |
 | Wesco Warehouse | Steady | -2 | 12 | 14 | 1 | 1 | 0 | 0 |
 | Ford | Steady | -1 | 10 | 1 | 0 | 0 | 0 | 2 |
-| Marygrove | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
+| Merck | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 | Coca-Cola (TCCC) | Steady | -2 | 0 | 2 | 0 | 0 | 0 | 0 |
 | Cree Church / Premier | Steady | +0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Intel | Steady | -2 | 0 | 2 | 0 | 0 | 0 | 0 |
 | Microsoft | Steady | -2 | 0 | 2 | 0 | 0 | 0 | 0 |
 | Waymo | Steady | -1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Marygrove | Improving | -8 | 0 | 8 | 0 | 0 | 0 | 0 |
 
 Load = live high visible x8, live high x6, live medium x3, live low x1, stuck x4, quiet x1, candidate x3, at your level x5. Trend = change in the team-raised load over 7 days, rebuilt from the dates meetings raised each issue; Worsening or Improving when it moves by at least 5 points and 15% of last week's load, otherwise Steady. Your register items are in the load but not the trend (no dated history). Friction from evidence, not customer sentiment.
 
@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P066** Argentina: watchdog connectors flapping connected/disconnected within a minute, source unidentified (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P135** Dell HQ display/alarm issue: new alarms not showing, blocking a Penang production rollout (Dell; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P137** Prior Gridboard monorepo migration lost code and broke functionality; migration restarted (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P142** Dell questioning redundancy/DR architecture and reuse of existing licenses for DR (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -59,9 +58,9 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 2 | 10 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Backlog Deep Dive, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Chad Steger | 2 | 8 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Shawn Clark | 3 | 3 | 2 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Akansh Gangil | 0 | 6 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Akansh Gangil | 0 | 5 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Ron Snyder | 1 | 2 | 2 | 0 | entroCIM Daily Stand Up |
 | Natalie Marquardt | 0 | 1 | 3 | 0 | ADM connect with Natalie |
@@ -76,12 +75,12 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 15, new this week 8, stuck 3, quiet 2. Last sighting: 2026-11-05. Last evidence: 2026-11-10.
+Governance: Project management. Owner: Chad Steger. Live 15, new this week 7, stuck 3, quiet 2. Last sighting: 2026-11-05. Last evidence: 2026-11-10.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P015 | Panama HVAC points increase continuously; BACnet setup failed, Modbus option untested | Wesco Warehouse | Matthew Heid; Scott Dunn | High | 2026-10-13 | 2026-11-04 | 4 | stuck, customer-visible |
-| P066 | Argentina: watchdog connectors flapping connected/disconnected within a minute, source unidentified |  | Matthew Heid | High | 2026-10-22 | 2026-11-05 | 2 | stuck, customer-visible, candidate: boundary |
+| P066 | Argentina: watchdog connectors flapping connected/disconnected within a minute, source unidentified |  | Matthew Heid | High | 2026-10-22 | 2026-11-05 | 2 | stuck, customer-visible |
 | P004 | Dell visualization scope unsettled: point pages only, or basic graphics and floor plans (El Dorado) | Dell |  | Medium | 2026-10-15 | 2026-11-05 | 3 | stuck, customer-visible |
 | P107 | Limerick failure-condition alarm validation method undefined before telling Dell the release is approved | Dell |  | High | 2026-10-28 | 2026-11-03 | 3 | customer-visible |
 | P108 | El Dorado end-to-end alarm validation needs customer/site participation; approach not yet defined | Dell | Syed Jamshed Zaidi | High | 2026-10-28 | 2026-11-05 | 2 | customer-visible |
@@ -100,7 +99,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P007 PC
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 5, new this week 2, stuck 1, quiet 1. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 5, new this week 1, stuck 1, quiet 1. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -114,12 +113,9 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P042 en
 
 ## entroCIM Backlog Deep Dive
 
-Governance: Sprint / backlog. Owner: David Blondel. Live 2, new this week 0, stuck 0, quiet 0. Last sighting: 2026-11-03. Last evidence: 2026-11-03.
+Governance: Sprint / backlog. Owner: David Blondel. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: 2026-11-03. Last evidence: 2026-11-03.
 
-| ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
-|---|---|---|---|---|---|---|---|---|
-| P043 | Schneider OPC UA protocol decision and proof of concept pending; constrains further Dell GMS completion | Dell |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
-| P046 | Marygrove: three open tickets; JACE down and customer IT cannot be reached | Marygrove |  | High | 2026-10-20 | 2026-10-20 | 1 | customer-visible |
+No issues in the Pulse yet.
 
 ## Quest Migration Weekly Check-In
 
@@ -145,13 +141,14 @@ Governance: Sprint. Owner: Sakshi Mathur. Live 3, new this week 0, stuck 0, quie
 
 ## WAM Sprint Review
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 3, new this week 0, stuck 2, quiet 0. Last sighting: 2026-11-02. Last evidence: 2026-11-02.
+Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 1, quiet 1. Last sighting: 2026-11-02. Last evidence: 2026-11-02.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
-| P021 | EUDM truncates manufacturer part numbers over 15 characters, causing ADM data loss |  |  | High | 2026-10-13 | 2026-10-27 | 3 | stuck, customer-visible, escalated to W016 |
 | P022 | Missing EUDM shipping dates and country-code mapping block WAM data-enrichment completion |  |  | High | 2026-10-13 | 2026-10-27 | 3 | stuck, customer-visible |
 | P094 | WAM critical security vulnerabilities remain open past the team's intended close date |  |  | High | 2026-10-27 | 2026-11-02 | 2 |  |
+
+Quiet (no sighting in 14+ days; confirm with the team whether resolved): P021 EUDM truncates manufacturer part numbers over 15 characters, causing ADM data loss.
 
 ## WAM Product discussion
 
