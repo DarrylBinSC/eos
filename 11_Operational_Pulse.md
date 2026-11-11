@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P147** Customer-requested battery-replacement alarms are not an existing entroCIM function (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P148** North America PME/OPC UA integration has no pilot; first live test planned on Central Texas (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P149** Quest/Nextcloud retirement requires moving file and software-pull dependencies to SharePoint before shutdown (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P154** Asset/license table reuse risks license workflows pulling in asset data without filtering (no account; WAM Product Backlog Refinement). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -58,16 +57,16 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Natalie Marquardt | 0 | 1 | 3 | 0 | ADM connect with Natalie |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
 | Sean McCloskey | 0 | 0 | 3 | 0 |  |
-| Syed Jamshed Zaidi | 2 | 8 | 0 | 0 | 2026 Deployment Daily Scrum |
-| Matthew Heid | 2 | 5 | 0 | 0 | 2026 Deployment Daily Scrum |
-| Scott Dunn | 1 | 4 | 1 | 1 | 2026 Deployment Daily Scrum |
+| Syed Jamshed Zaidi | 2 | 7 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Matthew Heid | 2 | 4 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Scott Dunn | 1 | 3 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 1 | 2 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 
 Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own. Sole holder: knowledge areas they hold without a confirmed backup.
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 13, new this week 5, stuck 3, quiet 2. Last sighting: 2026-11-05. Last evidence: 2026-11-10.
+Governance: Project management. Owner: Chad Steger. Live 12, new this week 4, stuck 3, quiet 2. Last sighting: 2026-11-05. Last evidence: 2026-11-10.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -82,7 +81,6 @@ Governance: Project management. Owner: Chad Steger. Live 13, new this week 5, st
 | P142 | Dell questioning redundancy/DR architecture and reuse of existing licenses for DR | Dell | Syed Jamshed Zaidi | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible |
 | P145 | Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design | Dell |  | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible |
 | P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-11-03 | 3 |  |
-| P147 | Customer-requested battery-replacement alarms are not an existing entroCIM function |  |  | Medium | 2026-11-05 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
 | P148 | North America PME/OPC UA integration has no pilot; first live test planned on Central Texas | Dell |  | Medium | 2026-11-05 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P007 PC1/JCI large-scale point faults and intermittent site access; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review.
