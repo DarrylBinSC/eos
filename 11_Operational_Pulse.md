@@ -8,7 +8,7 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Improving | -102 | 68 | 165 | 8 | 1 | 2 | 1 |
+| Dell | Improving | -108 | 62 | 165 | 7 | 1 | 2 | 1 |
 | Federal Reserve | Steady | -1 | 18 | 9 | 1 | 0 | 0 | 2 |
 | Wesco Warehouse | Steady | -2 | 12 | 14 | 1 | 1 | 0 | 0 |
 | Ford | Steady | -1 | 10 | 1 | 0 | 0 | 0 | 2 |
@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P148** North America PME/OPC UA integration has no pilot; first live test planned on Central Texas (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P149** Quest/Nextcloud retirement requires moving file and software-pull dependencies to SharePoint before shutdown (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P154** Asset/license table reuse risks license workflows pulling in asset data without filtering (no account; WAM Product Backlog Refinement). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 
@@ -49,7 +48,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 2 | 7 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Chad Steger | 2 | 6 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Shawn Clark | 3 | 3 | 2 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Akansh Gangil | 0 | 5 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
@@ -57,7 +56,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Natalie Marquardt | 0 | 1 | 3 | 0 | ADM connect with Natalie |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
 | Sean McCloskey | 0 | 0 | 3 | 0 |  |
-| Syed Jamshed Zaidi | 2 | 7 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Syed Jamshed Zaidi | 2 | 6 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Matthew Heid | 2 | 4 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Scott Dunn | 1 | 3 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 1 | 2 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
@@ -66,7 +65,7 @@ Owns: named owner of a live Pulse issue. Involved: named in the evidence with a 
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 12, new this week 4, stuck 3, quiet 2. Last sighting: 2026-11-05. Last evidence: 2026-11-10.
+Governance: Project management. Owner: Chad Steger. Live 11, new this week 3, stuck 3, quiet 2. Last sighting: 2026-11-05. Last evidence: 2026-11-10.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -81,7 +80,6 @@ Governance: Project management. Owner: Chad Steger. Live 12, new this week 4, st
 | P142 | Dell questioning redundancy/DR architecture and reuse of existing licenses for DR | Dell | Syed Jamshed Zaidi | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible |
 | P145 | Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design | Dell |  | High | 2026-11-04 | 2026-11-05 | 1 | customer-visible |
 | P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-11-03 | 3 |  |
-| P148 | North America PME/OPC UA integration has no pilot; first live test planned on Central Texas | Dell |  | Medium | 2026-11-05 | 2026-11-05 | 1 | customer-visible, candidate: boundary |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P007 PC1/JCI large-scale point faults and intermittent site access; P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review.
 
