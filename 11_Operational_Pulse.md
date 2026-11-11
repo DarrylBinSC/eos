@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-11 08:16 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-11 08:17 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-28 to 2026-11-11. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. An issue with no sighting for 10 days (21 for a bi-weekly forum) is closed as presumed resolved by silence and reopens if raised again. A Medium or Low issue counts as live from its third sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P137** Prior Gridboard monorepo migration lost code and broke functionality; migration restarted (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P142** Dell questioning redundancy/DR architecture and reuse of existing licenses for DR (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P145** Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design (Dell; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P159** WAM Exact-supplier renewal notifications are not being sent; blocked on a custom-field enablement (no account; WAM Product Backlog Refinement). Test: No owner, or the customer is unaware of a material problem.
@@ -104,7 +103,7 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 5, new this week 1, stuck 1
 |---|---|---|---|---|---|---|---|---|
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-11-04 | 5 | stuck |
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-11-04 | 2 | customer-visible |
-| P137 | Prior Gridboard monorepo migration lost code and broke functionality; migration restarted |  | Nisha More | High | 2026-11-03 | 2026-11-04 | 2 | candidate: boundary |
+| P137 | Prior Gridboard monorepo migration lost code and broke functionality; migration restarted |  | Nisha More | High | 2026-11-03 | 2026-11-04 | 2 |  |
 | P162 | Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week |  | Ron Snyder | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible, candidate: boundary |
 | P149 | Quest/Nextcloud retirement requires moving file and software-pull dependencies to SharePoint before shutdown |  |  | Medium | 2026-10-29 | 2026-10-29 | 1 | candidate: boundary |
 
