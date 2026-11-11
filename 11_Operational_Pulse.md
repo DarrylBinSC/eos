@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P162** Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P143** Alarm database/Alarm Manager correctly triggers, but customer email notifications are blocked by an SMTP issue (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P146** Cross-site alarm audit has no agreed validation baseline; prior environment decommissioned (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P147** Customer-requested battery-replacement alarms are not an existing entroCIM function (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -101,7 +100,7 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 5, new this week 1, stuck 1
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-11-04 | 5 | stuck |
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-11-04 | 2 | customer-visible |
 | P137 | Prior Gridboard monorepo migration lost code and broke functionality; migration restarted |  | Nisha More | High | 2026-11-03 | 2026-11-04 | 2 |  |
-| P162 | Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week |  | Ron Snyder | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible, candidate: boundary |
+| P162 | Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week |  | Ron Snyder | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
 | P149 | Quest/Nextcloud retirement requires moving file and software-pull dependencies to SharePoint before shutdown |  |  | Medium | 2026-10-29 | 2026-10-29 | 1 | candidate: boundary |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P042 entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19).
