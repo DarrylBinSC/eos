@@ -27,7 +27,7 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P154** Asset/license table reuse risks license workflows pulling in asset data without filtering (no account; WAM Product Backlog Refinement). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- None this cycle.
 
 ## Knowledge concentration
 
@@ -49,7 +49,7 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 |---|---|---|---|---|---|
 | Chad Steger | 2 | 5 | 4 | 0 | 2026 Deployment Daily Scrum, Quest Migration Weekly Check-In |
 | Shawn Clark | 3 | 2 | 2 | 0 | Quest Migration Weekly Check-In |
-| Akansh Gangil | 0 | 5 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Akansh Gangil | 0 | 4 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Ron Snyder | 1 | 2 | 2 | 0 | entroCIM Daily Stand Up |
 | Natalie Marquardt | 0 | 1 | 3 | 0 | ADM connect with Natalie |
@@ -115,12 +115,11 @@ Governance: Project management. Owner: Chad Steger. Live 5, new this week 0, stu
 
 ## WAM Product Backlog Refinement
 
-Governance: Sprint. Owner: Sakshi Mathur. Live 3, new this week 0, stuck 0, quiet 0. Last sighting: 2026-11-04. Last evidence: 2026-11-04.
+Governance: Sprint. Owner: Sakshi Mathur. Live 2, new this week 0, stuck 0, quiet 0. Last sighting: 2026-11-04. Last evidence: 2026-11-04.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P159 | WAM Exact-supplier renewal notifications are not being sent; blocked on a custom-field enablement |  |  | High | 2026-11-02 | 2026-11-02 | 1 | customer-visible |
-| P154 | Asset/license table reuse risks license workflows pulling in asset data without filtering |  |  | Medium | 2026-11-02 | 2026-11-02 | 1 | candidate: boundary |
 | P068 | WAM renewal recommendation feature: quality rejected, rework from start |  |  | Medium | 2026-10-23 | 2026-11-04 | 3 |  |
 
 ## WAM Sprint Review
