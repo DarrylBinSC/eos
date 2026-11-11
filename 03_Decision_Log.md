@@ -22,6 +22,18 @@
 
 ## Decisions Made
 
+
+### 2026-11-11 — NRF 2027 entroCIM demo scope: no DC demo, no live booth connection, simulated data
+- Status: Made
+- Owner: Darryl Benson
+- Context: NRF 2027 Demo Readiness working session, 2026-11-10 (transcript). Innovation Center UPS readings were effectively zero throughout testing (Bishop, Keith), which fed the call to simulate rather than rely on live data.
+- Options considered: live connection to the customer's booth systems vs. simulated data; including an entroCIM DC demo vs. keeping it out of scope.
+- Decision / Recommended path: Benson, Darryl: "No, that's out of scope" (entroCIM DC demo) and "we're not going to connect to what's in their booth at all." Snyder, Ron: demo will simulate real data; SkySpark 4 rebuild work for the demo pushed to December. Graphics tasking assigned to Mike Reed (Darryl).
+- Risk of waiting: n/a, decided.
+- Forum where this should be decided: decided in the NRF 2027 Demo Readiness working session.
+- Follow-up: `Products/entroCIM/entroCIM.md` updated. Keith Bishop separately flagged the next 8 working days of sprint scope (Dell query, SkySpark 4 rebuild, Ford SFTP work) as infeasible -- tracked as `Registers/pulse/P169.md`, not yet reconciled against this demo timeline. Source: `Evidence/M365_Evidence_Daily_2026-11-11.md`.
+
+
 ### 2026-11-10 — Pulse: close on 10 days of silence, three sightings to count, weekly review cut to exceptions
 - Status: Made
 - Owner: Darryl Benson
@@ -1000,7 +1012,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-11-11 08:39 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-11 08:50 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
