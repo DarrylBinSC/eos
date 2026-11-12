@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P174** Some Modbus "people counter" points have produced no data since April, at a site Copilot transcribed as "Louv" (no account; 2026 Deployment Daily Scrum). Test: Still being raised 10+ business days after it was first raised.
 - **P180** Quest migration: Nextcloud recovery is complicated by 500 GB-1 TB of encrypted volume and an LDAP dependency on a domain controller slated for removal (no account; Quest Migration Weekly Check-In). Test: Darryl named or asked for a decision, resource or escalation.
 - **P186** Federal Reserve environment blocks Internet-hosted font/dependency access, requiring an offline packaging or fallback strategy (Federal Reserve; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P176** A site transcribed as "Govardhan" may have an overloaded server with 771 Modbus connectors, preventing validation (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
@@ -89,7 +88,7 @@ Governance: Project management. Owner: Chad Steger. Live 18, new this week 6, st
 | P135 | Dell HQ display/alarm issue: new alarms not showing, blocking a Penang production rollout | Dell |  | High | 2026-11-03 | 2026-11-05 | 2 | customer-visible |
 | P142 | Dell questioning redundancy/DR architecture and reuse of existing licenses for DR | Dell | Syed Jamshed Zaidi | High | 2026-11-04 | 2026-11-10 | 2 | customer-visible |
 | P145 | Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design | Dell |  | High | 2026-11-04 | 2026-11-10 | 2 | customer-visible |
-| P174 | Some Modbus "people counter" points have produced no data since April, at a site Copilot transcribed as "Louv" |  | Chad Steger | High | 2026-11-11 | 2026-11-11 | 1 | customer-visible, candidate: stuck |
+| P174 | Some Modbus "people counter" points have produced no data since April, at a site Copilot transcribed as "Louv" |  | Chad Steger | High | 2026-11-11 | 2026-11-11 | 1 | customer-visible |
 | P168 | PME upgrade did not complete on schedule; blocked by a cybersecurity control |  |  | High | 2026-11-10 | 2026-11-12 | 3 | customer-visible |
 | P173 | Coca-Cola (TCCC) gateway IPs are configured but not pingable, blocking remaining gateway connectivity | Coca-Cola (TCCC) | Chad Steger | High | 2026-11-11 | 2026-11-12 | 2 | customer-visible |
 | P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-11-03 | 3 |  |
