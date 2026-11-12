@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P177** Mobile-device data flow is blocked by a firewall owned by a team outside this forum (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P178** WEML rendering/alarming work has an unresolved billing question: whether it should be a separate PO (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P182** Quest migration: old servers believed stopped unexpectedly appeared to still be running (no account; Quest Migration Weekly Check-In). Test: No owner, or the customer is unaware of a material problem.
 - **P187** Ford Rouge requires new points added before December 1 on a newly received tool, consuming allocated SME hours (Ford; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -63,14 +62,14 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
 | Sean McCloskey | 0 | 0 | 3 | 0 |  |
 | Syed Jamshed Zaidi | 2 | 7 | 0 | 0 | 2026 Deployment Daily Scrum |
-| Matthew Heid | 2 | 6 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Matthew Heid | 2 | 5 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 1 | 1 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 
 Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own. Sole holder: knowledge areas they hold without a confirmed backup.
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 17, new this week 5, stuck 4, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
+Governance: Project management. Owner: Chad Steger. Live 16, new this week 4, stuck 4, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -89,7 +88,6 @@ Governance: Project management. Owner: Chad Steger. Live 17, new this week 5, st
 | P168 | PME upgrade did not complete on schedule; blocked by a cybersecurity control |  |  | High | 2026-11-10 | 2026-11-12 | 3 | customer-visible |
 | P173 | Coca-Cola (TCCC) gateway IPs are configured but not pingable, blocking remaining gateway connectivity | Coca-Cola (TCCC) | Chad Steger | High | 2026-11-11 | 2026-11-12 | 2 | customer-visible |
 | P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-11-03 | 3 |  |
-| P177 | Mobile-device data flow is blocked by a firewall owned by a team outside this forum |  |  | Medium | 2026-11-12 | 2026-11-12 | 1 | candidate: boundary |
 | P178 | WEML rendering/alarming work has an unresolved billing question: whether it should be a separate PO |  |  | Medium | 2026-11-12 | 2026-11-12 | 1 | customer-visible, candidate: boundary |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review.
