@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P180** Quest migration: Nextcloud recovery is complicated by 500 GB-1 TB of encrypted volume and an LDAP dependency on a domain controller slated for removal (no account; Quest Migration Weekly Check-In). Test: Darryl named or asked for a decision, resource or escalation.
 - **P186** Federal Reserve environment blocks Internet-hosted font/dependency access, requiring an offline packaging or fallback strategy (Federal Reserve; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P176** A site transcribed as "Govardhan" may have an overloaded server with 771 Modbus connectors, preventing validation (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P177** Mobile-device data flow is blocked by a firewall owned by a team outside this forum (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -133,7 +132,7 @@ Governance: Project management. Owner: Chad Steger. Live 7, new this week 2, stu
 | P047 | Azure BLOB Storage accessible via browser but not through the required Linux command-line transfer path |  | Shawn Clark | High | 2026-10-20 | 2026-11-10 | 5 | stuck |
 | P048 | MQTT cutover blocked pending DNS records and ports 1883/8883 |  | Chad Steger | High | 2026-10-20 | 2026-11-10 | 5 | stuck, customer-visible |
 | P052 | Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement |  | Chad Steger | Medium | 2026-10-20 | 2026-11-10 | 4 | stuck |
-| P180 | Quest migration: Nextcloud recovery is complicated by 500 GB-1 TB of encrypted volume and an LDAP dependency on a domain controller slated for removal |  | Chad Steger | High | 2026-11-10 | 2026-11-10 | 1 | candidate: asked |
+| P180 | Quest migration: Nextcloud recovery is complicated by 500 GB-1 TB of encrypted volume and an LDAP dependency on a domain controller slated for removal |  | Chad Steger | High | 2026-11-10 | 2026-11-10 | 1 |  |
 | P182 | Quest migration: old servers believed stopped unexpectedly appeared to still be running |  |  | Medium | 2026-11-10 | 2026-11-10 | 1 | candidate: gap |
 
 ## WAM Product Backlog Refinement
