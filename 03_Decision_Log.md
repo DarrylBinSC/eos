@@ -1024,7 +1024,7 @@
 
 <!-- GENERATED 2026-11-12 10:41 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 13.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 12.*
 
 ### 2026-10-26 — Woolly becomes a paid SkyFoundry add-on from 2027-05-01: pass-through, absorb, or bundle in entroCIM AI pricing
 - ID: D097
@@ -1146,17 +1146,6 @@
 - **Update 2026-10-06 (Darryl, Sean's FY27 AOP update): the question has moved from the form to the product's future.** Much of the call was spent on products that are not financially successful at Wesco, entroCIM and WAM. Sean and Darryl discussed whether entroCIM has legs to go another year like this without sales at least breaking even, through the large cuts to the team; whether Sales can move the ball in the data center space; and how Nathan Kehr can succeed. Sean asked for the data center value proposition to be articulated: entroCIM's actual ability to move the needle there, what the competition is doing, services enablement, and a challenge to our thinking. Next forum: Darryl with Sean after his PTO, week of 2026-10-19, carrying a briefing deck (`05` A58). Risk home: `04` entroCIM commercial performance row.
 - Follow-up: `Deliverables/entroCIM/2026-08-17_entroCIM_FY27_AOP_Change_Log.md`; companion WAM log; cross-reference the 2026-08-05 CSS Platforms 2027 resourcing entry, which this evidence materially informs.
 
-### 2026-08-05 — FY27 financial assumptions with no approved 2027 budget (new)
-- ID: D025
-- Status: Approaching
-- Owner: Darryl with Tom Boss / Finance
-- Forum: entroCIM AOP / eCIM Budget track with Tom Boss and Chris Gazdic.
-- Context: Tom Boss stated approved 2027 budget figures are not available and suggested using 2026-based estimates. The entroCIM 2027 AOP request asked Finance for planned revenue, sales costs, and marketing costs.
-- Options: adopt a documented 2026-based estimation method with a named approver; wait for formal budget figures (not viable against 08-21); submit ranges with stated assumptions.
-- Information still needed: agreed estimation basis and who approves it.
-- Risk of waiting: every FY27 business case written in the next two weeks inherits an assumption no one has approved, and each becomes individually challengeable at review. This is a single upstream decision that de-risks three to five downstream submissions.
-- Follow-up: Register C16. Recommend settling this before numbers go into any template.
-
 ### 2026-08-05 — WAM: align the license roadmap with where the business is actually being sold (new)
 - ID: D016
 - Status: Approaching — question surfaced, no decision taken
@@ -1246,7 +1235,7 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 82.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 83.*
 
 ### 2026-10-29 — BOM Studio: route through the Launch Studio gate as its first case, pursue the managed-services bundle with TS and Sales, or both
 - ID: D099
@@ -1763,6 +1752,17 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Information still needed: whether a confirmed sales opportunity exists, and the value of live versus simulated fidelity in a showcase context.
 - Risk of waiting: low in the near term. The real risk is either engineering effort spent without commercial return, or a future demo lacking live fidelity at the moment it matters.
 - Follow-up: no register item created. This is a decision to hold until a commercial trigger appears, which is itself the decision. Revisit if a named opportunity surfaces.
+
+### 2026-08-05 — FY27 financial assumptions with no approved 2027 budget (new)
+- ID: D025
+- Status: Approaching
+- Owner: Darryl with Tom Boss / Finance
+- Forum: entroCIM AOP / eCIM Budget track with Tom Boss and Chris Gazdic.
+- Context: Tom Boss stated approved 2027 budget figures are not available and suggested using 2026-based estimates. The entroCIM 2027 AOP request asked Finance for planned revenue, sales costs, and marketing costs.
+- Options: adopt a documented 2026-based estimation method with a named approver; wait for formal budget figures (not viable against 08-21); submit ranges with stated assumptions.
+- Information still needed: agreed estimation basis and who approves it.
+- Risk of waiting: every FY27 business case written in the next two weeks inherits an assumption no one has approved, and each becomes individually challengeable at review. This is a single upstream decision that de-risks three to five downstream submissions.
+- Follow-up: Register C16. Recommend settling this before numbers go into any template.
 
 ### 2026-08-05 — FY27 AOP assignee scope expanded; deadline unchanged (new)
 - ID: D013
