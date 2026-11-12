@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-12 10:28 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-12 10:29 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-29 to 2026-11-12. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. An issue with no sighting for 10 days (21 for a bi-weekly forum) is closed as presumed resolved by silence and reopens if raised again. A Medium or Low issue counts as live from its third sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P189** Innovation Center Lab's unreliability (Bright Layer device unavailable) is blocking containerization/device work (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P188** Version information for existing customer/platform versions is not maintained in any single, actively managed inventory (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 
 ## Knowledge concentration
@@ -52,9 +51,9 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 | Chad Steger | 5 | 6 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Shawn Clark | 3 | 3 | 2 | 1 | Quest Migration Weekly Check-In |
 | Akansh Gangil | 0 | 4 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
-| Ron Snyder | 2 | 4 | 2 | 0 | entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Scott Dunn | 2 | 3 | 1 | 1 | 2026 Deployment Daily Scrum |
+| Ron Snyder | 1 | 4 | 2 | 0 | entroCIM Daily Stand Up |
 | Natalie Marquardt | 0 | 1 | 3 | 0 | ADM connect with Natalie |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
 | Sean McCloskey | 0 | 0 | 3 | 0 |  |
@@ -90,7 +89,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P012 De
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 8, new this week 5, stuck 1, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 7, new this week 4, stuck 1, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -100,7 +99,6 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 8, new this week 5, stuck 1
 | P162 | Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week |  | Ron Snyder | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
 | P169 | Keith Bishop flags the next 8 working days of sprint scope (Dell query, SkySpark 4 rebuild, Ford SFTP work) as infeasible |  |  | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
 | P186 | Federal Reserve environment blocks Internet-hosted font/dependency access, requiring an offline packaging or fallback strategy | Federal Reserve |  | High | 2026-11-11 | 2026-11-11 | 1 | customer-visible |
-| P189 | Innovation Center Lab's unreliability (Bright Layer device unavailable) is blocking containerization/device work |  | Ron Snyder | Medium | 2026-11-12 | 2026-11-12 | 1 | candidate: boundary |
 | P188 | Version information for existing customer/platform versions is not maintained in any single, actively managed inventory |  |  | Low | 2026-11-11 | 2026-11-11 | 1 | candidate: gap |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P042 entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19).
