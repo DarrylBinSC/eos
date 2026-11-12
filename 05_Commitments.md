@@ -1,6 +1,6 @@
 # Action Registers
 
-<!-- GENERATED 2026-11-12 11:09 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-12 11:11 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > **Restructured 2026-07-27** per `EOS_Redefinition_Proposal_2026-07-27.md`; **moved to one item per file 2026-10-15** per `Deliverables/EOS_Meta/2026-10-15_EOS_Registers_Build_Spec.md`. This file is a generated view of `Registers/action/`. The per-session notes that used to accumulate between the tables now live in each item's file and in the git history; the last hand-maintained version is `Archive/2026-10-15_pre_registers/05_Commitments.md`.
 
@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 13 (ceiling 15, by disposal only) · Other-Owned 54 (Critical 12) · Needs triage 0.
+**Counts at generation:** Register A 13 (ceiling 15, by disposal only) · Other-Owned 56 (Critical 12) · Needs triage 0.
 
 ---
 
@@ -41,7 +41,7 @@ Four registers. The delineation is the point.
 | A49 | **Kick off the white-label agreement amendment for the AI feature set and the Virtual Site Survey** | Reconcile Brian Miller's markup (C77) against Darryl's own notes, including technical feedback on new §2.12, before anything goes back to Revnue. Earlier: Darryl's own words, 2026-09-17: "once I get the entitlement, I'll kick off the contract renewal, or not renewal, amendment process, and I'll keep you informed… | Kristina Isagunde / Sunny Sharma (Revnue); Brian Miller (Legal, confirmed on the amendment 2026-10-27); Amy Aguirre (business owner, BIR); Paula Fenton (IT VMO, AI addendum and benchmark) | 2026-11-13 Re-dated 2026-10-27: check date for Brian Miller's markup (C77, undated); the 10-27 review meeting happened | Explicit. Darryl, own words, 2026-09-17 | Amy Aguirre call, 2026-09-17 (transcript); `03` 2026-09-17; legal markup, `Products/WAM/White_Label_Amendment_No_2_AI_Features - 2026-10-21.docx` |
 | A64 | **Reconcile the 2027 core entroCIM roadmap with building CDA in 2027, with Ron Snyder and David Blondel** | entroCIM roadmap is absorbing CDA after the 2026-10-06 AOP outcome (`03`). | Ron Snyder; David Blondel | 2026-11-17 (end of month) | Explicit. Darryl, chat 2026-10-14: "Ron, David, and I are reconciling the 2027 roadmap for the core entroCIM product with our desire to do CDA in 2027. That will be completed by the end of the month." | Darryl, chat 2026-10-14 |
 | A29 | **Escalate the truncated manufacturer part number dependency if Akansh Gangil's follow-up does not produce a named owner. DDP/EUDM selects truncated part numbers; WAM/ADM holds full ones, so exact matching fails and orders are missed** | Converted 2026-10-05 (Darryl, chat): the unfired trigger is replaced. | Akansh Gangil; Sakshi Mathur (WAM Sprint Review) | 2026-11-18 | Darryl, chat, 2026-10-05: "Akansh has this going in sprints; check the WAM sprint review meeting for details." | Explicit (disposition). Original escalation basis: Darryl, own words 08-25. 2026-10-14: Akansh's ADM constraints slide still frames the fix as a question ("Upstream EUDM enhancement possible?"), mitigation "investigating drop logic with EUDM/AMS teams"; no committed owner. Candidate for one consolidated upstream request with the null-shipping-data and renewal-flag asks (`Products/WAM/WAM.md`, 2026-10-14). |
-| T2 | **Follow up questions for WAM Dev team** | Send the eleven questions to Bala and Nitin Pandey (copy Akansh Gangil), or schedule the follow-up session and bring them. | Akansh Gangil | 2026-11-19 |  | Darryl, EOS web app, 2026-11-12 |
+| T2 | **Follow up questions for WAM Dev team** | Send questions 1 to 7, 10 and 11 to Bala and Nitin Pandey (copy Akansh Gangil), or schedule the follow-up session and bring them. | Akansh Gangil | 2026-11-19 |  | Darryl, EOS web app, 2026-11-12 |
 
 ### Triggered
 
@@ -73,6 +73,8 @@ Four registers. The delineation is the point.
 | C82 | Ron Snyder's revised CDA High-Level Product Requirements, with a follow-up review meeting | Ron Snyder | Awaited | 2026-11-06 Ron Snyder: "later this week." | -- | 2026-11-03 | 2026-11-03 (Claude, daily brief): Created from the 2026-11-02 CDA requirements session. |
 | C83 | ADM statistics update from Natalie Marquardt for this month's deck; standing monthly date to be named | Natalie Marquardt | Awaited | 2026-11-10 "Early next week" (Natalie, 2026-11-05); 2026-11-10 is Claude's reading of that | -- | 2026-11-11 | 2026-11-05 (ADM Statistics, email): Darryl asked Natalie Marquardt, "Have you updated that information for the past month? ... |
 | B111 | Resize the Dev01 Azure VM to match Prod sizing (8 CPU / 32 GB) for like-for-like performance | Shawn Clark | Delegated | Not dated in evidence. | -- | 2026-11-03 | 2026-11-03 (Claude, daily brief): Created from the 2026-10-28 Quest Migration chat. |
+| B112 | Ask Bala whether the shared AKS cluster can host GPU workloads, for BOM Studio hosting | Ron Snyder | Delegated | Before BOM Studio hosting design starts; not dated | -- | 2026-11-12 | 2026-11-12 (Claude, session): Two questions: can the shared AKS cluster (Digital Deployer) run GPU node pools, and does BOM Studio need GPU on the server or only in the user browser for 3D rendering. |
+| B113 | Ask Bala what a read-only ADM endpoint for CDA onboarding would take | Ron Snyder | Delegated | Before the CDA requirements spec is finalized; not dated | -- | 2026-11-12 | 2026-11-12 (Claude, session): Question: what would it take to expose ADM order, license and warranty-term data read-only so CDA device onboarding can be seeded from it. |
 | B2 | Vendor attribute data collection ahead of CSS-DDP integration | Akansh Gangil | Delegated | Attribute track review | -- | 2026-10-15 |  |
 | B21 | TCCC/AOC Managed Services follow-through (KMC tie-in, alarm-management meeting, recurring Dan Fife/Jesse Dougherty meeting) | Nathan Kehr / Sarah Monteleone / Scott Dunn | Delegated | Sequence after B18 holds | -- | 2026-10-15 | Do not let this get ahead of B18 |
 | B3 | New attributes into P360 with Rochelle and Darren Taylor's team | Akansh Gangil | Delegated | Attribute track review | -- | 2026-11-06 | 2026-11-06 (Claude, session): Darren Taylor has left Wesco (company announcement, 2026-11-06). |
