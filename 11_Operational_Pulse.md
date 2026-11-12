@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P182** Quest migration: old servers believed stopped unexpectedly appeared to still be running (no account; Quest Migration Weekly Check-In). Test: No owner, or the customer is unaware of a material problem.
 - **P187** Ford Rouge requires new points added before December 1 on a newly received tool, consuming allocated SME hours (Ford; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P189** Innovation Center Lab's unreliability (Bright Layer device unavailable) is blocking containerization/device work (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P188** Version information for existing customer/platform versions is not maintained in any single, actively managed inventory (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
@@ -51,10 +50,10 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 5 | 8 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
-| Shawn Clark | 3 | 4 | 2 | 1 | Quest Migration Weekly Check-In |
+| Chad Steger | 5 | 7 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Shawn Clark | 3 | 3 | 2 | 1 | Quest Migration Weekly Check-In |
 | Akansh Gangil | 0 | 4 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
-| Ron Snyder | 2 | 6 | 2 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Ron Snyder | 2 | 5 | 2 | 0 | entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Scott Dunn | 2 | 3 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Natalie Marquardt | 0 | 1 | 3 | 0 | ADM connect with Natalie |
@@ -116,7 +115,7 @@ No issues in the Pulse yet.
 
 ## Quest Migration Weekly Check-In
 
-Governance: Project management. Owner: Chad Steger. Live 7, new this week 2, stuck 5, quiet 0. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
+Governance: Project management. Owner: Chad Steger. Live 6, new this week 1, stuck 5, quiet 0. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -126,7 +125,6 @@ Governance: Project management. Owner: Chad Steger. Live 7, new this week 2, stu
 | P048 | MQTT cutover blocked pending DNS records and ports 1883/8883 |  | Chad Steger | High | 2026-10-20 | 2026-11-10 | 5 | stuck, customer-visible |
 | P052 | Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement |  | Chad Steger | Medium | 2026-10-20 | 2026-11-10 | 4 | stuck |
 | P180 | Quest migration: Nextcloud recovery is complicated by 500 GB-1 TB of encrypted volume and an LDAP dependency on a domain controller slated for removal |  | Chad Steger | High | 2026-11-10 | 2026-11-10 | 1 |  |
-| P182 | Quest migration: old servers believed stopped unexpectedly appeared to still be running |  |  | Medium | 2026-11-10 | 2026-11-10 | 1 | candidate: gap |
 
 ## WAM Product Backlog Refinement
 
