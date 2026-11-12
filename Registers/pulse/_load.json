@@ -1172,9 +1172,9 @@
    "teams": 16
   },
   "Ford": {
-   "delta7": 5,
-   "load": 16,
-   "teams": 6
+   "delta7": -1,
+   "load": 10,
+   "teams": 0
   },
   "Intel": {
    "delta7": -2,

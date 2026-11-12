@@ -10,9 +10,9 @@
 |---|---|---|---|---|---|---|---|---|
 | Dell | Improving | -115 | 73 | 183 | 8 | 2 | 1 | 1 |
 | Federal Reserve | Worsening | +7 | 26 | 9 | 2 | 0 | 0 | 2 |
-| Ford | Worsening | +5 | 16 | 1 | 1 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +6 | 8 | 2 | 1 | 0 | 0 | 0 |
 | Wesco Warehouse | Steady | -2 | 12 | 14 | 1 | 1 | 0 | 0 |
+| Ford | Steady | -1 | 10 | 1 | 0 | 0 | 0 | 2 |
 | Merck | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
 | Cree Church / Premier | Steady | +0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P187** Ford Rouge requires new points added before December 1 on a newly received tool, consuming allocated SME hours (Ford; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P189** Innovation Center Lab's unreliability (Bright Layer device unavailable) is blocking containerization/device work (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P188** Version information for existing customer/platform versions is not maintained in any single, actively managed inventory (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 
@@ -50,10 +49,10 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 5 | 7 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Chad Steger | 5 | 6 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Shawn Clark | 3 | 3 | 2 | 1 | Quest Migration Weekly Check-In |
 | Akansh Gangil | 0 | 4 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
-| Ron Snyder | 2 | 5 | 2 | 0 | entroCIM Daily Stand Up |
+| Ron Snyder | 2 | 4 | 2 | 0 | entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
 | Scott Dunn | 2 | 3 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Natalie Marquardt | 0 | 1 | 3 | 0 | ADM connect with Natalie |
@@ -91,7 +90,7 @@ Quiet (no sighting in 14+ days; confirm with the team whether resolved): P012 De
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 9, new this week 6, stuck 1, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 8, new this week 5, stuck 1, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -101,7 +100,6 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 9, new this week 6, stuck 1
 | P162 | Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week |  | Ron Snyder | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
 | P169 | Keith Bishop flags the next 8 working days of sprint scope (Dell query, SkySpark 4 rebuild, Ford SFTP work) as infeasible |  |  | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
 | P186 | Federal Reserve environment blocks Internet-hosted font/dependency access, requiring an offline packaging or fallback strategy | Federal Reserve |  | High | 2026-11-11 | 2026-11-11 | 1 | customer-visible |
-| P187 | Ford Rouge requires new points added before December 1 on a newly received tool, consuming allocated SME hours | Ford | Jason Ganiatsas | Medium | 2026-11-11 | 2026-11-11 | 1 | customer-visible, candidate: boundary |
 | P189 | Innovation Center Lab's unreliability (Bright Layer device unavailable) is blocking containerization/device work |  | Ron Snyder | Medium | 2026-11-12 | 2026-11-12 | 1 | candidate: boundary |
 | P188 | Version information for existing customer/platform versions is not maintained in any single, actively managed inventory |  |  | Low | 2026-11-11 | 2026-11-11 | 1 | candidate: gap |
 
