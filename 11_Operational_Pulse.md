@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-12 11:11 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-12 12:54 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-29 to 2026-11-12. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. An issue with no sighting for 10 days (21 for a bi-weekly forum) is closed as presumed resolved by silence and reopens if raised again. A Medium or Low issue counts as live from its third sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -8,10 +8,9 @@
 
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
-| Dell | Improving | -115 | 73 | 183 | 8 | 2 | 1 | 1 |
+| Wesco Warehouse | Steady | -2 | 12 | 14 | 1 | 1 | 0 | 0 |
 | Federal Reserve | Worsening | +7 | 26 | 9 | 2 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +6 | 8 | 2 | 1 | 0 | 0 | 0 |
-| Wesco Warehouse | Steady | -2 | 12 | 14 | 1 | 1 | 0 | 0 |
 | Ford | Steady | -1 | 10 | 1 | 0 | 0 | 0 | 2 |
 | Merck | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
@@ -19,6 +18,7 @@
 | Intel | Steady | -2 | 0 | 2 | 0 | 0 | 0 | 0 |
 | Microsoft | Steady | -2 | 0 | 2 | 0 | 0 | 0 | 0 |
 | Waymo | Steady | -1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| Dell | Improving | -115 | 73 | 183 | 8 | 2 | 1 | 1 |
 | Marygrove | Improving | -8 | 0 | 8 | 0 | 0 | 0 | 0 |
 
 Load = live high visible x8, live high x6, live medium x3, live low x1, stuck x4, quiet x1, candidate x3, at your level x5. Trend = change in the team-raised load over 7 days, rebuilt from the dates meetings raised each issue; Worsening or Improving when it moves by at least 5 points and 15% of last week's load, otherwise Steady. Your register items are in the load but not the trend (no dated history). Friction from evidence, not customer sentiment.
