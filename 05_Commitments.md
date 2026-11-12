@@ -17,7 +17,7 @@ Four registers. The delineation is the point.
 
 **Attribution test, dating rule, focus rule, closure discipline, 14-day forced disposition, Critical tag test and the Other-Owned aging rule** are in `CLAUDE.md` (Commitment Attribution and Focus Rules; Register Caps). They are unchanged by the move to item files.
 
-**Counts at generation:** Register A 13 (ceiling 15, by disposal only) · Other-Owned 55 (Critical 11) · Needs triage 0.
+**Counts at generation:** Register A 13 (ceiling 15, by disposal only) · Other-Owned 54 (Critical 11) · Needs triage 0.
 
 ---
 
@@ -67,7 +67,6 @@ Four registers. The delineation is the point.
 | C1 | JCI final legal markup sent to JCI |  |  | 2026-10-30 | -- | 2026-10-21 | ## Closure Date closed (as recorded): 2026-09-01 Done. |
 | C80 | FY27 WAM development team: Nitin Pandey's answers to the six roster questions (Databricks coverage, Jafar flag, 50% roles, contractor dates, coding assistants) | Nitin Pandey | Awaited | 2026-11-03 Darryl asked for a reply by early next week (email 2026-10-29); Monday 2026-11-03 used as the gate | **Critical** -- Gated the WAM/ADM reset plan (D001, A61); the Databricks answer arrived 2026-10-30. Still Critical for the contractor end dates: the two Databricks-capable people are both contractors | 2026-10-30 | New 2026-10-29. |
 | B102 | Validate remaining Strev SOW 3 deliverables (completed and outstanding), open bugs, and the notification mechanism | Akansh Gangil | Delegated | 2026-11-05 (review call) | **Critical** -- gates a dated vendor/commercial closure | 2026-10-28 | New 2026-10-14. |
-| B104 | Investigate why Claude Code is unavailable from the India office | Ankit Chadha | Delegated | 2026-11-05 /16 | -- | 2026-10-28 | New 2026-10-14. |
 | C79 | Strev AI Features: confirm who is taking the AI Feature Pack to the AI Council, and its status | Amy Aguirre | Awaited | 2026-11-06 Amy: "this week" (Weekly Sync, 2026-10-30) | **Critical** -- AI Council clearance now a stated VMO condition on the amendment (Paula Fenton, 2026-10-27); gates signature | 2026-11-02 | New 2026-10-27. |
 | C82 | Ron Snyder's revised CDA High-Level Product Requirements, with a follow-up review meeting | Ron Snyder | Awaited | 2026-11-06 Ron Snyder: "later this week." | -- | 2026-11-03 | 2026-11-03 (Claude, daily brief): Created from the 2026-11-02 CDA requirements session. |
 | C83 | ADM statistics update from Natalie Marquardt for this month's deck; standing monthly date to be named | Natalie Marquardt | Awaited | 2026-11-10 "Early next week" (Natalie, 2026-11-05); 2026-11-10 is Claude's reading of that | -- | 2026-11-11 | 2026-11-05 (ADM Statistics, email): Darryl asked Natalie Marquardt, "Have you updated that information for the past month? ... |
@@ -124,6 +123,7 @@ Removed from the commitment system. No completion state, so counting them perman
 
 | Date closed | Item | Confirmed by | Note |
 |---|---|---|---|
+| 2026-11-12 | **B104 — Investigate why Claude Code is unavailable from the India office** | Darryl, EOS web app, 2026-11-12 | New 2026-10-14. |
 | 2026-11-12 | **B100 — Confirm the MuleSoft/current integration architecture and prepare a WAM-limitations slide for Darryl, ahead of the Sean McCloskey capacity discussion** | Darryl, EOS web app, 2026-11-12 | New 2026-10-13 (weekly evidence, WAM Leadership Sync transcript, 2026-10-05). |
 | 2026-11-11 | **A74 — Present at the investor-day call in Chris Gazdic's place** | Darryl, chat | 2026-11-05 (Claude, daily brief): Created from Darryl's own acceptance in the 2026-11-04 Digital Products / Agile Staff Meeting, after Chris Gazdic said he could not attend ("helping with the investor day call" elsewher… |
 | 2026-11-11 | **A73 — Identify who holds the Quest hosting contract and get Finance reviewing its termination/decommissioning terms** | Darryl, EOS web app, 2026-11-11 | 2026-11-03 (Claude, daily brief): Created from Darryl's own commitment in the 2026-10-27 Quest Migration Weekly Check-In. |
