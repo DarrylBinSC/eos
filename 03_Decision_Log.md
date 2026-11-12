@@ -1024,7 +1024,7 @@
 
 <!-- GENERATED 2026-11-12 10:41 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 14.*
+*Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 13.*
 
 ### 2026-10-26 — Woolly becomes a paid SkyFoundry add-on from 2027-05-01: pass-through, absorb, or bundle in entroCIM AI pricing
 - ID: D097
@@ -1146,17 +1146,6 @@
 - **Update 2026-10-06 (Darryl, Sean's FY27 AOP update): the question has moved from the form to the product's future.** Much of the call was spent on products that are not financially successful at Wesco, entroCIM and WAM. Sean and Darryl discussed whether entroCIM has legs to go another year like this without sales at least breaking even, through the large cuts to the team; whether Sales can move the ball in the data center space; and how Nathan Kehr can succeed. Sean asked for the data center value proposition to be articulated: entroCIM's actual ability to move the needle there, what the competition is doing, services enablement, and a challenge to our thinking. Next forum: Darryl with Sean after his PTO, week of 2026-10-19, carrying a briefing deck (`05` A58). Risk home: `04` entroCIM commercial performance row.
 - Follow-up: `Deliverables/entroCIM/2026-08-17_entroCIM_FY27_AOP_Change_Log.md`; companion WAM log; cross-reference the 2026-08-05 CSS Platforms 2027 resourcing entry, which this evidence materially informs.
 
-### 2026-08-05 — AMI live connector: restore or stay on simulated data (new)
-- ID: D026
-- Status: Approaching
-- Owner: Darryl / Ron Snyder, with product leadership
-- Forum: entroCIM leadership / showcase environment governance (existing `04` row).
-- Context: the AMI showcase integration is now covered by simulated points already configured (Jason Ganiatsas). Restoring the live connector would require a locally hosted DCM instance, a new connector, and point rebinding.
-- Options: continue with simulated data; invest in local live integration if a named commercial opportunity supports it.
-- Information still needed: whether a confirmed sales opportunity exists, and the value of live versus simulated fidelity in a showcase context.
-- Risk of waiting: low in the near term. The real risk is either engineering effort spent without commercial return, or a future demo lacking live fidelity at the moment it matters.
-- Follow-up: no register item created. This is a decision to hold until a commercial trigger appears, which is itself the decision. Revisit if a named opportunity surfaces.
-
 ### 2026-08-05 — FY27 financial assumptions with no approved 2027 budget (new)
 - ID: D025
 - Status: Approaching
@@ -1257,7 +1246,7 @@
 
 ## Decision Backlog
 
-*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 81.*
+*Generated view of `Registers/decision/` (tier backlog): raised, not yet routed to a forum. Count at generation: 82.*
 
 ### 2026-10-29 — BOM Studio: route through the Launch Studio gate as its first case, pursue the managed-services bundle with TS and Sales, or both
 - ID: D099
@@ -1763,6 +1752,17 @@ Meeting-task notes tag each "(Darryl)" or "(Darryl, Sean)" — same attribution 
 - Information still needed: whether the CDA AI-cost estimate is meant to feed the same CDA package under date pressure in A22; who owns consolidating all three inputs into the AOP working model before 08-14.
 - Risk of waiting: 08-14 is 8 days out and sits inside an already-overloaded Register A (24 items against a 10-15 target); if these three slip, they compress directly into the 08-21 submission window with no buffer.
 - Follow-up: Register A25 (new). Cross-reference A3, A4, A19, A21, A22 — this is the same FY27 AOP initiative, not a parallel one; do not restate the underlying submission mechanics here.
+
+### 2026-08-05 — AMI live connector: restore or stay on simulated data (new)
+- ID: D026
+- Status: Approaching
+- Owner: Darryl / Ron Snyder, with product leadership
+- Forum: entroCIM leadership / showcase environment governance (existing `04` row).
+- Context: the AMI showcase integration is now covered by simulated points already configured (Jason Ganiatsas). Restoring the live connector would require a locally hosted DCM instance, a new connector, and point rebinding.
+- Options: continue with simulated data; invest in local live integration if a named commercial opportunity supports it.
+- Information still needed: whether a confirmed sales opportunity exists, and the value of live versus simulated fidelity in a showcase context.
+- Risk of waiting: low in the near term. The real risk is either engineering effort spent without commercial return, or a future demo lacking live fidelity at the moment it matters.
+- Follow-up: no register item created. This is a decision to hold until a commercial trigger appears, which is itself the decision. Revisit if a named opportunity surfaces.
 
 ### 2026-08-05 — FY27 AOP assignee scope expanded; deadline unchanged (new)
 - ID: D013
