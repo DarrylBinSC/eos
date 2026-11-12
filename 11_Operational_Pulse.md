@@ -1,6 +1,6 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-12 09:51 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-12 10:11 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 > Rolling window 2026-10-29 to 2026-11-12. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. An issue with no sighting for 10 days (21 for a bi-weekly forum) is closed as presumed resolved by silence and reopens if raised again. A Medium or Low issue counts as live from its third sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
@@ -9,12 +9,12 @@
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
 | Dell | Improving | -115 | 73 | 183 | 8 | 2 | 1 | 1 |
-| Federal Reserve | Steady | -1 | 18 | 9 | 1 | 0 | 0 | 2 |
+| Federal Reserve | Worsening | +10 | 29 | 9 | 2 | 0 | 0 | 2 |
+| Ford | Worsening | +5 | 16 | 1 | 1 | 0 | 0 | 2 |
+| Coca-Cola (TCCC) | Worsening | +6 | 8 | 2 | 1 | 0 | 0 | 0 |
 | Wesco Warehouse | Steady | -2 | 12 | 14 | 1 | 1 | 0 | 0 |
-| Ford | Steady | -1 | 10 | 1 | 0 | 0 | 0 | 2 |
 | Merck | Steady | +0 | 8 | 8 | 1 | 0 | 0 | 0 |
 | Louvre Abu Dhabi | Steady | +0 | 5 | 0 | 0 | 0 | 0 | 1 |
-| Coca-Cola (TCCC) | Steady | -2 | 0 | 2 | 0 | 0 | 0 | 0 |
 | Cree Church / Premier | Steady | +0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Intel | Steady | -2 | 0 | 2 | 0 | 0 | 0 | 0 |
 | Microsoft | Steady | -2 | 0 | 2 | 0 | 0 | 0 | 0 |
@@ -27,7 +27,16 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- None this cycle.
+- **P174** Some Modbus "people counter" points have produced no data since April, at a site Copilot transcribed as "Louv" (no account; 2026 Deployment Daily Scrum). Test: Still being raised 10+ business days after it was first raised.
+- **P180** Quest migration: Nextcloud recovery is complicated by 500 GB-1 TB of encrypted volume and an LDAP dependency on a domain controller slated for removal (no account; Quest Migration Weekly Check-In). Test: Darryl named or asked for a decision, resource or escalation.
+- **P186** Federal Reserve environment blocks Internet-hosted font/dependency access, requiring an offline packaging or fallback strategy (Federal Reserve; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P176** A site transcribed as "Govardhan" may have an overloaded server with 771 Modbus connectors, preventing validation (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
+- **P177** Mobile-device data flow is blocked by a firewall owned by a team outside this forum (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P178** WEML rendering/alarming work has an unresolved billing question: whether it should be a separate PO (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P182** Quest migration: old servers believed stopped unexpectedly appeared to still be running (no account; Quest Migration Weekly Check-In). Test: No owner, or the customer is unaware of a material problem.
+- **P187** Ford Rouge requires new points added before December 1 on a newly received tool, consuming allocated SME hours (Ford; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P189** Innovation Center Lab's unreliability (Bright Layer device unavailable) is blocking containerization/device work (no account; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
+- **P188** Version information for existing customer/platform versions is not maintained in any single, actively managed inventory (no account; entroCIM Daily Stand Up). Test: No owner, or the customer is unaware of a material problem.
 
 ## Knowledge concentration
 
@@ -40,6 +49,7 @@ Where one person holds knowledge a customer, a release or a migration depends on
 | K009 | WAM ADM renewal-recommendation code: original author departed, no documented backup, team in maintenance mode |  | none named | none | release | Rework the recommendation feature from scratch (see P068); no interim owner for the existing code. | 2026-11-02 |
 | K007 | Americas/LATAM watchdog, temperature-sensor and power-failure alarm audit; point-level alarm configuration | Elias Brewer | Keith Bishop | partial | customer | Keith Bishop named as the next technical adviser if Elias cannot assist; Keith also sole holder of the Limerick RCA (K006), so the backup is itself concentrated | 2026-11-12 |
 | K006 | Dell Limerick alarm-handler RCA and release/build context for affected pod updates | Keith Bishop | none named | partial | customer, release | Ron Snyder mentioned as someone to ask; not named as backup (and away this week and next) | 2026-10-29 |
+| K011 | Shawn Clark concentration on Quest migration recovery and network tasks (Windows Restore, Airwall DNS, port testing) | Shawn Clark | Chad Steger (partial -- retained follow-up on external port requests and cloud-PC/Airwall access work only, not the Windows Restore or DNS tasks) | partial | migration |  | 2026-11-10 |
 
 Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS energy points and KPIs, global metering due diligence (Elias Brewer).
 
@@ -47,24 +57,24 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 
 | Person | Owns (Pulse) | Involved (Pulse) | Delegated/awaited | Sole holder | Forums |
 |---|---|---|---|---|---|
-| Chad Steger | 2 | 5 | 4 | 0 | 2026 Deployment Daily Scrum, Quest Migration Weekly Check-In |
-| Shawn Clark | 3 | 2 | 2 | 0 | Quest Migration Weekly Check-In |
+| Chad Steger | 5 | 9 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
+| Shawn Clark | 3 | 4 | 2 | 1 | Quest Migration Weekly Check-In |
 | Akansh Gangil | 0 | 4 | 5 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Ron Snyder | 2 | 6 | 2 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
-| Scott Dunn | 2 | 3 | 1 | 1 | 2026 Deployment Daily Scrum |
-| Ron Snyder | 1 | 2 | 2 | 0 | entroCIM Daily Stand Up |
+| Scott Dunn | 2 | 4 | 1 | 1 | 2026 Deployment Daily Scrum |
 | Natalie Marquardt | 0 | 1 | 3 | 0 | ADM connect with Natalie |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
 | Sean McCloskey | 0 | 0 | 3 | 0 |  |
 | Syed Jamshed Zaidi | 2 | 7 | 0 | 0 | 2026 Deployment Daily Scrum |
-| Matthew Heid | 2 | 4 | 0 | 0 | 2026 Deployment Daily Scrum |
+| Matthew Heid | 2 | 6 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 1 | 1 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 
 Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own. Sole holder: knowledge areas they hold without a confirmed backup.
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 13, new this week 1, stuck 4, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
+Governance: Project management. Owner: Chad Steger. Live 18, new this week 6, stuck 4, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -79,14 +89,19 @@ Governance: Project management. Owner: Chad Steger. Live 13, new this week 1, st
 | P135 | Dell HQ display/alarm issue: new alarms not showing, blocking a Penang production rollout | Dell |  | High | 2026-11-03 | 2026-11-05 | 2 | customer-visible |
 | P142 | Dell questioning redundancy/DR architecture and reuse of existing licenses for DR | Dell | Syed Jamshed Zaidi | High | 2026-11-04 | 2026-11-10 | 2 | customer-visible |
 | P145 | Dell IT proposing to remove redundant license servers; no confirmed internal rationale for the current design | Dell |  | High | 2026-11-04 | 2026-11-10 | 2 | customer-visible |
+| P174 | Some Modbus "people counter" points have produced no data since April, at a site Copilot transcribed as "Louv" |  | Chad Steger | High | 2026-11-11 | 2026-11-11 | 1 | customer-visible, candidate: stuck |
 | P168 | PME upgrade did not complete on schedule; blocked by a cybersecurity control |  |  | High | 2026-11-10 | 2026-11-12 | 3 | customer-visible |
+| P173 | Coca-Cola (TCCC) gateway IPs are configured but not pingable, blocking remaining gateway connectivity | Coca-Cola (TCCC) | Chad Steger | High | 2026-11-11 | 2026-11-12 | 2 | customer-visible |
 | P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-11-03 | 3 |  |
+| P176 | A site transcribed as "Govardhan" may have an overloaded server with 771 Modbus connectors, preventing validation |  |  | Medium | 2026-11-12 | 2026-11-12 | 1 | candidate: gap |
+| P177 | Mobile-device data flow is blocked by a firewall owned by a team outside this forum |  |  | Medium | 2026-11-12 | 2026-11-12 | 1 | candidate: boundary |
+| P178 | WEML rendering/alarming work has an unresolved billing question: whether it should be a separate PO |  |  | Medium | 2026-11-12 | 2026-11-12 | 1 | customer-visible, candidate: boundary |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review.
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 5, new this week 2, stuck 1, quiet 1. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 9, new this week 6, stuck 1, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -95,6 +110,10 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 5, new this week 2, stuck 1
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-11-10 | 3 | customer-visible |
 | P162 | Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week |  | Ron Snyder | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
 | P169 | Keith Bishop flags the next 8 working days of sprint scope (Dell query, SkySpark 4 rebuild, Ford SFTP work) as infeasible |  |  | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
+| P186 | Federal Reserve environment blocks Internet-hosted font/dependency access, requiring an offline packaging or fallback strategy | Federal Reserve |  | High | 2026-11-11 | 2026-11-11 | 1 | customer-visible, candidate: boundary |
+| P187 | Ford Rouge requires new points added before December 1 on a newly received tool, consuming allocated SME hours | Ford | Jason Ganiatsas | Medium | 2026-11-11 | 2026-11-11 | 1 | customer-visible, candidate: boundary |
+| P189 | Innovation Center Lab's unreliability (Bright Layer device unavailable) is blocking containerization/device work |  | Ron Snyder | Medium | 2026-11-12 | 2026-11-12 | 1 | candidate: boundary |
+| P188 | Version information for existing customer/platform versions is not maintained in any single, actively managed inventory |  |  | Low | 2026-11-11 | 2026-11-11 | 1 | candidate: gap |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P042 entroCIM 3.1.12.14 customer release notice one day behind the stated date (Chad out sick 10-19).
 
@@ -106,7 +125,7 @@ No issues in the Pulse yet.
 
 ## Quest Migration Weekly Check-In
 
-Governance: Project management. Owner: Chad Steger. Live 5, new this week 0, stuck 5, quiet 0. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
+Governance: Project management. Owner: Chad Steger. Live 7, new this week 2, stuck 5, quiet 0. Last sighting: 2026-11-10. Last evidence: 2026-11-10.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -115,6 +134,8 @@ Governance: Project management. Owner: Chad Steger. Live 5, new this week 0, stu
 | P047 | Azure BLOB Storage accessible via browser but not through the required Linux command-line transfer path |  | Shawn Clark | High | 2026-10-20 | 2026-11-10 | 5 | stuck |
 | P048 | MQTT cutover blocked pending DNS records and ports 1883/8883 |  | Chad Steger | High | 2026-10-20 | 2026-11-10 | 5 | stuck, customer-visible |
 | P052 | Workbench/BACnet Pro has no confirmed shared remote-access model after LogMeIn retirement |  | Chad Steger | Medium | 2026-10-20 | 2026-11-10 | 4 | stuck |
+| P180 | Quest migration: Nextcloud recovery is complicated by 500 GB-1 TB of encrypted volume and an LDAP dependency on a domain controller slated for removal |  | Chad Steger | High | 2026-11-10 | 2026-11-10 | 1 | candidate: asked |
+| P182 | Quest migration: old servers believed stopped unexpectedly appeared to still be running |  |  | Medium | 2026-11-10 | 2026-11-10 | 1 | candidate: gap |
 
 ## WAM Product Backlog Refinement
 

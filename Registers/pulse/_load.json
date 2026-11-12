@@ -1152,9 +1152,9 @@
    "teams": 0
   },
   "Coca-Cola (TCCC)": {
-   "delta7": -2,
-   "load": 0,
-   "teams": 0
+   "delta7": 6,
+   "load": 8,
+   "teams": 8
   },
   "Cree Church / Premier": {
    "delta7": 0,
@@ -1167,14 +1167,14 @@
    "teams": 68
   },
   "Federal Reserve": {
-   "delta7": -1,
-   "load": 18,
-   "teams": 8
+   "delta7": 10,
+   "load": 29,
+   "teams": 19
   },
   "Ford": {
-   "delta7": -1,
-   "load": 10,
-   "teams": 0
+   "delta7": 5,
+   "load": 16,
+   "teams": 6
   },
   "Intel": {
    "delta7": -2,
