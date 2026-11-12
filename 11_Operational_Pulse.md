@@ -9,7 +9,7 @@
 | Account | 7-day trend | Change | Load now | Load a week ago | Live | Stuck | Quiet | At your level |
 |---|---|---|---|---|---|---|---|---|
 | Dell | Improving | -115 | 73 | 183 | 8 | 2 | 1 | 1 |
-| Federal Reserve | Worsening | +10 | 29 | 9 | 2 | 0 | 0 | 2 |
+| Federal Reserve | Worsening | +7 | 26 | 9 | 2 | 0 | 0 | 2 |
 | Ford | Worsening | +5 | 16 | 1 | 1 | 0 | 0 | 2 |
 | Coca-Cola (TCCC) | Worsening | +6 | 8 | 2 | 1 | 0 | 0 | 0 |
 | Wesco Warehouse | Steady | -2 | 12 | 14 | 1 | 1 | 0 | 0 |
@@ -27,7 +27,6 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- **P186** Federal Reserve environment blocks Internet-hosted font/dependency access, requiring an offline packaging or fallback strategy (Federal Reserve; entroCIM Daily Stand Up). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P176** A site transcribed as "Govardhan" may have an overloaded server with 771 Modbus connectors, preventing validation (no account; 2026 Deployment Daily Scrum). Test: No owner, or the customer is unaware of a material problem.
 - **P177** Mobile-device data flow is blocked by a firewall owned by a team outside this forum (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 - **P178** WEML rendering/alarming work has an unresolved billing question: whether it should be a separate PO (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
@@ -108,7 +107,7 @@ Governance: Sprint (2-week). Owner: Ron Snyder. Live 9, new this week 6, stuck 1
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-11-10 | 3 | customer-visible |
 | P162 | Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week |  | Ron Snyder | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
 | P169 | Keith Bishop flags the next 8 working days of sprint scope (Dell query, SkySpark 4 rebuild, Ford SFTP work) as infeasible |  |  | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
-| P186 | Federal Reserve environment blocks Internet-hosted font/dependency access, requiring an offline packaging or fallback strategy | Federal Reserve |  | High | 2026-11-11 | 2026-11-11 | 1 | customer-visible, candidate: boundary |
+| P186 | Federal Reserve environment blocks Internet-hosted font/dependency access, requiring an offline packaging or fallback strategy | Federal Reserve |  | High | 2026-11-11 | 2026-11-11 | 1 | customer-visible |
 | P187 | Ford Rouge requires new points added before December 1 on a newly received tool, consuming allocated SME hours | Ford | Jason Ganiatsas | Medium | 2026-11-11 | 2026-11-11 | 1 | customer-visible, candidate: boundary |
 | P189 | Innovation Center Lab's unreliability (Bright Layer device unavailable) is blocking containerization/device work |  | Ron Snyder | Medium | 2026-11-12 | 2026-11-12 | 1 | candidate: boundary |
 | P188 | Version information for existing customer/platform versions is not maintained in any single, actively managed inventory |  |  | Low | 2026-11-11 | 2026-11-11 | 1 | candidate: gap |
