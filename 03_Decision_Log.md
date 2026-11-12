@@ -23,6 +23,16 @@
 ## Decisions Made
 
 
+### 2026-11-11 — BOM Studio hosting: direction set on Azure
+- Status: Made
+- Owner: Darryl Benson (stated in session, 2026-11-11: "Direction is set on Azure for hosting"). Who else set or approved the direction was not stated.
+- Context: Demo and Architecture meeting with Robert Ehiemua, Vinay Prabhu and Ron Snyder, 2026-11-11 (`Evidence/BOM_Studio_Demo_Architecture_Transcript_2026-11-11.docx`). Robert had planned to move the application to RTX Pro 6000 systems on order for the Wesco lab in Glenview, and said in the meeting that Azure would be better.
+- Options considered: the Wesco lab in Glenview vs. Azure.
+- Decision / Recommended path: Azure is the hosting platform for BOM Studio. Still open and tracked in the team document's decision register: where the 3D view is rendered, GPU family, physics engine, orchestration at scale, customer access, confidential computing, project storage, Unreal licensing, partner pricing agreements.
+- Risk of waiting: n/a, decided.
+- Forum where this should be decided: decided. Wesco architecture and intake approval is still to be obtained (Ron Snyder is starting the intake form).
+- Follow-up: `Deliverables/Vibe_Code_Productization/2026-11-11_BOM_Studio_Current_Architecture_and_Azure_Hosting.md` carries "Direction set" in its decision register; `Products/Vibe_Code_Productization/Candidates/BOM_Studio.md` updated.
+
 ### 2026-11-11 — NRF 2027 entroCIM demo scope: no DC demo, no live booth connection, simulated data
 - Status: Made
 - Owner: Darryl Benson
@@ -1012,7 +1022,7 @@
 
 ## Decision Radar
 
-<!-- GENERATED 2026-11-11 11:08 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-12 09:51 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
 *Generated view of `Registers/decision/` (tier radar). Radar requires a named forum with a live date; ceiling 20, overflow to Backlog with the reason. Count at generation: 15.*
 
