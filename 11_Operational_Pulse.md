@@ -1,8 +1,8 @@
 # Operational Pulse
 
-<!-- GENERATED 2026-11-12 14:59 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
+<!-- GENERATED 2026-11-13 11:06 from Registers/ by Tools/eos_registers.py. Do not hand-edit this section; edit the item files under Registers/ or use the EOS web app. Pre-migration history is preserved verbatim in Archive/2026-10-15_pre_registers/. -->
 
-> Rolling window 2026-10-29 to 2026-11-12. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. An issue with no sighting for 10 days (21 for a bi-weekly forum) is closed as presumed resolved by silence and reopens if raised again. A Medium or Low issue counts as live from its third sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
+> Rolling window 2026-10-30 to 2026-11-13. Issues from team-governed forums. The teams' own governance (project process, sprint cycle) owns the work; nothing here needs disposal. An issue with no sighting for 10 days (21 for a bi-weekly forum) is closed as presumed resolved by silence and reopens if raised again. A Medium or Low issue counts as live from its third sighting. Escalated issues move to the Watch List. Design: `CLAUDE.md`, Operational Pulse.
 
 ## Account health
 
@@ -27,7 +27,7 @@ No signals in the window: BAE, Stanford, UWM.
 
 ## Needs your call
 
-- None this cycle.
+- **P195** WEML integration go-ahead is pending document finalization at a customer call scheduled for next week (no account; 2026 Deployment Daily Scrum). Test: Crossed out of the forum: contract, money, customer executive, customer communication, or an outside team.
 
 ## Knowledge concentration
 
@@ -50,22 +50,22 @@ Not seen in 45+ days (confirm whether still true): K004 FRB load shed, Dell GMS 
 |---|---|---|---|---|---|
 | Chad Steger | 5 | 6 | 4 | 0 | 2026 Deployment Daily Scrum, entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 | Shawn Clark | 3 | 3 | 2 | 1 | Quest Migration Weekly Check-In |
-| Ron Snyder | 1 | 3 | 4 | 0 | entroCIM Daily Stand Up |
-| Akansh Gangil | 0 | 4 | 4 | 0 | ADM connect with Natalie, WAM Product Backlog Refinement, WAM Sprint Review |
+| Akansh Gangil | 0 | 3 | 4 | 0 | WAM Product Backlog Refinement, WAM Sprint Review |
+| Ron Snyder | 0 | 3 | 4 | 0 | entroCIM Daily Stand Up |
 | Amy Aguirre | 0 | 0 | 4 | 0 |  |
+| Matthew Heid | 3 | 4 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Scott Dunn | 2 | 3 | 1 | 1 | 2026 Deployment Daily Scrum |
-| Natalie Marquardt | 0 | 1 | 3 | 0 | ADM connect with Natalie |
+| Natalie Marquardt | 0 | 0 | 3 | 0 |  |
 | Nathan Kehr | 0 | 0 | 3 | 0 |  |
 | Sean McCloskey | 0 | 0 | 3 | 0 |  |
 | Syed Jamshed Zaidi | 2 | 7 | 0 | 0 | 2026 Deployment Daily Scrum |
-| Matthew Heid | 2 | 4 | 0 | 0 | 2026 Deployment Daily Scrum |
 | Babu Papanna | 1 | 1 | 1 | 0 | entroCIM Daily Stand Up, Quest Migration Weekly Check-In |
 
 Owns: named owner of a live Pulse issue. Involved: named in the evidence with a statement, commitment or stated role, not the owner. Delegated/awaited: open register items they own. Sole holder: knowledge areas they hold without a confirmed backup.
 
 ## 2026 Deployment Daily Scrum
 
-Governance: Project management. Owner: Chad Steger. Live 15, new this week 3, stuck 4, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
+Governance: Project management. Owner: Chad Steger. Live 16, new this week 4, stuck 4, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-13.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
@@ -84,19 +84,19 @@ Governance: Project management. Owner: Chad Steger. Live 15, new this week 3, st
 | P168 | PME upgrade did not complete on schedule; blocked by a cybersecurity control |  |  | High | 2026-11-10 | 2026-11-12 | 3 | customer-visible |
 | P173 | Coca-Cola (TCCC) gateway IPs are configured but not pingable, blocking remaining gateway connectivity | Coca-Cola (TCCC) | Chad Steger | High | 2026-11-11 | 2026-11-12 | 2 | customer-visible |
 | P087 | entroCIM refresh hanging for some time while Babu C. Dinesh was away |  |  | Medium | 2026-10-27 | 2026-11-03 | 3 |  |
+| P195 | WEML integration go-ahead is pending document finalization at a customer call scheduled for next week |  | Matthew Heid | Medium | 2026-11-12 | 2026-11-12 | 1 | customer-visible, candidate: boundary |
 
 Quiet (no sighting in 14+ days; confirm with the team whether resolved): P012 Dell FTE Franklin tracker: categorize items for Scott Dunn review.
 
 ## entroCIM Daily Stand Up
 
-Governance: Sprint (2-week). Owner: Ron Snyder. Live 6, new this week 3, stuck 1, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-12.
+Governance: Sprint (2-week). Owner: Ron Snyder. Live 5, new this week 2, stuck 1, quiet 1. Last sighting: 2026-11-12. Last evidence: 2026-11-13.
 
 | ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
 |---|---|---|---|---|---|---|---|---|
 | P018 | Test server has no VPN connectivity to the private artifact repository (containerization) |  | Babu Papanna | Medium | 2026-10-14 | 2026-11-04 | 5 | stuck |
 | P137 | Prior Gridboard monorepo migration lost code and broke functionality; migration restarted |  | Nisha More | High | 2026-11-03 | 2026-11-04 | 2 |  |
 | P111 | FRB alarm failures lack sufficient logging/data to diagnose why alarms fail to show up | Federal Reserve | Keith Bishop | High | 2026-10-28 | 2026-11-10 | 3 | customer-visible |
-| P162 | Hanwa devices 121/123 and Bangalore access devices inaccessible ahead of a demo the following week |  | Ron Snyder | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
 | P169 | Keith Bishop flags the next 8 working days of sprint scope (Dell query, SkySpark 4 rebuild, Ford SFTP work) as infeasible |  |  | High | 2026-11-10 | 2026-11-10 | 1 | customer-visible |
 | P186 | Federal Reserve environment blocks Internet-hosted font/dependency access, requiring an offline packaging or fallback strategy | Federal Reserve |  | High | 2026-11-11 | 2026-11-11 | 1 | customer-visible |
 
@@ -149,11 +149,9 @@ No issues in the Pulse yet.
 
 ## ADM connect with Natalie
 
-Governance: Product execution. Owner: Akansh Gangil. Live 1, new this week 0, stuck 0, quiet 0. Last sighting: 2026-11-04. Last evidence: 2026-11-04.
+Governance: Product execution. Owner: Akansh Gangil. Live 0, new this week 0, stuck 0, quiet 0. Last sighting: 2026-11-04. Last evidence: 2026-11-04.
 
-| ID | Issue | Account | Owner | Severity | First seen | Last seen | Seen | Flags |
-|---|---|---|---|---|---|---|---|---|
-| P114 | Exact renewals cannot reliably identify end users from current data; no path to obtain it except possibly integrators |  |  | High | 2026-10-28 | 2026-11-02 | 2 | customer-visible |
+No issues in the Pulse yet.
 
 ## Product Team / Platform Team connect
 
